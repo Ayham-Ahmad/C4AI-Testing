@@ -1,67 +1,84 @@
 import asyncio
+import json
 from crawl4ai import AsyncWebCrawler, CrawlerRunConfig
-from crawl4ai.deep_crawling import BFSDeepCrawlStrategy
 from crawl4ai.content_scraping_strategy import LXMLWebScrapingStrategy
-from crawl4ai.deep_crawling.scorers import KeywordRelevanceScorer
+from crawl4ai.deep_crawling import BestFirstCrawlingStrategy
 from crawl4ai.deep_crawling.filters import (
     FilterChain,
-    URLPatternFilter,
     DomainFilter,
-    ContentTypeFilter,
-    SEOFilter
+    URLPatternFilter,
+    ContentTypeFilter
 )
+from crawl4ai.deep_crawling.scorers import KeywordRelevanceScorer
 
-async def main():
-    # Configure a 2-level deep crawl
-    # Create a chain of filters
+async def run_advanced_crawler():
+    # Create a sophisticated filter chain
     filter_chain = FilterChain([
-        # Only follow URLs with specific patterns
-        URLPatternFilter(patterns=["*html*", "*css*", "*Python*"]),
-
-        # Only crawl specific domains
-        # DomainFilter(
-        #     allowed_domains=["https://www.w3schools.com/*"],
-        #     # blocked_domains=[r"^https?://.*index\.php/?$"]
-        # ),
-
-        # Create an SEO filter that looks for specific keywords in page metadata
-        SEOFilter(
-            threshold=0.5,  # Minimum score (0.0 to 1.0)
-            keywords=["tutorial", "guide", "documentation"]
+        DomainFilter(
+            allowed_domains=["docs.example.com"],
+            blocked_domains=["old.docs.example.com"]
         ),
-
-        # Only include specific content types
+        URLPatternFilter(patterns=["*guide*", "*tutorial*", "*blog*"]),
         ContentTypeFilter(allowed_types=["text/html"])
     ])
 
-    # Create a scorer
-    scorer = KeywordRelevanceScorer(
-        keywords=["HTML", "Example", "Python"],
+    # Create a relevance scorer
+    keyword_scorer = KeywordRelevanceScorer(
+        keywords=['python', 'html'],
         weight=0.7
     )
 
+    # Set up the configuration
     config = CrawlerRunConfig(
-        deep_crawl_strategy=BFSDeepCrawlStrategy(
-            max_depth=2,
+        deep_crawl_strategy=BestFirstCrawlingStrategy(
+            max_depth=5,
             include_external=False,
-            max_pages=10,
-            filter_chain=filter_chain,
-            url_scorer=scorer,
+            # filter_chain=filter_chain,
+            url_scorer=keyword_scorer,
+            max_pages=10
         ),
         scraping_strategy=LXMLWebScrapingStrategy(),
-        verbose=True,
-        # wait_for_timeout=5000,
-        stream=False # Non-stream is to wait until the crawl is done to preprocess the data, 
-                     # Stream mode is to start preprocessing when getting some data while the crawling is going on.
+        stream=True,
+        verbose=True
     )
 
+    # Execute the crawl
+    results = []
     async with AsyncWebCrawler() as crawler:
-        results = await crawler.arun("https://www.w3schools.com", config=config)
+        async for result in await crawler.arun("https://www.w3schools.com", config=config):
+            results.append(result)  # ✅ keep the full object
+            score = result.metadata.get("score", 0)
+            depth = result.metadata.get("depth", 0)
+            print(f"Depth: {depth} | Score: {score:.2f} | {result.url}")
 
-        print(f"Crawled {len(results)} pages in total")
-        for i, result in enumerate(results[:30]):
-            print(f"{i+1} URL: {result.url}")
-            print(f"Depth: {result.metadata.get('depth', 0)}")
+    # Analyze the results
+    print(f"Crawled {len(results)} high-value pages")
+    avg_score = sum(r.metadata.get('score', 0) for r in results) / len(results)
+    print(f"Average score: {avg_score:.2f}")
+
+    # Group by depth
+    depth_counts = {}
+    for r in results:
+        depth = r.metadata.get("depth", 0)
+        depth_counts[depth] = depth_counts.get(depth, 0) + 1
+
+    print("Pages crawled by depth:")
+    for depth, count in sorted(depth_counts.items()):
+        print(f"  Depth {depth}: {count} pages")
+
+    # Extract only what you need (URL + score + depth + text)
+    cleaned_results = []
+    for r in results:
+        cleaned_results.append({
+            "url": r.url,
+            "score": r.metadata.get("score", 0),
+            "depth": r.metadata.get("depth", 0),
+            "text": r.extracted_content
+        })
+
+    # Save JSON (already dicts, no need for model_dump)
+    with open('W3Results.json', "w") as f:
+        json.dump(cleaned_results, f, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    asyncio.run(run_advanced_crawler())
