@@ -25,11 +25,12 @@ async def crawl():
             max_pages=100,
             score_threshold=0.0,
             include_external=False,
-            url_scorer=keyword_scorer
+            # url_scorer=keyword_scorer
         ),
         scraping_strategy=LXMLWebScrapingStrategy(),
         verbose=True
     )
+
 
     async with AsyncWebCrawler() as crawler:
         # Wait for ALL results to be collected before returning
