@@ -1,9 +1,15 @@
 from groq import Groq
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+if not GROQ_API_KEY:
+    raise RuntimeError("GROQ_API_KEY not set. Add it to environment or .env")
 
 # Initialize Groq client once
-# client = Groq(api_key="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")
-# client = Groq(api_key="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")
-client = Groq(api_key="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")
+client = Groq(api_key=GROQ_API_KEY)
 
 def LLM(system_prompt="You are a Smart Financial Advisor.", user_query="Hello!!"):
     try:

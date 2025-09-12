@@ -18,3 +18,13 @@ Thumbs.db
 
 # Logs
 *.log
+
+# local env
+.env
+
+# sqlite DB or chroma persistence
+embedded/chroma.sqlite3
+embedded/
+# or whatever directory contains large vectorstore files
+/data/
+*.sqlite3
