@@ -24,7 +24,7 @@ Thumbs.db
 
 # sqlite DB or chroma persistence
 embedded/chroma.sqlite3
-embedded/
+embedded/*
 # or whatever directory contains large vectorstore files
 /data/
 *.sqlite3
