@@ -1,6 +1,6 @@
 import asyncio
 import json
-from collections import defaultdict
+import logging
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -8,146 +8,118 @@ from crawl4ai import AsyncWebCrawler, CrawlerRunConfig
 from crawl4ai.content_scraping_strategy import LXMLWebScrapingStrategy
 from pyquery import PyQuery as pq
 
-BASE_URL = "https://www.w3schools.com/"
+
+BASE_URL = "https://www.w3schools.com/tutorials/index.php"
+OUTPUT_DIR = Path("W3_Tutorials")
+OUTPUT_DIR.mkdir(exist_ok=True)
+
+logging.basicConfig(
+    filename="crawl_log.txt",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+)
 
 
-# ---------------------------
-# Helper: determine tutorial name
-# ---------------------------
-def extract_tutorial_name(url: str) -> str:
-    lower = url.lower()
-    for name in ["python", "html", "css", "js", "sql", "java", "cs", "php"]:
-        if f"/{name}/" in lower:
-            return name.upper() + " Tutorial"
-    return "General"
-
-
-# ---------------------------
-# Helper: extract menu links (sidebar only)
-# ---------------------------
-def extract_menu_links(doc: pq, base_url: str) -> list:
-    """Extract links from tutorial left menu/sidebar and resolve to absolute URLs."""
-    links = []
-    seen = set()
-    for a in doc("#leftmenuinner a, .w3-sidebar a").items():
-        href = a.attr("href")
-        text = a.text().strip()
-        if not href or not text:
-            continue
-        full_url = urljoin(base_url, href)
-        if full_url in seen:
-            continue
-        if "campus.w3schools.com" in full_url or "/cart" in full_url:
-            continue  # skip shop links
-        seen.add(full_url)
-        links.append({"title": text, "url": full_url})
-    return links
-
-
-# ---------------------------
-# Helper: extract code snippets
-# ---------------------------
 def extract_code_snippets(doc: pq) -> list:
-    snippets = []
-    code_selectors = ["div.w3-example pre", "div.w3-code"]
-    seen = set()
-
-    for sel in code_selectors:
+    snippets, seen = [], set()
+    for sel in ["div.w3-example pre", "div.w3-code"]:
         for el in doc(sel).items():
             text = el.text() or ""
             html = el.html() or ""
             if not text.strip():
                 continue
-            fingerprint = (len(text), html[:50])
-            if fingerprint in seen:
+            fp = (len(text), html[:50])
+            if fp in seen:
                 continue
-            seen.add(fingerprint)
+            seen.add(fp)
             snippets.append({"text": text.strip(), "html": html.strip()})
     return snippets
 
 
-# ---------------------------
-# Main crawler
-# ---------------------------
-async def main():
-    run_config = CrawlerRunConfig(
-        scraping_strategy=LXMLWebScrapingStrategy(),
-        verbose=True,
-    )
+def extract_menu_links(doc: pq, base_url: str) -> list:
+    links, seen = [], set()
+    for a in doc("#leftmenuinner a").items():
+        href, text = a.attr("href"), a.text().strip()
+        if not href or not text:
+            continue
+        full_url = urljoin(base_url, href)
+        if full_url in seen:
+            continue
+        seen.add(full_url)
+        links.append({"title": text, "url": full_url})
+    return links
 
-    tutorials = defaultdict(list)
+
+async def crawl_language(crawler, run_config, lang_name: str, tut_url: str):
+    tutorials = []
+
+    try:
+        tut_results = await crawler.arun(url=tut_url, config=run_config)
+    except Exception as e:
+        logging.error(f"❌ Failed to open {lang_name} main page: {e}")
+        return
+
+    for tut in tut_results:
+        if not getattr(tut, "html", None):
+            continue
+        tut_doc = pq(tut.html)
+        menu_links = extract_menu_links(tut_doc, tut_url)
+
+        for link in menu_links:
+            sub_url = link["url"]
+            try:
+                sub_results = await crawler.arun(url=sub_url, config=run_config)
+            except Exception as e:
+                logging.error(f"Failed {sub_url}: {e}")
+                continue
+
+            for sub in sub_results:
+                if not getattr(sub, "html", None):
+                    continue
+                sub_doc = pq(sub.html)
+                title = sub_doc("h1").text().strip() or link["title"]
+
+                code_snippets = extract_code_snippets(sub_doc)
+                if code_snippets:
+                    tutorials.append(
+                        {
+                            "title": title,
+                            "code": code_snippets,
+                            "metadata": {"url": sub_url},
+                        }
+                    )
+                    logging.info(f"{lang_name}: {title} ({len(code_snippets)} examples)")
+
+    out_file = OUTPUT_DIR / f"{lang_name}.json"
+    with out_file.open("w", encoding="utf-8") as f:
+        json.dump({"language": lang_name, "tutorials": tutorials}, f, indent=2, ensure_ascii=False)
+    logging.info(f"✅ Saved {lang_name} tutorials to {out_file.resolve()}")
+
+
+async def main():
+    run_config = CrawlerRunConfig(scraping_strategy=LXMLWebScrapingStrategy(), verbose=True)
 
     async with AsyncWebCrawler(
-        user_agent=(
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/125.0.0.0 Safari/537.36"
-        ),
-        browser_args=[
-            "--disable-blink-features=AutomationControlled",
-            "--no-sandbox",
-            "--disable-dev-shm-usage",
-        ],
+        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                   "AppleWebKit/537.36 (KHTML, like Gecko) "
+                   "Chrome/125.0.0.0 Safari/537.36",
+        browser_args=["--disable-blink-features=AutomationControlled", "--no-sandbox", "--disable-dev-shm-usage"],
         wait_for="document.querySelector('h1') || document.querySelector('.w3-example')",
     ) as crawler:
-        try:
-            # Step 1: Get tutorials index page
-            results = await crawler.arun(
-                url="https://www.w3schools.com/tutorials/index.php",
-                config=run_config,
-            )
+        # Get all tutorial links from the main Tutorials page
+        results = await crawler.arun(url=BASE_URL, config=run_config)
+        if not results:
+            logging.error("Could not load tutorial index page.")
+            return
 
-            for result in results:
-                if not getattr(result, "html", None):
-                    continue
+        doc = pq(results[0].html)
+        tutorial_links = extract_menu_links(doc, BASE_URL)
 
-                doc = pq(result.html)
-
-                # Step 2: Extract tutorial entry links
-                tutorial_links = [a.attr("href") for a in doc(".w3-row .w3-col a").items() if a.attr("href")]
-
-                for tut_link in tutorial_links:
-                    tut_url = urljoin(BASE_URL, tut_link)
-                    tut_results = await crawler.arun(url=tut_url, config=run_config)
-
-                    for tut in tut_results:
-                        if not getattr(tut, "html", None):
-                            continue
-                        tut_doc = pq(tut.html)
-
-                        tutorial_name = extract_tutorial_name(tut_url)
-                        menu_links = extract_menu_links(tut_doc, tut_url)
-
-                        # Step 3: Crawl subpages (sidebar links)
-                        for link in menu_links:
-                            sub_url = link["url"]
-                            sub_results = await crawler.arun(url=sub_url, config=run_config)
-
-                            for sub in sub_results:
-                                if not getattr(sub, "html", None):
-                                    continue
-                                sub_doc = pq(sub.html)
-                                title = sub_doc("h1").text().strip() or link["title"]
-
-                                code_snippets = extract_code_snippets(sub_doc)
-
-                                if code_snippets:
-                                    page_info = {
-                                        "title": title,
-                                        "url": sub_url,
-                                        "code_snippets": code_snippets,
-                                    }
-                                    tutorials[tutorial_name].append(page_info)
-                                    print(f"📘 {tutorial_name} - {title} ({len(code_snippets)} examples)")
-
-        except Exception as e:
-            print(f"❌ Crawl failed: {e}")
-
-    # Save JSON
-    out_file = Path("W3Results.json")
-    with out_file.open("w", encoding="utf-8") as f:
-        json.dump(tutorials, f, ensure_ascii=False, indent=2)
-    print(f"✅ Done! Saved tutorials to '{out_file.resolve()}'")
+        for link in tutorial_links:
+            lang_name = link["title"].split()[0].upper()
+            tut_url = link["url"]
+            await crawl_language(crawler, run_config, lang_name, tut_url)
+            await asyncio.sleep(1)  # throttle to avoid rate limiting
 
 
 if __name__ == "__main__":

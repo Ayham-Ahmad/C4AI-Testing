@@ -1,0 +1,633 @@
+{
+  "language": "KOTLIN",
+  "tutorials": [
+    {
+      "title": "Kotlin Tutorial",
+      "code": [
+        {
+          "text": "fun main() { println(\"Hello World\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/index.php"
+      }
+    },
+    {
+      "title": "Kotlin Get Started",
+      "code": [
+        {
+          "text": "fun main() { println(\"Hello World\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_getstarted.php"
+      }
+    },
+    {
+      "title": "Kotlin Syntax",
+      "code": [
+        {
+          "text": "fun main() { println(\"Hello World\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "fun main(args : Array<String>) { println(\"Hello World\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span>args <span class=\"token operator\">:</span> Array<span class=\"token operator\">&lt;</span>String<span class=\"token operator\">&gt;</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_syntax.php"
+      }
+    },
+    {
+      "title": "Kotlin Output (Print Text)",
+      "code": [
+        {
+          "text": "fun main() { println(\"Hello World\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "fun main() { println(\"Hello World!\") println(\"I am learning Kotlin.\") println(\"It is awesome!\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World!\"</span></span><span class=\"token punctuation\">)</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"I am learning Kotlin.\"</span></span><span class=\"token punctuation\">)</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"It is awesome!\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "fun main() { println(3 + 3) }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token number\">3</span> <span class=\"token operator\">+</span> <span class=\"token number\">3</span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "fun main() { print(\"Hello World! \") print(\"I am learning Kotlin. \") print(\"It is awesome!\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">print</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World! \"</span></span><span class=\"token punctuation\">)</span>\n  <span class=\"token function\">print</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"I am learning Kotlin. \"</span></span><span class=\"token punctuation\">)</span>\n  <span class=\"token function\">print</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"It is awesome!\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_output.php"
+      }
+    },
+    {
+      "title": "Kotlin Comments",
+      "code": [
+        {
+          "text": "// This is a comment println(\"Hello World\")",
+          "html": "<code class=\"language-kotlin\"><span class=\"token comment\">// This is a comment</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World\"</span></span><span class=\"token punctuation\">)</span> </code>"
+        },
+        {
+          "text": "println(\"Hello World\") // This is a comment",
+          "html": "<code class=\"language-kotlin\"><span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World\"</span></span><span class=\"token punctuation\">)</span>  <span class=\"token comment\">// This is a comment</span></code>"
+        },
+        {
+          "text": "/* The code below will print the words Hello World to the screen, and it is amazing */ println(\"Hello World\")",
+          "html": "<code class=\"language-kotlin\"><span class=\"token comment\">/* The code below will print the words Hello World\nto the screen, and it is amazing */</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World\"</span></span><span class=\"token punctuation\">)</span>  </code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_comments.php"
+      }
+    },
+    {
+      "title": "Kotlin Variables",
+      "code": [
+        {
+          "text": "var variableName = value val variableName = value",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> <em>variableName</em> <span class=\"token operator\">=</span> <em>value</em>\n<span class=\"token keyword keyword-val\">val</span> <em>variableName</em> <span class=\"token operator\">=</span> <em>value</em></code>"
+        },
+        {
+          "text": "var name = \"John\" val birthyear = 1975 println(name) // Print the value of name println(birthyear) // Print the value of birthyear",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> name <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"John\"</span></span>\n<span class=\"token keyword keyword-val\">val</span> birthyear <span class=\"token operator\">=</span> <span class=\"token number\">1975</span>\n\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>name<span class=\"token punctuation\">)</span>          <span class=\"token comment\">// Print the value of name</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>birthyear<span class=\"token punctuation\">)</span>     <span class=\"token comment\">// Print the value of birthyear</span></code>"
+        },
+        {
+          "text": "var name = \"John\" // String (text) val birthyear = 1975 // Int (number) println(name) // Print the value of name println(birthyear) // Print the value of birthyear",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> name <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"John\"</span></span>      <span class=\"token comment\">// String (text)</span>\n<span class=\"token keyword keyword-val\">val</span> birthyear <span class=\"token operator\">=</span> <span class=\"token number\">1975</span>   <span class=\"token comment\">// Int (number)</span>\n\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>name<span class=\"token punctuation\">)</span>          <span class=\"token comment\">// Print the value of name</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>birthyear<span class=\"token punctuation\">)</span>     <span class=\"token comment\">// Print the value of birthyear</span></code>"
+        },
+        {
+          "text": "var name: String = \"John\" // String val birthyear: Int = 1975 // Int println(name) println(birthyear)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> name<span class=\"token operator\">:</span> String <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"John\"</span></span> <span class=\"token comment\">// String</span>\n<span class=\"token keyword keyword-val\">val</span> birthyear<span class=\"token operator\">:</span> Int <span class=\"token operator\">=</span> <span class=\"token number\">1975</span> <span class=\"token comment\">// Int</span>\n\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>name<span class=\"token punctuation\">)</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>birthyear<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "var name: String name = \"John\" println(name)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> name<span class=\"token operator\">:</span> String\nname <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"John\"</span></span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>name<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "var name name = \"John\" println(name)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> name\nname <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"John\"</span></span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>name<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "val name = \"John\" name = \"Robert\" // Error (Val cannot be reassigned) println(name)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> name <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"John\"</span></span>\nname <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Robert\"</span></span>  <span class=\"token comment\">// Error (Val cannot be reassigned)</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>name<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "var name = \"John\" name = \"Robert\" println(name)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> name <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"John\"</span></span>\nname <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Robert\"</span></span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>name<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "val pi = 3.14159265359 println(pi)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> pi <span class=\"token operator\">=</span> <span class=\"token number\">3.14159265359</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>pi<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "val name = \"John\" println(\"Hello \" + name)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> name <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"John\"</span></span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello \"</span></span> <span class=\"token operator\">+</span> name<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "val firstName = \"John \" val lastName = \"Doe\" val fullName = firstName + lastName println(fullName)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> firstName <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"John \"</span></span>\n<span class=\"token keyword keyword-val\">val</span> lastName <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Doe\"</span></span>\n<span class=\"token keyword keyword-val\">val</span> fullName <span class=\"token operator\">=</span> firstName <span class=\"token operator\">+</span> lastName\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>fullName<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "val x = 5 val y = 6 println(x + y) // Print the value of x + y",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> x <span class=\"token operator\">=</span> <span class=\"token number\">5</span>\n<span class=\"token keyword keyword-val\">val</span> y <span class=\"token operator\">=</span> <span class=\"token number\">6</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>x <span class=\"token operator\">+</span> y<span class=\"token punctuation\">)</span> <span class=\"token comment\">// Print the value of x + y </span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_variables.php"
+      }
+    },
+    {
+      "title": "Kotlin Data Types",
+      "code": [
+        {
+          "text": "val myNum = 5 // Int val myDoubleNum = 5.99 // Double val myLetter = 'D' // Char val myBoolean = true // Boolean val myText = \"Hello\" // String",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> myNum <span class=\"token operator\">=</span> <span class=\"token number\">5</span>             <span class=\"token comment\">// Int</span>\n<span class=\"token keyword keyword-val\">val</span> myDoubleNum <span class=\"token operator\">=</span> <span class=\"token number\">5.99</span>    <span class=\"token comment\">// Double</span>\n<span class=\"token keyword keyword-val\">val</span> myLetter <span class=\"token operator\">=</span> <span class=\"token char\">'D'</span>        <span class=\"token comment\">// Char</span>\n<span class=\"token keyword keyword-val\">val</span> myBoolean <span class=\"token operator\">=</span> <span class=\"token boolean\">true</span>      <span class=\"token comment\">// Boolean</span>\n<span class=\"token keyword keyword-val\">val</span> myText <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello\"</span></span>      <span class=\"token comment\">// String</span></code>"
+        },
+        {
+          "text": "val myNum: Int = 5 // Int val myDoubleNum: Double = 5.99 // Double val myLetter: Char = 'D' // Char val myBoolean: Boolean = true // Boolean val myText: String = \"Hello\" // String",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> myNum<span class=\"token operator\">:</span> Int <span class=\"token operator\">=</span> <span class=\"token number\">5</span>                <span class=\"token comment\">// Int</span>\n<span class=\"token keyword keyword-val\">val</span> myDoubleNum<span class=\"token operator\">:</span> Double <span class=\"token operator\">=</span> <span class=\"token number\">5.99</span>    <span class=\"token comment\">// Double</span>\n<span class=\"token keyword keyword-val\">val</span> myLetter<span class=\"token operator\">:</span> Char <span class=\"token operator\">=</span> <span class=\"token char\">'D'</span>          <span class=\"token comment\">// Char</span>\n<span class=\"token keyword keyword-val\">val</span> myBoolean<span class=\"token operator\">:</span> Boolean <span class=\"token operator\">=</span> <span class=\"token boolean\">true</span>     <span class=\"token comment\">// Boolean</span>\n<span class=\"token keyword keyword-val\">val</span> myText<span class=\"token operator\">:</span> String <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello\"</span></span>      <span class=\"token comment\">// String</span></code>"
+        },
+        {
+          "text": "val myNum: Byte = 100 println(myNum)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> myNum<span class=\"token operator\">:</span> Byte <span class=\"token operator\">=</span> <span class=\"token number\">100</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>myNum<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "val myNum: Short = 5000 println(myNum)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> myNum<span class=\"token operator\">:</span> Short <span class=\"token operator\">=</span> <span class=\"token number\">5000</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>myNum<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "val myNum: Long = 15000000000L println(myNum)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> myNum<span class=\"token operator\">:</span> Long <span class=\"token operator\">=</span> <span class=\"token number\">15000000000L</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>myNum<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "val myNum1 = 2147483647 // Int val myNum2 = 2147483648 // Long",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> myNum1 <span class=\"token operator\">=</span> <span class=\"token number\">2147483647</span>  <span class=\"token comment\">// Int</span>\n<span class=\"token keyword keyword-val\">val</span> myNum2 <span class=\"token operator\">=</span> <span class=\"token number\">2147483648</span>  <span class=\"token comment\">// Long</span></code>"
+        },
+        {
+          "text": "val myNum: Float = 5.75F println(myNum)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> myNum<span class=\"token operator\">:</span> Float <span class=\"token operator\">=</span> <span class=\"token number\">5.75F</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>myNum<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "val myNum: Double = 19.99 println(myNum)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> myNum<span class=\"token operator\">:</span> Double <span class=\"token operator\">=</span> <span class=\"token number\">19.99</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>myNum<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "val myNum1: Float = 35E3F val myNum2: Double = 12E4 println(myNum1) println(myNum2)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> myNum1<span class=\"token operator\">:</span> Float <span class=\"token operator\">=</span> <span class=\"token number\">35E3F</span>\n<span class=\"token keyword keyword-val\">val</span> myNum2<span class=\"token operator\">:</span> Double <span class=\"token operator\">=</span> <span class=\"token number\">12E4</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>myNum1<span class=\"token punctuation\">)</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>myNum2<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "val isKotlinFun: Boolean = true val isFishTasty: Boolean = false println(isKotlinFun) // Outputs true println(isFishTasty) // Outputs false",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> isKotlinFun<span class=\"token operator\">:</span> Boolean <span class=\"token operator\">=</span> <span class=\"token boolean\">true</span>\n<span class=\"token keyword keyword-val\">val</span> isFishTasty<span class=\"token operator\">:</span> Boolean <span class=\"token operator\">=</span> <span class=\"token boolean\">false</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>isKotlinFun<span class=\"token punctuation\">)</span>   <span class=\"token comment\">// Outputs true</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>isFishTasty<span class=\"token punctuation\">)</span>   <span class=\"token comment\">// Outputs false </span></code>"
+        },
+        {
+          "text": "val myLetter: Char = 66 println(myLetter) // Error",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> myLetter<span class=\"token operator\">:</span> Char <span class=\"token operator\">=</span> <span class=\"token number\">66</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>myLetter<span class=\"token punctuation\">)</span> <span class=\"token comment\">// Error</span></code>"
+        },
+        {
+          "text": "val x: Int = 5 val y: Long = x println(y) // Error: Type mismatch",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> x<span class=\"token operator\">:</span> Int <span class=\"token operator\">=</span> <span class=\"token number\">5</span>\n<span class=\"token keyword keyword-val\">val</span> y<span class=\"token operator\">:</span> Long <span class=\"token operator\">=</span> x\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>y<span class=\"token punctuation\">)</span> <span class=\"token comment\">// Error: Type mismatch </span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_data_types.php"
+      }
+    },
+    {
+      "title": "Kotlin Operators",
+      "code": [
+        {
+          "text": "var x = 100 + 50",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> x <span class=\"token operator\">=</span> <span class=\"token number\">100</span> <span class=\"token operator\">+</span> <span class=\"token number\">50</span></code>"
+        },
+        {
+          "text": "var sum1 = 100 + 50 // 150 (100 + 50) var sum2 = sum1 + 250 // 400 (150 + 250) var sum3 = sum2 + sum2 // 800 (400 + 400)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> sum1 <span class=\"token operator\">=</span> <span class=\"token number\">100</span> <span class=\"token operator\">+</span> <span class=\"token number\">50</span>       <span class=\"token comment\">// 150 (100 + 50)</span>\n<span class=\"token keyword keyword-var\">var</span> sum2 <span class=\"token operator\">=</span> sum1 <span class=\"token operator\">+</span> <span class=\"token number\">250</span>     <span class=\"token comment\">// 400 (150 + 250)</span>\n<span class=\"token keyword keyword-var\">var</span> sum3 <span class=\"token operator\">=</span> sum2 <span class=\"token operator\">+</span> sum2    <span class=\"token comment\">// 800 (400 + 400)</span></code>"
+        },
+        {
+          "text": "var x = 10",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> x <span class=\"token operator\">=</span> <span class=\"token number\">10</span></code>"
+        },
+        {
+          "text": "var x = 10\nx += 5",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> x <span class=\"token operator\">=</span> 10<br/>x <span class=\"token operator\">+=</span> <span class=\"token number\">5</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_operators.php"
+      }
+    },
+    {
+      "title": "Kotlin Strings",
+      "code": [
+        {
+          "text": "var greeting = \"Hello\"",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> greeting <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello\"</span></span></code>"
+        },
+        {
+          "text": "var greeting: String = \"Hello\"",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> greeting<span class=\"token operator\">:</span> String <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello\"</span></span></code>"
+        },
+        {
+          "text": "var name: String name = \"John\" println(name)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> name<span class=\"token operator\">:</span> String\nname <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"John\"</span></span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>name<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "var name name = \"John\" println(name)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> name\nname <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"John\"</span></span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>name<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "var txt = \"Hello World\" println(txt[0]) // first element (H) println(txt[2]) // third element (l)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> txt <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World\"</span></span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>txt<span class=\"token punctuation\">[</span><span class=\"token number\">0</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">)</span> <span class=\"token comment\">// first element (H)</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>txt<span class=\"token punctuation\">[</span><span class=\"token number\">2</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">)</span> <span class=\"token comment\">// third element (l)</span></code>"
+        },
+        {
+          "text": "var txt = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\" println(\"The length of the txt string is: \" + txt.length)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> txt <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"</span></span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"The length of the txt string is: \"</span></span> <span class=\"token operator\">+</span> txt<span class=\"token punctuation\">.</span>length<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "var txt = \"Hello World\" println(txt.uppercase()) // Outputs \"HELLO WORLD\" println(txt.lowercase()) // Outputs \"hello world\"",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> txt <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World\"</span></span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>txt<span class=\"token punctuation\">.</span><span class=\"token function\">uppercase</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span>   <span class=\"token comment\">// Outputs \"HELLO WORLD\"</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>txt<span class=\"token punctuation\">.</span><span class=\"token function\">lowercase</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span>   <span class=\"token comment\">// Outputs \"hello world\"</span></code>"
+        },
+        {
+          "text": "var txt1 = \"Hello World\"\nvar txt2 = \"Hello World\" println(txt1.compareTo(txt2)) // Outputs 0 (they are equal)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> txt1 <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World\"</span></span><span class=\"token keyword keyword-var\"><br/>var</span> txt2 <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World\"</span></span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>txt1<span class=\"token punctuation\">.</span><span class=\"token function\">compareTo</span><span class=\"token punctuation\">(</span>txt2<span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span>  <span class=\"token comment\">// Outputs 0 (they are equal)</span></code>"
+        },
+        {
+          "text": "var txt = \"Please locate where 'locate' occurs!\" println(txt.indexOf(\"locate\")) // Outputs 7",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> txt <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Please locate where 'locate' occurs!\"</span></span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>txt<span class=\"token punctuation\">.</span><span class=\"token function\">indexOf</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"locate\"</span></span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span>  <span class=\"token comment\">// Outputs 7</span></code>"
+        },
+        {
+          "text": "var txt1 = \"It's alright\" var txt2 = \"That's great\"",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> txt1 <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"It's alright\"</span></span>\n<span class=\"token keyword keyword-var\">var</span> txt2 <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"That's great\"</span></span></code>"
+        },
+        {
+          "text": "var firstName = \"John\" var lastName = \"Doe\" println(firstName + \" \" + lastName)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> firstName <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"John\"</span></span>\n<span class=\"token keyword keyword-var\">var</span> lastName <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Doe\"</span></span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>firstName <span class=\"token operator\">+</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\" \"</span></span> <span class=\"token operator\">+</span> lastName<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "var firstName = \"John \" var lastName = \"Doe\" println(firstName.plus(lastName))",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> firstName <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"John \"</span></span>\n<span class=\"token keyword keyword-var\">var</span> lastName <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Doe\"</span></span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>firstName<span class=\"token punctuation\">.</span><span class=\"token function\">plus</span><span class=\"token punctuation\">(</span>lastName<span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "var firstName = \"John\" var lastName = \"Doe\" println(\"My name is $firstName $lastName\")",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> firstName <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"John\"</span></span>\n<span class=\"token keyword keyword-var\">var</span> lastName <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Doe\"</span></span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"My name is </span><span class=\"token interpolation\"><span class=\"token interpolation-punctuation punctuation\">$</span><span class=\"token expression\">firstName</span></span><span class=\"token string\"> </span><span class=\"token interpolation\"><span class=\"token interpolation-punctuation punctuation\">$</span><span class=\"token expression\">lastName</span></span><span class=\"token string\">\"</span></span><span class=\"token punctuation\">)</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_strings.php"
+      }
+    },
+    {
+      "title": "Kotlin Booleans",
+      "code": [
+        {
+          "text": "val isKotlinFun: Boolean = true val isFishTasty: Boolean = false println(isKotlinFun) // Outputs true println(isFishTasty) // Outputs false",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> isKotlinFun<span class=\"token operator\">:</span> Boolean <span class=\"token operator\">=</span> <span class=\"token boolean\">true</span>\n<span class=\"token keyword keyword-val\">val</span> isFishTasty<span class=\"token operator\">:</span> Boolean <span class=\"token operator\">=</span> <span class=\"token boolean\">false</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>isKotlinFun<span class=\"token punctuation\">)</span>   <span class=\"token comment\">// Outputs true</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>isFishTasty<span class=\"token punctuation\">)</span>   <span class=\"token comment\">// Outputs false </span></code>"
+        },
+        {
+          "text": "val isKotlinFun = true val isFishTasty = false println(isKotlinFun) // Outputs true println(isFishTasty) // Outputs false",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> isKotlinFun <span class=\"token operator\">=</span> <span class=\"token boolean\">true</span>\n<span class=\"token keyword keyword-val\">val</span> isFishTasty <span class=\"token operator\">=</span> <span class=\"token boolean\">false</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>isKotlinFun<span class=\"token punctuation\">)</span>   <span class=\"token comment\">// Outputs true</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>isFishTasty<span class=\"token punctuation\">)</span>   <span class=\"token comment\">// Outputs false </span></code>"
+        },
+        {
+          "text": "val x = 10 val y = 9\nprintln(x > y) // Returns true, because 10 is greater than 9",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> x <span class=\"token operator\">=</span> <span class=\"token number\">10</span>\n<span class=\"token keyword keyword-val\">val</span> y <span class=\"token operator\">=</span> <span class=\"token function\">9<br/>println</span><span class=\"token punctuation\">(</span>x <span class=\"token operator\">&gt;</span> y<span class=\"token punctuation\">)</span> <span class=\"token comment\">// Returns true, because 10 is greater than 9</span></code>"
+        },
+        {
+          "text": "println(10 > 9) // Returns true, because 10 is greater than 9",
+          "html": "<code class=\"language-kotlin\"><span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token number\">10</span> <span class=\"token operator\">&gt;</span> <span class=\"token number\">9</span><span class=\"token punctuation\">)</span> <span class=\"token comment\">// Returns true, because 10 is greater than 9</span></code>"
+        },
+        {
+          "text": "val x = 10; println(x == 10); // Returns true, because the value of x is equal to 10",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> x <span class=\"token operator\">=</span> <span class=\"token number\">10</span><span class=\"token punctuation\">;</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>x <span class=\"token operator\">==</span> <span class=\"token number\">10</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span> <span class=\"token comment\">// Returns true, because the value of x is equal to 10</span></code>"
+        },
+        {
+          "text": "println(10 == 15); // Returns false, because 10 is not equal to 15",
+          "html": "<code class=\"language-kotlin\"><span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token number\">10</span> <span class=\"token operator\">==</span> <span class=\"token number\">15</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span> <span class=\"token comment\">// Returns false, because 10 is not equal to 15</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_booleans.php"
+      }
+    },
+    {
+      "title": "Kotlin If ... Else",
+      "code": [
+        {
+          "text": "if (condition) { // block of code to be executed if the condition is true }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span><em>condition</em><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token comment\"><em>// block of code to be executed if the condition is true</em></span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "if (20 > 18) { println(\"20 is greater than 18\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span><span class=\"token number\">20</span> <span class=\"token operator\">&gt;</span> <span class=\"token number\">18</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"20 is greater than 18\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "val x = 20 val y = 18 if (x > y) { println(\"x is greater than y\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> x <span class=\"token operator\">=</span> <span class=\"token number\">20</span>\n<span class=\"token keyword keyword-val\">val</span> y <span class=\"token operator\">=</span> <span class=\"token number\">18</span>\n<span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span>x <span class=\"token operator\">&gt;</span> y<span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"x is greater than y\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "if (condition) { // block of code to be executed if the condition is true } else { // block of code to be executed if the condition is false }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span><em>condition</em><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token comment\"><em>// block of code to be executed if the condition is true</em></span>\n<span class=\"token punctuation\">}</span> <span class=\"token keyword keyword-else\">else</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token comment\"><em>// block of code to be executed if the condition is false</em></span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "val time = 20 if (time < 18) { println(\"Good day.\") } else { println(\"Good evening.\") } // Outputs \"Good evening.\"",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> time <span class=\"token operator\">=</span> <span class=\"token number\">20</span>\n<span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span>time <span class=\"token operator\">&lt;</span> <span class=\"token number\">18</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Good day.\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span> <span class=\"token keyword keyword-else\">else</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Good evening.\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span>\n<span class=\"token comment\">// Outputs \"Good evening.\"</span></code>"
+        },
+        {
+          "text": "if (condition1) { // block of code to be executed if condition1 is true } else if (condition2) { // block of code to be executed if the condition1 is false and condition2 is true } else { // block of code to be executed if the condition1 is false and condition2 is false }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span><em>condition1</em><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token comment\"><em>// block of code to be executed if condition1 is true</em></span>\n<span class=\"token punctuation\">}</span> <span class=\"token keyword keyword-else\">else</span> <span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span><em>condition2</em><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token comment\"><em>// block of code to be executed if the condition1 is false and condition2 is true</em></span>\n<span class=\"token punctuation\">}</span> <span class=\"token keyword keyword-else\">else</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token comment\"><em>// block of code to be executed if the condition1 is false and condition2 is false</em></span>\n<span class=\"token punctuation\">}</span>\n</code>"
+        },
+        {
+          "text": "val time = 22 if (time < 10) { println(\"Good morning.\") } else if (time < 20) { println(\"Good day.\") } else { println(\"Good evening.\") } // Outputs \"Good evening.\"",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> time <span class=\"token operator\">=</span> <span class=\"token number\">22</span>\n<span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span>time <span class=\"token operator\">&lt;</span> <span class=\"token number\">10</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Good morning.\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span> <span class=\"token keyword keyword-else\">else</span> <span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span>time <span class=\"token operator\">&lt;</span> <span class=\"token number\">20</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Good day.\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span> <span class=\"token keyword keyword-else\">else</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Good evening.\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span>\n<span class=\"token comment\">// Outputs \"Good evening.\"</span></code>"
+        },
+        {
+          "text": "val time = 20 val greeting = if (time < 18) { \"Good day.\" } else { \"Good evening.\" } println(greeting)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> time <span class=\"token operator\">=</span> <span class=\"token number\">20</span>\n<span class=\"token keyword keyword-val\">val</span> greeting <span class=\"token operator\">=</span> <span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span>time <span class=\"token operator\">&lt;</span> <span class=\"token number\">18</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token string-literal singleline\"><span class=\"token string\">\"Good day.\"</span></span>\n<span class=\"token punctuation\">}</span> <span class=\"token keyword keyword-else\">else</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token string-literal singleline\"><span class=\"token string\">\"Good evening.\"</span></span>\n<span class=\"token punctuation\">}</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>greeting<span class=\"token punctuation\">)</span></code>"
+        },
+        {
+          "text": "fun main() { val time = 20 val greeting = if (time < 18) \"Good day.\" else \"Good evening.\" println(greeting) }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-val\">val</span> time <span class=\"token operator\">=</span> <span class=\"token number\">20</span>\n  <span class=\"token keyword keyword-val\">val</span> greeting <span class=\"token operator\">=</span> <span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span>time <span class=\"token operator\">&lt;</span> <span class=\"token number\">18</span><span class=\"token punctuation\">)</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Good day.\"</span></span> <span class=\"token keyword keyword-else\">else</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Good evening.\"</span></span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>greeting<span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_conditions.php"
+      }
+    },
+    {
+      "title": "Kotlin When",
+      "code": [
+        {
+          "text": "val day = 4 val result = when (day) { 1 -> \"Monday\" 2 -> \"Tuesday\" 3 -> \"Wednesday\" 4 -> \"Thursday\" 5 -> \"Friday\" 6 -> \"Saturday\" 7 -> \"Sunday\" else -> \"Invalid day.\" } println(result) // Outputs \"Thursday\" (day 4)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> day <span class=\"token operator\">=</span> <span class=\"token number\">4</span>\n\n<span class=\"token keyword keyword-val\">val</span> result <span class=\"token operator\">=</span> <span class=\"token keyword keyword-when\">when</span> <span class=\"token punctuation\">(</span>day<span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token number\">1</span> <span class=\"token operator\">-&gt;</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Monday\"</span></span>\n  <span class=\"token number\">2</span> <span class=\"token operator\">-&gt;</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Tuesday\"</span></span>\n  <span class=\"token number\">3</span> <span class=\"token operator\">-&gt;</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Wednesday\"</span></span>\n  <span class=\"token number\">4</span> <span class=\"token operator\">-&gt;</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Thursday\"</span></span>\n  <span class=\"token number\">5</span> <span class=\"token operator\">-&gt;</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Friday\"</span></span>\n  <span class=\"token number\">6</span> <span class=\"token operator\">-&gt;</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Saturday\"</span></span>\n  <span class=\"token number\">7</span> <span class=\"token operator\">-&gt;</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Sunday\"</span></span>\n  <span class=\"token keyword keyword-else\">else</span> <span class=\"token operator\">-&gt;</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Invalid day.\"</span></span>\n<span class=\"token punctuation\">}</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>result<span class=\"token punctuation\">)</span>\n\n<span class=\"token comment\">// Outputs \"Thursday\" (day 4)</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_when.php"
+      }
+    },
+    {
+      "title": "Kotlin While Loop",
+      "code": [
+        {
+          "text": "while (condition) { // code block to be executed }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-while\">while</span> <span class=\"token punctuation\">(</span><em>condition</em><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token comment\"><i>// code block to be executed</i></span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "var i = 0 while (i < 5) { println(i) i++ }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> i <span class=\"token operator\">=</span> <span class=\"token number\">0</span>\n<span class=\"token keyword keyword-while\">while</span> <span class=\"token punctuation\">(</span>i <span class=\"token operator\">&lt;</span> <span class=\"token number\">5</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>i<span class=\"token punctuation\">)</span>\n  i<span class=\"token operator\">++</span>\n<span class=\"token punctuation\">}</span> </code>"
+        },
+        {
+          "text": "do { // code block to be executed } while (condition);",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-do\">do</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token comment\"><i>// code block to be executed</i></span>\n<span class=\"token punctuation\">}</span>\n<span class=\"token keyword keyword-while\">while</span> <span class=\"token punctuation\">(</span><em>condition</em><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>\n</code>"
+        },
+        {
+          "text": "var i = 0 do { println(i) i++ } while (i < 5)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> i <span class=\"token operator\">=</span> <span class=\"token number\">0</span>\n<span class=\"token keyword keyword-do\">do</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>i<span class=\"token punctuation\">)</span>\n  i<span class=\"token operator\">++</span>\n  <span class=\"token punctuation\">}</span>\n<span class=\"token keyword keyword-while\">while</span> <span class=\"token punctuation\">(</span>i <span class=\"token operator\">&lt;</span> <span class=\"token number\">5</span><span class=\"token punctuation\">)</span> </code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_while_loop.php"
+      }
+    },
+    {
+      "title": "Kotlin Break and Continue",
+      "code": [
+        {
+          "text": "var i = 0 while (i < 10) { println(i) i++ if (i == 4) { break } }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> i <span class=\"token operator\">=</span> <span class=\"token number\">0</span>\n<span class=\"token keyword keyword-while\">while</span> <span class=\"token punctuation\">(</span>i <span class=\"token operator\">&lt;</span> <span class=\"token number\">10</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>i<span class=\"token punctuation\">)</span>\n  i<span class=\"token operator\">++</span>\n  <span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span>i <span class=\"token operator\">==</span> <span class=\"token number\">4</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n    <span class=\"token keyword keyword-break\">break</span>\n  <span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "var i = 0 while (i < 10) { if (i == 4) { i++ continue } println(i) i++\n}",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-var\">var</span> i <span class=\"token operator\">=</span> <span class=\"token number\">0</span>\n<span class=\"token keyword keyword-while\">while</span> <span class=\"token punctuation\">(</span>i <span class=\"token operator\">&lt;</span> <span class=\"token number\">10</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span>i <span class=\"token operator\">==</span> <span class=\"token number\">4</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n    i<span class=\"token operator\">++</span>\n    <span class=\"token keyword keyword-continue\">continue</span>\n  <span class=\"token punctuation\">}</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>i<span class=\"token punctuation\">)</span>\n  i<span class=\"token operator\">++</span><span class=\"token punctuation\"><br/>}</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_break.php"
+      }
+    },
+    {
+      "title": "Kotlin Arrays",
+      "code": [
+        {
+          "text": "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\")",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> cars <span class=\"token operator\">=</span> <span class=\"token function\">arrayOf</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Volvo\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"BMW\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Ford\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Mazda\"</span></span><span class=\"token punctuation\">)</span>\n</code>"
+        },
+        {
+          "text": "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\") println(cars[0]) // Outputs Volvo",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> cars <span class=\"token operator\">=</span> <span class=\"token function\">arrayOf</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Volvo\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"BMW\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Ford\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Mazda\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>cars<span class=\"token punctuation\">[</span><span class=\"token number\">0</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">)</span>\n<span class=\"token comment\">// Outputs Volvo </span></code>"
+        },
+        {
+          "text": "cars[0] = \"Opel\"",
+          "html": "<code class=\"language-kotlin\">cars<span class=\"token punctuation\">[</span><span class=\"token number\">0</span><span class=\"token punctuation\">]</span> <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Opel\"</span></span>\n</code>"
+        },
+        {
+          "text": "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\") println(cars.size) // Outputs 4",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> cars <span class=\"token operator\">=</span> <span class=\"token function\">arrayOf</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Volvo\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"BMW\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Ford\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Mazda\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>cars<span class=\"token punctuation\">.</span>size<span class=\"token punctuation\">)</span>\n<span class=\"token comment\">// Outputs 4 </span></code>"
+        },
+        {
+          "text": "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\") if (\"Volvo\" in cars) { println(\"It exists!\") } else { println(\"It does not exist.\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> cars <span class=\"token operator\">=</span> <span class=\"token function\">arrayOf</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Volvo\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"BMW\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Ford\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Mazda\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Volvo\"</span></span> <span class=\"token keyword keyword-in\">in</span> cars<span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"It exists!\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span> <span class=\"token keyword keyword-else\">else</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"It does not exist.\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\") for (x in cars) { println(x) }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> cars <span class=\"token operator\">=</span> <span class=\"token function\">arrayOf</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Volvo\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"BMW\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Ford\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Mazda\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token keyword keyword-for\">for</span> <span class=\"token punctuation\">(</span>x <span class=\"token keyword keyword-in\">in</span> cars<span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>x<span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\")\ncars[0] = \"Opel\"\nprintln(cars[0])\n// Now outputs Opel instead of Volvo",
+          "html": "<span class=\"javacolor\" style=\"color:black\"><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>  val cars = arrayOf(<span class=\"javastringcolor\" style=\"color:green\">\"Volvo\"</span>, <span class=\"javastringcolor\" style=\"color:green\">\"BMW\"</span>, <span class=\"javastringcolor\" style=\"color:green\">\"Ford\"</span>, <span class=\"javastringcolor\" style=\"color:green\">\"Mazda\"</span>)<br/><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>  cars[<span class=\"javanumbercolor\" style=\"color:#905\">0</span>] = <span class=\"javastringcolor\" style=\"color:green\">\"Opel\"</span><br/><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>  println(cars[<span class=\"javanumbercolor\" style=\"color:#905\">0</span>])<br/><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\">// Now outputs Opel instead of Volvo<br/></span><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>  </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_arrays.php"
+      }
+    },
+    {
+      "title": "Kotlin For Loop",
+      "code": [
+        {
+          "text": "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\") for (x in cars) { println(x) }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> cars <span class=\"token operator\">=</span> <span class=\"token function\">arrayOf</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Volvo\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"BMW\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Ford\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Mazda\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token keyword keyword-for\">for</span> <span class=\"token punctuation\">(</span>x <span class=\"token keyword keyword-in\">in</span> cars<span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>x<span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span>\n</code>"
+        },
+        {
+          "text": "val nums = arrayOf(1, 5, 10, 15, 20) for (x in nums) { println(x) }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> nums <span class=\"token operator\">=</span> <span class=\"token function\">arrayOf</span><span class=\"token punctuation\">(</span><span class=\"token number\">1</span><span class=\"token punctuation\">,</span> <span class=\"token number\">5</span><span class=\"token punctuation\">,</span> <span class=\"token number\">10</span><span class=\"token punctuation\">,</span> <span class=\"token number\">15</span><span class=\"token punctuation\">,</span> <span class=\"token number\">20</span><span class=\"token punctuation\">)</span>\n<span class=\"token keyword keyword-for\">for</span> <span class=\"token punctuation\">(</span>x <span class=\"token keyword keyword-in\">in</span> nums<span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>x<span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_for_loop.php"
+      }
+    },
+    {
+      "title": "Kotlin Ranges",
+      "code": [
+        {
+          "text": "for (chars in 'a'..'x') { println(chars) }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-for\">for</span> <span class=\"token punctuation\">(</span>chars <span class=\"token keyword keyword-in\">in</span> <span class=\"token char\">'a'</span><span class=\"token operator\">..</span><span class=\"token char\">'x'</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>chars<span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "for (nums in 5..15) { println(nums) }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-for\">for</span> <span class=\"token punctuation\">(</span>nums <span class=\"token keyword keyword-in\">in</span> <span class=\"token number\">5</span><span class=\"token operator\">..</span><span class=\"token number\">15</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>nums<span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span> </code>"
+        },
+        {
+          "text": "val nums = arrayOf(2, 4, 6, 8) if (2 in nums) { println(\"It exists!\") } else { println(\"It does not exist.\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> nums <span class=\"token operator\">=</span> <span class=\"token function\">arrayOf</span><span class=\"token punctuation\">(</span><span class=\"token number\">2</span><span class=\"token punctuation\">,</span> <span class=\"token number\">4</span><span class=\"token punctuation\">,</span> <span class=\"token number\">6</span><span class=\"token punctuation\">,</span> <span class=\"token number\">8</span><span class=\"token punctuation\">)</span>\n<span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span><span class=\"token number\">2</span> <span class=\"token keyword keyword-in\">in</span> nums<span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"It exists!\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span> <span class=\"token keyword keyword-else\">else</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"It does not exist.\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "val cars = arrayOf(\"Volvo\", \"BMW\", \"Ford\", \"Mazda\") if (\"Volvo\" in cars) { println(\"It exists!\") } else { println(\"It does not exist.\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> cars <span class=\"token operator\">=</span> <span class=\"token function\">arrayOf</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Volvo\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"BMW\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Ford\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Mazda\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Volvo\"</span></span> <span class=\"token keyword keyword-in\">in</span> cars<span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"It exists!\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span> <span class=\"token keyword keyword-else\">else</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"It does not exist.\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span> </code>"
+        },
+        {
+          "text": "for (nums in 5..15) { if (nums == 10) { break } println(nums) }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-for\">for</span> <span class=\"token punctuation\">(</span>nums <span class=\"token keyword keyword-in\">in</span> <span class=\"token number\">5</span><span class=\"token operator\">..</span><span class=\"token number\">15</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span>nums <span class=\"token operator\">==</span> <span class=\"token number\">10</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n    <span class=\"token keyword keyword-break\">break</span>\n  <span class=\"token punctuation\">}</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>nums<span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span> </code>"
+        },
+        {
+          "text": "for (nums in 5..15) { if (nums == 10) { continue } println(nums) }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-for\">for</span> <span class=\"token punctuation\">(</span>nums <span class=\"token keyword keyword-in\">in</span> <span class=\"token number\">5</span><span class=\"token operator\">..</span><span class=\"token number\">15</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-if\">if</span> <span class=\"token punctuation\">(</span>nums <span class=\"token operator\">==</span> <span class=\"token number\">10</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n    <span class=\"token keyword keyword-continue\">continue</span>\n  <span class=\"token punctuation\">}</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>nums<span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span> </code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_ranges.php"
+      }
+    },
+    {
+      "title": "Kotlin Functions",
+      "code": [
+        {
+          "text": "fun main() { println(\"Hello World\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "fun myFunction() { println(\"I just got executed!\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"I just got executed!\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span> </code>"
+        },
+        {
+          "text": "fun main() { myFunction() // Call myFunction } // Outputs \"I just got executed!\"",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token comment\">// Call myFunction</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token comment\">// Outputs \"I just got executed!\" </span></code>"
+        },
+        {
+          "text": "fun main() { myFunction() myFunction() myFunction() } // I just got executed! // I just got executed! // I just got executed!",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span>\n  <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span>\n  <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token comment\">// I just got executed!</span>\n<span class=\"token comment\">// I just got executed!</span>\n<span class=\"token comment\">// I just got executed! </span></code>"
+        },
+        {
+          "text": "fun myFunction(fname: String) { println(fname + \" Doe\") } fun main() { myFunction(\"John\") myFunction(\"Jane\") myFunction(\"George\") } // John Doe // Jane Doe // George Doe",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span>fname<span class=\"token operator\">:</span> String<span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>fname <span class=\"token operator\">+</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\" Doe\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"John\"</span></span><span class=\"token punctuation\">)</span>\n  <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Jane\"</span></span><span class=\"token punctuation\">)</span>\n  <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"George\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span>\n  \n<span class=\"token comment\">// John Doe</span>\n<span class=\"token comment\">// Jane Doe</span>\n<span class=\"token comment\">// George Doe </span></code>"
+        },
+        {
+          "text": "fun myFunction(fname: String, age: Int) { println(fname + \" is \" + age) } fun main() { myFunction(\"John\", 35) myFunction(\"Jane\", 32) myFunction(\"George\", 15) } // John is 35 // Jane is 32 // George is 15",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span>fname<span class=\"token operator\">:</span> String<span class=\"token punctuation\">,</span> age<span class=\"token operator\">:</span> Int<span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>fname <span class=\"token operator\">+</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\" is \"</span></span> <span class=\"token operator\">+</span> age<span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"John\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token number\">35</span><span class=\"token punctuation\">)</span>\n  <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Jane\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token number\">32</span><span class=\"token punctuation\">)</span>\n  <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"George\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token number\">15</span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token comment\">// John is 35</span>\n<span class=\"token comment\">// Jane is 32</span>\n<span class=\"token comment\">// George is 15 </span></code>"
+        },
+        {
+          "text": "fun myFunction(x: Int): Int { return (x + 5) } fun main() { var result = myFunction(3) println(result) } // 8 (3 + 5)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span>x<span class=\"token operator\">:</span> Int<span class=\"token punctuation\">)</span><span class=\"token operator\">:</span> Int <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-return\">return</span> <span class=\"token punctuation\">(</span>x <span class=\"token operator\">+</span> <span class=\"token number\">5</span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-var\">var</span> result <span class=\"token operator\">=</span> <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token number\">3</span><span class=\"token punctuation\">)</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>result<span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token comment\">// 8 (3 + 5) </span></code>"
+        },
+        {
+          "text": "fun myFunction(x: Int, y: Int): Int { return (x + y) } fun main() { var result = myFunction(3, 5) println(result) } // 8 (3 + 5)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span>x<span class=\"token operator\">:</span> Int<span class=\"token punctuation\">,</span> y<span class=\"token operator\">:</span> Int<span class=\"token punctuation\">)</span><span class=\"token operator\">:</span> Int <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-return\">return</span> <span class=\"token punctuation\">(</span>x <span class=\"token operator\">+</span> y<span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-var\">var</span> result <span class=\"token operator\">=</span> <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token number\">3</span><span class=\"token punctuation\">,</span> <span class=\"token number\">5</span><span class=\"token punctuation\">)</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>result<span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token comment\">// 8 (3 + 5) </span></code>"
+        },
+        {
+          "text": "fun myFunction(x: Int, y: Int) = x + y fun main() { var result = myFunction(3, 5) println(result) } // 8 (3 + 5)",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span>x<span class=\"token operator\">:</span> Int<span class=\"token punctuation\">,</span> y<span class=\"token operator\">:</span> Int<span class=\"token punctuation\">)</span> <span class=\"token operator\">=</span> x <span class=\"token operator\">+</span> y\n\n<span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-var\">var</span> result <span class=\"token operator\">=</span> <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token number\">3</span><span class=\"token punctuation\">,</span> <span class=\"token number\">5</span><span class=\"token punctuation\">)</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>result<span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token comment\">// 8 (3 + 5) </span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_functions.php"
+      }
+    },
+    {
+      "title": "Kotlin Classes and Objects",
+      "code": [
+        {
+          "text": "class Car { var brand = \"\" var model = \"\" var year = 0 }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-class\">class</span> Car <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-var\">var</span> brand <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"\"</span></span>\n  <span class=\"token keyword keyword-var\">var</span> model <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"\"</span></span>\n  <span class=\"token keyword keyword-var\">var</span> year <span class=\"token operator\">=</span> <span class=\"token number\">0</span>\n<span class=\"token punctuation\">}</span> </code>"
+        },
+        {
+          "text": "// Create a c1 object of the Car class val c1 = Car() // Access the properties and add some values to it c1.brand = \"Ford\" c1.model = \"Mustang\" c1.year = 1969 println(c1.brand) // Outputs Ford println(c1.model) // Outputs Mustang println(c1.year) // Outputs 1969",
+          "html": "<code class=\"language-kotlin\"><span class=\"token comment\">// Create a c1 object of the Car class</span>\n<span class=\"token keyword keyword-val\">val</span> c1 <span class=\"token operator\">=</span> <span class=\"token function\">Car</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span>\n\n<span class=\"token comment\">// Access the properties and add some values to it</span>\nc1<span class=\"token punctuation\">.</span>brand <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Ford\"</span></span>\nc1<span class=\"token punctuation\">.</span>model <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Mustang\"</span></span>\nc1<span class=\"token punctuation\">.</span>year <span class=\"token operator\">=</span> <span class=\"token number\">1969</span>\n\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>c1<span class=\"token punctuation\">.</span>brand<span class=\"token punctuation\">)</span>   <span class=\"token comment\">// Outputs Ford</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>c1<span class=\"token punctuation\">.</span>model<span class=\"token punctuation\">)</span>   <span class=\"token comment\">// Outputs Mustang</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>c1<span class=\"token punctuation\">.</span>year<span class=\"token punctuation\">)</span>    <span class=\"token comment\">// Outputs 1969 </span></code>"
+        },
+        {
+          "text": "val c1 = Car() c1.brand = \"Ford\" c1.model = \"Mustang\" c1.year = 1969 val c2 = Car() c2.brand = \"BMW\" c2.model = \"X5\" c2.year = 1999 println(c1.brand) // Ford println(c2.brand) // BMW",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-val\">val</span> c1 <span class=\"token operator\">=</span> <span class=\"token function\">Car</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span>\nc1<span class=\"token punctuation\">.</span>brand <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Ford\"</span></span>\nc1<span class=\"token punctuation\">.</span>model <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Mustang\"</span></span>\nc1<span class=\"token punctuation\">.</span>year <span class=\"token operator\">=</span> <span class=\"token number\">1969</span>\n\n<span class=\"token keyword keyword-val\">val</span> c2 <span class=\"token operator\">=</span> <span class=\"token function\">Car</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span>\nc2<span class=\"token punctuation\">.</span>brand <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"BMW\"</span></span>\nc2<span class=\"token punctuation\">.</span>model <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"X5\"</span></span>\nc2<span class=\"token punctuation\">.</span>year <span class=\"token operator\">=</span> <span class=\"token number\">1999</span>\n\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>c1<span class=\"token punctuation\">.</span>brand<span class=\"token punctuation\">)</span>  <span class=\"token comment\">// Ford</span>\n<span class=\"token function\">println</span><span class=\"token punctuation\">(</span>c2<span class=\"token punctuation\">.</span>brand<span class=\"token punctuation\">)</span>  <span class=\"token comment\">// BMW</span>\n</code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_classes.php"
+      }
+    },
+    {
+      "title": "Kotlin Constructors",
+      "code": [
+        {
+          "text": "class Car { var brand = \"\" var model = \"\" var year = 0 } fun main() { val c1 = Car() c1.brand = \"Ford\" c1.model = \"Mustang\" c1.year = 1969 }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-class\">class</span> Car <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-var\">var</span> brand <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"\"</span></span>\n  <span class=\"token keyword keyword-var\">var</span> model <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"\"</span></span>\n  <span class=\"token keyword keyword-var\">var</span> year <span class=\"token operator\">=</span> <span class=\"token number\">0</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-val\">val</span> c1 <span class=\"token operator\">=</span> <span class=\"token function\">Car</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span>\n  c1<span class=\"token punctuation\">.</span>brand <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Ford\"</span></span>\n  c1<span class=\"token punctuation\">.</span>model <span class=\"token operator\">=</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Mustang\"</span></span>\n  c1<span class=\"token punctuation\">.</span>year <span class=\"token operator\">=</span> <span class=\"token number\">1969</span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "class Car(var brand: String, var model: String, var year: Int) fun main() { val c1 = Car(\"Ford\", \"Mustang\", 1969) }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-class\">class</span> <span class=\"token function\">Car</span><span class=\"token punctuation\">(</span><span class=\"token keyword keyword-var\">var</span> brand<span class=\"token operator\">:</span> String<span class=\"token punctuation\">,</span> <span class=\"token keyword keyword-var\">var</span> model<span class=\"token operator\">:</span> String<span class=\"token punctuation\">,</span> <span class=\"token keyword keyword-var\">var</span> year<span class=\"token operator\">:</span> Int<span class=\"token punctuation\">)</span>\n\n<span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-val\">val</span> c1 <span class=\"token operator\">=</span> <span class=\"token function\">Car</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Ford\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Mustang\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token number\">1969</span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "class Car(var brand: String, var model: String, var year: Int) fun main() { val c1 = Car(\"Ford\", \"Mustang\", 1969) val c2 = Car(\"BMW\", \"X5\", 1999) val c3 = Car(\"Tesla\", \"Model S\", 2020) }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-class\">class</span> <span class=\"token function\">Car</span><span class=\"token punctuation\">(</span><span class=\"token keyword keyword-var\">var</span> brand<span class=\"token operator\">:</span> String<span class=\"token punctuation\">,</span> <span class=\"token keyword keyword-var\">var</span> model<span class=\"token operator\">:</span> String<span class=\"token punctuation\">,</span> <span class=\"token keyword keyword-var\">var</span> year<span class=\"token operator\">:</span> Int<span class=\"token punctuation\">)</span>\n\n<span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-val\">val</span> c1 <span class=\"token operator\">=</span> <span class=\"token function\">Car</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Ford\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Mustang\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token number\">1969</span><span class=\"token punctuation\">)</span>\n  <span class=\"token keyword keyword-val\">val</span> c2 <span class=\"token operator\">=</span> <span class=\"token function\">Car</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"BMW\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"X5\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token number\">1999</span><span class=\"token punctuation\">)</span>\n  <span class=\"token keyword keyword-val\">val</span> c3 <span class=\"token operator\">=</span> <span class=\"token function\">Car</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Tesla\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Model S\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token number\">2020</span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_constructors.php"
+      }
+    },
+    {
+      "title": "Kotlin Class Functions",
+      "code": [
+        {
+          "text": "class Car(var brand: String, var model: String, var year: Int) { // Class function fun drive() { println(\"Wrooom!\") } } fun main() { val c1 = Car(\"Ford\", \"Mustang\", 1969) // Call the function c1.drive() }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-class\">class</span> <span class=\"token function\">Car</span><span class=\"token punctuation\">(</span><span class=\"token keyword keyword-var\">var</span> brand<span class=\"token operator\">:</span> String<span class=\"token punctuation\">,</span> <span class=\"token keyword keyword-var\">var</span> model<span class=\"token operator\">:</span> String<span class=\"token punctuation\">,</span> <span class=\"token keyword keyword-var\">var</span> year<span class=\"token operator\">:</span> Int<span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token comment\">// Class function</span>\n  <span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">drive</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n    <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Wrooom!\"</span></span><span class=\"token punctuation\">)</span>\n  <span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-val\">val</span> c1 <span class=\"token operator\">=</span> <span class=\"token function\">Car</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Ford\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Mustang\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token number\">1969</span><span class=\"token punctuation\">)</span>\n  \n  <span class=\"token comment\">// Call the function</span>\n  c1<span class=\"token punctuation\">.</span><span class=\"token function\">drive</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        },
+        {
+          "text": "class Car(var brand: String, var model: String, var year: Int) { // Class function fun drive() { println(\"Wrooom!\") } // Class function with parameters fun speed(maxSpeed: Int) { println(\"Max speed is: \" + maxSpeed) } } fun main() { val c1 = Car(\"Ford\", \"Mustang\", 1969) // Call the functions c1.drive() c1.speed(200) }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-class\">class</span> <span class=\"token function\">Car</span><span class=\"token punctuation\">(</span><span class=\"token keyword keyword-var\">var</span> brand<span class=\"token operator\">:</span> String<span class=\"token punctuation\">,</span> <span class=\"token keyword keyword-var\">var</span> model<span class=\"token operator\">:</span> String<span class=\"token punctuation\">,</span> <span class=\"token keyword keyword-var\">var</span> year<span class=\"token operator\">:</span> Int<span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token comment\">// Class function</span>\n  <span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">drive</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n    <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Wrooom!\"</span></span><span class=\"token punctuation\">)</span>\n  <span class=\"token punctuation\">}</span>\n  \n  <span class=\"token comment\">// Class function with parameters</span>\n  <span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">speed</span><span class=\"token punctuation\">(</span>maxSpeed<span class=\"token operator\">:</span> Int<span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n    <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Max speed is: \"</span></span> <span class=\"token operator\">+</span> maxSpeed<span class=\"token punctuation\">)</span>\n  <span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-val\">val</span> c1 <span class=\"token operator\">=</span> <span class=\"token function\">Car</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Ford\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token string-literal singleline\"><span class=\"token string\">\"Mustang\"</span></span><span class=\"token punctuation\">,</span> <span class=\"token number\">1969</span><span class=\"token punctuation\">)</span>\n  \n  <span class=\"token comment\">// Call the functions</span>\n  c1<span class=\"token punctuation\">.</span><span class=\"token function\">drive</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span>\n  c1<span class=\"token punctuation\">.</span><span class=\"token function\">speed</span><span class=\"token punctuation\">(</span><span class=\"token number\">200</span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_class_functions.php"
+      }
+    },
+    {
+      "title": "Kotlin Inheritance",
+      "code": [
+        {
+          "text": "// Superclass\nopen class MyParentClass { val x = 5 } // Subclass class MyChildClass: MyParentClass() { fun myFunction() { println(x) // x is now inherited from the superclass } } // Create an object of MyChildClass and call myFunction fun main() { val myObj = MyChildClass() myObj.myFunction() }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token comment\">// Superclass<br/>open class MyParentClass {</span>\n  <span class=\"token keyword keyword-val\">val</span> x <span class=\"token operator\">=</span> <span class=\"token number\">5</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token comment\">// Subclass</span>\n<span class=\"token keyword keyword-class\">class</span> MyChildClass<span class=\"token operator\">:</span> <span class=\"token function\">MyParentClass</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n    <span class=\"token function\">println</span><span class=\"token punctuation\">(</span>x<span class=\"token punctuation\">)</span> <span class=\"token comment\">// x is now inherited from the superclass</span>\n  <span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token comment\">// Create an object of MyChildClass and call myFunction</span>\n<span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-val\">val</span> myObj <span class=\"token operator\">=</span> <span class=\"token function\">MyChildClass</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span>\n  myObj<span class=\"token punctuation\">.</span><span class=\"token function\">myFunction</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span> </code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_inheritance.php"
+      }
+    },
+    {
+      "title": "Kotlin Compiler",
+      "code": [
+        {
+          "text": "fun main() {\nprintln(\"Hello World\")\n}",
+          "html": "<span class=\"javacolor\" style=\"color:black\"><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>    fun main() {<br/>  println(<span class=\"javastringcolor\" style=\"color:green\">\"Hello World\"</span>)<br/>}<br/><span class=\"javanumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_compiler.php"
+      }
+    },
+    {
+      "title": "Kotlin Syllabus",
+      "code": [
+        {
+          "text": "fun main() { println(\"Hello World\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/kotlin_syllabus.php"
+      }
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "language": "COLORS",
+  "tutorials": [
+    {
+      "title": "Colors Tutorial",
+      "code": [
+        {
+          "text": "#myDIV {\ncolor: blue; /* Blue text color */\nborder: 10px solid currentcolor; /* Blue border color */\n}",
+          "html": "<span class=\"cssselectorcolor\" style=\"color:#905\">\n  #myDIV <span class=\"cssdelimitercolor\" style=\"color:#999\">{</span><span class=\"csspropertycolor\" style=\"color:#d73a49\"><br/>  color<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> blue<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span> <span class=\"commentcolor\" style=\"color:slategray\">/* Blue text color */</span><br/>  border<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> 10px solid currentcolor<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span> \n  <span class=\"commentcolor\" style=\"color:slategray\">/* Blue border color */</span><br/>\n  </span><span class=\"cssdelimitercolor\" style=\"color:#999\">}</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/default.asp"
+      }
+    },
+    {
+      "title": "Colors RGB and RGBA",
+      "code": [
+        {
+          "text": "<style>\ndiv {\nbackground-color: rgb(0, 191, 255);\ncolor: rgb(255, 255, 255);\n}\n</style>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>style<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"cssselectorcolor\" style=\"color:#905\"><br/>\ndiv <span class=\"cssdelimitercolor\" style=\"color:#999\">{</span><span class=\"csspropertycolor\" style=\"color:#d73a49\"><br/>    background-color<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> rgb(0, 191, 255)<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span><br/>    color<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> rgb(255, 255, 255)<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span><br/></span><span class=\"cssdelimitercolor\" style=\"color:#999\">}</span><br/>\n</span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/style<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<h1 style=\"background-color:rgba(255, 99, 71, 0.2);\">rgba(255, 99, 71, 0.2)</h1>\n<h1 style=\"background-color:rgba(255, 99, 71, 0.4);\">rgba(255, 99, 71, 0.4)</h1>\n<h1 style=\"background-color:rgba(255, 99, 71, 0.6);\">rgba(255, 99, 71, 0.6)</h1>\n<h1 style=\"background-color:rgba(255, 99, 71, 0.8);\">rgba(255, 99, 71, 0.8)</h1>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>h1<span class=\"attributecolor\" style=\"color:green\"> style<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"background-color:rgba(255, 99, 71, 0.2);\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>rgba(255, 99, 71, \n  0.2)<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>h1<span class=\"attributecolor\" style=\"color:green\"> style<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"background-color:rgba(255, 99, 71, 0.4);\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>rgba(255, \n  99, 71, 0.4)<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>h1<span class=\"attributecolor\" style=\"color:green\"> style<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"background-color:rgba(255, 99, 71, 0.6);\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>rgba(255, \n  99, 71, 0.6)<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>h1<span class=\"attributecolor\" style=\"color:green\"> style<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"background-color:rgba(255, 99, 71, 0.8);\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>rgba(255, \n  99, 71, 0.8)<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/colors_rgb.asp"
+      }
+    },
+    {
+      "title": "Colors HEX",
+      "code": [
+        {
+          "text": "<style>\ndiv {\nbackground-color: #00bfff;\ncolor: #ffffff;\n}\n</style>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>style<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"cssselectorcolor\" style=\"color:#905\"><br/>\ndiv <span class=\"cssdelimitercolor\" style=\"color:#999\">{</span><span class=\"csspropertycolor\" style=\"color:#d73a49\"><br/>    background-color<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> #00bfff<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span><br/>    color<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> #ffffff<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span><br/></span><span class=\"cssdelimitercolor\" style=\"color:#999\">}</span><br/>\n</span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/style<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/colors_hexadecimal.asp"
+      }
+    },
+    {
+      "title": "Colors HSL and HSLA",
+      "code": [
+        {
+          "text": "<style>\ndiv {\nbackground-color: hsl(170, 50%, 50%);\ncolor: hsl(0, 50%, 50%);\n}\n</style>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>style<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"cssselectorcolor\" style=\"color:#905\"><br/>\ndiv <span class=\"cssdelimitercolor\" style=\"color:#999\">{</span><span class=\"csspropertycolor\" style=\"color:#d73a49\"><br/>    background-color<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> hsl(170, 50%, 50%)<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span><br/>    color<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> hsl(0, 50%, 50%)<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span><br/></span><span class=\"cssdelimitercolor\" style=\"color:#999\">}</span><br/>\n</span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/style<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<h1 style=\"background-color:hsla(120, 100%, 50%, 0.2);\">hsla(0, 100%, 50%, 0.2)</h1>\n<h1 style=\"background-color:hsla(120, 100%, 50%, 0.4);\">hsla(0, 100%, 50%, 0.4)</h1>\n<h1 style=\"background-color:hsla(120, 100%, 50%, 0.6);\">hsla(0, 100%, 50%, 0.6)</h1>\n<h1 style=\"background-color:hsla(120, 100%, 50%, 0.8);\">hsla(0, 100%, 50%, 0.8)</h1>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>h1<span class=\"attributecolor\" style=\"color:green\"> style<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"background-color:hsla(120, 100%, 50%, 0.2);\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>hsla(0, 100%, 50%, \n  0.2)<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>h1<span class=\"attributecolor\" style=\"color:green\"> style<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"background-color:hsla(120, 100%, 50%, 0.4);\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>hsla(0, \n  100%, 50%, 0.4)<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>h1<span class=\"attributecolor\" style=\"color:green\"> style<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"background-color:hsla(120, 100%, 50%, 0.6);\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>hsla(0, \n  100%, 50%, 0.6)<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>h1<span class=\"attributecolor\" style=\"color:green\"> style<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"background-color:hsla(120, 100%, 50%, 0.8);\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>hsla(0, \n  100%, 50%, 0.8)<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/colors_hsl.asp"
+      }
+    },
+    {
+      "title": "Colors HWB",
+      "code": [
+        {
+          "text": "<div data-w3-color=\"hwb(60, 50%, 0)\">\n\n<p>London is the capital city of England.\nIt is the most populous city in the United Kingdom,\nwith a metropolitan area of over 13 million inhabitants.</p>\n\n</div>\n\n<script src=\"/lib/w3color.js\"></script>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> \n data-w3-color<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"hwb(60, 50%, 0)\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>London is the capital city of England.<br/>\nIt is the most populous city in the United Kingdom,<br/>\nwith a metropolitan area of over 13 million inhabitants.<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>script<span class=\"attributecolor\" style=\"color:green\"> src<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"/lib/w3color.js\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"jscolor\" style=\"color:black\"/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/script<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/colors_hwb.asp"
+      }
+    },
+    {
+      "title": "Colors CMYK",
+      "code": [
+        {
+          "text": "<div data-w3-color=\"cmyk(100%, 0%, 0%, 0%)\">\n\n<p>London is the capital city of England.\nIt is the most populous city in the United Kingdom,\nwith a metropolitan area of over 13 million inhabitants.</p>\n\n</div>\n\n<script src=\"/lib/w3color.js\"></script>",
+          "html": "<div class=\"htmlHigh\">\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> data-w3-color<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"cmyk(100%, 0%, 0%, 0%)\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>London is the capital city of England.<br/>It is the most populous city in the United Kingdom,<br/>with a metropolitan area of over 13 million inhabitants.<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>\n<br/><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>script<span class=\"attributecolor\" style=\"color:green\"> src<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"/lib/w3color.js\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"jscolor\" style=\"color:black\"/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/script<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span> </div>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/colors_cmyk.asp"
+      }
+    },
+    {
+      "title": "Colors NCol",
+      "code": [
+        {
+          "text": "<div data-w3-color=\"R50,50%,0\">\n\n<p>London is the capital city of England.\nIt is the most populous city in the United Kingdom,\nwith a metropolitan area of over 13 million inhabitants.</p>\n\n</div>\n\n<script src=\"/lib/w3color.js\"></script>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> \n data-w3-color<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"R50,50%,0\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>London is the capital city of England.<br/>\nIt is the most populous city in the United Kingdom,<br/>\nwith a metropolitan area of over 13 million inhabitants.<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>\n<br/><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>script<span class=\"attributecolor\" style=\"color:green\"> src<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"/lib/w3color.js\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"jscolor\" style=\"color:black\"/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/script<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/colors_ncol.asp"
+      }
+    },
+    {
+      "title": "Color Gradient",
+      "code": [
+        {
+          "text": "div {\nbackground: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);\n}",
+          "html": "<div class=\"cssHigh\"><span class=\"cssselectorcolor\" style=\"color:#905\">\ndiv <span class=\"cssdelimitercolor\" style=\"color:#999\">{</span><span class=\"csspropertycolor\" style=\"color:#d73a49\"><br/>    <span id=\"stylepropval\">background<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> <span class=\"csspropertyvaluecolor\">linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%)</span><span style=\"color:black\"><span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span></span></span><br/></span><span class=\"cssdelimitercolor\" style=\"color:#999\">}</span><br/>\n </span></div>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/colors_gradient.asp"
+      }
+    },
+    {
+      "title": "The currentcolor Keyword",
+      "code": [
+        {
+          "text": "#myDIV {\ncolor: blue; /* Blue text color */\nborder: 10px solid currentcolor; /* Blue border color */\n}",
+          "html": "<span class=\"cssselectorcolor\" style=\"color:#905\">\n  #myDIV <span class=\"cssdelimitercolor\" style=\"color:#999\">{</span><span class=\"csspropertycolor\" style=\"color:#d73a49\"><br/>  color<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> blue<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span> <span class=\"commentcolor\" style=\"color:slategray\">/* Blue text color */</span><br/>  border<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> 10px solid currentcolor<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span> \n  <span class=\"commentcolor\" style=\"color:slategray\">/* Blue border color */</span><br/>\n  </span><span class=\"cssdelimitercolor\" style=\"color:#999\">}</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/colors_currentcolor.asp"
+      }
+    },
+    {
+      "title": "Windows Metro UI Colors",
+      "code": [
+        {
+          "text": "<div class=\"w3-metro-light-green\">\n<p>London is the most populous city in the United Kingdom,\nwith a metropolitan area of over 9 million inhabitants.</p>\n</div>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"w3-metro-light-green\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>London is the most populous city in the United Kingdom,<br/>\n  with a metropolitan area of over 9 million inhabitants.<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/colors_metro.asp"
+      }
+    },
+    {
+      "title": "Windows 8 Colors",
+      "code": [
+        {
+          "text": "<div class=\"w3-win8-lime\">\n<p>London is the most populous city in the United Kingdom,\nwith a metropolitan area of over 9 million inhabitants.</p>\n</div>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"w3-win8-lime\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>London is the most populous city in the United Kingdom,<br/>\n  with a metropolitan area of over 9 million inhabitants.<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/colors_win8.asp"
+      }
+    },
+    {
+      "title": "W3.CSS Flat UI Colors",
+      "code": [
+        {
+          "text": "<div class=\"w3-flat-emerald\">\n<p>London is the most populous city in the United Kingdom,\nwith a metropolitan area of over 9 million inhabitants.</p>\n</div>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"w3-flat-emerald\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>London is the most populous city in the United Kingdom,<br/>\n  with a metropolitan area of over 9 million inhabitants.<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/colors_flatui.asp"
+      }
+    },
+    {
+      "title": "Colors - FS 595",
+      "code": [
+        {
+          "text": "<span style=\"color:#fff;background-color:#ee9600\">Schoolbus</span>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>span<span class=\"attributecolor\" style=\"color:green\"> style<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"color:#fff;background-color:#ee9600\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Schoolbus<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/span<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<span class=\"w3-highway-schoolbus\">Schoolbus</span>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>span<span class=\"attributecolor\" style=\"color:green\"> \n class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"w3-highway-schoolbus\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Schoolbus<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/span<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<span style=\"color:#fff;background-color:#bd1e24\">DANGER !</span>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>span<span class=\"attributecolor\" style=\"color:green\"> style<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"color:#fff;background-color:#bd1e24\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>DANGER !<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/span<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<span class=\"w3-safety-red\">DANGER !</span>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>span<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"w3-safety-red\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>DANGER \n !<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/span<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<div style=\"color:#fff;background-color:#9495a5\">Camouflaged Ship</div>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> style<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"color:#fff;background-color:#9495a5\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Camouflaged Ship<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<div class=\"w3-camo-gray\">Camouflaged Ship</div>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"w3-camo-gray\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Camouflaged Ship<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<div style=\"color:#fff;background-color:#a0333a\">\n\n<p>ANA Aircraft Red</p>\n\n</div>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> style<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"color:#fff;background-color:#a0333a\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>ANA Aircraft Red<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<div class=\"w3-ana-619\">\n\n<p>ANA Aircraft Red</p>\n\n</div>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> \n class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"w3-ana-619\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>ANA Aircraft Red<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/colors_fs595.asp"
+      }
+    },
+    {
+      "title": "Colors - RAL",
+      "code": [
+        {
+          "text": "<div style=\"color:#fff;background-color:#a02128\">STOP</div>\n\n<div style=\"color:#fff;background-color:#d4652f\">WAIT</div>\n\n<div style=\"color:#fff;background-color:#317f43\">GO</div>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> style<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"color:#fff;background-color:#a02128\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>STOP<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> \n style<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"color:#fff;background-color:#d4652f\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>WAIT<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> \n style<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"color:#fff;background-color:#317f43\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>GO<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/colors_ral.asp"
+      }
+    },
+    {
+      "title": "Colors - NCS",
+      "code": [
+        {
+          "text": "<div data-w3-color=\"ncol(0580-Y10R)\">\n\n<p>London is the capital city of England.\nIt is the most populous city in the United Kingdom,\nwith a metropolitan area of over 13 million inhabitants.</p>\n\n</div>\n\n<script src=\"/lib/w3color.js\"></script>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> \n data-w3-color<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"ncol(0580-Y10R)\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>London is the capital city of England.<br/>\nIt is the most populous city in the United Kingdom,<br/>\nwith a metropolitan area of over 13 million inhabitants.<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>\n<br/><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>script<span class=\"attributecolor\" style=\"color:green\"> src<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"/lib/w3color.js\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"jscolor\" style=\"color:black\"/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/script<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/colors_ncs.asp"
+      }
+    }
+  ]
+}

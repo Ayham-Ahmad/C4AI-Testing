@@ -1,0 +1,1201 @@
+{
+  "language": "R",
+  "tutorials": [
+    {
+      "title": "R Tutorial",
+      "code": [
+        {
+          "text": "\"Hello World!\"\n5 + 5",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Hello World!\"</span><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">5</span> + <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span> </span>"
+        },
+        {
+          "text": "plot(1:10)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plot(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/default.asp"
+      }
+    },
+    {
+      "title": "R Get Started",
+      "code": [
+        {
+          "text": "5 + 5",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span> + <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_get_started.asp"
+      }
+    },
+    {
+      "title": "R Syntax",
+      "code": [
+        {
+          "text": "\"Hello World!\"",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Hello World!\"</span> </span>"
+        },
+        {
+          "text": "5\n10\n25",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">10</span><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">25</span> </span>"
+        },
+        {
+          "text": "5 + 5",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span> + <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_syntax.asp"
+      }
+    },
+    {
+      "title": "R Print Output",
+      "code": [
+        {
+          "text": "\"Hello World!\"",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Hello World!\"</span> </span>"
+        },
+        {
+          "text": "print(\"Hello World!\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"Hello World!\"</span>) </span>"
+        },
+        {
+          "text": "for (x in 1:10) {\nprint(x)\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span> (x <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(x)<br/>} </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_print.asp"
+      }
+    },
+    {
+      "title": "R Comments",
+      "code": [
+        {
+          "text": "# This is a comment\n\"Hello World!\"",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># This is a comment<br/></span><span class=\"pythonstringcolor\" style=\"color:green\">\"Hello World!\"</span> </span>"
+        },
+        {
+          "text": "# \"Good morning!\"\n\"Good night!\"",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># \"Good morning!\"<br/></span><span class=\"pythonstringcolor\" style=\"color:green\">\"Good night!\"</span> </span>"
+        },
+        {
+          "text": "# This is a comment\n# written in\n# more than just one line\n\"Hello World!\"",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># This is a comment<br/></span><span class=\"commentcolor\" style=\"color:slategray\"># written in<br/></span><span class=\"commentcolor\" style=\"color:slategray\"># more than just one line<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Hello World!\"</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_comments.asp"
+      }
+    },
+    {
+      "title": "R Variables",
+      "code": [
+        {
+          "text": "name <- \"John\"\nage <- 40\n\nname   # output \"John\"\nage    # output 40",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  name &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"John\"</span><br/>age &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">40</span><br/><br/>name   <span class=\"commentcolor\" style=\"color:slategray\"># output \"John\"<br/></span>age    <span class=\"commentcolor\" style=\"color:slategray\"># output 40 </span></span>"
+        },
+        {
+          "text": "name <- \"John Doe\"\n\nname # auto-print the value of the name variable",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  name &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"John Doe\"</span><br/><br/>name <span class=\"commentcolor\" style=\"color:slategray\"># auto-print the value of the name variable </span></span>"
+        },
+        {
+          "text": "name <- \"John Doe\"\n\nprint(name) # print the value of the name variable",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  name &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"John Doe\"</span><br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(name) <span class=\"commentcolor\" style=\"color:slategray\"># print the value of the name variable </span></span>"
+        },
+        {
+          "text": "for (x in 1:10) {\nprint(x)\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span> (x <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(x)<br/>} </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_variables.asp"
+      }
+    },
+    {
+      "title": "R Concatenate Elements",
+      "code": [
+        {
+          "text": "text <- \"awesome\"\n\npaste(\"R is\", text)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  text &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"awesome\"</span><br/><br/>paste(<span class=\"pythonstringcolor\" style=\"color:green\">\"R is\"</span>, text) </span>"
+        },
+        {
+          "text": "text1 <- \"R is\"\ntext2 <- \"awesome\"\n\npaste(text1, text2)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  text1 &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"R is\"</span><br/>text2 &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"awesome\"</span><br/><br/>paste(text1, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  text2) </span>"
+        },
+        {
+          "text": "num1 <- 5\nnum2 <- 10\n\nnum1 + num2",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  num1 &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span><br/>num2 &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">10</span><br/><br/>num1 + num2 </span>"
+        },
+        {
+          "text": "num <- 5\ntext <- \"Some text\"\n\nnum + text",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  num &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span><br/>text &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"Some text\"</span><br/><br/>num + text </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_variables_concat.asp"
+      }
+    },
+    {
+      "title": "R Multiple Variables",
+      "code": [
+        {
+          "text": "# Assign the same value to multiple variables in one line\nvar1 <- var2 <- var3 <- \"Orange\"\n\n# Print variable values\nvar1\nvar2\nvar3",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Assign the same value to multiple variables in one line<br/></span>var1 &lt;- var2 &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  var3 &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"Orange\"</span><br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Print variable values<br/></span>var1<br/>var2<br/>var3 </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_variables_multiple.asp"
+      }
+    },
+    {
+      "title": "R Variable Names (Identifiers)",
+      "code": [
+        {
+          "text": "# Legal variable names:\nmyvar <- \"John\"\nmy_var <- \"John\"\nmyVar <- \"John\"\nMYVAR <- \"John\"\nmyvar2 <- \"John\"\n.myvar <- \"John\"\n\n# Illegal variable names:\n2myvar <- \"John\"\nmy-var <- \"John\"\nmy var <- \"John\"\n_my_var <- \"John\"\nmy_v@ar <- \"John\"\nTRUE <- \"John\"",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Legal variable names:<br/></span>myvar &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"John\"</span><br/>my_var &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"John\"</span><br/>myVar <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"John\"</span><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  MYVAR &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"John\"</span><br/>myvar2 &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"John\"</span><br/>.myvar &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"John\"</span><br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Illegal variable names:<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  2myvar &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"John\"</span><br/>my-var &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"John\"</span><br/>my var &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"John\"</span><br/>_my_var &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"John\"</span><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  my_v@ar &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"John\"</span><br/>TRUE &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"John\"</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_variables_name.asp"
+      }
+    },
+    {
+      "title": "R Data Types",
+      "code": [
+        {
+          "text": "my_var <- 30 # my_var is type of numeric\nmy_var <- \"Sally\" # my_var is now of type character (aka string)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  my_var &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">30</span> <span class=\"commentcolor\" style=\"color:slategray\"># my_var is type of <strong>numeric</strong><br/></span>my_var &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"Sally\"</span> <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># my_var is now of type <strong>character</strong> (aka string) </span></span>"
+        },
+        {
+          "text": "# numeric\nx <- 10.5\nclass(x)\n\n# integer\nx <- 1000L\nclass(x)\n\n# complex\nx <- 9i + 3\nclass(x)\n\n# character/string\nx <- \"R is exciting\"\nclass(x)\n\n# logical/boolean\nx <- TRUE\nclass(x)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># numeric<br/></span>x &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">10.5</span><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">class</span>(x)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># integer<br/></span>x &lt;- 1000L<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">class</span>(x)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># \n  complex<br/></span>x &lt;- 9i + <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">class</span>(x)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"commentcolor\" style=\"color:slategray\"># character/string<br/></span>x &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"R is exciting\"</span><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">class</span>(x)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"commentcolor\" style=\"color:slategray\"># logical/boolean<br/></span>x &lt;- TRUE<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">class</span>(x) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_data_types.asp"
+      }
+    },
+    {
+      "title": "R Numbers",
+      "code": [
+        {
+          "text": "x <- 10.5   # numeric\ny <- 10L    # integer\nz <- 1i     # complex",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  x &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">10.5</span>   <span class=\"commentcolor\" style=\"color:slategray\"># \n  numeric<br/></span>y &lt;- 10L    <span class=\"commentcolor\" style=\"color:slategray\"># integer<br/></span>z &lt;- 1i     <span class=\"commentcolor\" style=\"color:slategray\"># complex </span></span>"
+        },
+        {
+          "text": "x <- 10.5\ny <- 55\n\n# Print values of x and y\nx\ny\n\n# Print the class name of x and y\nclass(x)\nclass(y)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  x &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">10.5</span><br/>y &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">55</span><br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Print values of x and y<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  x<br/>y<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># \n  Print the class name of x and y<br/></span><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">class</span>(x)<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">class</span>(y) </span>"
+        },
+        {
+          "text": "x <- 1000L\ny <- 55L\n\n# Print values of x and y\nx\ny\n\n# Print the class name of x and y\nclass(x)\nclass(y)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  x &lt;- 1000L<br/>y &lt;- 55L<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Print values of x and y<br/></span>x<br/>y<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Print the class name of x and y<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">class</span>(x)<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">class</span>(y) </span>"
+        },
+        {
+          "text": "x <- 1L # integer\ny <- 2 # numeric\n\n# convert from integer to numeric:\na <- as.numeric(x)\n\n# convert from numeric to integer:\nb <- as.integer(y)\n\n# print values of x and y\nx\ny\n\n# print the class name of a and b\nclass(a)\nclass(b)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  x &lt;- 1L <span class=\"commentcolor\" style=\"color:slategray\"># integer<br/></span>y &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span> <span class=\"commentcolor\" style=\"color:slategray\"># numeric<br/></span><br/><span class=\"commentcolor\" style=\"color:slategray\"># convert from integer to \n  numeric:<br/></span>a &lt;- <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span>.numeric(x)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># convert from numeric to integer:<br/></span>b <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  &lt;- <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span>.integer(y)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># print values of x and y<br/></span>x<br/>y<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># print \n  the class name of a and b<br/></span><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">class</span>(a)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">class</span>(b) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_numbers.asp"
+      }
+    },
+    {
+      "title": "R Math",
+      "code": [
+        {
+          "text": "10 + 5",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">10</span> + <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span> </span>"
+        },
+        {
+          "text": "max(5, 10, 15)\n\nmin(5, 10, 15)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">max</span>(<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">15</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">min</span>(<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">15</span>) </span>"
+        },
+        {
+          "text": "sqrt(16)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  sqrt(<span class=\"pythonnumbercolor\" style=\"color:#905\">16</span>) </span>"
+        },
+        {
+          "text": "abs(-4.7)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">abs</span>(-<span class=\"pythonnumbercolor\" style=\"color:#905\">4.7</span>) </span>"
+        },
+        {
+          "text": "ceiling(1.4)\n\nfloor(1.4)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  ceiling(<span class=\"pythonnumbercolor\" style=\"color:#905\">1.4</span>)<br/><br/>floor(<span class=\"pythonnumbercolor\" style=\"color:#905\">1.4</span>) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_math.asp"
+      }
+    },
+    {
+      "title": "R Strings",
+      "code": [
+        {
+          "text": "\"hello\"\n'hello'",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"hello\"</span><br/><span class=\"pythonstringcolor\" style=\"color:green\">'hello'</span> </span>"
+        },
+        {
+          "text": "str <- \"Hello\"\nstr # print the value of str",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span> &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"Hello\"</span><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span> <span class=\"commentcolor\" style=\"color:slategray\"># print the value of str </span></span>"
+        },
+        {
+          "text": "str <- \"Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\"\n\nstr # print the value of str",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span> &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit,<br/>sed do \n  eiusmod tempor incididunt<br/>ut labore et dolore magna aliqua.\"</span><br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span> <span class=\"commentcolor\" style=\"color:slategray\"># print the value of str </span></span>"
+        },
+        {
+          "text": "str <- \"Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\"\n\ncat(str)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span> &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit,<br/>sed do \n  eiusmod tempor incididunt<br/>ut labore et dolore magna aliqua.\"</span><br/><br/>cat(<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span>) </span>"
+        },
+        {
+          "text": "str <- \"Hello World!\"\n\nnchar(str)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span> &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"Hello World!\"</span><br/><br/>nchar(<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span>) </span>"
+        },
+        {
+          "text": "str <- \"Hello World!\"\n\ngrepl(\"H\", str)\ngrepl(\"Hello\", str)\ngrepl(\"X\", str)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span> &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"Hello World!\"</span><br/><br/>grepl(<span class=\"pythonstringcolor\" style=\"color:green\">\"H\"</span>, <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span>)<br/>grepl(<span class=\"pythonstringcolor\" style=\"color:green\">\"Hello\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span>)<br/>grepl(<span class=\"pythonstringcolor\" style=\"color:green\">\"X\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span>) </span>"
+        },
+        {
+          "text": "str1 <- \"Hello\"\nstr2 <- \"World\"\n\npaste(str1, str2)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  str1 &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"Hello\"</span><br/>str2 &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"World\"</span><br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  paste(str1, str2) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_strings.asp"
+      }
+    },
+    {
+      "title": "R Escape Characters",
+      "code": [
+        {
+          "text": "str <- \"We are the so-called \"Vikings\", from the north.\"\n\nstr",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span> &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"We are the so-called \"</span>Vikings<span class=\"pythonstringcolor\" style=\"color:green\">\", from the north.\"</span><br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span> </span>"
+        },
+        {
+          "text": "str <- \"We are the so-called \\\"Vikings\\\", from the north.\"\n\nstr\ncat(str)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span> &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"We are the so-called \\\"</span>Vikings\\<span class=\"pythonstringcolor\" style=\"color:green\">\", from the north.\"</span><br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  cat(<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">str</span>) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_strings_esc.asp"
+      }
+    },
+    {
+      "title": "R Booleans / Logical Values",
+      "code": [
+        {
+          "text": "10 > 9    # TRUE because 10 is greater than 9\n10 == 9   # FALSE because 10 is not equal to 9\n10 < 9    # FALSE because 10 is greater than 9",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">10</span> &gt; <span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>    <span class=\"commentcolor\" style=\"color:slategray\"># TRUE because 10 is greater than 9<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">10</span> == <span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>   <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># FALSE because 10 is not equal to 9<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">10</span> &lt; <span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>    <span class=\"commentcolor\" style=\"color:slategray\"># FALSE \n  because 10 is greater than 9 </span></span>"
+        },
+        {
+          "text": "a <- 10\nb <- 9\n\na > b",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  a &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">10</span><br/>b &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">9</span><br/><br/>a &gt; b </span>"
+        },
+        {
+          "text": "a <- 200\nb <- 33\n\nif (b > a) {\nprint (\"b is greater than a\")\n} else {\nprint(\"b is not greater than a\")\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  a &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">200</span><br/>b &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">33</span><br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (b &gt; a) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span> (<span class=\"pythonstringcolor\" style=\"color:green\">\"b is greater than \n  a\"</span>)<br/>} <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">else</span> {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"b is not greater than a\"</span>)<br/>} </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_booleans.asp"
+      }
+    },
+    {
+      "title": "R Operators",
+      "code": [
+        {
+          "text": "10 + 5",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">10</span> + <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span> </span>"
+        },
+        {
+          "text": "my_var <- 3\n\nmy_var <<- 3\n\n3 -> my_var\n\n3 ->> my_var\n\nmy_var # print my_var",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  my_var &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span><br/><br/>my_var &lt;&lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span><br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">3</span> -&gt; my_var<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">3</span> -&gt;&gt; <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  my_var<br/><br/>my_var <span class=\"commentcolor\" style=\"color:slategray\"># print my_var </span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_operators.asp"
+      }
+    },
+    {
+      "title": "R If ... Else",
+      "code": [
+        {
+          "text": "a <- 33\nb <- 200\n\nif (b > a) {\nprint(\"b is greater than a\")\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  a &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">33</span><br/>b &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">200</span><br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (b &gt; a) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"b is greater than a\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  } </span>"
+        },
+        {
+          "text": "a <- 33\nb <- 33\n\nif (b > a) {\nprint(\"b is greater than a\")\n} else if (a == b) {\nprint (\"a and b are equal\")\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  a &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">33</span><br/>b &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">33</span><br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (b &gt; a) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"b is greater than a\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  } <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">else</span> <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (a == b) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span> (<span class=\"pythonstringcolor\" style=\"color:green\">\"a and b are equal\"</span>)<br/>} </span>"
+        },
+        {
+          "text": "a <- 200\nb <- 33\n\nif (b > a) {\nprint(\"b is greater than a\")\n} else if (a == b) {\nprint(\"a and b are equal\")\n} else {\nprint(\"a is greater than b\")\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  a &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">200</span><br/>b &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">33</span><br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (b &gt; a) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"b is greater than a\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  } <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">else</span> <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (a == b) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"a and b are equal\"</span>)<br/>} <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">else</span> {<br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"a is greater than b\"</span>)<br/>} </span>"
+        },
+        {
+          "text": "a <- 200\nb <- 33\n\nif (b > a) {\nprint(\"b is greater than a\")\n} else {\nprint(\"b is not greater than a\")\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  a &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">200</span><br/>b &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">33</span><br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (b &gt; a) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"b is greater than a\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  } <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">else</span> {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"b is not greater than a\"</span>)<br/>} </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_if_else.asp"
+      }
+    },
+    {
+      "title": "R Nested If",
+      "code": [
+        {
+          "text": "x <- 41\n\nif (x > 10) {\nprint(\"Above ten\")\nif (x > 20) {\nprint(\"and also above 20!\")\n} else {\nprint(\"but not above 20.\")\n}\n} else {\nprint(\"below 10.\")\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  x &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">41</span><br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (x &gt; <span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"Above ten\"</span>)<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (x &gt; <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">20</span>) {<br/>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"and also above 20!\"</span>)<br/>  } <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">else</span> {<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"but not above 20.\"</span>)<br/>  }<br/>} <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">else</span> {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"below \n  10.\"</span>)<br/>} </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_if_else_nested.asp"
+      }
+    },
+    {
+      "title": "R - AND OR Operators",
+      "code": [
+        {
+          "text": "a <- 200\nb <- 33\nc <- 500\n\nif (a > b & c > a) {\nprint(\"Both conditions are true\")\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  a &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">200</span><br/>b &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">33</span><br/>c &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">500</span><br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (a &gt; b &amp; c &gt; a) {<br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"Both conditions are true\"</span>)<br/>} </span>"
+        },
+        {
+          "text": "a <- 200\nb <- 33\nc <- 500\n\nif (a > b | a > c) {\nprint(\"At least one of the conditions is true\")\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  a &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">200</span><br/>b &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">33</span><br/>c &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">500</span><br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (a &gt; b | a &gt; c) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"At \n  least one of the conditions is true\"</span>)<br/>} </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_if_else_andor.asp"
+      }
+    },
+    {
+      "title": "R While Loop",
+      "code": [
+        {
+          "text": "i <- 1\nwhile (i < 6) {\nprint(i)\ni <- i + 1\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  i &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">while</span> (i &lt; <span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(i)<br/>  i &lt;- i + <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span><br/>} </span>"
+        },
+        {
+          "text": "i <- 1\nwhile (i < 6) {\nprint(i)\ni <- i + 1\nif (i == 4) {\nbreak\n}\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  i &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">while</span> (i &lt; <span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(i)<br/>  i &lt;- i + <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span><br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  (i == <span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>) {<br/>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">break</span><br/>  }<br/>} </span>"
+        },
+        {
+          "text": "i <- 0\nwhile (i < 6) {\ni <- i + 1\nif (i == 3) {\nnext\n}\nprint(i)\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  i &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">0</span><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">while</span> (i &lt; <span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>) {<br/>  i &lt;- i + <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span><br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (i == <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>) {<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">next</span><br/>  }<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(i)<br/>} </span>"
+        },
+        {
+          "text": "dice <- 1\nwhile (dice <= 6) {\nif (dice < 6) {\nprint(\"No Yahtzee\")\n} else {\nprint(\"Yahtzee!\")\n}\ndice <- dice + 1\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  dice &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">while</span> (dice &lt;= <span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (dice &lt; <span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>) {<br/>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"No \n  Yahtzee\"</span>)<br/>  } <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">else</span> {<br/>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"Yahtzee!\"</span>)<br/>  }<br/>  dice &lt;- dice <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  + <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span><br/>} </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_while_loop.asp"
+      }
+    },
+    {
+      "title": "R For Loop",
+      "code": [
+        {
+          "text": "for (x in 1:10) {\nprint(x)\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span> (x <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(x)<br/>} </span>"
+        },
+        {
+          "text": "fruits <- list(\"apple\", \"banana\", \"cherry\")\n\nfor (x in fruits) {\nprint(x)\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  fruits &lt;- <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">list</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span> (x <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> fruits) {<br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(x)<br/>} </span>"
+        },
+        {
+          "text": "dice <- c(1, 2, 3, 4, 5, 6)\n\nfor (x in dice) {\nprint(x)\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  dice &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span> (x <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> dice) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(x)<br/>} </span>"
+        },
+        {
+          "text": "fruits <- list(\"apple\", \"banana\", \"cherry\")\n\nfor (x in fruits) {\nif (x == \"cherry\") {\nbreak\n}\nprint(x)\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  fruits &lt;- <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">list</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span> (x <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> fruits) {<br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (x == <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>) {<br/>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">break</span><br/>  }<br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(x)<br/>} </span>"
+        },
+        {
+          "text": "fruits <- list(\"apple\", \"banana\", \"cherry\")\n\nfor (x in fruits) {\nif (x == \"banana\") {\nnext\n}\nprint(x)\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  fruits &lt;- <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">list</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span> (x <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> fruits) {<br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (x == <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>) {<br/>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">next</span><br/>  }<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(x)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  } </span>"
+        },
+        {
+          "text": "dice <- 1:6\n\nfor(x in dice) {\nif (x == 6) {\nprint(paste(\"The dice number is\", x, \"Yahtzee!\"))\n} else {\nprint(paste(\"The dice number is\", x, \"Not Yahtzee\"))\n}\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  dice &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">6</span><br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span>(x <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> dice) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (x == <span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>) {<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(paste(<span class=\"pythonstringcolor\" style=\"color:green\">\"The dice number is\"</span>, x, <span class=\"pythonstringcolor\" style=\"color:green\">\"Yahtzee!\"</span>))<br/>  } <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">else</span> {<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(paste(<span class=\"pythonstringcolor\" style=\"color:green\">\"The dice number is\"</span>, x, <span class=\"pythonstringcolor\" style=\"color:green\">\"Not Yahtzee\"</span>))<br/>  }<br/>} </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_for_loop.asp"
+      }
+    },
+    {
+      "title": "R Nested Loops",
+      "code": [
+        {
+          "text": "adj <- list(\"red\", \"big\", \"tasty\")\n\nfruits <- list(\"apple\", \"banana\", \"cherry\")\nfor (x in adj) {\nfor (y in fruits) {\nprint(paste(x, y))\n}\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  adj &lt;- <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">list</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"red\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"big\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"tasty\"</span>)<br/><br/>fruits &lt;- <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">list</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>)<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span> (x <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> adj) {<br/>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span> (y <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> fruits) {<br/>      <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(paste(x, y))<br/>  }<br/>} </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_for_loop_nested.asp"
+      }
+    },
+    {
+      "title": "R Functions",
+      "code": [
+        {
+          "text": "my_function <- function() { # create a function with the name my_function\nprint(\"Hello World!\")\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  my_function &lt;- function() { <span class=\"commentcolor\" style=\"color:slategray\"># create a function with the name my_function<br/></span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"Hello World!\"</span>)<br/>} </span>"
+        },
+        {
+          "text": "my_function <- function() {\nprint(\"Hello World!\")\n}\n\nmy_function() # call the function named my_function",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  my_function &lt;- function() {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"Hello World!\"</span>)<br/>}<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <strong>my_function() </strong><span class=\"commentcolor\" style=\"color:slategray\"># call the function named my_function </span></span>"
+        },
+        {
+          "text": "my_function <- function(fname) {\npaste(fname, \"Griffin\")\n}\n\nmy_function(\"Peter\")\nmy_function(\"Lois\")\nmy_function(\"Stewie\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  my_function &lt;- function(fname) {<br/>  paste(fname, <span class=\"pythonstringcolor\" style=\"color:green\">\"Griffin\"</span>)<br/>}<br/><br/>my_function(<span class=\"pythonstringcolor\" style=\"color:green\">\"Peter\"</span>)<br/>my_function(<span class=\"pythonstringcolor\" style=\"color:green\">\"Lois\"</span>)<br/>my_function(<span class=\"pythonstringcolor\" style=\"color:green\">\"Stewie\"</span>) </span>"
+        },
+        {
+          "text": "my_function <- function(fname, lname) {\npaste(fname, lname)\n}\n\nmy_function(\"Peter\", \"Griffin\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  my_function &lt;- function(fname, lname) {<br/>  paste(fname, lname)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  }<br/><br/>my_function(<span class=\"pythonstringcolor\" style=\"color:green\">\"Peter\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Griffin\"</span>) </span>"
+        },
+        {
+          "text": "my_function <- function(fname, lname) {\npaste(fname, lname)\n}\n\nmy_function(\"Peter\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  my_function &lt;- function(fname, lname) {<br/>  paste(fname, lname)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  }<br/><br/>my_function(<span class=\"pythonstringcolor\" style=\"color:green\">\"Peter\"</span>) </span>"
+        },
+        {
+          "text": "my_function <- function(country = \"Norway\") {\npaste(\"I am from\", country)\n}\n\nmy_function(\"Sweden\")\nmy_function(\"India\")\nmy_function() # will get the default value, which is Norway\nmy_function(\"USA\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  my_function &lt;- function(country = <span class=\"pythonstringcolor\" style=\"color:green\">\"Norway\"</span>) {<br/>  paste(<span class=\"pythonstringcolor\" style=\"color:green\">\"I am \n  from\"</span>, country)<br/>}<br/><br/>my_function(<span class=\"pythonstringcolor\" style=\"color:green\">\"Sweden\"</span>)<br/>my_function(<span class=\"pythonstringcolor\" style=\"color:green\">\"India\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  my_function() <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># will get the default value, which is Norway<br/></span>my_function(<span class=\"pythonstringcolor\" style=\"color:green\">\"USA\"</span>) </span>"
+        },
+        {
+          "text": "my_function <- function(x) {\nreturn (5 * x)\n}\n\nprint(my_function(3))\nprint(my_function(5))\nprint(my_function(9))",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  my_function &lt;- function(x) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">return</span> (<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span> * x)<br/>}<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(my_function(<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>))<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(my_function(<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>))<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(my_function(<span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>)) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_functions.asp"
+      }
+    },
+    {
+      "title": "R Nested Functions",
+      "code": [
+        {
+          "text": "Nested_function <- function(x, y) {\na <- x + y\nreturn(a)\n}\n\nNested_function(Nested_function(2,2), Nested_function(3,3))",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Nested_function &lt;- function(x, y) {<br/>  a &lt;- x + y<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">return</span>(a)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  }<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>Nested_function(Nested_function(<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>), Nested_function(<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>)) </span>"
+        },
+        {
+          "text": "Outer_func <- function(x) {\nInner_func <- function(y) {\na <- x + y\nreturn(a)\n}\nreturn (Inner_func)\n}\noutput <- Outer_func(3) # To call the Outer_func\noutput(5)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Outer_func &lt;- function(x) {<br/>  Inner_func &lt;- function(y) {<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  a &lt;- x + y<br/>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">return</span>(a)<br/>  }<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">return</span> <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  (Inner_func)<br/>}<br/>output &lt;- Outer_func(<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>) <span class=\"commentcolor\" style=\"color:slategray\"># To \n  call the Outer_func<br/></span>output(<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_functions_nested.asp"
+      }
+    },
+    {
+      "title": "R Function Recursion",
+      "code": [
+        {
+          "text": "tri_recursion <- function(k) {\nif (k > 0) {\nresult <- k + tri_recursion(k - 1)\nprint(result)\n} else {\nresult = 0\nreturn(result)\n}\n}\ntri_recursion(6)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  tri_recursion &lt;- function(k) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> (k &gt; <span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>) {<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  result &lt;- k + tri_recursion(k - <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>)<br/>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(result)<br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  } <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">else</span> {<br/>    result = <span class=\"pythonnumbercolor\" style=\"color:#905\">0</span><br/>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">return</span>(result)<br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  }<br/>}<br/>tri_recursion(<span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_functions_recursion.asp"
+      }
+    },
+    {
+      "title": "R Global Variables",
+      "code": [
+        {
+          "text": "txt <- \"awesome\"\nmy_function <- function() {\npaste(\"R is\", txt)\n}\n\nmy_function()",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  txt &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"awesome\"</span><br/>my_function &lt;- function() {<br/>  paste(<span class=\"pythonstringcolor\" style=\"color:green\">\"R is\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  txt)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  }<br/><br/>my_function() </span>"
+        },
+        {
+          "text": "txt <- \"global variable\"\nmy_function <- function() {\ntxt = \"fantastic\"\npaste(\"R is\", txt)\n}\n\nmy_function()\n\ntxt # print txt",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  txt &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"global variable\"</span><br/>my_function &lt;- function() {<br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  txt = <span class=\"pythonstringcolor\" style=\"color:green\">\"fantastic\"</span><br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  paste(<span class=\"pythonstringcolor\" style=\"color:green\">\"R is\"</span>, txt)<br/>}<br/><br/>my_function()<br/><br/>txt <span class=\"commentcolor\" style=\"color:slategray\"># print txt </span></span>"
+        },
+        {
+          "text": "my_function <- function() {\ntxt <<- \"fantastic\"\npaste(\"R is\", txt)\n}\n\nmy_function()\n\nprint(txt)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  my_function &lt;- function() {<br/>txt &lt;&lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"fantastic\"</span><br/>  paste(<span class=\"pythonstringcolor\" style=\"color:green\">\"R is\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  txt)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  }<br/><br/>my_function()<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(txt) </span>"
+        },
+        {
+          "text": "txt <- \"awesome\"\nmy_function <- function() {\ntxt <<- \"fantastic\"\npaste(\"R is\", txt)\n}\n\nmy_function()\n\npaste(\"R is\", txt)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  txt &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"awesome\"</span><br/>my_function &lt;- function() {<br/>  txt &lt;&lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"fantastic\"</span><br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  paste(<span class=\"pythonstringcolor\" style=\"color:green\">\"R is\"</span>, txt)<br/>}<br/><br/>my_function()<br/><br/>paste(<span class=\"pythonstringcolor\" style=\"color:green\">\"R is\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  txt) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_variables_global.asp"
+      }
+    },
+    {
+      "title": "R Data Structures",
+      "code": [
+        {
+          "text": "# Vector of strings\nfruits <- c(\"banana\", \"apple\", \"orange\")\n\n# Print fruits\nfruits",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Vector of strings<br/></span>fruits &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Print \n  fruits<br/></span>fruits </span>"
+        },
+        {
+          "text": "# List of strings\nthislist <- list(\"apple\", \"banana\", 50, 100)\n\n# Print the list\nthislist",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># List of strings<br/></span>thislist &lt;- list(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">50</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># \n  Print the list<br/></span>thislist </span>"
+        },
+        {
+          "text": "# Create a matrix\nthismatrix <- matrix(c(1,2,3,4,5,6), nrow = 3, ncol = 2)\n\n# Print the matrix\nthismatrix",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Create a matrix<br/></span>thismatrix &lt;- matrix(c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>), nrow = <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, ncol = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"commentcolor\" style=\"color:slategray\"># Print the matrix<br/></span>thismatrix </span>"
+        },
+        {
+          "text": "# An array with one dimension with values ranging from 1 to 24\nthisarray <- c(1:24)\nthisarray\n\n# An array with more than one dimension\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\nmultiarray",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># An array with one dimension with values ranging from 1 to 24<br/></span>thisarray &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">24</span>)<br/>thisarray<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># An array with more than one dimension<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  multiarray &lt;- array(thisarray, dim = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>))<br/>multiarray </span>"
+        },
+        {
+          "text": "# Create a data frame\nData_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\n# Print the data frame\nData_Frame",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Create a data frame<br/></span>Data_Frame &lt;- data.frame (<br/>  Training = <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Strength\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Stamina\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Other\"</span>),<br/>  Pulse = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">150</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>),<br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Duration = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>)<br/>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Print the data frame<br/></span>Data_Frame </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_data_structures.asp"
+      }
+    },
+    {
+      "title": "R Vectors",
+      "code": [
+        {
+          "text": "# Vector of strings\nfruits <- c(\"banana\", \"apple\", \"orange\")\n\n# Print fruits\nfruits",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Vector of strings<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  fruits &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"commentcolor\" style=\"color:slategray\"># Print fruits<br/></span>fruits </span>"
+        },
+        {
+          "text": "# Vector of numerical values\nnumbers <- c(1, 2, 3)\n\n# Print numbers\nnumbers",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Vector of numerical \n  values <br/></span>numbers &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Print numbers<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  numbers </span>"
+        },
+        {
+          "text": "# Vector with numerical values in a sequence\nnumbers <- 1:10\n\nnumbers",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Vector with numerical values in a sequence<br/></span>numbers &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span><br/><br/>numbers </span>"
+        },
+        {
+          "text": "# Vector with numerical decimals in a sequence\nnumbers1 <- 1.5:6.5\nnumbers1\n\n# Vector with numerical decimals in a sequence where the last element is not used\nnumbers2 <- 1.5:6.3\nnumbers2",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Vector with numerical \n  decimals in a sequence<br/></span>numbers1 &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">1.5</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">6.5</span><br/>numbers1<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Vector with numerical \n  decimals in a sequence where the last element is not used<br/></span>numbers2 &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">1.5</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">6.3</span><br/>numbers2 </span>"
+        },
+        {
+          "text": "# Vector of logical values\nlog_values <- c(TRUE, FALSE, TRUE, FALSE)\n\nlog_values",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Vector of logical values<br/></span>log_values &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  c(TRUE, FALSE, TRUE, FALSE)<br/><br/>log_values<br/> </span>"
+        },
+        {
+          "text": "fruits <- c(\"banana\", \"apple\", \"orange\")\n\nlength(fruits)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  fruits &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>)<br/><br/>length(fruits) </span>"
+        },
+        {
+          "text": "fruits <- c(\"banana\", \"apple\", \"orange\", \"mango\", \"lemon\")\nnumbers <- c(13, 3, 5, 7, 20, 2)\n\nsort(fruits)  # Sort a string\nsort(numbers) # Sort numbers",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>    fruits &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"mango\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"lemon\"</span>)<br/>numbers &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">13</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">20</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)<br/><br/>sort(fruits) <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Sort a string<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  sort(numbers) <span class=\"commentcolor\" style=\"color:slategray\"># Sort numbers </span></span>"
+        },
+        {
+          "text": "fruits <- c(\"banana\", \"apple\", \"orange\")\n\n# Access the first item (banana)\nfruits[1]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  fruits &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"commentcolor\" style=\"color:slategray\"># Access the first item (banana)<br/></span>fruits[<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>] </span>"
+        },
+        {
+          "text": "fruits <- c(\"banana\", \"apple\", \"orange\", \"mango\", \"lemon\")\n\n# Access the first and third item (banana and orange)\nfruits[c(1, 3)]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  fruits &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"mango\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"lemon\"</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Access the first and third item \n  (banana and orange)<br/></span>fruits[c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>)] </span>"
+        },
+        {
+          "text": "fruits <- c(\"banana\", \"apple\", \"orange\", \"mango\", \"lemon\")\n\n# Access all items except for the first item\nfruits[c(-1)]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  fruits &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"mango\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"lemon\"</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Access all \n  items except for the first item<br/></span>fruits[c(-<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>)] </span>"
+        },
+        {
+          "text": "fruits <- c(\"banana\", \"apple\", \"orange\", \"mango\", \"lemon\")\n\n# Change \"banana\" to \"pear\"\nfruits[1] <- \"pear\"\n\n# Print fruits\nfruits",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  fruits &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"mango\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"lemon\"</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Change \n  \"banana\" to \"pear\"<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  fruits[<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>] &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"pear\"</span><br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Print fruits<br/></span>fruits  </span>"
+        },
+        {
+          "text": "repeat_each <- rep(c(1,2,3), each = 3)\n\nrepeat_each",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  repeat_each &lt;- rep(c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>), each = <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>)<br/><br/>repeat_each </span>"
+        },
+        {
+          "text": "repeat_times <- rep(c(1,2,3), times = 3)\n\nrepeat_times",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  repeat_times &lt;- rep(c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>), times = <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>)<br/><br/>repeat_times </span>"
+        },
+        {
+          "text": "repeat_indepent <- rep(c(1,2,3), times = c(5,2,1))\n\nrepeat_indepent",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  repeat_indepent &lt;- rep(c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>), times = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>))<br/><br/>repeat_indepent </span>"
+        },
+        {
+          "text": "numbers <- 1:10\n\nnumbers",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  numbers &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span><br/><br/>numbers </span>"
+        },
+        {
+          "text": "numbers <- seq(from = 0, to = 100, by = 20)\n\nnumbers",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  numbers &lt;- seq(<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">from</span> = <span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, to = <span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>, by = <span class=\"pythonnumbercolor\" style=\"color:#905\">20</span>)<br/><br/>numbers </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_vectors.asp"
+      }
+    },
+    {
+      "title": "R Lists",
+      "code": [
+        {
+          "text": "# List of strings\nthislist <- list(\"apple\", \"banana\", \"cherry\")\n\n# Print the list\nthislist",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># List of strings<br/></span>thislist &lt;- list(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"commentcolor\" style=\"color:slategray\"># Print the list<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thislist </span>"
+        },
+        {
+          "text": "thislist <- list(\"apple\", \"banana\", \"cherry\")\n\nthislist[1]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thislist &lt;- list(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>)<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thislist[<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>] </span>"
+        },
+        {
+          "text": "thislist <- list(\"apple\", \"banana\", \"cherry\")\nthislist[1] <- \"blackcurrant\"\n\n# Print the updated list\nthislist",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thislist &lt;- list(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>)<br/>thislist[<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>] &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"blackcurrant\"</span><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"commentcolor\" style=\"color:slategray\"># Print the updated list<br/></span>thislist </span>"
+        },
+        {
+          "text": "thislist <- list(\"apple\", \"banana\", \"cherry\")\n\nlength(thislist)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thislist &lt;- list(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>)<br/><br/>length(thislist) </span>"
+        },
+        {
+          "text": "thislist <- list(\"apple\", \"banana\", \"cherry\")\n\n\"apple\" %in% thislist",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thislist &lt;- list(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>)<br/><br/><span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span> %<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span>% thislist </span>"
+        },
+        {
+          "text": "thislist <- list(\"apple\", \"banana\", \"cherry\")\n\nappend(thislist, \"orange\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thislist &lt;- list(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>)<br/><br/>append(thislist, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>) </span>"
+        },
+        {
+          "text": "thislist <- list(\"apple\", \"banana\", \"cherry\")\n\nappend(thislist, \"orange\", after = 2)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thislist &lt;- list(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>)<br/><br/>append(thislist, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>, after = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>) </span>"
+        },
+        {
+          "text": "thislist <- list(\"apple\", \"banana\", \"cherry\")\n\nnewlist <- thislist[-1]\n\n# Print the new list\nnewlist",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thislist &lt;- list(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>)<br/><br/>newlist &lt;- thislist[-<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>]<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"commentcolor\" style=\"color:slategray\"># Print the new list<br/></span>newlist </span>"
+        },
+        {
+          "text": "thislist <- list(\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\")\n\n(thislist)[2:5]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thislist &lt;- list(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"kiwi\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"melon\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"mango\"</span>)<br/><br/>(thislist)[<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>] </span>"
+        },
+        {
+          "text": "thislist <- list(\"apple\", \"banana\", \"cherry\")\n\nfor (x in thislist) {\nprint(x)\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thislist &lt;- list(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span> (x <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> thislist) {<br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(x)<br/>} </span>"
+        },
+        {
+          "text": "list1 <- list(\"a\", \"b\", \"c\")\nlist2 <- list(1,2,3)\nlist3 <- c(list1,list2)\n\nlist3",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  list1 &lt;- list(<span class=\"pythonstringcolor\" style=\"color:green\">\"a\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"b\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"c\"</span>)<br/>list2 &lt;- list(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>)<br/>list3 &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  c(list1,list2)<br/><br/>list3 </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_lists.asp"
+      }
+    },
+    {
+      "title": "R Matrices",
+      "code": [
+        {
+          "text": "# Create a matrix\nthismatrix <- matrix(c(1,2,3,4,5,6), nrow = 3, ncol = 2)\n\n# Print the matrix\nthismatrix",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Create a matrix<br/></span>thismatrix &lt;- matrix(c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>), nrow = <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, ncol = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Print the \n  matrix<br/></span>thismatrix </span>"
+        },
+        {
+          "text": "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\"), nrow = 2, ncol = 2)\n\nthismatrix",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thismatrix &lt;- matrix(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>), nrow = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, ncol <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)<br/><br/>thismatrix </span>"
+        },
+        {
+          "text": "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\"), nrow = 2, ncol = 2)\n\nthismatrix[1, 2]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thismatrix &lt;- matrix(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>), nrow = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, ncol <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)<br/><br/><strong>thismatrix[<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>]</strong> </span>"
+        },
+        {
+          "text": "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\"), nrow = 2, ncol = 2)\n\nthismatrix[2,]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thismatrix &lt;- matrix(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>), nrow = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, ncol <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)<br/><br/><strong>thismatrix[<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,]</strong> </span>"
+        },
+        {
+          "text": "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\",\"grape\", \"pineapple\", \"pear\", \"melon\", \"fig\"), nrow = 3, ncol = 3)\n\nthismatrix[c(1,2),]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thismatrix &lt;- matrix(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>,<span class=\"pythonstringcolor\" style=\"color:green\">\"grape\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"pineapple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"pear\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"melon\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"fig\"</span>), nrow = <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, ncol = <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>)<br/><br/>thismatrix[c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>),] </span>"
+        },
+        {
+          "text": "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\",\"grape\", \"pineapple\", \"pear\", \"melon\", \"fig\"), nrow = 3, ncol = 3)\n\nthismatrix[, c(1,2)]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thismatrix &lt;- matrix(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>,<span class=\"pythonstringcolor\" style=\"color:green\">\"grape\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"pineapple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"pear\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"melon\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"fig\"</span>), nrow = <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, ncol = <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>)<br/><br/>thismatrix[, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)] </span>"
+        },
+        {
+          "text": "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\",\"grape\", \"pineapple\", \"pear\", \"melon\", \"fig\"), nrow = 3, ncol = 3)\n\nnewmatrix <- cbind(thismatrix, c(\"strawberry\", \"blueberry\", \"raspberry\"))\n\n# Print the new matrix\nnewmatrix",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thismatrix &lt;- matrix(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>,<span class=\"pythonstringcolor\" style=\"color:green\">\"grape\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"pineapple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"pear\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"melon\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"fig\"</span>), nrow = <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, ncol = <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>)<br/><br/>newmatrix &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  cbind(thismatrix, c(<span class=\"pythonstringcolor\" style=\"color:green\">\"strawberry\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"blueberry\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"raspberry\"</span>))<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"commentcolor\" style=\"color:slategray\"># Print the new matrix<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  newmatrix </span>"
+        },
+        {
+          "text": "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\", \"mango\", \"pineapple\"), nrow = 3, ncol =2)\n\n#Remove the first row and the first column\nthismatrix <- thismatrix[-c(1), -c(1)]\n\nthismatrix",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thismatrix &lt;- matrix(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"mango\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"pineapple\"</span>), <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  nrow = <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, ncol =<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\">#Remove the first row and the first column<br/></span>thismatrix &lt;- thismatrix[-c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>), -c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>)]<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thismatrix </span>"
+        },
+        {
+          "text": "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\"), nrow = 2, ncol = 2)\n\n\"apple\" %in% thismatrix",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thismatrix &lt;- matrix(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>), nrow = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, ncol <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)<br/><br/><span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span> %<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span>% thismatrix </span>"
+        },
+        {
+          "text": "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\"), nrow = 2, ncol = 2)\n\ndim(thismatrix)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thismatrix &lt;- matrix(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>), nrow = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, ncol <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)<br/><br/>dim(thismatrix) </span>"
+        },
+        {
+          "text": "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\"), nrow = 2, ncol = 2)\n\nlength(thismatrix)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thismatrix &lt;- matrix(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>), nrow = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, ncol <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)<br/><br/>length(thismatrix) </span>"
+        },
+        {
+          "text": "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\"), nrow = 2, ncol = 2)\n\nfor (rows in 1:nrow(thismatrix)) {\nfor (columns in 1:ncol(thismatrix)) {\nprint(thismatrix[rows, columns])\n}\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thismatrix &lt;- matrix(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>), nrow = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, ncol <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span> (rows <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:nrow(thismatrix)) {<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span> (columns <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:ncol(thismatrix)) {<br/>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(thismatrix[rows, columns])<br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  }<br/>} </span>"
+        },
+        {
+          "text": "# Combine matrices\nMatrix1 <- matrix(c(\"apple\", \"banana\", \"cherry\", \"grape\"), nrow = 2, ncol = 2)\nMatrix2 <- matrix(c(\"orange\", \"mango\", \"pineapple\", \"watermelon\"), nrow = 2, ncol = 2)\n\n# Adding it as a rows\nMatrix_Combined <- rbind(Matrix1, Matrix2)\nMatrix_Combined\n\n# Adding it as a columns\nMatrix_Combined <- cbind(Matrix1, Matrix2)\nMatrix_Combined",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Combine matrices<br/></span>Matrix1 &lt;- matrix(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"apple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"banana\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"cherry\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"grape\"</span>), nrow = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, ncol = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)<br/>Matrix2 &lt;- matrix(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"orange\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"mango\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"pineapple\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"watermelon\"</span>), nrow = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, ncol = <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Adding it as a rows<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Matrix_Combined &lt;- rbind(Matrix1, Matrix2)<br/>Matrix_Combined<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Adding it as a columns<br/></span>Matrix_Combined &lt;- cbind(Matrix1, Matrix2)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Matrix_Combined </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_matrices.asp"
+      }
+    },
+    {
+      "title": "R Arrays",
+      "code": [
+        {
+          "text": "# An array with one dimension with values ranging from 1 to 24\nthisarray <- c(1:24)\nthisarray\n\n# An array with more than one dimension\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\nmultiarray",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># An array with one dimension with values ranging from 1 to 24<br/></span>thisarray &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">24</span>)<br/>thisarray<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># An array with more than one dimension<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  multiarray &lt;- array(thisarray, dim = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>))<br/>multiarray </span>"
+        },
+        {
+          "text": "thisarray <- c(1:24)\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\n\nmultiarray[2, 3, 2]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thisarray &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">24</span>)<br/>multiarray &lt;- array(thisarray, dim = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>))<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  multiarray[<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>] </span>"
+        },
+        {
+          "text": "thisarray <- c(1:24)\n\n# Access all the items from the first row from matrix one\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\nmultiarray[c(1),,1]\n\n# Access all the items from the first column from matrix one\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\nmultiarray[,c(1),1]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thisarray &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">24</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Access all the items from the first row from \n  matrix one<br/></span>multiarray &lt;- array(thisarray, dim = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>))<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  multiarray[c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>),,<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>]<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Access all the items from the first column \n  from matrix one<br/></span>multiarray &lt;- array(thisarray, dim = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>))<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  multiarray[,c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>),<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>] </span>"
+        },
+        {
+          "text": "thisarray <- c(1:24)\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\n\n2 %in% multiarray",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thisarray &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">24</span>)<br/>multiarray &lt;- array(thisarray, dim = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>))<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">2</span> %<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span>% multiarray </span>"
+        },
+        {
+          "text": "thisarray <- c(1:24)\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\n\ndim(multiarray)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thisarray &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">24</span>)<br/>multiarray &lt;- array(thisarray, dim = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>))<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  dim(multiarray) </span>"
+        },
+        {
+          "text": "thisarray <- c(1:24)\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\n\nlength(multiarray)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thisarray &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">24</span>)<br/>multiarray &lt;- array(thisarray, dim = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>))<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  length(multiarray) </span>"
+        },
+        {
+          "text": "thisarray <- c(1:24)\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\n\nfor(x in multiarray){\nprint(x)\n}",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  thisarray &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">24</span>)<br/>multiarray &lt;- array(thisarray, dim = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>))<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span>(x <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> multiarray){<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(x)<br/>} </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_arrays.asp"
+      }
+    },
+    {
+      "title": "R Data Frames",
+      "code": [
+        {
+          "text": "# Create a data frame\nData_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\n# Print the data frame\nData_Frame",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Create a data frame<br/></span>Data_Frame &lt;- data.frame (<br/>  Training = c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Strength\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Stamina\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Other\"</span>),<br/>  Pulse = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">150</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>),<br/>  Duration = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>)<br/>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Print the data frame<br/></span>Data_Frame </span>"
+        },
+        {
+          "text": "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\nData_Frame\n\nsummary(Data_Frame)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Frame &lt;- data.frame (<br/>  Training = c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Strength\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Stamina\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Other\"</span>),<br/>  Pulse = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">150</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>),<br/>  Duration = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>)<br/>)<br/><br/>Data_Frame<br/><br/>summary(Data_Frame) </span>"
+        },
+        {
+          "text": "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\nData_Frame[1]\n\nData_Frame[[\"Training\"]]\n\nData_Frame$Training",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Frame &lt;- data.frame (<br/>  Training = c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Strength\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Stamina\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Other\"</span>),<br/>  Pulse = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">150</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>),<br/>  Duration = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>)<br/>)<br/><br/>Data_Frame[<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>]<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>Data_Frame[[<span class=\"pythonstringcolor\" style=\"color:green\">\"Training\"</span>]]<br/><br/>Data_Frame$Training </span>"
+        },
+        {
+          "text": "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\n# Add a new row\nNew_row_DF <- rbind(Data_Frame, c(\"Strength\", 110, 110))\n\n# Print the new row\nNew_row_DF",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Frame &lt;- data.frame (<br/>  Training = c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Strength\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Stamina\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Other\"</span>),<br/>  Pulse = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">150</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>),<br/>  Duration = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>)<br/>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Add a new row<br/></span>New_row_DF &lt;- rbind(Data_Frame, c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Strength\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">110</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">110</span>))<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Print the new row<br/></span>New_row_DF </span>"
+        },
+        {
+          "text": "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\n# Add a new column\nNew_col_DF <- cbind(Data_Frame, Steps = c(1000, 6000, 2000))\n\n# Print the new column\nNew_col_DF",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Frame &lt;- data.frame (<br/>  Training = c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Strength\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Stamina\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Other\"</span>),<br/>  Pulse = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">150</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>),<br/>  Duration = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>)<br/>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Add a new column<br/></span>New_col_DF &lt;- cbind(Data_Frame, Steps = <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1000</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">6000</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2000</span>))<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Print the new column<br/></span>New_col_DF </span>"
+        },
+        {
+          "text": "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\n# Remove the first row and column\nData_Frame_New <- Data_Frame[-c(1), -c(1)]\n\n# Print the new data frame\nData_Frame_New",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Frame &lt;- data.frame (<br/>  Training = c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Strength\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Stamina\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Other\"</span>),<br/>  Pulse = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">150</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>),<br/>  Duration = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>)<br/>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Remove the first row and column<br/></span>Data_Frame_New &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Frame[-c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>), -c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>)]<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Print the new data frame<br/></span>Data_Frame_New </span>"
+        },
+        {
+          "text": "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\ndim(Data_Frame)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Frame &lt;- data.frame (<br/>  Training = c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Strength\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Stamina\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Other\"</span>),<br/>  Pulse = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">150</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>),<br/>  Duration = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>)<br/>)<br/><br/>dim(Data_Frame) </span>"
+        },
+        {
+          "text": "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\nncol(Data_Frame)\nnrow(Data_Frame)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Frame &lt;- data.frame (<br/>  Training = c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Strength\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Stamina\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Other\"</span>),<br/>  Pulse = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">150</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>),<br/>  Duration = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>)<br/>)<br/><br/>ncol(Data_Frame)<br/>nrow(Data_Frame) </span>"
+        },
+        {
+          "text": "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\nlength(Data_Frame)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Frame &lt;- data.frame (<br/>  Training = c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Strength\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Stamina\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Other\"</span>),<br/>  Pulse = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">150</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>),<br/>  Duration = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>)<br/>)<br/><br/>length(Data_Frame) </span>"
+        },
+        {
+          "text": "Data_Frame1 <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\nData_Frame2 <- data.frame (\nTraining = c(\"Stamina\", \"Stamina\", \"Strength\"),\nPulse = c(140, 150, 160),\nDuration = c(30, 30, 20)\n)\n\nNew_Data_Frame <- rbind(Data_Frame1, Data_Frame2)\nNew_Data_Frame",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Frame1 &lt;- data.frame (<br/>  Training = c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Strength\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Stamina\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Other\"</span>),<br/>  Pulse = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">150</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>),<br/>  Duration = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>)<br/>)<br/><br/>Data_Frame2 &lt;- data.frame (<br/>  Training = c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Stamina\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Stamina\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Strength\"</span>),<br/>  Pulse = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">140</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">150</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">160</span>),<br/>  Duration = <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  c(<span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">20</span>)<br/>)<br/><br/>New_Data_Frame &lt;- rbind(Data_Frame1, Data_Frame2)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  New_Data_Frame </span>"
+        },
+        {
+          "text": "Data_Frame3 <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\nData_Frame4 <- data.frame (\nSteps = c(3000, 6000, 2000),\nCalories = c(300, 400, 300)\n)\n\nNew_Data_Frame1 <- cbind(Data_Frame3, Data_Frame4)\nNew_Data_Frame1",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Frame3 &lt;- data.frame (<br/>  Training = c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Strength\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Stamina\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Other\"</span>),<br/>  Pulse = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">150</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>),<br/>  Duration = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>)<br/>)<br/><br/>Data_Frame4 &lt;- data.frame (<br/>  Steps = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">3000</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">6000</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">2000</span>),<br/>  Calories = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">300</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">400</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">300</span>)<br/>)<br/><br/>New_Data_Frame1 &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  cbind(Data_Frame3, Data_Frame4)<br/>New_Data_Frame1 </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_data_frames.asp"
+      }
+    },
+    {
+      "title": "R Factors",
+      "code": [
+        {
+          "text": "[1] Jazz Rock Classic Classic Pop Jazz Rock Jazz Levels: Classic Jazz Pop Rock",
+          "html": "[1] Jazz    Rock    Classic Classic Pop     Jazz    Rock    Jazz\nLevels: Classic Jazz Pop Rock"
+        },
+        {
+          "text": "[1] \"Classic\" \"Jazz\" \"Pop\" \"Rock\"",
+          "html": "[1] \"Classic\" \"Jazz\"    \"Pop\"     \"Rock\""
+        },
+        {
+          "text": "[1] \"Classic\" \"Jazz\" \"Pop\" \"Rock\" \"Other\"",
+          "html": "[1] \"Classic\" \"Jazz\"    \"Pop\"     \"Rock\"    \"Other\""
+        },
+        {
+          "text": "[1] 8",
+          "html": "[1] 8"
+        },
+        {
+          "text": "[1] Classic Levels: Classic Jazz Pop Rock",
+          "html": "[1] Classic\nLevels: Classic Jazz Pop Rock"
+        },
+        {
+          "text": "[1] Pop Levels: Classic Jazz Pop Rock",
+          "html": "[1] Pop\nLevels: Classic Jazz Pop Rock"
+        },
+        {
+          "text": "Warning message: In `[<-.factor`(`*tmp*`, 3, value = \"Opera\") : invalid factor level, NA generated",
+          "html": "Warning message:\nIn `[&lt;-.factor`(`*tmp*`, 3, value = \"Opera\") :\n  invalid factor level, NA generated"
+        },
+        {
+          "text": "[1] Opera Levels: Classic Jazz Pop Rock Opera",
+          "html": "[1] Opera\nLevels: Classic Jazz Pop Rock Opera"
+        },
+        {
+          "text": "# Create a factor\nmusic_genre <- factor(c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"))\n\n# Print the factor\nmusic_genre",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Create a factor<br/></span>music_genre &lt;- factor(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Pop\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>))<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Print the factor<br/></span>music_genre </span>"
+        },
+        {
+          "text": "music_genre <- factor(c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"))\n\nlevels(music_genre)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  music_genre &lt;- factor(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Pop\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>))<br/><br/>levels(music_genre) </span>"
+        },
+        {
+          "text": "music_genre <- factor(c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"), levels = c(\"Classic\", \"Jazz\", \"Pop\", \"Rock\", \"Other\"))\n\nlevels(music_genre)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  music_genre &lt;- factor(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Pop\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>), levels = c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Pop\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Other\"</span>))<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>levels(music_genre) </span>"
+        },
+        {
+          "text": "music_genre <- factor(c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"))\n\nmusic_genre[3]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  music_genre &lt;- factor(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Pop\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>))<br/><br/>music_genre[<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>] </span>"
+        },
+        {
+          "text": "music_genre <- factor(c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"))\n\nmusic_genre[3] <- \"Pop\"\n\nmusic_genre[3]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  music_genre &lt;- factor(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Pop\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>))<br/><br/>music_genre[<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>] &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"Pop\"</span><br/><br/>music_genre[<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>] </span>"
+        },
+        {
+          "text": "music_genre <- factor(c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"))\n\nmusic_genre[3] <- \"Opera\"\n\nmusic_genre[3]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  music_genre &lt;- factor(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Pop\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>))<br/><br/>music_genre[<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>] &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"Opera\"</span><br/><br/>music_genre[<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>] </span>"
+        },
+        {
+          "text": "music_genre <- factor(c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"), levels = c(\"Classic\", \"Jazz\", \"Pop\", \"Rock\", \"Opera\"))\n\nmusic_genre[3] <- \"Opera\"\n\nmusic_genre[3]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  music_genre &lt;- factor(c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Pop\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>), levels = c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Classic\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Jazz\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Pop\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Rock\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <strong><span class=\"pythonstringcolor\" style=\"color:green\">\"Opera\"</span></strong>))<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>music_genre[<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>] &lt;- <span class=\"pythonstringcolor\" style=\"color:green\">\"Opera\"</span><br/><br/>music_genre[<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>]<br/> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_factors.asp"
+      }
+    },
+    {
+      "title": "R Plotting",
+      "code": [
+        {
+          "text": "plot(1, 3)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plot(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>) </span>"
+        },
+        {
+          "text": "plot(c(1, 8), c(3, 10))",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plot(c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">8</span>), c(<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>)) </span>"
+        },
+        {
+          "text": "plot(c(1, 2, 3, 4, 5), c(3, 7, 8, 9, 12))",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plot(c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>), c(<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">8</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">12</span>)) </span>"
+        },
+        {
+          "text": "x <- c(1, 2, 3, 4, 5)\ny <- c(3, 7, 8, 9, 12)\n\nplot(x, y)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  x &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>)<br/>y &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">8</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">12</span>)<br/><br/>plot(x, y) </span>"
+        },
+        {
+          "text": "plot(1:10, type=\"l\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plot(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>, <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">type</span>=<span class=\"pythonstringcolor\" style=\"color:green\">\"l\"</span>) </span>"
+        },
+        {
+          "text": "plot(1:10, main=\"My Graph\", xlab=\"The x-axis\", ylab=\"The y axis\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plot(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>, main=<span class=\"pythonstringcolor\" style=\"color:green\">\"My Graph\"</span>, xlab=<span class=\"pythonstringcolor\" style=\"color:green\">\"The x-axis\"</span>, ylab=<span class=\"pythonstringcolor\" style=\"color:green\">\"The y axis\"</span>) </span>"
+        },
+        {
+          "text": "plot(1:10, col=\"red\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plot(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>, col=<span class=\"pythonstringcolor\" style=\"color:green\">\"red\"</span>) </span>"
+        },
+        {
+          "text": "plot(1:10, cex=2)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plot(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>, cex=<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>) </span>"
+        },
+        {
+          "text": "plot(1:10, pch=25, cex=2)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plot(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>, pch=<span class=\"pythonnumbercolor\" style=\"color:#905\">25</span>, cex=<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_graph_plot.asp"
+      }
+    },
+    {
+      "title": "R Line",
+      "code": [
+        {
+          "text": "plot(1:10, type=\"l\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plot(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>, <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">type</span>=<span class=\"pythonstringcolor\" style=\"color:green\">\"l\"</span>) </span>"
+        },
+        {
+          "text": "plot(1:10, type=\"l\", col=\"blue\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plot(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>, <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">type</span>=<span class=\"pythonstringcolor\" style=\"color:green\">\"l\"</span>, col=<span class=\"pythonstringcolor\" style=\"color:green\">\"blue\"</span>) </span>"
+        },
+        {
+          "text": "plot(1:10, type=\"l\", lwd=2)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plot(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>, <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">type</span>=<span class=\"pythonstringcolor\" style=\"color:green\">\"l\"</span>, lwd=<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>) </span>"
+        },
+        {
+          "text": "plot(1:10, type=\"l\", lwd=5, lty=3)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plot(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>, <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">type</span>=<span class=\"pythonstringcolor\" style=\"color:green\">\"l\"</span>, lwd=<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>, lty=<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>) </span>"
+        },
+        {
+          "text": "line1 <- c(1,2,3,4,5,10)\nline2 <- c(2,5,7,8,9,10)\n\nplot(line1, type = \"l\", col = \"blue\")\nlines(line2, type=\"l\", col = \"red\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  line1 &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>)<br/>line2 &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">8</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>)<br/><br/>plot(line1, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">type</span> = <span class=\"pythonstringcolor\" style=\"color:green\">\"l\"</span>, col = <span class=\"pythonstringcolor\" style=\"color:green\">\"blue\"</span>)<br/>lines(line2, <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">type</span>=<span class=\"pythonstringcolor\" style=\"color:green\">\"l\"</span>, col = <span class=\"pythonstringcolor\" style=\"color:green\">\"red\"</span>) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_graph_line.asp"
+      }
+    },
+    {
+      "title": "R Scatter Plot",
+      "code": [
+        {
+          "text": "x <- c(5,7,8,7,2,2,9,4,11,12,9,6)\ny <- c(99,86,87,88,111,103,87,94,78,77,85,86)\n\nplot(x, y)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  x &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">8</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">11</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">12</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>)<br/>y &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  c(<span class=\"pythonnumbercolor\" style=\"color:#905\">99</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">86</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">87</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">88</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">111</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">103</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">87</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">94</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">78</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">77</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">85</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">86</span>)<br/><br/>plot(x, y) </span>"
+        },
+        {
+          "text": "x <- c(5,7,8,7,2,2,9,4,11,12,9,6)\ny <- c(99,86,87,88,111,103,87,94,78,77,85,86)\n\nplot(x, y, main=\"Observation of Cars\", xlab=\"Car age\", ylab=\"Car speed\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  x &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">8</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">11</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">12</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>)<br/>y &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  c(<span class=\"pythonnumbercolor\" style=\"color:#905\">99</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">86</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">87</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">88</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">111</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">103</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">87</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">94</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">78</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">77</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">85</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">86</span>)<br/><br/>plot(x, y, main=<span class=\"pythonstringcolor\" style=\"color:green\">\"Observation \n  of Cars\"</span>, xlab=<span class=\"pythonstringcolor\" style=\"color:green\">\"Car age\"</span>, ylab=<span class=\"pythonstringcolor\" style=\"color:green\">\"Car speed\"</span>) </span>"
+        },
+        {
+          "text": "# day one, the age and speed of 12 cars:\nx1 <- c(5,7,8,7,2,2,9,4,11,12,9,6)\ny1 <- c(99,86,87,88,111,103,87,94,78,77,85,86)\n\n# day two, the age and speed of 15 cars:\nx2 <- c(2,2,8,1,15,8,12,9,7,3,11,4,7,14,12)\ny2 <- c(100,105,84,105,90,99,90,95,94,100,79,112,91,80,85)\n\nplot(x1, y1, main=\"Observation of Cars\", xlab=\"Car age\", ylab=\"Car speed\", col=\"red\", cex=2)\npoints(x2, y2, col=\"blue\", cex=2)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># day one, the age and speed of 12 cars:<br/></span>x1 &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">8</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">11</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">12</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>)<br/>y1 &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">99</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">86</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">87</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">88</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">111</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">103</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">87</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">94</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">78</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">77</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">85</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">86</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"commentcolor\" style=\"color:slategray\"># day two, the age and speed of 15 cars:<br/></span>x2 &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  c(<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">8</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">15</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">8</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">12</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">11</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">14</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">12</span>)<br/>y2 &lt;- <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  c(<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">105</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">84</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">105</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">90</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">99</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">90</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">95</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">94</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">79</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">112</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">91</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">80</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">85</span>)<br/><br/>plot(x1, y1, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  main=<span class=\"pythonstringcolor\" style=\"color:green\">\"Observation of Cars\"</span>, xlab=<span class=\"pythonstringcolor\" style=\"color:green\">\"Car age\"</span>, ylab=<span class=\"pythonstringcolor\" style=\"color:green\">\"Car speed\"</span>, col=<span class=\"pythonstringcolor\" style=\"color:green\">\"red\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  cex=<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)<br/>points(x2, y2, col=<span class=\"pythonstringcolor\" style=\"color:green\">\"blue\"</span>, cex=<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_graph_scatterplot.asp"
+      }
+    },
+    {
+      "title": "R Pie Charts",
+      "code": [
+        {
+          "text": "# Create a vector of pies\nx <- c(10,20,30,40)\n\n# Display the pie chart\npie(x)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Create a vector of pies<br/></span>x &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">20</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">40</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Display \n  the pie chart<br/></span>pie(x) </span>"
+        },
+        {
+          "text": "# Create a vector of pies\nx <- c(10,20,30,40)\n\n# Display the pie chart and start the first pie at 90 degrees\npie(x, init.angle = 90)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Create a vector of pies<br/></span>x &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">20</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">40</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Display \n  the pie chart and start the first pie at 90 degrees<br/></span>pie(x, init.angle = <span class=\"pythonnumbercolor\" style=\"color:#905\">90</span>) </span>"
+        },
+        {
+          "text": "# Create a vector of pies\nx <- c(10,20,30,40)\n\n# Create a vector of labels\nmylabel <- c(\"Apples\", \"Bananas\", \"Cherries\", \"Dates\")\n\n# Display the pie chart with labels\npie(x, label = mylabel, main = \"Fruits\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Create a vector of pies<br/></span>x &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">20</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">30</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">40</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Create a vector of labels<br/></span>mylabel &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Apples\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Bananas\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Cherries\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Dates\"</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Display \n  the pie chart with labels<br/></span>pie(x, label = mylabel, main = <span class=\"pythonstringcolor\" style=\"color:green\">\"Fruits\"</span>) </span>"
+        },
+        {
+          "text": "# Create a vector of colors\ncolors <- c(\"blue\", \"yellow\", \"green\", \"black\")\n\n# Display the pie chart with colors\npie(x, label = mylabel, main = \"Fruits\", col = colors)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Create a vector of colors<br/></span>colors &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"blue\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"yellow\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"green\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"black\"</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Display the pie chart \n  with colors<br/></span>pie(x, label = mylabel, main = <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Fruits\"</span>, col = colors) </span>"
+        },
+        {
+          "text": "# Create a vector of labels\nmylabel <- c(\"Apples\", \"Bananas\", \"Cherries\", \"Dates\")\n\n# Create a vector of colors\ncolors <- c(\"blue\", \"yellow\", \"green\", \"black\")\n\n# Display the pie chart with colors\npie(x, label = mylabel, main = \"Pie Chart\", col = colors)\n\n# Display the explanation box\nlegend(\"bottomright\", mylabel, fill = colors)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Create a vector of labels<br/></span>mylabel &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"Apples\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Bananas\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Cherries\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Dates\"</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Create a vector of colors<br/></span>colors &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"blue\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"yellow\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"green\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"black\"</span>)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Display the pie chart with \n  colors<br/></span>pie(x, label = mylabel, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  main = <span class=\"pythonstringcolor\" style=\"color:green\">\"Pie Chart\"</span>, col = colors)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Display the explanation box<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  legend(<span class=\"pythonstringcolor\" style=\"color:green\">\"bottomright\"</span>, mylabel, fill = colors) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_graph_pie.asp"
+      }
+    },
+    {
+      "title": "R Bar Charts",
+      "code": [
+        {
+          "text": "# x-axis values\nx <- c(\"A\", \"B\", \"C\", \"D\")\n\n# y-axis values\ny <- c(2, 4, 6, 8)\n\nbarplot(y, names.arg = x)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># x-axis values<br/></span>x &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"A\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"B\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"C\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"D\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"commentcolor\" style=\"color:slategray\"># y-axis values<br/></span>y &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">8</span>)<br/><br/>barplot(y, names.arg = x) </span>"
+        },
+        {
+          "text": "x <- c(\"A\", \"B\", \"C\", \"D\")\ny <- c(2, 4, 6, 8)\n\nbarplot(y, names.arg = x, col = \"red\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  x &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"A\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"B\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"C\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"D\"</span>)<br/>y &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">8</span>)<br/><br/>barplot(y, names.arg = x, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  col = <span class=\"pythonstringcolor\" style=\"color:green\">\"red\"</span>) </span>"
+        },
+        {
+          "text": "x <- c(\"A\", \"B\", \"C\", \"D\")\ny <- c(2, 4, 6, 8)\n\nbarplot(y, names.arg = x, density = 10)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  x &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"A\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"B\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"C\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"D\"</span>)<br/>y &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">8</span>)<br/><br/>barplot(y, names.arg = x, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  density = <span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>) </span>"
+        },
+        {
+          "text": "x <- c(\"A\", \"B\", \"C\", \"D\")\ny <- c(2, 4, 6, 8)\n\nbarplot(y, names.arg = x, width = c(1,2,3,4))",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  x &lt;- c(<span class=\"pythonstringcolor\" style=\"color:green\">\"A\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"B\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"C\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"D\"</span>)<br/>y &lt;- c(<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">8</span>)<br/><br/>barplot(y, names.arg = x, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  width = c(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>)) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_graph_bars.asp"
+      }
+    },
+    {
+      "title": "R Data Set",
+      "code": [
+        {
+          "text": "mpg cyl disp hp drat wt qsec vs am gear carb Mazda RX4 21.0 6 160.0 110 3.90 2.620 16.46 0 1 4 4 Mazda RX4 Wag 21.0 6 160.0 110 3.90 2.875 17.02 0 1 4 4 Datsun 710 22.8 4 108.0 93 3.85 2.320 18.61 1 1 4 1 Hornet 4 Drive 21.4 6 258.0 110 3.08 3.215 19.44 1 0 3 1 Hornet Sportabout 18.7 8 360.0 175 3.15 3.440 17.02 0 0 3 2 Valiant 18.1 6 225.0 105 2.76 3.460 20.22 1 0 3 1 Duster 360 14.3 8 360.0 245 3.21 3.570 15.84 0 0 3 4 Merc 240D 24.4 4 146.7 62 3.69 3.190 20.00 1 0 4 2 Merc 230 22.8 4 140.8 95 3.92 3.150 22.90 1 0 4 2 Merc 280 19.2 6 167.6 123 3.92 3.440 18.30 1 0 4 4 Merc 280C 17.8 6 167.6 123 3.92 3.440 18.90 1 0 4 4 Merc 450SE 16.4 8 275.8 180 3.07 4.070 17.40 0 0 3 3 Merc 450SL 17.3 8 275.8 180 3.07 3.730 17.60 0 0 3 3 Merc 450SLC 15.2 8 275.8 180 3.07 3.780 18.00 0 0 3 3 Cadillac Fleetwood 10.4 8 472.0 205 2.93 5.250 17.98 0 0 3 4 Lincoln Continental 10.4 8 460.0 215 3.00 5.424 17.82 0 0 3 4 Chrysler Imperial 14.7 8 440.0 230 3.23 5.345 17.42 0 0 3 4 Fiat 128 32.4 4 78.7 66 4.08 2.200 19.47 1 1 4 1 Honda Civic 30.4 4 75.7 52 4.93 1.615 18.52 1 1 4 2 Toyota Corolla 33.9 4 71.1 65 4.22 1.835 19.90 1 1 4 1 Toyota Corona 21.5 4 120.1 97 3.70 2.465 20.01 1 0 3 1 Dodge Challenger 15.5 8 318.0 150 2.76 3.520 16.87 0 0 3 2 AMC Javelin 15.2 8 304.0 150 3.15 3.435 17.30 0 0 3 2 Camaro Z28 13.3 8 350.0 245 3.73 3.840 15.41 0 0 3 4 Pontiac Firebird 19.2 8 400.0 175 3.08 3.845 17.05 0 0 3 2 Fiat X1-9 27.3 4 79.0 66 4.08 1.935 18.90 1 1 4 1 Porsche 914-2 26.0 4 120.3 91 4.43 2.140 16.70 0 1 5 2 Lotus Europa 30.4 4 95.1 113 3.77 1.513 16.90 1 1 5 2 Ford Pantera L 15.8 8 351.0 264 4.22 3.170 14.50 0 1 5 4 Ferrari Dino 19.7 6 145.0 175 3.62 2.770 15.50 0 1 5 6 Maserati Bora 15.0 8 301.0 335 3.54 3.570 14.60 0 1 5 8 Volvo 142E 21.4 4 121.0 109 4.11 2.780 18.60 1 1 4 2",
+          "html": "mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2"
+        },
+        {
+          "text": "mtcars",
+          "html": "mtcars"
+        },
+        {
+          "text": "require(graphics) pairs(mtcars, main = \"mtcars data\", gap = 1/4) coplot(mpg ~ disp | as.factor(cyl), data = mtcars, panel = panel.smooth, rows = 1) ## possibly more meaningful, e.g., for summary() or bivariate plots: mtcars2 <- within(mtcars, { vs <- factor(vs, labels = c(\"V\", \"S\")) am <- factor(am, labels = c(\"automatic\", \"manual\")) cyl <- ordered(cyl) gear <- ordered(gear) carb <- ordered(carb) }) summary(mtcars2)",
+          "html": "require(graphics)\npairs(mtcars, main = \"mtcars data\", gap = 1/4)\ncoplot(mpg ~ disp | as.factor(cyl), data = mtcars,\n       panel = panel.smooth, rows = 1)\n## possibly more meaningful, e.g., for summary() or bivariate plots:\nmtcars2 &lt;- within(mtcars, {\n   vs &lt;- factor(vs, labels = c(\"V\", \"S\"))\n   am &lt;- factor(am, labels = c(\"automatic\", \"manual\"))\n   cyl  &lt;- ordered(cyl)\n   gear &lt;- ordered(gear)\n   carb &lt;- ordered(carb)\n})\nsummary(mtcars2)"
+        },
+        {
+          "text": "[1] 32 11 [1] \"mpg\" \"cyl\" \"disp\" \"hp\" \"drat\" \"wt\" \"qsec\" \"vs\" \"am\" \"gear\" [11] \"carb\"",
+          "html": "[1] 32 11\n [1] \"mpg\"  \"cyl\"  \"disp\" \"hp\"   \"drat\" \"wt\"   \"qsec\" \"vs\"   \"am\"   \"gear\"\n[11] \"carb\""
+        },
+        {
+          "text": "[1] \"Mazda RX4\" \"Mazda RX4 Wag\" \"Datsun 710\" [4] \"Hornet 4 Drive\" \"Hornet Sportabout\" \"Valiant\" [7] \"Duster 360\" \"Merc 240D\" \"Merc 230\" [10] \"Merc 280\" \"Merc 280C\" \"Merc 450SE\" [13] \"Merc 450SL\" \"Merc 450SLC\" \"Cadillac Fleetwood\" [16] \"Lincoln Continental\" \"Chrysler Imperial\" \"Fiat 128\" [19] \"Honda Civic\" \"Toyota Corolla\" \"Toyota Corona\" [22] \"Dodge Challenger\" \"AMC Javelin\" \"Camaro Z28\" [25] \"Pontiac Firebird\" \"Fiat X1-9\" \"Porsche 914-2\" [28] \"Lotus Europa\" \"Ford Pantera L\" \"Ferrari Dino\" [31] \"Maserati Bora\" \"Volvo 142E\"",
+          "html": "[1] \"Mazda RX4\"           \"Mazda RX4 Wag\"       \"Datsun 710\"         \n [4] \"Hornet 4 Drive\"      \"Hornet Sportabout\"   \"Valiant\"            \n [7] \"Duster 360\"          \"Merc 240D\"           \"Merc 230\"           \n[10] \"Merc 280\"            \"Merc 280C\"           \"Merc 450SE\"         \n[13] \"Merc 450SL\"          \"Merc 450SLC\"         \"Cadillac Fleetwood\" \n[16] \"Lincoln Continental\" \"Chrysler Imperial\"   \"Fiat 128\"           \n[19] \"Honda Civic\"         \"Toyota Corolla\"      \"Toyota Corona\"      \n[22] \"Dodge Challenger\"    \"AMC Javelin\"         \"Camaro Z28\"         \n[25] \"Pontiac Firebird\"    \"Fiat X1-9\"           \"Porsche 914-2\"      \n[28] \"Lotus Europa\"        \"Ford Pantera L\"      \"Ferrari Dino\"       \n[31] \"Maserati Bora\"       \"Volvo 142E\""
+        },
+        {
+          "text": "[1] 6 6 4 6 8 6 8 4 4 6 6 8 8 8 8 8 8 4 4 4 4 8 8 8 8 4 4 4 8 6 8 4",
+          "html": "[1] 6 6 4 6 8 6 8 4 4 6 6 8 8 8 8 8 8 4 4 4 4 8 8 8 8 4 4 4 8 6 8 4"
+        },
+        {
+          "text": "[1] 4 4 4 4 4 4 4 4 4 4 4 6 6 6 6 6 6 6 8 8 8 8 8 8 8 8 8 8 8 8 8 8",
+          "html": "[1] 4 4 4 4 4 4 4 4 4 4 4 6 6 6 6 6 6 6 8 8 8 8 8 8 8 8 8 8 8 8 8 8"
+        },
+        {
+          "text": "# Print the mtcars data set\nmtcars",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Print the mtcars data set<br/></span>mtcars  </span>"
+        },
+        {
+          "text": "# Use the question mark to get information about the data set\n\n?mtcars",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"commentcolor\" style=\"color:slategray\"># Use the question mark to get information about \n  the data set<br/></span><br/>?mtcars </span>"
+        },
+        {
+          "text": "Data_Cars <- mtcars # create a variable of the mtcars data set for better organization\n\n# Use dim() to find the dimension of the data set\ndim(Data_Cars)\n\n# Use names() to find the names of the variables from the data set\nnames(Data_Cars)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Cars &lt;- mtcars <span class=\"commentcolor\" style=\"color:slategray\"># create a variable of the mtcars data set for better \n  organization<br/></span><br/><span class=\"commentcolor\" style=\"color:slategray\"># Use dim() to find the dimension of the data set<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  dim(Data_Cars)<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># Use names() to find the names of the variables from \n  the data set<br/></span>names(Data_Cars) </span>"
+        },
+        {
+          "text": "Data_Cars <- mtcars\n\nrownames(Data_Cars)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Cars &lt;- mtcars<br/><br/>rownames(Data_Cars) </span>"
+        },
+        {
+          "text": "Data_Cars <- mtcars\n\nsummary(Data_Cars)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Cars &lt;- mtcars<br/><br/>summary(Data_Cars) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_stat_data_set.asp"
+      }
+    },
+    {
+      "title": "R Max and Min",
+      "code": [
+        {
+          "text": "Data_Cars <- mtcars\n\nmax(Data_Cars$hp)\nmin(Data_Cars$hp)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Cars &lt;- mtcars<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">max</span>(Data_Cars$hp)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">min</span>(Data_Cars$hp) </span>"
+        },
+        {
+          "text": "Data_Cars <- mtcars\n\nwhich.max(Data_Cars$hp)\nwhich.min(Data_Cars$hp)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Cars &lt;- mtcars<br/><br/>which.<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">max</span>(Data_Cars$hp)<br/>which.<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">min</span>(Data_Cars$hp) </span>"
+        },
+        {
+          "text": "Data_Cars <- mtcars\n\nrownames(Data_Cars)[which.max(Data_Cars$hp)]\nrownames(Data_Cars)[which.min(Data_Cars$hp)]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Cars &lt;- mtcars<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  rownames(Data_Cars)[which.<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">max</span>(Data_Cars$hp)]<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  rownames(Data_Cars)[which.<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">min</span>(Data_Cars$hp)] </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_stat_max_min.asp"
+      }
+    },
+    {
+      "title": "R Mean",
+      "code": [
+        {
+          "text": "Data_Cars <- mtcars\n\nmean(Data_Cars$wt)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Cars &lt;- mtcars<br/><br/>mean(Data_Cars$wt) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_stat_mean.asp"
+      }
+    },
+    {
+      "title": "R Median",
+      "code": [
+        {
+          "text": "Data_Cars <- mtcars\n\nmedian(Data_Cars$wt)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Cars &lt;- mtcars<br/><br/>median(Data_Cars$wt) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_stat_median.asp"
+      }
+    },
+    {
+      "title": "R Mode",
+      "code": [
+        {
+          "text": "Data_Cars <- mtcars\n\nnames(sort(-table(Data_Cars$wt)))[1]",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Cars &lt;- mtcars<br/><br/>names(sort(-table(Data_Cars$wt)))[<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>] </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_stat_mode.asp"
+      }
+    },
+    {
+      "title": "R Percentiles",
+      "code": [
+        {
+          "text": "75% 3.61",
+          "html": "75% \n3.61"
+        },
+        {
+          "text": "0% 25% 50% 75% 100% 1.51300 2.58125 3.32500 3.61000 5.42400",
+          "html": "0%     25%     50%     75%    100% \n1.51300 2.58125 3.32500 3.61000 5.42400"
+        },
+        {
+          "text": "Data_Cars <- mtcars\n\n# c() specifies which percentile you want\nquantile(Data_Cars$wt, c(0.75))",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Cars &lt;- mtcars<br/><br/><span class=\"commentcolor\" style=\"color:slategray\"># c() specifies which percentile you want<br/></span><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  quantile(Data_Cars$wt, c(<span class=\"pythonnumbercolor\" style=\"color:#905\">0.75</span>)) </span>"
+        },
+        {
+          "text": "Data_Cars <- mtcars\n\nquantile(Data_Cars$wt)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Data_Cars &lt;- mtcars<br/><br/>quantile(Data_Cars$wt) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_stat_percentiles.asp"
+      }
+    },
+    {
+      "title": "R Online Compiler",
+      "code": [
+        {
+          "text": "\"Hello World!\"\n5 + 5",
+          "html": "<span class=\"javacolor\" style=\"color:black\"><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>    <span class=\"javastringcolor\" style=\"color:green\">\"Hello World!\"</span><br/><span class=\"javanumbercolor\" style=\"color:#905\">5</span> + <span class=\"javanumbercolor\" style=\"color:#905\">5</span><br/><span class=\"javanumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_compiler.asp"
+      }
+    },
+    {
+      "title": "R Syllabus",
+      "code": [
+        {
+          "text": "plot(1:10)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plot(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/r_syllabus.asp"
+      }
+    }
+  ]
+}

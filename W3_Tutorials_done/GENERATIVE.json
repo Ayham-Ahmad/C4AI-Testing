@@ -1,0 +1,65 @@
+{
+  "language": "GENERATIVE",
+  "tutorials": [
+    {
+      "title": "Generative AI Tutorial",
+      "code": [
+        {
+          "text": "Explain \"Generative AI\" like I'm 5 years old",
+          "html": "Explain \"Generative AI\" like I'm 5 years old"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/gen_ai/index.php"
+      }
+    },
+    {
+      "title": "Generative AI Prompt text-to-text Introduction",
+      "code": [
+        {
+          "text": "Create a list of 10 fun and inexpensive toy gifts to programmers based on the following criteria:\n\n- It should be useful\n- It should be silly\n- It should spark creativity",
+          "html": "Create a list of 10 fun and inexpensive toy gifts to programmers based on the following criteria:<br/>\n<br/>\n- It should be useful<br/>\n- It should be silly<br/>\n- It should spark creativity"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/gen_ai/gen_ai_prompt_text-to-text_intro.php"
+      }
+    },
+    {
+      "title": "Generative AI - ChatGPT-3.5",
+      "code": [
+        {
+          "text": "Create a list of 10 fun and inexpensive toy gifts to programmers based on the following criteria:\n\n- It should be useful\n- It should be silly\n- It should spark creativity",
+          "html": "Create a list of 10 fun and inexpensive toy gifts to programmers based on the following criteria:<br/>\n<br/>\n- It should be useful<br/>\n- It should be silly<br/>\n- It should spark creativity"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/gen_ai/gen_ai_chatgpt-3-5.php"
+      }
+    },
+    {
+      "title": "Generative AI - ChatGPT-4",
+      "code": [
+        {
+          "text": "Create a list of 10 fun and inexpensive toy gifts to programmers based on the following criteria:\n\n- It should be useful\n- It should be silly\n- It should spark creativity",
+          "html": "Create a list of 10 fun and inexpensive toy gifts to programmers based on the following criteria:<br/>\n<br/>\n- It should be useful<br/>\n- It should be silly<br/>\n- It should spark creativity"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/gen_ai/gen_ai_chatgpt-4.php"
+      }
+    },
+    {
+      "title": "Generative AI - Google Bard",
+      "code": [
+        {
+          "text": "Create a list of 10 fun and inexpensive toy gifts to programmers based on the following criteria:\n\n- It should be useful\n- It should be silly\n- It should spark creativity",
+          "html": "Create a list of 10 fun and inexpensive toy gifts to programmers based on the following criteria:<br/>\n<br/>\n- It should be useful<br/>\n- It should be silly<br/>\n- It should spark creativity"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/gen_ai/gen_ai_bard.php"
+      }
+    }
+  ]
+}

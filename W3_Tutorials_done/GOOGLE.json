@@ -1,0 +1,693 @@
+{
+  "language": "GOOGLE",
+  "tutorials": [
+    {
+      "title": "Google Sheets Tutorial",
+      "code": [
+        {
+          "text": "309 39 320 35 318 45 314 44",
+          "html": "<img src=\"img_google_sheets_index_1.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"447\" height=\"258\"/>\n    <textarea id=\"demo_google_sheets_index_1\" style=\"display:none\">      309\t39\n      320\t35\n      318\t45\n      314\t44\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/index.php"
+      }
+    },
+    {
+      "title": "Google Sheets Get Started",
+      "code": [
+        {
+          "text": "=1+1",
+          "html": "<img src=\"img_google_sheets_get_started_5.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"546\" height=\"255\"/>\n    <textarea id=\"demo_google_sheets_get_started_5\" style=\"display:none\">      =1+1\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_get_started.php"
+      }
+    },
+    {
+      "title": "Google Sheets Overview",
+      "code": [
+        {
+          "text": "1 Hello World",
+          "html": "<img src=\"img_google_sheets_overview_3.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"545\" height=\"295\"/>\n    <textarea id=\"demo_google_sheets_overview_3\" style=\"display:none\">      1\tHello World\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_overview.php"
+      }
+    },
+    {
+      "title": "Google Sheets Syntax",
+      "code": [
+        {
+          "text": "309 39 320 35",
+          "html": "<img src=\"img_google_sheets_syntax_2.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"647\" height=\"256\"/>\n    <textarea id=\"demo_google_sheets_syntax_2\" style=\"display:none\">      309\t39\n      320\t35\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_syntax.php"
+      }
+    },
+    {
+      "title": "Google Sheets Double Click to Fill",
+      "code": [
+        {
+          "text": "Name Attack Defense Caterpie 30 35 Metapod 20 55 Butterfree 45 50 Weedle 35 30 Kakuna 25 50 Beedrill 90 40 Pidgey 45 40 Pidgeotto 60 55 Pidgeot 80 75 Rattata 56 35 Raticate 81 60 Spearow 60 30 Fearow 90 65 Ekans 60 44 Arbok 85 69 Pikachu 55 40 Raichu 90 55 Sandshrew 75 85 Sandslash 100 110",
+          "html": "<img src=\"img_google_sheets_dc_fill_2.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"550\" height=\"465\"/>\n  <textarea id=\"demo_google_sheets_dc_fill_2\" style=\"display:none\">      Name\tAttack\tDefense\n      Caterpie\t30\t35\n      Metapod\t20\t55\n      Butterfree\t45\t50\n      Weedle\t35\t30\n      Kakuna\t25\t50\n      Beedrill\t90\t40\n      Pidgey\t45\t40\n      Pidgeotto\t60\t55\n      Pidgeot\t80\t75\n      Rattata\t56\t35\n      Raticate\t81\t60\n      Spearow\t60\t30\n      Fearow\t90\t65\n      Ekans\t60\t44\n      Arbok\t85\t69\n      Pikachu\t55\t40\n      Raichu\t90\t55\n      Sandshrew\t75\t85\n      Sandslash\t100\t110\n  </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_double_click.php"
+      }
+    },
+    {
+      "title": "Google Sheets Move Cells",
+      "code": [
+        {
+          "text": "309 39 320 35 318 45 314 44",
+          "html": "<img src=\"img_google_sheets_move_cells_1.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"548\" height=\"279\"/>\n    <textarea id=\"demo_google_sheets_move_cells_1\" style=\"display:none\">      309\t39\n      320\t35\n      318\t45\n      314\t44\n    </textarea>"
+        },
+        {
+          "text": "Health Attack Charmander 309 39 Pikachu 320 35 Bulbasaur 318 45 Squirtle 314 44",
+          "html": "<img src=\"img_google_sheets_move_cells_4.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"546\" height=\"277\"/>\n    <textarea id=\"demo_google_sheets_move_cells_4\" style=\"display:none\">      \tHealth\tAttack\n      Charmander\t309\t39\n      Pikachu\t320\t35\n      Bulbasaur\t318\t45\n      Squirtle\t314\t44\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_move_cells.php"
+      }
+    },
+    {
+      "title": "Google Sheets Add Cells",
+      "code": [
+        {
+          "text": "Health Attack Charmander 309 39 Pikachu 320 35 Bulbasaur 318 45 Squirtle 314 44",
+          "html": "<img src=\"img_google_sheets_add_cells_1.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"547\" height=\"318\"/>\n    <textarea id=\"demo_google_sheets_add_cells_1\" style=\"display:none\">      \tHealth\tAttack\n      Charmander\t309\t39\n      Pikachu\t320\t35\n      Bulbasaur\t318\t45\n      Squirtle\t314\t44\n    </textarea>"
+        },
+        {
+          "text": "Trainer Health Attack Charmander Iva 309 39 Pikachu Iva 320 35 Bulbasaur Liam 318 45 Squirtle Liam 314 44",
+          "html": "<img src=\"img_google_sheets_add_cells_4.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\"/>\n    <textarea id=\"demo_google_sheets_add_cells_4\" style=\"display:none\">      \tTrainer\tHealth\tAttack\n      Charmander\tIva\t309\t39\n      Pikachu\tIva\t320\t35\n      Bulbasaur\tLiam\t318\t45\n      Squirtle\tLiam\t314\t44\n  </textarea>"
+        },
+        {
+          "text": "Trainer Health Attack Charmander Iva 309 39 Pikachu Iva 320 35 Marowak Iva 425 60 Bulbasaur Liam 318 45 Squirtle Liam 314 44",
+          "html": "<img src=\"img_google_sheets_add_cells_7.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\"/>\n    <textarea id=\"demo_google_sheets_add_cells_7\" style=\"display:none\">      \tTrainer\tHealth\tAttack\n      Charmander\tIva\t309\t39\n      Pikachu\tIva\t320\t35\n      Marowak\tIva\t425\t60\n      Bulbasaur\tLiam\t318\t45\n      Squirtle\tLiam\t314\t44\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_add_cells.php"
+      }
+    },
+    {
+      "title": "Google Sheets Formulas",
+      "code": [
+        {
+          "text": "2 4",
+          "html": "<img src=\"img_google_sheets_formulas_1.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"546\" height=\"257\"/>\n    <textarea id=\"demo_google_sheets_formulas_1\" style=\"display:none\">      2\n      4\n    </textarea>"
+        },
+        {
+          "text": "Trainers Pokeball Great Balls Ultra Balls Iva 2 3 1 Liam 5 5 2 Adora 10 2 3",
+          "html": "<img src=\"img_google_sheets_formulas_6.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"549\" height=\"255\"/>\n    <textarea id=\"demo_google_sheets_formulas_6\" style=\"display:none\">      Trainers\tPokeball\tGreat Balls\tUltra Balls\n      Iva\t2\t3\t1\n      Liam\t5\t5\t2\n      Adora\t10\t2\t3\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_formulas.php"
+      }
+    },
+    {
+      "title": "Google Sheets Relative and Absolute References",
+      "code": [
+        {
+          "text": "Trainers Pokeballs Great balls Iva 2 3 Liam 5 5 Pablo 10 2 Jenny 7 1 Iben 6 2 Kasper 3 4",
+          "html": "<img src=\"img_google_sheets_rel_ref_1.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"550\" height=\"256\"/>\n    <textarea id=\"demo_google_sheets_rel_ref_1\" style=\"display:none\">      Trainers\tPokeballs\tGreat balls\n      Iva\t2\t3\n      Liam\t5\t5\n      Pablo\t10\t2\n      Jenny\t7\t1\n      Iben\t6\t2\n      Kasper\t3\t4\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_rel_ref.php"
+      }
+    },
+    {
+      "title": "Google Sheets Absolute References",
+      "code": [
+        {
+          "text": "Trainers Pokeballs Cost Iva 2 Liam 5 Pablo 10 Jenny 7 Iben 6 Kasper 3 Price 2",
+          "html": "<img src=\"img_google_sheets_abs_ref_1.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"448\" height=\"299\"/>\n    <textarea id=\"demo_google_sheets_abs_ref_1\" style=\"display:none\">      Trainers\tPokeballs\tCost\n      Iva\t2\n      Liam\t5\n      Pablo\t10\n      Jenny\t7\n      Iben\t6\n      Kasper\t3\n\n\n\n      Price\t2\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_abs_ref.php"
+      }
+    },
+    {
+      "title": "Google Sheets Addition Operator",
+      "code": [
+        {
+          "text": "10 20 20 30 20",
+          "html": "<img src=\"img_google_sheets_addition_6.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"550\" height=\"259\"/>\n    <textarea id=\"demo_google_sheets_addition_6\" style=\"display:none\">      10\n      20\n      20\n      30\n      20\n    </textarea>"
+        },
+        {
+          "text": "10 20 20 30 20",
+          "html": "<img src=\"img_google_sheets_addition_9.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"550\" height=\"259\"/>\n    <textarea id=\"demo_google_sheets_addition_9\" style=\"display:none\">      10\n      20\n      20\n      30\n      20\n    </textarea>"
+        },
+        {
+          "text": "50 5 45 40 35 30 25 20 15 10 5",
+          "html": "<img src=\"img_google_sheets_addition_14.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"549\" height=\"258\"/>\n    <textarea id=\"demo_google_sheets_addition_14\" style=\"display:none\">      50\t5\n      45\n      40\n      35\n      30\n      25\n      20\n      15\n      10\n      5\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_addition.php"
+      }
+    },
+    {
+      "title": "Google Sheets Subtraction Operator",
+      "code": [
+        {
+          "text": "100 20 20 30 25",
+          "html": "<img src=\"img_google_sheets_subtraction_6.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"547\" height=\"278\"/>\n    <textarea id=\"demo_google_sheets_subtraction_6\" style=\"display:none\">      100\n      20\n      20\n      30\n      25\n    </textarea>"
+        },
+        {
+          "text": "50 5 45 40 35 30 25 20 15 10 5",
+          "html": "<img src=\"img_google_sheets_subtraction_9.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"551\" height=\"286\"/>\n    <textarea id=\"demo_google_sheets_subtraction_9\" style=\"display:none\">      50\t5\n      45\n      40\n      35\n      30\n      25\n      20\n      15\n      10\n      5\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_subtraction.php"
+      }
+    },
+    {
+      "title": "Google Sheets Multiplication Operator",
+      "code": [
+        {
+          "text": "50 5 45 40 35 30 25 20 15 10 5",
+          "html": "<img src=\"img_google_sheets_multiplication_6.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"549\" height=\"288\"/>\n    <textarea id=\"demo_google_sheets_multiplication_6\" style=\"display:none\">      50\t5\n      45\n      40\n      35\n      30\n      25\n      20\n      15\n      10\n      5\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_multiplication.php"
+      }
+    },
+    {
+      "title": "Google Sheets Division Operator",
+      "code": [
+        {
+          "text": "50 5 45 40 35 30 25 20 15 10 5",
+          "html": "<img src=\"img_google_sheets_division_6.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"549\" height=\"288\"/>\n    <textarea id=\"demo_google_sheets_division_6\" style=\"display:none\">      50\t5\n      45\n      40\n      35\n      30\n      25\n      20\n      15\n      10\n      5\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_division.php"
+      }
+    },
+    {
+      "title": "Google Sheets Location Settings",
+      "code": [
+        {
+          "text": "=AND(logical_expression1, [logical_expression2, ...])",
+          "html": "=AND(<strong>logical_expression1</strong>, <strong>[logical_expression2, ...]</strong>)"
+        },
+        {
+          "text": "=AND(logical_expression1; [logical_expression2; ...])",
+          "html": "=AND(<strong>logical_expression1</strong>; <strong>[logical_expression2; ...]</strong>)"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_location_settings.php"
+      }
+    },
+    {
+      "title": "Google Sheets Format Numbers",
+      "code": [
+        {
+          "text": "Item Item price Price Shop cart Pokeball 200 200 1 Great ball 600 600 1 Ultra ball 1200 1200 1 Potion 300 600 2 Super potion 700 1400 2 Hyper potion 1200 3600 3 Antidote 100 300 3 Subtotal 7900 Discount 790 Discount 10 Total 7110",
+          "html": "<img src=\"img_google_sheets_format_numbers_4.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"752\" height=\"336\"/>\n    <textarea id=\"demo_google_sheets_format_numbers_4\" style=\"display:none\">      Item\tItem price\tPrice\tShop cart\n      Pokeball\t200\t200\t1\n      Great ball\t600\t600\t1\n      Ultra ball\t1200\t1200\t1\n      Potion\t300\t600\t2\n      Super potion\t700\t1400\t2\n      Hyper potion\t1200\t3600\t3\n      Antidote\t100\t300\t3\n\n      Subtotal\t7900\n      Discount\t790\t\t\tDiscount\t10\n\n      Total\t7110\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_format_numbers.php"
+      }
+    },
+    {
+      "title": "Google Sheets Sort",
+      "code": [
+        {
+          "text": "Bulbasaur 318 Ivysaur 405 Venusaur 525 Charmander 309 Charmeleon 405 Charizard 534 Squirtle 314 Wartortle 405 Blastoise 530 Caterpie 195 Metapod 205 Butterfree 395 Weedle 195 Kakuna 205 Beedrill 395 Pidgey 251 Pidgeotto 349 Pidgeotto 479 Rattata 253 Raticate 413",
+          "html": "<img src=\"img_google_sheets_sort_2.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"345\" height=\"463\"/>\n    <textarea id=\"demo_google_sheets_sort_2\" style=\"display:none\">      Bulbasaur\t318\n      Ivysaur\t405\n      Venusaur\t525\n      Charmander\t309\n      Charmeleon\t405\n      Charizard\t534\n      Squirtle\t314\n      Wartortle\t405\n      Blastoise\t530\n      Caterpie\t195\n      Metapod\t205\n      Butterfree\t395\n      Weedle\t195\n      Kakuna\t205\n      Beedrill\t395\n      Pidgey\t251\n      Pidgeotto\t349\n      Pidgeotto\t479\n      Rattata\t253\n      Raticate\t413\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_sort.php"
+      }
+    },
+    {
+      "title": "Google Sheets Sort Sheet By Column",
+      "code": [
+        {
+          "text": "Bulbasaur 318 Ivysaur 405 Venusaur 525 Charmander 309 Charmeleon 405 Charizard 534 Squirtle 314 Wartortle 405 Blastoise 530 Caterpie 195 Metapod 205 Butterfree 395 Weedle 195 Kakuna 205 Beedrill 395 Pidgey 251 Pidgeotto 349 Pidgeotto 479 Rattata 253 Raticate 413",
+          "html": "<img src=\"img_google_sheets_sort_2.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"345\" height=\"463\"/>\n    <textarea id=\"demo_google_sheets_sort_2\" style=\"display:none\">      Bulbasaur\t318\n      Ivysaur\t405\n      Venusaur\t525\n      Charmander\t309\n      Charmeleon\t405\n      Charizard\t534\n      Squirtle\t314\n      Wartortle\t405\n      Blastoise\t530\n      Caterpie\t195\n      Metapod\t205\n      Butterfree\t395\n      Weedle\t195\n      Kakuna\t205\n      Beedrill\t395\n      Pidgey\t251\n      Pidgeotto\t349\n      Pidgeotto\t479\n      Rattata\t253\n      Raticate\t413\n    </textarea>"
+        },
+        {
+          "text": "Name Total stats Bulbasaur 318 Ivysaur 405 Venusaur 525 Charmander 309 Charmeleon 405 Charizard 534 Squirtle 314 Wartortle 405 Blastoise 530 Caterpie 195 Metapod 205 Butterfree 395 Weedle 195 Kakuna 205 Beedrill 395 Pidgey 251 Pidgeotto 349 Pidgeotto 479 Rattata 253 Raticate 413",
+          "html": "<img src=\"img_google_sheets_sort_sheet_7.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"346\" height=\"484\"/>\n    <textarea id=\"demo_google_sheets_sort_sheet_7\" style=\"display:none\">      Name\tTotal stats\n      Bulbasaur\t318\n      Ivysaur\t405\n      Venusaur\t525\n      Charmander\t309\n      Charmeleon\t405\n      Charizard\t534\n      Squirtle\t314\n      Wartortle\t405\n      Blastoise\t530\n      Caterpie\t195\n      Metapod\t205\n      Butterfree\t395\n      Weedle\t195\n      Kakuna\t205\n      Beedrill\t395\n      Pidgey\t251\n      Pidgeotto\t349\n      Pidgeotto\t479\n      Rattata\t253\n      Raticate\t413\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_sort_sheet.php"
+      }
+    },
+    {
+      "title": "Google Sheets Sort Range By Column",
+      "code": [
+        {
+          "text": "Name Bulbasaur Ivysaur Venusaur Charmander Charmeleon Charizard Squirtle Wartortle Blastoise Caterpie Metapod Butterfree Weedle Kakuna Beedrill Pidgey Pidgeotto Pidgeotto Rattata Raticate",
+          "html": "<img src=\"img_google_sheets_sort_by_range_1.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"243\" height=\"483\"/>\n    <textarea id=\"demo_google_sheets_sort_by_range_1\" style=\"display:none\">      Name\n      Bulbasaur\n      Ivysaur\n      Venusaur\n      Charmander\n      Charmeleon\n      Charizard\n      Squirtle\n      Wartortle\n      Blastoise\n      Caterpie\n      Metapod\n      Butterfree\n      Weedle\n      Kakuna\n      Beedrill\n      Pidgey\n      Pidgeotto\n      Pidgeotto\n      Rattata\n      Raticate\n    </textarea>"
+        },
+        {
+          "text": "Total stats 318 405 525 309 405 534 314 405 530 195 205 395 195 205 395 251 349 479 253 413",
+          "html": "<img src=\"img_google_sheets_sort_by_range_5.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"244\" height=\"485\"/>\n    <textarea id=\"demo_google_sheets_sort_by_range_5\" style=\"display:none\">      Total stats\n      318\n      405\n      525\n      309\n      405\n      534\n      314\n      405\n      530\n      195\n      205\n      395\n      195\n      205\n      395\n      251\n      349\n      479\n      253\n      413\n    </textarea>"
+        },
+        {
+          "text": "Name Total stats Bulbasaur 318 Ivysaur 405 Venusaur 525 Charmander 309 Charmeleon 405 Charizard 534 Squirtle 314 Wartortle 405 Blastoise 530 Caterpie 195 Metapod 205 Butterfree 395 Weedle 195 Kakuna 205 Beedrill 395 Pidgey 251 Pidgeotto 349 Pidgeotto 479 Rattata 253 Raticate 413",
+          "html": "<img src=\"img_google_sheets_sort_by_range_9.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"346\" height=\"483\"/>\n    <textarea id=\"demo_google_sheets_sort_by_range_9\" style=\"display:none\">      Name\tTotal stats\n      Bulbasaur\t318\n      Ivysaur\t405\n      Venusaur\t525\n      Charmander\t309\n      Charmeleon\t405\n      Charizard\t534\n      Squirtle\t314\n      Wartortle\t405\n      Blastoise\t530\n      Caterpie\t195\n      Metapod\t205\n      Butterfree\t395\n      Weedle\t195\n      Kakuna\t205\n      Beedrill\t395\n      Pidgey\t251\n      Pidgeotto\t349\n      Pidgeotto\t479\n      Rattata\t253\n      Raticate\t413\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_sort_by_range.php"
+      }
+    },
+    {
+      "title": "Google Sheets Sort Range",
+      "code": [
+        {
+          "text": "Name Total stats Bulbasaur 318 Ivysaur 405 Venusaur 525 Charmander 309 Charmeleon 405 Charizard 534 Squirtle 314 Wartortle 405 Blastoise 530 Caterpie 195 Metapod 205 Butterfree 395 Weedle 195 Kakuna 205 Beedrill 395 Pidgey 251 Pidgeotto 349 Pidgeotto 479 Rattata 253 Raticate 413",
+          "html": "<img src=\"img_google_sheets_sort_by_range_9.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"346\" height=\"483\"/>\n    <textarea id=\"demo_google_sheets_sort_by_range_9\" style=\"display:none\">      Name\tTotal stats\n      Bulbasaur\t318\n      Ivysaur\t405\n      Venusaur\t525\n      Charmander\t309\n      Charmeleon\t405\n      Charizard\t534\n      Squirtle\t314\n      Wartortle\t405\n      Blastoise\t530\n      Caterpie\t195\n      Metapod\t205\n      Butterfree\t395\n      Weedle\t195\n      Kakuna\t205\n      Beedrill\t395\n      Pidgey\t251\n      Pidgeotto\t349\n      Pidgeotto\t479\n      Rattata\t253\n      Raticate\t413\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_sort_range.php"
+      }
+    },
+    {
+      "title": "Google Sheets Single Color Formatting",
+      "code": [
+        {
+          "text": "Name Type 1 Speed Bulbasaur Grass 45 Ivysaur Grass 60 Venusaur Grass 80 Charmander Fire 65 Charmeleon Fire 80 Charizard Fire 100 Squirtle Water 43 Wartortle Water 58 Blastoise Water 78",
+          "html": "<img src=\"img_google_sheets_cs.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"562\" height=\"317\"/>\n    <textarea id=\"demo_google_sheets_sc\" style=\"display:none\">        Name\tType 1\tSpeed\n        Bulbasaur\tGrass\t45\n        Ivysaur\tGrass\t60\n        Venusaur\tGrass\t80\n        Charmander\tFire\t65\n        Charmeleon\tFire\t80\n        Charizard\tFire\t100\n        Squirtle\tWater\t43\n        Wartortle\tWater\t58\n        Blastoise\tWater\t78\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_cf_single_color.php"
+      }
+    },
+    {
+      "title": "Google Sheets Color Scale Formatting",
+      "code": [
+        {
+          "text": "Name Type 1 Speed Bulbasaur Grass 45 Ivysaur Grass 60 Venusaur Grass 80 Charmander Fire 65 Charmeleon Fire 80 Charizard Fire 100 Squirtle Water 43 Wartortle Water 58 Blastoise Water 78",
+          "html": "<img src=\"img_google_sheets_cs.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"562\" height=\"317\"/>\n    <textarea id=\"demo_google_sheets_cs\" style=\"display:none\">        Name\tType 1\tSpeed\n        Bulbasaur\tGrass\t45\n        Ivysaur\tGrass\t60\n        Venusaur\tGrass\t80\n        Charmander\tFire\t65\n        Charmeleon\tFire\t80\n        Charizard\tFire\t100\n        Squirtle\tWater\t43\n        Wartortle\tWater\t58\n        Blastoise\tWater\t78\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_cf_color_scale.php"
+      }
+    },
+    {
+      "title": "Google Sheets AND Function",
+      "code": [
+        {
+          "text": "=AND([logical_expression1], [logical_expression2, ...])",
+          "html": "=AND(<strong>[logical_expression1]</strong>, <strong>[logical_expression2, ...]</strong>)"
+        },
+        {
+          "text": "Name Type 1 Speed Fire Type AND more than 70 Speed Bulbasaur Grass 45 Ivysaur Grass 60 Venusaur Grass 80 Charmander Fire 65 Charmeleon Fire 80 Charizard Fire 100 Squirtle Water 43 Wartortle Water 58 Blastoise Water 78",
+          "html": "<img src=\"img_google_sheets_and.png\" style=\"max-width:100%\" width=\"695\" height=\"319\"/>\n    <textarea id=\"demo_google_sheets_and\" style=\"display:none\">      Name\tType 1\tSpeed\tFire Type AND more than 70 Speed\n      Bulbasaur\tGrass\t45\t\n      Ivysaur\tGrass\t60\t\n      Venusaur\tGrass\t80\t\n      Charmander\tFire\t65\t\n      Charmeleon\tFire\t80\t\n      Charizard\tFire\t100\t\n      Squirtle\tWater\t43\t\n      Wartortle\tWater\t58\t\n      Blastoise\tWater\t78\t\n    </textarea>"
+        },
+        {
+          "text": "=IF(logical_expression, value_if_true, value_if_false)",
+          "html": "=IF(<strong>logical_expression</strong>, <strong>value_if_true</strong>, <strong>value_if_false</strong>)"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_and.php"
+      }
+    },
+    {
+      "title": "Google Sheets AVERAGE Function",
+      "code": [
+        {
+          "text": "=AVERAGE(value1, [value2, ...])",
+          "html": "=AVERAGE(<strong>value1</strong>, <strong>[value2, ...]</strong>)"
+        },
+        {
+          "text": "The average of the values (2, 3, 4) is 3.\nThere are 3 values in total\nThe sum of the values is (2 + 3 + 4 = 9)\n(9 / 3 = 3)\nThe average is 3",
+          "html": "The average of the values (2, 3, 4) is 3.<br/>\n\n  There are 3 values in total<br/>\n\n  The sum of the values is (2 + 3 + 4 = 9)<br/>\n\n  (9 / 3 = 3)<br/>\n\n  The average is 3"
+        },
+        {
+          "text": "Trainer Pokeball Great Ball Ultraball Master Ball Average Iva 10 4 1 1 Liam 12 3 0 1 Jenny 15 1 3 1 Iben 4 2 6 0 Adora 10 4 1 1 Kasper 9 2 1 0",
+          "html": "<img src=\"img_google_sheets_average.png\" style=\"max-width:100%\" width=\"668\" height=\"241\"/>\n  <textarea id=\"demo_google_sheets_average\" style=\"display:none\">    Trainer\tPokeball\tGreat Ball\tUltraball\tMaster Ball\tAverage\n    Iva\t10\t4\t1\t1\t\n    Liam\t12\t3\t0\t1\t\n    Jenny\t15\t1\t3\t1\t\n    Iben\t4\t2\t6\t0\t\n    Adora\t10\t4\t1\t1\t\n    Kasper\t9\t2\t1\t0\t\t\n  </textarea>"
+        },
+        {
+          "text": "Trainer Pokeball Potion Great Ball Ultraball Master Ball Average Pokeballs Iva 10 3 4 1 1 Liam 12 4 3 0 1 Jenny 15 1 1 3 1 Iben 4 11 2 6 0 Adora 10 2 4 1 1 Kasper 9 3 2 1 0",
+          "html": "<img src=\"img_google_sheets_average6.png\" style=\"max-width:100%\" width=\"812\" height=\"241\"/>\n  <textarea id=\"demo_google_sheets_average2\" style=\"display:none\">    Trainer\tPokeball\tPotion\tGreat Ball\tUltraball\tMaster Ball\tAverage Pokeballs\n    Iva\t10\t3\t4\t1\t1\t\n    Liam\t12\t4\t3\t0\t1\t\n    Jenny\t15\t1\t1\t3\t1\t\n    Iben\t4\t11\t2\t6\t0\t\n    Adora\t10\t2\t4\t1\t1\t\n    Kasper\t9\t3\t2\t1\t0\t\t\n  </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_average.php"
+      }
+    },
+    {
+      "title": "Google Sheets AVERAGEIF Function",
+      "code": [
+        {
+          "text": "=AVERAGEIF(criteria_range, criterion, [average_range])",
+          "html": "=AVERAGEIF(<strong>criteria_range</strong>, <strong>criterion</strong>, <strong>[average_range]</strong>)"
+        },
+        {
+          "text": "Name Type 1 Speed Bulbasaur Grass 45 Type Average Speed Ivysaur Grass 60 Grass Venusaur Grass 80 Fire Charmander Fire 65 Water Charmeleon Fire 80 Charizard Fire 100 Squirtle Water 43 Wartortle Water 58 Blastoise Water 78",
+          "html": "<img src=\"img_google_sheets_averageif.png\" style=\"max-width:100%\" width=\"785\" height=\"319\"/>\n    <textarea id=\"demo_google_sheets_averageif\" style=\"display:none\">    Name\tType 1\tSpeed\t\t\t\n    Bulbasaur\tGrass\t45\t\tType\tAverage Speed\n    Ivysaur\tGrass\t60\t\tGrass\t\n    Venusaur\tGrass\t80\t\tFire\t\n    Charmander\tFire\t65\t\tWater\t\n    Charmeleon\tFire\t80\t\t\t\n    Charizard\tFire\t100\t\t\t\n    Squirtle\tWater\t43\t\t\t\n    Wartortle\tWater\t58\t\t\t\n    Blastoise\tWater\t78\t\t\t\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_averageif.php"
+      }
+    },
+    {
+      "title": "Google Sheets AVERAGEIFS Function",
+      "code": [
+        {
+          "text": "=AVERAGEIFS(average_range, criteria_range1, criterion1, ...)",
+          "html": "=AVERAGEIFS(<strong>average_range</strong>, <strong>criteria_range1</strong>, <strong>criterion1, ...</strong>)"
+        },
+        {
+          "text": "Name Type 1 Defense Generation Bulbasaur Grass 49 1 Type Gen. Average Defense Ivysaur Grass 63 1 Grass 1 Venusaur Grass 83 1 Fire 1 Charmander Fire 43 1 Grass 2 Charmeleon Fire 58 1 Fire 2 Charizard Fire 78 1 Chikorita Grass 65 2 Bayleef Grass 80 2 Meganium Grass 100 2 Cyndaquil Fire 43 2 Quilava Fire 58 2 Typhlosion Fire 78 2",
+          "html": "<img src=\"img_google_sheets_averageifs.png\" style=\"max-width:100%\"/>\n    <textarea id=\"demo_google_sheets_averageifs\" style=\"display:none\">    Name\tType 1\tDefense\tGeneration\t\t\t\t\n    Bulbasaur\tGrass\t49\t1\t\tType\tGen.\tAverage Defense\n    Ivysaur\tGrass\t63\t1\t\tGrass\t1\t\n    Venusaur\tGrass\t83\t1\t\tFire\t1\t\n    Charmander\tFire\t43\t1\t\tGrass\t2\t\n    Charmeleon\tFire\t58\t1\t\tFire\t2\t\n    Charizard\tFire\t78\t1\t\t\t\t\n    Chikorita\tGrass\t65\t2\t\t\t\t\n    Bayleef\tGrass\t80\t2\t\t\t\t\n    Meganium\tGrass\t100\t2\t\t\t\t\n    Cyndaquil\tFire\t43\t2\t\t\t\t\n    Quilava\tFire\t58\t2\t\t\t\t\n    Typhlosion\tFire\t78\t2\t\t\t\t\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_averageifs.php"
+      }
+    },
+    {
+      "title": "Google Sheets COUNT Function",
+      "code": [
+        {
+          "text": "=COUNT(value1, [value2, ...])",
+          "html": "=COUNT(<strong>value1</strong>, <strong>[value2, ...]</strong>)"
+        },
+        {
+          "text": "Name Type 1 Type 2 Total stats Mankey Fighting 305 Poliwrath Water Fighting 510 Victreebel Grass Poison 490 Tentacool Water Poison 335 Magneton Electric Steel 465 Dewgong Water Ice 475 Cloyster Water Ice 525 Onix Rock Ground 385 Dragonair Dragon 420 Pidgeotto Normal Flying 349 Rattata Normal 253 Beedrill Bug Poison 395 Doduo Normal Flying 310 Kingler Water 475 Nidoqueen Poison Ground 505 Hitmonchan Fighting 455 Charmeleon Fire 405 Arbok Poison 438 Gastly Ghost Poison 310 Magikarp Water 200",
+          "html": "<img src=\"img_google_sheets_count.png\" style=\"max-width:100%\" width=\"517\" height=\"605\"/>\n    <textarea id=\"demo_google_sheets_count\" style=\"display:none\">    Name\tType 1\tType 2\tTotal stats\n    Mankey\tFighting\t\t305\n    Poliwrath\tWater\tFighting\t510\n    Victreebel\tGrass\tPoison\t490\n    Tentacool\tWater\tPoison\t335\n    Magneton\tElectric\tSteel\t465\n    Dewgong\tWater\tIce\t475\n    Cloyster\tWater\tIce\t525\n    Onix\tRock\tGround\t385\n    Dragonair\tDragon\t\t420\n    Pidgeotto\tNormal\tFlying\t349\n    Rattata\tNormal\t\t253\n    Beedrill\tBug\tPoison\t395\n    Doduo\tNormal\tFlying\t310\n    Kingler\tWater\t\t475\n    Nidoqueen\tPoison\tGround\t505\n    Hitmonchan\tFighting\t\t455\n    Charmeleon\tFire\t\t405\n    Arbok\tPoison\t\t438\n    Gastly\tGhost\tPoison\t310\n    Magikarp\tWater\t\t200\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_count.php"
+      }
+    },
+    {
+      "title": "Google Sheets COUNTA Function",
+      "code": [
+        {
+          "text": "=COUNTA(value1, [value2, ...])",
+          "html": "=COUNTA(<strong>value1</strong>, <strong>[value2, ...]</strong>)"
+        },
+        {
+          "text": "Name Type 1 Type 2 Total stats Mankey Fighting 305 Poliwrath Water Fighting 510 Victreebel Grass Poison 490 Tentacool Water Poison 335 Magneton Electric Steel 465 Dewgong Water Ice 475 Cloyster Water Ice 525 Onix Rock Ground 385 Dragonair Dragon 420 Pidgeotto Normal Flying 349 Rattata Normal 253 Beedrill Bug Poison 395 Doduo Normal Flying 310 Kingler Water 475 Nidoqueen Poison Ground 505 Hitmonchan Fighting 455 Charmeleon Fire 405 Arbok Poison 438 Gastly Ghost Poison 310 Magikarp Water 200",
+          "html": "<img src=\"img_google_sheets_count.png\" style=\"max-width:100%\" width=\"517\" height=\"605\"/>\n    <textarea id=\"demo_google_sheets_count\" style=\"display:none\">    Name\tType 1\tType 2\tTotal stats\n    Mankey\tFighting\t\t305\n    Poliwrath\tWater\tFighting\t510\n    Victreebel\tGrass\tPoison\t490\n    Tentacool\tWater\tPoison\t335\n    Magneton\tElectric\tSteel\t465\n    Dewgong\tWater\tIce\t475\n    Cloyster\tWater\tIce\t525\n    Onix\tRock\tGround\t385\n    Dragonair\tDragon\t\t420\n    Pidgeotto\tNormal\tFlying\t349\n    Rattata\tNormal\t\t253\n    Beedrill\tBug\tPoison\t395\n    Doduo\tNormal\tFlying\t310\n    Kingler\tWater\t\t475\n    Nidoqueen\tPoison\tGround\t505\n    Hitmonchan\tFighting\t\t455\n    Charmeleon\tFire\t\t405\n    Arbok\tPoison\t\t438\n    Gastly\tGhost\tPoison\t310\n    Magikarp\tWater\t\t200\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_counta.php"
+      }
+    },
+    {
+      "title": "Google Sheets COUNTBLANK Function",
+      "code": [
+        {
+          "text": "=COUNTBLANK(value1, [value2, ...])",
+          "html": "=COUNTBLANK(<strong>value1</strong>, <strong>[value2, ...]</strong>)"
+        },
+        {
+          "text": "Name Type 1 Type 2 Total stats Mankey Fighting 305 Poliwrath Water Fighting 510 Victreebel Grass Poison 490 Tentacool Water Poison 335 Magneton Electric Steel 465 Dewgong Water Ice 475 Cloyster Water Ice 525 Onix Rock Ground 385 Dragonair Dragon 420 Pidgeotto Normal Flying 349 Rattata Normal 253 Beedrill Bug Poison 395 Doduo Normal Flying 310 Kingler Water 475 Nidoqueen Poison Ground 505 Hitmonchan Fighting 455 Charmeleon Fire 405 Arbok Poison 438 Gastly Ghost Poison 310 Magikarp Water 200",
+          "html": "<img src=\"img_google_sheets_count.png\" style=\"max-width:100%\" width=\"517\" height=\"605\"/>\n    <textarea id=\"demo_google_sheets_countblank\" style=\"display:none\">    Name\tType 1\tType 2\tTotal stats\n    Mankey\tFighting\t\t305\n    Poliwrath\tWater\tFighting\t510\n    Victreebel\tGrass\tPoison\t490\n    Tentacool\tWater\tPoison\t335\n    Magneton\tElectric\tSteel\t465\n    Dewgong\tWater\tIce\t475\n    Cloyster\tWater\tIce\t525\n    Onix\tRock\tGround\t385\n    Dragonair\tDragon\t\t420\n    Pidgeotto\tNormal\tFlying\t349\n    Rattata\tNormal\t\t253\n    Beedrill\tBug\tPoison\t395\n    Doduo\tNormal\tFlying\t310\n    Kingler\tWater\t\t475\n    Nidoqueen\tPoison\tGround\t505\n    Hitmonchan\tFighting\t\t455\n    Charmeleon\tFire\t\t405\n    Arbok\tPoison\t\t438\n    Gastly\tGhost\tPoison\t310\n    Magikarp\tWater\t\t200\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_countblank.php"
+      }
+    },
+    {
+      "title": "Google Sheets COUNTIF Function",
+      "code": [
+        {
+          "text": "=COUNTIF(range, criterion)",
+          "html": "=COUNTIF(<strong>range</strong>, <strong>criterion</strong>)"
+        },
+        {
+          "text": "Name Type 1 Type 2 Total stats Mankey Fighting 305 Poliwrath Water Fighting 510 Type Count Victreebel Grass Poison 490 Fighting Tentacool Water Poison 335 Water Magneton Electric Steel 465 Grass Dewgong Water Ice 475 Cloyster Water Ice 525 Onix Rock Ground 385 Dragonair Dragon 420 Pidgeotto Normal Flying 349 Rattata Normal 253 Beedrill Bug Poison 395 Doduo Normal Flying 310 Kingler Water 475 Nidoqueen Poison Ground 505 Hitmonchan Fighting 455 Charmeleon Fire 405 Arbok Poison 438 Gastly Ghost Poison 310 Magikarp Water 200",
+          "html": "<img src=\"img_google_sheets_countif.png\" style=\"max-width:100%\" width=\"895\" height=\"605\"/>\n    <textarea id=\"demo_google_sheets_countif\" style=\"display:none\">      Name\tType 1\tType 2\tTotal stats\t\t\t\n      Mankey\tFighting\t\t305\t\t\t\n      Poliwrath\tWater\tFighting\t510\t\tType\tCount\n      Victreebel\tGrass\tPoison\t490\t\tFighting\t\n      Tentacool\tWater\tPoison\t335\t\tWater\t\n      Magneton\tElectric\tSteel\t465\t\tGrass\t\n      Dewgong\tWater\tIce\t475\t\t\t\n      Cloyster\tWater\tIce\t525\t\t\t\n      Onix\tRock\tGround\t385\t\t\t\n      Dragonair\tDragon\t\t420\t\t\t\n      Pidgeotto\tNormal\tFlying\t349\t\t\t\n      Rattata\tNormal\t\t253\t\t\t\n      Beedrill\tBug\tPoison\t395\t\t\t\n      Doduo\tNormal\tFlying\t310\t\t\t\n      Kingler\tWater\t\t475\t\t\t\n      Nidoqueen\tPoison\tGround\t505\t\t\t\n      Hitmonchan\tFighting\t\t455\t\t\t\n      Charmeleon\tFire\t\t405\t\t\t\n      Arbok\tPoison\t\t438\t\t\t\n      Gastly\tGhost\tPoison\t310\t\t\t\n      Magikarp\tWater\t\t200\t\t\t\t\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_countif.php"
+      }
+    },
+    {
+      "title": "Google Sheets COUNTIFS Function",
+      "code": [
+        {
+          "text": "=COUNTIFS(criteria_range1, criterion1, [criteria_range2, ...], [criterion2, ...])",
+          "html": "=COUNTIFS(<strong>criteria_range1</strong>, <strong>criterion1</strong>, <strong>[criteria_range2, ...]</strong>, <strong>[criterion2, ...]</strong>)"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_countifs.php"
+      }
+    },
+    {
+      "title": "Google Sheets IF Function",
+      "code": [
+        {
+          "text": "=IF(logical_expression, value_if_true, value_if_false)",
+          "html": "=IF(<strong>logical_expression</strong>, <strong>value_if_true</strong>, <strong>value_if_false</strong>)"
+        },
+        {
+          "text": "Name Type 1 Total Grass Type Bulbasaur Grass 318 Ivysaur Grass 405 Venusaur Grass 525 Charmander Fire 309 Charmeleon Fire 405 Charizard Fire 534 Squirtle Water 314 Wartortle Water 405 Blastoise Water 530",
+          "html": "<img src=\"img_google_sheets_if.png\" style=\"max-width:100%\" width=\"497\" height=\"318\"/>\n    <textarea id=\"demo_google_sheets_if\" style=\"display:none\">      Name\tType 1\tTotal\tGrass Type\n      Bulbasaur\tGrass\t318\t\n      Ivysaur\tGrass\t405\t\n      Venusaur\tGrass\t525\t\n      Charmander\tFire\t309\t\n      Charmeleon\tFire\t405\t\n      Charizard\tFire\t534\t\n      Squirtle\tWater\t314\t\n      Wartortle\tWater\t405\t\n      Blastoise\tWater\t530\t\n    </textarea>"
+        },
+        {
+          "text": "Name Type 1 Total More than 500 Total Stats Bulbasaur Grass 318 Ivysaur Grass 405 Venusaur Grass 525 Charmander Fire 309 Charmeleon Fire 405 Charizard Fire 534 Squirtle Water 314 Wartortle Water 405 Blastoise Water 530",
+          "html": "<img src=\"img_google_sheets_if6.png\" style=\"max-width:100%\" width=\"607\" height=\"319\"/>\n  <textarea id=\"demo_google_sheets_if2\" style=\"display:none\">  Name\tType 1\tTotal\tMore than 500 Total Stats\n  Bulbasaur\tGrass\t318\t\n  Ivysaur\tGrass\t405\t\n  Venusaur\tGrass\t525\t\n  Charmander\tFire\t309\t\n  Charmeleon\tFire\t405\t\n  Charizard\tFire\t534\t\n  Squirtle\tWater\t314\t\n  Wartortle\tWater\t405\t\n  Blastoise\tWater\t530\t\n  </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_if.php"
+      }
+    },
+    {
+      "title": "Google Sheets IFS Function",
+      "code": [
+        {
+          "text": "=IFS(logical_test1, value_if_true1, [logical_test2, value_if_true2], [logical_test3; ...)",
+          "html": "=IFS(<strong>logical_test1</strong>, <strong>value_if_true1</strong>, <strong>[logical_test2, value_if_true2]</strong>, <strong>[logical_test3;</strong> ...)"
+        },
+        {
+          "text": "Name Type 1 Speed Speed Category Bulbasaur Grass 45 Ivysaur Grass 60 Venusaur Grass 80 Charmander Fire 65 Charmeleon Fire 80 Charizard Fire 100 Squirtle Water 43 Wartortle Water 58 Blastoise Water 78",
+          "html": "<img src=\"img_google_sheets_ifs.png\" style=\"max-width:100%\" width=\"544\" height=\"319\"/>\n    <textarea id=\"demo_google_sheets_ifs\" style=\"display:none\">    Name\tType 1\tSpeed\tSpeed Category\n    Bulbasaur\tGrass\t45\t\n    Ivysaur\tGrass\t60\t\n    Venusaur\tGrass\t80\t\n    Charmander\tFire\t65\t\n    Charmeleon\tFire\t80\t\n    Charizard\tFire\t100\t\n    Squirtle\tWater\t43\t\n    Wartortle\tWater\t58\t\n    Blastoise\tWater\t78\t\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_ifs.php"
+      }
+    },
+    {
+      "title": "Google Sheets MAX Function",
+      "code": [
+        {
+          "text": "=MAX(value1, [value2, ...])",
+          "html": "=MAX(<strong>value1</strong>, <strong>[value2, ...]</strong>)"
+        },
+        {
+          "text": "Name Type 1 Total stats Mankey Fighting 305 Poliwrath Water 510 MAX Victreebel Grass 490 Tentacool Water 335 Magneton Electric 465 Dewgong Water 475 Cloyster Water 525 Onix Rock 385 Dragonair Dragon 420 Pidgeotto Normal 349 Rattata Normal 253 Beedrill Bug 395 Doduo Normal 310 Kingler Water 475 Nidoqueen Poison 505 Hitmonchan Fighting 455 Charmeleon Fire 405 Arbok Poison 438 Gastly Ghost 310 Magikarp Water 200",
+          "html": "<img src=\"img_google_sheets_max.png\" style=\"max-width:100%\" width=\"700\" height=\"605\"/>\n    <textarea id=\"demo_google_sheets_max\" style=\"display:none\">      Name\tType 1\tTotal stats\t\t\n      Mankey\tFighting\t305\t\t\n      Poliwrath\tWater\t510\t\tMAX\n      Victreebel\tGrass\t490\t\t\n      Tentacool\tWater\t335\t\t\n      Magneton\tElectric\t465\t\t\n      Dewgong\tWater\t475\t\t\n      Cloyster\tWater\t525\t\t\n      Onix\tRock\t385\t\t\n      Dragonair\tDragon\t420\t\t\n      Pidgeotto\tNormal\t349\t\t\n      Rattata\tNormal\t253\t\t\n      Beedrill\tBug\t395\t\t\n      Doduo\tNormal\t310\t\t\n      Kingler\tWater\t475\t\t\n      Nidoqueen\tPoison\t505\t\t\n      Hitmonchan\tFighting\t455\t\t\n      Charmeleon\tFire\t405\t\t\n      Arbok\tPoison\t438\t\t\n      Gastly\tGhost\t310\t\t\n      Magikarp\tWater\t200\t\t\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_max.php"
+      }
+    },
+    {
+      "title": "Google Sheets MEDIAN Function",
+      "code": [
+        {
+          "text": "=MEDIAN(value1, [value2, ...])",
+          "html": "=MEDIAN(<strong>value1</strong>, <strong>[value2, ...]</strong>)"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_median.php"
+      }
+    },
+    {
+      "title": "Google Sheets MIN Function",
+      "code": [
+        {
+          "text": "=MIN(value1, [value2, ...])",
+          "html": "=MIN(<strong>value1</strong>, <strong>[value2, ...]</strong>)"
+        },
+        {
+          "text": "Name Type 1 Total stats Mankey Fighting 305 Poliwrath Water 510 MIN Victreebel Grass 490 Tentacool Water 335 Magneton Electric 465 Dewgong Water 475 Cloyster Water 525 Onix Rock 385 Dragonair Dragon 420 Pidgeotto Normal 349 Rattata Normal 253 Beedrill Bug 395 Doduo Normal 310 Kingler Water 475 Nidoqueen Poison 505 Hitmonchan Fighting 455 Charmeleon Fire 405 Arbok Poison 438 Gastly Ghost 310 Magikarp Water 200",
+          "html": "<img src=\"img_google_sheets_min.png\" style=\"max-width:100%\" width=\"700\" height=\"605\"/>\n    <textarea id=\"demo_google_sheets_min\" style=\"display:none\">      Name\tType 1\tTotal stats\t\t\n      Mankey\tFighting\t305\t\t\n      Poliwrath\tWater\t510\t\tMIN\n      Victreebel\tGrass\t490\t\t\n      Tentacool\tWater\t335\t\t\n      Magneton\tElectric\t465\t\t\n      Dewgong\tWater\t475\t\t\n      Cloyster\tWater\t525\t\t\n      Onix\tRock\t385\t\t\n      Dragonair\tDragon\t420\t\t\n      Pidgeotto\tNormal\t349\t\t\n      Rattata\tNormal\t253\t\t\n      Beedrill\tBug\t395\t\t\n      Doduo\tNormal\t310\t\t\n      Kingler\tWater\t475\t\t\n      Nidoqueen\tPoison\t505\t\t\n      Hitmonchan\tFighting\t455\t\t\n      Charmeleon\tFire\t405\t\t\n      Arbok\tPoison\t438\t\t\n      Gastly\tGhost\t310\t\t\n      Magikarp\tWater\t200\t\t\t\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_min.php"
+      }
+    },
+    {
+      "title": "Google Sheets MODE Function",
+      "code": [
+        {
+          "text": "=MODE.SNGL(value1, [value2, ...])\n=MODE.MULT(value1, [value2, ...])",
+          "html": "=MODE.SNGL(<strong>value1</strong>, <strong>[value2, ...]</strong>)\n  <br/>\n    =MODE.MULT(<strong>value1</strong>, <strong>[value2, ...]</strong>)"
+        },
+        {
+          "text": "Trainer Pokeball Great Ball Ultraball Master Ball Iva 10 4 1 1 Liam 12 3 0 1 Jenny 15 1 3 1 Iben 12 2 6 0 Adora 10 4 1 1 Kasper 9 2 1 0 MODE",
+          "html": "<img src=\"img_google_sheets_mode.png\" style=\"max-width:100%\" width=\"593\" height=\"293\"/>\n    <textarea id=\"demo_google_sheets_mode\" style=\"display:none\">      Trainer\tPokeball\tGreat Ball\tUltraball\tMaster Ball\n      Iva\t10\t4\t1\t1\n      Liam\t12\t3\t0\t1\n      Jenny\t15\t1\t3\t1\n      Iben\t12\t2\t6\t0\n      Adora\t10\t4\t1\t1\n      Kasper\t9\t2\t1\t0\n              \n      MODE\t\t\t\t\t\t\t\t\t\t\t\n    </textarea>"
+        },
+        {
+          "text": "Trainer Pokeball Iva 10 Liam 12 Jenny 15 Iben 12 Adora 10 Kasper 9 MODE",
+          "html": "<img src=\"img_google_sheets_mode5.png\" style=\"max-width:100%\" width=\"329\" height=\"293\"/>\n    <textarea id=\"demo_google_sheets_mode2\" style=\"display:none\">      Trainer\tPokeball\n      Iva\t10\n      Liam\t12\n      Jenny\t15\n      Iben\t12\n      Adora\t10\n      Kasper\t9\n        \n      MODE\t\t\t\t\t\t\t\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_mode.php"
+      }
+    },
+    {
+      "title": "Google Sheets OR Function",
+      "code": [
+        {
+          "text": "=OR(logical_expression1, [logical_expression2, ...])",
+          "html": "=OR(<strong>logical_expression1</strong>, <strong>[logical_expression2, ...]</strong>)"
+        },
+        {
+          "text": "Name Type 1 Defense Water Type OR more than 60 Defense Bulbasaur Grass 49 Ivysaur Grass 63 Venusaur Grass 83 Charmander Fire 43 Charmeleon Fire 58 Charizard Fire 78 Squirtle Water 65 Wartortle Water 80 Blastoise Water 100",
+          "html": "<img src=\"img_google_sheets_or.png\" style=\"max-width:100%\" width=\"727\" height=\"319\"/>\n    <textarea id=\"demo_google_sheets_or\" style=\"display:none\">    Name\tType 1\tDefense\tWater Type OR more than 60 Defense\n    Bulbasaur\tGrass\t49\t\n    Ivysaur\tGrass\t63\t\n    Venusaur\tGrass\t83\t\n    Charmander\tFire\t43\t\n    Charmeleon\tFire\t58\t\n    Charizard\tFire\t78\t\n    Squirtle\tWater\t65\t\n    Wartortle\tWater\t80\t\n    Blastoise\tWater\t100\t\n    </textarea>"
+        },
+        {
+          "text": "=IF(logical_expression, value_if_true, value_if_false)",
+          "html": "=IF(<strong>logical_expression</strong>, <strong>value_if_true</strong>, <strong>value_if_false</strong>)"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_or.php"
+      }
+    },
+    {
+      "title": "Google Sheets STDEV.P Function",
+      "code": [
+        {
+          "text": "=STDEV.P(value1, [value2, ...])",
+          "html": "=STDEV.P(<strong>value1</strong>, <strong>[value2, ...]</strong>)"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_stdevp.php"
+      }
+    },
+    {
+      "title": "Google Sheets STDEV.S Function",
+      "code": [
+        {
+          "text": "=STDEV.S(value1, [value2, ...])",
+          "html": "=STDEV.S(<strong>value1</strong>, <strong>[value2, ...]</strong>)"
+        },
+        {
+          "text": "Name Total Bulbasaur 318 Ivysaur 405 STDEV.S Venusaur 525 Charmander 309 Charmeleon 405 Charizard 534 Squirtle 314 Wartortle 405 Blastoise 530 Caterpie 195 Metapod 205 Butterfree 395 Weedle 195 Kakuna 205 Beedrill 395 Pidgey 251 Pidgeotto 349 Pidgeot 479 Rattata 253 Raticate 413",
+          "html": "<img src=\"img_google_sheets_stdevs.png\" style=\"max-width:100%\" width=\"589\" height=\"605\"/>\n    <textarea id=\"demo_google_sheets_stdevs\" style=\"display:none\">      Name\tTotal\t\t\n      Bulbasaur\t318\t\t\n      Ivysaur\t405\t\tSTDEV.S\n      Venusaur\t525\t\t\n      Charmander\t309\t\t\n      Charmeleon\t405\t\t\n      Charizard\t534\t\t\n      Squirtle\t314\t\t\n      Wartortle\t405\t\t\n      Blastoise\t530\t\t\n      Caterpie\t195\t\t\n      Metapod\t205\t\t\n      Butterfree\t395\t\t\n      Weedle\t195\t\t\n      Kakuna\t205\t\t\n      Beedrill\t395\t\t\n      Pidgey\t251\t\t\n      Pidgeotto\t349\t\t\n      Pidgeot\t479\t\t\n      Rattata\t253\t\t\n      Raticate\t413\t\t\n  </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_stdevs.php"
+      }
+    },
+    {
+      "title": "Google Sheets SUM Function",
+      "code": [
+        {
+          "text": "=SUM(value1, [value2, ...])",
+          "html": "=SUM(<strong>value1</strong>, <strong>[value2, ...]</strong>)"
+        },
+        {
+          "text": "Name Total stats Mankey 305 Magneton 465 Onix 385 Dragonair 420 Pidgeotto 349 Rattata 253 Charmeleon 405 Gastly 310 Magikarp 200 SUM",
+          "html": "<img src=\"img_google_sheets_sum.png\" style=\"max-width:100%\" width=\"380\" height=\"371\"/>\n  <textarea id=\"demo_google_sheets_sum\" style=\"display:none\">    Name\tTotal stats\n    Mankey\t305\n    Magneton\t465\n    Onix\t385\n    Dragonair\t420\n    Pidgeotto\t349\n    Rattata\t253\n    Charmeleon\t405\n    Gastly\t310\n    Magikarp\t200\n      \n    SUM\t\n  </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_sum.php"
+      }
+    },
+    {
+      "title": "Google Sheets SUMIF Function",
+      "code": [
+        {
+          "text": "=SUMIF(range, criterion, [sum_range])",
+          "html": "=SUMIF(<strong>range</strong>, <strong>criterion</strong>, <strong>[sum_range]</strong>)"
+        },
+        {
+          "text": "Name Type 1 Total Bulbasaur Grass 318 Type Total Sum Ivysaur Grass 405 Grass Venusaur Grass 525 Fire Charmander Fire 309 Water Charmeleon Fire 405 Charizard Fire 534 Squirtle Water 314 Wartortle Water 405 Blastoise Water 530",
+          "html": "<img src=\"img_google_sheets_sumif.png\" style=\"max-width:100%\"/>\n    <textarea id=\"demo_google_sheets_sumif\" style=\"display:none\">    Name\tType 1\tTotal\t\t\t\n    Bulbasaur\tGrass\t318\t\tType\tTotal Sum\n    Ivysaur\tGrass\t405\t\tGrass\t\n    Venusaur\tGrass\t525\t\tFire\t\n    Charmander\tFire\t309\t\tWater\t\n    Charmeleon\tFire\t405\t\t\t\n    Charizard\tFire\t534\t\t\t\n    Squirtle\tWater\t314\t\t\t\n    Wartortle\tWater\t405\t\t\t\n    Blastoise\tWater\t530\t\t\t\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_sumif.php"
+      }
+    },
+    {
+      "title": "Google Sheets SUMIFS Function",
+      "code": [
+        {
+          "text": "=SUMIFS(sum_range, criteria_range1, criterion1, [criteria_range2, ...], [criterion2, ...])",
+          "html": "=SUMIFS(<strong>sum_range</strong>, <strong>criteria_range1</strong>, <strong>criterion1</strong>, <strong>[criteria_range2, ...]</strong>, <strong>[criterion2, ...]</strong>)"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_sumifs.php"
+      }
+    },
+    {
+      "title": "Google Sheets VLOOKUP Function",
+      "code": [
+        {
+          "text": "=VLOOKUP(search_key, range, index, [is_sorted])",
+          "html": "=VLOOKUP(<strong>search_key</strong>, <strong>range</strong>, \n<strong>index</strong>, <strong>[is_sorted]</strong>)"
+        },
+        {
+          "text": "# Name Type 1 Type 2 Total 1 Bulbasaur Grass Poison 318 2 Ivysaur Grass Poison 405 Search ID# 3 Venusaur Grass Poison 525 Name 4 Charmander Fire 309 5 Charmeleon Fire 405 6 Charizard Fire Flying 534 7 Squirtle Water 314 8 Wartortle Water 405 9 Blastoise Water 530 10 Caterpie Bug 195 11 Metapod Bug 205 12 Butterfree Bug Flying 395 13 Weedle Bug Poison 195 14 Kakuna Bug Poison 205 15 Beedrill Bug Poison 395 16 Pidgey Normal Flying 251 17 Pidgeotto Normal Flying 349 18 Pidgeot Normal Flying 479 19 Rattata Normal 253 20 Raticate Normal 413",
+          "html": "<img src=\"img_google_sheets_vlookup2.png\" style=\"max-width:100%\" width=\"952\" height=\"605\"/>\n    <textarea id=\"demo_google_sheets_vlookup\" style=\"display:none\">      #\tName\tType 1\tType 2\tTotal\t\t\n      1\tBulbasaur\tGrass\tPoison\t318\t\t\n      2\tIvysaur\tGrass\tPoison\t405\t\tSearch ID#\n      3\tVenusaur\tGrass\tPoison\t525\t\tName\n      4\tCharmander\tFire\t\t309\t\t\n      5\tCharmeleon\tFire\t\t405\t\t\n      6\tCharizard\tFire\tFlying\t534\t\t\n      7\tSquirtle\tWater\t\t314\t\t\n      8\tWartortle\tWater\t\t405\t\t\n      9\tBlastoise\tWater\t\t530\t\t\n      10\tCaterpie\tBug\t\t195\t\t\n      11\tMetapod\tBug\t\t205\t\t\n      12\tButterfree\tBug\tFlying\t395\t\t\n      13\tWeedle\tBug\tPoison\t195\t\t\n      14\tKakuna\tBug\tPoison\t205\t\t\n      15\tBeedrill\tBug\tPoison\t395\t\t\n      16\tPidgey\tNormal\tFlying\t251\t\t\n      17\tPidgeotto\tNormal\tFlying\t349\t\t\n      18\tPidgeot\tNormal\tFlying\t479\t\t\n      19\tRattata\tNormal\t\t253\t\t\n      20\tRaticate\tNormal\t\t413\t\t\t\n  </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_vlookup.php"
+      }
+    },
+    {
+      "title": "Google Sheets XOR Function",
+      "code": [
+        {
+          "text": "=XOR(logical_expression1, [logical2_expression, ...])",
+          "html": "=XOR(<strong>logical_expression1</strong>, <strong>[logical2_expression, ...]</strong>)"
+        },
+        {
+          "text": "Name Type 1 HP EITHER Fire Type OR less than 60 HP Bulbasaur Grass 45 Ivysaur Grass 60 Venusaur Grass 80 Charmander Fire 39 Charmeleon Fire 58 Charizard Fire 78 Squirtle Water 44 Wartortle Water 59 Blastoise Water 79",
+          "html": "<img src=\"img_google_sheets_xor.png\" style=\"max-width:100%\"/>\n    <textarea id=\"demo_google_sheets_xor\" style=\"display:none\">    Name\tType 1\tHP\tEITHER Fire Type OR less than 60 HP\n    Bulbasaur\tGrass\t45\t\n    Ivysaur\tGrass\t60\t\n    Venusaur\tGrass\t80\t\n    Charmander\tFire\t39\t\n    Charmeleon\tFire\t58\t\n    Charizard\tFire\t78\t\n    Squirtle\tWater\t44\t\n    Wartortle\tWater\t59\t\n    Blastoise\tWater\t79\t\n    </textarea>"
+        },
+        {
+          "text": "=IF(logical_expression, value_if_true, value_if_false)",
+          "html": "=IF(<strong>logical_expression</strong>, <strong>value_if_true</strong>, <strong>value_if_false</strong>)"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/google_sheets_xor.php"
+      }
+    }
+  ]
+}

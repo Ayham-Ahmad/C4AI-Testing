@@ -1,0 +1,353 @@
+{
+  "language": "PANDAS",
+  "tutorials": [
+    {
+      "title": "Pandas Tutorial",
+      "code": [
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nprint(df.to_string())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df.to_string()) <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/default.asp"
+      }
+    },
+    {
+      "title": "Pandas Getting Started",
+      "code": [
+        {
+          "text": "C:\\Users\\Your Name>pip install pandas",
+          "html": "C:\\Users\\<em>Your Name</em>&gt;pip install pandas"
+        },
+        {
+          "text": "import pandas",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas\n </span>"
+        },
+        {
+          "text": "import pandas\n\nmydataset = {\n'cars': [\"BMW\", \"Volvo\", \"Ford\"],\n'passings': [3, 7, 2]\n}\n\nmyvar = pandas.DataFrame(mydataset)\n\nprint(myvar)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas<br/><br/>mydataset = {<br/>  <span class=\"pythonstringcolor\" style=\"color:green\">'cars'</span>: [<span class=\"pythonstringcolor\" style=\"color:green\">\"BMW\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Volvo\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Ford\"</span>],<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>  <span class=\"pythonstringcolor\" style=\"color:green\">'passings'</span>: [<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>]<br/>}<br/><br/>myvar = pandas.DataFrame(mydataset)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(myvar) </span>"
+        },
+        {
+          "text": "import pandas as pd",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd\n </span>"
+        },
+        {
+          "text": "import pandas as pd\n\nmydataset = {\n'cars': [\"BMW\", \"Volvo\", \"Ford\"],\n'passings': [3, 7, 2]\n}\n\nmyvar = pd.DataFrame(mydataset)\n\nprint(myvar)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd\n<br/><br/>mydataset = {<br/>  <span class=\"pythonstringcolor\" style=\"color:green\">'cars'</span>: [<span class=\"pythonstringcolor\" style=\"color:green\">\"BMW\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Volvo\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"Ford\"</span>], <br/>  <span class=\"pythonstringcolor\" style=\"color:green\">'passings'</span>: <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  [<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>]<br/>}<br/><br/>myvar = pd.DataFrame(mydataset)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(myvar)<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "import pandas as pd\n\nprint(pd.__version__)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(pd.__version__) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/pandas_getting_started.asp"
+      }
+    },
+    {
+      "title": "Pandas Series",
+      "code": [
+        {
+          "text": "import pandas as pd\n\na = [1, 7, 2]\n\nmyvar = pd.Series(a)\n\nprint(myvar)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd\n<br/><br/>a = [<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>]<br/><br/>myvar = pd.Series(a)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(myvar)<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "print(myvar[0])",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(myvar[<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>])<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "import pandas as pd\n\na = [1, 7, 2]\n\nmyvar = pd.Series(a, index = [\"x\", \"y\", \"z\"])\n\nprint(myvar)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd\n<br/><br/>a = [<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>]<br/><br/>myvar = pd.Series(a, index = [<span class=\"pythonstringcolor\" style=\"color:green\">\"x\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"y\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"z\"</span>])<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(myvar)<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "print(myvar[\"y\"])",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(myvar[<span class=\"pythonstringcolor\" style=\"color:green\">\"y\"</span>])<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "import pandas as pd\n\ncalories = {\"day1\": 420, \"day2\": 380, \"day3\": 390}\n\nmyvar = pd.Series(calories)\n\nprint(myvar)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd\n<br/><br/>calories = {<span class=\"pythonstringcolor\" style=\"color:green\">\"day1\"</span>: <span class=\"pythonnumbercolor\" style=\"color:#905\">420</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"day2\"</span>: <span class=\"pythonnumbercolor\" style=\"color:#905\">380</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"day3\"</span>: <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">390</span>}<br/><br/>myvar = pd.Series(calories)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(myvar)<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "import pandas as pd\n\ncalories = {\"day1\": 420, \"day2\": 380, \"day3\": 390}\n\nmyvar = pd.Series(calories, index = [\"day1\", \"day2\"])\n\nprint(myvar)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd\n<br/><br/>calories = {<span class=\"pythonstringcolor\" style=\"color:green\">\"day1\"</span>: <span class=\"pythonnumbercolor\" style=\"color:#905\">420</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"day2\"</span>: <span class=\"pythonnumbercolor\" style=\"color:#905\">380</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"day3\"</span>: <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">390</span>}<br/><br/>myvar = pd.Series(calories, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  index = [<span class=\"pythonstringcolor\" style=\"color:green\">\"day1\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"day2\"</span>])<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(myvar)<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "import pandas as pd\n\ndata = {\n\"calories\": [420, 380, 390],\n\"duration\": [50, 40, 45]\n}\n\nmyvar = pd.DataFrame(data)\n\nprint(myvar)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd\n<br/><br/>data = {<br/>  <span class=\"pythonstringcolor\" style=\"color:green\">\"calories\"</span>: [<span class=\"pythonnumbercolor\" style=\"color:#905\">420</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">380</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">390</span>],<br/>  <span class=\"pythonstringcolor\" style=\"color:green\">\"duration\"</span>: <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  [<span class=\"pythonnumbercolor\" style=\"color:#905\">50</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">40</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>]<br/>}<br/><br/>myvar = pd.DataFrame(data)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(myvar)<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/pandas_series.asp"
+      }
+    },
+    {
+      "title": "Pandas DataFrames",
+      "code": [
+        {
+          "text": "calories duration 0 420 50 1 380 40 2 390 45",
+          "html": "calories  duration\n  0       420        50\n  1       380        40\n  2       390        45"
+        },
+        {
+          "text": "calories 420 duration 50 Name: 0, dtype: int64",
+          "html": "calories    420\n  duration     50\n  Name: 0, dtype: int64"
+        },
+        {
+          "text": "calories duration 0 420 50 1 380 40",
+          "html": "calories  duration\n  0       420        50\n  1       380        40"
+        },
+        {
+          "text": "calories duration day1 420 50 day2 380 40 day3 390 45",
+          "html": "calories  duration\n  day1       420        50\n  day2       380        40\n  day3       390        45"
+        },
+        {
+          "text": "calories 380 duration 40 Name: day2, dtype: int64",
+          "html": "calories    380\n  duration     40\n  Name: day2, dtype: int64"
+        },
+        {
+          "text": "import pandas as pd\n\ndata = {\n\"calories\": [420, 380, 390],\n\"duration\": [50, 40, 45]\n}\n\n#load data into a DataFrame object:\ndf = pd.DataFrame(data)\n\nprint(df)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd\n<br/><br/>data = {<br/>  <span class=\"pythonstringcolor\" style=\"color:green\">\"calories\"</span>: [<span class=\"pythonnumbercolor\" style=\"color:#905\">420</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">380</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">390</span>],<br/>  <span class=\"pythonstringcolor\" style=\"color:green\">\"duration\"</span>: <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  [<span class=\"pythonnumbercolor\" style=\"color:#905\">50</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">40</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>]<br/>}<br/><br/><span class=\"commentcolor\" style=\"color:slategray\">#load data into a DataFrame object:<br/></span>df = pd.DataFrame(data)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df) <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "#refer to the row index:\nprint(df.loc[0])",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"commentcolor\" style=\"color:slategray\">#refer to the row index:<br/></span>\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df.loc[<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>])<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "#use a list of indexes:\nprint(df.loc[[0, 1]])",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"commentcolor\" style=\"color:slategray\">#use a list of indexes:<br/></span>\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df.loc[[<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>]])<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "import pandas as pd\n\ndata = {\n\"calories\": [420, 380, 390],\n\"duration\": [50, 40, 45]\n}\n\ndf = pd.DataFrame(data, index = [\"day1\", \"day2\", \"day3\"])\n\nprint(df)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd\n<br/><br/>data = {<br/>  <span class=\"pythonstringcolor\" style=\"color:green\">\"calories\"</span>: [<span class=\"pythonnumbercolor\" style=\"color:#905\">420</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">380</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">390</span>],<br/>  <span class=\"pythonstringcolor\" style=\"color:green\">\"duration\"</span>: <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  [<span class=\"pythonnumbercolor\" style=\"color:#905\">50</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">40</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>]<br/>}<br/><br/>df = pd.DataFrame(data, index = [<span class=\"pythonstringcolor\" style=\"color:green\">\"day1\"</span>, <span class=\"pythonstringcolor\" style=\"color:green\">\"day2\"</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"day3\"</span>])<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df) <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "#refer to the named index:\nprint(df.loc[\"day2\"])",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"commentcolor\" style=\"color:slategray\">#refer to the named index:<br/></span>\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df.loc[<span class=\"pythonstringcolor\" style=\"color:green\">\"day2\"</span>])<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nprint(df)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df) <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/pandas_dataframes.asp"
+      }
+    },
+    {
+      "title": "Pandas Read CSV",
+      "code": [
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nprint(df.to_string())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df.to_string()) <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nprint(df)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df) <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "import pandas as pd\n\nprint(pd.options.display.max_rows)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(pd.options.display.max_rows) <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "import pandas as pd\n\npd.options.display.max_rows = 9999\n\ndf = pd.read_csv('data.csv')\n\nprint(df)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>pd.options.display.max_rows <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  = <span class=\"pythonnumbercolor\" style=\"color:#905\">9999</span><br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df) <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/pandas_csv.asp"
+      }
+    },
+    {
+      "title": "Pandas Read JSON",
+      "code": [
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_json('data.json')\n\nprint(df.to_string())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_json(<span class=\"pythonstringcolor\" style=\"color:green\">'data.json'</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df.to_string()) <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "import pandas as pd\n\ndata = {\n\"Duration\":{\n\"0\":60,\n\"1\":60,\n\"2\":60,\n\"3\":45,\n\"4\":45,\n\"5\":60\n},\n\"Pulse\":{\n\"0\":110,\n\"1\":117,\n\"2\":103,\n\"3\":109,\n\"4\":117,\n\"5\":102\n},\n\"Maxpulse\":{\n\"0\":130,\n\"1\":145,\n\"2\":135,\n\"3\":175,\n\"4\":148,\n\"5\":127\n},\n\"Calories\":{\n\"0\":409,\n\"1\":479,\n\"2\":340,\n\"3\":282,\n\"4\":406,\n\"5\":300\n}\n}\n\ndf = pd.DataFrame(data)\n\nprint(df)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>data = {<br/>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Duration\"</span>:{<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"0\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>,<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"1\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>,<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"2\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>,<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"3\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>,<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"4\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>,<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"5\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span><br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  },<br/>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Pulse\"</span>:{<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"0\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">110</span>,<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"1\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">117</span>,<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"2\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">103</span>,<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"3\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">109</span>,<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"4\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">117</span>,<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"5\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">102</span><br/>  },<br/>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Maxpulse\"</span>:{<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"0\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">130</span>,<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"1\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">145</span>,<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"2\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">135</span>,<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"3\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">175</span>,<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"4\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">148</span>,<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"5\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">127</span><br/>  <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  },<br/>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Calories\"</span>:{<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"0\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">409</span>,<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"1\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">479</span>,<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"2\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">340</span>,<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"3\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">282</span>,<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"4\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">406</span>,<br/>    <span class=\"pythonstringcolor\" style=\"color:green\">\"5\"</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">300</span><br/>  }<br/>}<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  df = pd.DataFrame(data)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df) <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/pandas_json.asp"
+      }
+    },
+    {
+      "title": "Pandas - Analyzing DataFrames",
+      "code": [
+        {
+          "text": "<class 'pandas.core.frame.DataFrame'> RangeIndex: 169 entries, 0 to 168 Data columns (total 4 columns): # Column Non-Null Count Dtype --- ------ -------------- ----- 0 Duration 169 non-null int64 1 Pulse 169 non-null int64 2 Maxpulse 169 non-null int64 3 Calories 164 non-null float64 dtypes: float64(1), int64(3) memory usage: 5.4 KB None",
+          "html": "&lt;class 'pandas.core.frame.DataFrame'&gt;\n  RangeIndex: 169 entries, 0 to 168\n  Data columns (total 4 columns):\n   #   Column    Non-Null Count  Dtype  \n  ---  ------    --------------  -----  \n   0   Duration  169 non-null    int64  \n   1   Pulse     169 non-null    int64  \n   2   Maxpulse  169 non-null    int64  \n   3   Calories  164 non-null    float64\n  dtypes: float64(1), int64(3)\n  memory usage: 5.4 KB\n  None"
+        },
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nprint(df.head(10))",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df.head(<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>)) </span>"
+        },
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nprint(df.head())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df.head()) </span>"
+        },
+        {
+          "text": "print(df.tail())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df.tail()) <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/pandas_analyzing.asp"
+      }
+    },
+    {
+      "title": "Pandas - Cleaning Empty Cells",
+      "code": [
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nnew_df = df.dropna()\n\nprint(new_df.to_string())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>new_df = df.dropna()<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(new_df.to_string())<br/> </span>"
+        },
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\ndf.dropna(inplace = True)\n\nprint(df.to_string())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><br/>df.dropna(inplace = <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">True</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df.to_string()) </span>"
+        },
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\ndf.fillna(130, inplace = True)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><br/>df.fillna(<span class=\"pythonnumbercolor\" style=\"color:#905\">130</span>, inplace = <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">True</span>) </span>"
+        },
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\ndf.fillna({\"Calories\": 130}, inplace=True)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  df.fillna({<span class=\"pythonstringcolor\" style=\"color:green\">\"Calories\"</span>: <span class=\"pythonnumbercolor\" style=\"color:#905\">130</span>}, inplace=<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">True</span>) </span>"
+        },
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nx = df[\"Calories\"].mean()\n\ndf.fillna({\"Calories\": x}, inplace=True)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>x = df[<span class=\"pythonstringcolor\" style=\"color:green\">\"Calories\"</span>].mean()<br/><br/>df.fillna({<span class=\"pythonstringcolor\" style=\"color:green\">\"Calories\"</span>: x}, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  inplace=<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">True</span>) </span>"
+        },
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nx = df[\"Calories\"].median()\n\ndf.fillna({\"Calories\": x}, inplace=True)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>x = df[<span class=\"pythonstringcolor\" style=\"color:green\">\"Calories\"</span>].median()<br/><br/>df.fillna({<span class=\"pythonstringcolor\" style=\"color:green\">\"Calories\"</span>: x}, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  inplace=<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">True</span>) </span>"
+        },
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nx = df[\"Calories\"].mode()[0]\n\ndf.fillna({\"Calories\": x}, inplace=True)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>x = df[<span class=\"pythonstringcolor\" style=\"color:green\">\"Calories\"</span>].mode()[<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>]<br/><br/>df.fillna({<span class=\"pythonstringcolor\" style=\"color:green\">\"Calories\"</span>: x}, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  inplace=<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">True</span>) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/pandas_cleaning_empty_cells.asp"
+      }
+    },
+    {
+      "title": "Pandas - Cleaning Data of Wrong Format",
+      "code": [
+        {
+          "text": "Duration Date Pulse Maxpulse Calories 0 60 '2020/12/01' 110 130 409.1 1 60 '2020/12/02' 117 145 479.0 2 60 '2020/12/03' 103 135 340.0 3 45 '2020/12/04' 109 175 282.4 4 45 '2020/12/05' 117 148 406.0 5 60 '2020/12/06' 102 127 300.0 6 60 '2020/12/07' 110 136 374.0 7 450 '2020/12/08' 104 134 253.3 8 30 '2020/12/09' 109 133 195.1 9 60 '2020/12/10' 98 124 269.0 10 60 '2020/12/11' 103 147 329.3 11 60 '2020/12/12' 100 120 250.7 12 60 '2020/12/12' 100 120 250.7 13 60 '2020/12/13' 106 128 345.3 14 60 '2020/12/14' 104 132 379.3 15 60 '2020/12/15' 98 123 275.0 16 60 '2020/12/16' 98 120 215.2 17 60 '2020/12/17' 100 120 300.0 18 45 '2020/12/18' 90 112 NaN 19 60 '2020/12/19' 103 123 323.0 20 45 '2020/12/20' 97 125 243.0 21 60 '2020/12/21' 108 131 364.2 22 45 NaT 100 119 282.0 23 60 '2020/12/23' 130 101 300.0 24 45 '2020/12/24' 105 132 246.0 25 60 '2020/12/25' 102 126 334.5 26 60 '2020/12/26' 100 120 250.0 27 60 '2020/12/27' 92 118 241.0 28 60 '2020/12/28' 103 132 NaN 29 60 '2020/12/29' 100 132 280.0 30 60 '2020/12/30' 102 129 380.3 31 60 '2020/12/31' 92 115 243.0",
+          "html": "Duration          Date  Pulse  Maxpulse  Calories\n  0         60  '2020/12/01'    110       130     409.1\n  1         60  '2020/12/02'    117       145     479.0\n  2         60  '2020/12/03'    103       135     340.0\n  3         45  '2020/12/04'    109       175     282.4\n  4         45  '2020/12/05'    117       148     406.0\n  5         60  '2020/12/06'    102       127     300.0\n  6         60  '2020/12/07'    110       136     374.0\n  7        450  '2020/12/08'    104       134     253.3\n  8         30  '2020/12/09'    109       133     195.1\n  9         60  '2020/12/10'     98       124     269.0\n  10        60  '2020/12/11'    103       147     329.3\n  11        60  '2020/12/12'    100       120     250.7\n  12        60  '2020/12/12'    100       120     250.7\n  13        60  '2020/12/13'    106       128     345.3\n  14        60  '2020/12/14'    104       132     379.3\n  15        60  '2020/12/15'     98       123     275.0\n  16        60  '2020/12/16'     98       120     215.2\n  17        60  '2020/12/17'    100       120     300.0\n  18        45  '2020/12/18'     90       112       NaN\n  19        60  '2020/12/19'    103       123     323.0\n  20        45  '2020/12/20'     97       125     243.0\n  21        60  '2020/12/21'    108       131     364.2<span style=\"background-color:rgba(255,255,255,0.1)\">\n  22        45           NaT    100       119     282.0</span>\n  23        60  '2020/12/23'    130       101     300.0\n  24        45  '2020/12/24'    105       132     246.0\n  25        60  '2020/12/25'    102       126     334.5<span style=\"background-color:rgba(255,255,255,0.1)\">\n  26        60  '2020/12/26'    100       120     250.0</span>\n  27        60  '2020/12/27'     92       118     241.0\n  28        60  '2020/12/28'    103       132       NaN\n  29        60  '2020/12/29'    100       132     280.0\n  30        60  '2020/12/30'    102       129     380.3\n  31        60  '2020/12/31'     92       115     243.0"
+        },
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\ndf['Date'] = pd.to_datetime(df['Date'], format='mixed')\n\nprint(df.to_string())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>    <br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>    df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><br/>df[<span class=\"pythonstringcolor\" style=\"color:green\">'Date'</span>] = pd.to_datetime(df[<span class=\"pythonstringcolor\" style=\"color:green\">'Date'</span>], <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">format</span>=<span class=\"pythonstringcolor\" style=\"color:green\">'mixed'</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>    <br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df.to_string())<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>   </span>"
+        },
+        {
+          "text": "df.dropna(subset=['Date'], inplace = True)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>    df.dropna(subset=[<span class=\"pythonstringcolor\" style=\"color:green\">'Date'</span>], inplace = <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">True</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>   </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/pandas_cleaning_wrong_format.asp"
+      }
+    },
+    {
+      "title": "Pandas - Fixing Wrong Data",
+      "code": [
+        {
+          "text": "df.loc[7, 'Duration'] = 45",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  df.loc[<span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>, <span class=\"pythonstringcolor\" style=\"color:green\">'Duration'</span>] = <span class=\"pythonnumbercolor\" style=\"color:#905\">45</span><br/> </span>"
+        },
+        {
+          "text": "for x in df.index:\nif df.loc[x, \"Duration\"] > 120:\ndf.loc[x, \"Duration\"] = 120",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span> x <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> df.index: <br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> df.loc[x, <span class=\"pythonstringcolor\" style=\"color:green\">\"Duration\"</span>] &gt; <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>:<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  df.loc[x, <span class=\"pythonstringcolor\" style=\"color:green\">\"Duration\"</span>] = <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span> </span>"
+        },
+        {
+          "text": "for x in df.index:\nif df.loc[x, \"Duration\"] > 120:\ndf.drop(x, inplace = True)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">for</span> x <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">in</span> df.index: <br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">if</span> df.loc[x, <span class=\"pythonstringcolor\" style=\"color:green\">\"Duration\"</span>] &gt; <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>:<br/>    <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  df.drop(x, inplace = <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">True</span>) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/pandas_cleaning_wrong_data.asp"
+      }
+    },
+    {
+      "title": "Pandas - Removing Duplicates",
+      "code": [
+        {
+          "text": "print(df.duplicated())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df.duplicated())<br/> </span>"
+        },
+        {
+          "text": "df.drop_duplicates(inplace = True)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  df.drop_duplicates(inplace = <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">True</span>) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/pandas_cleaning_duplicates.asp"
+      }
+    },
+    {
+      "title": "Pandas - Data Correlations",
+      "code": [
+        {
+          "text": "Duration Pulse Maxpulse Calories Duration 1.000000 -0.155408 0.009403 0.922721 Pulse -0.155408 1.000000 0.786535 0.025120 Maxpulse 0.009403 0.786535 1.000000 0.203814 Calories 0.922721 0.025120 0.203814 1.000000",
+          "html": "Duration     Pulse  Maxpulse  Calories\n  Duration  1.000000 -0.155408  0.009403  0.922721\n  Pulse    -0.155408  1.000000  0.786535  0.025120\n  Maxpulse  0.009403  0.786535  1.000000  0.203814\n  Calories  0.922721  0.025120  0.203814  1.000000"
+        },
+        {
+          "text": "df.corr()",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  df.corr() </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/pandas_correlations.asp"
+      }
+    },
+    {
+      "title": "Pandas - Plotting",
+      "code": [
+        {
+          "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv('data.csv')\n\ndf.plot()\n\nplt.show()",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> matplotlib.pyplot <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> plt<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>df.plot()<br/><br/>plt.show() </span>"
+        },
+        {
+          "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv('data.csv')\n\ndf.plot(kind = 'scatter', x = 'Duration', y = 'Calories')\n\nplt.show()",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> matplotlib.pyplot <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> plt<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>df.plot(kind = <span class=\"pythonstringcolor\" style=\"color:green\">'scatter'</span>, x = <span class=\"pythonstringcolor\" style=\"color:green\">'Duration'</span>, y = <span class=\"pythonstringcolor\" style=\"color:green\">'Calories'</span>)<br/><br/>plt.show() </span>"
+        },
+        {
+          "text": "df[\"Duration\"].plot(kind = 'hist')",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  df[<span class=\"pythonstringcolor\" style=\"color:green\">\"Duration\"</span>].plot(kind = <span class=\"pythonstringcolor\" style=\"color:green\">'hist'</span>)<br/> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/pandas_plotting.asp"
+      }
+    },
+    {
+      "title": "Pandas Online Compiler (Editor)",
+      "code": [
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nprint(df.to_string())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>    <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df.to_string()) <br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/pandas_compiler.asp"
+      }
+    },
+    {
+      "title": "Pandas Syllabus",
+      "code": [
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nprint(df.to_string())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df.to_string()) <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/pandas_syllabus.asp"
+      }
+    }
+  ]
+}

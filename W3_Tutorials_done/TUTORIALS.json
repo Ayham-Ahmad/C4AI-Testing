@@ -1,0 +1,709 @@
+{
+  "language": "TUTORIALS",
+  "tutorials": [
+    {
+      "title": "HTML Tutorial",
+      "code": [
+        {
+          "text": "<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>\n<body>\n\n<h1>This is a Heading</h1>\n<p>This is a paragraph.</p>\n\n</body>\n</html>",
+          "html": "<span class=\"doctypecolor\" style=\"color:slategray\">&lt;!DOCTYPE html&gt;</span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>head<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>title<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Page Title<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/title<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/head<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>This is a Heading<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>This is a paragraph.<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/html/default.asp"
+      }
+    },
+    {
+      "title": "CSS Tutorial",
+      "code": [
+        {
+          "text": "body {\nbackground-color: lightblue;\n}\n\nh1 {\ncolor: white;\ntext-align: center;\n}\n\np {\nfont-family: verdana;\nfont-size: 20px;\n}",
+          "html": "<span class=\"cssselectorcolor\" style=\"color:#905\">\nbody\n<span class=\"cssdelimitercolor\" style=\"color:#999\">{</span><span class=\"csspropertycolor\" style=\"color:#d73a49\"><br/>  background-color<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> lightblue<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span><br/></span><span class=\"cssdelimitercolor\" style=\"color:#999\">}</span><br/>\n<br/>h1\n<span class=\"cssdelimitercolor\" style=\"color:#999\">{</span><span class=\"csspropertycolor\" style=\"color:#d73a49\"><br/>\n  color<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> white<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span><br/>\n  text-align<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> center<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span><br/>\n</span><span class=\"cssdelimitercolor\" style=\"color:#999\">}</span><br/><br/>\np\n<span class=\"cssdelimitercolor\" style=\"color:#999\">{</span><span class=\"csspropertycolor\" style=\"color:#d73a49\"><br/>\n   \nfont-family<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> verdana<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span><br/>\n  font-size<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> 20px<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span><br/>\n</span><span class=\"cssdelimitercolor\" style=\"color:#999\">}</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/css/default.asp"
+      }
+    },
+    {
+      "title": "W3.CSS Tutorial",
+      "code": [
+        {
+          "text": "<div class=\"w3-container w3-teal\">\n<h1>My Header</h1>\n</div>\n\n<img src=\"img_car.jpg\" alt=\"Car\">\n\n<div class=\"w3-container\">\n<p>A car is a wheeled, self-powered motor vehicle used for transportation.</p>\n</div>\n\n<div class=\"w3-container w3-teal\">\n<p>My Footer</p>\n</div>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"w3-container w3-teal\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>My Header<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>img<span class=\"attributecolor\" style=\"color:green\"> \n src<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"img_car.jpg\"</span> alt<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"Car\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"w3-container\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  \n <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>A car is a wheeled, self-powered motor vehicle used for transportation.<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"w3-container w3-teal\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>My Footer<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/5/w3.css\">",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>link<span class=\"attributecolor\" style=\"color:green\"> rel<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"stylesheet\"</span> href<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"https://www.w3schools.com/w3css/5/w3.css\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<link rel=\"stylesheet\" href=\"w3.css\">",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>link<span class=\"attributecolor\" style=\"color:green\"> rel<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"stylesheet\"</span> href<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"w3.css\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/w3css/default.asp"
+      }
+    },
+    {
+      "title": "Sass Tutorial",
+      "code": [
+        {
+          "text": "/* Define standard variables and values for website */\n$bgcolor: lightblue;\n$textcolor: darkblue;\n$fontsize: 18px;\n\n/* Use the variables */\nbody {\nbackground-color: $bgcolor;\ncolor: $textcolor;\nfont-size: $fontsize;\n}",
+          "html": "<span class=\"cssselectorcolor\" style=\"color:#905\">\n  <span class=\"commentcolor\" style=\"color:slategray\">/* Define standard variables and values for website */</span><br/>$bgcolor: lightblue;<br/>\n  $textcolor: darkblue;<br/>$fontsize: 18px;<br/><br/><span class=\"commentcolor\" style=\"color:slategray\">/* Use the variables */</span><br/>body\n<span class=\"cssdelimitercolor\" style=\"color:#999\">{</span><span class=\"csspropertycolor\" style=\"color:#d73a49\"><br/>  background-color<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> $bgcolor<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span><br/>  color<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> \n  $textcolor<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span><br/>  font-size<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> $fontsize<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span><br/></span><span class=\"cssdelimitercolor\" style=\"color:#999\">}</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/sass/default.asp"
+      }
+    },
+    {
+      "title": "SVG Tutorial",
+      "code": [
+        {
+          "text": "<html>\n<body>\n\n<h1>My first SVG</h1>\n\n<svg width=\"100\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"green\" stroke-width=\"4\" fill=\"yellow\" />\n</svg>\n\n</body>\n</html>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>My first SVG<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<br/>\n <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>svg<span class=\"attributecolor\" style=\"color:green\"> width<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"100\"</span> height<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"100\"</span> xmlns<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"http://www.w3.org/2000/svg\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>circle<span class=\"attributecolor\" style=\"color:green\"> cx<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"50\"</span> cy<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"50\"</span> r<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"40\"</span> stroke<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"green\"</span> stroke-width<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"4\"</span> fill<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"yellow\"</span> /</span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/svg<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/graphics/svg_intro.asp"
+      }
+    },
+    {
+      "title": "HTML Canvas Tutorial",
+      "code": [
+        {
+          "text": "<canvas id=\"myCanvas\" width=\"200\" height=\"100\"></canvas>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>canvas<span class=\"attributecolor\" style=\"color:green\"> id<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"myCanvas\"</span> width<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"200\"</span> height<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"100\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/canvas<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<canvas id=\"myCanvas\" width=\"200\" height=\"100\" style=\"border:1px solid #000000;\"></canvas>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>canvas<span class=\"attributecolor\" style=\"color:green\"> id<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"myCanvas\"</span> width<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"200\"</span> height<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"100\"</span>\nstyle<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"border:1px solid \n#000000;\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/canvas<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/graphics/canvas_intro.asp"
+      }
+    },
+    {
+      "title": "Colors Tutorial",
+      "code": [
+        {
+          "text": "#myDIV {\ncolor: blue; /* Blue text color */\nborder: 10px solid currentcolor; /* Blue border color */\n}",
+          "html": "<span class=\"cssselectorcolor\" style=\"color:#905\">\n  #myDIV <span class=\"cssdelimitercolor\" style=\"color:#999\">{</span><span class=\"csspropertycolor\" style=\"color:#d73a49\"><br/>  color<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> blue<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span> <span class=\"commentcolor\" style=\"color:slategray\">/* Blue text color */</span><br/>  border<span class=\"csspropertyvaluecolor\" style=\"color:#005cc5\"><span class=\"cssdelimitercolor\" style=\"color:#999\">:</span> 10px solid currentcolor<span class=\"cssdelimitercolor\" style=\"color:#999\">;</span></span> \n  <span class=\"commentcolor\" style=\"color:slategray\">/* Blue border color */</span><br/>\n  </span><span class=\"cssdelimitercolor\" style=\"color:#999\">}</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/colors/default.asp"
+      }
+    },
+    {
+      "title": "Icons Tutorial",
+      "code": [
+        {
+          "text": "<!DOCTYPE html>\n<html>\n<head>\n<script src=\"https://kit.fontawesome.com/yourcode.js\" crossorigin=\"anonymous\"></script>\n<!--Get your code at fontawesome.com-->\n</head>\n<body>\n\n<i class=\"fas fa-band-aid\"></i>\n<i class=\"fas fa-cat\"></i>\n<i class=\"fas fa-dragon\"></i>\n<i class=\"far fa-clock\"></i>\n<i class=\"fas fa-clock\"></i>\n\n</body>\n</html>",
+          "html": "<span class=\"doctypecolor\" style=\"color:slategray\">&lt;!DOCTYPE html&gt;</span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>head<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n     <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>script<span class=\"attributecolor\" style=\"color:green\"> src<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"https://kit.fontawesome.com/<em>yourcode</em>.js\"</span> crossorigin<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"anonymous\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"jscolor\" style=\"color:black\"/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/script<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n   <span class=\"commentcolor\" style=\"color:slategray\">&lt;!--Get your code at fontawesome.com--&gt;</span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/head<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"fas fa-band-aid\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\"> \n   class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"fas fa-cat\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"fas fa-dragon\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"far fa-clock\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n   <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"fas fa-clock\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<!DOCTYPE html>\n<html>\n<head>\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n</head>\n<body>\n\n<i class=\"fa fa-cloud\"></i>\n<i class=\"fa fa-heart\"></i>\n<i class=\"fa fa-car\"></i>\n<i class=\"fa fa-file\"></i>\n<i class=\"fa fa-bars\"></i>\n\n</body>\n</html>",
+          "html": "<span class=\"doctypecolor\" style=\"color:slategray\">&lt;!DOCTYPE html&gt;</span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>head<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n     <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>link<span class=\"attributecolor\" style=\"color:green\"> rel<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"stylesheet\"</span>  href<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/head<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"fa fa-cloud\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\">  class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"fa fa-heart\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"fa fa-car\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"fa fa-file\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"fa fa-bars\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<!DOCTYPE html>\n<html>\n<head>\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n</head>\n<body>\n\n<i class=\"glyphicon glyphicon-cloud\"></i>\n<i class=\"glyphicon glyphicon-remove\"></i>\n<i class=\"glyphicon glyphicon-user\"></i>\n<i class=\"glyphicon glyphicon-envelope\"></i>\n<i class=\"glyphicon glyphicon-thumbs-up\"></i>\n\n</body>\n</html>",
+          "html": "<span class=\"doctypecolor\" style=\"color:slategray\">&lt;!DOCTYPE html&gt;</span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>head<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n     <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>link<span class=\"attributecolor\" style=\"color:green\"> rel<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"stylesheet\"</span> href<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/head<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  <br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"glyphicon glyphicon-cloud\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"glyphicon  glyphicon-remove\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"glyphicon glyphicon-user\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\">  class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"glyphicon glyphicon-envelope\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"glyphicon glyphicon-thumbs-up\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<!DOCTYPE html>\n<html>\n<head>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">\n</head>\n<body>\n\n<i class=\"material-icons\">cloud</i>\n<i class=\"material-icons\">favorite</i>\n<i class=\"material-icons\">attachment</i>\n<i class=\"material-icons\">computer</i>\n<i class=\"material-icons\">traffic</i>\n\n</body>\n</html>",
+          "html": "<span class=\"doctypecolor\" style=\"color:slategray\">&lt;!DOCTYPE html&gt;</span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>head<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n     <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>link<span class=\"attributecolor\" style=\"color:green\"> rel<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"stylesheet\"</span> href<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"https://fonts.googleapis.com/icon?family=Material+Icons\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/head<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  <br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\"> class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"material-icons\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>cloud<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\">  class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"material-icons\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>favorite<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\">  class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"material-icons\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>attachment<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\">  class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"material-icons\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>computer<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>i<span class=\"attributecolor\" style=\"color:green\">  class<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"material-icons\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>traffic<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/i<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/icons/default.asp"
+      }
+    },
+    {
+      "title": "React Tutorial",
+      "code": [
+        {
+          "text": "import { createRoot } from 'react-dom/client'; function Hello() { return ( <h1>Hello World!</h1> ); } createRoot(document.getElementById('root')).render( <Hello /> );",
+          "html": "<code class=\"language-jsx\"><span class=\"token keyword keyword-import\">import</span> <span class=\"token punctuation\">{</span> createRoot <span class=\"token punctuation\">}</span> <span class=\"token keyword keyword-from\">from</span> <span class=\"token string\">'react-dom/client'</span><span class=\"token punctuation\">;</span>\n\n<span class=\"token keyword keyword-function\">function</span> <span class=\"token function\">Hello</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-return\">return</span> <span class=\"token punctuation\">(</span>\n    <span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>h1</span><span class=\"token punctuation\">&gt;</span></span><span class=\"token plain-text\">Hello World!</span><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>h1</span><span class=\"token punctuation\">&gt;</span></span>\n  <span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>\n<span class=\"token punctuation\">}</span>\n\n<span class=\"token function\">createRoot</span><span class=\"token punctuation\">(</span>document<span class=\"token punctuation\">.</span><span class=\"token function\">getElementById</span><span class=\"token punctuation\">(</span><span class=\"token string\">'root'</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">.</span><span class=\"token function\">render</span><span class=\"token punctuation\">(</span>\n  <span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span><span class=\"token class-name\">Hello</span></span> <span class=\"token punctuation\">/&gt;</span></span>\n<span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>\n</code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/react/default.asp"
+      }
+    },
+    {
+      "title": "jQuery Tutorial",
+      "code": [
+        {
+          "text": "$(document).ready(function(){\n$(\"p\").click(function(){\n$(this).hide();\n});\n});",
+          "html": "<span class=\"jscolor\" style=\"color:black\"><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span> $(document).<span class=\"jspropertycolor\" style=\"color:black\">ready</span>(<span class=\"jskeywordcolor\" style=\"color:#005cc5\">function</span>(){<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>   $(<span class=\"jsstringcolor\" style=\"color:green\">\"p\"</span>).<span class=\"jspropertycolor\" style=\"color:black\">click</span>(<span class=\"jskeywordcolor\" style=\"color:#005cc5\">function</span>(){<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>      $(<span class=\"jskeywordcolor\" style=\"color:#005cc5\">this</span>).<span class=\"jspropertycolor\" style=\"color:black\">hide</span>();<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>   });<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span> });<span class=\"jsnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/jquery/default.asp"
+      }
+    },
+    {
+      "title": "Vue Tutorial",
+      "code": [
+        {
+          "text": "<h1>\"Hello, World!\" Example</h1>\n\n<div id=\"app\">{{ message }}</div>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>\"Hello, World!\" Example<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> id<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"app\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"angularstatementcolor\" style=\"color:#d73a49\">{{ message }}</span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span> <br/>\n  <!--\n  <span class='tagnamecolor' style=color:#905><span class='tagcolor' style=color:#999>&lt;</span>script<span class='attributecolor' style=color:green> src<span class='attributevaluecolor' style=color:#005cc5>=\"https://unpkg.com/vue@3/dist/vue.global.js\"</span>>&lt;/script</span><span class='tagcolor' style=color:#999>&gt;</span></span><span class='jscolor' style=color:black> <br><span class='jsnumbercolor' style=color:#905>\n</span>  &lt;script&gt; <br><span class='jsnumbercolor' style=color:#905>\n</span>    &nbsp; <span class='jskeywordcolor' style=color:#005cc5>const</span> app = Vue.<span class='jspropertycolor' style=color:black>createApp</span>({ <br><span class='jsnumbercolor' style=color:#905>\n</span>      &nbsp;&nbsp;        data() { <br><span class='jsnumbercolor' style=color:#905>\n</span>        &nbsp;&nbsp;&nbsp;          <span class='jskeywordcolor' style=color:#005cc5>return</span> { <br><span class='jsnumbercolor' style=color:#905>\n</span>          &nbsp;&nbsp;&nbsp;&nbsp;          message: <span class='jsstringcolor' style=color:green>\"Hello World!\"</span> <br><span class='jsnumbercolor' style=color:#905>\n</span>        &nbsp;&nbsp;&nbsp;      } <br><span class='jsnumbercolor' style=color:#905>\n</span>      &nbsp;&nbsp;  } <br><span class='jsnumbercolor' style=color:#905>\n</span>    &nbsp;  }); <br><span class='jsnumbercolor' style=color:#905>\n</span>    &nbsp; app.<span class='jspropertycolor' style=color:black>mount</span>(<span class='jsstringcolor' style=color:green>'#app'</span>); <br><span class='jsnumbercolor' style=color:#905>\n</span>  </span><span class='tagnamecolor' style=color:#905><span class='tagcolor' style=color:#999>&lt;</span>/script<span class='tagcolor' style=color:#999>&gt;</span></span>\n        -->"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/vue/index.php"
+      }
+    },
+    {
+      "title": "AngularJS Tutorial",
+      "code": [
+        {
+          "text": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"></script>\n<body>\n\n<div ng-app=\"\">\n<p>Name : <input type=\"text\" ng-model=\"name\"></p>\n<h1>Hello {{name}}</h1>\n</div>\n\n</body>\n</html>",
+          "html": "<span class=\"doctypecolor\" style=\"color:slategray\">&lt;!DOCTYPE html&gt;</span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>html<span class=\"attributecolor\" style=\"color:green\"> lang<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"en-US\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>script<span class=\"attributecolor\" style=\"color:green\"> src<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"jscolor\" style=\"color:black\"/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/script<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> ng-app<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n     <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Name : <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>input<span class=\"attributecolor\" style=\"color:green\"> type<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"text\"</span> ng-model<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"name\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n     <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Hello <span class=\"angularstatementcolor\" style=\"color:#d73a49\">{{name}}</span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/angular/default.asp"
+      }
+    },
+    {
+      "title": "JavaScript JSON",
+      "code": [
+        {
+          "text": "'{\"name\":\"John\", \"age\":30, \"car\":null}'",
+          "html": "<span class=\"jscolor\" style=\"color:black\">\n<span class=\"jsstringcolor\" style=\"color:green\">'{\"name\":\"John\", \"age\":30, \"car\":null}'</span><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "{\n\"employees\":[\n{\"firstName\":\"John\", \"lastName\":\"Doe\"},\n{\"firstName\":\"Anna\", \"lastName\":\"Smith\"},\n{\"firstName\":\"Peter\", \"lastName\":\"Jones\"}\n]\n}",
+          "html": "<span class=\"jscolor\" style=\"color:black\"><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>{<br/><span class=\"jsstringcolor\" style=\"color:green\">\"employees\"</span>:[<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>  {<span class=\"jsstringcolor\" style=\"color:green\">\"firstName\"</span>:<span class=\"jsstringcolor\" style=\"color:green\">\"John\"</span>, <span class=\"jsstringcolor\" style=\"color:green\">\"lastName\"</span>:<span class=\"jsstringcolor\" style=\"color:green\">\"Doe\"</span>}, <br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>  {<span class=\"jsstringcolor\" style=\"color:green\">\"firstName\"</span>:<span class=\"jsstringcolor\" style=\"color:green\">\"Anna\"</span>, <span class=\"jsstringcolor\" style=\"color:green\">\"lastName\"</span>:<span class=\"jsstringcolor\" style=\"color:green\">\"Smith\"</span>},<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>    {<span class=\"jsstringcolor\" style=\"color:green\">\"firstName\"</span>:<span class=\"jsstringcolor\" style=\"color:green\">\"Peter\"</span>, <span class=\"jsstringcolor\" style=\"color:green\">\"lastName\"</span>:<span class=\"jsstringcolor\" style=\"color:green\">\"Jones\"</span>}<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>]<br/>}<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "let personName = obj.name;\nlet personAge = obj.age;",
+          "html": "<span class=\"jscolor\" style=\"color:black\">\n<span class=\"jskeywordcolor\" style=\"color:#005cc5\">let</span> personName = obj.<span class=\"jspropertycolor\" style=\"color:black\">name</span>;<br/>\n<span class=\"jskeywordcolor\" style=\"color:#005cc5\">let</span> personAge = obj.<span class=\"jspropertycolor\" style=\"color:black\">age</span>; <span class=\"jsnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        },
+        {
+          "text": "\"firstName\":\"John\"",
+          "html": "<span class=\"jscolor\" style=\"color:black\"><div>\n<span class=\"jsstringcolor\" style=\"color:green\">\"firstName\"</span>:<span class=\"jsstringcolor\" style=\"color:green\">\"John\"</span></div> </span>"
+        },
+        {
+          "text": "{\"firstName\":\"John\", \"lastName\":\"Doe\"}",
+          "html": "<span class=\"jscolor\" style=\"color:black\"><div>\n\n{<span class=\"jsstringcolor\" style=\"color:green\">\"firstName\"</span>:<span class=\"jsstringcolor\" style=\"color:green\">\"John\"</span>, <span class=\"jsstringcolor\" style=\"color:green\">\"lastName\"</span>:<span class=\"jsstringcolor\" style=\"color:green\">\"Doe\"</span>}\n</div> </span>"
+        },
+        {
+          "text": "\"employees\":[\n{\"firstName\":\"John\", \"lastName\":\"Doe\"},\n{\"firstName\":\"Anna\", \"lastName\":\"Smith\"},\n{\"firstName\":\"Peter\", \"lastName\":\"Jones\"}\n]",
+          "html": "<span class=\"jscolor\" style=\"color:black\"><div>\n\n<span class=\"jsstringcolor\" style=\"color:green\">\"employees\"</span>:[<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>   <span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>{<span class=\"jsstringcolor\" style=\"color:green\">\"firstName\"</span>:<span class=\"jsstringcolor\" style=\"color:green\">\"John\"</span>, <span class=\"jsstringcolor\" style=\"color:green\">\"lastName\"</span>:<span class=\"jsstringcolor\" style=\"color:green\">\"Doe\"</span>}, <br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>   <span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>{<span class=\"jsstringcolor\" style=\"color:green\">\"firstName\"</span>:<span class=\"jsstringcolor\" style=\"color:green\">\"Anna\"</span>, <span class=\"jsstringcolor\" style=\"color:green\">\"lastName\"</span>:<span class=\"jsstringcolor\" style=\"color:green\">\"Smith\"</span>}, <br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>   <span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>{<span class=\"jsstringcolor\" style=\"color:green\">\"firstName\"</span>:<span class=\"jsstringcolor\" style=\"color:green\">\"Peter\"</span>, <span class=\"jsstringcolor\" style=\"color:green\">\"lastName\"</span>:<span class=\"jsstringcolor\" style=\"color:green\">\"Jones\"</span>}<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>]</div> </span>"
+        },
+        {
+          "text": "let text = '{ \"employees\" : [' +\n'{ \"firstName\":\"John\" , \"lastName\":\"Doe\" },' +\n'{ \"firstName\":\"Anna\" , \"lastName\":\"Smith\" },' +\n'{ \"firstName\":\"Peter\" , \"lastName\":\"Jones\" } ]}';",
+          "html": "<span class=\"jscolor\" style=\"color:black\">\n<span class=\"jskeywordcolor\" style=\"color:#005cc5\">let</span> text = <span class=\"jsstringcolor\" style=\"color:green\">'{ \"employees\" : ['</span> +<br/>\n<span class=\"jsstringcolor\" style=\"color:green\">'{ \"firstName\":\"John\" , \"lastName\":\"Doe\" },'</span> +<br/>\n<span class=\"jsstringcolor\" style=\"color:green\">'{ \"firstName\":\"Anna\" , \"lastName\":\"Smith\" },'</span> +<br/>\n<span class=\"jsstringcolor\" style=\"color:green\">'{ \"firstName\":\"Peter\" , \"lastName\":\"Jones\" } ]}'</span>; </span>"
+        },
+        {
+          "text": "const obj = JSON.parse(text);",
+          "html": "<span class=\"jscolor\" style=\"color:black\">\n<span class=\"jskeywordcolor\" style=\"color:#005cc5\">const</span> obj = JSON.<span class=\"jspropertycolor\" style=\"color:black\">parse</span>(text); </span>"
+        },
+        {
+          "text": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML =\nobj.employees[1].firstName + \" \" + obj.employees[1].lastName;\n</script>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>p<span class=\"attributecolor\" style=\"color:green\"> id<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"demo\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/p<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>script<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"jscolor\" style=\"color:black\"><br/>\ndocument.<span class=\"jspropertycolor\" style=\"color:black\">getElementById</span>(<span class=\"jsstringcolor\" style=\"color:green\">\"demo\"</span>).<span class=\"jspropertycolor\" style=\"color:black\">innerHTML</span> =<br/>\nobj.<span class=\"jspropertycolor\" style=\"color:black\">employees</span>[<span class=\"jsnumbercolor\" style=\"color:#905\">1</span>].<span class=\"jspropertycolor\" style=\"color:black\">firstName</span> + <span class=\"jsstringcolor\" style=\"color:green\">\" \"</span> + obj.<span class=\"jspropertycolor\" style=\"color:black\">employees</span>[<span class=\"jsnumbercolor\" style=\"color:#905\">1</span>].<span class=\"jspropertycolor\" style=\"color:black\">lastName</span>;<br/>\n</span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/script<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/js/js_json_intro.asp"
+      }
+    },
+    {
+      "title": "AJAX Introduction",
+      "code": [
+        {
+          "text": "<!DOCTYPE html>\n<html>\n<body>\n\n<div id=\"demo\">\n<h2>Let AJAX change this text</h2>\n<button type=\"button\" onclick=\"loadDoc()\">Change Content</button>\n</div>\n\n</body>\n</html>",
+          "html": "<span class=\"doctypecolor\" style=\"color:slategray\">&lt;!DOCTYPE html&gt;</span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>div<span class=\"attributecolor\" style=\"color:green\"> id<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"demo\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>h2<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Let AJAX change this text<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/h2<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/> \n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>button<span class=\"attributecolor\" style=\"color:green\"> type<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"button\"</span> onclick<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"loadDoc()\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Change Content<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/button<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/div<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "function loadDoc() {\nconst xhttp = new XMLHttpRequest();\nxhttp.onload = function() {\ndocument.getElementById(\"demo\").innerHTML = this.responseText;\n}\nxhttp.open(\"GET\", \"ajax_info.txt\", true);\nxhttp.send();\n}",
+          "html": "<span class=\"jscolor\" style=\"color:black\">\n<span class=\"jskeywordcolor\" style=\"color:#005cc5\">function</span> loadDoc() {<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"jskeywordcolor\" style=\"color:#005cc5\">const</span> xhttp = <span class=\"jskeywordcolor\" style=\"color:#005cc5\">new</span> XMLHttpRequest();<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>  xhttp.<span class=\"jspropertycolor\" style=\"color:black\">onload</span> = <span class=\"jskeywordcolor\" style=\"color:#005cc5\">function</span>() {<br/>    \ndocument.<span class=\"jspropertycolor\" style=\"color:black\">getElementById</span>(<span class=\"jsstringcolor\" style=\"color:green\">\"demo\"</span>).<span class=\"jspropertycolor\" style=\"color:black\">innerHTML</span> = <span class=\"jskeywordcolor\" style=\"color:#005cc5\">this</span>.<span class=\"jspropertycolor\" style=\"color:black\">responseText</span>;<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>    }<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>  xhttp.<span class=\"jspropertycolor\" style=\"color:black\">open</span>(<span class=\"jsstringcolor\" style=\"color:green\">\"GET\"</span>, <span class=\"jsstringcolor\" style=\"color:green\">\"ajax_info.txt\"</span>, <span class=\"jskeywordcolor\" style=\"color:#005cc5\">true</span>);<br/>  \nxhttp.<span class=\"jspropertycolor\" style=\"color:black\">send</span>();<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>}<span class=\"jsnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/js/js_ajax_intro.asp"
+      }
+    },
+    {
+      "title": "AppML Tutorial",
+      "code": [
+        {
+          "text": "<!DOCTYPE html>\n<html lang=\"en-US\">\n\n<title>Customers</title>\n<link rel=\"stylesheet\" href=\"style.css\">\n<script src=\"https://www.w3schools.com/appml/2.0.3/appml.js\"></script>\n\n<body>\n<h1>Customers</h1>\n\n<table appml-data=\"customers.js\">\n<tr>\n<th>Customer</th>\n<th>City</th>\n<th>Country</th>\n</tr>\n<tr appml-repeat=\"records\">\n<td>{{CustomerName}}</td>\n<td>{{City}}</td>\n<td>{{Country}}</td>\n</tr>\n</table>\n\n</body>\n</html>",
+          "html": "<span class=\"doctypecolor\" style=\"color:slategray\">&lt;!DOCTYPE html&gt;</span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>html<span class=\"attributecolor\" style=\"color:green\"> lang<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"en-US\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>title<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Customers<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/title<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>link<span class=\"attributecolor\" style=\"color:green\"> rel<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"stylesheet\"</span> href<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"style.css\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>script<span class=\"attributecolor\" style=\"color:green\"> src<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"https://www.w3schools.com/appml/2.0.3/appml.js\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"jscolor\" style=\"color:black\"/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/script<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Customers<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/h1<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>table<span class=\"attributecolor\" style=\"color:green\"> appml-data<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"customers.js\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>tr<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>th<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Customer<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/th<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>th<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>City<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/th<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>th<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Country<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/th<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/tr<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>tr<span class=\"attributecolor\" style=\"color:green\"> appml-repeat<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"records\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>td<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"angularstatementcolor\" style=\"color:#d73a49\">{{CustomerName}}</span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/td<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>td<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"angularstatementcolor\" style=\"color:#d73a49\">{{City}}</span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/td<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>td<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"angularstatementcolor\" style=\"color:#d73a49\">{{Country}}</span><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/td<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/tr<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/table<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/html<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/appml/default.asp"
+      }
+    },
+    {
+      "title": "W3.JS Tutorial",
+      "code": [
+        {
+          "text": "<script src=\"https://www.w3schools.com/lib/w3.js\"></script>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>script<span class=\"attributecolor\" style=\"color:green\"> src<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"https://www.w3schools.com/lib/w3.js\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"jscolor\" style=\"color:black\"/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/script<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<script src=\"w3.js\"></script>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>script<span class=\"attributecolor\" style=\"color:green\"> src<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"w3.js\"</span></span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><span class=\"jscolor\" style=\"color:black\"/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/script<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/w3js/default.asp"
+      }
+    },
+    {
+      "title": "Python Tutorial",
+      "code": [
+        {
+          "text": "print(\"Hello, World!\")",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonstringcolor\" style=\"color:green\">\"Hello, World!\"</span>)<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/default.asp"
+      }
+    },
+    {
+      "title": "SQL Tutorial",
+      "code": [
+        {
+          "text": "SELECT * FROM Customers;",
+          "html": "<span class=\"sqlcolor\" style=\"color:black\">\n<span class=\"sqlkeywordcolor\" style=\"color:#005cc5\">SELECT</span> * <span class=\"sqlkeywordcolor\" style=\"color:#005cc5\">FROM</span> Customers;<span class=\"sqlnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/sql/default.asp"
+      }
+    },
+    {
+      "title": "MySQL Tutorial",
+      "code": [
+        {
+          "text": "SELECT * FROM Customers;",
+          "html": "<span class=\"sqlcolor\" style=\"color:black\">\n<span class=\"sqlkeywordcolor\" style=\"color:#005cc5\">SELECT</span> * <span class=\"sqlkeywordcolor\" style=\"color:#005cc5\">FROM</span> Customers;<span class=\"sqlnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/mysql/default.asp"
+      }
+    },
+    {
+      "title": "PHP Tutorial",
+      "code": [
+        {
+          "text": "<!DOCTYPE html> <html> <body> <?php echo \"My first PHP script!\"; ?> </body> </html>",
+          "html": "<code class=\"language-php\"><span class=\"token doctype\"><span class=\"token punctuation\">&lt;!</span><span class=\"token doctype-tag\">DOCTYPE</span> <span class=\"token name\">html</span><span class=\"token punctuation\">&gt;</span></span>\n<span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>html</span><span class=\"token punctuation\">&gt;</span></span>\n<span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>body</span><span class=\"token punctuation\">&gt;</span></span>\n \n<span class=\"token php language-php\"><span class=\"token delimiter important\">&lt;?php</span>\n<span class=\"token keyword keyword-echo\">echo</span> <span class=\"token string double-quoted-string\">\"My first PHP script!\"</span><span class=\"token punctuation\">;</span>\n<span class=\"token delimiter important\">?&gt;</span></span>\n\n<span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>body</span><span class=\"token punctuation\">&gt;</span></span>\n<span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>html</span><span class=\"token punctuation\">&gt;</span></span>\n</code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/php/default.asp"
+      }
+    },
+    {
+      "title": "Java Tutorial",
+      "code": [
+        {
+          "text": "public class Main { public static void main(String[] args) { System.out.println(\"Hello World\"); } }",
+          "html": "<code class=\"language-java\"><span class=\"token keyword keyword-public\">public</span> <span class=\"token keyword keyword-class\">class</span> <span class=\"token class-name\">Main</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-public\">public</span> <span class=\"token keyword keyword-static\">static</span> <span class=\"token keyword keyword-void\">void</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token class-name\">String</span><span class=\"token punctuation\">[</span><span class=\"token punctuation\">]</span> args<span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n    <span class=\"token class-name\">System</span><span class=\"token punctuation\">.</span>out<span class=\"token punctuation\">.</span><span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string\">\"Hello World\"</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>\n  <span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">}</span>\n</code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/java/default.asp"
+      }
+    },
+    {
+      "title": "C Tutorial",
+      "code": [
+        {
+          "text": "#include <stdio.h>\n\nint main() {\nprintf(\"Hello World!\");\nreturn 0;\n}",
+          "html": "<span class=\"javacolor\" style=\"color:black\"><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>  #include &lt;stdio.<span class=\"javapropertycolor\" style=\"color:black\">h</span>&gt;<br/><br/><span class=\"javakeywordcolor\" style=\"color:#005cc5\">int</span> main() {<br/>  printf(<span class=\"javastringcolor\" style=\"color:green\">\"Hello World!\"</span>);<br/>  <span class=\"javanumbercolor\" style=\"color:#905\">\n</span>  <span class=\"javakeywordcolor\" style=\"color:#005cc5\">return</span> <span class=\"javanumbercolor\" style=\"color:#905\">0</span>;<br/>} </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/c/index.php"
+      }
+    },
+    {
+      "title": "C++ Tutorial",
+      "code": [
+        {
+          "text": "#include <iostream>\nusing namespace std;\n\nint main() {\ncout << \"Hello World!\";\nreturn 0;\n}",
+          "html": "<span class=\"javacolor\" style=\"color:black\"><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>  #include &lt;iostream&gt;<br/>using namespace std;<br/><br/><span class=\"javakeywordcolor\" style=\"color:#005cc5\">int</span> main() {<br/>  <span class=\"javanumbercolor\" style=\"color:#905\">\n</span>  cout &lt;&lt; <span class=\"javastringcolor\" style=\"color:green\">\"Hello World!\"</span>;<br/>  <span class=\"javakeywordcolor\" style=\"color:#005cc5\">return</span> <span class=\"javanumbercolor\" style=\"color:#905\">0</span>;<br/>} </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/cpp/default.asp"
+      }
+    },
+    {
+      "title": "C# Tutorial",
+      "code": [
+        {
+          "text": "using System; namespace HelloWorld { class Program { static void Main(string[] args) { Console.WriteLine(\"Hello World!\"); } } }",
+          "html": "<code class=\"language-csharp\"><span class=\"token keyword keyword-using\">using</span> <span class=\"token namespace\">System</span><span class=\"token punctuation\">;</span>\n\n<span class=\"token keyword keyword-namespace\">namespace</span> <span class=\"token namespace\">HelloWorld</span>\n<span class=\"token punctuation\">{</span>\n  <span class=\"token keyword keyword-class\">class</span> <span class=\"token class-name\">Program</span>\n  <span class=\"token punctuation\">{</span>\n    <span class=\"token keyword keyword-static\">static</span> <span class=\"token return-type class-name\"><span class=\"token keyword keyword-void\">void</span></span> <span class=\"token function\">Main</span><span class=\"token punctuation\">(</span><span class=\"token class-name\"><span class=\"token keyword keyword-string\">string</span><span class=\"token punctuation\">[</span><span class=\"token punctuation\">]</span></span> args<span class=\"token punctuation\">)</span>\n    <span class=\"token punctuation\">{</span>\n      Console<span class=\"token punctuation\">.</span><span class=\"token function\">WriteLine</span><span class=\"token punctuation\">(</span><span class=\"token string\">\"Hello World!\"</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>    \n    <span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">}</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/cs/index.php"
+      }
+    },
+    {
+      "title": "R Tutorial",
+      "code": [
+        {
+          "text": "\"Hello World!\"\n5 + 5",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonstringcolor\" style=\"color:green\">\"Hello World!\"</span><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">5</span> + <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span> </span>"
+        },
+        {
+          "text": "plot(1:10)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plot(<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>:<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/r/default.asp"
+      }
+    },
+    {
+      "title": "Go Tutorial",
+      "code": [
+        {
+          "text": "package main\nimport (\"fmt\")\n\nfunc main() {\nfmt.Println(\"Hello World!\")\n}",
+          "html": "<span class=\"javacolor\" style=\"color:black\"><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>    <span class=\"javakeywordcolor\" style=\"color:#005cc5\">package</span> main<br/><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>    <span class=\"javakeywordcolor\" style=\"color:#005cc5\">import</span> (<span class=\"javastringcolor\" style=\"color:green\">\"fmt\"</span>)<br/><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>    <br/><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>    func main() {<br/><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>      fmt.<span class=\"javapropertycolor\" style=\"color:black\">Println</span>(<span class=\"javastringcolor\" style=\"color:green\">\"Hello World!\"</span>)<br/><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>    }<br/><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>   </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/go/index.php"
+      }
+    },
+    {
+      "title": "Kotlin Tutorial",
+      "code": [
+        {
+          "text": "fun main() { println(\"Hello World\") }",
+          "html": "<code class=\"language-kotlin\"><span class=\"token keyword keyword-fun\">fun</span> <span class=\"token function\">main</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token function\">println</span><span class=\"token punctuation\">(</span><span class=\"token string-literal singleline\"><span class=\"token string\">\"Hello World\"</span></span><span class=\"token punctuation\">)</span>\n<span class=\"token punctuation\">}</span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/kotlin/index.php"
+      }
+    },
+    {
+      "title": "Rust Tutorial",
+      "code": [
+        {
+          "text": "fn main() {\nprintln!(\"Hello World!\");\n}",
+          "html": "<span class=\"javacolor\" style=\"color:black\"><span class=\"javanumbercolor\" style=\"color:#905\">\n</span>  fn main() {<br/>  println!(<span class=\"javastringcolor\" style=\"color:green\">\"Hello World!\"</span>);<br/>} </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/rust/index.php"
+      }
+    },
+    {
+      "title": "Django Tutorial",
+      "code": [
+        {
+          "text": "<ul> {% for x in mymembers %} <li>{{ x.firstname }}</li> {% endfor %} </ul>",
+          "html": "<code class=\"language-django\"><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>ul</span><span class=\"token punctuation\">&gt;</span></span>\n  <span class=\"token django language-django\"><span class=\"token delimiter punctuation\">{%</span> <span class=\"token tag keyword\">for</span> <span class=\"token variable\">x</span> <span class=\"token keyword keyword-in\">in</span> <span class=\"token variable\">mymembers</span> <span class=\"token delimiter punctuation\">%}</span></span>\n    <span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>li</span><span class=\"token punctuation\">&gt;</span></span><span class=\"token django language-django\"><span class=\"token delimiter punctuation\">{{</span> <span class=\"token variable\">x</span><span class=\"token punctuation\">.</span><span class=\"token variable\">firstname</span> <span class=\"token delimiter punctuation\">}}</span></span><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>li</span><span class=\"token punctuation\">&gt;</span></span>\n  <span class=\"token django language-django\"><span class=\"token delimiter punctuation\">{%</span> <span class=\"token tag keyword\">endfor</span> <span class=\"token delimiter punctuation\">%}</span></span>\n<span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>ul</span><span class=\"token punctuation\">&gt;</span></span></code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/django/index.php"
+      }
+    },
+    {
+      "title": "PostgreSQL Tutorial",
+      "code": [
+        {
+          "text": "SELECT * FROM cars\nORDER BY year;",
+          "html": "SELECT * FROM cars<br/>\n          ORDER BY year;"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/postgresql/index.php"
+      }
+    },
+    {
+      "title": "TypeScript Tutorial",
+      "code": [
+        {
+          "text": "console.log('Hello World!');",
+          "html": "<span class=\"javacolor\" style=\"color:black\">\nconsole.<span class=\"javapropertycolor\" style=\"color:black\">log</span>(<span class=\"javastringcolor\" style=\"color:green\">'Hello World!'</span>);<br/><span class=\"javanumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/typescript/index.php"
+      }
+    },
+    {
+      "title": "Node.js Tutorial",
+      "code": [
+        {
+          "text": "node app.js",
+          "html": "node app.js"
+        },
+        {
+          "text": "let http = require('http');\n\nhttp.createServer(function (req, res) {\nres.writeHead(200, {'Content-Type': 'text/plain'});\nres.end('Hello World!');\n}).listen(8080);",
+          "html": "<span class=\"jscolor\" style=\"color:black\">\n<span class=\"jskeywordcolor\" style=\"color:#005cc5\">let</span> http = require(<span class=\"jsstringcolor\" style=\"color:green\">'http'</span>);<br/><br/>\nhttp.<span class=\"jspropertycolor\" style=\"color:black\">createServer</span>(<span class=\"jskeywordcolor\" style=\"color:#005cc5\">function</span> (req, res) {<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>  res.<span class=\"jspropertycolor\" style=\"color:black\">writeHead</span>(<span class=\"jsnumbercolor\" style=\"color:#905\">200</span>, {<span class=\"jsstringcolor\" style=\"color:green\">'Content-Type'</span>: <span class=\"jsstringcolor\" style=\"color:green\">'text/plain'</span>});<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>  res.<span class=\"jspropertycolor\" style=\"color:black\">end</span>(<span class=\"jsstringcolor\" style=\"color:green\">'Hello World!'</span>);<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>}).<span class=\"jspropertycolor\" style=\"color:black\">listen</span>(<span class=\"jsnumbercolor\" style=\"color:#905\">8080</span>);  </span>"
+        },
+        {
+          "text": "console.log('This example is different!');\nconsole.log('The result is displayed in the Command Line Interface');",
+          "html": "<span class=\"jscolor\" style=\"color:black\">\nconsole.<span class=\"jspropertycolor\" style=\"color:black\">log</span>(<span class=\"jsstringcolor\" style=\"color:green\">'This example is different!'</span>);<br/>\nconsole.<span class=\"jspropertycolor\" style=\"color:black\">log</span>(<span class=\"jsstringcolor\" style=\"color:green\">'The result is displayed in the Command Line Interface'</span>);  </span>"
+        },
+        {
+          "text": "const os = require('os');\nconsole.log(os.platform());",
+          "html": "<span class=\"jscolor\" style=\"color:black\">\n<span class=\"jskeywordcolor\" style=\"color:#005cc5\">const</span> os = require(<span class=\"jsstringcolor\" style=\"color:green\">'os'</span>);<br/>\nconsole.<span class=\"jspropertycolor\" style=\"color:black\">log</span>(os.<span class=\"jspropertycolor\" style=\"color:black\">platform</span>()); </span>"
+        },
+        {
+          "text": "npm install express",
+          "html": "npm install express"
+        },
+        {
+          "text": "const express = require('express');\nconst app = express();\napp.get('/', (req, res) => res.send('Hello World!'));\napp.listen(8080);",
+          "html": "<span class=\"jscolor\" style=\"color:black\">\n<span class=\"jskeywordcolor\" style=\"color:#005cc5\">const</span> express = require(<span class=\"jsstringcolor\" style=\"color:green\">'express'</span>);<br/>\n<span class=\"jskeywordcolor\" style=\"color:#005cc5\">const</span> app = express();<br/>\napp.<span class=\"jspropertycolor\" style=\"color:black\">get</span>(<span class=\"jsstringcolor\" style=\"color:green\">'/'</span>, (req, res) =&gt; res.<span class=\"jspropertycolor\" style=\"color:black\">send</span>(<span class=\"jsstringcolor\" style=\"color:green\">'Hello World!'</span>));<br/>\napp.<span class=\"jspropertycolor\" style=\"color:black\">listen</span>(<span class=\"jsnumbercolor\" style=\"color:#905\">8080</span>);<span class=\"jsnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/nodejs/default.asp"
+      }
+    },
+    {
+      "title": "Node.js and Raspberry Pi",
+      "code": [
+        {
+          "text": "pi@raspberrypi:~ $ sudo iwlist wlan0 scan",
+          "html": "pi@raspberrypi:~ $ \n  sudo iwlist wlan0 scan"
+        },
+        {
+          "text": "pi@raspberrypi:~ $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf",
+          "html": "pi@raspberrypi:~ $ sudo \n  nano /etc/wpa_supplicant/wpa_supplicant.conf"
+        },
+        {
+          "text": "network={\nssid=\"wifiName\"\npsk=\"wifiPassword\"\n}",
+          "html": "network={<br/>  ssid=\"wifiName\"<br/>  psk=\"wifiPassword\"<br/>}"
+        },
+        {
+          "text": "pi@raspberrypi:~ $ sudo reboot",
+          "html": "pi@raspberrypi:~ $ sudo reboot"
+        },
+        {
+          "text": "pi@raspberrypi:~ $ ifconfig wlan0",
+          "html": "pi@raspberrypi:~ $ ifconfig wlan0"
+        },
+        {
+          "text": "inet addr:192.168.1.50",
+          "html": "inet addr:192.168.1.50"
+        },
+        {
+          "text": "pi@raspberrypi:~ $ sudo raspi-config",
+          "html": "pi@raspberrypi:~ $ sudo raspi-config"
+        },
+        {
+          "text": "pi@w3demopi:~ $",
+          "html": "pi@w3demopi:~ $"
+        },
+        {
+          "text": "pi@w3demopi:~ $ sudo apt-get update",
+          "html": "pi@w3demopi:~ $ sudo apt-get update"
+        },
+        {
+          "text": "pi@w3demopi:~ $ sudo apt-get dist-upgrade",
+          "html": "pi@w3demopi:~ $ sudo apt-get dist-upgrade"
+        },
+        {
+          "text": "pi@w3demopi:~ $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -",
+          "html": "pi@w3demopi:~ $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -"
+        },
+        {
+          "text": "pi@w3demopi:~ $ sudo apt-get install -y nodejs",
+          "html": "pi@w3demopi:~ $ sudo apt-get install -y nodejs"
+        },
+        {
+          "text": "pi@w3demopi:~ $ node -v",
+          "html": "pi@w3demopi:~ $ node -v"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp"
+      }
+    },
+    {
+      "title": "Git Tutorial",
+      "code": [
+        {
+          "text": "git --version git version 2.30.2.windows.1",
+          "html": "<code class=\" language-shell\"><span class=\"command-line-prompt\"><span data-user=\"user\" data-host=\"localhost\"/><span/></span><span class=\"token function\">git</span> --version\ngit version 2.30.2.windows.1</code>"
+        },
+        {
+          "text": "git --version",
+          "html": "<code class=\" language-shell\"><span class=\"command-line-prompt\"><span data-user=\"user\" data-host=\"localhost\"/></span><span class=\"token function\">git</span> --version</code>"
+        },
+        {
+          "text": "git version 2.30.2.windows.1",
+          "html": "<code class=\" language-shell\"><span class=\"command-line-prompt\"><span/></span>git version 2.30.2.windows.1</code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/git/default.asp"
+      }
+    },
+    {
+      "title": "MongoDB Tutorial",
+      "code": [
+        {
+          "text": "{ title: \"Post Title 1\", body: \"Body of post.\", category: \"News\", likes: 1, tags: [\"news\", \"events\"], date: Date() }",
+          "html": "<code class=\"language-json\"><span class=\"token punctuation\">{</span>\n\ttitle<span class=\"token operator\">:</span> <span class=\"token string\">\"Post Title 1\"</span><span class=\"token punctuation\">,</span>\n\tbody<span class=\"token operator\">:</span> <span class=\"token string\">\"Body of post.\"</span><span class=\"token punctuation\">,</span>\n\tcategory<span class=\"token operator\">:</span> <span class=\"token string\">\"News\"</span><span class=\"token punctuation\">,</span>\n\tlikes<span class=\"token operator\">:</span> <span class=\"token number\">1</span><span class=\"token punctuation\">,</span>\n\ttags<span class=\"token operator\">:</span> <span class=\"token punctuation\">[</span><span class=\"token string\">\"news\"</span><span class=\"token punctuation\">,</span> <span class=\"token string\">\"events\"</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">,</span>\n\tdate<span class=\"token operator\">:</span> Date()\n<span class=\"token punctuation\">}</span>\n</code>"
+        },
+        {
+          "text": "db.posts.find( {category: \"News\"} )",
+          "html": "<code class=\"language-jsx\">db<span class=\"token punctuation\">.</span>posts<span class=\"token punctuation\">.</span><span class=\"token function\">find</span><span class=\"token punctuation\">(</span> <span class=\"token punctuation\">{</span><span class=\"token literal-property property\">category</span><span class=\"token operator\">:</span> <span class=\"token string\">\"News\"</span><span class=\"token punctuation\">}</span> <span class=\"token punctuation\">)</span>\n</code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/mongodb/index.php"
+      }
+    },
+    {
+      "title": "XML Tutorial",
+      "code": [
+        {
+          "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<note>\n<to>Tove</to>\n<from>Jani</from>\n<heading>Reminder</heading>\n<body>Don't forget me this weekend!</body>\n</note>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>?xml<span class=\"attributecolor\" style=\"color:green\"> version<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"1.0\"</span> encoding<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"UTF-8\"</span>?</span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>note<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>to<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Tove<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/to<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>from<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Jani<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/from<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>heading<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Reminder<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/heading<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n  <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Don't forget me this weekend!<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/body<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/note<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        },
+        {
+          "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<breakfast_menu>\n<food>\n<name>Belgian Waffles</name>\n<price>$5.95</price>\n<description>\nTwo of our famous Belgian Waffles with plenty of real maple syrup\n</description>\n<calories>650</calories>\n</food>\n<food>\n<name>Strawberry Belgian Waffles</name>\n<price>$7.95</price>\n<description>\nLight Belgian waffles covered with strawberries and whipped cream\n</description>\n<calories>900</calories>\n</food>\n<food>\n<name>Berry-Berry Belgian Waffles</name>\n<price>$8.95</price>\n<description>\nBelgian waffles covered with assorted fresh berries and whipped cream\n</description>\n<calories>900</calories>\n</food>\n<food>\n<name>French Toast</name>\n<price>$4.50</price>\n<description>\nThick slices made from our homemade sourdough bread\n</description>\n<calories>600</calories>\n</food>\n<food>\n<name>Homestyle Breakfast</name>\n<price>$6.95</price>\n<description>\nTwo eggs, bacon or sausage, toast, and our ever-popular hash browns\n</description>\n<calories>950</calories>\n</food>\n</breakfast_menu>",
+          "html": "<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>?xml<span class=\"attributecolor\" style=\"color:green\"> version<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"1.0\"</span> encoding<span class=\"attributevaluecolor\" style=\"color:#005cc5\">=\"UTF-8\"</span>?</span><span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>breakfast_menu<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>food<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>name<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Belgian Waffles<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/name<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    \n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>price<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>$5.95<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/price<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>description<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>   Two of our famous \nBelgian Waffles with plenty of real maple syrup<br/>   <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/description<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    \n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>calories<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>650<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/calories<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/food<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>food<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    \n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>name<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Strawberry Belgian Waffles<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/name<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    \n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>price<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>$7.95<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/price<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>description<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    Light Belgian \nwaffles covered with strawberries and whipped cream<br/>    <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/description<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    \n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>calories<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>900<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/calories<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/food<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>food<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    \n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>name<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Berry-Berry Belgian Waffles<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/name<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    \n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>price<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>$8.95<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/price<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>description<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    Belgian \nwaffles covered with assorted fresh berries and whipped \ncream<br/>    <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/description<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>calories<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>900<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/calories<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/food<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>food<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>name<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>French Toast<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/name<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    \n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>price<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>$4.50<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/price<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>description<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    Thick slices made \nfrom our homemade sourdough bread<br/>    <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/description<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    \n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>calories<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>600<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/calories<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/food<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>food<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>name<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>Homestyle \nBreakfast<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/name<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>price<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>$6.95<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/price<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    \n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>description<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    Two eggs, bacon or sausage, toast, and our ever-popular hash \nbrowns<br/>    <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/description<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>    <span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>calories<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>950<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/calories<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/>\n<span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/food<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span><br/><span class=\"tagnamecolor\" style=\"color:#905\"><span class=\"tagcolor\" style=\"color:#999\">&lt;</span>/breakfast_menu<span class=\"tagcolor\" style=\"color:#999\">&gt;</span></span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/xml/default.asp"
+      }
+    },
+    {
+      "title": "Generative AI Tutorial",
+      "code": [
+        {
+          "text": "Explain \"Generative AI\" like I'm 5 years old",
+          "html": "Explain \"Generative AI\" like I'm 5 years old"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/gen_ai/index.php"
+      }
+    },
+    {
+      "title": "ChatGPT-3.5 Tutorial",
+      "code": [
+        {
+          "text": "Explain \"Generative AI\" like I'm 5 years old.",
+          "html": "Explain \"Generative AI\" like I'm 5 years old."
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/gen_ai/chatgpt-3-5/index.php"
+      }
+    },
+    {
+      "title": "DSA Tutorial",
+      "code": [
+        {
+          "text": "my_array = [7, 12, 9, 4, 11] minVal = my_array[0] for i in my_array: if i < minVal: minVal = i print('Lowest value:',minVal)",
+          "html": "<code class=\"language-python\">my_array <span class=\"token operator\">=</span> <span class=\"token punctuation\">[</span><span class=\"token number\">7</span><span class=\"token punctuation\">,</span> <span class=\"token number\">12</span><span class=\"token punctuation\">,</span> <span class=\"token number\">9</span><span class=\"token punctuation\">,</span> <span class=\"token number\">4</span><span class=\"token punctuation\">,</span> <span class=\"token number\">11</span><span class=\"token punctuation\">]</span>\nminVal <span class=\"token operator\">=</span> my_array<span class=\"token punctuation\">[</span><span class=\"token number\">0</span><span class=\"token punctuation\">]</span>\n\n<span class=\"token keyword keyword-for\">for</span> i <span class=\"token keyword keyword-in\">in</span> my_array<span class=\"token punctuation\">:</span>\n    <span class=\"token keyword keyword-if\">if</span> i <span class=\"token operator\">&lt;</span> minVal<span class=\"token punctuation\">:</span>\n        minVal <span class=\"token operator\">=</span> i\n\n<span class=\"token keyword keyword-print\">print</span><span class=\"token punctuation\">(</span><span class=\"token string\">'Lowest value:'</span><span class=\"token punctuation\">,</span>minVal<span class=\"token punctuation\">)</span>\n</code>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/dsa/index.php"
+      }
+    },
+    {
+      "title": "Data Science Tutorial",
+      "code": [
+        {
+          "text": "import pandas as pd\nimport matplotlib.pyplot as plt\nfrom scipy import stats\n\nfull_health_data = pd.read_csv(\"data.csv\", header=0, sep=\",\")\n\nx = full_health_data[\"Average_Pulse\"]\ny = full_health_data[\"Calorie_Burnage\"]\n\nslope, intercept, r, p, std_err = stats.linregress(x, y)\n\ndef myfunc(x):\nreturn slope * x + intercept\n\nmymodel = list(map(myfunc, x))\n\nplt.scatter(x, y)\nplt.plot(x, mymodel)\nplt.ylim(ymin=0, ymax=2000)\nplt.xlim(xmin=0, xmax=200)\nplt.xlabel(\"Average_Pulse\")\nplt.ylabel (\"Calorie_Burnage\")\nplt.show()",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> matplotlib.pyplot <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> plt<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">from</span> scipy <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> stats<br/><br/>full_health_data = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">\"data.csv\"</span>, header=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, sep=<span class=\"pythonstringcolor\" style=\"color:green\">\",\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>x = full_health_data[<span class=\"pythonstringcolor\" style=\"color:green\">\"Average_Pulse\"</span>]<br/>y = full_health_data[<span class=\"pythonstringcolor\" style=\"color:green\">\"Calorie_Burnage\"</span>]<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>slope, intercept, r, p, std_err = stats.linregress(x, y)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">def</span> myfunc(x):<br/> <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">return</span> <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  slope * x + intercept<br/><br/>mymodel = <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">list</span>(<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">map</span>(myfunc, x))<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>plt.scatter(x, y)<br/>plt.plot(x, mymodel)<br/>plt.ylim(ymin=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, ymax=<span class=\"pythonnumbercolor\" style=\"color:#905\">2000</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plt.xlim(xmin=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, xmax=<span class=\"pythonnumbercolor\" style=\"color:#905\">200</span>)<br/>plt.xlabel(<span class=\"pythonstringcolor\" style=\"color:green\">\"Average_Pulse\"</span>)<br/>plt.ylabel (<span class=\"pythonstringcolor\" style=\"color:green\">\"Calorie_Burnage\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plt.show() </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/default.asp"
+      }
+    },
+    {
+      "title": "NumPy Tutorial",
+      "code": [
+        {
+          "text": "import numpy as np\n\narr = np.array([1, 2, 3, 4, 5])\n\nprint(arr)\n\nprint(type(arr))",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> numpy <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> np\n<br/><br/>\narr = np.array([<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>])<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(arr)<br/><br/>\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">type</span>(arr))<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/numpy/default.asp"
+      }
+    },
+    {
+      "title": "Pandas Tutorial",
+      "code": [
+        {
+          "text": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nprint(df.to_string())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>df = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">'data.csv'</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df.to_string()) <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span> </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/pandas/default.asp"
+      }
+    },
+    {
+      "title": "SciPy Tutorial",
+      "code": [
+        {
+          "text": "from scipy import constants\n\nprint(constants.liter)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">from</span> scipy <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> constants\n<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(constants.liter) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/python/scipy/index.php"
+      }
+    },
+    {
+      "title": "Statistics Tutorial",
+      "code": [
+        {
+          "text": "import numpy\n\nvalues = [4,11,7,14]\n\nx = numpy.mean(values)\n\nprint(x)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>      <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> numpy\n      <br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>      <br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>      values = [<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">11</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">14</span>]<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>      <br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>      <br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>      x = numpy.mean(values)<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>      <br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>      <br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(x)<span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>     </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/statistics/index.php"
+      }
+    },
+    {
+      "title": "Excel Tutorial",
+      "code": [
+        {
+          "text": "309 39 320 35 318 45 314 44",
+          "html": "<img src=\"move_cells.png\" style=\"max-width:550px; height:auto; width:100%;\" width=\"726\" height=\"510\"/>\n    <textarea id=\"demo_excel_move_cells\" style=\"display:none\">309\t39\n320\t35\n318\t45\n314\t44\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/excel/index.php"
+      }
+    },
+    {
+      "title": "Google Sheets Tutorial",
+      "code": [
+        {
+          "text": "309 39 320 35 318 45 314 44",
+          "html": "<img src=\"img_google_sheets_index_1.png\" style=\"border: 1px solid rgb(220, 220, 220); max-width:100%\" width=\"447\" height=\"258\"/>\n    <textarea id=\"demo_google_sheets_index_1\" style=\"display:none\">      309\t39\n      320\t35\n      318\t45\n      314\t44\n    </textarea>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/googlesheets/index.php"
+      }
+    }
+  ]
+}

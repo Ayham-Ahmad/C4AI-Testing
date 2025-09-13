@@ -1,0 +1,17 @@
+{
+  "language": "AWS",
+  "tutorials": [
+    {
+      "title": "AWS Additional Database Services",
+      "code": [
+        {
+          "text": "{\nname: \"Jason\",\nage: \"29\",\ncity: \"New York\"\nprofession: \"Accountant\"\n}",
+          "html": "<span class=\"jscolor\" style=\"color:black\"><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>{<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>   name: <span class=\"jsstringcolor\" style=\"color:green\">\"Jason\"</span>,<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>   age: <span class=\"jsstringcolor\" style=\"color:green\">\"29\"</span>,<br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>   city: <span class=\"jsstringcolor\" style=\"color:green\">\"New York\"</span><br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>   profession: <span class=\"jsstringcolor\" style=\"color:green\">\"Accountant\"</span><br/><span class=\"jsnumbercolor\" style=\"color:#905\">\n</span>} </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/aws/aws_cloudessentials_additionaldatabaseservices.php"
+      }
+    }
+  ]
+}

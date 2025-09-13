@@ -1,0 +1,385 @@
+{
+  "language": "DATA",
+  "tutorials": [
+    {
+      "title": "Data Science Tutorial",
+      "code": [
+        {
+          "text": "import pandas as pd\nimport matplotlib.pyplot as plt\nfrom scipy import stats\n\nfull_health_data = pd.read_csv(\"data.csv\", header=0, sep=\",\")\n\nx = full_health_data[\"Average_Pulse\"]\ny = full_health_data[\"Calorie_Burnage\"]\n\nslope, intercept, r, p, std_err = stats.linregress(x, y)\n\ndef myfunc(x):\nreturn slope * x + intercept\n\nmymodel = list(map(myfunc, x))\n\nplt.scatter(x, y)\nplt.plot(x, mymodel)\nplt.ylim(ymin=0, ymax=2000)\nplt.xlim(xmin=0, xmax=200)\nplt.xlabel(\"Average_Pulse\")\nplt.ylabel (\"Calorie_Burnage\")\nplt.show()",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> matplotlib.pyplot <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> plt<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">from</span> scipy <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> stats<br/><br/>full_health_data = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">\"data.csv\"</span>, header=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, sep=<span class=\"pythonstringcolor\" style=\"color:green\">\",\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>x = full_health_data[<span class=\"pythonstringcolor\" style=\"color:green\">\"Average_Pulse\"</span>]<br/>y = full_health_data[<span class=\"pythonstringcolor\" style=\"color:green\">\"Calorie_Burnage\"</span>]<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>slope, intercept, r, p, std_err = stats.linregress(x, y)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">def</span> myfunc(x):<br/> <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">return</span> <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  slope * x + intercept<br/><br/>mymodel = <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">list</span>(<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">map</span>(myfunc, x))<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>plt.scatter(x, y)<br/>plt.plot(x, mymodel)<br/>plt.ylim(ymin=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, ymax=<span class=\"pythonnumbercolor\" style=\"color:#905\">2000</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plt.xlim(xmin=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, xmax=<span class=\"pythonnumbercolor\" style=\"color:#905\">200</span>)<br/>plt.xlabel(<span class=\"pythonstringcolor\" style=\"color:green\">\"Average_Pulse\"</span>)<br/>plt.ylabel (<span class=\"pythonstringcolor\" style=\"color:green\">\"Calorie_Burnage\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plt.show() </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/default.asp"
+      }
+    },
+    {
+      "title": "Data Science - What is Data?",
+      "code": [
+        {
+          "text": "[80, 85, 90, 95, 100, 105, 110, 115, 120, 125]",
+          "html": "<div>[80, 85, 90, 95, 100, 105, 110, 115, 120, 125]</div>"
+        },
+        {
+          "text": "Array = [80, 85, 90, 95, 100, 105, 110, 115, 120, 125]\nprint(Array)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Array = [<span class=\"pythonnumbercolor\" style=\"color:#905\">80</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">85</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">90</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">95</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">105</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">110</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">115</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">125</span>]<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(Array) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_data.asp"
+      }
+    },
+    {
+      "title": "Data Science - Python DataFrame",
+      "code": [
+        {
+          "text": "import pandas as pd\n\nd = {'col1': [1, 2, 3, 4, 7], 'col2': [4, 5, 6, 9, 5], 'col3': [7, 8, 12, 1, 11]}\n\ndf = pd.DataFrame(data=d)\n\nprint(df)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>d = {<span class=\"pythonstringcolor\" style=\"color:green\">'col1'</span>: [<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>], <span class=\"pythonstringcolor\" style=\"color:green\">'col2'</span>: [<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>], <span class=\"pythonstringcolor\" style=\"color:green\">'col3'</span>: [<span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">8</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">12</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">11</span>]}<br/><br/>df = pd.DataFrame(data=d)<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(df) </span>"
+        },
+        {
+          "text": "count_column = df.shape[1]\nprint(count_column)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\ncount_column = df.shape[<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>]<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(count_column) </span>"
+        },
+        {
+          "text": "count_row = df.shape[0]\nprint(count_row)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\ncount_row = df.shape[<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>]<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(count_row) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_python_dataframe.asp"
+      }
+    },
+    {
+      "title": "Data Science Functions",
+      "code": [
+        {
+          "text": "Average_pulse_max = max(80, 85, 90, 95, 100, 105, 110, 115, 120, 125)\n\nprint (Average_pulse_max)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Average_pulse_max = max(<span class=\"pythonnumbercolor\" style=\"color:#905\">80</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">85</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">90</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">95</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">105</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">110</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">115</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">125</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span> <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  (Average_pulse_max) </span>"
+        },
+        {
+          "text": "import numpy as np\n\nCalorie_burnage = [240, 250, 260, 270, 280, 290, 300, 310, 320, 330]\n\nAverage_calorie_burnage = np.mean(Calorie_burnage)\n\nprint(Average_calorie_burnage)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> numpy <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> np<br/><br/>Calorie_burnage = <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  [<span class=\"pythonnumbercolor\" style=\"color:#905\">240</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">250</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">260</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">270</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">280</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">290</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">300</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">310</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">320</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">330</span>]<br/><br/>Average_calorie_burnage = <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  np.mean(Calorie_burnage)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(Average_calorie_burnage) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_functions.asp"
+      }
+    },
+    {
+      "title": "Data Science - Data Preparation",
+      "code": [
+        {
+          "text": "import pandas as pd\n\nhealth_data = pd.read_csv(\"data.csv\", header=0, sep=\",\")\n\nprint(health_data)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>health_data = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">\"data.csv\"</span>, header=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, sep=<span class=\"pythonstringcolor\" style=\"color:green\">\",\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(health_data) </span>"
+        },
+        {
+          "text": "import pandas as pd\n\nhealth_data = pd.read_csv(\"data.csv\", header=0, sep=\",\")\n\nprint(health_data.head())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><br/>health_data = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">\"data.csv\"</span>, header=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, sep=<span class=\"pythonstringcolor\" style=\"color:green\">\",\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(health_data.head()) </span>"
+        },
+        {
+          "text": "health_data.dropna(axis=0,inplace=True)\n\nprint(health_data)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  health_data.dropna(axis=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>,inplace=<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">True</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(health_data) </span>"
+        },
+        {
+          "text": "print(health_data.info())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(health_data.info()) </span>"
+        },
+        {
+          "text": "health_data[\"Average_Pulse\"] = health_data['Average_Pulse'].astype(float)\nhealth_data[\"Max_Pulse\"] = health_data[\"Max_Pulse\"].astype(float)\n\nprint (health_data.info())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  health_data[<span class=\"pythonstringcolor\" style=\"color:green\">\"Average_Pulse\"</span>] <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  = health_data[<span class=\"pythonstringcolor\" style=\"color:green\">'Average_Pulse'</span>].astype(<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">float</span>)<br/>health_data[<span class=\"pythonstringcolor\" style=\"color:green\">\"Max_Pulse\"</span>] = <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  health_data[<span class=\"pythonstringcolor\" style=\"color:green\">\"Max_Pulse\"</span>].astype(<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">float</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span> <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  (health_data.info()) </span>"
+        },
+        {
+          "text": "print(health_data.describe())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(health_data.describe()) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_analyze_data.asp"
+      }
+    },
+    {
+      "title": "Data Science - Linear Functions",
+      "code": [
+        {
+          "text": "y = f(x) = ax + b",
+          "html": "<div>\n  y = f(x) = ax + b </div>"
+        },
+        {
+          "text": "f(x) = 2x + 80",
+          "html": "<div>f(x) = 2x + 80</div>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_linear_functions.asp"
+      }
+    },
+    {
+      "title": "Data Science - Plotting Linear Functions",
+      "code": [
+        {
+          "text": "import matplotlib.pyplot as plt\n\nhealth_data.plot(x ='Average_Pulse', y='Calorie_Burnage', kind='line'),\nplt.ylim(ymin=0)\nplt.xlim(xmin=0)\n\nplt.show()",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> matplotlib.pyplot <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> plt<br/><br/>health_data.plot(x =<span class=\"pythonstringcolor\" style=\"color:green\">'Average_Pulse'</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  y=<span class=\"pythonstringcolor\" style=\"color:green\">'Calorie_Burnage'</span>, kind=<span class=\"pythonstringcolor\" style=\"color:green\">'line'</span>),<br/>plt.ylim(ymin=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>)<br/>plt.xlim(xmin=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>plt.show() </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_linear_functions_graphic.asp"
+      }
+    },
+    {
+      "title": "Data Science - Slope and Intercept",
+      "code": [
+        {
+          "text": "f(x) = 2x + 80",
+          "html": "<div>f(x) = 2x + 80</div>"
+        },
+        {
+          "text": "Slope = 20/10 = 2",
+          "html": "<div>Slope = 20/10 = 2</div>"
+        },
+        {
+          "text": "Slope = f(x2) - f(x1) / x2-x1",
+          "html": "<div>Slope = f(x2) - f(x1) / x2-x1</div>"
+        },
+        {
+          "text": "Slope = (260-240) / (90 - 80) = 2",
+          "html": "<div>Slope = (260-240) / (90 - 80) = 2</div>"
+        },
+        {
+          "text": "def slope(x1, y1, x2, y2):\ns = (y2-y1)/(x2-x1)\nreturn s\n\nprint (slope(80,240,90,260))",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">def</span> slope(x1, y1, x2, y2):<br/>  s = (y2-y1)/(x2-x1)<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">return</span> s<br/><br/>\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span> (slope(<span class=\"pythonnumbercolor\" style=\"color:#905\">80</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">240</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">90</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">260</span>)) </span>"
+        },
+        {
+          "text": "import pandas as pd\nimport numpy as np\n\nhealth_data = pd.read_csv(\"data.csv\", header=0, sep=\",\")\n\nx = health_data[\"Average_Pulse\"]\ny = health_data[\"Calorie_Burnage\"]\nslope_intercept = np.polyfit(x,y,1)\n\nprint(slope_intercept)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> numpy <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> np<br/><br/>health_data = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">\"data.csv\"</span>, header=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, sep=<span class=\"pythonstringcolor\" style=\"color:green\">\",\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>x = health_data[<span class=\"pythonstringcolor\" style=\"color:green\">\"Average_Pulse\"</span>]<br/>y = health_data[<span class=\"pythonstringcolor\" style=\"color:green\">\"Calorie_Burnage\"</span>]<br/>\nslope_intercept = np.polyfit(x,y,<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(slope_intercept) </span>"
+        },
+        {
+          "text": "f(135) = 2 * 135 + 80 = 350",
+          "html": "<div>f(135) = 2 * 135 + 80 = 350</div>"
+        },
+        {
+          "text": "def my_function(x):\nreturn 2*x + 80\n\nprint (my_function(135))",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">def</span> my_function(x):<br/>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">return</span> <span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>*x + <span class=\"pythonnumbercolor\" style=\"color:#905\">80</span><br/><br/>\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span> (my_function(<span class=\"pythonnumbercolor\" style=\"color:#905\">135</span>)) </span>"
+        },
+        {
+          "text": "import matplotlib.pyplot as plt\n\nhealth_data.plot(x ='Average_Pulse', y='Calorie_Burnage', kind='line'),\nplt.ylim(ymin=0, ymax=400)\nplt.xlim(xmin=0, xmax=150)\n\nplt.show()",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> matplotlib.pyplot <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> plt<br/><br/>health_data.plot(x =<span class=\"pythonstringcolor\" style=\"color:green\">'Average_Pulse'</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  y=<span class=\"pythonstringcolor\" style=\"color:green\">'Calorie_Burnage'</span>, kind=<span class=\"pythonstringcolor\" style=\"color:green\">'line'</span>),<br/>plt.ylim(ymin=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, ymax=<span class=\"pythonnumbercolor\" style=\"color:#905\">400</span>)<br/>plt.xlim(xmin=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  xmax=<span class=\"pythonnumbercolor\" style=\"color:#905\">150</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>plt.show() </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_linear_slope.asp"
+      }
+    },
+    {
+      "title": "Data Science - Intro to Statistics",
+      "code": [
+        {
+          "text": "print (full_health_data.describe())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span> (full_health_data.describe()) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_stat_intro.asp"
+      }
+    },
+    {
+      "title": "Data Science - Statistics Percentiles",
+      "code": [
+        {
+          "text": "import numpy as np\n\nMax_Pulse= full_health_data[\"Max_Pulse\"]\npercentile10 = np.percentile(Max_Pulse, 10)\nprint(percentile10)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> numpy <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> np<br/><br/>Max_Pulse= full_health_data[<span class=\"pythonstringcolor\" style=\"color:green\">\"Max_Pulse\"</span>]<br/>\npercentile10 = np.percentile(Max_Pulse, <span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>)<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(percentile10) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_stat_percentiles.asp"
+      }
+    },
+    {
+      "title": "Data Science - Statistics Standard Deviation",
+      "code": [
+        {
+          "text": "import numpy as np\n\nstd = np.std(full_health_data)\nprint(std)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> numpy <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> np<br/><br/>std = np.std(full_health_data)<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(std) </span>"
+        },
+        {
+          "text": "Coefficient of Variation = Standard Deviation / Mean",
+          "html": "<div>Coefficient of Variation = Standard Deviation / Mean</div>"
+        },
+        {
+          "text": "import numpy as np\n\ncv = np.std(full_health_data) / np.mean(full_health_data)\nprint(cv)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> numpy <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> np<br/><br/>cv = np.std(full_health_data) / np.mean(full_health_data)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(cv) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_stat_std.asp"
+      }
+    },
+    {
+      "title": "Data Science - Statistics Variance",
+      "code": [
+        {
+          "text": "(80+85+90+95+100+105+110+115+120+125) / 10 = 102.5",
+          "html": "<div>\n(80+85+90+95+100+105+110+115+120+125) / 10 = 102.5\n</div>"
+        },
+        {
+          "text": "80 - 102.5 = -22.5\n85 - 102.5 = -17.5\n90 - 102.5 = -12.5\n95 - 102.5 = -7.5\n100 - 102.5 = -2.5\n105 - 102.5 = 2.5\n110 - 102.5 = 7.5\n115 - 102.5 = 12.5\n120 - 102.5 = 17.5\n125 - 102.5 = 22.5",
+          "html": "<div>\n  80 - 102.5 = -22.5<br/>85 - 102.5 = -17.5<br/>90 - 102.5 = -12.5<br/>95 - 102.5 = \n  -7.5<br/>100 - 102.5 = -2.5<br/>105 - 102.5 = 2.5<br/>110 - 102.5 = 7.5<br/>115 - \n  102.5 = 12.5<br/>120 - 102.5 = 17.5<br/>125 - 102.5 = 22.5\n</div>"
+        },
+        {
+          "text": "(-22.5)^2 = 506.25\n(-17.5)^2 = 306.25\n(-12.5)^2 = 156.25\n(-7.5)^2 = 56.25\n(-2.5)^2 = 6.25\n2.5^2 = 6.25\n7.5^2 = 56.25\n12.5^2 = 156.25\n17.5^2 = 306.25\n22.5^2 = 506.25",
+          "html": "<div>\n  (-22.5)^2 = 506.25<br/>(-17.5)^2 = 306.25<br/>(-12.5)^2 = 156.25<br/>(-7.5)^2 = \n  56.25<br/>(-2.5)^2 = 6.25<br/>2.5^2 = 6.25<br/>7.5^2 = 56.25<br/>12.5^2 = 156.25<br/>\n  17.5^2 = 306.25<br/>22.5^2 = 506.25</div>"
+        },
+        {
+          "text": "(506.25 + 306.25 + 156.25 + 56.25 + 6.25 + 6.25 + 56.25 + 156.25 + 306.25 + 506.25) / 10 = 206.25",
+          "html": "<div>\n  (506.25 + 306.25 + 156.25 + 56.25 + 6.25 + 6.25 + 56.25 + 156.25 + 306.25 + \n  506.25) / 10 = 206.25</div>"
+        },
+        {
+          "text": "import numpy as np\n\nvar = np.var(health_data)\nprint(var)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> numpy <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> np<br/><br/>var = np.var(health_data)<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(var) </span>"
+        },
+        {
+          "text": "import numpy as np\n\nvar_full = np.var(full_health_data)\nprint(var_full)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> numpy <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> np<br/><br/>var_full = np.var(full_health_data)<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(var_full) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_stat_variance.asp"
+      }
+    },
+    {
+      "title": "Data Science - Statistics Correlation",
+      "code": [
+        {
+          "text": "import matplotlib.pyplot as plt\n\nhealth_data.plot(x ='Average_Pulse', y='Calorie_Burnage', kind='scatter')\nplt.show()",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> matplotlib.pyplot <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> plt<br/><br/>health_data.plot(x =<span class=\"pythonstringcolor\" style=\"color:green\">'Average_Pulse'</span>, y=<span class=\"pythonstringcolor\" style=\"color:green\">'Calorie_Burnage'</span>, \nkind=<span class=\"pythonstringcolor\" style=\"color:green\">'scatter'</span>)<br/>plt.show() </span>"
+        },
+        {
+          "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\nnegative_corr = {'Hours_Work_Before_Training': [10,9,8,7,6,5,4,3,2,1],\n'Calorie_Burnage': [220,240,260,280,300,320,340,360,380,400]}\nnegative_corr = pd.DataFrame(data=negative_corr)\n\nnegative_corr.plot(x ='Hours_Work_Before_Training', y='Calorie_Burnage', kind='scatter')\nplt.show()",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> matplotlib.pyplot <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> plt<br/><br/>negative_corr = <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  {<span class=\"pythonstringcolor\" style=\"color:green\">'Hours_Work_Before_Training'</span>: [<span class=\"pythonnumbercolor\" style=\"color:#905\">10</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">9</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">8</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">7</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">6</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">5</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">4</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">3</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>],<br/><span class=\"pythonstringcolor\" style=\"color:green\">'Calorie_Burnage'</span>: <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  [<span class=\"pythonnumbercolor\" style=\"color:#905\">220</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">240</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">260</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">280</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">300</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">320</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">340</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">360</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">380</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">400</span>]}<br/>negative_corr = pd.DataFrame(data=negative_corr)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>negative_corr.plot(x =<span class=\"pythonstringcolor\" style=\"color:green\">'Hours_Work_Before_Training'</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  y=<span class=\"pythonstringcolor\" style=\"color:green\">'Calorie_Burnage'</span>, kind=<span class=\"pythonstringcolor\" style=\"color:green\">'scatter'</span>)<br/>plt.show() </span>"
+        },
+        {
+          "text": "import matplotlib.pyplot as plt\n\nfull_health_data.plot(x ='Duration', y='Max_Pulse', kind='scatter')\nplt.show()",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> matplotlib.pyplot <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> plt<br/><br/>full_health_data.plot(x =<span class=\"pythonstringcolor\" style=\"color:green\">'Duration'</span>, y=<span class=\"pythonstringcolor\" style=\"color:green\">'Max_Pulse'</span>, \nkind=<span class=\"pythonstringcolor\" style=\"color:green\">'scatter'</span>)<br/>plt.show() </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_stat_correlation.asp"
+      }
+    },
+    {
+      "title": "Data Science - Statistics Correlation Matrix",
+      "code": [
+        {
+          "text": "Corr_Matrix = round(full_health_data.corr(),2)\nprint(Corr_Matrix)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Corr_Matrix = <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">round</span>(full_health_data.corr(),<span class=\"pythonnumbercolor\" style=\"color:#905\">2</span>)<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(Corr_Matrix) </span>"
+        },
+        {
+          "text": "import matplotlib.pyplot as plt\nimport seaborn as sns\n\ncorrelation_full_health = full_health_data.corr()\n\naxis_corr = sns.heatmap(\ncorrelation_full_health,\nvmin=-1, vmax=1, center=0,\ncmap=sns.diverging_palette(50, 500, n=500),\nsquare=True\n)\n\nplt.show()",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> matplotlib.pyplot <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> plt<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> seaborn <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> sns<br/><br/>correlation_full_health = \nfull_health_data.corr()<br/><br/>axis_corr = sns.heatmap(<br/>\ncorrelation_full_health,<br/>vmin=-<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>, vmax=<span class=\"pythonnumbercolor\" style=\"color:#905\">1</span>, center=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>,<br/>cmap=sns.diverging_palette(<span class=\"pythonnumbercolor\" style=\"color:#905\">50</span>, <span class=\"pythonnumbercolor\" style=\"color:#905\">\n500</span>, n=<span class=\"pythonnumbercolor\" style=\"color:#905\">500</span>),<br/>square=<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">True</span><br/>)<br/><br/>plt.show() </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_stat_correlation_matrix.asp"
+      }
+    },
+    {
+      "title": "Data Science - Statistics Correlation vs. Causality",
+      "code": [
+        {
+          "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\nDrowning_Accident = [20,40,60,80,100,120,140,160,180,200]\nIce_Cream_Sale = [20,40,60,80,100,120,140,160,180,200]\nDrowning = {\"Drowning_Accident\": [20,40,60,80,100,120,140,160,180,200],\n\"Ice_Cream_Sale\": [20,40,60,80,100,120,140,160,180,200]}\nDrowning = pd.DataFrame(data=Drowning)\n\nDrowning.plot(x=\"Ice_Cream_Sale\", y=\"Drowning_Accident\", kind=\"scatter\")\nplt.show()\n\ncorrelation_beach = Drowning.corr()\nprint(correlation_beach)",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> matplotlib.pyplot <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> plt<br/><br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  Drowning_Accident = [<span class=\"pythonnumbercolor\" style=\"color:#905\">20</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">40</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">80</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">140</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">160</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">180</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">200</span>]<br/>Ice_Cream_Sale = <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  [<span class=\"pythonnumbercolor\" style=\"color:#905\">20</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">40</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">80</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">140</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">160</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">180</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">200</span>]<br/>Drowning = {<span class=\"pythonstringcolor\" style=\"color:green\">\"Drowning_Accident\"</span>: <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  [<span class=\"pythonnumbercolor\" style=\"color:#905\">20</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">40</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">80</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">140</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">160</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">180</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">200</span>],<br/><span class=\"pythonstringcolor\" style=\"color:green\">\"Ice_Cream_Sale\"</span>: <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  [<span class=\"pythonnumbercolor\" style=\"color:#905\">20</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">40</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">80</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">100</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">140</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">160</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">180</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">200</span>]}<br/>Drowning = pd.DataFrame(data=Drowning)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>Drowning.plot(x=<span class=\"pythonstringcolor\" style=\"color:green\">\"Ice_Cream_Sale\"</span>, y=<span class=\"pythonstringcolor\" style=\"color:green\">\"Drowning_Accident\"</span>, kind=<span class=\"pythonstringcolor\" style=\"color:green\">\"scatter\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plt.show()<br/><br/>correlation_beach = Drowning.corr()<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(correlation_beach) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_stat_correlation_causality.asp"
+      }
+    },
+    {
+      "title": "Data Science - Linear Regression",
+      "code": [
+        {
+          "text": "import pandas as pd\nimport matplotlib.pyplot as plt\nfrom scipy import stats\n\nfull_health_data = pd.read_csv(\"data.csv\", header=0, sep=\",\")\n\nx = full_health_data[\"Average_Pulse\"]\ny = full_health_data [\"Calorie_Burnage\"]\n\nslope, intercept, r, p, std_err = stats.linregress(x, y)\n\ndef myfunc(x):\nreturn slope * x + intercept\n\nmymodel = list(map(myfunc, x))\n\nplt.scatter(x, y)\nplt.plot(x, slope * x + intercept)\nplt.ylim(ymin=0, ymax=2000)\nplt.xlim(xmin=0, xmax=200)\nplt.xlabel(\"Average_Pulse\")\nplt.ylabel (\"Calorie_Burnage\")\nplt.show()",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> matplotlib.pyplot <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> plt<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">from</span> scipy <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> stats<br/><br/>full_health_data = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">\"data.csv\"</span>, header=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, sep=<span class=\"pythonstringcolor\" style=\"color:green\">\",\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>x = full_health_data[<span class=\"pythonstringcolor\" style=\"color:green\">\"Average_Pulse\"</span>]<br/>y = full_health_data [<span class=\"pythonstringcolor\" style=\"color:green\">\"Calorie_Burnage\"</span>]<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>slope, intercept, r, p, std_err = stats.linregress(x, y)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">def</span> myfunc(x):<br/> <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">return</span> <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  slope * x + intercept<br/><br/>mymodel = <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">list</span>(<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">map</span>(myfunc, x))<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>plt.scatter(x, y)<br/>plt.plot(x, slope * x + intercept)<br/>plt.ylim(ymin=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, ymax=<span class=\"pythonnumbercolor\" style=\"color:#905\">2000</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plt.xlim(xmin=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, xmax=<span class=\"pythonnumbercolor\" style=\"color:#905\">200</span>)<br/>plt.xlabel(<span class=\"pythonstringcolor\" style=\"color:green\">\"Average_Pulse\"</span>)<br/>plt.ylabel (<span class=\"pythonstringcolor\" style=\"color:green\">\"Calorie_Burnage\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  plt.show() </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_linear_regression.asp"
+      }
+    },
+    {
+      "title": "Data Science - Regression Table",
+      "code": [
+        {
+          "text": "import pandas as pd\nimport statsmodels.formula.api as smf\n\nfull_health_data = pd.read_csv(\"data.csv\", header=0, sep=\",\")\n\nmodel = smf.ols('Calorie_Burnage ~ Average_Pulse', data = full_health_data)\nresults = model.fit()\nprint(results.summary())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> statsmodels.formula.api <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> smf<br/><br/>full_health_data = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">\"data.csv\"</span>, header=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, sep=<span class=\"pythonstringcolor\" style=\"color:green\">\",\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>model = smf.ols(<span class=\"pythonstringcolor\" style=\"color:green\">'Calorie_Burnage ~ Average_Pulse'</span>, data = \nfull_health_data)<br/>results = model.fit()<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(results.summary()) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_linear_regression_table.asp"
+      }
+    },
+    {
+      "title": "Data Science - Regression Table - Coefficients",
+      "code": [
+        {
+          "text": "Calorie_Burnage = 0.3296 * Average_Pulse + 346.8662",
+          "html": "<div>\n  Calorie_Burnage = 0.3296 * Average_Pulse + 346.8662 </div>"
+        },
+        {
+          "text": "def Predict_Calorie_Burnage(Average_Pulse):\nreturn(0.3296*Average_Pulse + 346.8662)\n\nprint(Predict_Calorie_Burnage(120))\nprint(Predict_Calorie_Burnage(130))\nprint(Predict_Calorie_Burnage(150))\nprint(Predict_Calorie_Burnage(180))",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\">\n<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">def</span> Predict_Calorie_Burnage(Average_Pulse):<br/> <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">return</span>(<span class=\"pythonnumbercolor\" style=\"color:#905\">0.3296</span>*Average_Pulse + <span class=\"pythonnumbercolor\" style=\"color:#905\">\n346.8662</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(Predict_Calorie_Burnage(<span class=\"pythonnumbercolor\" style=\"color:#905\">120</span>))<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(Predict_Calorie_Burnage(<span class=\"pythonnumbercolor\" style=\"color:#905\">130</span>))<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(Predict_Calorie_Burnage(<span class=\"pythonnumbercolor\" style=\"color:#905\">150</span>))<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(Predict_Calorie_Burnage(<span class=\"pythonnumbercolor\" style=\"color:#905\">180</span>)) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_linear_regression_coeff.asp"
+      }
+    },
+    {
+      "title": "Data Science - Regression Table: P-Value",
+      "code": [
+        {
+          "text": "H0: Average_Pulse = 0\nHA: Average_Pulse ≠ 0\nH0: Intercept = 0\nHA: Intercept ≠ 0",
+          "html": "<div>\n  H0: Average_Pulse = 0 <br/>HA: Average_Pulse ≠ 0<br/>H0: Intercept = \n0 <br/>HA: Intercept ≠ 0 </div>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_linear_regression_pvalue.asp"
+      }
+    },
+    {
+      "title": "Data Science - Regression Table: R-Squared",
+      "code": [
+        {
+          "text": "import pandas as pd\nimport matplotlib.pyplot as plt\nfrom scipy import stats\n\nfull_health_data = pd.read_csv(\"data.csv\", header=0, sep=\",\")\n\nx = full_health_data[\"Duration\"]\ny = full_health_data [\"Calorie_Burnage\"]\n\nslope, intercept, r, p, std_err = stats.linregress(x, y)\n\ndef myfunc(x):\nreturn slope * x + intercept\n\nmymodel = list(map(myfunc, x))\n\nprint(mymodel)\n\nplt.scatter(x, y)\nplt.plot(x, mymodel)\nplt.ylim(ymin=0, ymax=2000)\nplt.xlim(xmin=0, xmax=200)\nplt.xlabel(\"Duration\")\nplt.ylabel (\"Calorie_Burnage\")\n\nplt.show()",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> matplotlib.pyplot <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> plt<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">from</span> scipy <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> stats<br/><br/>full_health_data = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">\"data.csv\"</span>, header=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, sep=<span class=\"pythonstringcolor\" style=\"color:green\">\",\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>x = full_health_data[<span class=\"pythonstringcolor\" style=\"color:green\">\"Duration\"</span>]<br/>y = \nfull_health_data [<span class=\"pythonstringcolor\" style=\"color:green\">\"Calorie_Burnage\"</span>]<br/><br/>slope, intercept, r, p, std_err = \nstats.linregress(x, y)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">def</span> myfunc(x):<br/> <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">return</span> slope * x + intercept<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span><br/>mymodel = <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">list</span>(<span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">map</span>(myfunc, x))<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(mymodel)<br/><br/>plt.scatter(x, \ny)<br/>plt.plot(x, mymodel)<br/>plt.ylim(ymin=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, ymax=<span class=\"pythonnumbercolor\" style=\"color:#905\">2000</span>)<br/>plt.xlim(xmin=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, \nxmax=<span class=\"pythonnumbercolor\" style=\"color:#905\">200</span>)<br/>plt.xlabel(<span class=\"pythonstringcolor\" style=\"color:green\">\"Duration\"</span>)<br/>plt.ylabel (<span class=\"pythonstringcolor\" style=\"color:green\">\"Calorie_Burnage\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span><br/>plt.show() </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_linear_regression_rsquared.asp"
+      }
+    },
+    {
+      "title": "Data Science - Linear Regression Case",
+      "code": [
+        {
+          "text": "import pandas as pd\nimport statsmodels.formula.api as smf\n\nfull_health_data = pd.read_csv(\"data.csv\", header=0, sep=\",\")\n\nmodel = smf.ols('Calorie_Burnage ~ Average_Pulse + Duration', data = full_health_data)\nresults = model.fit()\nprint(results.summary())",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> pandas as pd<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">import</span> statsmodels.formula.api <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">as</span> smf<br/><br/>full_health_data = pd.read_csv(<span class=\"pythonstringcolor\" style=\"color:green\">\"data.csv\"</span>, header=<span class=\"pythonnumbercolor\" style=\"color:#905\">0</span>, sep=<span class=\"pythonstringcolor\" style=\"color:green\">\",\"</span>)<br/><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <br/>model = smf.ols(<span class=\"pythonstringcolor\" style=\"color:green\">'Calorie_Burnage ~ Average_Pulse + Duration'</span>, data = full_health_data)<br/>results <span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  = model.fit()<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(results.summary()) </span>"
+        },
+        {
+          "text": "Calorie_Burnage = Average_Pulse * 3.1695 + Duration * 5.8424 - 334.5194",
+          "html": "<div>\n  Calorie_Burnage = Average_Pulse * 3.1695 + Duration * 5.8424 - 334.5194 </div>"
+        },
+        {
+          "text": "Calorie_Burnage = Average_Pulse * 3.17 + Duration * 5.84 - 334.52",
+          "html": "<div>\nCalorie_Burnage = Average_Pulse * 3.17 + \nDuration * 5.84 - 334.52 </div>"
+        },
+        {
+          "text": "def Predict_Calorie_Burnage(Average_Pulse, Duration):\nreturn(3.1695*Average_Pulse + 5.8434 * Duration - 334.5194)\n\nprint(Predict_Calorie_Burnage(110,60))\nprint(Predict_Calorie_Burnage(140,45))\nprint(Predict_Calorie_Burnage(175,20))",
+          "html": "<span class=\"pythoncolor\" style=\"color:black\"><span class=\"pythonnumbercolor\" style=\"color:#905\">\n</span>  <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">def</span> Predict_Calorie_Burnage(Average_Pulse, \nDuration):<br/> <span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">return</span>(<span class=\"pythonnumbercolor\" style=\"color:#905\">3.1695</span>*Average_Pulse + <span class=\"pythonnumbercolor\" style=\"color:#905\">5.8434</span> * Duration - <span class=\"pythonnumbercolor\" style=\"color:#905\">334.5194</span>)<br/><br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(Predict_Calorie_Burnage(<span class=\"pythonnumbercolor\" style=\"color:#905\">110</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">60</span>))<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(Predict_Calorie_Burnage(<span class=\"pythonnumbercolor\" style=\"color:#905\">140</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">45</span>))<br/><span class=\"pythonkeywordcolor\" style=\"color:#005cc5\">print</span>(Predict_Calorie_Burnage(<span class=\"pythonnumbercolor\" style=\"color:#905\">175</span>,<span class=\"pythonnumbercolor\" style=\"color:#905\">20</span>)) </span>"
+        }
+      ],
+      "metadata": {
+        "url": "https://www.w3schools.com/datascience/ds_linear_regression_case.asp"
+      }
+    }
+  ]
+}
