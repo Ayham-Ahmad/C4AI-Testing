@@ -28,3 +28,11 @@ embedded/*
 # or whatever directory contains large vectorstore files
 /data/
 *.sqlite3
+
+rag_output.txt
+
+test.py
+
+topics/
+
+Testing/
