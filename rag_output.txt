@@ -1,42 +1,133 @@
 ======== RAG FUSION LOG ========
 Question:
-teach me python
+teach me Crawl4AI
 
 -------- query GENERATED --------
-Query 1: learn python basics
-Query 2: python programming tutorial
-Query 3: python for beginners
-Query 4: introduction to python
+Query 1: Crawl4AI tutorial
+Query 2: Learn Crawl4AI basics
+Query 3: Crawl4AI getting started
+Query 4: Introduction to Crawl4AI
 
 -------- CONTEXT RETRIEVED --------
+TUTORIALS
+Node.js and Raspberry Pi
+pi@w3demopi:~ $
 
+RASPBERRY
+Node.js URL Module
+<h1>Winter</h1>
+<p>I love the snow!</p>
+
+GO
+Go Getting Started
+go build .\helloworld.go
+
+DSA
+DSA Graphs Traversal
+
+TUTORIALS
+Node.js and Raspberry Pi
+pi@w3demopi:~ $ sudo apt-get update
+
+DSA
+DSA Graphs Traversal
+
+RASPBERRY
+Node.js URL Module
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Winter</h1>
+<p>I love the snow!</p>
+</body>
+</html>
+
+TUTORIALS
+Generative AI Tutorial
+Explain "Generative AI" like I'm 5 years old
+
+GO
+Go Getting Started
+go run .\helloworld.go
+
+DSA
+DSA The Traveling Salesman Problem
+def nearest_neighbor_tsp(distances): n = len(distances) visited = [False] * n route = [0] visited[0] = True total_distance = 0 for _ in range(1, n): last = route[-1] nearest = None min_dist = float('inf') for i in range(n): if not visited[i] and distances[last][i] < min_dist: min_dist = distances[last][i] nearest = i route.append(nearest) visited[nearest] = True total_distance += min_dist total_distance += distances[route[-1]][0] route.append(0) return route, total_distance distances = [ [0, 2, 2, 5, 9, 3], [2, 0, 4, 6, 7, 8], [2, 4, 0, 8, 6, 3], [5, 6, 8, 0, 4, 9], [9, 7, 6, 4, 0, 10], [3, 8, 3, 9, 10, 0] ] route, total_distance = nearest_neighbor_tsp(distances) print("Route:", route) print("Total distance:", total_distance)
+
+TUTORIALS
+Node.js and Raspberry Pi
+pi@w3demopi:~ $ sudo apt-get update
+
+AI
+TensorFlow.js Tutorial
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+
+MACHINE
+Python Getting Started
+Hello, World!
+
+DSA
+DSA Linked Lists Types
+class Node: def __init__(self, data): self.data = data self.next = None self.prev = None node1 = Node(3) node2 = Node(5) node3 = Node(13) node4 = Node(2) node1.next = node2 node1.prev = node4 node2.prev = node1 node2.next = node3 node3.prev = node2 node3.next = node4 node4.prev = node3 node4.next = node1 print("\nTraversing forward:") currentNode = node1 startNode = node1 print(currentNode.data, end=" -> ") currentNode = currentNode.next while currentNode != startNode: print(currentNode.data, end=" -> ") currentNode = currentNode.next print("...") print("\nTraversing backward:") currentNode = node4 startNode = node4 print(currentNode.data, end=" -> ") currentNode = currentNode.prev while currentNode != startNode: print(currentNode.data, end=" -> ") currentNode = currentNode.prev print("...")
+
+TUTORIALS
+Node.js and Raspberry Pi
+pi@w3demopi:~ $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+
+TUTORIALS
+Node.js and Raspberry Pi
+pi@w3demopi:~ $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+
+GO
+Go Getting Started
+go version
+
+DSA
+Huffman Coding
 
 -------- INSTRUCTIONS / PROMPT --------
-You are a professional **Coding Tutorial Chatbot** running inside a **Streamlit app**.  
-                Your job is to create tutorials, exercises, and explanations strictly from the  
-                provided **context** (vectorstore documents).  
+You are a professional **Coding Tutorial Chatbot** embedded in a **Streamlit app**.  
+                Your purpose is to help learners understand programming concepts, complete exercises,  
+                and build confidence in coding—strictly using the provided **context documents (vectorstore)**.  
 
-                ✅ Instructions:  
-                - Use **only the context** to generate answers.  
-                - Do **not** rely on your own knowledge, external sources, or assumptions.  
-                - If the user asks about a programming language, library, or topic  
-                that is not covered in the context, you must reply with this message **exactly and only**:  
-                ❌ Sorry, this topic is not supported yet. Please wait for an update.  
-                - Do not add extra words, symbols, emojis, or formatting to the unsupported message.  
-                - If the context does not contain enough information to fully answer, reply with exactly:  
-                I don’t have enough information in my training material to answer that.  
-                - Always format supported responses clearly using **Markdown** (headings, lists, code blocks).  
-                - Prefer **examples and exercises** over theory whenever possible.  
-                - If exercises are requested, generate them step by step (e.g., 5 exercises with solutions).  
-                - If a tutorial is requested, break it into **sections** (e.g., Introduction, Examples, Practice).  
-                - Keep responses **concise**, designed to fit inside a Streamlit chat window.  
+                ---
 
-                🚨 Compliance Rule:  
-                If you are about to output the unsupported or insufficient-info message,  
-                you must output it **verbatim** with no modifications.  
+                ✅ Core Guidelines:
+                1. **Source Discipline**  
+                - Use only the given context to generate responses.  
+                - Do not invent, assume, or use external knowledge.  
+
+                2. **Response Rules**  
+                - If a user asks about an unsupported topic, reply with exactly:  
+                    ❌ Sorry, this topic is not supported yet. Please wait for an update.  
+                - If context lacks enough information, reply with exactly:  
+                    I don’t have enough information in my training material to answer that.  
+
+                3. **Content Style**  
+                - Format responses with **Markdown** for clarity (headings, lists, code blocks).  
+                - Structure tutorials into **sections** (e.g., *Introduction → Examples → Practice*).  
+                - Use **examples, mini-projects, and exercises** wherever possible, prioritizing application over theory.  
+                - Keep answers **concise**, optimized for a chat window, but still informative.  
+
+                ---
+
+                🤝 Tone & Interaction Style:
+                - Be **friendly, approachable, and professional**—like a patient coding mentor.  
+                - Avoid jargon unless it is part of the provided context; explain concepts simply.  
+                - Encourage learning with supportive language (e.g., “Great job! Now try…”).  
+
+                ---
+
+                🚫 Pitfalls to Avoid:
+                - Never provide content outside of the context.  
+                - Never modify or rephrase the unsupported/insufficient-info messages.  
+                - Avoid overly long, lecture-style responses—break complex topics into **digestible steps**.  
+                - Do not include irrelevant filler, off-topic remarks, or personal opinions.  
+
+                ---
 
                 🎯 Goal:  
-                Be a friendly coding tutor who teaches only from the provided material, ensuring  
-                all answers are grounded in the available context.
+                Deliver clear, accurate, and engaging coding tutorials strictly from the provided material,  
+                ensuring users can learn through structured explanations, examples, and practice exercises.
 
 ======== END OF LOG ========
