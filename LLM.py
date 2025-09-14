@@ -1,17 +1,22 @@
+# LLM.py
 from groq import Groq
 import os
 from dotenv import load_dotenv
+
 load_dotenv()
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-
 if not GROQ_API_KEY:
     raise RuntimeError("GROQ_API_KEY not set. Add it to environment or .env")
 
-# Initialize Groq client once
 client = Groq(api_key=GROQ_API_KEY)
 
-def LLM(system_prompt="You are a Smart Financial Advisor.", user_query="Hello!!"):
+
+def run_llm(system_prompt="You are a Smart Financial Advisor.", user_query="Hello!!"):
+    """
+    Streams tokens from Groq LLM as they arrive.
+    Yields: string chunks
+    """
     try:
         completion = client.chat.completions.create(
             model="llama-3.3-70b-versatile",
@@ -22,15 +27,13 @@ def LLM(system_prompt="You are a Smart Financial Advisor.", user_query="Hello!!"
             temperature=0.6,
             max_completion_tokens=1024,
             top_p=1,
-            stream=True
+            stream=True,
         )
 
-        output = ""
         for chunk in completion:
             delta = chunk.choices[0].delta
             if delta and delta.content:
-                output += delta.content
-        return output
+                yield delta.content
 
     except Exception as e:
-        return f"⚠️ Error generating response: {str(e)}"
+        yield f"⚠️ Error generating response: {str(e)}"

@@ -38,10 +38,15 @@ def generate_query(question: str, num_query: int = NUM_QUERY) -> List[str]:
         question=question,
         num_query=num_query
     )
-    raw_output = LLM.LLM(prompt, question)
+    raw_output = LLM.run_llm(prompt, question)
+
+    queries = ' '
 
     # Split into clean query lines
-    queries = [line.strip() for line in raw_output.splitlines() if line.strip()]
+    if queries:
+        queries = [line.strip() for line in raw_output.splitlines() if line.strip()]
+    else:
+        print('queries is empty')
     return queries[:num_query]
 
 
@@ -59,7 +64,7 @@ def generate_hyde_document(question: str) -> str:
         "Hypothetical Answer:"
     )
     prompt = ChatPromptTemplate.from_template(template).format(question=question)
-    return LLM.LLM(prompt, question).strip()
+    return LLM.run_llm(prompt, question).strip()
 
 
 def reciprocal_rank_fusion(

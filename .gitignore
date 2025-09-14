@@ -36,3 +36,5 @@ test.py
 topics/
 
 testing/*
+
+crawl_log.txt
