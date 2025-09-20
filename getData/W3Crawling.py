@@ -1,3 +1,4 @@
+# w3_multi_crawler_template.py
 import asyncio
 import json
 import logging
@@ -8,8 +9,12 @@ from crawl4ai import AsyncWebCrawler, CrawlerRunConfig
 from crawl4ai.content_scraping_strategy import LXMLWebScrapingStrategy
 from pyquery import PyQuery as pq
 
-
-BASE_URL = "https://www.w3schools.com/tutorials/index.php"
+# ---------- CONFIG ----------
+COURSES = {
+    "python": "https://www.w3schools.com/python/default.asp",
+    "html": "https://www.w3schools.com/html/default.asp",
+    "css": "https://www.w3schools.com/css/default.asp",
+}
 OUTPUT_DIR = Path("W3_Tutorials")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
@@ -22,18 +27,45 @@ logging.basicConfig(
 
 def extract_code_snippets(doc: pq) -> list:
     snippets, seen = [], set()
-    for sel in ["div.w3-example pre", "div.w3-code"]:
+    for sel in ["div.w3-example pre", "div.w3-code", "pre", "code"]:
         for el in doc(sel).items():
             text = el.text() or ""
-            html = el.html() or ""
             if not text.strip():
                 continue
-            fp = (len(text), html[:50])
+            fp = (len(text), text[:50])
             if fp in seen:
                 continue
             seen.add(fp)
-            snippets.append({"text": text.strip(), "html": html.strip()})
+            snippets.append(text.strip())
     return snippets
+
+
+def extract_summary(doc: pq) -> str:
+    """
+    Extract tutorial content text only from the main content div.
+    """
+    main = doc("#main") or doc(".w3-main") or doc("body")
+    parts = []
+    for el in main("h2, h3, p, li").items():
+        text = el.text().strip()
+        if text:
+            parts.append(text)
+    return "\n".join(parts)
+
+
+def extract_description(doc: pq) -> str:
+    """
+    Extract description: first few <p> elements in the main content.
+    """
+    main = doc("#main") or doc(".w3-main") or doc("body")
+    desc_parts = []
+    for el in main("p").items():
+        text = el.text().strip()
+        if text:
+            desc_parts.append(text)
+        if len(" ".join(desc_parts)) > 900:  # limit ~1000 chars
+            break
+    return " ".join(desc_parts)[:1000]
 
 
 def extract_menu_links(doc: pq, base_url: str) -> list:
@@ -50,22 +82,23 @@ def extract_menu_links(doc: pq, base_url: str) -> list:
     return links
 
 
-async def crawl_language(crawler, run_config, lang_name: str, tut_url: str):
-    tutorials = []
+async def crawl_course(crawler, run_config, course_name: str, tut_url: str):
+    course_summary = []
+    description = ""
 
     try:
-        tut_results = await crawler.arun(url=tut_url, config=run_config)
+        tut_result = await crawler.arun(url=tut_url, config=run_config)
     except Exception as e:
-        logging.error(f"❌ Failed to open {lang_name} main page: {e}")
+        logging.error(f"❌ Failed to open {course_name} tutorial main page: {e}")
         return
 
-    for tut in tut_results:
+    for tut in tut_result:
         if not getattr(tut, "html", None):
             continue
         tut_doc = pq(tut.html)
         menu_links = extract_menu_links(tut_doc, tut_url)
 
-        for link in menu_links:
+        for idx, link in enumerate(menu_links[:5]):  # first 5 for testing
             sub_url = link["url"]
             try:
                 sub_results = await crawler.arun(url=sub_url, config=run_config)
@@ -77,23 +110,36 @@ async def crawl_language(crawler, run_config, lang_name: str, tut_url: str):
                 if not getattr(sub, "html", None):
                     continue
                 sub_doc = pq(sub.html)
+
+                if idx == 0:
+                    description = extract_description(sub_doc)
+                    continue
+
                 title = sub_doc("h1").text().strip() or link["title"]
+                summary = extract_summary(sub_doc)
+                examples = extract_code_snippets(sub_doc)
 
-                code_snippets = extract_code_snippets(sub_doc)
-                if code_snippets:
-                    tutorials.append(
-                        {
-                            "title": title,
-                            "code": code_snippets,
-                            "metadata": {"url": sub_url},
-                        }
-                    )
-                    logging.info(f"{lang_name}: {title} ({len(code_snippets)} examples)")
+                course_summary.append(
+                    {
+                        "title": title,
+                        "summary": summary,
+                        "examples": examples,
+                    }
+                )
 
-    out_file = OUTPUT_DIR / f"{lang_name}.json"
+                logging.info(f"{course_name.upper()}: {title} ({len(examples)} examples)")
+
+    out_data = {
+        "course_name": course_name.capitalize(),
+        "description": description,
+        "course_summary": course_summary,
+        "glossary": [],  # leave empty
+    }
+
+    out_file = OUTPUT_DIR / f"{course_name}_first5.json"
     with out_file.open("w", encoding="utf-8") as f:
-        json.dump({"language": lang_name, "tutorials": tutorials}, f, indent=2, ensure_ascii=False)
-    logging.info(f"✅ Saved {lang_name} tutorials to {out_file.resolve()}")
+        json.dump(out_data, f, indent=2, ensure_ascii=False)
+    logging.info(f"✅ Saved {course_name} tutorials to {out_file.resolve()}")
 
 
 async def main():
@@ -106,20 +152,9 @@ async def main():
         browser_args=["--disable-blink-features=AutomationControlled", "--no-sandbox", "--disable-dev-shm-usage"],
         wait_for="document.querySelector('h1') || document.querySelector('.w3-example')",
     ) as crawler:
-        # Get all tutorial links from the main Tutorials page
-        results = await crawler.arun(url=BASE_URL, config=run_config)
-        if not results:
-            logging.error("Could not load tutorial index page.")
-            return
-
-        doc = pq(results[0].html)
-        tutorial_links = extract_menu_links(doc, BASE_URL)
-
-        for link in tutorial_links:
-            lang_name = link["title"].split()[0].upper()
-            tut_url = link["url"]
-            await crawl_language(crawler, run_config, lang_name, tut_url)
-            await asyncio.sleep(1)  # throttle to avoid rate limiting
+        for name, url in COURSES.items():
+            await crawl_course(crawler, run_config, name, url)
+            await asyncio.sleep(1)
 
 
 if __name__ == "__main__":

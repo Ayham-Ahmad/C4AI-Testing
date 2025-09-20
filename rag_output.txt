@@ -1,11 +1,87 @@
 ======== RAG FUSION LOG ========
 Question:
-crawl4ai
+teach me jaava
 
 -------- query GENERATED --------
+Query 1: learn java programming
+Query 2: java basics tutorial
+Query 3: java for beginners
+Query 4: introduction to java
 
 -------- CONTEXT RETRIEVED --------
+JAVA
+Java Getting Started
+C:\Users\Your Name>java Main
 
+JAVA
+Java Class Methods
+C:\Users\Your Name>java Second
+
+TUTORIALS
+Java Tutorial
+public class Main { public static void main(String[] args) { System.out.println("Hello World"); } }
+
+JAVA
+Java Classes and Objects
+C:\Users\Your Name>java Second
+
+JAVA
+Java Statements
+System.out.println("Hello World!"); System.out.println("Have a good day!"); System.out.println("Learning Java is fun!");
+
+JAVA
+Java Tutorial
+public class Main { public static void main(String[] args) { System.out.println("Hello World"); } }
+
+TUTORIALS
+Java Tutorial
+public class Main { public static void main(String[] args) { System.out.println("Hello World"); } }
+
+TUTORIALS
+Java Tutorial
+public class Main { public static void main(String[] args) { System.out.println("Hello World"); } }
+
+JAVA
+Java Getting Started
+C:\Users\Your Name>javac Main.java
+
+JAVA
+Java Getting Started
+C:\Users\Your Name>java -version
+
+JAVA
+Java Getting Started
+C:\Users\Your Name>java -version
+
+JAVA
+Java Class Methods
+C:\Users\Your Name>javac Main.java
+C:\Users\Your Name>javac Second.java
+
+JAVA
+Java Getting Started
+C:\Users\Your Name>javac Main.java
+
+JAVA
+Java Data Structures
+// Import the ArrayList class import java.util.ArrayList; public class Main { public static void main(String[] args) { ArrayList<String> cars = new ArrayList<String>(); cars.add("Volvo"); cars.add("BMW"); cars.add("Ford"); cars.add("Mazda"); System.out.println(cars); } }
+
+JAVA
+Java Output / Print
+System.out.println("Hello World!"); System.out.println("I am learning Java."); System.out.println("It is awesome!");
+
+JAVA
+Java Errors
+int x = "Hello";
+
+JAVA
+Java Statements
+System.out.println("Hello World!"); System.out.println("Have a good day!"); System.out.println("Learning Java is fun!");
+
+JAVA
+Java Classes and Objects
+C:\Users\Your Name>javac Main.java
+C:\Users\Your Name>javac Second.java
 
 -------- INSTRUCTIONS / PROMPT --------
 You are a professional **Coding Tutorial Chatbot** embedded in a **Streamlit app**.  

@@ -1,0 +1,1405 @@
+{
+  "course_name": "Python Tutorial",
+  "description": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+  "course_summary": [
+    {
+      "title": "Python HOME",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "print(\"Hello, World!\")"
+      ]
+    },
+    {
+      "title": "Python Intro",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "print(\"Hello, World!\")"
+      ]
+    },
+    {
+      "title": "Python Get Started",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "print(\"Hello, World!\")"
+      ]
+    },
+    {
+      "title": "Python Syntax",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        ">>> print(\"Hello, World!\") Hello, World!"
+      ]
+    },
+    {
+      "title": "Python Comments",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "#This is a comment print(\"Hello, World!\")"
+      ]
+    },
+    {
+      "title": "Python Variables",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "x = 5 y = \"John\" print(x) print(y)"
+      ]
+    },
+    {
+      "title": "Python Variables",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "x = 5 y = \"John\" print(x) print(y)"
+      ]
+    },
+    {
+      "title": "Variable Names",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "myvar = \"John\"my_var = \"John\"_my_var = \"John\"myVar = \"John\" MYVAR = \"John\"myvar2 = \"John\""
+      ]
+    },
+    {
+      "title": "Assign Multiple Values",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "x, y, z = \"Orange\", \"Banana\", \"Cherry\"print(x)print(y)print(z)"
+      ]
+    },
+    {
+      "title": "Output Variables",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "x = \"Python is awesome\" print(x)"
+      ]
+    },
+    {
+      "title": "Global Variables",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "x = \"awesome\" def myfunc(): print(\"Python is \" + x)myfunc()"
+      ]
+    },
+    {
+      "title": "Variable Exercises",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Data Types",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "x = 5 print(type(x))"
+      ]
+    },
+    {
+      "title": "Python Numbers",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "x = 1 # inty = 2.8 # floatz = 1j # complex"
+      ]
+    },
+    {
+      "title": "Python Casting",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "x = int(1) # x will be 1 y = int(2.8) # y will be 2 z = int(\"3\") # z will be 3"
+      ]
+    },
+    {
+      "title": "Python Strings",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "print(\"Hello\") print('Hello')"
+      ]
+    },
+    {
+      "title": "Python Strings",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "print(\"Hello\") print('Hello')"
+      ]
+    },
+    {
+      "title": "Slicing Strings",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "b = \"Hello, World!\" print(b[2:5])"
+      ]
+    },
+    {
+      "title": "Modify Strings",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "a = \"Hello, World!\" print(a.upper())"
+      ]
+    },
+    {
+      "title": "Concatenate Strings",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "a = \"Hello\"b = \"World\"c = a + b print(c)"
+      ]
+    },
+    {
+      "title": "Format Strings",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "age = 36#This will produce an error:txt = \"My name is John, I am \" + ageprint(txt)"
+      ]
+    },
+    {
+      "title": "Escape Characters",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "txt = \"We are the so-called \"Vikings\" from the north.\""
+      ]
+    },
+    {
+      "title": "String Methods",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "String Exercises",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Booleans",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "print(10 > 9)print(10 == 9)print(10 < 9)"
+      ]
+    },
+    {
+      "title": "Python Operators",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "print(10 + 5)"
+      ]
+    },
+    {
+      "title": "Python Lists",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thislist = [\"apple\", \"banana\", \"cherry\"] print(thislist)"
+      ]
+    },
+    {
+      "title": "Python Lists",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thislist = [\"apple\", \"banana\", \"cherry\"] print(thislist)"
+      ]
+    },
+    {
+      "title": "Access List Items",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thislist = [\"apple\", \"banana\", \"cherry\"] print(thislist[1])"
+      ]
+    },
+    {
+      "title": "Change List Items",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thislist = [\"apple\", \"banana\", \"cherry\"] thislist[1] = \"blackcurrant\" print(thislist)"
+      ]
+    },
+    {
+      "title": "Add List Items",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thislist = [\"apple\", \"banana\", \"cherry\"] thislist.append(\"orange\") print(thislist)"
+      ]
+    },
+    {
+      "title": "Remove List Items",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thislist = [\"apple\", \"banana\", \"cherry\"] thislist.remove(\"banana\") print(thislist)"
+      ]
+    },
+    {
+      "title": "Loop Lists",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thislist = [\"apple\", \"banana\", \"cherry\"] for x in thislist: print(x)"
+      ]
+    },
+    {
+      "title": "List Comprehension",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "fruits = [\"apple\", \"banana\", \"cherry\", \"kiwi\", \"mango\"]newlist = [] for x in fruits: if \"a\" in x: newlist.append(x)print(newlist)"
+      ]
+    },
+    {
+      "title": "Sort Lists",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thislist = [\"orange\", \"mango\", \"kiwi\", \"pineapple\", \"banana\"]thislist.sort() print(thislist)"
+      ]
+    },
+    {
+      "title": "Copy Lists",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thislist = [\"apple\", \"banana\", \"cherry\"]mylist = thislist.copy() print(mylist)"
+      ]
+    },
+    {
+      "title": "Join Lists",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "list1 = [\"a\", \"b\", \"c\"]list2 = [1, 2, 3]list3 = list1 + list2 print(list3)"
+      ]
+    },
+    {
+      "title": "List Methods",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "List Exercises",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Tuples",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thistuple = (\"apple\", \"banana\", \"cherry\") print(thistuple)"
+      ]
+    },
+    {
+      "title": "Python Tuples",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thistuple = (\"apple\", \"banana\", \"cherry\") print(thistuple)"
+      ]
+    },
+    {
+      "title": "Access Tuples",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thistuple = (\"apple\", \"banana\", \"cherry\") print(thistuple[1])"
+      ]
+    },
+    {
+      "title": "Update Tuples",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "x = (\"apple\", \"banana\", \"cherry\")y = list(x)y[1] = \"kiwi\"x = tuple(y)print(x)"
+      ]
+    },
+    {
+      "title": "Unpack Tuples",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "fruits = (\"apple\", \"banana\", \"cherry\")"
+      ]
+    },
+    {
+      "title": "Loop Tuples",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thistuple = (\"apple\", \"banana\", \"cherry\") for x in thistuple: print(x)"
+      ]
+    },
+    {
+      "title": "Join Tuples",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "tuple1 = (\"a\", \"b\" , \"c\")tuple2 = (1, 2, 3) tuple3 = tuple1 + tuple2 print(tuple3)"
+      ]
+    },
+    {
+      "title": "Tuple Methods",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Tuple Exercises",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Sets",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thisset = {\"apple\", \"banana\", \"cherry\"}print(thisset)"
+      ]
+    },
+    {
+      "title": "Python Sets",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thisset = {\"apple\", \"banana\", \"cherry\"}print(thisset)"
+      ]
+    },
+    {
+      "title": "Access Set Items",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thisset = {\"apple\", \"banana\", \"cherry\"}for x in thisset: print(x)"
+      ]
+    },
+    {
+      "title": "Add Set Items",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thisset = {\"apple\", \"banana\", \"cherry\"} thisset.add(\"orange\")print(thisset)"
+      ]
+    },
+    {
+      "title": "Remove Set Items",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thisset = {\"apple\", \"banana\", \"cherry\"} thisset.remove(\"banana\") print(thisset)"
+      ]
+    },
+    {
+      "title": "Loop Sets",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thisset = {\"apple\", \"banana\", \"cherry\"}for x in thisset: print(x)"
+      ]
+    },
+    {
+      "title": "Join Sets",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "set1 = {\"a\", \"b\", \"c\"}set2 = {1, 2, 3} set3 = set1.union(set2)print(set3)"
+      ]
+    },
+    {
+      "title": "Set Methods",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "-"
+      ]
+    },
+    {
+      "title": "Set Exercises",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Dictionaries",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thisdict = { \"brand\": \"Ford\", \"model\": \"Mustang\", \"year\": 1964 } print(thisdict)"
+      ]
+    },
+    {
+      "title": "Python Dictionaries",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thisdict = { \"brand\": \"Ford\", \"model\": \"Mustang\", \"year\": 1964 } print(thisdict)"
+      ]
+    },
+    {
+      "title": "Access Items",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thisdict = { \"brand\": \"Ford\", \"model\": \"Mustang\", \"year\": 1964 }x = thisdict[\"model\"]"
+      ]
+    },
+    {
+      "title": "Change Items",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thisdict = { \"brand\": \"Ford\", \"model\": \"Mustang\", \"year\": 1964 }thisdict[\"year\"] = 2018"
+      ]
+    },
+    {
+      "title": "Add Items",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thisdict = { \"brand\": \"Ford\", \"model\": \"Mustang\", \"year\": 1964 }thisdict[\"color\"] = \"red\"print(thisdict)"
+      ]
+    },
+    {
+      "title": "Remove Items",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thisdict = { \"brand\": \"Ford\", \"model\": \"Mustang\", \"year\": 1964 }thisdict.pop(\"model\") print(thisdict)"
+      ]
+    },
+    {
+      "title": "Loop Dictionaries",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "for x in thisdict: print(x)"
+      ]
+    },
+    {
+      "title": "Copy Dictionaries",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "thisdict = { \"brand\": \"Ford\", \"model\": \"Mustang\", \"year\": 1964 }mydict = thisdict.copy() print(mydict)"
+      ]
+    },
+    {
+      "title": "Nested Dictionaries",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "myfamily = { \"child1\" : { \"name\" : \"Emil\", \"year\" : 2004 }, \"child2\" : { \"name\" : \"Tobias\", \"year\" : 2007 }, \"child3\" : { \"name\" : \"Linus\", \"year\" : 2011 }}"
+      ]
+    },
+    {
+      "title": "Dictionary Methods",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Dictionary Exercises",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python If...Else",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "a = 33 b = 200 if b > a: print(\"b is greater than a\")"
+      ]
+    },
+    {
+      "title": "Python Match",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "match expression: case x: code block case y: code block case z: code block"
+      ]
+    },
+    {
+      "title": "Python While Loops",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "i = 1 while i < 6: print(i) i += 1"
+      ]
+    },
+    {
+      "title": "Python For Loops",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "fruits = [\"apple\", \"banana\", \"cherry\"]for x in fruits: print(x)"
+      ]
+    },
+    {
+      "title": "Python Functions",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "def my_function(): print(\"Hello from a function\")"
+      ]
+    },
+    {
+      "title": "Python Decorators",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "def changecase(func): def myinner(): return func().upper() return myinner @changecase def myfunction(): return \"Hello Sally\" print(myfunction())"
+      ]
+    },
+    {
+      "title": "Python Lambda",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "lambda arguments : expression"
+      ]
+    },
+    {
+      "title": "Python Arrays",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "cars = [\"Ford\", \"Volvo\", \"BMW\"]"
+      ]
+    },
+    {
+      "title": "Python OOP",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Classes/Objects",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "class MyClass: x = 5"
+      ]
+    },
+    {
+      "title": "Python Inheritance",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "class Person: def __init__(self, fname, lname): self.firstname = fname self.lastname = lname def printname(self): print(self.firstname, self.lastname)#Use the Person class to create an object, and then execute the printname method:x = Person(\"John\", \"Doe\") x.printname()"
+      ]
+    },
+    {
+      "title": "Python Iterators",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "mytuple = (\"apple\", \"banana\", \"cherry\")myit = iter(mytuple) print(next(myit))print(next(myit))print(next(myit))"
+      ]
+    },
+    {
+      "title": "Python Polymorphism",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "x = \"Hello World!\" print(len(x))"
+      ]
+    },
+    {
+      "title": "Python Scope",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "def myfunc(): x = 300 print(x)myfunc()"
+      ]
+    },
+    {
+      "title": "Python Modules",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "def greeting(name): print(\"Hello, \" + name)"
+      ]
+    },
+    {
+      "title": "Python Dates",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import datetimex = datetime.datetime.now()print(x)"
+      ]
+    },
+    {
+      "title": "Python Math",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "x = min(5, 10, 25)y = max(5, 10, 25)print(x)print(y)"
+      ]
+    },
+    {
+      "title": "Python JSON",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import json"
+      ]
+    },
+    {
+      "title": "Python RegEx",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import re"
+      ]
+    },
+    {
+      "title": "Python PIP",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "C:\\Users\\Your Name\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts>pip --version"
+      ]
+    },
+    {
+      "title": "Python Try...Except",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "try: print(x)except: print(\"An exception occurred\")"
+      ]
+    },
+    {
+      "title": "Python String Formatting",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "txt = f\"The price is 49 dollars\" print(txt)"
+      ]
+    },
+    {
+      "title": "Python User Input",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "print(\"Enter your name:\") name = input() print(f\"Hello {name}\")"
+      ]
+    },
+    {
+      "title": "Python VirtualEnv",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "_________________ | Good Mooooorning! | ================= \\ \\ ^__^ (oo)\\_______ (__)\\ )\\/\\ ||----w | || ||"
+      ]
+    },
+    {
+      "title": "Python File Handling",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "f = open(\"demofile.txt\")"
+      ]
+    },
+    {
+      "title": "Python Read Files",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "Hello! Welcome to demofile.txtThis file is for testing purposes.Good Luck!"
+      ]
+    },
+    {
+      "title": "Python Write/Create Files",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "with open(\"demofile.txt\", \"a\") as f: f.write(\"Now the file has more content!\") #open and read the file after the appending:with open(\"demofile.txt\") as f: print(f.read())"
+      ]
+    },
+    {
+      "title": "Python Delete Files",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import osos.remove(\"demofile.txt\")"
+      ]
+    },
+    {
+      "title": "NumPy Tutorial",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import numpy as np arr = np.array([1, 2, 3, 4, 5])print(arr) print(type(arr))"
+      ]
+    },
+    {
+      "title": "Pandas Tutorial",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import pandas as pddf = pd.read_csv('data.csv')print(df.to_string())"
+      ]
+    },
+    {
+      "title": "SciPy Tutorial",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "from scipy import constants print(constants.liter)"
+      ]
+    },
+    {
+      "title": "Django Tutorial",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "<ul> {% for x in mymembers %} <li>{{ x.firstname }}</li> {% endfor %} </ul>"
+      ]
+    },
+    {
+      "title": "Matplotlib Intro",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Matplotlib Get Started",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "C:\\Users\\Your Name>pip install matplotlib"
+      ]
+    },
+    {
+      "title": "Matplotlib Pyplot",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import matplotlib.pyplot as plt"
+      ]
+    },
+    {
+      "title": "Matplotlib Plotting",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import matplotlib.pyplot as plt import numpy as np xpoints = np.array([1, 8]) ypoints = np.array([3, 10]) plt.plot(xpoints, ypoints) plt.show()"
+      ]
+    },
+    {
+      "title": "Matplotlib Markers",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import matplotlib.pyplot as plt import numpy as np ypoints = np.array([3, 8, 1, 10]) plt.plot(ypoints, marker = 'o') plt.show()"
+      ]
+    },
+    {
+      "title": "Matplotlib Line",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import matplotlib.pyplot as plt import numpy as np ypoints = np.array([3, 8, 1, 10]) plt.plot(ypoints, linestyle = 'dotted') plt.show()"
+      ]
+    },
+    {
+      "title": "Matplotlib Labels",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import numpy as npimport matplotlib.pyplot as pltx = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])plt.plot(x, y)plt.xlabel(\"Average Pulse\")plt.ylabel(\"Calorie Burnage\")plt.show()"
+      ]
+    },
+    {
+      "title": "Matplotlib Grid",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import numpy as npimport matplotlib.pyplot as pltx = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])plt.title(\"Sports Watch Data\") plt.xlabel(\"Average Pulse\")plt.ylabel(\"Calorie Burnage\")plt.plot(x, y)plt.grid()plt.show()"
+      ]
+    },
+    {
+      "title": "Matplotlib Subplot",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import matplotlib.pyplot as pltimport numpy as np#plot 1:x = np.array([0, 1, 2, 3])y = np.array([3, 8, 1, 10])plt.subplot(1, 2, 1) plt.plot(x,y)#plot 2:x = np.array([0, 1, 2, 3])y = np.array([10, 20, 30, 40])plt.subplot(1, 2, 2)plt.plot(x,y)plt.show()"
+      ]
+    },
+    {
+      "title": "Matplotlib Scatter",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import matplotlib.pyplot as pltimport numpy as npx = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])plt.scatter(x, y)plt.show()"
+      ]
+    },
+    {
+      "title": "Matplotlib Bars",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import matplotlib.pyplot as pltimport numpy as npx = np.array([\"A\", \"B\", \"C\", \"D\"])y = np.array([3, 8, 1, 10])plt.bar(x,y)plt.show()"
+      ]
+    },
+    {
+      "title": "Matplotlib Histograms",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "[167.62255766 175.32495609 152.84661337 165.50264047 163.17457988 162.29867872 172.83638413 168.67303667 164.57361342 180.81120541 170.57782187 167.53075749 176.15356275 176.95378312 158.4125473 187.8842668 159.03730075 166.69284332 160.73882029 152.22378865 164.01255164 163.95288674 176.58146832 173.19849526 169.40206527 166.88861903 149.90348576 148.39039643 177.90349066 166.72462233 177.44776004 170.93335636 173.26312881 174.76534435 162.28791953 166.77301551 160.53785202 170.67972019 159.11594186 165.36992993 178.38979253 171.52158489 173.32636678 159.63894401 151.95735707 175.71274153 165.00458544 164.80607211 177.50988211 149.28106703 179.43586267 181.98365273 170.98196794 179.1093176 176.91855744 168.32092784 162.33939782 165.18364866 160.52300507 174.14316386 163.01947601 172.01767945 173.33491959 169.75842718 198.04834503 192.82490521 164.54557943 206.36247244 165.47748898 195.26377975 164.37569092 156.15175531 162.15564208 179.34100362 167.22138242 147.23667125 162.86940215 167.84986671 172.99302505 166.77279814 196.6137667 159.79012341 166.5840824 170.68645637 165.62204521 174.5559345 165.0079216 187.92545129 166.86186393 179.78383824 161.0973573 167.44890343 157.38075812 151.35412246 171.3107829 162.57149341 182.49985133 163.24700057 168.72639903 169.05309467 167.19232875 161.06405208 176.87667712 165.48750185 179.68799986 158.7913483 170.22465411 182.66432721 173.5675715 176.85646836 157.31299754 174.88959677 183.78323508 174.36814558 182.55474697 180.03359793 180.53094948 161.09560099 172.29179934 161.22665588 171.88382477 159.04626132 169.43886536 163.75793589 157.73710983 174.68921523 176.19843414 167.39315397 181.17128255 174.2674597 186.05053154 177.06516302 171.78523683 166.14875436 163.31607668 174.01429569 194.98819875 169.75129209 164.25748789 180.25773528 170.44784934 157.81966006 171.33315907 174.71390637 160.55423274 163.92896899 177.29159542 168.30674234 165.42853878 176.46256226 162.61719142 166.60810831 165.83648812 184.83238352 188.99833856 161.3054697 175.30396693 175.28109026 171.54765201 162.08762813 164.53011089 189.86213299 170.83784593 163.25869004 198.68079225 166.95154328 152.03381334 152.25444225 149.75522816 161.79200594 162.13535052 183.37298831 165.40405341 155.59224806 172.68678385 179.35359654 174.19668349 163.46176882 168.26621173 162.97527574 192.80170974 151.29673582 178.65251432 163.17266558 165.11172588 183.11107905 169.69556831 166.35149789 178.74419135 166.28562032 169.96465166 178.24368042 175.3035525 170.16496554 158.80682882 187.10006553 178.90542991 171.65790645 183.19289193 168.17446717 155.84544031 177.96091745 186.28887898 187.89867406 163.26716924 169.71242393 152.9410412 158.68101969 171.12655559 178.1482624 187.45272185 173.02872935 163.8047623 169.95676819 179.36887054 157.01955088 185.58143864 170.19037101 157.221245 168.90639755 178.7045601 168.64074373 172.37416382 165.61890535 163.40873027 168.98683006 149.48186389 172.20815568 172.82947206 173.71584064 189.42642762 172.79575803 177.00005573 169.24498561 171.55576698 161.36400372 176.47928342 163.02642822 165.09656415 186.70951892 153.27990317 165.59289527 180.34566865 189.19506385 183.10723435 173.48070474 170.28701875 157.24642079 157.9096498 176.4248199 ]"
+      ]
+    },
+    {
+      "title": "Matplotlib Pie Charts",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import matplotlib.pyplot as pltimport numpy as npy = np.array([35, 25, 25, 15])plt.pie(y)plt.show()"
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "[99,86,87,88,111,86,103,87,94,78,77,85,86]"
+      ]
+    },
+    {
+      "title": "Mean Median Mode",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import numpyspeed = [99,86,87,88,111,86,103,87,94,78,77,85,86] x = numpy.mean(speed)print(x)"
+      ]
+    },
+    {
+      "title": "Standard Deviation",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import numpyspeed = [86,87,88,86,87,85,86] x = numpy.std(speed)print(x)"
+      ]
+    },
+    {
+      "title": "Percentile",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import numpyages = [5,31,43,48,50,41,7,11,15,39,80,82,32,2,8,6,25,36,27,61,31] x = numpy.percentile(ages, 75)print(x)"
+      ]
+    },
+    {
+      "title": "Data Distribution",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import numpyx = numpy.random.uniform(0.0, 5.0, 250) print(x)"
+      ]
+    },
+    {
+      "title": "Normal Data Distribution",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import numpyimport matplotlib.pyplot as pltx = numpy.random.normal(5.0, 1.0, 100000)plt.hist(x, 100)plt.show()"
+      ]
+    },
+    {
+      "title": "Scatter Plot",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import matplotlib.pyplot as pltx = [5,7,8,7,2,17,2,9,4,11,12,9,6]y = [99,86,87,88,111,86,103,87,94,78,77,85,86]plt.scatter(x, y) plt.show()"
+      ]
+    },
+    {
+      "title": "Linear Regression",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import matplotlib.pyplot as pltx = [5,7,8,7,2,17,2,9,4,11,12,9,6]y = [99,86,87,88,111,86,103,87,94,78,77,85,86]plt.scatter(x, y)plt.show()"
+      ]
+    },
+    {
+      "title": "Polynomial Regression",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import matplotlib.pyplot as pltx = [1,2,3,5,6,7,8,9,10,12,13,14,15,16,18,19,21,22]y = [100,90,80,60,60,55,60,65,70,70,75,76,78,79,90,99,99,100] plt.scatter(x, y)plt.show()"
+      ]
+    },
+    {
+      "title": "Multiple Regression",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "[107.2087328]"
+      ]
+    },
+    {
+      "title": "Scale",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "[[-2.10389253 -1.59336644] [-0.55407235 -1.07190106] [-1.52166278 -1.59336644] [-1.78973979 -1.85409913] [-0.63784641 -0.28970299] [-1.52166278 -1.59336644] [-0.76769621 -0.55043568] [ 0.3046118 -0.28970299] [-0.7551301 -0.28970299] [-0.59595938 -0.0289703 ] [-1.30803892 -1.33263375] [-1.26615189 -0.81116837] [-0.7551301 -1.59336644] [-0.16871166 -0.0289703 ] [ 0.14125238 -0.0289703 ] [ 0.15800719 -0.0289703 ] [ 0.3046118 -0.0289703 ] [-0.05142797 1.53542584] [-0.72580918 -0.0289703 ] [ 0.14962979 1.01396046] [ 1.2219378 -0.0289703 ] [ 0.5685001 1.01396046] [ 0.3046118 1.27469315] [ 0.51404696 -0.0289703 ] [ 0.51404696 1.01396046] [ 0.72348212 -0.28970299] [ 0.8281997 1.01396046] [ 1.81254495 1.01396046] [ 0.96642691 -0.0289703 ] [ 1.72877089 1.01396046] [ 1.30990057 1.27469315] [ 1.90050772 1.01396046] [-0.23991961 -0.0289703 ] [ 0.40932938 -0.0289703 ] [ 0.47215993 -0.0289703 ] [ 0.4302729 2.31762392]]"
+      ]
+    },
+    {
+      "title": "Train/Test",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import numpyimport matplotlib.pyplot as pltnumpy.random.seed(2) x = numpy.random.normal(3, 1, 100)y = numpy.random.normal(150, 40, 100) / xplt.scatter(x, y)plt.show()"
+      ]
+    },
+    {
+      "title": "Decision Tree",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import pandasdf = pandas.read_csv(\"data.csv\") print(df)"
+      ]
+    },
+    {
+      "title": "Confusion Matrix",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import matplotlib.pyplot as pltimport numpyfrom sklearn import metrics actual = numpy.random.binomial(1,.9,size = 1000)predicted = numpy.random.binomial(1,.9,size = 1000)confusion_matrix = metrics.confusion_matrix(actual, predicted)cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix, display_labels = [0, 1])cm_display.plot()plt.show()"
+      ]
+    },
+    {
+      "title": "Hierarchical Clustering",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import numpy as npimport matplotlib.pyplot as pltx = [4, 5, 10, 4, 3, 11, 14 , 6, 10, 12]y = [21, 19, 24, 17, 16, 25, 24, 22, 21, 21] plt.scatter(x, y)plt.show()"
+      ]
+    },
+    {
+      "title": "Logistic Regression",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "[0]"
+      ]
+    },
+    {
+      "title": "Grid Search",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "from sklearn import datasetsfrom sklearn.linear_model import LogisticRegressioniris = datasets.load_iris()X = iris['data'] y = iris['target']logit = LogisticRegression(max_iter = 10000) print(logit.fit(X,y))print(logit.score(X,y))"
+      ]
+    },
+    {
+      "title": "Categorical Data",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "Car Model Volume Weight CO2 0 Toyoty Aygo 1000 790 99 1 Mitsubishi Space Star 1200 1160 95 2 Skoda Citigo 1000 929 95 3 Fiat 500 900 865 90 4 Mini Cooper 1500 1140 105 5 VW Up! 1000 929 105 6 Skoda Fabia 1400 1109 90 7 Mercedes A-Class 1500 1365 92 8 Ford Fiesta 1500 1112 98 9 Audi A1 1600 1150 99 10 Hyundai I20 1100 980 99 11 Suzuki Swift 1300 990 101 12 Ford Fiesta 1000 1112 99 13 Honda Civic 1600 1252 94 14 Hundai I30 1600 1326 97 15 Opel Astra 1600 1330 97 16 BMW 1 1600 1365 99 17 Mazda 3 2200 1280 104 18 Skoda Rapid 1600 1119 104 19 Ford Focus 2000 1328 105 20 Ford Mondeo 1600 1584 94 21 Opel Insignia 2000 1428 99 22 Mercedes C-Class 2100 1365 99 23 Skoda Octavia 1600 1415 99 24 Volvo S60 2000 1415 99 25 Mercedes CLA 1500 1465 102 26 Audi A4 2000 1490 104 27 Audi A6 2000 1725 114 28 Volvo V70 1600 1523 109 29 BMW 5 2000 1705 114 30 Mercedes E-Class 2100 1605 115 31 Volvo XC70 2000 1746 117 32 Ford B-Max 1600 1235 104 33 BMW 216 1600 1390 108 34 Opel Zafira 1600 1405 109 35 Mercedes SLK 2500 1395 120"
+      ]
+    },
+    {
+      "title": "K-means",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import matplotlib.pyplot as pltx = [4, 5, 10, 4, 3, 11, 14 , 6, 10, 12]y = [21, 19, 24, 17, 16, 25, 24, 22, 21, 21] plt.scatter(x, y)plt.show()"
+      ]
+    },
+    {
+      "title": "Bootstrap Aggregation",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "from sklearn import datasets from sklearn.model_selection import train_test_split from sklearn.metrics import accuracy_score from sklearn.tree import DecisionTreeClassifier data = datasets.load_wine(as_frame = True) X = data.data y = data.target X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 22) dtree = DecisionTreeClassifier(random_state = 22) dtree.fit(X_train,y_train) y_pred = dtree.predict(X_test) print(\"Train data accuracy:\",accuracy_score(y_true = y_train, y_pred = dtree.predict(X_train))) print(\"Test data accuracy:\",accuracy_score(y_true = y_test, y_pred = y_pred))"
+      ]
+    },
+    {
+      "title": "Cross Validation",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "from sklearn import datasets from sklearn.tree import DecisionTreeClassifier from sklearn.model_selection import KFold, cross_val_score X, y = datasets.load_iris(return_X_y=True) clf = DecisionTreeClassifier(random_state=42) k_folds = KFold(n_splits = 5) scores = cross_val_score(clf, X, y, cv = k_folds) print(\"Cross Validation Scores: \", scores) print(\"Average CV Score: \", scores.mean()) print(\"Number of CV Scores used in Average: \", len(scores))"
+      ]
+    },
+    {
+      "title": "AUC - ROC Curve",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import numpy as np from sklearn.metrics import accuracy_score, confusion_matrix, roc_auc_score, roc_curve n = 10000 ratio = .95 n_0 = int((1-ratio) * n) n_1 = int(ratio * n) y = np.array([0] * n_0 + [1] * n_1) # below are the probabilities obtained from a hypothetical model that always predicts the majority class # probability of predicting class 1 is going to be 100% y_proba = np.array([1]*n) y_pred = y_proba > .5 print(f'accuracy score: {accuracy_score(y, y_pred)}') cf_mat = confusion_matrix(y, y_pred) print('Confusion matrix') print(cf_mat) print(f'class 0 accuracy: {cf_mat[0][0]/n_0}') print(f'class 1 accuracy: {cf_mat[1][1]/n_1}')"
+      ]
+    },
+    {
+      "title": "K-nearest neighbors",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import matplotlib.pyplot as plt x = [4, 5, 10, 4, 3, 11, 14 , 8, 10, 12] y = [21, 19, 24, 17, 16, 25, 24, 22, 21, 21] classes = [0, 0, 1, 0, 0, 1, 1, 0, 1, 1] plt.scatter(x, y, c=classes) plt.show()"
+      ]
+    },
+    {
+      "title": "Python DSA",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Lists and Arrays",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "# Empty list x = [] # List with initial values y = [1, 2, 3, 4, 5] # List with mixed types z = [1, \"hello\", 3.14, True]"
+      ]
+    },
+    {
+      "title": "Stacks",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "stack = [] # Push stack.append('A') stack.append('B') stack.append('C') print(\"Stack: \", stack) # Peek topElement = stack[-1] print(\"Peek: \", topElement) # Pop poppedElement = stack.pop() print(\"Pop: \", poppedElement) # Stack after Pop print(\"Stack after Pop: \", stack) # isEmpty isEmpty = not bool(stack) print(\"isEmpty: \", isEmpty) # Size print(\"Size: \",len(stack))"
+      ]
+    },
+    {
+      "title": "Queues",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "queue = [] # Enqueue queue.append('A') queue.append('B') queue.append('C') print(\"Queue: \", queue) # Peek frontElement = queue[0] print(\"Peek: \", frontElement) # Dequeue poppedElement = queue.pop(0) print(\"Dequeue: \", poppedElement) print(\"Queue after Dequeue: \", queue) # isEmpty isEmpty = not bool(queue) print(\"isEmpty: \", isEmpty) # Size print(\"Size: \", len(queue))"
+      ]
+    },
+    {
+      "title": "Linked Lists",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "class Node: def __init__(self, data): self.data = data self.next = None def traverseAndPrint(head): currentNode = head while currentNode: print(currentNode.data, end=\" -> \") currentNode = currentNode.next print(\"null\") node1 = Node(7) node2 = Node(11) node3 = Node(3) node4 = Node(2) node5 = Node(9) node1.next = node2 node2.next = node3 node3.next = node4 node4.next = node5 traverseAndPrint(node1)"
+      ]
+    },
+    {
+      "title": "Hash Tables",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "my_list = [None, None, None, None, None, None, None, None, None, None]"
+      ]
+    },
+    {
+      "title": "Trees",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Binary Trees",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "class TreeNode: def __init__(self, data): self.data = data self.left = None self.right = None root = TreeNode('R') nodeA = TreeNode('A') nodeB = TreeNode('B') nodeC = TreeNode('C') nodeD = TreeNode('D') nodeE = TreeNode('E') nodeF = TreeNode('F') nodeG = TreeNode('G') root.left = nodeA root.right = nodeB nodeA.left = nodeC nodeA.right = nodeD nodeB.left = nodeE nodeB.right = nodeF nodeF.left = nodeG # Test print(\"root.right.left.data:\", root.right.left.data)"
+      ]
+    },
+    {
+      "title": "Binary Search Trees",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "class TreeNode: def __init__(self, data): self.data = data self.left = None self.right = None def inOrderTraversal(node): if node is None: return inOrderTraversal(node.left) print(node.data, end=\", \") inOrderTraversal(node.right) root = TreeNode(13) node7 = TreeNode(7) node15 = TreeNode(15) node3 = TreeNode(3) node8 = TreeNode(8) node14 = TreeNode(14) node19 = TreeNode(19) node18 = TreeNode(18) root.left = node7 root.right = node15 node7.left = node3 node7.right = node8 node15.left = node14 node15.right = node19 node19.left = node18 # Traverse inOrderTraversal(root)"
+      ]
+    },
+    {
+      "title": "AVL Trees",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "class TreeNode: def __init__(self, data): self.data = data self.left = None self.right = None self.height = 1 def getHeight(node): if not node: return 0 return node.height def getBalance(node): if not node: return 0 return getHeight(node.left) - getHeight(node.right) def rightRotate(y): print('Rotate right on node',y.data) x = y.left T2 = x.right x.right = y y.left = T2 y.height = 1 + max(getHeight(y.left), getHeight(y.right)) x.height = 1 + max(getHeight(x.left), getHeight(x.right)) return x def leftRotate(x): print('Rotate left on node',x.data) y = x.right T2 = y.left y.left = x x.right = T2 x.height = 1 + max(getHeight(x.left), getHeight(x.right)) y.height = 1 + max(getHeight(y.left), getHeight(y.right)) return y def insert(node, data): if not node: return TreeNode(data) if data < node.data: node.left = insert(node.left, data) elif data > node.data: node.right = insert(node.right, data) # Update the balance factor and balance the tree node.height = 1 + max(getHeight(node.left), getHeight(node.right)) balance = getBalance(node) # Balancing the tree # Left Left if balance > 1 and getBalance(node.left) >= 0: return rightRotate(node) # Left Right if balance > 1 and getBalance(node.left) < 0: node.left = leftRotate(node.left) return rightRotate(node) # Right Right if balance < -1 and getBalance(node.right) <= 0: return leftRotate(node) # Right Left if balance < -1 and getBalance(node.right) > 0: node.right = rightRotate(node.right) return leftRotate(node) return node def inOrderTraversal(node): if node is None: return inOrderTraversal(node.left) print(node.data, end=\", \") inOrderTraversal(node.right) # Inserting nodes root = None letters = ['C', 'B', 'E', 'A', 'D', 'H', 'G', 'F'] for letter in letters: root = insert(root, letter) inOrderTraversal(root)"
+      ]
+    },
+    {
+      "title": "Graphs",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "(i,j)"
+      ]
+    },
+    {
+      "title": "Linear Search",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "mylist = [3, 7, 2, 9, 5, 1, 8, 4, 6] if 4 in mylist: print(\"Found!\") else: print(\"Not found!\")"
+      ]
+    },
+    {
+      "title": "Binary Search",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "[ 2, 3, 7, 7, 11, 15, 25]"
+      ]
+    },
+    {
+      "title": "Bubble Sort",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "[7, 12, 9, 11, 3]"
+      ]
+    },
+    {
+      "title": "Selection Sort",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "[ 7, 12, 9, 11, 3]"
+      ]
+    },
+    {
+      "title": "Insertion Sort",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "[ 7, 12, 9, 11, 3]"
+      ]
+    },
+    {
+      "title": "Quick Sort",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "[ 11, 9, 12, 7, 3]"
+      ]
+    },
+    {
+      "title": "Counting Sort",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "myArray = [ 2, 3, 0, 2, 3, 2]"
+      ]
+    },
+    {
+      "title": "Radix Sort",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "myArray = [ 33, 45, 40, 25, 17, 24] radixArray = [ [], [], [], [], [], [], [], [], [], [] ]"
+      ]
+    },
+    {
+      "title": "Merge Sort",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "[ 12, 8, 9, 3, 11, 5, 4] [ 12, 8, 9] [ 3, 11, 5, 4] [ 12] [ 8, 9] [ 3, 11, 5, 4] [ 12] [ 8] [ 9] [ 3, 11, 5, 4]"
+      ]
+    },
+    {
+      "title": "MySQL Get Started",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "C:\\Users\\Your Name\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts>python -m pip install mysql-connector-python"
+      ]
+    },
+    {
+      "title": "MySQL Create Database",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import mysql.connectormydb = mysql.connector.connect( host=\"localhost\", user=\"yourusername\", password=\"yourpassword\")mycursor = mydb.cursor()mycursor.execute(\"CREATE DATABASE mydatabase\")"
+      ]
+    },
+    {
+      "title": "MySQL Create Table",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import mysql.connectormydb = mysql.connector.connect( host=\"localhost\", user=\"yourusername\", password=\"yourpassword\", database=\"mydatabase\")mycursor = mydb.cursor() mycursor.execute(\"CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))\")"
+      ]
+    },
+    {
+      "title": "MySQL Insert",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import mysql.connectormydb = mysql.connector.connect( host=\"localhost\", user=\"yourusername\", password=\"yourpassword\", database=\"mydatabase\") mycursor = mydb.cursor()sql = \"INSERT INTO customers (name, address) VALUES (%s, %s)\"val = (\"John\", \"Highway 21\")mycursor.execute(sql, val) mydb.commit()print(mycursor.rowcount, \"record inserted.\")"
+      ]
+    },
+    {
+      "title": "MySQL Select",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import mysql.connectormydb = mysql.connector.connect( host=\"localhost\", user=\"yourusername\", password=\"yourpassword\", database=\"mydatabase\")mycursor = mydb.cursor()mycursor.execute(\"SELECT * FROM customers\") myresult = mycursor.fetchall()for x in myresult: print(x)"
+      ]
+    },
+    {
+      "title": "MySQL Where",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import mysql.connectormydb = mysql.connector.connect( host=\"localhost\", user=\"yourusername\", password=\"yourpassword\", database=\"mydatabase\")mycursor = mydb.cursor()sql = \"SELECT * FROM customers WHERE address ='Park Lane 38'\"mycursor.execute(sql) myresult = mycursor.fetchall()for x in myresult: print(x)"
+      ]
+    },
+    {
+      "title": "MySQL Order By",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import mysql.connectormydb = mysql.connector.connect( host=\"localhost\", user=\"yourusername\", password=\"yourpassword\", database=\"mydatabase\")mycursor = mydb.cursor()sql = \"SELECT * FROM customers ORDER BY name\"mycursor.execute(sql) myresult = mycursor.fetchall()for x in myresult: print(x)"
+      ]
+    },
+    {
+      "title": "MySQL Delete",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import mysql.connectormydb = mysql.connector.connect( host=\"localhost\", user=\"yourusername\", password=\"yourpassword\", database=\"mydatabase\")mycursor = mydb.cursor()sql = \"DELETE FROM customers WHERE address = 'Mountain 21'\"mycursor.execute(sql)mydb.commit()print(mycursor.rowcount, \"record(s) deleted\")"
+      ]
+    },
+    {
+      "title": "MySQL Drop Table",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import mysql.connectormydb = mysql.connector.connect( host=\"localhost\", user=\"yourusername\", password=\"yourpassword\", database=\"mydatabase\")mycursor = mydb.cursor()sql = \"DROP TABLE customers\"mycursor.execute(sql)"
+      ]
+    },
+    {
+      "title": "MySQL Update",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import mysql.connectormydb = mysql.connector.connect( host=\"localhost\", user=\"yourusername\", password=\"yourpassword\", database=\"mydatabase\")mycursor = mydb.cursor()sql = \"UPDATE customers SET address = 'Canyon 123' WHERE address = 'Valley 345'\"mycursor.execute(sql)mydb.commit() print(mycursor.rowcount, \"record(s) affected\")"
+      ]
+    },
+    {
+      "title": "MySQL Limit",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import mysql.connectormydb = mysql.connector.connect( host=\"localhost\", user=\"yourusername\", password=\"yourpassword\", database=\"mydatabase\")mycursor = mydb.cursor()mycursor.execute(\"SELECT * FROM customers LIMIT 5\")myresult = mycursor.fetchall()for x in myresult: print(x)"
+      ]
+    },
+    {
+      "title": "MySQL Join",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "{ id: 1, name: 'John', fav: 154},{ id: 2, name: 'Peter', fav: 154},{ id: 3, name: 'Amy', fav: 155},{ id: 4, name: 'Hannah', fav:},{ id: 5, name: 'Michael', fav:}"
+      ]
+    },
+    {
+      "title": "MongoDB Get Started",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "C:\\Users\\Your Name\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts>python -m pip install pymongo"
+      ]
+    },
+    {
+      "title": "MongoDB Create DB",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\") mydb = myclient[\"mydatabase\"]"
+      ]
+    },
+    {
+      "title": "MongoDB Collection",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\") mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]"
+      ]
+    },
+    {
+      "title": "MongoDB Insert",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\") mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"] mydict = { \"name\": \"John\", \"address\": \"Highway 37\" } x = mycol.insert_one(mydict)"
+      ]
+    },
+    {
+      "title": "MongoDB Find",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\") mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"] x = mycol.find_one()print(x)"
+      ]
+    },
+    {
+      "title": "MongoDB Query",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\") mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"] myquery = { \"address\": \"Park Lane 38\" } mydoc = mycol.find(myquery)for x in mydoc: print(x)"
+      ]
+    },
+    {
+      "title": "MongoDB Sort",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\") mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"] mydoc = mycol.find().sort(\"name\")for x in mydoc: print(x)"
+      ]
+    },
+    {
+      "title": "MongoDB Delete",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\") mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"] myquery = { \"address\": \"Mountain 21\" } mycol.delete_one(myquery)"
+      ]
+    },
+    {
+      "title": "MongoDB Drop Collection",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\") mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"] mycol.drop()"
+      ]
+    },
+    {
+      "title": "MongoDB Update",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\") mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"] myquery = { \"address\": \"Valley 345\" }newvalues = { \"$set\": { \"address\": \"Canyon 123\" } } mycol.update_one(myquery, newvalues)#print \"customers\" after the update:for x in mycol.find(): print(x)"
+      ]
+    },
+    {
+      "title": "MongoDB Limit",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "{'_id': 1, 'name': 'John', 'address': 'Highway37'} {'_id': 2, 'name': 'Peter', 'address': 'Lowstreet 27'} {'_id': 3, 'name': 'Amy', 'address': 'Apple st 652'} {'_id': 4, 'name': 'Hannah', 'address': 'Mountain 21'} {'_id': 5, 'name': 'Michael', 'address': 'Valley 345'} {'_id': 6, 'name': 'Sandy', 'address': 'Ocean blvd 2'} {'_id': 7, 'name': 'Betty', 'address': 'Green Grass 1'} {'_id': 8, 'name': 'Richard', 'address': 'Sky st 331'} {'_id': 9, 'name': 'Susan', 'address': 'One way 98'} {'_id': 10, 'name': 'Vicky', 'address': 'Yellow Garden 2'} {'_id': 11, 'name': 'Ben', 'address': 'Park Lane 38'} {'_id': 12, 'name': 'William', 'address': 'Central st 954'} {'_id': 13, 'name': 'Chuck', 'address': 'Main Road 989'} {'_id': 14, 'name': 'Viola', 'address': 'Sideway 1633'}"
+      ]
+    },
+    {
+      "title": "Python Overview",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Built-in Functions",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python String Methods",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python List Methods",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Dictionary Methods",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Tuple Methods",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Set Methods",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "-"
+      ]
+    },
+    {
+      "title": "Python File Methods",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Keywords",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Exceptions",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Glossary",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Random Module",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "random"
+      ]
+    },
+    {
+      "title": "Requests Module",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "import requestsx = requests.get('https://w3schools.com/python/demopage.htm')print(x.text)"
+      ]
+    },
+    {
+      "title": "Statistics Module",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "statistics"
+      ]
+    },
+    {
+      "title": "Math Module",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "math"
+      ]
+    },
+    {
+      "title": "cMath Module",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "int"
+      ]
+    },
+    {
+      "title": "Remove List Duplicates",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "mylist = [\"a\", \"b\", \"a\", \"c\", \"c\"]mylist = list(dict.fromkeys(mylist)) print(mylist)"
+      ]
+    },
+    {
+      "title": "Reverse a String",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "txt = \"Hello World\"[::-1]print(txt)"
+      ]
+    },
+    {
+      "title": "Add Two Numbers",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "x = 5y = 10print(x + y)"
+      ]
+    },
+    {
+      "title": "Python Examples",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Compiler",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "print(\"Hello, World!\") x = \"Python\" y = \"is\" z = \"awesome\" print(x, y, z)"
+      ]
+    },
+    {
+      "title": "Python Exercises",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Quiz",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Server",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Syllabus",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "print(\"Hello, World!\")"
+      ]
+    },
+    {
+      "title": "Python Study Plan",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Interview Q&A",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": [
+        "x = 41 if x > 10: print(\"Above ten,\") if x > 20: print(\"and also above 20!\") else: print(\"but not above 20.\")"
+      ]
+    },
+    {
+      "title": "Python Bootcamp",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Certificate",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    },
+    {
+      "title": "Python Training",
+      "summary": "W3Schools offers a wide range of services and products for beginners and professionals, helping millions of people everyday to learn and master new skills.",
+      "examples": []
+    }
+  ]
+}

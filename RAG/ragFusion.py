@@ -40,13 +40,13 @@ def generate_query(question: str, num_query: int = NUM_QUERY) -> List[str]:
     )
     raw_output = LLM.run_llm(prompt, question)
 
-    queries = ' '
+    raw_output = LLM.run_llm(prompt, question)
 
-    # Split into clean query lines
-    if queries:
-        queries = [line.strip() for line in raw_output.splitlines() if line.strip()]
-    else:
-        print('queries is empty')
+    # Ensure raw_output is string
+    if not isinstance(raw_output, str):
+        raw_output = "".join(raw_output)
+
+    queries = [line.strip() for line in raw_output.splitlines() if line.strip()]
     return queries[:num_query]
 
 
