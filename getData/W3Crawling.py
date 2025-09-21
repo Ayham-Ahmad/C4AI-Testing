@@ -12,7 +12,7 @@ from crawl4ai.content_scraping_strategy import LXMLWebScrapingStrategy
 from pyquery import PyQuery as pq
 
 # ---------- CONFIG ----------
-INDEX_URL = "https://www.w3schools.com/tutorials/index.php"
+INDEX_URL = "https://www.w3schools.com/bootstrap5/index.php"
 OUTPUT_DIR = Path("W3_Tutorials_ALL")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
@@ -61,10 +61,6 @@ def clean_word(text: str) -> Optional[str]:
     """
     Clean and filter a candidate glossary word/phrase.
     Returns a normalized word (lowercase) or None if rejected.
-    Rules:
-      - keep alphanum, +, #, -, dot
-      - reject if too short, too long, too many tokens (>2)
-      - reject stop/junk/bad terms
     """
     if not text:
         return None
@@ -77,10 +73,9 @@ def clean_word(text: str) -> Optional[str]:
         return None
 
     tokens = w.split()
-    if len(tokens) > 2:  # avoid long phrases/sentences
+    if len(tokens) > 2:
         return None
 
-    # reject single token that's in bad lists
     if w in BAD_TERMS:
         return None
     if any(tok in STOPWORDS for tok in tokens):
@@ -88,7 +83,6 @@ def clean_word(text: str) -> Optional[str]:
     if any(tok in JUNKWORDS for tok in tokens):
         return None
 
-    # final simple check: must contain at least one alphabetic character
     if not re.search(r"[a-z]", w):
         return None
 
@@ -97,18 +91,13 @@ def clean_word(text: str) -> Optional[str]:
 
 # ---------- EXTRACTORS ----------
 def extract_menu_links(doc: pq, base_url: str) -> list:
-    """
-    Return list of {title, url} for section links in the left menu of a course page.
-    Uses the #leftmenuinner container which W3Pages use for tutorial section links.
-    """
+    """Return list of {title, url} for section links in the left menu of a course page."""
     links, seen = [], set()
-    # use #leftmenuinner which typically lists the sections for a tutorial
     for a in doc("#leftmenuinner a").items():
         href = a.attr("href")
         text = a.text().strip()
         if not href or not text:
             continue
-        # ignore anchors and javascript pseudo-links
         if href.startswith("#") or href.lower().startswith("javascript:"):
             continue
         full = urljoin(base_url, href)
@@ -135,7 +124,7 @@ def extract_code_snippets(doc: pq) -> list:
 
 
 def extract_description(doc: pq) -> str:
-    """Take the first meaningful paragraphs from the main content as description (limit ~1000 chars)."""
+    """Take the first meaningful paragraphs from the main content as description."""
     main = doc("#main") or doc(".w3-main") or doc("body")
     parts = []
     for p in main("p").items():
@@ -172,24 +161,102 @@ def extract_glossary(doc: pq, menu_links: list) -> list:
         if w:
             raw.add(w)
 
-    # convert to sorted list and limit size (keep unique)
     glossary = sorted(raw)
     return glossary[:400]
 
 
+def extract_objectives(doc: pq) -> list:
+    """Extracts learning objectives (e.g., first bullet list after h1)."""
+    main = doc("#main") or doc(".w3-main") or doc("body")
+    objectives = []
+    ul = main("h1").next_all("ul").eq(0)
+    for li in ul("li").items():
+        txt = li.text().strip()
+        if txt:
+            objectives.append(txt)
+    return objectives[:10]
+
+
+# ---------- OBJECTIVE EXTRACTION HANDLER ----------
+def extract_objectives(doc: pq) -> list:
+    """
+    Extract learning objectives:
+    - Look for the first bullet list (<ul>) in #main that has at least 2 items
+    - Fall back to the first few <li> in #main
+    """
+    main = doc("#main") or doc(".w3-main") or doc("body")
+    objectives = []
+
+    # try first non-trivial <ul> in main
+    for ul in main("ul").items():
+        lis = [li.text().strip() for li in ul("li").items() if li.text().strip()]
+        if len(lis) >= 2:  # consider it objectives only if >1 items
+            objectives = lis
+            break
+
+    # fallback: grab first 5 <li> in main
+    if not objectives:
+        objectives = [li.text().strip() for li in main("li").items() if li.text().strip()][:5]
+
+    return objectives[:10]
+
+
+
+def get_course_objectives(tut_doc: pq) -> list:
+    """
+    Wrapper around extract_objectives.
+    Provides a single place to modify or extend objective logic later.
+    """
+    return extract_objectives(tut_doc)
+
+
+async def process_objectives_for_file(filepath: Path, crawler: AsyncWebCrawler, run_config: CrawlerRunConfig):
+    """
+    Process a single course file: fetch HTML, extract objectives,
+    and update the JSON file in place.
+    """
+    with filepath.open("r", encoding="utf-8") as infile:
+        data = json.load(infile)
+
+    if "objectives" in data:
+        print(f"⏭️ Skipping {filepath.name}, already has objectives")
+        return
+
+    url = data.get("course_url")
+    if not url:
+        print(f"⚠️ No course_url in {filepath.name}, skipping")
+        return
+
+    results = await crawler.arun(url=url, config=run_config)
+    tut_html = next((r.html for r in results if getattr(r, "html", None)), None)
+
+    if not tut_html:
+        print(f"❌ No HTML for {url}")
+        return
+
+    tut_doc = pq(tut_html)
+    data["objectives"] = get_course_objectives(tut_doc)
+
+    with filepath.open("w", encoding="utf-8") as outfile:
+        json.dump(data, outfile, indent=2, ensure_ascii=False)
+
+    print(f"✅ Updated {filepath.name} with {len(data['objectives'])} objectives")
+
+
+async def add_objectives():
+    """
+    Iterate over all course files and update them with objectives if missing.
+    """
+    run_config = CrawlerRunConfig(scraping_strategy=LXMLWebScrapingStrategy(), verbose=False)
+    async with AsyncWebCrawler() as crawler:
+        for f in OUTPUT_DIR.glob("*.json"):
+            await process_objectives_for_file(f, crawler, run_config)
+
+
 # ---------- CRAWLING LOGIC ----------
 async def crawl_course(crawler: AsyncWebCrawler, run_config: CrawlerRunConfig, course_name: str, tut_url: str):
-    """
-    Crawl a single course root page, extract description from first section and
-    then up to SECTIONS_LIMIT sections into course_summary. Save JSON to file.
-    """
     filename = sanitize_filename(course_name) + ".json"
     out_file = OUTPUT_DIR / filename
-
-    # skip if already exists
-    if out_file.exists():
-        logging.info(f"⏭️ Skipping {course_name} — file exists: {out_file.name}")
-        return
 
     logging.info(f"➡️  Crawling course: {course_name} -> {tut_url}")
 
@@ -199,52 +266,30 @@ async def crawl_course(crawler: AsyncWebCrawler, run_config: CrawlerRunConfig, c
         logging.error(f"❌ Failed to fetch course root {tut_url}: {e}")
         return
 
-    # results is a list-like model. find first successful html result
-    tut_html = None
-    for r in results:
-        if getattr(r, "html", None):
-            tut_html = r.html
-            break
+    tut_html = next((r.html for r in results if getattr(r, "html", None)), None)
     if not tut_html:
         logging.warning(f"❌ No HTML for {tut_url}")
         return
 
     tut_doc = pq(tut_html)
 
-    # get menu links for this course (sections)
     menu_links = extract_menu_links(tut_doc, tut_url)
-    if not menu_links:
-        logging.warning(f"⚠️ No menu links found for {course_name} at {tut_url}")
-
-    # build glossary from course landing page + menu titles
     glossary = extract_glossary(tut_doc, menu_links)
 
-    # description comes from first section (if exists)
     description = ""
+    objectives = []
     course_summary = []
 
-    # Determine how many sections to loop
-    # if SECTIONS_LIMIT is None:
-    #     max_sections = len(menu_links)
-    # else:
-    # max_sections = min(SECTIONS_LIMIT, len(menu_links))
-
-    for idx in range(len(menu_links)):
-        link = menu_links[idx]
+    for idx, link in enumerate(menu_links):
         section_url = link["url"]
-        # fetch section page
+
         try:
             sec_results = await crawler.arun(url=section_url, config=run_config)
         except Exception as e:
             logging.warning(f"Failed to fetch section {section_url}: {e}")
             continue
 
-        # get HTML from results
-        sec_html = None
-        for sr in sec_results:
-            if getattr(sr, "html", None):
-                sec_html = sr.html
-                break
+        sec_html = next((sr.html for sr in sec_results if getattr(sr, "html", None)), None)
         if not sec_html:
             logging.warning(f"No HTML for section {section_url}")
             continue
@@ -252,12 +297,14 @@ async def crawl_course(crawler: AsyncWebCrawler, run_config: CrawlerRunConfig, c
         sec_doc = pq(sec_html)
 
         if idx == 0:
-            # first section -> description
+            # ✅ Only extract description + objectives from FIRST section
             description = extract_description(sec_doc)
+            objectives = get_course_objectives(sec_doc)
             logging.info(f"   • Description extracted ({len(description)} chars)")
-            continue
+            logging.info(f"   • Objectives extracted ({len(objectives)} items)")
+            break   # ⛔ stop after first section
 
-        # build section summary
+
         title = sec_doc("h1").text().strip() or link.get("title", "")
         summary = extract_summary(sec_doc)
         examples = extract_code_snippets(sec_doc)
@@ -269,22 +316,22 @@ async def crawl_course(crawler: AsyncWebCrawler, run_config: CrawlerRunConfig, c
         })
         logging.info(f"   • Section: {title} ({len(examples)} examples)")
 
-
-    # assemble JSON
     out = {
         "course_name": course_name,
         "description": description,
         "course_summary": course_summary,
-        "glossary": glossary
+        "glossary": glossary,
+        "objectives": objectives,   # ✅ now pulled from first section only
     }
 
-    # save
     try:
         with out_file.open("w", encoding="utf-8") as f:
             json.dump(out, f, indent=2, ensure_ascii=False)
         logging.info(f"✅ Saved {course_name} -> {out_file.name}")
     except Exception as e:
         logging.error(f"❌ Failed to write file {out_file}: {e}")
+
+
 
 
 async def main():
@@ -298,7 +345,6 @@ async def main():
         wait_for="document.querySelector('h1') || document.querySelector('.w3-example')",
     ) as crawler:
 
-        # 1) fetch tutorials index and discover course links from the left menu
         try:
             idx_results = await crawler.arun(url=INDEX_URL, config=run_config)
         except Exception as e:
@@ -317,32 +363,25 @@ async def main():
         index_doc = pq(index_html)
 
         courses = {}
-        # loop the correct container: leftmenuinnerinner (contains links to tutorials)
         for a in index_doc("#leftmenuinnerinner a.no-checkmark, #leftmenuinnerinner a").items():
             href = a.attr("href")
             text = a.text().strip()
             if not href or not text:
                 continue
-            # normalize URL and name
             full = urljoin(INDEX_URL, href)
             name_key = text.strip()
-            # avoid duplicates: use first occurrence
             if name_key not in courses:
                 courses[name_key] = full
-            # if COURSE_LIMIT and len(courses) >= COURSE_LIMIT:
-            #     break
 
         logging.info(f"Discovered {len(courses)} courses")
         print(f"Discovered {len(courses)} courses")
 
-        # 2) crawl each course but skip those that already have a file
         for name, url in courses.items():
-            # file naming rule
             fname = sanitize_filename(name) + ".json"
-            if (OUTPUT_DIR / fname).exists():
-                logging.info(f"⏭️ Skipping {name} (file exists: {fname})")
-                print(f"⏭️ Skipping {name} (file exists: {fname})")
-                continue
+            # if (OUTPUT_DIR / fname).exists():
+            #     logging.info(f"⏭️ Skipping {name} (file exists: {fname})")
+            #     print(f"⏭️ Skipping {name} (file exists: {fname})")
+            #     continue
 
             await crawl_course(crawler, run_config, name, url)
             await asyncio.sleep(DELAY_BETWEEN_COURSES)
@@ -350,3 +389,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+    # asyncio.run(add_objectives())

@@ -1,0 +1,60 @@
+{
+  "course_name": "Generative AI",
+  "description": "Generative AI can help boost your productivity if used correctly. AI prompt engineering is one of the hottest jobs in tech. Knowing how to write prompts correctly is the key to helping you use generative AIs. In these tutorials, you get step-by-step guides on how to write AI prompts to get the best possible results from text-to-text and text-to-image generative AIs. You will learn to understand Generative AI capabilities and write prompts that minimize misinformation and biased results. You will learn how to preface your prompts and add details to them to generate consistent results. In these tutorials, we will use examples to better explain the various concepts. With the following prompt: A response from a Generative AI (in this case, ChatGPT) could be: Sign Up for Free Note: This is an optional feature. You can study at W3Schools without creating an account.",
+  "course_summary": [
+    {
+      "title": "Generative AI Prompt Writing Introduction",
+      "summary": "What is AI?\nWhen talking about Artificial Intelligence (AI) in the tech industry, we refer to intelligent machines that can do jobs that previously needed human intelligence.\nAdvances in machine learning have given AI a huge boost.\nThis tutorial focuses on Generative AI, like text-to-text and text-to-image.\nWhat is Generative AI?\nGenerative AI is an AI that can create something like:\nText\nImages\nAudio\nVideos\n3D models\nGenerative AIs analyze and use existing data and input from a user to generate these things.\nGiving Generative AIs input is known as AI Prompt Writing or AI Prompt Engineering.\nWhat is AI Prompt Writing?\nAI Prompt Writing (or Engineering) is the process of creating input (usually text) instructing the Generative AI to generate the desired response.\nIn other words, prompting is the way we ask an AI to do something.\nA prompt should be tailored to the type of response you want to receive and to the specifics of the Generative AI you use.\nDifferent types of prompts:\nInstructions\nQuestions\nData\nExamples",
+      "examples": []
+    },
+    {
+      "title": "Generative AI Prompt text-to-text Introduction",
+      "summary": "What is text-to-text Generative AI?\nA text-to-text Generative AI is an AI that Generates text based on text input.\nAn example of a text-to-text Generative AI is ChatGPT, developed by OpenAI.\nText generation uses machine learning, existing data and previous user input in generating responses.\nText Generative AI can be used to:\nUnderstanding Text\nCreate content\nDebug code\nEducation\nResearch\nTranslation\nVirtual Assistant\nAnd much, much more!\nGiving Generative AIs input is known as AI Prompt Writing or AI Prompt Engineering.\nGeneral Rules for Prompt Writing\nWhen writing prompts for text-to-text Generative AIs, the rules will differ depending on which platform you use, but here are some general rules:\nStart simple - start with a simple prompt and build on it\nCall to Action - start the prompt with an action word like \"Write\", \"Create\", or \"Summarize\" instead of \"Can you\"\nAdd Context - add specific and relevant context to the task you want to perform\nAdd Expectations - add clear and direct expectations for the content, like how long it should be and what to include\nExample\nWith the following prompt:\nA response from a Generative AI (in this case, ChatGPT) could be:",
+      "examples": [
+        "Create a list of 10 fun and inexpensive toy gifts to programmers based on the following criteria:\n\n- It should be useful\n- It should be silly\n- It should spark creativity"
+      ]
+    },
+    {
+      "title": "Generative AI - ChatGPT-3.5",
+      "summary": "Learn ChatGPT\nChatGPT is an AI chatbot developed by OpenAI.\nChatGPT can help boost your productivity if used correctly.\nKnowing how to write prompts correctly is the key to helping you use ChatGPT\nWhat is ChatGPT-3.5?\nChatGPT-3.5 is an AI chatbot developed by OpenAI and launched in November 2022.\nIt is designed to engage in conversations, answer questions, and help with various tasks.\nChatGPT-3.5 is avaliable for anyone who makes an account with OpenAI\nChatGPT-3.5 it detailed and articulate across a wide range of topics. But, the 3.5 version has also been criticized for it sometimes uneven accuracy.\nChatGPT-3.5 Example\nExample\nWith the following prompt:\nA response from a ChatGPT-3.5 could be:",
+      "examples": [
+        "Create a list of 10 fun and inexpensive toy gifts to programmers based on the following criteria:\n\n- It should be useful\n- It should be silly\n- It should spark creativity"
+      ]
+    },
+    {
+      "title": "Generative AI - ChatGPT-4",
+      "summary": "Learn ChatGPT-4\nChatGPT-4 is the latest version of the AI chatbot by OpenAI.\nChatGPT can help boost your productivity if used correctly.\nKnowing how to write prompts correctly is the key to helping you use ChatGPT\nWhat is ChatGPT-4?\nChatGPT-4 is an AI chatbot developed by OpenAI and launched in April 2023.\nIt is designed to engage in conversations, answer questions, and help with various tasks.\nChatGPT-4 is only avaliable for users with OpenAI who have a ChatGPT Plus subscription.\nWhat is the Difference between ChatGPT-3.5 and ChatGPT-4?\nChatGPT-4 is an improvement over ChatGPT-3.5 in almost every way.\nHere is a table comparing the two versions:\nChatGPT-4 Example\nExample\nWith the following prompt:\nA response from a ChatGPT-4 could be:",
+      "examples": [
+        "Create a list of 10 fun and inexpensive toy gifts to programmers based on the following criteria:\n\n- It should be useful\n- It should be silly\n- It should spark creativity"
+      ]
+    },
+    {
+      "title": "Generative AI - Google Bard",
+      "summary": "Bard is an AI chatbot developed by Google.\nBard can help boost your productivity if used correctly.\nKnowing how to write prompts correctly is the key to helping you use Bard\nWhat is Google Bard?\nBard is an AI chatbot developed by Google and launched in March 2023.\nIt is designed to engage in conversations, answer questions, and help with various tasks.\nBard is currently only avaliable for users in the US and UK.\nBard-4 Example\nExample\nWith the following prompt:\nA response from a Bard could be:",
+      "examples": [
+        "Create a list of 10 fun and inexpensive toy gifts to programmers based on the following criteria:\n\n- It should be useful\n- It should be silly\n- It should spark creativity"
+      ]
+    }
+  ],
+  "glossary": [
+    "ai bard",
+    "ai chatgpt-3.5",
+    "ai chatgpt-4",
+    "ai text-to-text",
+    "backend",
+    "exercises",
+    "free",
+    "javascript",
+    "note",
+    "programs",
+    "report error",
+    "w3.css",
+    "w3schools spaces"
+  ],
+  "objectives": [
+    "View your completed tutorials, exercises, and quizzes",
+    "Keep an eye on your progress and daily streaks",
+    "Set goals and create learning paths",
+    "Create your own personal website"
+  ]
+}

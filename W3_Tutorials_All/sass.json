@@ -1,161 +1,32 @@
 {
-  "course_name": "Sass",
+  "course_name": "SASS",
   "description": "Sass is a CSS pre-processor. Sass reduces repetition of CSS and therefore saves time. Our \"Show Sass\" tool makes it easy to learn Sass, it shows both the code and the result. Run Example » At W3Schools you will find complete references of all Sass functions with syntax and examples. Sass String Functions Sass Numeric Functions Sass List Functions Sass Map Functions Sass Selector Functions Sass Introspection Functions Sass Color Functions",
-  "course_summary": [
-    {
-      "title": "Sass Introduction",
-      "summary": "What You Should Already Know\nBefore you continue you should have a basic understanding of the following:\nHTML\nCSS\nIf you want to study these subjects first, find the tutorials on our Home page.\nWhat is Sass?\nSass stands for Syntactically Awesome Stylesheet\nSass is an extension to CSS\nSass is a CSS pre-processor\nSass is completely compatible with all versions of CSS\nSass reduces repetition of CSS and therefore saves time\nSass was designed by Hampton Catlin and developed by Natalie Weizenbaum in 2006\nSass is free to download and use\nWhy Use Sass?\nStylesheets are getting larger, more complex, and harder to maintain. This is where a CSS pre-processor can help.\nSass lets you use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff.\nA Simple Example why Sass is Useful\nLet's say we have a website with three main colors:\n#a2b9bc\n#b2ad7f\n#878f99\nSo, how many times do you need to type those HEX values? A LOT of times. And what about variations of the same colors?\nInstead of typing the above values a lot of times, you can use Sass and write this:\nSass Example\nSo, when using Sass, and the primary color changes, you only need to change it in one place.\nREMOVE ADS\nHow Does Sass Work?\nA browser does not understand Sass code. Therefore, you will need a Sass pre-processor to convert Sass code into standard CSS.\nThis process is called transpiling. So, you need to give a transpiler (some kind of program) some Sass code and then get some CSS code back.\nTip: Transpiling is a term for taking a source code written in one language and transform/translate it into another language.\nSass File Type\nSass files has the \".scss\" file extension.\nSass Comments\nSass supports standard CSS comments /* comment */, and in addition it supports inline comments // comment:\nSass Example",
-      "examples": [
-        "/* define variables for the primary colors */\n$primary_1: #a2b9bc;\n$primary_2: #b2ad7f;\n$primary_3: #878f99;\n\n/* use the variables */\n.main-header {\nbackground-color: $primary_1;\n}\n\n.menu-left {\nbackground-color: $primary_2;\n}\n\n.menu-right {\nbackground-color: $primary_3;\n}",
-        "/* define primary colors */\n$primary_1: #a2b9bc;\n$primary_2: #b2ad7f;\n\n/* use the variables */\n.main-header {\nbackground-color: $primary_1; // here you can put an inline comment\n}",
-        "/* comment */",
-        "// comment"
-      ]
-    },
-    {
-      "title": "Sass Installation",
-      "summary": "System Requirements for Sass\nOperating system - Sass is platform independent\nBrowser support - Sass works in Edge/IE (from IE 8), Firefox, Chrome, Safari, Opera\nProgramming language - Sass is based on Ruby\nOfficial Sass Web Site\nRead more about Sass at the official Sass web site: https://sass-lang.com/\nInstall Sass\nThere are several ways to install Sass in your system. There are many applications that will get you up and running with Sass in a few minutes for Mac, Windows, and Linux. Some of these are free, but some are paid apps.\nYou can read more about them here: sass-lang.com/install",
-      "examples": []
-    },
-    {
-      "title": "Sass Variables",
-      "summary": "Sass Variables\nVariables are a way to store information that you can re-use later.\nWith Sass, you can store information in variables, like:\nstrings\nnumbers\ncolors\nbooleans\nlists\nnulls\nSass uses the $ symbol, followed by a name, to declare variables:\nSass Variable Syntax:\nThe following example declares 4 variables named myFont, myColor, myFontSize, and myWidth. After the variables are declared, you can use the variables wherever you want:\nSCSS Syntax:\nRun Example »\nSo, when the Sass file is transpiled, it takes the variables (myFont, myColor, etc.) and outputs normal CSS with the variable values placed in the CSS, like this:\nCSS Output:\nREMOVE ADS\nSass Variable Scope\nSass variables are only available at the level of nesting where they are defined.\nLook at the following example:\nSCSS Syntax:\nRun Example »\nWill the color of the text inside a <p> tag be red or green? It will be red!\nThe other definition, $myColor: green; is inside the <h1> rule, and will only be available there!\nSo, the CSS output will be:\nCSS Output:\nOk, that is the default behavior for variable scope.\nUsing Sass !global\nThe default behavior for variable scope can be overridden by using the !global switch.\n!global indicates that a variable is global, which means that it is accessible on all levels.\nLook at the following example (same as above; but with !global added):\nSCSS Syntax:\nRun Example »\nNow the color of the text inside a <p> tag will be green!\nSo, the CSS output will be:\nCSS Output:\nTip: Global variables should be defined outside any rules. It could be wise to define all global variables in its own file, named \"_globals.scss\", and include the file with the @include keyword.",
-      "examples": [
-        "$variablename: value;",
-        "$myFont: Helvetica, sans-serif;\n$myColor: red;\n$myFontSize: 18px;\n$myWidth: 680px;\n\nbody {\nfont-family: $myFont;\nfont-size: $myFontSize;\ncolor: $myColor;\n}\n\n#container {\nwidth: $myWidth;\n}",
-        "body {\nfont-family: Helvetica, sans-serif;\nfont-size: 18px;\ncolor: red;\n}\n\n#container {\nwidth: 680px;\n}",
-        "$myColor: red;\n\nh1 {\n$myColor: green;\ncolor: $myColor;\n}\n\np {\ncolor: $myColor;\n}",
-        "h1 {\ncolor: green;\n}\n\np {\ncolor: red;\n}",
-        "$myColor: red;\n\nh1 {\n$myColor: green !global;\ncolor: $myColor;\n}\n\np {\ncolor: $myColor;\n}",
-        "h1 {\ncolor: green;\n}\n\np {\ncolor: green;\n}",
-        "<p>",
-        "<h1>",
-        "!global"
-      ]
-    },
-    {
-      "title": "Sass Nested Rules and Properties",
-      "summary": "Sass Nested Rules\nSass lets you nest CSS selectors in the same way as HTML.\nLook at an example of some Sass code for a site's navigation:\nExample\nSCSS Syntax:\nRun Example »\nNotice that in Sass, the ul, li, and a selectors are nested inside the nav selector.\nWhile in CSS, the rules are defined one by one (not nested):\nCSS Syntax:\nBecause you can nest properties in Sass, it is cleaner and easier to read than standard CSS.\nREMOVE ADS\nSass Nested Properties\nMany CSS properties have the same prefix, like font-family, font-size and font-weight or text-align, text-transform and text-overflow.\nWith Sass you can write them as nested properties:\nExample\nSCSS Syntax:\nThe Sass transpiler will convert the above to normal CSS:\nCSS Output:",
-      "examples": [
-        "nav {\nul {\nmargin: 0;\npadding: 0;\nlist-style: none;\n}\nli {\ndisplay: inline-block;\n}\na {\ndisplay: block;\npadding: 6px 12px;\ntext-decoration: none;\n}\n}",
-        "nav ul {\nmargin: 0;\npadding: 0;\nlist-style: none;\n}\nnav li {\ndisplay: inline-block;\n}\nnav a {\ndisplay: block;\npadding: 6px 12px;\ntext-decoration: none;\n}",
-        "font: {\nfamily: Helvetica, sans-serif;\nsize: 18px;\nweight: bold;\n}\n\ntext: {\nalign: center;\ntransform: lowercase;\noverflow: hidden;\n}",
-        "font-family: Helvetica, sans-serif;\nfont-size: 18px;\nfont-weight: bold;\n\ntext-align: center;\ntext-transform: lowercase;\ntext-overflow: hidden;",
-        "ul",
-        "li",
-        "a",
-        "nav"
-      ]
-    },
-    {
-      "title": "Sass @import and Partials",
-      "summary": "Sass keeps the CSS code DRY (Don't Repeat Yourself). One way to write DRY code is to keep related code in separate files.\nYou can create small files with CSS snippets to include in other Sass files. Examples of such files can be: reset file, variables, colors, fonts, font-sizes, etc.\nSass Importing Files\nJust like CSS, Sass also supports the @import directive.\nThe @import directive allows you to include the content of one file in another.\nThe CSS @import directive has a major drawback due to performance issues; it creates an extra HTTP request each time you call it. However, the Sass @import directive includes the file in the CSS; so no extra HTTP call is required at runtime!\nSass Import Syntax:\nTip: You do not need to specify a file extension, Sass automatically assumes that you mean a .sass or .scss file. You can also import CSS files. The @import directive imports the file and any variables or mixins defined in the imported file can then be used in the main file.\nYou can import as many files as you need in the main file:\nExample\nLet's look at an example: Let's assume we have a reset file called \"reset.scss\", that looks like this:\nExample\nSCSS Syntax (reset.scss):\nand now we want to import the \"reset.scss\" file into another file called \"standard.scss\".\nHere is how we do it: It is normal to add the @import directive at the top of a file; this way its content will have a global scope:\nSCSS Syntax (standard.scss):\nSo, when the \"standard.css\" file is transpiled, the CSS will look like this:\nCSS output:\nRun Example »\nREMOVE ADS\nSass Partials\nBy default, Sass transpiles all the .scss files directly. However, when you want to import a file, you do not need the file to be transpiled directly.\nSass has a mechanism for this: If you start the filename with an underscore, Sass will not transpile it. Files named this way are called partials in Sass.\nSo, a partial Sass file is named with a leading underscore:\nSass Partial Syntax:\nThe following example shows a partial Sass file named \"_colors.scss\". (This file will not be transpiled directly to \"colors.css\"):\nExample\n\"_colors.scss\":\nNow, if you import the partial file, omit the underscore. Sass understands that it should import the file \"_colors.scss\":\nExample",
-      "examples": [
-        "@import filename;",
-        "@import \"variables\";\n@import \"colors\";\n@import \"reset\";",
-        "html,\nbody,\nul,\nol {\nmargin: 0;\npadding: 0;\n}",
-        "@import \"reset\";\n\nbody {\nfont-family: Helvetica, sans-serif;\nfont-size: 18px;\ncolor: red;\n}",
-        "html, body, ul, ol {\nmargin: 0;\npadding: 0;\n}\n\nbody {\nfont-family: Helvetica, sans-serif;\nfont-size: 18px;\ncolor: red;\n}",
-        "_filename;",
-        "$myPink: #EE82EE;\n$myBlue: #4169E1;\n$myGreen: #8FBC8F;",
-        "@import \"colors\";\n\nbody {\nfont-family: Helvetica, sans-serif;\nfont-size: 18px;\ncolor: $myBlue;\n}",
-        "@import"
-      ]
-    },
-    {
-      "title": "Sass @mixin and @include",
-      "summary": "Sass Mixins\nThe @mixin directive lets you create CSS code that is to be reused throughout the website.\nThe @include directive is created to let you use (include) the mixin.\nDefining a Mixin\nA mixin is defined with the @mixin directive.\nSass @mixin Syntax:\nThe following example creates a mixin named \"important-text\":\nSCSS Syntax:\nTip: A tip on hyphens and underscore in Sass: Hyphens and underscores are considered to be the same. This means that @mixin important-text { } and @mixin important_text { } are considered as the same mixin!\nUsing a Mixin\nThe @include directive is used to include a mixin.\nSass @include mixin Syntax:\nSo, to include the important-text mixin created above:\nSCSS Syntax:\nThe Sass transpiler will convert the above to normal CSS:\nCSS output:\nRun Example »\nA mixin can also include other mixins:\nSCSS Syntax:\nREMOVE ADS\nPassing Variables to a Mixin\nMixins accept arguments. This way you can pass variables to a mixin.\nHere is how to define a mixin with arguments:\nSCSS Syntax:\nNotice that the arguments are set as variables and then used as the values (color and width) of the border property.\nAfter compilation, the CSS will look like this:\nCSS Output:\nRun Example »\nDefault Values for a Mixin\nIt is also possible to define default values for mixin variables:\nSCSS Syntax:\nThen, you only need to specify the values that change when you include the mixin:\nSCSS Syntax:\nUsing a Mixin For Vendor Prefixes\nAnother good use of a mixin is for vendor prefixes.\nHere is an example for transform:\nSCSS Syntax:\nAfter compilation, the CSS will look like this:\nCSS Output:",
-      "examples": [
-        "@mixin name {\nproperty: value;\nproperty: value;\n...\n}",
-        "@mixin important-text {\ncolor: red;\nfont-size: 25px;\nfont-weight: bold;\nborder: 1px solid blue;\n}",
-        "selector {\n@include mixin-name;\n}",
-        ".danger {\n@include important-text;\nbackground-color: green;\n}",
-        ".danger {\ncolor: red;\nfont-size: 25px;\nfont-weight: bold;\nborder: 1px solid blue;\nbackground-color: green;\n}",
-        "@mixin special-text {\n@include important-text;\n@include link;\n@include special-border;\n}",
-        "/* Define mixin with two arguments */\n@mixin bordered($color, $width) {\nborder: $width solid $color;\n}\n\n.myArticle {\n@include bordered(blue, 1px);  // Call mixin with two values\n}\n\n.myNotes {\n@include bordered(red, 2px); // Call mixin with two values\n}",
-        ".myArticle {\nborder: 1px solid blue;\n}\n\n.myNotes {\nborder: 2px solid red;\n}",
-        "@mixin bordered($color: blue, $width: 1px) {\nborder: $width solid $color;\n}",
-        ".myTips {\n@include bordered($color: orange);\n}",
-        "@mixin transform($property) {\n-webkit-transform: $property;\n-ms-transform: $property;\ntransform: $property;\n}\n\n.myBox {\n@include transform(rotate(20deg));\n}",
-        ".myBox {\n-webkit-transform: rotate(20deg);\n-ms-transform: rotate(20deg);\ntransform: rotate(20deg);\n}",
-        "@mixin",
-        "@include"
-      ]
-    },
-    {
-      "title": "Sass @extend and Inheritance",
-      "summary": "Sass @extend Directive\nThe @extend directive lets you share a set of CSS properties from one selector to another.\nThe @extend directive is useful if you have almost identically styled elements that only differ in some small details.\nThe following Sass example first creates a basic style for buttons (this style will be used for most buttons). Then, we create one style for a \"Report\" button and one style for a \"Submit\" button. Both \"Report\" and \"Submit\" button inherit all the CSS properties from the .button-basic class, through the @extend directive. In addition, they have their own colors defined:\nSCSS Syntax:\nAfter compilation, the CSS will look like this:\nCSS Output:\nBy using the @extend directive, you do not need to specify several classes for an element in your HTML code, like this: <button class=\"button-basic button-report\">Report this</button>. You just need to specify .button-report to get both sets of styles.\nThe @extend directive helps keep your Sass code very DRY.",
-      "examples": [
-        ".button-basic  {\nborder: none;\npadding: 15px 30px;\ntext-align: center;\nfont-size: 16px;\ncursor: pointer;\n}\n\n.button-report  {\n@extend .button-basic;\nbackground-color: red;\n}\n\n.button-submit  {\n@extend .button-basic;\nbackground-color: green;\ncolor: white;\n}",
-        ".button-basic, .button-report, .button-submit {\nborder: none;\npadding: 15px 30px;\ntext-align: center;\nfont-size: 16px;\ncursor: pointer;\n}\n\n.button-report  {\nbackground-color: red;\n}\n\n.button-submit  {\nbackground-color: green;\ncolor: white;\n}",
-        "@extend"
-      ]
-    },
-    {
-      "title": "Sass String Functions",
-      "summary": "Sass String Functions\nThe string functions are used to manipulate and get information about strings.\nSass strings are 1-based. The first character in a string is at index 1, not 0.\nThe following table lists all string functions in Sass:",
-      "examples": []
-    },
-    {
-      "title": "Sass Numeric Functions",
-      "summary": "Sass Numeric Functions\nThe numeric functions are used to manipulate numeric values.\nThe following table lists all numeric functions in Sass:",
-      "examples": []
-    },
-    {
-      "title": "Sass List Functions",
-      "summary": "Sass List Functions\nThe list functions are used to access values in a list, combine lists, and add items to lists.\nSass lists are immutable (they cannot change). So, the list functions that return a list, will return a new list, and not change the original list.\nSass lists are 1-based. The first list item in a list is at index 1, not 0.\nThe following table lists all list functions in Sass:",
-      "examples": []
-    },
-    {
-      "title": "Sass Map Functions",
-      "summary": "Sass Map Functions\nIn Sass, the map data type represents one or more key/value pairs.\nTip: It is also possible to use the List functions from the previous page, with maps. Then the map will be treated as a list with two elements.\nSass maps are immutable (they cannot change). So, the map functions that return a map, will return a new map, and not change the original map.\nThe following table lists all map functions in Sass:",
-      "examples": []
-    },
-    {
-      "title": "Sass Selector Functions",
-      "summary": "Sass Selector Functions\nThe selector functions are used to check and manipulate selectors.\nThe following table lists all selector functions in Sass:",
-      "examples": []
-    },
-    {
-      "title": "Sass Introspection Functions",
-      "summary": "Sass Introspection Functions\nThe introspection functions are rarely used when building a stylesheet. However, they are valuable if something does not work properly - to figure out what's going on: like debugging functions.\nThe following table lists all introspection functions in Sass:",
-      "examples": []
-    },
-    {
-      "title": "Sass Color Functions",
-      "summary": "Sass Color Functions\nWe have divided the color functions in Sass into three parts: Set color functions, Get color functions, and Manipulate color functions:\nSass Set Color Functions\nREMOVE ADS\nSass Get Color Functions\nSass Manipulate Color Functions",
-      "examples": []
-    },
-    {
-      "title": "W3Schools SASS Certificate",
-      "summary": "W3Schools offers an Online Certification Program.\nThe perfect solution for busy professionals who need to balance work, family, and career building.\nMore than 50 000 certificates already issued!\nGet Your Certificate »\nW3Schools offers an Online Certification Program.\nThe perfect solution for busy professionals who need to balance work, family, and career building.\nMore than 50 000 certificates already issued!\nGet Your Certificate »\nWho Should Consider Getting Certified?\nAny student or professional within the digital industry.\nCertifications are valuable assets to gain trust and demonstrate knowledge to your clients, current or future employers on a ever increasing competitive market.\nW3Schools is Trusted by Top Companies\nW3Schools has over two decades of experience with teaching coding online.\nOur certificates are recognized and valued by companies looking to employ skilled developers.\nSave Time and Money\nShow the world your coding skills by getting a certification.\nThe prices is a small fraction compared to the price of traditional education.\nDocument and validate your competence by getting certified!\nExam overview\nFee: 95 USD\nAchievable certification levels:\nIntermediate (40%)\nAdvanced (75%)\nProfessional (90%)\nNumber of questions:\nAdaptive, 60 on average\nRequirement to pass:\nMinimum 40% - Intermediate level\nTime limit: 60 minutes\nNumber of attempts to pass: 3\nExam deadline: None\nCertification Expiration: None\nFormat: Online, multiple choice\nRegister now »\nAdvance Faster in Your Career\nGetting a certificate proves your commitment to upgrading your skills.\nThe certificate can be added as credentials to your CV, Resume, LinkedIn profile, and so on.\nIt gives you the credibility needed for more responsibilities, larger projects, and a higher salary.\nKnowledge is power, especially in the current job market.\nDocumentation of your skills enables you to advance your career or helps you to start a new one.\nHow Does It Work?\nStudy for free at W3Schools.com\nStudy at your own speed\nTest your skills with W3Schools online quizzes\nApply for your certificate by paying an exam fee\nTake your exam online, at any time, and from any location\nGet Your Certificate and Share It With The World\nExample certificate:\nEach certificate gets a unique link that can be shared with others.\nValidate your certification with the link or QR code.\nCheck how it looks like in this Example.\nShare your certificate on Linked in the Certifications section in just one click!\nDocument Your Skills\nGetting a certificate proves your commitment to upgrade your skills, gives you the credibility needed for more responsibilities, larger projects, and a higher salary.\nGet Your Certificate »\nLooking to add multiple users?\nAre you an educator, manager or business owner looking for courses or certifications?\nWe are working with schools, companies and organizations from all over the world.\nGet courses and/or certifications for your team here.",
-      "examples": []
-    }
-  ],
+  "course_summary": [],
   "glossary": [
     "backend",
     "exercises",
     "free",
     "javascript",
     "programs",
-    "references",
     "report error",
-    "sass  extend",
-    "sass  import",
-    "sass  mixin",
     "sass color",
+    "sass extend",
     "sass functions",
     "sass home",
+    "sass import",
     "sass installation",
     "sass intro",
     "sass introspection",
     "sass list",
     "sass map",
+    "sass mixin",
     "sass nesting",
     "sass numeric",
     "sass selector",
     "sass string",
     "sass variables",
+    "w3.css",
     "w3schools spaces"
-  ]
+  ],
+  "objectives": []
 }

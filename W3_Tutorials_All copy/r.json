@@ -1,0 +1,818 @@
+{
+  "course_name": "R",
+  "description": "R is a programming language. R is often used for statistical computing and graphical presentation to analyze and visualize data. Tip: Sign in to track your progress - it's free. With our \"Try it Yourself\" editor, you can edit R code and view the result. How to output some text, and how to do a simple calculation in R: Result: How you can use R to easily create a graph with numbers from 1 to 10 on both the x and y axis: Result: We recommend reading this tutorial, in the sequence listed in the left menu. REMOVE ADS Insert the missing part of the code below to output \"Hello World\". Start the Exercise Learn by taking a quiz! This quiz will give you a signal of how much you know about R. Take the R Quiz Learn by examples! This tutorial supplements all explanations with clarifying examples. See All R Examples Sign Up for Free Note: This is an optional feature. You can study at W3Schools without creating an account.",
+  "course_summary": [
+    {
+      "title": "R Introduction",
+      "summary": "What is R\nR is a popular programming language used for statistical computing and graphical presentation.\nIts most common use is to analyze and visualize data.\nWhy Use R?\nIt is a great resource for data analysis, data visualization, data science and machine learning\nIt provides many statistical techniques (such as statistical tests, classification, clustering and data reduction)\nIt is easy to draw graphs in R, like pie charts, histograms, box plot, scatter plot, etc++\nIt works on different platforms (Windows, Mac, Linux)\nIt is open-source and free\nIt has a large community support\nIt has many packages (libraries of functions) that can be used to solve different problems\nGet Started\nThis tutorial will teach you the basics of R.\nIt is not necessary to have any prior programming experience.",
+      "examples": []
+    },
+    {
+      "title": "R Get Started",
+      "summary": "How to Install R\nTo install R, go to https://cloud.r-project.org/ and download the latest version of R for Windows, Mac or Linux.\nWhen you have downloaded and installed R, you can run R on your computer.\nThe screenshot below shows how it may look like when you run R on a Windows PC:\nIf you type 5 + 5, and press enter, you will see that R outputs 10.\nLearning R at W3Schools\nWhen learning R at W3Schools.com, you can use our \"Try it Yourself\" tool, which shows both the code and the result in your browser. This will make it easier for you to test and understand every part as we move forward:\nExample\nResult:",
+      "examples": [
+        "5 + 5",
+        "10",
+        "[1] 10"
+      ]
+    },
+    {
+      "title": "R Syntax",
+      "summary": "Syntax\nTo output text in R, use single or double quotes:\nExample\nTo output numbers, just type the number (without quotes):\nExample\nTo do simple calculations, add numbers together:\nExample\nCongratulations! You have now written your first R code.",
+      "examples": [
+        "\"Hello World!\"",
+        "5\n10\n25",
+        "5 + 5"
+      ]
+    },
+    {
+      "title": "R Print Output",
+      "summary": "Print\nUnlike many other programming languages, you can output code in R without using a print function:\nExample\nHowever, R does have a print() function available if you want to use it. This might be useful if you are familiar with other programming languages, such as Python, which often uses the print() function to output code.\nExample\nAnd there are times you must use the print() function to output code, for example when working with for loops (which you will learn more about in a later chapter):\nExample\nConclusion: It is up to you whether you want to use the print() function to output code. However, when your code is inside an R expression (e.g. inside curly braces {} like in the example above), use the print() function to output the result.",
+      "examples": [
+        "\"Hello World!\"",
+        "print(\"Hello World!\")",
+        "for (x in 1:10) {\nprint(x)\n}",
+        "print()",
+        "for",
+        "{}"
+      ]
+    },
+    {
+      "title": "R Comments",
+      "summary": "Comments\nComments can be used to explain R code, and to make it more readable. It can also be used to prevent execution when testing alternative code.\nComments starts with a #. When executing code, R will ignore anything that starts with #.\nThis example uses a comment before a line of code:\nExample\nThis example uses a comment at the end of a line of code:\nExample\nComments does not have to be text to explain the code, it can also be used to prevent R from executing the code:\nExample\nMultiline Comments\nUnlike other programming languages, such as Java, there are no syntax in R for multiline comments. However, we can just insert a # for each line to create multiline comments:\nExample",
+      "examples": [
+        "# This is a comment\n\"Hello World!\"",
+        "\"Hello World!\" # This is a comment",
+        "# \"Good morning!\"\n\"Good night!\"",
+        "# This is a comment\n# written in\n# more than just one line\n\"Hello World!\"",
+        "#"
+      ]
+    },
+    {
+      "title": "R Variables",
+      "summary": "Creating Variables in R\nVariables are containers for storing data values.\nR does not have a command for declaring a variable. A variable is created the moment you first assign a value to it. To assign a value to a variable, use the <- sign. To output (or print) the variable value, just type the variable name:\nExample\nFrom the example above, name and age are variables, while \"John\" and 40 are values.\nIn other programming language, it is common to use = as an assignment operator. In R, we can use both = and <- as assignment operators.\nHowever, <- is preferred in most cases because the = operator can be forbidden in some contexts in R.\nPrint / Output Variables\nCompared to many other programming languages, you do not have to use a function to print/output variables in R. You can just type the name of the variable:\nExample\nHowever, R does have a print() function available if you want to use it. This might be useful if you are familiar with other programming languages, such as Python, which often use a print() function to output variables.\nExample\nAnd there are times you must use the print() function to output code, for example when working with for loops (which you will learn more about in a later chapter):\nExample\nConclusion: It is up to your if you want to use the print() function or not to output code. However, when your code is inside an R expression (for example inside curly braces {} like in the example above), use the print() function if you want to output the result.",
+      "examples": [
+        "name <- \"John\"\nage <- 40\n\nname   # output \"John\"\nage    # output 40",
+        "name <- \"John Doe\"\n\nname # auto-print the value of the name variable",
+        "name <- \"John Doe\"\n\nprint(name) # print the value of the name variable",
+        "for (x in 1:10) {\nprint(x)\n}",
+        "<-",
+        "name",
+        "age",
+        "\"John\"",
+        "40",
+        "=",
+        "print()",
+        "for",
+        "{}"
+      ]
+    },
+    {
+      "title": "R Concatenate Elements",
+      "summary": "Concatenate Elements\nYou can also concatenate, or join, two or more elements, by using the paste() function.\nTo combine both text and a variable, R uses comma (,):\nExample\nYou can also use , to add a variable to another variable:\nExample\nFor numbers, the + character works as a mathematical operator:\nExample\nIf you try to combine a string (text) and a number, R will give you an error:\nExample\nResult:",
+      "examples": [
+        "text <- \"awesome\"\n\npaste(\"R is\", text)",
+        "text1 <- \"R is\"\ntext2 <- \"awesome\"\n\npaste(text1, text2)",
+        "num1 <- 5\nnum2 <- 10\n\nnum1 + num2",
+        "num <- 5\ntext <- \"Some text\"\n\nnum + text",
+        "paste()",
+        ",",
+        "+",
+        "Error in num + text : non-numeric argument to binary operator"
+      ]
+    },
+    {
+      "title": "R Multiple Variables",
+      "summary": "Multiple Variables\nR allows you to assign the same value to multiple variables in one line:\nExample",
+      "examples": [
+        "# Assign the same value to multiple variables in one line\nvar1 <- var2 <- var3 <- \"Orange\"\n\n# Print variable values\nvar1\nvar2\nvar3"
+      ]
+    },
+    {
+      "title": "R Variable Names (Identifiers)",
+      "summary": "Variable Names\nA variable name must start with a letter and can be a combination of letters, digits, period(.)\nand underscore(_). If it starts with period(.), it cannot be followed by a digit.\nA variable name cannot start with a number or underscore (_)\nVariable names are case-sensitive (age, Age and AGE are three different variables)\nReserved words cannot be used as variables (TRUE, FALSE, NULL, if...)\nRemember that variable names are case-sensitive!",
+      "examples": [
+        "# Legal variable names:\nmyvar <- \"John\"\nmy_var <- \"John\"\nmyVar <- \"John\"\nMYVAR <- \"John\"\nmyvar2 <- \"John\"\n.myvar <- \"John\"\n\n# Illegal variable names:\n2myvar <- \"John\"\nmy-var <- \"John\"\nmy var <- \"John\"\n_my_var <- \"John\"\nmy_v@ar <- \"John\"\nTRUE <- \"John\""
+      ]
+    },
+    {
+      "title": "R Data Types",
+      "summary": "Data Types\nIn programming, data type is an important concept.\nVariables can store data of different types, and different types can do different things.\nIn R, variables do not need to be declared with any particular type, and can even change type after they have been set:\nExample\nR has a variety of data types and object classes. You will learn much more about these as you continue to get to know R.\nBasic Data Types\nBasic data types in R can be divided into the following types:\nnumeric - (10.5, 55, 787)\ninteger - (1L, 55L, 100L, where the letter \"L\" declares this as an integer)\ncomplex - (9 + 3i, where \"i\" is the imaginary part)\ncharacter (a.k.a. string) - (\"k\", \"R is exciting\", \"FALSE\", \"11.5\")\nlogical (a.k.a. boolean) - (TRUE or FALSE)\nWe can use the class() function to check the data type of a variable:\nExample\nYou will learn much more about the individual data types in the upcoming chapters.",
+      "examples": [
+        "my_var <- 30 # my_var is type of numeric\nmy_var <- \"Sally\" # my_var is now of type character (aka string)",
+        "# numeric\nx <- 10.5\nclass(x)\n\n# integer\nx <- 1000L\nclass(x)\n\n# complex\nx <- 9i + 3\nclass(x)\n\n# character/string\nx <- \"R is exciting\"\nclass(x)\n\n# logical/boolean\nx <- TRUE\nclass(x)",
+        "numeric",
+        "integer",
+        "complex",
+        "character",
+        "logical",
+        "class()"
+      ]
+    },
+    {
+      "title": "R Numbers",
+      "summary": "Numbers\nThere are three number types in R:\nnumeric\ninteger\ncomplex\nVariables of number types are created when you assign a value to them:\nExample\nNumeric\nA numeric data type is the most common type in R, and contains any number with or without a decimal, like: 10.5, 55, 787:\nExample\nInteger\nIntegers are numeric data without decimals. This is used when you are certain that you will never create a variable that should contain decimals. To create an integer variable, you must use the letter L after the integer value:\nExample\nREMOVE ADS\nComplex\nA complex number is written with an \"i\" as the imaginary part:\nExample\nType Conversion\nYou can convert from one type to another with the following functions:\nas.numeric()\nas.integer()\nas.complex()\nExample",
+      "examples": [
+        "x <- 10.5   # numeric\ny <- 10L    # integer\nz <- 1i     # complex",
+        "x <- 10.5\ny <- 55\n\n# Print values of x and y\nx\ny\n\n# Print the class name of x and y\nclass(x)\nclass(y)",
+        "x <- 1000L\ny <- 55L\n\n# Print values of x and y\nx\ny\n\n# Print the class name of x and y\nclass(x)\nclass(y)",
+        "x <- 3+5i\ny <- 5i\n\n# Print values of x and y\nx\ny\n\n# Print the class name of x and y\nclass(x)\nclass(y)",
+        "x <- 1L # integer\ny <- 2 # numeric\n\n# convert from integer to numeric:\na <- as.numeric(x)\n\n# convert from numeric to integer:\nb <- as.integer(y)\n\n# print values of x and y\nx\ny\n\n# print the class name of a and b\nclass(a)\nclass(b)",
+        "numeric",
+        "integer",
+        "complex",
+        "L",
+        "i",
+        "as.numeric()",
+        "as.integer()",
+        "as.complex()"
+      ]
+    },
+    {
+      "title": "R Math",
+      "summary": "Simple Math\nIn R, you can use operators to perform common mathematical operations on numbers.\nThe + operator is used to add together two values:\nExample\nAnd the - operator is used for subtraction:\nExample\nYou will learn more about available operators in our R Operators Tutorial.\nBuilt-in Math Functions\nR also has many built-in math functions that allows you to perform mathematical tasks on numbers.\nFor example, the min() and max() functions can be used to find the lowest or highest number in a set:\nExample\nREMOVE ADS\nsqrt()\nThe sqrt() function returns the square root of a number:\nExample\nabs()\nThe abs() function returns the absolute (positive) value of a number:\nExample\nceiling() and floor()\nThe ceiling() function rounds a number upwards to its nearest integer, and the floor() function rounds a number downwards to its nearest integer, and returns the result:\nExample",
+      "examples": [
+        "10 + 5",
+        "10 - 5",
+        "max(5, 10, 15)\n\nmin(5, 10, 15)",
+        "sqrt(16)",
+        "abs(-4.7)",
+        "ceiling(1.4)\n\nfloor(1.4)",
+        "+",
+        "-",
+        "min()",
+        "max()",
+        "sqrt()",
+        "abs()",
+        "ceiling()",
+        "floor()"
+      ]
+    },
+    {
+      "title": "R Strings",
+      "summary": "String Literals\nStrings are used for storing text.\nA string is surrounded by either single quotation marks, or double quotation marks:\n\"hello\" is the same as 'hello':\nExample\nAssign a String to a Variable\nAssigning a string to a variable is done with the variable followed by the <- operator and the string:\nExample\nMultiline Strings\nYou can assign a multiline string to a variable like this:\nExample\nHowever, note that R will add a \"\\n\" at the end of each line break. This is called an escape character, and the n character indicates a new line.\nIf you want the line breaks to be inserted at the same position as in the code, use the cat() function:\nExample\nREMOVE ADS\nString Length\nThere are many useful string functions in R.\nFor example, to find the number of characters in a string, use the nchar() function:\nExample\nCheck a String\nUse the grepl() function to check if a character or a sequence of characters are present in a string:\nExample\nCombine Two Strings\nUse the paste() function to merge/concatenate two strings:\nExample",
+      "examples": [
+        "\"hello\"\n'hello'",
+        "str <- \"Hello\"\nstr # print the value of str",
+        "str <- \"Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\"\n\nstr # print the value of str",
+        "str <- \"Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\"\n\ncat(str)",
+        "str <- \"Hello World!\"\n\nnchar(str)",
+        "str <- \"Hello World!\"\n\ngrepl(\"H\", str)\ngrepl(\"Hello\", str)\ngrepl(\"X\", str)",
+        "str1 <- \"Hello\"\nstr2 <- \"World\"\n\npaste(str1, str2)",
+        "\"hello\"",
+        "'hello'",
+        "<-",
+        "cat()",
+        "nchar()",
+        "grepl()",
+        "paste()"
+      ]
+    },
+    {
+      "title": "R Escape Characters",
+      "summary": "Escape Characters\nTo insert characters that are illegal in a string, you must use an escape character.\nAn escape character is a backslash \\ followed by the character you want to insert.\nAn example of an illegal character is a double quote inside a string that is surrounded by double quotes:\nExample\nResult:\nTo fix this problem, use the escape character \\\":\nExample\nThe escape character allows you to use double quotes when you normally would not be allowed:\nNote that auto-printing the str variable will print the backslash in the output. You can use the cat() function to print it without backslash.\nOther escape characters in R:",
+      "examples": [
+        "str <- \"We are the so-called \"Vikings\", from the north.\"\n\nstr",
+        "str <- \"We are the so-called \\\"Vikings\\\", from the north.\"\n\nstr\ncat(str)",
+        "\\",
+        "Error: unexpected symbol in \"str <- \"We are the so-called \"Vikings\"",
+        "\\\"",
+        "cat()"
+      ]
+    },
+    {
+      "title": "R Booleans / Logical Values",
+      "summary": "Booleans (Logical Values)\nIn programming, you often need to know if an expression is true or false.\nYou can evaluate any expression in R, and get one of two answers, TRUE or FALSE.\nWhen you compare two values, the expression is evaluated and R returns the logical answer:\nExample\nYou can also compare two variables:\nExample\nYou can also run a condition in an if statement, which you will learn much more about in the if..else chapter.\nExample",
+      "examples": [
+        "10 > 9    # TRUE because 10 is greater than 9\n10 == 9   # FALSE because 10 is not equal to 9\n10 < 9    # FALSE because 10 is greater than 9",
+        "a <- 10\nb <- 9\n\na > b",
+        "a <- 200\nb <- 33\n\nif (b > a) {\nprint (\"b is greater than a\")\n} else {\nprint(\"b is not greater than a\")\n}",
+        "TRUE",
+        "FALSE",
+        "if"
+      ]
+    },
+    {
+      "title": "R Operators",
+      "summary": "Operators\nOperators are used to perform operations on variables and values.\nIn the example below, we use the + operator to add together two values:\nExample\nR divides the operators in the following groups:\nArithmetic operators\nAssignment operators\nComparison operators\nLogical operators\nMiscellaneous operators\nR Arithmetic Operators\nArithmetic operators are used with numeric values to perform common mathematical operations:\nR Assignment Operators\nAssignment operators are used to assign values to variables:\nExample\nNote: <<- is a global assigner. You will learn more about this in the Global Variable chapter.\nIt is also possible to turn the direction of the assignment operator.\nx <- 3 is equal to 3 -> x\nREMOVE ADS\nR Comparison Operators\nComparison operators are used to compare two values:\nR Logical Operators\nLogical operators are used to combine conditional statements:\nR Miscellaneous Operators\nMiscellaneous operators are used to manipulate data:\nNote: You will learn more about Matrix multiplication and matrices in a later chapter.",
+      "examples": [
+        "10 + 5",
+        "my_var <- 3\n\nmy_var <<- 3\n\n3 -> my_var\n\n3 ->> my_var\n\nmy_var # print my_var",
+        "+",
+        "<<-"
+      ]
+    },
+    {
+      "title": "R If ... Else",
+      "summary": "Conditions and If Statements\nYou already know that R supports familiar comparison conditions from mathematics, such as:\nThese conditions can be used in several ways, most commonly in \"if statements\" and loops.\nThe if Statement\nAn \"if statement\" is written with the if keyword, and it is used to specify a block of code to be executed if a condition is TRUE:\nExample\nIn this example we use two variables, a and b, which are used as a part of the if statement to test whether b is greater than a. As a is 33, and b is 200, we know that 200 is greater than 33, and so we print to screen that \"b is greater than a\".\nR uses curly brackets { } to define the scope in the code.\nElse If\nThe else if keyword is R's way of saying \"if the previous conditions were not true, then try this condition\":\nExample\nIn this example a is equal to b, so the first condition is not true, but the else if condition is true, so we print to screen that \"a and b are equal\".\nYou can use as many else if statements as you want in R.\nIf Else\nThe else keyword catches anything which isn't caught by the preceding conditions:\nExample\nIn this example, a is greater than b, so the first condition is not true, also the else if condition is not true, so we go to the else condition and print to screen that \"a is greater than b\".\nYou can also use else without else if:\nExample",
+      "examples": [
+        "a <- 33\nb <- 200\n\nif (b > a) {\nprint(\"b is greater than a\")\n}",
+        "a <- 33\nb <- 33\n\nif (b > a) {\nprint(\"b is greater than a\")\n} else if (a == b) {\nprint (\"a and b are equal\")\n}",
+        "a <- 200\nb <- 33\n\nif (b > a) {\nprint(\"b is greater than a\")\n} else if (a == b) {\nprint(\"a and b are equal\")\n} else {\nprint(\"a is greater than b\")\n}",
+        "a <- 200\nb <- 33\n\nif (b > a) {\nprint(\"b is greater than a\")\n} else {\nprint(\"b is not greater than a\")\n}",
+        "if",
+        "TRUE",
+        "else if",
+        "a",
+        "b",
+        "else"
+      ]
+    },
+    {
+      "title": "R Nested If",
+      "summary": "Nested If Statements\nYou can also have if statements inside if statements, this is called nested if statements.\nExample",
+      "examples": [
+        "x <- 41\n\nif (x > 10) {\nprint(\"Above ten\")\nif (x > 20) {\nprint(\"and also above 20!\")\n} else {\nprint(\"but not above 20.\")\n}\n} else {\nprint(\"below 10.\")\n}",
+        "if"
+      ]
+    },
+    {
+      "title": "R - AND OR Operators",
+      "summary": "AND\nThe & symbol (and) is a logical operator, and is used to combine conditional statements:\nExample\nTest if a is greater than b, AND if c is greater than a:\nOR\nThe | symbol (or) is a logical operator, and is used to combine conditional statements:\nExample\nTest if a is greater than b, or if c is greater than a:",
+      "examples": [
+        "a <- 200\nb <- 33\nc <- 500\n\nif (a > b & c > a) {\nprint(\"Both conditions are true\")\n}",
+        "a <- 200\nb <- 33\nc <- 500\n\nif (a > b | a > c) {\nprint(\"At least one of the conditions is true\")\n}",
+        "|"
+      ]
+    },
+    {
+      "title": "R While Loop",
+      "summary": "Loops\nLoops can execute a block of code as long as a specified condition is reached.\nLoops are handy because they save time, reduce errors, and they make code more readable.\nR has two loop commands:\nwhile loops\nfor loops\nR While Loops\nWith the while loop we can execute a set of statements as long as a condition is TRUE:\nExample\nPrint i as long as i is less than 6:\nIn the example above, the loop will continue to produce numbers ranging from 1 to 5. The loop will stop at 6 because 6 < 6 is FALSE.\nThe while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.\nNote: remember to increment i, or else the loop will continue forever.\nBreak\nWith the break statement, we can stop the loop even if the while condition is TRUE:\nExample\nExit the loop if i is equal to 4.\nThe loop will stop at 3 because we have chosen to finish the loop by using the break statement when i is equal to 4 (i == 4).\nREMOVE ADS\nNext\nWith the next statement, we can skip an iteration without terminating the loop:\nExample\nSkip the value of 3:\nWhen the loop passes the value 3, it will skip it and continue to loop.\nYahtzee!\nIf .. Else Combined with a While Loop\nTo demonstrate a practical example, let us say we play a game of Yahtzee!\nExample\nPrint \"Yahtzee!\" If the dice number is 6:\nIf the loop passes the values ranging from 1 to 5, it prints \"No Yahtzee\". Whenever it passes the value 6, it prints \"Yahtzee!\".",
+      "examples": [
+        "i <- 1\nwhile (i < 6) {\nprint(i)\ni <- i + 1\n}",
+        "i <- 1\nwhile (i < 6) {\nprint(i)\ni <- i + 1\nif (i == 4) {\nbreak\n}\n}",
+        "i <- 0\nwhile (i < 6) {\ni <- i + 1\nif (i == 3) {\nnext\n}\nprint(i)\n}",
+        "dice <- 1\nwhile (dice <= 6) {\nif (dice < 6) {\nprint(\"No Yahtzee\")\n} else {\nprint(\"Yahtzee!\")\n}\ndice <- dice + 1\n}",
+        "while",
+        "for",
+        "i",
+        "6 < 6",
+        "break",
+        "i == 4",
+        "next"
+      ]
+    },
+    {
+      "title": "R For Loop",
+      "summary": "For Loops\nA for loop is used for iterating over a sequence:\nExample\nThis is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-oriented programming languages.\nWith the for loop we can execute a set of statements, once for each item in a vector, array, list, etc..\nYou will learn about lists and vectors, etc in a later chapter.\nExample\nPrint every item in a list:\nExample\nPrint the number of dices:\nThe for loop does not require an indexing variable to set beforehand, like with while loops.\nBreak\nWith the break statement, we can stop the loop before it has looped through all the items:\nExample\nStop the loop at \"cherry\":\nThe loop will stop at \"cherry\" because we have chosen to finish the loop by using the break statement when x is equal to \"cherry\" (x == \"cherry\").\nREMOVE ADS\nNext\nWith the next statement, we can skip an iteration without terminating the loop:\nExample\nSkip \"banana\":\nWhen the loop passes \"banana\", it will skip it and continue to loop.\nYahtzee!\nIf .. Else Combined with a For Loop\nTo demonstrate a practical example, let us say we play a game of Yahtzee!\nExample\nPrint \"Yahtzee!\" If the dice number is 6:\nIf the loop reaches the values ranging from 1 to 5, it prints \"No Yahtzee\" and its number. When it reaches the value 6, it prints \"Yahtzee!\" and its number.",
+      "examples": [
+        "for (x in 1:10) {\nprint(x)\n}",
+        "fruits <- list(\"apple\", \"banana\", \"cherry\")\n\nfor (x in fruits) {\nprint(x)\n}",
+        "dice <- c(1, 2, 3, 4, 5, 6)\n\nfor (x in dice) {\nprint(x)\n}",
+        "fruits <- list(\"apple\", \"banana\", \"cherry\")\n\nfor (x in fruits) {\nif (x == \"cherry\") {\nbreak\n}\nprint(x)\n}",
+        "fruits <- list(\"apple\", \"banana\", \"cherry\")\n\nfor (x in fruits) {\nif (x == \"banana\") {\nnext\n}\nprint(x)\n}",
+        "dice <- 1:6\n\nfor(x in dice) {\nif (x == 6) {\nprint(paste(\"The dice number is\", x, \"Yahtzee!\"))\n} else {\nprint(paste(\"The dice number is\", x, \"Not Yahtzee\"))\n}\n}",
+        "for",
+        "while",
+        "break",
+        "x",
+        "x == \"cherry\"",
+        "next"
+      ]
+    },
+    {
+      "title": "R Nested Loops",
+      "summary": "Nested Loops\nIt is also possible to place a loop inside another loop. This is called a nested loop:\nExample\nPrint the adjective of each fruit in a list:",
+      "examples": [
+        "adj <- list(\"red\", \"big\", \"tasty\")\n\nfruits <- list(\"apple\", \"banana\", \"cherry\")\nfor (x in adj) {\nfor (y in fruits) {\nprint(paste(x, y))\n}\n}"
+      ]
+    },
+    {
+      "title": "R Functions",
+      "summary": "A function is a block of code which only runs when it is called.\nYou can pass data, known as parameters, into a function.\nA function can return data as a result.\nCreating a Function\nTo create a function, use the function() keyword:\nExample\nCall a Function\nTo call a function, use the function name followed by parenthesis, like my_function():\nExample\nArguments\nInformation can be passed into functions as arguments.\nArguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.\nThe following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:\nExample\nParameters or Arguments?\nThe terms \"parameter\" and \"argument\" can be used for the same thing: information that are passed into a function.\nFrom a function's perspective:\nA parameter is the variable listed inside the parentheses in the function definition.\nAn argument is the value that is sent to the function when it is called.\nREMOVE ADS\nNumber of Arguments\nBy default, a function must be called with the correct number of arguments. Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less:\nExample\nThis function expects 2 arguments, and gets 2 arguments:\nIf you try to call the function with 1 or 3 arguments, you will get an error:\nExample\nThis function expects 2 arguments, and gets 1 argument:\nDefault Parameter Value\nThe following example shows how to use a default parameter value.\nIf we call the function without an argument, it uses the default value:\nExample\nReturn Values\nTo let a function return a result, use the return() function:\nExample\nThe output of the code above will be:",
+      "examples": [
+        "my_function <- function() { # create a function with the name my_function\nprint(\"Hello World!\")\n}",
+        "my_function <- function() {\nprint(\"Hello World!\")\n}\n\nmy_function() # call the function named my_function",
+        "my_function <- function(fname) {\npaste(fname, \"Griffin\")\n}\n\nmy_function(\"Peter\")\nmy_function(\"Lois\")\nmy_function(\"Stewie\")",
+        "my_function <- function(fname, lname) {\npaste(fname, lname)\n}\n\nmy_function(\"Peter\", \"Griffin\")",
+        "my_function <- function(fname, lname) {\npaste(fname, lname)\n}\n\nmy_function(\"Peter\")",
+        "my_function <- function(country = \"Norway\") {\npaste(\"I am from\", country)\n}\n\nmy_function(\"Sweden\")\nmy_function(\"India\")\nmy_function() # will get the default value, which is Norway\nmy_function(\"USA\")",
+        "my_function <- function(x) {\nreturn (5 * x)\n}\n\nprint(my_function(3))\nprint(my_function(5))\nprint(my_function(9))",
+        "function()",
+        "return()",
+        "[1] 15\n[1] 25\n[1] 45"
+      ]
+    },
+    {
+      "title": "R Nested Functions",
+      "summary": "Nested Functions\nThere are two ways to create a nested function:\nCall a function within another function.\nWrite a function within a function.\nExample\nCall a function within another function:\nThe function tells x to add y.\nThe first input Nested_function(2,2) is \"x\" of the main function.\nThe second input Nested_function(3,3) is \"y\" of the main function.\nThe output is therefore (2+2) + (3+3) = 10.\nExample\nWrite a function within a function:\nYou cannot directly call the function because the Inner_func has been defined (nested) inside the Outer_func.\nWe need to call Outer_func first in order to call Inner_func as a second step.\nWe need to create a new variable called output and give it a value, which is 3 here.\nWe then print the output with the desired value of \"y\", which in this case is 5.\nThe output is therefore 8 (3 + 5).",
+      "examples": [
+        "Nested_function <- function(x, y) {\na <- x + y\nreturn(a)\n}\n\nNested_function(Nested_function(2,2), Nested_function(3,3))",
+        "Outer_func <- function(x) {\nInner_func <- function(y) {\na <- x + y\nreturn(a)\n}\nreturn (Inner_func)\n}\noutput <- Outer_func(3) # To call the Outer_func\noutput(5)"
+      ]
+    },
+    {
+      "title": "R Function Recursion",
+      "summary": "Recursion\nR also accepts function recursion, which means a defined function can call itself.\nRecursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result.\nThe developer should be very careful with recursion as it can be quite easy to slip into writing a function which never terminates, or one that uses excess amounts of memory or processor power. However, when written correctly, recursion can be a very efficient and mathematically-elegant approach to programming.\nIn this example, tri_recursion() is a function that we have defined to call itself (\"recurse\"). We use the k variable as the data, which decrements (-1) every time we recurse. The recursion ends when the condition is not greater than 0 (i.e. when it is 0).\nTo a new developer it can take some time to work out how exactly this works, best way to find out is by testing and modifying it.\nExample",
+      "examples": [
+        "tri_recursion <- function(k) {\nif (k > 0) {\nresult <- k + tri_recursion(k - 1)\nprint(result)\n} else {\nresult = 0\nreturn(result)\n}\n}\ntri_recursion(6)",
+        "tri_recursion()",
+        "k",
+        "-1"
+      ]
+    },
+    {
+      "title": "R Global Variables",
+      "summary": "Global Variables\nVariables that are created outside of a function are known as global variables.\nGlobal variables can be used by everyone, both inside of functions and outside.\nExample\nCreate a variable outside of a function and use it inside the function:\nIf you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. The global variable with the same name will remain as it was, global and with the original value.\nExample\nCreate a variable inside of a function with the same name as the global variable:\nIf you try to print txt, it will return \"global variable\" because we are printing txt outside the function.\nREMOVE ADS\nThe Global Assignment Operator\nNormally, when you create a variable inside a function, that variable is local, and can only be used inside that function.\nTo create a global variable inside a function, you can use the global assignment operator <<-\nExample\nIf you use the assignment operator <<-, the variable belongs to the global scope:\nAlso, use the global assignment operator if you want to change a global variable inside a function:\nExample\nTo change the value of a global variable inside a function, refer to the variable by using the global assignment operator <<-:",
+      "examples": [
+        "txt <- \"awesome\"\nmy_function <- function() {\npaste(\"R is\", txt)\n}\n\nmy_function()",
+        "txt <- \"global variable\"\nmy_function <- function() {\ntxt = \"fantastic\"\npaste(\"R is\", txt)\n}\n\nmy_function()\n\ntxt # print txt",
+        "my_function <- function() {\ntxt <<- \"fantastic\"\npaste(\"R is\", txt)\n}\n\nmy_function()\n\nprint(txt)",
+        "txt <- \"awesome\"\nmy_function <- function() {\ntxt <<- \"fantastic\"\npaste(\"R is\", txt)\n}\n\nmy_function()\n\npaste(\"R is\", txt)",
+        "txt",
+        "<<-"
+      ]
+    },
+    {
+      "title": "R Data Structures",
+      "summary": "Data Structures\nData structures are used to store and organize values.\nR provides many built-in data structures. Each is used to handle data in different ways:\nVectors\nLists\nMatrices\nArrays\nData Frames\nWe will explore all of them in detail later, but for now, here's a quick introduction to each one.\nVectors\nA vector is the most basic data structure in R. It contains a list of items of the same type.\nExample\nLists\nA list can hold different types of data in one structure. You can combine numbers, strings, vectors, and even other lists.\nExample\nMatrices\nA matrix is a 2D data structure where all elements are of the same type. It is like a table with rows and columns.\nExample\nUse nrow and ncol to control the size of the matrix.\nArrays\nAn array is like a matrix but can have more than two dimensions. It stores elements of the same type in multiple dimensions.\nExample\nArrays are useful for working with 3D or higher-dimensional data.\nData Frames\nA data frame is like a table in a spreadsheet. It can hold different types of data across multiple columns.\nExample\nSummary\nNext, let's take a closer look at each data structure in more detail.",
+      "examples": [
+        "# Vector of strings\nfruits <- c(\"banana\", \"apple\", \"orange\")\n\n# Print fruits\nfruits",
+        "# List of strings\nthislist <- list(\"apple\", \"banana\", 50, 100)\n\n# Print the list\nthislist",
+        "# Create a matrix\nthismatrix <- matrix(c(1,2,3,4,5,6), nrow = 3, ncol = 2)\n\n# Print the matrix\nthismatrix",
+        "# An array with one dimension with values ranging from 1 to 24\nthisarray <- c(1:24)\nthisarray\n\n# An array with more than one dimension\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\nmultiarray",
+        "# Create a data frame\nData_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\n# Print the data frame\nData_Frame",
+        "nrow",
+        "ncol"
+      ]
+    },
+    {
+      "title": "R Vectors",
+      "summary": "Vectors\nA vector is simply a list of items that are of the same type.\nTo combine the list of items to a vector, use the c() function and separate the items by a comma.\nIn the example below, we create a vector variable called fruits, that combine strings:\nExample\nIn this example, we create a vector that combines numerical values:\nExample\nTo create a vector with numerical values in a sequence, use the : operator:\nExample\nYou can also create numerical values with decimals in a sequence, but note that if the last element does not belong to the sequence, it is not used:\nExample\nResult:\nIn the example below, we create a vector of logical values:\nExample\nVector Length\nTo find out how many items a vector has, use the length() function:\nExample\nREMOVE ADS\nSort a Vector\nTo sort items in a vector alphabetically or numerically, use the sort() function:\nExample\nAccess Vectors\nYou can access the vector items by referring to its index number inside brackets []. The first item has index 1, the second item has index 2, and so on:\nExample\nYou can also access multiple elements by referring to different index positions with the c() function:\nExample\nYou can also use negative index numbers to access all items except the ones specified:\nExample\nChange an Item\nTo change the value of a specific item, refer to the index number:\nExample\nRepeat Vectors\nTo repeat vectors, use the rep() function:\nExample\nRepeat each value:\nExample\nRepeat the sequence of the vector:\nExample\nRepeat each value independently:\nGenerating Sequenced Vectors\nOne of the examples on top, showed you how to create a vector with numerical values in a sequence with the : operator:\nExample\nTo make bigger or smaller steps in a sequence, use the seq() function:\nExample\nNote: The seq() function has three parameters: from is where the sequence starts, to is where the sequence stops, and by is the interval of the sequence.",
+      "examples": [
+        "# Vector of strings\nfruits <- c(\"banana\", \"apple\", \"orange\")\n\n# Print fruits\nfruits",
+        "# Vector of numerical values\nnumbers <- c(1, 2, 3)\n\n# Print numbers\nnumbers",
+        "# Vector with numerical values in a sequence\nnumbers <- 1:10\n\nnumbers",
+        "# Vector with numerical decimals in a sequence\nnumbers1 <- 1.5:6.5\nnumbers1\n\n# Vector with numerical decimals in a sequence where the last element is not used\nnumbers2 <- 1.5:6.3\nnumbers2",
+        "# Vector of logical values\nlog_values <- c(TRUE, FALSE, TRUE, FALSE)\n\nlog_values",
+        "fruits <- c(\"banana\", \"apple\", \"orange\")\n\nlength(fruits)",
+        "fruits <- c(\"banana\", \"apple\", \"orange\", \"mango\", \"lemon\")\nnumbers <- c(13, 3, 5, 7, 20, 2)\n\nsort(fruits)  # Sort a string\nsort(numbers) # Sort numbers",
+        "fruits <- c(\"banana\", \"apple\", \"orange\")\n\n# Access the first item (banana)\nfruits[1]",
+        "fruits <- c(\"banana\", \"apple\", \"orange\", \"mango\", \"lemon\")\n\n# Access the first and third item (banana and orange)\nfruits[c(1, 3)]",
+        "fruits <- c(\"banana\", \"apple\", \"orange\", \"mango\", \"lemon\")\n\n# Access all items except for the first item\nfruits[c(-1)]",
+        "fruits <- c(\"banana\", \"apple\", \"orange\", \"mango\", \"lemon\")\n\n# Change \"banana\" to \"pear\"\nfruits[1] <- \"pear\"\n\n# Print fruits\nfruits",
+        "repeat_each <- rep(c(1,2,3), each = 3)\n\nrepeat_each",
+        "repeat_times <- rep(c(1,2,3), times = 3)\n\nrepeat_times",
+        "repeat_indepent <- rep(c(1,2,3), times = c(5,2,1))\n\nrepeat_indepent",
+        "numbers <- 1:10\n\nnumbers",
+        "numbers <- seq(from = 0, to = 100, by = 20)\n\nnumbers",
+        "c()",
+        ":",
+        "[1] 1.5 2.5 3.5 4.5 5.5 6.5\n[1] 1.5 2.5 3.5 4.5 5.5",
+        "length()",
+        "sort()",
+        "[]",
+        "rep()",
+        "seq()",
+        "from",
+        "to",
+        "by"
+      ]
+    },
+    {
+      "title": "R Lists",
+      "summary": "Lists\nA list in R can contain many different data types inside it. A list is a collection of data which is ordered and changeable.\nTo create a list, use the list() function:\nExample\nAccess Lists\nYou can access the list items by referring to its index number, inside brackets. The first item has index 1, the second item has index 2, and so on:\nExample\nChange Item Value\nTo change the value of a specific item, refer to the index number:\nExample\nList Length\nTo find out how many items a list has, use the length() function:\nExample\nREMOVE ADS\nCheck if Item Exists\nTo find out if a specified item is present in a list, use the %in% operator:\nExample\nCheck if \"apple\" is present in the list:\nAdd List Items\nTo add an item to the end of the list, use the append() function:\nExample\nAdd \"orange\" to the list:\nTo add an item to the right of a specified index, add \"after=index number\" in the append() function:\nExample\nAdd \"orange\" to the list after \"banana\" (index 2):\nRemove List Items\nYou can also remove list items. The following example creates a new, updated list without an \"apple\" item:\nExample\nRemove \"apple\" from the list:\nRange of Indexes\nYou can specify a range of indexes by specifying where to start and where to end the range, by using the : operator:\nExample\nReturn the second, third, fourth and fifth item:\nNote: The search will start at index 2 (included) and end at index 5 (included).\nRemember that the first item has index 1.\nLoop Through a List\nYou can loop through the list items by using a for loop:\nExample\nPrint all items in the list, one by one:\nJoin Two Lists\nThere are several ways to join, or concatenate, two or more lists in R.\nThe most common way is to use the c() function, which combines two elements together:\nExample",
+      "examples": [
+        "# List of strings\nthislist <- list(\"apple\", \"banana\", \"cherry\")\n\n# Print the list\nthislist",
+        "thislist <- list(\"apple\", \"banana\", \"cherry\")\n\nthislist[1]",
+        "thislist <- list(\"apple\", \"banana\", \"cherry\")\nthislist[1] <- \"blackcurrant\"\n\n# Print the updated list\nthislist",
+        "thislist <- list(\"apple\", \"banana\", \"cherry\")\n\nlength(thislist)",
+        "thislist <- list(\"apple\", \"banana\", \"cherry\")\n\n\"apple\" %in% thislist",
+        "thislist <- list(\"apple\", \"banana\", \"cherry\")\n\nappend(thislist, \"orange\")",
+        "thislist <- list(\"apple\", \"banana\", \"cherry\")\n\nappend(thislist, \"orange\", after = 2)",
+        "thislist <- list(\"apple\", \"banana\", \"cherry\")\n\nnewlist <- thislist[-1]\n\n# Print the new list\nnewlist",
+        "thislist <- list(\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\")\n\n(thislist)[2:5]",
+        "thislist <- list(\"apple\", \"banana\", \"cherry\")\n\nfor (x in thislist) {\nprint(x)\n}",
+        "list1 <- list(\"a\", \"b\", \"c\")\nlist2 <- list(1,2,3)\nlist3 <- c(list1,list2)\n\nlist3",
+        "list()",
+        "length()",
+        "%in%",
+        "append()",
+        "after=index number",
+        ":",
+        "for",
+        "c()"
+      ]
+    },
+    {
+      "title": "R Matrices",
+      "summary": "Matrices\nA matrix is a two dimensional data set with columns and rows.\nA column is a vertical representation of data, while a row is a horizontal representation of data.\nA matrix can be created with the matrix() function. Specify the nrow and ncol parameters to get the amount of rows and columns:\nExample\nNote: Remember the c() function is used to concatenate items together.\nYou can also create a matrix with strings:\nExample\nAccess Matrix Items\nYou can access the items by using [ ] brackets. The first number \"1\" in the bracket specifies the row-position, while the second number \"2\" specifies the column-position:\nExample\nThe whole row can be accessed if you specify a comma after the number in the bracket:\nExample\nThe whole column can be accessed if you specify a comma before the number in the bracket:\nExample\nREMOVE ADS\nAccess More Than One Row\nMore than one row can be accessed if you use the c() function:\nExample\nAccess More Than One Column\nMore than one column can be accessed if you use the c() function:\nExample\nAdd Rows and Columns\nUse the cbind() function to add additional columns in a Matrix:\nExample\nNote: The cells in the new column must be of the same length as the existing matrix.\nUse the rbind() function to add additional rows in a Matrix:\nExample\nNote: The cells in the new row must be of the same length as the existing matrix.\nRemove Rows and Columns\nUse the c() function to remove rows and columns in a Matrix:\nExample\nCheck if an Item Exists\nTo find out if a specified item is present in a matrix, use the %in% operator:\nExample\nCheck if \"apple\" is present in the matrix:\nNumber of Rows and Columns\nUse the dim() function to find the number of rows and columns in a Matrix:\nExample\nMatrix Length\nUse the length() function to find the dimension of a Matrix:\nExample\nTotal cells in the matrix is the number of rows multiplied by number of columns.\nIn the example above: Dimension = 2*2 = 4.\nLoop Through a Matrix\nYou can loop through a Matrix using a for loop. The loop will start at the first row, moving right:\nExample\nLoop through the matrix items and print them:\nCombine two Matrices\nAgain, you can use the rbind() or cbind() function to combine two or more matrices together:\nExample",
+      "examples": [
+        "# Create a matrix\nthismatrix <- matrix(c(1,2,3,4,5,6), nrow = 3, ncol = 2)\n\n# Print the matrix\nthismatrix",
+        "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\"), nrow = 2, ncol = 2)\n\nthismatrix",
+        "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\"), nrow = 2, ncol = 2)\n\nthismatrix[1, 2]",
+        "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\"), nrow = 2, ncol = 2)\n\nthismatrix[2,]",
+        "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\",\"grape\", \"pineapple\", \"pear\", \"melon\", \"fig\"), nrow = 3, ncol = 3)\n\nthismatrix[c(1,2),]",
+        "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\",\"grape\", \"pineapple\", \"pear\", \"melon\", \"fig\"), nrow = 3, ncol = 3)\n\nthismatrix[, c(1,2)]",
+        "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\",\"grape\", \"pineapple\", \"pear\", \"melon\", \"fig\"), nrow = 3, ncol = 3)\n\nnewmatrix <- cbind(thismatrix, c(\"strawberry\", \"blueberry\", \"raspberry\"))\n\n# Print the new matrix\nnewmatrix",
+        "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\", \"mango\", \"pineapple\"), nrow = 3, ncol =2)\n\n#Remove the first row and the first column\nthismatrix <- thismatrix[-c(1), -c(1)]\n\nthismatrix",
+        "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\"), nrow = 2, ncol = 2)\n\n\"apple\" %in% thismatrix",
+        "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\"), nrow = 2, ncol = 2)\n\ndim(thismatrix)",
+        "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\"), nrow = 2, ncol = 2)\n\nlength(thismatrix)",
+        "thismatrix <- matrix(c(\"apple\", \"banana\", \"cherry\", \"orange\"), nrow = 2, ncol = 2)\n\nfor (rows in 1:nrow(thismatrix)) {\nfor (columns in 1:ncol(thismatrix)) {\nprint(thismatrix[rows, columns])\n}\n}",
+        "# Combine matrices\nMatrix1 <- matrix(c(\"apple\", \"banana\", \"cherry\", \"grape\"), nrow = 2, ncol = 2)\nMatrix2 <- matrix(c(\"orange\", \"mango\", \"pineapple\", \"watermelon\"), nrow = 2, ncol = 2)\n\n# Adding it as a rows\nMatrix_Combined <- rbind(Matrix1, Matrix2)\nMatrix_Combined\n\n# Adding it as a columns\nMatrix_Combined <- cbind(Matrix1, Matrix2)\nMatrix_Combined",
+        "matrix()",
+        "nrow",
+        "ncol",
+        "c()",
+        "[ ]",
+        "cbind()",
+        "rbind()",
+        "%in%",
+        "dim()",
+        "length()",
+        "for"
+      ]
+    },
+    {
+      "title": "R Arrays",
+      "summary": "Arrays\nCompared to matrices, arrays can have more than two dimensions.\nWe can use the array() function to create an array, and the dim parameter to specify the dimensions:\nExample\nIn the example above we create an array with the values 1 to 24.\nHow does dim=c(4,3,2) work?\nThe first and second number in the bracket specifies the amount of rows and columns.\nThe last number in the bracket specifies how many dimensions we want.\nNote: Arrays can only have one data type.\nAccess Array Items\nYou can access the array elements by referring to the index position. You can use the [] brackets to access the desired elements from an array:\nExample\nThe syntax is as follow: array[row position, column position, matrix level]\nYou can also access the whole row or column from a matrix in an array, by using the c() function:\nExample\nA comma (,) before c() means that we want to access the column.\nA comma (,) after c() means that we want to access the row.\nREMOVE ADS\nCheck if an Item Exists\nTo find out if a specified item is present in an array, use the %in% operator:\nExample\nCheck if the value \"2\" is present in the array:\nAmount of Rows and Columns\nUse the dim() function to find the amount of rows and columns in an array:\nExample\nArray Length\nUse the length() function to find the dimension of an array:\nExample\nLoop Through an Array\nYou can loop through the array items by using a for loop:\nExample",
+      "examples": [
+        "# An array with one dimension with values ranging from 1 to 24\nthisarray <- c(1:24)\nthisarray\n\n# An array with more than one dimension\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\nmultiarray",
+        "thisarray <- c(1:24)\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\n\nmultiarray[2, 3, 2]",
+        "thisarray <- c(1:24)\n\n# Access all the items from the first row from matrix one\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\nmultiarray[c(1),,1]\n\n# Access all the items from the first column from matrix one\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\nmultiarray[,c(1),1]",
+        "thisarray <- c(1:24)\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\n\n2 %in% multiarray",
+        "thisarray <- c(1:24)\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\n\ndim(multiarray)",
+        "thisarray <- c(1:24)\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\n\nlength(multiarray)",
+        "thisarray <- c(1:24)\nmultiarray <- array(thisarray, dim = c(4, 3, 2))\n\nfor(x in multiarray){\nprint(x)\n}",
+        "array()",
+        "dim",
+        "dim=c(4,3,2)",
+        "[]",
+        "c()",
+        "%in%",
+        "dim()",
+        "length()",
+        "for"
+      ]
+    },
+    {
+      "title": "R Data Frames",
+      "summary": "Data Frames\nData Frames are data displayed in a format as a table.\nData Frames can have different types of data inside it. While the first column can be character, the second and third can be numeric or logical. However, each column should have the same type of data.\nUse the data.frame() function to create a data frame:\nExample\nSummarize the Data\nUse the summary() function to summarize the data from a Data Frame:\nExample\nYou will learn more about the summary() function in the statistical part of the R tutorial.\nAccess Items\nWe can use single brackets [ ], double brackets [[ ]] or $ to access columns from a data frame:\nExample\nREMOVE ADS\nAdd Rows\nUse the rbind() function to add new rows in a Data Frame:\nExample\nAdd Columns\nUse the cbind() function to add new columns in a Data Frame:\nExample\nRemove Rows and Columns\nUse the c() function to remove rows and columns in a Data Frame:\nExample\nAmount of Rows and Columns\nUse the dim() function to find the amount of rows and columns in a Data Frame:\nExample\nYou can also use the ncol() function to find the number of columns and nrow() to find the number of rows:\nExample\nData Frame Length\nUse the length() function to find the number of columns in a Data Frame (similar to ncol()):\nExample\nCombining Data Frames\nUse the rbind() function to combine two or more data frames in R vertically:\nExample\nAnd use the cbind() function to combine two or more data frames in R horizontally:\nExample",
+      "examples": [
+        "# Create a data frame\nData_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\n# Print the data frame\nData_Frame",
+        "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\nData_Frame\n\nsummary(Data_Frame)",
+        "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\nData_Frame[1]\n\nData_Frame[[\"Training\"]]\n\nData_Frame$Training",
+        "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\n# Add a new row\nNew_row_DF <- rbind(Data_Frame, c(\"Strength\", 110, 110))\n\n# Print the new row\nNew_row_DF",
+        "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\n# Add a new column\nNew_col_DF <- cbind(Data_Frame, Steps = c(1000, 6000, 2000))\n\n# Print the new column\nNew_col_DF",
+        "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\n# Remove the first row and column\nData_Frame_New <- Data_Frame[-c(1), -c(1)]\n\n# Print the new data frame\nData_Frame_New",
+        "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\ndim(Data_Frame)",
+        "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\nncol(Data_Frame)\nnrow(Data_Frame)",
+        "Data_Frame <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\nlength(Data_Frame)",
+        "Data_Frame1 <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\nData_Frame2 <- data.frame (\nTraining = c(\"Stamina\", \"Stamina\", \"Strength\"),\nPulse = c(140, 150, 160),\nDuration = c(30, 30, 20)\n)\n\nNew_Data_Frame <- rbind(Data_Frame1, Data_Frame2)\nNew_Data_Frame",
+        "Data_Frame3 <- data.frame (\nTraining = c(\"Strength\", \"Stamina\", \"Other\"),\nPulse = c(100, 150, 120),\nDuration = c(60, 30, 45)\n)\n\nData_Frame4 <- data.frame (\nSteps = c(3000, 6000, 2000),\nCalories = c(300, 400, 300)\n)\n\nNew_Data_Frame1 <- cbind(Data_Frame3, Data_Frame4)\nNew_Data_Frame1",
+        "character",
+        "numeric",
+        "logical",
+        "data.frame()",
+        "summary()",
+        "[ ]",
+        "[[ ]]",
+        "$",
+        "rbind()",
+        "cbind()",
+        "c()",
+        "dim()",
+        "ncol()",
+        "nrow()",
+        "length()"
+      ]
+    },
+    {
+      "title": "R Factors",
+      "summary": "Factors\nFactors are used to categorize data. Examples of factors are:\nDemography: Male/Female\nMusic: Rock, Pop, Classic, Jazz\nTraining: Strength, Stamina\nTo create a factor, use the factor() function and add a vector as argument:\nExample\nResult:\nYou can see from the example above that that the factor has four levels (categories): Classic, Jazz, Pop and Rock.\nTo only print the levels, use the levels() function:\nExample\nResult:\nYou can also set the levels, by adding the levels argument inside the factor() function:\nExample\nResult:\nFactor Length\nUse the length() function to find out how many items there are in the factor:\nExample\nResult:\nREMOVE ADS\nAccess Factors\nTo access the items in a factor, refer to the index number, using [] brackets:\nExample\nAccess the third item:\nResult:\nChange Item Value\nTo change the value of a specific item, refer to the index number:\nExample\nChange the value of the third item:\nResult:\nNote that you cannot change the value of a specific item if it is not already specified in the factor. The following example will produce an error:\nExample\nTrying to change the value of the third item (\"Classic\") to an item that does not exist/not predefined (\"Opera\"):\nResult:\nHowever, if you have already specified it inside the levels argument, it will work:\nExample\nChange the value of the third item:\nResult:",
+      "examples": [
+        "[1] Jazz Rock Classic Classic Pop Jazz Rock Jazz Levels: Classic Jazz Pop Rock",
+        "[1] \"Classic\" \"Jazz\" \"Pop\" \"Rock\"",
+        "[1] \"Classic\" \"Jazz\" \"Pop\" \"Rock\" \"Other\"",
+        "[1] 8",
+        "[1] Classic Levels: Classic Jazz Pop Rock",
+        "[1] Pop Levels: Classic Jazz Pop Rock",
+        "Warning message: In `[<-.factor`(`*tmp*`, 3, value = \"Opera\") : invalid factor level, NA generated",
+        "[1] Opera Levels: Classic Jazz Pop Rock Opera",
+        "# Create a factor\nmusic_genre <- factor(c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"))\n\n# Print the factor\nmusic_genre",
+        "music_genre <- factor(c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"))\n\nlevels(music_genre)",
+        "music_genre <- factor(c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"), levels = c(\"Classic\", \"Jazz\", \"Pop\", \"Rock\", \"Other\"))\n\nlevels(music_genre)",
+        "music_genre <- factor(c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"))\n\nmusic_genre[3]",
+        "music_genre <- factor(c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"))\n\nmusic_genre[3] <- \"Pop\"\n\nmusic_genre[3]",
+        "music_genre <- factor(c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"))\n\nmusic_genre[3] <- \"Opera\"\n\nmusic_genre[3]",
+        "music_genre <- factor(c(\"Jazz\", \"Rock\", \"Classic\", \"Classic\", \"Pop\", \"Jazz\", \"Rock\", \"Jazz\"), levels = c(\"Classic\", \"Jazz\", \"Pop\", \"Rock\", \"Opera\"))\n\nmusic_genre[3] <- \"Opera\"\n\nmusic_genre[3]",
+        "factor()",
+        "levels()",
+        "levels",
+        "length()",
+        "[]"
+      ]
+    },
+    {
+      "title": "R Plotting",
+      "summary": "Plot\nThe plot() function is used to draw points (markers) in a diagram.\nThe function takes parameters for specifying points in the diagram.\nParameter 1 specifies points on the x-axis.\nParameter 2 specifies points on the y-axis.\nAt its simplest, you can use the plot() function to plot two numbers against each other:\nExample\nDraw one point in the diagram, at position (1) and position (3):\nResult:\nTo draw more points, use vectors:\nExample\nDraw two points in the diagram, one at position (1, 3) and one in position (8, 10):\nResult:\nREMOVE ADS\nMultiple Points\nYou can plot as many points as you like, just make sure you have the same number of points in both axis:\nExample\nResult:\nFor better organization, when you have many values, it is better to use variables:\nExample\nResult:\nSequences of Points\nIf you want to draw dots in a sequence, on both the x-axis and the y-axis, use the : operator:\nExample\nResult:\nDraw a Line\nThe plot() function also takes a type parameter with the value l to draw a line to connect all the points in the diagram:\nExample\nResult:\nPlot Labels\nThe plot() function also accept other parameters, such as main, xlab and ylab if you want to customize the graph with a main title and different labels for the x and y-axis:\nExample\nResult:\nGraph Appearance\nThere are many other parameters you can use to change the appearance of the points.\nColors\nUse col=\"color\" to add a color to the points:\nExample\nResult:\nSize\nUse cex=number to change the size of the points (1 is default, while 0.5 means 50% smaller, and 2 means 100% larger):\nExample\nResult:\nPoint Shape\nUse pch with a value from 0 to 25 to change the point shape format:\nExample\nResult:\nThe values of the pch parameter ranges from 0 to 25, which means that we can choose up to 26 different types of point shapes:",
+      "examples": [
+        "plot(1, 3)",
+        "plot(c(1, 8), c(3, 10))",
+        "plot(c(1, 2, 3, 4, 5), c(3, 7, 8, 9, 12))",
+        "x <- c(1, 2, 3, 4, 5)\ny <- c(3, 7, 8, 9, 12)\n\nplot(x, y)",
+        "plot(1:10)",
+        "plot(1:10, type=\"l\")",
+        "plot(1:10, main=\"My Graph\", xlab=\"The x-axis\", ylab=\"The y axis\")",
+        "plot(1:10, col=\"red\")",
+        "plot(1:10, cex=2)",
+        "plot(1:10, pch=25, cex=2)",
+        "plot()",
+        ":",
+        "type",
+        "l",
+        "main",
+        "xlab",
+        "ylab",
+        "col=\"color\"",
+        "cex=number",
+        "1",
+        "0.5",
+        "2",
+        "pch"
+      ]
+    },
+    {
+      "title": "R Line",
+      "summary": "Line Graphs\nA line graph has a line that connects all the points in a diagram.\nTo create a line, use the plot() function and add the type parameter with a value of \"l\":\nExample\nResult:\nLine Color\nThe line color is black by default. To change the color, use the col parameter:\nExample\nResult:\nREMOVE ADS\nLine Width\nTo change the width of the line, use the lwd parameter (1 is default, while 0.5 means 50% smaller, and 2 means 100% larger):\nExample\nResult:\nLine Styles\nThe line is solid by default. Use the lty parameter with a value from 0 to 6 to specify the line format.\nFor example, lty=3 will display a dotted line instead of a solid line:\nExample\nResult:\nAvailable parameter values for lty:\n0 removes the line\n1 displays a solid line\n2 displays a dashed line\n3 displays a dotted line\n4 displays a \"dot dashed\" line\n5 displays a \"long dashed\" line\n6 displays a \"two dashed\" line\nMultiple Lines\nTo display more than one line in a graph, use the plot() function together with the lines() function:\nExample\nResult:",
+      "examples": [
+        "plot(1:10, type=\"l\")",
+        "plot(1:10, type=\"l\", col=\"blue\")",
+        "plot(1:10, type=\"l\", lwd=2)",
+        "plot(1:10, type=\"l\", lwd=5, lty=3)",
+        "line1 <- c(1,2,3,4,5,10)\nline2 <- c(2,5,7,8,9,10)\n\nplot(line1, type = \"l\", col = \"blue\")\nlines(line2, type=\"l\", col = \"red\")",
+        "plot()",
+        "type",
+        "\"l\"",
+        "col",
+        "lwd",
+        "1",
+        "0.5",
+        "2",
+        "lty",
+        "lty=3",
+        "0",
+        "3",
+        "4",
+        "5",
+        "6",
+        "lines()"
+      ]
+    },
+    {
+      "title": "R Scatter Plot",
+      "summary": "Scatter Plots\nYou learned from the Plot chapter that the plot() function is used to plot numbers against each other.\nA \"scatter plot\" is a type of plot used to display the relationship between two numerical variables, and plots one dot for each observation.\nIt needs two vectors of same length, one for the x-axis (horizontal) and one for the y-axis (vertical):\nExample\nResult:\nThe observation in the example above should show the result of 12 cars passing by.\nThat might not be clear for someone who sees the graph for the first time, so let's add a header and different labels to describe the scatter plot better:\nExample\nResult:\nTo recap, the observation in the example above is the result of 12 cars passing by.\nThe x-axis shows how old the car is.\nThe y-axis shows the speed of the car when it passes.\nAre there any relationships between the observations?\nIt seems that the newer the car, the faster it drives, but that could be a coincidence, after all we only registered 12 cars.\nREMOVE ADS\nCompare Plots\nIn the example above, there seems to be a relationship between the car speed and age, but what if we plot the observations from another day as well? Will the scatter plot tell us something else?\nTo compare the plot with another plot, use the points() function:\nExample\nDraw two plots on the same figure:\nResult:\nNote: To be able to see the difference of the comparison, you must assign different colors to the plots (by using the col parameter). Red represents the values of day 1, while blue represents day 2. Note that we have also added the cex parameter to increase the size of the dots.\nConclusion of observation: By comparing the two plots, I think it is safe to say that they both gives us the same conclusion: the newer the car, the faster it drives.",
+      "examples": [
+        "x <- c(5,7,8,7,2,2,9,4,11,12,9,6)\ny <- c(99,86,87,88,111,103,87,94,78,77,85,86)\n\nplot(x, y)",
+        "x <- c(5,7,8,7,2,2,9,4,11,12,9,6)\ny <- c(99,86,87,88,111,103,87,94,78,77,85,86)\n\nplot(x, y, main=\"Observation of Cars\", xlab=\"Car age\", ylab=\"Car speed\")",
+        "# day one, the age and speed of 12 cars:\nx1 <- c(5,7,8,7,2,2,9,4,11,12,9,6)\ny1 <- c(99,86,87,88,111,103,87,94,78,77,85,86)\n\n# day two, the age and speed of 15 cars:\nx2 <- c(2,2,8,1,15,8,12,9,7,3,11,4,7,14,12)\ny2 <- c(100,105,84,105,90,99,90,95,94,100,79,112,91,80,85)\n\nplot(x1, y1, main=\"Observation of Cars\", xlab=\"Car age\", ylab=\"Car speed\", col=\"red\", cex=2)\npoints(x2, y2, col=\"blue\", cex=2)",
+        "plot()",
+        "points()",
+        "col",
+        "cex"
+      ]
+    },
+    {
+      "title": "R Pie Charts",
+      "summary": "Pie Charts\nA pie chart is a circular graphical view of data.\nUse the pie() function to draw pie charts:\nExample\nResult:\nAs you can see the pie chart draws one pie for each value in the vector (in this case 10, 20, 30, 40).\nBy default, the plotting of the first pie starts from the x-axis and move counterclockwise.\nNote: The size of each pie is determined by comparing the value with all the other values, by using this formula:\nThe value divided by the sum of all values: x/sum(x)\nStart Angle\nYou can change the start angle of the pie chart with the init.angle parameter.\nThe value of init.angle is defined with angle in degrees, where default angle is 0.\nExample\nStart the first pie at 90 degrees:\nResult:\nREMOVE ADS\nLabels and Header\nUse the label parameter to add a label to the pie chart, and use the main parameter to add a header:\nExample\nResult:\nColors\nYou can add a color to each pie with the col parameter:\nExample\nResult:\nLegend\nTo add a list of explanation for each pie, use the legend() function:\nExample\nResult:\nThe legend can be positioned as either:\nbottomright, bottom, bottomleft, left, topleft, top, topright, right, center",
+      "examples": [
+        "# Create a vector of pies\nx <- c(10,20,30,40)\n\n# Display the pie chart\npie(x)",
+        "# Create a vector of pies\nx <- c(10,20,30,40)\n\n# Display the pie chart and start the first pie at 90 degrees\npie(x, init.angle = 90)",
+        "# Create a vector of pies\nx <- c(10,20,30,40)\n\n# Create a vector of labels\nmylabel <- c(\"Apples\", \"Bananas\", \"Cherries\", \"Dates\")\n\n# Display the pie chart with labels\npie(x, label = mylabel, main = \"Fruits\")",
+        "# Create a vector of colors\ncolors <- c(\"blue\", \"yellow\", \"green\", \"black\")\n\n# Display the pie chart with colors\npie(x, label = mylabel, main = \"Fruits\", col = colors)",
+        "# Create a vector of labels\nmylabel <- c(\"Apples\", \"Bananas\", \"Cherries\", \"Dates\")\n\n# Create a vector of colors\ncolors <- c(\"blue\", \"yellow\", \"green\", \"black\")\n\n# Display the pie chart with colors\npie(x, label = mylabel, main = \"Pie Chart\", col = colors)\n\n# Display the explanation box\nlegend(\"bottomright\", mylabel, fill = colors)",
+        "pie()",
+        "x/sum(x)",
+        "init.angle",
+        "label",
+        "main",
+        "col",
+        "legend()",
+        "bottomright",
+        "bottom",
+        "bottomleft",
+        "left",
+        "topleft",
+        "top",
+        "topright",
+        "right",
+        "center"
+      ]
+    },
+    {
+      "title": "R Bar Charts",
+      "summary": "Bar Charts\nA bar chart uses rectangular bars to visualize data. Bar charts can be displayed horizontally or vertically. The height or length of the bars are proportional to the values they represent.\nUse the barplot() function to draw a vertical bar chart:\nExample\nResult:\nThe x variable represents values in the x-axis (A,B,C,D)\nThe y variable represents values in the y-axis (2,4,6,8)\nThen we use the barplot() function to create a bar chart of the values\nnames.arg defines the names of each observation in the x-axis\nBar Color\nUse the col parameter to change the color of the bars:\nExample\nResult:\nDensity / Bar Texture\nTo change the bar texture, use the density parameter:\nExample\nResult:\nREMOVE ADS\nBar Width\nUse the width parameter to change the width of the bars:\nExample\nResult:\nHorizontal Bars\nIf you want the bars to be displayed horizontally instead of vertically, use horiz=TRUE:\nExample\nResult:",
+      "examples": [
+        "# x-axis values\nx <- c(\"A\", \"B\", \"C\", \"D\")\n\n# y-axis values\ny <- c(2, 4, 6, 8)\n\nbarplot(y, names.arg = x)",
+        "x <- c(\"A\", \"B\", \"C\", \"D\")\ny <- c(2, 4, 6, 8)\n\nbarplot(y, names.arg = x, col = \"red\")",
+        "x <- c(\"A\", \"B\", \"C\", \"D\")\ny <- c(2, 4, 6, 8)\n\nbarplot(y, names.arg = x, density = 10)",
+        "x <- c(\"A\", \"B\", \"C\", \"D\")\ny <- c(2, 4, 6, 8)\n\nbarplot(y, names.arg = x, width = c(1,2,3,4))",
+        "barplot()",
+        "x",
+        "y",
+        "names.arg",
+        "col",
+        "density",
+        "width",
+        "horiz=TRUE"
+      ]
+    },
+    {
+      "title": "R Statistics",
+      "summary": "Statistics Introduction\nStatistics is the science of analyzing, reviewing and conclude data.\nSome basic statistical numbers include:\nMean, median and mode\nMinimum and maximum value\nPercentiles\nVariance and Standard Devation\nCovariance and Correlation\nProbability distributions\nThe R language was developed by two statisticians. It has many built-in functionalities, in addition to libraries for the exact purpose of statistical analysis.\nYou will learn about these features, and how to use them in the next chapters.\nTip: If you are completely new to statistics, and want to learn more about it, visit our Statistics Tutorial.",
+      "examples": []
+    },
+    {
+      "title": "R Data Set",
+      "summary": "Data Set\nA data set is a collection of data, often presented in a table.\nThere is a popular built-in data set in R called \"mtcars\" (Motor Trend Car Road Tests), which is retrieved from the 1974 Motor Trend US Magazine.\nIn the examples below (and for the next chapters), we will use the mtcars data set, for statistical purposes:\nExample\nResult:\nInformation About the Data Set\nYou can use the question mark (?) to get information about the mtcars data set:\nExample\nResult:\nMotor Trend Car Road Tests\nDescription\nThe data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).\nUsage\nFormat\nA data frame with 32 observations on 11 (numeric) variables.\nNote\nHenderson and Velleman (1981) comment in a footnote to Table 1: 'Hocking [original transcriber]'s noncrucial coding of the Mazda's rotary engine as a straight six-cylinder engine and the Porsche's flat engine as a V engine, as well as the inclusion of the diesel Mercedes 240D, have been retained to enable direct comparisons to be made with previous analyses.'\nSource\nHenderson and Velleman (1981), Building multiple regression models interactively. Biometrics, 37, 391-411.\nExamples\nREMOVE ADS\nGet Information\nUse the dim() function to find the dimensions of the data set, and the names() function to view the names of the variables:\nExample\nResult:\nUse the rownames() function to get the name of each row in the first column, which is the name of each car:\nExample\nResult:\nFrom the examples above, we have found out that the data set has 32 observations (Mazda RX4, Mazda RX4 Wag, Datsun 710, etc) and 11 variables (mpg, cyl, disp, etc).\nA variable is defined as something that can be measured or counted.\nHere is a brief explanation of the variables from the mtcars data set:\nPrint Variable Values\nIf you want to print all values that belong to a variable, access the data frame by using the $ sign, and the name of the variable (for example cyl (cylinders)):\nExample\nResult:\nSort Variable Values\nTo sort the values, use the sort() function:\nExample\nResult:\nFrom the examples above, we see that most cars have 4 and 8 cylinders.\nAnalyzing the Data\nNow that we have some information about the data set, we can start to analyze it with some statistical numbers.\nFor example, we can use the summary() function to get a statistical summary of the data:\nExample\nDo not worry if you do not understand the output numbers. You will master them shortly.\nThe summary() function returns six statistical numbers for each variable:\nMin\nFirst quantile (percentile)\nMedian\nMean\nThird quantile (percentile)\nMax\nWe will cover all of them, along with other statistical numbers in the next chapters.",
+      "examples": [
+        "mpg cyl disp hp drat wt qsec vs am gear carb Mazda RX4 21.0 6 160.0 110 3.90 2.620 16.46 0 1 4 4 Mazda RX4 Wag 21.0 6 160.0 110 3.90 2.875 17.02 0 1 4 4 Datsun 710 22.8 4 108.0 93 3.85 2.320 18.61 1 1 4 1 Hornet 4 Drive 21.4 6 258.0 110 3.08 3.215 19.44 1 0 3 1 Hornet Sportabout 18.7 8 360.0 175 3.15 3.440 17.02 0 0 3 2 Valiant 18.1 6 225.0 105 2.76 3.460 20.22 1 0 3 1 Duster 360 14.3 8 360.0 245 3.21 3.570 15.84 0 0 3 4 Merc 240D 24.4 4 146.7 62 3.69 3.190 20.00 1 0 4 2 Merc 230 22.8 4 140.8 95 3.92 3.150 22.90 1 0 4 2 Merc 280 19.2 6 167.6 123 3.92 3.440 18.30 1 0 4 4 Merc 280C 17.8 6 167.6 123 3.92 3.440 18.90 1 0 4 4 Merc 450SE 16.4 8 275.8 180 3.07 4.070 17.40 0 0 3 3 Merc 450SL 17.3 8 275.8 180 3.07 3.730 17.60 0 0 3 3 Merc 450SLC 15.2 8 275.8 180 3.07 3.780 18.00 0 0 3 3 Cadillac Fleetwood 10.4 8 472.0 205 2.93 5.250 17.98 0 0 3 4 Lincoln Continental 10.4 8 460.0 215 3.00 5.424 17.82 0 0 3 4 Chrysler Imperial 14.7 8 440.0 230 3.23 5.345 17.42 0 0 3 4 Fiat 128 32.4 4 78.7 66 4.08 2.200 19.47 1 1 4 1 Honda Civic 30.4 4 75.7 52 4.93 1.615 18.52 1 1 4 2 Toyota Corolla 33.9 4 71.1 65 4.22 1.835 19.90 1 1 4 1 Toyota Corona 21.5 4 120.1 97 3.70 2.465 20.01 1 0 3 1 Dodge Challenger 15.5 8 318.0 150 2.76 3.520 16.87 0 0 3 2 AMC Javelin 15.2 8 304.0 150 3.15 3.435 17.30 0 0 3 2 Camaro Z28 13.3 8 350.0 245 3.73 3.840 15.41 0 0 3 4 Pontiac Firebird 19.2 8 400.0 175 3.08 3.845 17.05 0 0 3 2 Fiat X1-9 27.3 4 79.0 66 4.08 1.935 18.90 1 1 4 1 Porsche 914-2 26.0 4 120.3 91 4.43 2.140 16.70 0 1 5 2 Lotus Europa 30.4 4 95.1 113 3.77 1.513 16.90 1 1 5 2 Ford Pantera L 15.8 8 351.0 264 4.22 3.170 14.50 0 1 5 4 Ferrari Dino 19.7 6 145.0 175 3.62 2.770 15.50 0 1 5 6 Maserati Bora 15.0 8 301.0 335 3.54 3.570 14.60 0 1 5 8 Volvo 142E 21.4 4 121.0 109 4.11 2.780 18.60 1 1 4 2",
+        "mtcars",
+        "require(graphics) pairs(mtcars, main = \"mtcars data\", gap = 1/4) coplot(mpg ~ disp | as.factor(cyl), data = mtcars, panel = panel.smooth, rows = 1) ## possibly more meaningful, e.g., for summary() or bivariate plots: mtcars2 <- within(mtcars, { vs <- factor(vs, labels = c(\"V\", \"S\")) am <- factor(am, labels = c(\"automatic\", \"manual\")) cyl <- ordered(cyl) gear <- ordered(gear) carb <- ordered(carb) }) summary(mtcars2)",
+        "[1] 32 11 [1] \"mpg\" \"cyl\" \"disp\" \"hp\" \"drat\" \"wt\" \"qsec\" \"vs\" \"am\" \"gear\" [11] \"carb\"",
+        "[1] \"Mazda RX4\" \"Mazda RX4 Wag\" \"Datsun 710\" [4] \"Hornet 4 Drive\" \"Hornet Sportabout\" \"Valiant\" [7] \"Duster 360\" \"Merc 240D\" \"Merc 230\" [10] \"Merc 280\" \"Merc 280C\" \"Merc 450SE\" [13] \"Merc 450SL\" \"Merc 450SLC\" \"Cadillac Fleetwood\" [16] \"Lincoln Continental\" \"Chrysler Imperial\" \"Fiat 128\" [19] \"Honda Civic\" \"Toyota Corolla\" \"Toyota Corona\" [22] \"Dodge Challenger\" \"AMC Javelin\" \"Camaro Z28\" [25] \"Pontiac Firebird\" \"Fiat X1-9\" \"Porsche 914-2\" [28] \"Lotus Europa\" \"Ford Pantera L\" \"Ferrari Dino\" [31] \"Maserati Bora\" \"Volvo 142E\"",
+        "[1] 6 6 4 6 8 6 8 4 4 6 6 8 8 8 8 8 8 4 4 4 4 8 8 8 8 4 4 4 8 6 8 4",
+        "[1] 4 4 4 4 4 4 4 4 4 4 4 6 6 6 6 6 6 6 8 8 8 8 8 8 8 8 8 8 8 8 8 8",
+        "# Print the mtcars data set\nmtcars",
+        "# Use the question mark to get information about the data set\n\n?mtcars",
+        "Data_Cars <- mtcars # create a variable of the mtcars data set for better organization\n\n# Use dim() to find the dimension of the data set\ndim(Data_Cars)\n\n# Use names() to find the names of the variables from the data set\nnames(Data_Cars)",
+        "Data_Cars <- mtcars\n\nrownames(Data_Cars)",
+        "Data_Cars <- mtcars\n\nData_Cars$cyl",
+        "Data_Cars <- mtcars\n\nsort(Data_Cars$cyl)",
+        "Data_Cars <- mtcars\n\nsummary(Data_Cars)",
+        "?",
+        "dim()",
+        "names()",
+        "rownames()",
+        "$",
+        "cyl",
+        "sort()",
+        "summary()"
+      ]
+    },
+    {
+      "title": "R Max and Min",
+      "summary": "Max Min\nIn the previous chapter, we introduced the mtcars data set. We will continue to use this data set throughout the next pages.\nYou learned from the R Math chapter that R has several built-in math functions. For example, the min() and max() functions can be used to find the lowest or highest value in a set:\nExample\nFind the largest and smallest value of the variable hp (horsepower).\nResult:\nNow we know that the largest horsepower value in the set is 335, and the lowest 52.\nWe could take a look at the data set and try to find out which car these two values belongs to:\nBy observing the table, it looks like the largest hp value belongs to a Maserati Bora, and the lowest belongs to a Honda Civic.\nHowever, it is much easier (and safer) to let R find out this for us.\nFor example, we can use the which.max() and which.min() functions to find the index position of the max and min value in the table:\nExample\nResult:\nOr even better, combine which.max() and which.min() with the rownames() function to get the name of the car with the largest and smallest horsepower:\nExample\nResult:\nNow we know for sure:\nMaserati Bora is the car with the highest horsepower, and Honda Civic is the car with the lowest horsepower.\nOutliers\nMax and min can also be used to detect outliers. An outlier is a data point that differs from rest of the observations.\nExample of data points that could have been outliers in the mtcars data set:\nIf maximum of forward gears of a car was 11\nIf minimum of horsepower of a car was 0\nIf maximum weight of a car was 50 000 lbs",
+      "examples": [
+        "Data_Cars <- mtcars\n\nmax(Data_Cars$hp)\nmin(Data_Cars$hp)",
+        "Data_Cars <- mtcars\n\nwhich.max(Data_Cars$hp)\nwhich.min(Data_Cars$hp)",
+        "Data_Cars <- mtcars\n\nrownames(Data_Cars)[which.max(Data_Cars$hp)]\nrownames(Data_Cars)[which.min(Data_Cars$hp)]",
+        "mpg cyl disp hp drat wt qsec vs am gear carb Mazda RX4 21.0 6 160.0 110 3.90 2.620 16.46 0 1 4 4 Mazda RX4 Wag 21.0 6 160.0 110 3.90 2.875 17.02 0 1 4 4 Datsun 710 22.8 4 108.0 93 3.85 2.320 18.61 1 1 4 1 Hornet 4 Drive 21.4 6 258.0 110 3.08 3.215 19.44 1 0 3 1 Hornet Sportabout 18.7 8 360.0 175 3.15 3.440 17.02 0 0 3 2 Valiant 18.1 6 225.0 105 2.76 3.460 20.22 1 0 3 1 Duster 360 14.3 8 360.0 245 3.21 3.570 15.84 0 0 3 4 Merc 240D 24.4 4 146.7 62 3.69 3.190 20.00 1 0 4 2 Merc 230 22.8 4 140.8 95 3.92 3.150 22.90 1 0 4 2 Merc 280 19.2 6 167.6 123 3.92 3.440 18.30 1 0 4 4 Merc 280C 17.8 6 167.6 123 3.92 3.440 18.90 1 0 4 4 Merc 450SE 16.4 8 275.8 180 3.07 4.070 17.40 0 0 3 3 Merc 450SL 17.3 8 275.8 180 3.07 3.730 17.60 0 0 3 3 Merc 450SLC 15.2 8 275.8 180 3.07 3.780 18.00 0 0 3 3 Cadillac Fleetwood 10.4 8 472.0 205 2.93 5.250 17.98 0 0 3 4 Lincoln Continental 10.4 8 460.0 215 3.00 5.424 17.82 0 0 3 4 Chrysler Imperial 14.7 8 440.0 230 3.23 5.345 17.42 0 0 3 4 Fiat 128 32.4 4 78.7 66 4.08 2.200 19.47 1 1 4 1 Honda Civic 30.4 4 75.7 52 4.93 1.615 18.52 1 1 4 2 Toyota Corolla 33.9 4 71.1 65 4.22 1.835 19.90 1 1 4 1 Toyota Corona 21.5 4 120.1 97 3.70 2.465 20.01 1 0 3 1 Dodge Challenger 15.5 8 318.0 150 2.76 3.520 16.87 0 0 3 2 AMC Javelin 15.2 8 304.0 150 3.15 3.435 17.30 0 0 3 2 Camaro Z28 13.3 8 350.0 245 3.73 3.840 15.41 0 0 3 4 Pontiac Firebird 19.2 8 400.0 175 3.08 3.845 17.05 0 0 3 2 Fiat X1-9 27.3 4 79.0 66 4.08 1.935 18.90 1 1 4 1 Porsche 914-2 26.0 4 120.3 91 4.43 2.140 16.70 0 1 5 2 Lotus Europa 30.4 4 95.1 113 3.77 1.513 16.90 1 1 5 2 Ford Pantera L 15.8 8 351.0 264 4.22 3.170 14.50 0 1 5 4 Ferrari Dino 19.7 6 145.0 175 3.62 2.770 15.50 0 1 5 6 Maserati Bora 15.0 8 301.0 335 3.54 3.570 14.60 0 1 5 8 Volvo 142E 21.4 4 121.0 109 4.11 2.780 18.60 1 1 4 2",
+        "min()",
+        "max()",
+        "hp",
+        "[1] 335\n[1] 52",
+        "which.max()",
+        "which.min()",
+        "[1] 31\n[1] 19",
+        "rownames()",
+        "[1] \"Maserati Bora\"\n[1] \"Honda Civic\""
+      ]
+    },
+    {
+      "title": "R Mean",
+      "summary": "Mean, Median, and Mode\nIn statistics, there are often three values that interests us:\nMean - The average value\nMedian - The middle value\nMode - The most common value\nMean\nTo calculate the average value (mean) of a variable from the mtcars data set, find the sum of all values, and divide the sum by the number of values.\nLuckily for us, the mean() function in R can do it for you:\nExample\nFind the average weight (wt) of a car:\nResult:",
+      "examples": [
+        "Data_Cars <- mtcars\n\nmean(Data_Cars$wt)",
+        "mtcars",
+        "mean()",
+        "wt",
+        "[1] 3.21725"
+      ]
+    },
+    {
+      "title": "R Median",
+      "summary": "Median\nThe median value is the value in the middle, after you have sorted all the values.\nIf we take a look at the values of the wt variable (from the mtcars data set), we will see that there are two numbers in the middle:\nNote: If there are two numbers in the middle, you must divide the sum of those numbers by two, to find the median.\nLuckily, R has a function that does all of that for you: Just use the median() function to find the middle value:\nExample\nFind the mid point value of weight (wt):\nResult:",
+      "examples": [
+        "Data_Cars <- mtcars\n\nmedian(Data_Cars$wt)",
+        "wt",
+        "mtcars",
+        "median()",
+        "[1] 3.325"
+      ]
+    },
+    {
+      "title": "R Mode",
+      "summary": "Mode\nThe mode value is the value that appears the most number of times.\nR does not have a function to calculate the mode. However, we can create our own function to find it.\nIf we take a look at the values of the wt variable (from the mtcars data set), we will see that the numbers 3.440 are often shown:\nInstead of counting it ourselves, we can use the following code to find the mode:\nExample\nResult:\nFrom the example above, we now know that the number that appears the most number of times in mtcars wt variable is 3.44 or 3.440 lbs.",
+      "examples": [
+        "Data_Cars <- mtcars\n\nnames(sort(-table(Data_Cars$wt)))[1]",
+        "wt",
+        "mtcars",
+        "[1] \"3.44\""
+      ]
+    },
+    {
+      "title": "R Percentiles",
+      "summary": "Percentiles\nPercentiles are used in statistics to give you a number that describes the value that a given percent of the values are lower than.\nIf we take a look at the values of the wt (weight) variable from the mtcars data set:\nWhat is the 75. percentile of the weight of the cars? The answer is 3.61 or 3 610 lbs, meaning that 75% or the cars weight 3 610 lbs or less:\nExample\nResult:\nIf you run the quantile() function without specifying the c() parameter, you will get the percentiles of 0, 25, 50, 75 and 100:\nExample\nResult:\nQuartiles\nQuartiles are data divided into four parts, when sorted in an ascending order:\nThe value of the first quartile cuts off the first 25% of the data\nThe value of the second quartile cuts off the first 50% of the data\nThe value of the third quartile cuts off the first 75% of the data\nThe value of the fourth quartile cuts off the 100% of the data\nUse the quantile() function to get the quartiles.",
+      "examples": [
+        "75% 3.61",
+        "0% 25% 50% 75% 100% 1.51300 2.58125 3.32500 3.61000 5.42400",
+        "Data_Cars <- mtcars\n\n# c() specifies which percentile you want\nquantile(Data_Cars$wt, c(0.75))",
+        "Data_Cars <- mtcars\n\nquantile(Data_Cars$wt)",
+        "wt",
+        "mtcars",
+        "quantile()",
+        "c()"
+      ]
+    },
+    {
+      "title": "R Examples",
+      "summary": "R Syntax\nR Comments\nR Variables\nR Data Types\nR Numbers\nREMOVE ADS\nR Math\nR Strings\nR Booleans\nR Operators\nR If...Else\nR While Loop\nR For Loop\nR Functions\nR Global Variables\nR Vectors\nR Lists\nR Matrices\nR Arrays\nR Data Frames\nR Factors",
+      "examples": []
+    },
+    {
+      "title": "R Online Compiler",
+      "summary": "R Compiler (Editor)\nWith our online R compiler, you can edit R code, and view the result in your browser.\nExample\nClick on the \"Try it Yourself\" button to see how it works.\nR Compiler Explained\nThe window to the left is editable - edit the code and click on the \"Run\" button to view the result in the right window.\nThe icons are explained in the table below:\nIf you do not know R, we suggest that you read our R Tutorial from scratch.",
+      "examples": [
+        "\"Hello World!\"\n5 + 5",
+        "Hello World!",
+        "10"
+      ]
+    },
+    {
+      "title": "R Exercises",
+      "summary": "Exercises\nWe have gathered a variety of R exercises (with answers) for each R Chapter.\nTry to solve an exercise by editing some code, or show the answer to see what you've done wrong.\nCount Your Score\nYou will get 1 point for each correct answer. Your score and total score will always be displayed.\nStart R Exercises\nGood luck!\nStart R Exercises ❯\nIf you do not know R, we suggest that you read our R Tutorial from scratch.",
+      "examples": []
+    },
+    {
+      "title": "R Quiz",
+      "summary": "You can test your R skills with W3Schools' Quiz.\nThe Test\nThe test contains 25 questions and there is no time limit.\nThe test is not official, it's just a nice way to see how much you know, or don't know, about R.\nCount Your Score\nYou will get 1 point for each correct answer. At the end of the Quiz, your total score will be displayed. Maximum score is 25 points.\nStart the Quiz\nGood luck!\nStart the R Quiz ❯\nIf you do not know R, we suggest that you read our R Tutorial from scratch.",
+      "examples": []
+    },
+    {
+      "title": "R Syllabus",
+      "summary": "Introduction\nThe W3Schools R Tutorial is comprehensive and beginner-friendly.\nIt will give you a fundamental knowledge of R programming.\nIt is designed for beginners and requires no prior programming experience.\nThe content has been carefully made to be bite-sized, simple, and easy to understand.\nThe content has been proven by millions of users over the years. It is updated and improved frequently.\nThe syllabus outline and its sequence are structured so you can learn R step by step, from the introduction to data analysis.\nGet Started With R »\nLearning Outcomes\nLearn R basics and syntax\nWork with R variables and data types\nUse operators and control structures (if, while, for)\nCreate and use functions in R\nWork with data structures (vectors, lists, matrices, arrays)\nCreate data frames and use factors\nMake plots and visualize data (line, scatter, pie, bar)\nPerform basic statistics (mean, median, mode)\nAnalyze data sets using R\nNote: Are you a teacher teaching R? W3Schools Academy is a toolbox of features that can help you teach. It offers classroom features such as pre-built study plans, classroom administration and much more. Read more about Academy here.\nWhich Subjects Are R Relevant For?\nData Science:\nR is essential for data analysis and statistical computing.\nStatistics:\nR provides comprehensive tools for statistical analysis.\nMachine Learning:\nR offers powerful packages for ML algorithms.\nData Visualization:\nR excels at creating sophisticated plots and graphs.\nBioinformatics:\nR is widely used in biological data analysis.\nResearch:\nR supports academic and scientific research.\nBusiness Analytics:\nR helps in business intelligence and reporting.\nGet Started\nActivities\nIn this tutorial we offer different activities for you to learn R for free:\nLessons\nExercises\nQuizzes\nSign in to Track Progress\nYou can also create a free account to track your progress.\nAs a signed-in user, you get access to features such as:\nLearning paths\nSandbox and lab environments\nAchievements\nAnd much more!\nSign Up - It's free\nOverview of the Modules\nR HOME\nR Intro\nR Get Started\nR Syntax\nR Comments\nR Variables\nConcatenate Elements\nMultiple Variables\nVariable Names\nR Data Types\nR Numbers\nR Math\nR Strings\nEscape Characters\nR Booleans\nR Operators\nR If...Else\nNested If\nAnd Or\nR While Loop\nR For Loop\nNested Loop\nR Functions\nNested Functions\nRecursion\nR Vectors\nR Lists\nR Matrices\nR Arrays\nR Data Frames\nR Factors\nR Plot\nR Line\nR Scatterplot\nR Pie Charts\nR Statistics Intro\nR Data Set\nR Max and Min\nR Mean\nR Median\nR Mode\nGet Started\nSandbox and Lab Environment\nR, like any programming language, is best learned through hands-on practice.\nTry this example using our editor:\nExample\nHow you can use R to easily create a graph with numbers from 1 to 10 on both the x and y axis:\nResult:\nIf you want to explore more and host your project, we have a feature called Spaces that allows you to build, test and run R scripts for free.\nHere you get a secure sandbox environment called Spaces, where you can practice R code and test projects in real-time.\nSpaces allow you to test, run, and analyze data. This includes a W3Schools subdomain, hosting, and secure SSL certificates.\nSpaces require no installation and run directly in the browser.\nFeatures include:\nCollaboration\nFile navigator\nTerminal & log\nPackage manager\nDatabase\nEnvironment manager\nAnalytics\nCreate a Spaces Account\nR Certification\nW3Schools offers an end-of-pathway certification program.\nHere you can take exams to get certified.\nThe R exam is a test that summarizes the W3Schools R syllabus.\nAfter passing the exam you get the \"Certified R Developer\" Certification.\nThe adaptive certification exam is adaptive and graded; students will get a grade from intermediate, advanced to professional.\nBuy Certificate »\nAre You a Teacher?\nAre you interested in learning how you can use W3Schools Academy to Teach R?\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\nWatch Demo »",
+      "examples": [
+        "plot(1:10)"
+      ]
+    },
+    {
+      "title": "R Study Plan",
+      "summary": "Introduction\nThe R study plan helps you teach your students R step-by-step.\nCreating a study plan for R is easy.\nYou can use a pre-built study plan or customize it.\nStudents have different skill levels. The study plans can be customized to ensure that everyone is challenged.\nSave time with pre-built teacher materials and study plans. Easily organize your class with a timeline from the introduction of R to the final exam.\nW3Schools Academy\nThis study plan is a feature of W3Schools Academy.\nW3Schools Academy is a platform that has everything you need to teach coding, all in one place.\nIt offers you as a teacher a toolbox of features that helps you succeed with teaching in your classroom.\nYou need to have an active subscription to access the study plan feature. There are two different subscription tiers:\nEssentials ($1.99 / month per student)\nFull Access ($5.99 / month per student)\nCalculate your price and order here.\nLearn More »\nAcademy also offer other features such as:\nManaging your classroom\nTracking of student progress and reports\nLabs, assignments, and code challenges (prebuilt challenges or create your own ones)\nAuto-grading\nTeaching materials\nCertification exams\nGet a free demo »\nTeacher Materials\nW3Schools has everything you need to teach R.\nThe R training materials is available for you to include and use in your study plan:\nW3Schools R Tutorial\nR Exercises\nR Quiz\nR Challenges (Coding challenges)\nR Certification Exam (End of Pathway Exam)\nR Syllabus\nWith the R Syllabus, your students will start with the basics, like understanding variables, data types, and syntax, and move to more advanced topics, like data visualization, statistical analysis, and working with data frames. Each chapter includes examples, try-it-yourself sections, exercises, and quizzes to make learning easy, interactive, and fun.\nRead more about R Syllabus.\nStudy Plan Overview\nThe study plan features are made to help teachers and students. They make learning easy, flexible, and fun. These features work for different types of classes, learning styles and student level.\nLearning Paths\nYou can add ready-made learning paths.\nThe learning paths are by default ordered by our recommended order.\nYou can change the order.\nYou can add custom activities with text, links, or multi-media files.\nDrag and drop or click to make changes to the path.\nYou can add ready-made learning paths.\nThe learning paths are by default ordered by our recommended order.\nYou can change the order.\nYou can add custom activities with text, links, or multi-media files.\nDrag and drop or click to make changes to the path.\nInteractive Content\nTutorials\nTry-its (test code snippets)\nExercises\nQuiz\nChallenges\nLabs\nTutorials\nTry-its (test code snippets)\nExercises\nQuiz\nChallenges\nLabs\nTimeline and Pace\nYou can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\nYou can decide the learning pace for your class.\nDifferent study plans can be assigned to different students in the same class.\nThe flexibility can help to make sure that everyone is challenged.\nYou can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\nYou can decide the learning pace for your class.\nDifferent study plans can be assigned to different students in the same class.\nThe flexibility can help to make sure that everyone is challenged.\nTrack Student Progress\nThere are tools to track student progress.\nThe analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\nThe challenges can be auto-graded or manually graded. The results are available to you as a teacher.\nThere are tools to track student progress.\nThe analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\nThe challenges can be auto-graded or manually graded. The results are available to you as a teacher.\nEnd of Pathway Exam\nThe R study plan aligns with the R Certification Exam.\nThe exam can be taken at the end of the study plan, at your selected date.\nThe exam summarizes the R Tutorial.\nYou get reports of the students' results.\nThe R study plan aligns with the R Certification Exam.\nThe exam can be taken at the end of the study plan, at your selected date.\nThe exam summarizes the R Tutorial.\nYou get reports of the students' results.\nAccessibility\nStudy plans and learning materials are accessible on desktops, tablets, and smartphones.\nThis ensures students can learn anytime, anywhere.\nStudy plans and learning materials are accessible on desktops, tablets, and smartphones.\nThis ensures students can learn anytime, anywhere.\nLearn More »\nSample Study Plan\nYou choose the timeline and pace of your study plans.\nSchools have different preferences.\nSome would like more intensive pace, e.g. 3 weeks, others 12 or more weeks.\nIt is completely up to you.\nFor example, this is how a 3-week R study plan could look like:\nWeek 1: Introduction, Basics\nWeek 2: Conditionals & Loops, Functions, Data Structures, Graphics\nWeek 3: Statistics, Statistics Mean Median Mode, Statistics Percentiles, R Certification Exam\nImage of Sample R study plan:\nReady to get started?\nStart with R Study Plans today.\nGet Started »\nAre You a Teacher?\nAre you interested in learning how you can use W3Schools Academy to Teach R programming?\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\nWatch Demo »",
+      "examples": []
+    },
+    {
+      "title": "R Certificate",
+      "summary": "W3Schools offers an Online Certification Program.\nThe perfect solution for busy professionals who need to balance work, family, and career building.\nMore than 50 000 certificates already issued!\nGet Your Certificate »\nW3Schools offers an Online Certification Program.\nThe perfect solution for busy professionals who need to balance work, family, and career building.\nMore than 50 000 certificates already issued!\nGet Your Certificate »\nWho Should Consider Getting Certified?\nAny student or professional within the digital industry.\nCertifications are valuable assets to gain trust and demonstrate knowledge to your clients, current or future employers on a ever increasing competitive market.\nW3Schools is Trusted by Top Companies\nW3Schools has over two decades of experience with teaching coding online.\nOur certificates are recognized and valued by companies looking to employ skilled developers.\nSave Time and Money\nShow the world your coding skills by getting a certification.\nThe prices is a small fraction compared to the price of traditional education.\nDocument and validate your competence by getting certified!\nExam overview\nFee: 95 USD\nAchievable certification levels:\nIntermediate (40%)\nAdvanced (75%)\nProfessional (90%)\nNumber of questions:\nAdaptive, 60 on average\nRequirement to pass:\nMinimum 40% - Intermediate level\nTime limit: 60 minutes\nNumber of attempts to pass: 3\nExam deadline: None\nCertification Expiration: None\nFormat: Online, multiple choice\nRegister now »\nAdvance Faster in Your Career\nGetting a certificate proves your commitment to upgrading your skills.\nThe certificate can be added as credentials to your CV, Resume, LinkedIn profile, and so on.\nIt gives you the credibility needed for more responsibilities, larger projects, and a higher salary.\nKnowledge is power, especially in the current job market.\nDocumentation of your skills enables you to advance your career or helps you to start a new one.\nHow Does It Work?\nStudy for free at W3Schools.com\nStudy at your own speed\nTest your skills with W3Schools online quizzes\nApply for your certificate by paying an exam fee\nTake your exam online, at any time, and from any location\nGet Your Certificate and Share It With The World\nExample certificate:\nEach certificate gets a unique link that can be shared with others.\nValidate your certification with the link or QR code.\nCheck how it looks like in this Example.\nShare your certificate on Linked in the Certifications section in just one click!\nDocument Your Skills\nGetting a certificate proves your commitment to upgrade your skills, gives you the credibility needed for more responsibilities, larger projects, and a higher salary.\nGet Your Certificate »\nLooking to add multiple users?\nAre you an educator, manager or business owner looking for courses or certifications?\nWe are working with schools, companies and organizations from all over the world.\nGet courses and/or certifications for your team here.",
+      "examples": []
+    }
+  ],
+  "glossary": [
+    "backend",
+    "concatenate elements",
+    "escape characters",
+    "exercise",
+    "exercises",
+    "free",
+    "global variables",
+    "javascript",
+    "multiple variables",
+    "nested functions",
+    "nested if",
+    "nested loop",
+    "note",
+    "print",
+    "programs",
+    "r arrays",
+    "r bars",
+    "r booleans",
+    "r comments",
+    "r compiler",
+    "r exercises",
+    "r factors",
+    "r functions",
+    "r graphics",
+    "r home",
+    "r intro",
+    "r line",
+    "r lists",
+    "r math",
+    "r matrices",
+    "r median",
+    "r mode",
+    "r numbers",
+    "r operators",
+    "r percentiles",
+    "r plot",
+    "r quiz",
+    "r scatterplot",
+    "r statistics",
+    "r strings",
+    "r syllabus",
+    "r syntax",
+    "r variables",
+    "r vectors",
+    "recursion",
+    "references",
+    "report error",
+    "variable names",
+    "w3schools spaces"
+  ],
+  "objectives": [
+    "View your completed tutorials, exercises, and quizzes",
+    "Keep an eye on your progress and daily streaks",
+    "Set goals and create learning paths",
+    "Create your own personal website"
+  ]
+}

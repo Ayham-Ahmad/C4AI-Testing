@@ -1,0 +1,290 @@
+{
+  "course_name": "SciPy",
+  "description": "SciPy is a scientific computation library that uses NumPy underneath. SciPy stands for Scientific Python. We have created 10 tutorial pages for you to learn the fundamentals of SciPy: In our \"Try it Yourself\" editor, you can use the SciPy module, and modify the code to see the result. How many cubic meters are in one liter: Click on the \"Try it Yourself\" button to see how it works. Many chapters in this tutorial end with an exercise where you can check your level of knowledge. See all SciPy Exercises Test your SciPy skills with a quiz test. Start SciPy Quiz",
+  "course_summary": [
+    {
+      "title": "SciPy Introduction",
+      "summary": "What is SciPy?\nSciPy is a scientific computation library that uses NumPy underneath.\nSciPy stands for Scientific Python.\nIt provides more utility functions for optimization, stats and signal processing.\nLike NumPy, SciPy is open source so we can use it freely.\nSciPy was created by NumPy's creator Travis Olliphant.\nWhy Use SciPy?\nIf SciPy uses NumPy underneath, why can we not just use NumPy?\nSciPy has optimized and added functions that are frequently used in NumPy and Data Science.\nWhich Language is SciPy Written in?\nSciPy is predominantly written in Python, but a few segments are written in C.\nWhere is the SciPy Codebase?\nThe source code for SciPy is located at this github repository https://github.com/scipy/scipy\ngithub: enables many people to work on the same codebase.",
+      "examples": []
+    },
+    {
+      "title": "SciPy Getting Started",
+      "summary": "Installation of SciPy\nIf you have Python and PIP already installed on a system, then installation of SciPy is very easy.\nInstall it using this command:\nIf this command fails, then use a Python distribution that already has SciPy installed like, Anaconda, Spyder etc.\nImport SciPy\nOnce SciPy is installed, import the SciPy module(s) you want to use in your applications by adding the from scipy import module statement:\nNow we have imported the constants module from SciPy, and the application is ready to use it:\nExampleGet your own Python Server\nHow many cubic meters are in one liter:\nconstants: SciPy offers a set of mathematical constants, one of them is liter which returns 1 liter as cubic meters.\nYou will learn more about constants in the next chapter.\nChecking SciPy Version\nThe version string is stored under the __version__ attribute.\nExample\nNote: two underscore characters are used in __version__.",
+      "examples": [
+        "C:\\Users\\Your Name>pip install scipy",
+        "from scipy import constants",
+        "from scipy import constants\n\nprint(constants.liter)",
+        "import scipy\n\nprint(scipy.__version__)",
+        "from scipy import module",
+        "liter",
+        "__version__"
+      ]
+    },
+    {
+      "title": "SciPy Constants",
+      "summary": "Constants in SciPy\nAs SciPy is more focused on scientific implementations, it provides many built-in scientific constants.\nThese constants can be helpful when you are working with Data Science.\nPI is an example of a scientific constant.\nExampleGet your own Python Server\nPrint the constant value of PI:\nConstant Units\nA list of all units under the constants module can be seen using the dir() function.\nExample\nList all constants:\nUnit Categories\nThe units are placed under these categories:\nMetric\nBinary\nMass\nAngle\nTime\nLength\nPressure\nVolume\nSpeed\nTemperature\nEnergy\nPower\nForce\nREMOVE ADS\nMetric (SI) Prefixes:\nReturn the specified unit in meter (e.g. centi returns 0.01)\nExample\nBinary Prefixes:\nReturn the specified unit in bytes (e.g. kibi returns 1024)\nExample\nMass:\nReturn the specified unit in kg (e.g. gram returns 0.001)\nExample\nAngle:\nReturn the specified unit in radians (e.g. degree returns 0.017453292519943295)\nExample\nTime:\nReturn the specified unit in seconds (e.g. hour returns 3600.0)\nExample\nLength:\nReturn the specified unit in meters (e.g. nautical_mile returns 1852.0)\nExample\nPressure:\nReturn the specified unit in pascals (e.g. psi returns 6894.757293168361)\nExample\nArea:\nReturn the specified unit in square meters(e.g. hectare returns 10000.0)\nExample\nVolume:\nReturn the specified unit in cubic meters (e.g. liter returns 0.001)\nExample\nSpeed:\nReturn the specified unit in meters per second (e.g. speed_of_sound returns 340.5)\nExample\nTemperature:\nReturn the specified unit in Kelvin (e.g. zero_Celsius returns 273.15)\nExample\nEnergy:\nReturn the specified unit in joules (e.g. calorie returns 4.184)\nExample\nPower:\nReturn the specified unit in watts (e.g. horsepower returns 745.6998715822701)\nExample\nForce:\nReturn the specified unit in newton (e.g. kilogram_force returns 9.80665)\nExample",
+      "examples": [
+        "from scipy import constants\n\nprint(constants.pi)",
+        "from scipy import constants\n\nprint(dir(constants))",
+        "from scipy import constants\n\nprint(constants.yotta)    #1e+24\nprint(constants.zetta)    #1e+21\nprint(constants.exa)      #1e+18\nprint(constants.peta)     #1000000000000000.0\nprint(constants.tera)     #1000000000000.0\nprint(constants.giga)     #1000000000.0\nprint(constants.mega)     #1000000.0\nprint(constants.kilo)     #1000.0\nprint(constants.hecto)    #100.0\nprint(constants.deka)     #10.0\nprint(constants.deci)     #0.1\nprint(constants.centi)    #0.01\nprint(constants.milli)    #0.001\nprint(constants.micro)    #1e-06\nprint(constants.nano)     #1e-09\nprint(constants.pico)     #1e-12\nprint(constants.femto)    #1e-15\nprint(constants.atto)     #1e-18\nprint(constants.zepto)    #1e-21",
+        "from scipy import constants\n\nprint(constants.kibi)    #1024\nprint(constants.mebi)    #1048576\nprint(constants.gibi)    #1073741824\nprint(constants.tebi)    #1099511627776\nprint(constants.pebi)    #1125899906842624\nprint(constants.exbi)    #1152921504606846976\nprint(constants.zebi)    #1180591620717411303424\nprint(constants.yobi)    #1208925819614629174706176",
+        "from scipy import constants\n\nprint(constants.gram)        #0.001\nprint(constants.metric_ton)  #1000.0\nprint(constants.grain)       #6.479891e-05\nprint(constants.lb)          #0.45359236999999997\nprint(constants.pound)       #0.45359236999999997\nprint(constants.oz)          #0.028349523124999998\nprint(constants.ounce)       #0.028349523124999998\nprint(constants.stone)       #6.3502931799999995\nprint(constants.long_ton)    #1016.0469088\nprint(constants.short_ton)   #907.1847399999999\nprint(constants.troy_ounce)  #0.031103476799999998\nprint(constants.troy_pound)  #0.37324172159999996\nprint(constants.carat)       #0.0002\nprint(constants.atomic_mass) #1.66053904e-27\nprint(constants.m_u)         #1.66053904e-27\nprint(constants.u)           #1.66053904e-27",
+        "from scipy import constants\n\nprint(constants.degree)     #0.017453292519943295\nprint(constants.arcmin)     #0.0002908882086657216\nprint(constants.arcminute)  #0.0002908882086657216\nprint(constants.arcsec)     #4.84813681109536e-06\nprint(constants.arcsecond)  #4.84813681109536e-06",
+        "from scipy import constants\n\nprint(constants.minute)      #60.0\nprint(constants.hour)        #3600.0\nprint(constants.day)         #86400.0\nprint(constants.week)        #604800.0\nprint(constants.year)        #31536000.0\nprint(constants.Julian_year) #31557600.0",
+        "from scipy import constants\n\nprint(constants.inch)              #0.0254\nprint(constants.foot)              #0.30479999999999996\nprint(constants.yard)              #0.9143999999999999\nprint(constants.mile)              #1609.3439999999998\nprint(constants.mil)               #2.5399999999999997e-05\nprint(constants.pt)                #0.00035277777777777776\nprint(constants.point)             #0.00035277777777777776\nprint(constants.survey_foot)       #0.3048006096012192\nprint(constants.survey_mile)       #1609.3472186944373\nprint(constants.nautical_mile)     #1852.0\nprint(constants.fermi)             #1e-15\nprint(constants.angstrom)          #1e-10\nprint(constants.micron)            #1e-06\nprint(constants.au)                #149597870691.0\nprint(constants.astronomical_unit) #149597870691.0\nprint(constants.light_year)        #9460730472580800.0\nprint(constants.parsec)            #3.0856775813057292e+16",
+        "from scipy import constants\n\nprint(constants.atm)         #101325.0\nprint(constants.atmosphere)  #101325.0\nprint(constants.bar)         #100000.0\nprint(constants.torr)        #133.32236842105263\nprint(constants.mmHg)        #133.32236842105263\nprint(constants.psi)         #6894.757293168361",
+        "from scipy import constants\n\nprint(constants.hectare) #10000.0\nprint(constants.acre)    #4046.8564223999992",
+        "from scipy import constants\n\nprint(constants.liter)            #0.001\nprint(constants.litre)            #0.001\nprint(constants.gallon)           #0.0037854117839999997\nprint(constants.gallon_US)        #0.0037854117839999997\nprint(constants.gallon_imp)       #0.00454609\nprint(constants.fluid_ounce)      #2.9573529562499998e-05\nprint(constants.fluid_ounce_US)   #2.9573529562499998e-05\nprint(constants.fluid_ounce_imp)  #2.84130625e-05\nprint(constants.barrel)           #0.15898729492799998\nprint(constants.bbl)              #0.15898729492799998",
+        "from scipy import constants\n\nprint(constants.kmh)            #0.2777777777777778\nprint(constants.mph)            #0.44703999999999994\nprint(constants.mach)           #340.5\nprint(constants.speed_of_sound) #340.5\nprint(constants.knot)           #0.5144444444444445",
+        "from scipy import constants\n\nprint(constants.zero_Celsius)      #273.15\nprint(constants.degree_Fahrenheit) #0.5555555555555556",
+        "from scipy import constants\n\nprint(constants.eV)            #1.6021766208e-19\nprint(constants.electron_volt) #1.6021766208e-19\nprint(constants.calorie)       #4.184\nprint(constants.calorie_th)    #4.184\nprint(constants.calorie_IT)    #4.1868\nprint(constants.erg)           #1e-07\nprint(constants.Btu)           #1055.05585262\nprint(constants.Btu_IT)        #1055.05585262\nprint(constants.Btu_th)        #1054.3502644888888\nprint(constants.ton_TNT)       #4184000000.0",
+        "from scipy import constants\n\nprint(constants.hp)         #745.6998715822701\nprint(constants.horsepower) #745.6998715822701",
+        "from scipy import constants\n\nprint(constants.dyn)             #1e-05\nprint(constants.dyne)            #1e-05\nprint(constants.lbf)             #4.4482216152605\nprint(constants.pound_force)     #4.4482216152605\nprint(constants.kgf)             #9.80665\nprint(constants.kilogram_force)  #9.80665",
+        "dir()",
+        "centi",
+        "0.01",
+        "kibi",
+        "1024",
+        "gram",
+        "0.001",
+        "degree",
+        "0.017453292519943295",
+        "hour",
+        "3600.0",
+        "nautical_mile",
+        "1852.0",
+        "psi",
+        "6894.757293168361",
+        "hectare",
+        "10000.0",
+        "liter",
+        "speed_of_sound",
+        "340.5",
+        "zero_Celsius",
+        "273.15",
+        "calorie",
+        "4.184",
+        "horsepower",
+        "745.6998715822701",
+        "kilogram_force",
+        "9.80665"
+      ]
+    },
+    {
+      "title": "SciPy Optimizers",
+      "summary": "Optimizers in SciPy\nOptimizers are a set of procedures defined in SciPy that either find the minimum value of a function, or the root of an equation.\nOptimizing Functions\nEssentially, all of the algorithms in Machine Learning are nothing more than a complex equation that needs to be minimized with the help of given data.\nRoots of an Equation\nNumPy is capable of finding roots for polynomials and linear equations, but it can not find roots for non linear equations, like this one:\nx + cos(x)\nFor that you can use SciPy's optimize.root function.\nThis function takes two required arguments:\nfun - a function representing an equation.\nx0 - an initial guess for the root.\nThe function returns an object with information regarding the solution.\nThe actual solution is given under attribute x of the returned object:\nExampleGet your own Python Server\nFind root of the equation x + cos(x):\nNote: The returned object has much more information about the solution.\nExample\nPrint all information about the solution (not just x which is the root)\nREMOVE ADS\nMinimizing a Function\nA function, in this context, represents a curve, curves have high points and low points.\nHigh points are called maxima.\nLow points are called minima.\nThe highest point in the whole curve is called global maxima, whereas the rest of them are called local maxima.\nThe lowest point in whole curve is called global minima, whereas the rest of them are called local minima.\nFinding Minima\nWe can use scipy.optimize.minimize() function to minimize the function.\nThe minimize() function takes the following arguments:\nfun - a function representing an equation.\nx0 - an initial guess for the root.\nmethod - name of the method to use. Legal values:\n'CG'\n'BFGS'\n'Newton-CG'\n'L-BFGS-B'\n'TNC'\n'COBYLA'\n'SLSQP'\ncallback - function called after each iteration of optimization.\noptions - a dictionary defining extra params:\nExample\nMinimize the function x^2 + x + 2 with BFGS:",
+      "examples": [
+        "from scipy.optimize import root\nfrom math import cos\n\ndef eqn(x):\nreturn x + cos(x)\n\nmyroot = root(eqn, 0)\n\nprint(myroot.x)",
+        "print(myroot)",
+        "from scipy.optimize import minimize\n\ndef eqn(x):\nreturn x**2 + x + 2\n\nmymin = minimize(eqn, 0, method='BFGS')\n\nprint(mymin)",
+        "x + cos(x)",
+        "optimize.root",
+        "x",
+        "scipy.optimize.minimize()",
+        "minimize()",
+        "'CG'",
+        "'BFGS'",
+        "'Newton-CG'",
+        "'L-BFGS-B'",
+        "'TNC'",
+        "'COBYLA'",
+        "'SLSQP'",
+        "{\n\"disp\": boolean - print detailed description\n\"gtol\": number - the tolerance of the error\n}",
+        "x^2 + x + 2",
+        "BFGS"
+      ]
+    },
+    {
+      "title": "SciPy Sparse Data",
+      "summary": "What is Sparse Data\nSparse data is data that has mostly unused elements (elements that don't carry any information ).\nIt can be an array like this one:\n[1, 0, 2, 0, 0, 3, 0, 0, 0, 0, 0, 0]\nSparse Data: is a data set where most of the item values are zero.\nDense Array: is the opposite of a sparse array: most of the values are not zero.\nIn scientific computing, when we are dealing with partial derivatives in linear algebra we will come across sparse data.\nHow to Work With Sparse Data\nSciPy has a module, scipy.sparse that provides functions to deal with sparse data.\nThere are primarily two types of sparse matrices that we use:\nCSC - Compressed Sparse Column. For efficient arithmetic, fast column slicing.\nCSR - Compressed Sparse Row. For fast row slicing, faster matrix vector products\nWe will use the CSR matrix in this tutorial.\nCSR Matrix\nWe can create CSR matrix by passing an arrray into function scipy.sparse.csr_matrix().\nExampleGet your own Python Server\nCreate a CSR matrix from an array:\nThe example above returns:\nFrom the result we can see that there are 3 items with value.\nThe 1. item is in row 0 position 5 and has the value 1.\nThe 2. item is in row 0 position 6 and has the value 1.\nThe 3. item is in row 0 position 8 and has the value 2.\nREMOVE ADS\nSparse Matrix Methods\nViewing stored data (not the zero items) with the data property:\nExample\nCounting nonzeros with the count_nonzero() method:\nExample\nRemoving zero-entries from the matrix with the eliminate_zeros() method:\nExample\nEliminating duplicate entries with the sum_duplicates() method:\nExample\nEliminating duplicates by adding them:\nConverting from csr to csc with the tocsc() method:\nExample\nNote: Apart from the mentioned sparse specific operations, sparse matrices support all of the operations that normal matrices support e.g. reshaping, summing, arithemetic, broadcasting etc.",
+      "examples": [
+        "import numpy as np\nfrom scipy.sparse import csr_matrix\n\narr = np.array([0, 0, 0, 0, 0, 1, 1, 0, 2])\n\nprint(csr_matrix(arr))",
+        "import numpy as np\nfrom scipy.sparse import csr_matrix\n\narr = np.array([[0, 0, 0], [0, 0, 1], [1, 0, 2]])\n\nprint(csr_matrix(arr).data)",
+        "import numpy as np\nfrom scipy.sparse import csr_matrix\n\narr = np.array([[0, 0, 0], [0, 0, 1], [1, 0, 2]])\n\nprint(csr_matrix(arr).count_nonzero())",
+        "import numpy as np\nfrom scipy.sparse import csr_matrix\n\narr = np.array([[0, 0, 0], [0, 0, 1], [1, 0, 2]])\n\nmat = csr_matrix(arr)\nmat.eliminate_zeros()\n\nprint(mat)",
+        "import numpy as np\nfrom scipy.sparse import csr_matrix\n\narr = np.array([[0, 0, 0], [0, 0, 1], [1, 0, 2]])\n\nmat = csr_matrix(arr)\nmat.sum_duplicates()\n\nprint(mat)",
+        "import numpy as np\nfrom scipy.sparse import csr_matrix\n\narr = np.array([[0, 0, 0], [0, 0, 1], [1, 0, 2]])\n\nnewarr = csr_matrix(arr).tocsc()\n\nprint(newarr)",
+        "(0, 5) 1 (0, 6) 1 (0, 8) 2",
+        "[1, 0, 2, 0, 0, 3, 0, 0, 0, 0, 0, 0]",
+        "scipy.sparse",
+        "scipy.sparse.csr_matrix()",
+        "0",
+        "5",
+        "1",
+        "6",
+        "8",
+        "2",
+        "data",
+        "count_nonzero()",
+        "eliminate_zeros()",
+        "sum_duplicates()",
+        "tocsc()"
+      ]
+    },
+    {
+      "title": "SciPy Graphs",
+      "summary": "Working with Graphs\nGraphs are an essential data structure.\nSciPy provides us with the module scipy.sparse.csgraph for working with such data structures.\nAdjacency Matrix\nAdjacency matrix is a nxn matrix where n is the number of elements in a graph.\nAnd the values represents the connection between the elements.\nExample:\nFor a graph like this, with elements A, B and C, the connections are:\nA & B are connected with weight 1.\nA & C are connected with weight 2.\nC & B is not connected.\nThe Adjency Matrix would look like this:\nBelow follows some of the most used methods for working with adjacency matrices.\nConnected Components\nExampleGet your own Python Server\nREMOVE ADS\nDijkstra\nUse the dijkstra method to find the shortest path in a graph from one element to another.\nIt takes following arguments:\nreturn_predecessors: boolean (True to return whole path of traversal otherwise False).\nindices: index of the element to return all paths from that element only.\nlimit: max weight of path.\nExample\nFind the shortest path from element 1 to 2:\nFloyd Warshall\nUse the floyd_warshall() method to find shortest path between all pairs of elements.\nExample\nFind the shortest path between all pairs of elements:\nBellman Ford\nThe bellman_ford() method can also find the shortest path between all pairs of elements, but this method can handle negative weights as well.\nExample\nFind shortest path from element 1 to 2 with given graph with a negative weight:\nDepth First Order\nThe depth_first_order() method returns a depth first traversal from a node.\nThis function takes following arguments:\nthe graph.\nthe starting element to traverse graph from.\nExample\nTraverse the graph depth first for given adjacency matrix:\nBreadth First Order\nThe breadth_first_order() method returns a breadth first traversal from a node.\nThis function takes following arguments:\nthe graph.\nthe starting element to traverse graph from.\nExample\nTraverse the graph breadth first for given adjacency matrix:",
+      "examples": [
+        "import numpy as np\nfrom scipy.sparse.csgraph import connected_components\nfrom scipy.sparse import csr_matrix\n\narr = np.array([\n[0, 1, 2],\n[1, 0, 0],\n[2, 0, 0]\n])\n\nnewarr = csr_matrix(arr)\n\nprint(connected_components(newarr))",
+        "import numpy as np\nfrom scipy.sparse.csgraph import dijkstra\nfrom scipy.sparse import csr_matrix\n\narr = np.array([\n[0, 1, 2],\n[1, 0, 0],\n[2, 0, 0]\n])\n\nnewarr = csr_matrix(arr)\n\nprint(dijkstra(newarr, return_predecessors=True, indices=0))",
+        "import numpy as np\nfrom scipy.sparse.csgraph import floyd_warshall\nfrom scipy.sparse import csr_matrix\n\narr = np.array([\n[0, 1, 2],\n[1, 0, 0],\n[2, 0, 0]\n])\n\nnewarr = csr_matrix(arr)\n\nprint(floyd_warshall(newarr, return_predecessors=True))",
+        "import numpy as np\nfrom scipy.sparse.csgraph import bellman_ford\nfrom scipy.sparse import csr_matrix\n\narr = np.array([\n[0, -1, 2],\n[1, 0, 0],\n[2, 0, 0]\n])\n\nnewarr = csr_matrix(arr)\n\nprint(bellman_ford(newarr, return_predecessors=True, indices=0))",
+        "import numpy as np\nfrom scipy.sparse.csgraph import depth_first_order\nfrom scipy.sparse import csr_matrix\n\narr = np.array([\n[0, 1, 0, 1],\n[1, 1, 1, 1],\n[2, 1, 1, 0],\n[0, 1, 0, 1]\n])\n\nnewarr = csr_matrix(arr)\n\nprint(depth_first_order(newarr, 1))",
+        "import numpy as np\nfrom scipy.sparse.csgraph import breadth_first_order\nfrom scipy.sparse import csr_matrix\n\narr = np.array([\n[0, 1, 0, 1],\n[1, 1, 1, 1],\n[2, 1, 1, 0],\n[0, 1, 0, 1]\n])\n\nnewarr = csr_matrix(arr)\n\nprint(breadth_first_order(newarr, 1))",
+        "A B C A:[0 1 2] B:[1 0 0] C:[2 0 0]",
+        "scipy.sparse.csgraph",
+        "nxn",
+        "n",
+        "connected_components()",
+        "dijkstra",
+        "floyd_warshall()",
+        "bellman_ford()",
+        "depth_first_order()",
+        "breadth_first_order()"
+      ]
+    },
+    {
+      "title": "SciPy Spatial Data",
+      "summary": "Working with Spatial Data\nSpatial data refers to data that is represented in a geometric space.\nE.g. points on a coordinate system.\nWe deal with spatial data problems on many tasks.\nE.g. finding if a point is inside a boundary or not.\nSciPy provides us with the module scipy.spatial, which has functions for working with spatial data.\nTriangulation\nA Triangulation of a polygon is to divide the polygon into multiple triangles with which we can compute an area of the polygon.\nA Triangulation with points means creating surface composed triangles in which all of the given points are on at least one vertex of any triangle in the surface.\nOne method to generate these triangulations through points is the Delaunay() Triangulation.\nExampleGet your own Python Server\nCreate a triangulation from following points:\nResult:\nNote: The simplices property creates a generalization of the triangle notation.\nREMOVE ADS\nConvex Hull\nA convex hull is the smallest polygon that covers all of the given points.\nUse the ConvexHull() method to create a Convex Hull.\nExample\nCreate a convex hull for following points:\nResult:\nKDTrees\nKDTrees are a datastructure optimized for nearest neighbor queries.\nE.g. in a set of points using KDTrees we can efficiently ask which points are nearest to a certain given point.\nThe KDTree() method returns a KDTree object.\nThe query() method returns the distance to the nearest neighbor and the location of the neighbors.\nExample\nFind the nearest neighbor to point (1,1):\nResult:\nDistance Matrix\nThere are many Distance Metrics used to find various types of distances between two points in data science, Euclidean distsance, cosine distsance etc.\nThe distance between two vectors may not only be the length of straight line between them, it can also be the angle between them from origin, or number of unit steps required etc.\nMany of the Machine Learning algorithm's performance depends greatly on distance metrices. E.g. \"K Nearest Neighbors\", or \"K Means\" etc.\nLet us look at some of the Distance Metrices:\nEuclidean Distance\nFind the euclidean distance between given points.\nExample\nResult:\nCityblock Distance (Manhattan Distance)\nIs the distance computed using 4 degrees of movement.\nE.g. we can only move: up, down, right, or left, not diagonally.\nExample\nFind the cityblock distance between given points:\nResult:\nCosine Distance\nIs the value of cosine angle between the two points A and B.\nExample\nFind the cosine distsance between given points:\nResult:\nHamming Distance\nIs the proportion of bits where two bits are different.\nIt's a way to measure distance for binary sequences.\nExample\nFind the hamming distance between given points:\nResult:",
+      "examples": [
+        "(2.0, 0)",
+        "9.21954445729",
+        "11",
+        "0.019419324309079777",
+        "0.666666666667",
+        "import numpy as np\nfrom scipy.spatial import Delaunay\nimport matplotlib.pyplot as plt\n\npoints = np.array([\n[2, 4],\n[3, 4],\n[3, 0],\n[2, 2],\n[4, 1]\n])\n\nsimplices = Delaunay(points).simplices\n\nplt.triplot(points[:, 0], points[:, 1], simplices)\nplt.scatter(points[:, 0], points[:, 1], color='r')\n\nplt.show()",
+        "import numpy as np\nfrom scipy.spatial import ConvexHull\nimport matplotlib.pyplot as plt\n\npoints = np.array([\n[2, 4],\n[3, 4],\n[3, 0],\n[2, 2],\n[4, 1],\n[1, 2],\n[5, 0],\n[3, 1],\n[1, 2],\n[0, 2]\n])\n\nhull = ConvexHull(points)\nhull_points = hull.simplices\n\nplt.scatter(points[:,0], points[:,1])\nfor simplex in hull_points:\nplt.plot(points[simplex,0], points[simplex,1], 'k-')\n\nplt.show()",
+        "from scipy.spatial import KDTree\n\npoints = [(1, -1), (2, 3), (-2, 3), (2, -3)]\n\nkdtree = KDTree(points)\n\nres = kdtree.query((1, 1))\n\nprint(res)",
+        "from scipy.spatial.distance import euclidean\n\np1 = (1, 0)\np2 = (10, 2)\n\nres = euclidean(p1, p2)\n\nprint(res)",
+        "from scipy.spatial.distance import cityblock\n\np1 = (1, 0)\np2 = (10, 2)\n\nres = cityblock(p1, p2)\n\nprint(res)",
+        "from scipy.spatial.distance import cosine\n\np1 = (1, 0)\np2 = (10, 2)\n\nres = cosine(p1, p2)\n\nprint(res)",
+        "from scipy.spatial.distance import hamming\n\np1 = (True, False, True)\np2 = (False, True, True)\n\nres = hamming(p1, p2)\n\nprint(res)",
+        "scipy.spatial",
+        "Delaunay()",
+        "simplices",
+        "ConvexHull()",
+        "KDTree()",
+        "query()"
+      ]
+    },
+    {
+      "title": "SciPy Matlab Arrays",
+      "summary": "Working With Matlab Arrays\nWe know that NumPy provides us with methods to persist the data in readable formats for Python. But SciPy provides us with interoperability with Matlab as well.\nSciPy provides us with the module scipy.io, which has functions for working with Matlab arrays.\nExporting Data in Matlab Format\nThe savemat() function allows us to export data in Matlab format.\nThe method takes the following parameters:\nfilename - the file name for saving data.\nmdict - a dictionary containing the data.\ndo_compression - a boolean value that specifies whether to compress the result or not. Default False.\nExampleGet your own Python Server\nExport the following array as variable name \"vec\" to a mat file:\nNote: The example above saves a file name \"arr.mat\" on your computer.\nTo open the file, check out the \"Import Data from Matlab Format\" example below:\nREMOVE ADS\nImport Data from Matlab Format\nThe loadmat() function allows us to import data from a Matlab file.\nThe function takes one required parameter:\nfilename - the file name of the saved data.\nIt will return a structured array whose keys are the variable names, and the corresponding values are the variable values.\nExample\nImport the array from following mat file.:\nResult:\nUse the variable name \"vec\" to display only the array from the matlab data:\nExample\nResult:\nNote: We can see that the array originally was 1D, but on extraction it has increased one dimension.\nIn order to resolve this we can pass an additional argument squeeze_me=True:\nExample\nResult:",
+      "examples": [
+        "{ '__header__': b'MATLAB 5.0 MAT-file Platform: nt, Created on: Tue Sep 22 13:12:32 2020', '__version__': '1.0', '__globals__': [], 'vec': array([[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]]) }",
+        "[[0 1 2 3 4 5 6 7 8 9]]",
+        "[0 1 2 3 4 5 6 7 8 9]",
+        "from scipy import io\nimport numpy as np\n\narr = np.arange(10)\n\nio.savemat('arr.mat', {\"vec\": arr})",
+        "from scipy import io\nimport numpy as np\n\narr = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9,])\n\n# Export:\nio.savemat('arr.mat', {\"vec\": arr})\n\n# Import:\nmydata = io.loadmat('arr.mat')\n\nprint(mydata)",
+        "...\n\nprint(mydata['vec'])",
+        "# Import:\nmydata = io.loadmat('arr.mat', squeeze_me=True)\n\nprint(mydata['vec'])",
+        "scipy.io",
+        "savemat()",
+        "loadmat()",
+        "squeeze_me=True"
+      ]
+    },
+    {
+      "title": "SciPy Interpolation",
+      "summary": "What is Interpolation?\nInterpolation is a method for generating points between given points.\nFor example: for points 1 and 2, we may interpolate and find points 1.33 and 1.66.\nInterpolation has many usage, in Machine Learning we often deal with missing data in a dataset, interpolation is often used to substitute those values.\nThis method of filling values is called imputation.\nApart from imputation, interpolation is often used where we need to smooth the discrete points in a dataset.\nHow to Implement it in SciPy?\nSciPy provides us with a module called scipy.interpolate which has many functions to deal with interpolation:\n1D Interpolation\nThe function interp1d() is used to interpolate a distribution with 1 variable.\nIt takes x and y points and returns a callable function that can be called with new x and returns corresponding y.\nExampleGet your own Python Server\nFor given xs and ys interpolate values from 2.1, 2.2... to 2.9:\nResult:\nNote: that new xs should be in same range as of the old xs, meaning that we can't call interp_func() with values higher than 10, or less than 0.\nREMOVE ADS\nSpline Interpolation\nIn 1D interpolation the points are fitted for a single curve whereas in Spline interpolation the points are fitted against a piecewise function defined with polynomials called splines.\nThe UnivariateSpline() function takes xs and ys and produce a callable funciton that can be called with new xs.\nPiecewise function: A function that has different definition for different ranges.\nExample\nFind univariate spline interpolation for 2.1, 2.2... 2.9 for the following non linear points:\nResult:\nInterpolation with Radial Basis Function\nRadial basis function is a function that is defined corresponding to a fixed reference point.\nThe Rbf() function also takes xs and ys as arguments and produces a callable function that can be called with new xs.\nExample\nInterpolate following xs and ys using rbf and find values for 2.1, 2.2 ... 2.9:\nResult:",
+      "examples": [
+        "[5.2 5.4 5.6 5.8 6. 6.2 6.4 6.6 6.8]",
+        "[5.62826474 6.03987348 6.47131994 6.92265019 7.3939103 7.88514634 8.39640439 8.92773053 9.47917082]",
+        "[6.25748981 6.62190817 7.00310702 7.40121814 7.8161443 8.24773402 8.69590519 9.16070828 9.64233874]",
+        "from scipy.interpolate import interp1d\nimport numpy as np\n\nxs = np.arange(10)\nys = 2*xs + 1\n\ninterp_func = interp1d(xs, ys)\n\nnewarr = interp_func(np.arange(2.1, 3, 0.1))\n\nprint(newarr)",
+        "from scipy.interpolate import UnivariateSpline\nimport numpy as np\n\nxs = np.arange(10)\nys = xs**2 + np.sin(xs) + 1\n\ninterp_func = UnivariateSpline(xs, ys)\n\nnewarr = interp_func(np.arange(2.1, 3, 0.1))\n\nprint(newarr)",
+        "from scipy.interpolate import Rbf\nimport numpy as np\n\nxs = np.arange(10)\nys = xs**2 + np.sin(xs) + 1\n\ninterp_func = Rbf(xs, ys)\n\nnewarr = interp_func(np.arange(2.1, 3, 0.1))\n\nprint(newarr)",
+        "scipy.interpolate",
+        "interp1d()",
+        "x",
+        "y",
+        "interp_func()",
+        "UnivariateSpline()",
+        "xs",
+        "ys",
+        "Rbf()"
+      ]
+    },
+    {
+      "title": "SciPy Statistical Significance Tests",
+      "summary": "What is Statistical Significance Test?\nIn statistics, statistical significance means that the result that was produced has a reason behind it, it was not produced randomly, or by chance.\nSciPy provides us with a module called scipy.stats, which has functions for performing statistical significance tests.\nHere are some techniques and keywords that are important when performing such tests:\nHypothesis in Statistics\nHypothesis is an assumption about a parameter in population.\nNull Hypothesis\nIt assumes that the observation is not statistically significant.\nAlternate Hypothesis\nIt assumes that the observations are due to some reason.\nIt's alternate to Null Hypothesis.\nExample:\nFor an assessment of a student we would take:\n\"student is worse than average\" - as a null hypothesis, and:\n\"student is better than average\" - as an alternate hypothesis.\nOne tailed test\nWhen our hypothesis is testing for one side of the value only, it is called \"one tailed test\".\nExample:\nFor the null hypothesis:\n\"the mean is equal to k\", we can have alternate hypothesis:\n\"the mean is less than k\", or:\n\"the mean is greater than k\"\nTwo tailed test\nWhen our hypothesis is testing for both side of the values.\nExample:\nFor the null hypothesis:\n\"the mean is equal to k\", we can have alternate hypothesis:\n\"the mean is not equal to k\"\nIn this case the mean is less than, or greater than k, and both sides are to be checked.\nAlpha value\nAlpha value is the level of significance.\nExample:\nHow close to extremes the data must be for null hypothesis to be rejected.\nIt is usually taken as 0.01, 0.05, or 0.1.\nP value\nP value tells how close to extreme the data actually is.\nP value and alpha values are compared to establish the statistical significance.\nIf p value <= alpha we reject the null hypothesis and say that the data is statistically significant. otherwise we accept the null hypothesis.\nREMOVE ADS\nT-Test\nT-tests are used to determine if there is significant differnce between means of two variables and lets us know if they belong to the same distribution.\nIt is a two tailed test.\nThe function ttest_ind() takes two samples of same size and produces a tuple of t-statistic and p-value.\nExampleGet your own Python Server\nFind if the given values v1 and v2 are from same distribution:\nResult:\nIf you want to return only the p-value, use the pvalue property:\nExample\nResult:\nKS-Test\nKS test is used to check if given values follow a distribution.\nThe function takes the value to be tested, and the CDF as two parameters.\nA CDF can be either a string or a callable function that returns the probability.\nIt can be used as a one tailed or two tailed test.\nBy default it is two tailed. We can pass parameter alternative as a string of one of two-sided, less, or greater.\nExample\nFind if the given value follows the normal distribution:\nResult:\nStatistical Description of Data\nIn order to see a summary of values in an array, we can use the describe() function.\nIt returns the following description:\nnumber of observations (nobs)\nminimum and maximum values = minmax\nmean\nvariance\nskewness\nkurtosis\nExample\nShow statistical description of the values in an array:\nResult:\nNormality Tests (Skewness and Kurtosis)\nNormality tests are based on the skewness and kurtosis.\nThe normaltest() function returns p value for the null hypothesis:\n\"x comes from a normal distribution\".\nSkewness:\nA measure of symmetry in data.\nFor normal distributions it is 0.\nIf it is negative, it means the data is skewed left.\nIf it is positive it means the data is skewed right.\nKurtosis:\nA measure of whether the data is heavy or lightly tailed to a normal distribution.\nPositive kurtosis means heavy tailed.\nNegative kurtosis means lightly tailed.\nExample\nFind skewness and kurtosis of values in an array:\nResult:\nExample\nFind if the data comes from a normal distribution:\nResult:",
+      "examples": [
+        "Ttest_indResult(statistic=0.40833510339674095, pvalue=0.68346891833752133)",
+        "0.68346891833752133",
+        "KstestResult(statistic=0.047798701221956841, pvalue=0.97630967161777515)",
+        "DescribeResult( nobs=100, minmax=(-2.0991855456740121, 2.1304142707414964), mean=0.11503747689121079, variance=0.99418092655064605, skewness=0.013953400984243667, kurtosis=-0.671060517912661 )",
+        "0.11168446328610283 -0.1879320563260931",
+        "NormaltestResult(statistic=4.4783745697002848, pvalue=0.10654505998635538)",
+        "import numpy as np\nfrom scipy.stats import ttest_ind\n\nv1 = np.random.normal(size=100)\nv2 = np.random.normal(size=100)\n\nres = ttest_ind(v1, v2)\n\nprint(res)",
+        "...\nres = ttest_ind(v1, v2).pvalue\n\nprint(res)",
+        "import numpy as np\nfrom scipy.stats import kstest\n\nv = np.random.normal(size=100)\n\nres = kstest(v, 'norm')\n\nprint(res)",
+        "import numpy as np\nfrom scipy.stats import describe\n\nv = np.random.normal(size=100)\nres = describe(v)\n\nprint(res)",
+        "import numpy as np\nfrom scipy.stats import skew, kurtosis\n\nv = np.random.normal(size=100)\n\nprint(skew(v))\nprint(kurtosis(v))",
+        "import numpy as np\nfrom scipy.stats import normaltest\n\nv = np.random.normal(size=100)\n\nprint(normaltest(v))",
+        "scipy.stats",
+        "ttest_ind()",
+        "pvalue",
+        "describe()",
+        "normaltest()"
+      ]
+    },
+    {
+      "title": "SciPy Online Compiler (Editor)",
+      "summary": "SciPy (Python) Editor\nWith our \"Try it Yourself\" editor, you can edit Python code and use the SciPy module, and view the result in your browser.\nExample\nClick on the \"Try it Yourself\" button to see how it works.\nPublish Your Code\nIf you want to create your own website or build Python applications, check out W3Schools Spaces.\nW3Schools Spaces is a website-building tool that enables you to create and share your own website. You can also get a Python server, allowing you to develop and host your Python applications with ease.\nNote: This includes Python libraries such as: Django, Pandas, NumPy, SciPy and more.\nYou can change the website's look and how it works by editing the code right in your web browser.\nIt's easy to use and doesn't require any setup\nThe code editor is packed with features to help you achieve more:\nTemplates: Start from scratch or use a template\nCloud-based: no installations required. You only need your browser\nTerminal & Log: debug and troubleshoot your code easily\nFile Navigator: switch between files inside the code editor\nAnd much more!\nLearn Faster\nPractice is key to mastering coding, and the best way to put your Python knowledge into practice is by getting practical with code.\nUse W3Schools Spaces to build, test and deploy code.\nThe code editor lets you write and practice different types of computer languages. It includes Python, but you can use it for other languages too.\nNew languages are added all the time:\nIf you don't know Python, we suggest that you read our Python Tutorial from scratch.\nEasy Package Management\nGet an overview of your packages and easily add or delete frameworks and libraries. Then, with just one click, you can make changes to your packages without manual installation.\nBuild Powerful Websites\nYou can also use the code editor in W3School Spaces to build frontend or full-stack websites from scratch.\nOr you can use the 60+ templates available and save time:\nCreate your Spaces account today and explore them all!\nShare Your Website With The World\nHost and publish your websites in no time with W3School Spaces.\nW3Schools subdomain and SSL certificate are included for free with W3School Spaces. An SSL certificate makes your website safe and secure. It also helps people trust your website and makes it easier to find it online.\nWant a custom domain for your website?\nYou can buy a domain or transfer an existing one and connect it to your space.\nHow Does It Work?\nGet started in a few clicks with W3School Spaces.",
+      "examples": [
+        "from scipy import constants\n\nprint(constants.liter)",
+        "0.001"
+      ]
+    },
+    {
+      "title": "SciPy Quiz",
+      "summary": "You can test your SciPy skills with W3Schools' Quiz.\nThe Test\nThe test contains 25 questions and there is no time limit.\nThe test is not official, it's just a nice way to see how much you know, or don't know, about SciPy.\nCount Your Score\nYou will get 1 point for each correct answer. At the end of the Quiz, your total score will be displayed. Maximum score is 25 points.\nStart the Quiz\nGood luck!\nStart the SciPy Quiz ❯\nIf you don't know Pandas, we suggest that you read our SciPy Tutorial from scratch.\nKickstart your career\nGet certified by completing the PYTHON course",
+      "examples": []
+    },
+    {
+      "title": "SciPy Exercises",
+      "summary": "Exercises\nTest your SciPy skills with exercises from all categories:\nIntroduction\nConstants\nOptimizers\nSparse Data\nGraphs\nSpatial Data\nMatlab Arrays\nInterpolation\nSignificance Tests\nLog in to track your progress\nIf you haven't already, sign up to become a W3Schooler, and get points for every exercise you complete.\nAs a logged on W3Schools user you will have access to many features like having your own web page, track your learning progress, receive personal guided paths, and more.\nThe Exercise\nThe exercises are a mix of \"multiple choice\" and \"fill in the blanks\" questions. There are between 3 and 9 questions in each category. The answer can be found in the corresponding tutorial chapter. If you're stuck, or answer wrong, you can try again or hit the \"Show Answer\" button to see the correct answer.\nIf you don't know SciPy, we suggest that you read our SciPy Tutorial from scratch.\nKickstart your career\nGet certified by completing the PYTHON course",
+      "examples": []
+    },
+    {
+      "title": "SciPy Syllabus",
+      "summary": "Introduction\nThe W3Schools SciPy Tutorial is comprehensive and beginner-friendly.\nIt will give you a fundamental knowledge of scientific computing with Python.\nIt is designed for beginners and requires basic Python and NumPy knowledge.\nThe content has been carefully made to be bite-sized, simple, and easy to understand.\nThe content has been proven by millions of users over the years. It is updated and improved frequently.\nThe syllabus outline and its sequence are structured so you can learn SciPy step by step, from basic functions to advanced scientific computing.\nGet Started With SciPy »\nLearning Outcomes\nLearn SciPy Introduction\nLearn SciPy Getting Started\nLearn SciPy Constants\nLearn SciPy Optimizers\nLearn SciPy Sparse Data\nLearn SciPy Graphs\nLearn SciPy Spatial Data\nLearn SciPy Matlab Arrays\nLearn SciPy Interpolation\nLearn SciPy Statistical Significance Tests\nNote: Are you a teacher teaching SciPy? W3Schools Academy is a toolbox of features that can help you teach. It offers classroom features such as pre-built study plans, classroom administration and much more. Read more about Academy here.\nWhich Subjects Are SciPy Relevant For?\nScientific Computing:\nSciPy can be used for scientific calculations.\nData Analysis:\nSciPy provides tools for analyzing data.\nSignal Processing:\nSciPy excels at processing signals.\nImage Processing:\nSciPy offers powerful image manipulation tools.\nOptimization:\nSciPy includes various optimization algorithms.\nEngineering:\nSciPy is widely used in engineering applications.\nResearch:\nSciPy supports scientific research workflows.\nGet Started\nActivities\nIn this tutorial we offer different activities for you to learn SciPy for free:\nLessons\nExercises\nQuizzes\nSign in to Track Progress\nYou can also create a free account to track your progress.\nAs a signed-in user, you get access to features such as:\nLearning paths\nSandbox and lab environments\nAchievements\nAnd much more!\nSign Up - It's free\nOverview of the Modules\nSciPy Home\nSciPy Intro\nSciPy Getting Started\nSciPy Constants\nSciPy Optimizers\nSciPy Sparse Data\nSciPy Graphs\nSciPy Spatial Data\nSciPy Matlab Arrays\nSciPy Interpolation\nSciPy Significance Tests\nGet Started\nSandbox and Lab Environment\nSciPy, like any scientific library, is best learned through hands-on practice.\nTry this example using our editor:\nExampleGet your own Python Server\nHow many cubic meters are in one liter:\nIf you want to explore more and host your project, we have a feature called Spaces that allows you to practice SciPy computations for free.\nHere you get a secure sandbox environment called Spaces, where you can practice scientific computing and test algorithms in real-time.\nSpaces allow you to test, analyze, and visualize data. This includes a W3Schools subdomain, hosting, and secure SSL certificates.\nSpaces require no installation and run directly in the browser.\nFeatures include:\nCollaboration\nFile navigator\nTerminal & log\nPackage manager\nDatabase\nEnvironment manager\nAnalytics\nCreate a Spaces Account\nSciPy Certification\nW3Schools offers an end-of-pathway certification program.\nHere you can take exams to get certified.\nThe SciPy exam is a test that summarizes the W3Schools SciPy syllabus.\nThe certification exam is adaptive and graded; students will get a grade from intermediate, advanced to professional.\nBuy Certificate »\nAre You a Teacher?\nAre you interested in learning how you can use W3Schools Academy to Teach SciPy?\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\nWatch Demo »",
+      "examples": [
+        "from scipy import constants\n\nprint(constants.liter)"
+      ]
+    },
+    {
+      "title": "SciPy Study Plan",
+      "summary": "Introduction\nThe SciPy study plan helps you teach your students SciPy step-by-step.\nCreating a study plan for SciPy is easy.\nYou can use a pre-built study plan or customize it.\nStudents have different skill levels. The study plans can be customized to ensure that everyone is challenged.\nSave time with pre-built teacher materials and study plans. Easily organize your class with a timeline from the introduction of SciPy to the final exam.\nW3Schools Academy\nThis study plan is a feature of W3Schools Academy.\nW3Schools Academy is a platform that has everything you need to teach coding, all in one place.\nIt offers you as a teacher a toolbox of features that helps you succeed with teaching in your classroom.\nYou need to have an active subscription to access the study plan feature. There are two different subscription tiers:\nEssentials ($1.99 / month per student)\nFull Access ($5.99 / month per student)\nCalculate your price and order here.\nLearn More »\nAcademy also offer other features such as:\nManaging your classroom\nTracking of student progress and reports\nLabs, assignments, and code challenges (prebuilt challenges or create your own ones)\nAuto-grading\nTeaching materials\nCertification exams\nGet a free demo »\nTeacher Materials\nW3Schools has everything you need to teach SciPy.\nThe SciPy training materials is available for you to include and use in your study plan:\nW3Schools SciPy Tutorial\nSciPy Exercises\nSciPy Quiz\nSciPy Challenges (Coding challenges)\nSciPy Certification Exam (End of Pathway Exam)\nSciPy Syllabus\nWith the SciPy Syllabus, your students will start with the basics, like understanding SciPy sub-packages and performing basic scientific calculations, and move to more advanced topics, like optimization, integration, and signal processing. Each chapter includes simple examples, try-it-yourself sections, exercises, and quizzes to make learning easy, interactive, and fun.\nRead more about SciPy Syllabus.\nStudy Plan Overview\nThe study plan features are made to help teachers and students. They make learning easy, flexible, and fun. These features work for different types of classes, learning styles and student level.\nLearning Paths\nYou can add ready-made learning paths.\nThe learning paths are by default ordered by our recommended order.\nYou can change the order.\nYou can add custom activities with text, links, or multi-media files.\nDrag and drop or click to make changes to the path.\nYou can add ready-made learning paths.\nThe learning paths are by default ordered by our recommended order.\nYou can change the order.\nYou can add custom activities with text, links, or multi-media files.\nDrag and drop or click to make changes to the path.\nInteractive Content\nTutorials\nTry-its (test code snippets)\nExercises\nQuiz\nChallenges\nLabs\nTutorials\nTry-its (test code snippets)\nExercises\nQuiz\nChallenges\nLabs\nTimeline and Pace\nYou can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\nYou can decide the learning pace for your class.\nDifferent study plans can be assigned to different students in the same class.\nThe flexibility can help to make sure that everyone is challenged.\nYou can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\nYou can decide the learning pace for your class.\nDifferent study plans can be assigned to different students in the same class.\nThe flexibility can help to make sure that everyone is challenged.\nTrack Student Progress\nThere are tools to track student progress.\nThe analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\nThe challenges can be auto-graded or manually graded. The results are available to you as a teacher.\nThere are tools to track student progress.\nThe analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\nThe challenges can be auto-graded or manually graded. The results are available to you as a teacher.\nEnd of Pathway Exam\nThe SciPy study plan aligns with the SciPy Certification Exam.\nThe exam can be taken at the end of the study plan, at your selected date.\nThe exam summarizes the SciPy Tutorial.\nYou get reports of the students' results.\nThe SciPy study plan aligns with the SciPy Certification Exam.\nThe exam can be taken at the end of the study plan, at your selected date.\nThe exam summarizes the SciPy Tutorial.\nYou get reports of the students' results.\nAccessibility\nStudy plans and learning materials are accessible on desktops, tablets, and smartphones.\nThis ensures students can learn anytime, anywhere.\nStudy plans and learning materials are accessible on desktops, tablets, and smartphones.\nThis ensures students can learn anytime, anywhere.\nLearn More »\nSample Study Plan\nYou choose the timeline and pace of your study plans.\nSchools have different preferences.\nSome would like more intensive pace, e.g. 3 weeks, others 12 or more weeks.\nIt is completely up to you.\nFor example, this is how a 3-week SciPy study plan could look like:\nWeek 1: Introduction, Constants, Optimizers\nWeek 2: Sparse Data, Graphs, Spatial Data, Matlab Arrays, Interpolation\nWeek 3: Significance Tests, SciPy Certification Exam\nImage of Sample SciPy study plan:\nReady to get started?\nStart with SciPy Study Plans today.\nGet Started »\nAre You a Teacher?\nAre you interested in learning how you can use W3Schools Academy to Teach SciPy programming?\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\nWatch Demo »",
+      "examples": []
+    },
+    {
+      "title": "W3Schools SciPy Certificate",
+      "summary": "W3Schools offers an Online Certification Program.\nThe perfect solution for busy professionals who need to balance work, family, and career building.\nMore than 50 000 certificates already issued!\nGet Your Certificate »\nW3Schools offers an Online Certification Program.\nThe perfect solution for busy professionals who need to balance work, family, and career building.\nMore than 50 000 certificates already issued!\nGet Your Certificate »\nWho Should Consider Getting Certified?\nAny student or professional within the digital industry.\nCertifications are valuable assets to gain trust and demonstrate knowledge to your clients, current or future employers on a ever increasing competitive market.\nW3Schools is Trusted by Top Companies\nW3Schools has over two decades of experience with teaching coding online.\nOur certificates are recognized and valued by companies looking to employ skilled developers.\nSave Time and Money\nShow the world your coding skills by getting a certification.\nThe prices is a small fraction compared to the price of traditional education.\nDocument and validate your competence by getting certified!\nExam overview\nFee: 95 USD\nAchievable certification levels:\nIntermediate (40%)\nAdvanced (75%)\nProfessional (90%)\nNumber of questions:\nAdaptive, 60 on average\nRequirement to pass:\nMinimum 40% - Intermediate level\nTime limit: 60 minutes\nNumber of attempts to pass: 3\nExam deadline: None\nCertification Expiration: None\nFormat: Online, multiple choice\nRegister now »\nAdvance Faster in Your Career\nGetting a certificate proves your commitment to upgrading your skills.\nThe certificate can be added as credentials to your CV, Resume, LinkedIn profile, and so on.\nIt gives you the credibility needed for more responsibilities, larger projects, and a higher salary.\nKnowledge is power, especially in the current job market.\nDocumentation of your skills enables you to advance your career or helps you to start a new one.\nHow Does It Work?\nStudy for free at W3Schools.com\nStudy at your own speed\nTest your skills with W3Schools online quizzes\nApply for your certificate by paying an exam fee\nTake your exam online, at any time, and from any location\nGet Your Certificate and Share It With The World\nExample certificate:\nEach certificate gets a unique link that can be shared with others.\nValidate your certification with the link or QR code.\nCheck how it looks like in this Example.\nShare your certificate on Linked in the Certifications section in just one click!\nDocument Your Skills\nGetting a certificate proves your commitment to upgrade your skills, gives you the credibility needed for more responsibilities, larger projects, and a higher salary.\nGet Your Certificate »\nLooking to add multiple users?\nAre you an educator, manager or business owner looking for courses or certifications?\nWe are working with schools, companies and organizations from all over the world.\nGet courses and/or certifications for your team here.",
+      "examples": []
+    }
+  ],
+  "glossary": [
+    "backend",
+    "basic scipy",
+    "exercises",
+    "free",
+    "javascript",
+    "programs",
+    "quiz exercises",
+    "report error",
+    "scipy constants",
+    "scipy editor",
+    "scipy exercises",
+    "scipy graphs",
+    "scipy home",
+    "scipy interpolation",
+    "scipy intro",
+    "scipy optimizers",
+    "scipy quiz",
+    "scipy syllabus",
+    "w3.css",
+    "w3schools spaces"
+  ],
+  "objectives": []
+}

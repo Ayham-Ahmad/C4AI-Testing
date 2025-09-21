@@ -242,5 +242,16 @@
     "stat percentiles",
     "stat variance",
     "w3schools spaces"
-  ]
+  ],
+  "objectives": [
+  "Understand the concept of data and its role in computing",
+  "Learn about different data formats such as text, numbers, and binary",
+  "Differentiate between structured, semi-structured, and unstructured data",
+  "Work with data representation methods like tables, JSON, and XML",
+  "Understand the basics of data storage and retrieval",
+  "Learn about data integrity, consistency, and reliability",
+  "Explore the importance of data in databases, analytics, and machine learning",
+  "Gain awareness of data security and privacy considerations"
+]
+
 }

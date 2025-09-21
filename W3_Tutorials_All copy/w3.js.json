@@ -1,0 +1,224 @@
+{
+  "course_name": "W3.js",
+  "description": "W3.JS is a JavaScript library designed to simplify web development projects: Easy to learn and easy to use. Designed for fast application development. Designed for all devices: PC, Tablet, and Mobile. Free to use. No licenses. Below is a list of the some of the things W3.JS can do: At the end of the W3.JS tutorial, you can find more than 100 examples. With our online editor, you can edit and test each example yourself. Go to W3.JS Examples! In this tutorial you will also find a complete W3.JS reference about all functions and attributes. W3.JS References W3.JS is very easy to use. Just add a link to w3.js in your web page: Or download w3.js and add a link to the file:",
+  "course_summary": [
+    {
+      "title": "W3.JS Intro",
+      "summary": "HTML Slideshows\nDisplay Data in HTML\nClick to Display Data\nName\n{{CustomerName}}, {{Country}}\nSort HTML Elements\nClick on the table headers to sort the table accordingly:\nFilter HTML Elements\nAlfreds Futterkiste\nBerglunds snabbköp\nCentro comercial Moctezuma\nErnst Handel\nFISSA Fabrica Inter. Salchichas S.A.\nGalería del gastrónomo\nIsland Trading\nKöniglich Essen\nLaughing Bacchus Wine Cellars\nMagazzini Alimentari Riuniti\nNorth/South\nParis spécialités\nHide and Show HTML Elements\nLondon\nLondon, England.\nParis\nParis, France.\nTokyo\nTokyo, Japan.\nAdd Style to HTML Elements\nLondon\nLondon is the capital city of England.\nToggle the Class of HTML Elements\nLondon\nCapital city of England.\nParis\nCapital city of France.",
+      "examples": []
+    },
+    {
+      "title": "W3.JS Selectors",
+      "summary": "W3.JS Selectors\nW3.JS selects HTML elements and perform actions on the selected element(s):\nThe action() is performed on the selected element(s)\nThe (selector) selects the HTML element(s)\nExample\nTry It Yourself » With CSS »\nAre you familiar with CSS selectors?\n\nW3.JS uses the CSS syntax to select and manipulate HTML elements.\nSelectors are used to \"find\" (select) HTML elements based on their tag name, id, classes, types, attributes, values of attributes and much more. A list of all selectors can be found in our CSS Selector Reference.\nSelector Examples\nTo select HTML elements, use a tag name:\nHide all <h2> elements:\nTry It Yourself »\nTo select an element with a specific id, write a hash character, followed by the id of the HTML element:\nHide an element with id=\"London\":\nTry It Yourself »\nTo select elements with a specific class, write a period character, followed by the name of the class:\nHide all elements with class=\"city\":\nTry It Yourself »\nMore Selector Examples\nFor a complete reference of all CSS selectors, please go to our CSS Selectors Reference.",
+      "examples": [
+        "w3.action(selector)",
+        "w3.hide('p')  // Hide all <p> elements",
+        "w3.hide('h2')",
+        "w3.hide('#London')",
+        "w3.hide('.city')"
+      ]
+    },
+    {
+      "title": "W3.JS Hide & Show",
+      "summary": "Hiding Elements Using Element Id\nTo hide an element with a specified id, use a hash tag (#) in front of the id name.\nHide an element with id=\"London\":\nExample\nTry It Yourself » With CSS »\nHiding Elements Using Tag Name\nTo hide all elements with a specified tag name, use the tag name (without < and >) as the selector.\nHide all <h2> elements:\nExample\nTry It Yourself » With CSS »\nHiding Elements Using Class Name\nTo hide all elements with a specified class name, use a period (.) in front of the class name.\nHide elements with class=\"city\":\nExample\nTry It Yourself » With CSS »\nShow Elements Using Element Id\nTo show an element with a specified id, use a hash tag (#) in front of the id name.\nShow an element with id=\"London\":\nExample\nTry It Yourself » With CSS »\nShow Elements Using Tag Name\nTo show all elements with a specified tag name, use the tag name (without < and >) as the selector.\nShow all <h2> elements:\nExample\nTry It Yourself » With CSS »\nShow Elements Using Class Name\nTo show all elements with a specified class name, use a period (.) in front of the class name.\nShow elements with class=\"city\":\nExample\nTry It Yourself » With CSS »\nToggle Hide/Show\nToggle Hide and Show Using Element Id\nToggle between hiding and showing an element with id=\"London\":\nExample\nTry It Yourself » With CSS »\nToggle Hide and Show Using Tag Name\nToggle between hiding and showing all <h2> elements:\nExample\nTry It Yourself » With CSS »\nToggle Hide and Show Using Class Name\nToggle between hiding and showing elements with class=\"city\":\nExample\nTry It Yourself » With CSS »",
+      "examples": [
+        "w3.hide(selector)",
+        "<button onclick=\"w3.hide('#London')\">Hide</button>",
+        "<button onclick=\"w3.hide('h2')\">Hide</button>",
+        "<button onclick=\"w3.hide('.city')\">Hide</button>",
+        "<button onclick=\"w3.show('#London')\">Show</button>",
+        "<button onclick=\"w3.show('h2')\">Show</button>",
+        "<button onclick=\"w3.show('.city')\">Show</button>",
+        "w3.toggleShow(selector)",
+        "<button onclick=\"w3.toggleShow('#London')\">Toggle Hide/Show</button>",
+        "<button onclick=\"w3.toggleShow('h2')\">Toggle Hide/Show</button>",
+        "<button onclick=\"w3.toggleShow('.city')\">Toggle Hide/Show</button>"
+      ]
+    },
+    {
+      "title": "W3.JS Add Style to HTML",
+      "summary": "Add a CSS property value:\nAdd Style by Id\nAdd a red background color to an element with id=\"London\":\nExample\nTry It Yourself » With CSS »\nAdd Style by Tag\nAdd a red background color to all <h2> elements:\nExample\nTry It Yourself » With CSS »\nAdd Style by Class\nAdd a red background color to all elements with class=\"city\":\nExample\nTry It Yourself » With CSS »",
+      "examples": [
+        "w3.addStyle(selector,'property','value')",
+        "<button onclick=\"w3.addStyle('#London','background-color','red')\">Add Style</button>",
+        "<button onclick=\"w3.addStyle('h2','background-color','red')\">Add Style</button>",
+        "<button onclick=\"w3.addStyle('.city','background-color','red')\">Add Style</button>"
+      ]
+    },
+    {
+      "title": "W3.JS Add Classes to HTML",
+      "summary": "Add a class:\nAdd multiple classes:\nAdd Class by Id\nAdd the \"marked\" class to an element with id=\"London\":\nExample\nTry It Yourself » With CSS »\nAdd Class by Tag\nAdd the \"marked\" class to all <h2> elements:\nExample\nTry It Yourself » With CSS »\nAdd Class by Class\nAdd the \"marked\" class to an elements with class=\"city\":\nExample\nTry It Yourself » With CSS »\nAdd Multiple Classes\nTo add multiple classes to an element, separate each class with a space.\nAdd both \"class1\" and \"class2\" to an element with id=\"London\":\nExample\nTry It Yourself » With CSS »\nRemove classes from HTML elements\nRemove a class:\nRemove multiple classes:\nRemove Class by Id\nRemove the \"marked\" class from an element with id=\"London\":\nExample\nTry It Yourself » With CSS »\nRemove Class by Tag\nRemove the \"marked\" class from all <h2> elements:\nExample\nTry It Yourself » With CSS »\nRemove Class by Class\nRemove the \"marked\" class from all elements with class=\"city\":\nExample\nTry It Yourself » With CSS »\nRemove Multiple Classes\nTo remove multiple classes from an element, separate each class with a space.\nRemove both \"class1\" and \"class2\" from an element with id=\"London\":\nExample\nTry It Yourself » With CSS »\nToggle the Class of HTML elements\nToggle a class (on/off):\nToggle between two classes:\nToggle Class by Id\nToggle between the \"marked\" class of an element with id=\"London\":\nExample\nTry It Yourself » With CSS »\nToggle Class by Tag\nToggle between the \"marked\" class of all <h2> elements:\nExample\nTry It Yourself » With CSS »\nToggle Class by Class\nToggle between the \"marked\" class of all elements with class=\"city\":\nExample\nTry It Yourself » With CSS »\nToggle Multiple Classes\nToggle between the class name \"class1\" and \"class2\" of id=\"London:\nExample\nTry It Yourself » With CSS »",
+      "examples": [
+        "w3.addClass(selector,'class')",
+        "w3.addClass(selector,'class1 class2 class3...')",
+        "<button onclick=\"w3.addClass('#London','marked')\">Add Class</button>",
+        "<button onclick=\"w3.addClass('h2','marked')\">Add Class</button>",
+        "<button onclick=\"w3.addClass('.city','marked')\">Add Class</button>",
+        "<button onclick=\"w3.addClass('#London','class1 class2')\">Add Classes</button>",
+        "w3.removeClass(selector,'class')",
+        "w3.removeClass(selector,'class1 class2 class3...')",
+        "<button onclick=\"w3.removeClass('#London','marked')\">Remove Class</button>",
+        "<button onclick=\"w3.removeClass('h2','marked')\">Remove Class</button>",
+        "<button onclick=\"w3.removeClass('.city','marked')\">Remove Class</button>",
+        "<button onclick=\"w3.removeClass('#London','class1 class2')\">Remove Classes</button>",
+        "w3.toggleClass(selector,'class')",
+        "w3.toggleClass(selector,'property','class','class')",
+        "<button onclick=\"w3.toggleClass('#London','marked')\">Toggle</button>",
+        "<button onclick=\"w3.toggleClass('h2','marked')\">Toggle</button>",
+        "<button onclick=\"w3.toggleClass('.city','marked')\">Toggle</button>",
+        "<button onclick=\"w3.toggleClass('#London','class1','class2')\">Toggle</button>"
+      ]
+    },
+    {
+      "title": "W3.JS HTML Filters",
+      "summary": "Filter elements:\nFilter Lists\nSearch for a name in the input field.\nAlfreds Futterkiste\nBerglunds snabbköp\nCentro comercial Moctezuma\nErnst Handel\nFISSA Fabrica Inter. Salchichas S.A.\nGalería del gastrónomo\nIsland Trading\nKöniglich Essen\nLaughing Bacchus Wine Cellars\nMagazzini Alimentari Riuniti\nNorth/South\nParis spécialités\nRattlesnake Canyon Grocery\nSimons bistro\nThe Big Cheese\nVaffeljernet\nWolski Zajazd\nExample\nFilter Tables\nExample",
+      "examples": [
+        "w3.filterHTML(selector)",
+        "<input oninput=\"w3.filterHTML('#id01', 'li', this.value)\">\n\n<ul id=\"id01\">\n<li>Alfreds Futterkiste</li>\n<li>Berglunds snabbkop</li>\n...",
+        "<input oninput=\"w3.filterHTML('#id01', '.item', this.value)\">\n\n<table id=\"id01\">\n<tr>\n<th>Customer</th>\n<th>City</th>\n<th>Country</th>\n</tr>\n<tr class=\"item\">\n<td>Alfreds Futterkiste</td>\n<td>Berlin</td>\n<td>Germany</td>\n</tr>\n<tr class=\"item\">\n<td>Berglunds snabbkop</td>\n<td>Lulea</td>\n<td>Sweden</td>\n</tr>\n..."
+      ]
+    },
+    {
+      "title": "W3.JS HTML Sort",
+      "summary": "Sort elements:\nSort Lists\nClick the button to sort the list alphabetically:\nOslo\nStockholm\nHelsinki\nBerlin\nRome\nMadrid\nExample\nSort Tables\nClick the table headers to sort the table accordingly:\nExample",
+      "examples": [
+        "w3.sortHTML(selector)",
+        "<button onclick=\"w3.sortHTML('#id01', 'li')\">Sort</button>\n\n<ul id=\"id01\">\n<li>Oslo</li>\n<li>Stockholm</li>\n<li>Helsinki</li>\n<li>Berlin</li>\n<li>Rome</li>\n<li>Madrid</li>\n</ul>",
+        "<table id=\"myTable\">\n<tr>\n<th onclick=\"w3.sortHTML('#myTable','.item', 'td:nth-child(1)')\">Name</th>\n<th onclick=\"w3.sortHTML('#myTable','.item', 'td:nth-child(2)')\">Country</th>\n</tr>\n<tr class=\"item\">\n<td>Berglunds snabbkop</td>\n<td>Sweden</td>\n</tr>\n<tr class=\"item\">\n<td>North/South</td>\n<td>UK</td>\n</tr>\n<tr class=\"item\">\n<td>Alfreds Futterkiste</td>\n<td>Germany</td>\n</tr>\n...\n</table>"
+      ]
+    },
+    {
+      "title": "W3.JS HTML Slideshows",
+      "summary": "Start slideshow:\nExample\nNo Autostart\nTo prevent the slideshow from starting automatically, set the interval parameter to 0:\nExample\nNext Slide\nAdd buttons to browse through the slideshow:\nWhen you initiate a slideshow, the w3.slideshow() function returns an object representing the slideshow.\nThe slideshow object contain properties and methods, such as next() and previous():\nExample\nMore Slideshows\nAny HTML element can be included in a slideshow.\nDefine which, by using CSS selectors.\nExample\nHeaders:",
+      "examples": [
+        "w3.slideshow(selector, interval (milliseconds))",
+        "<img class=\"nature\" src=\"img_snowtops.jpg\">\n<img class=\"nature\" src=\"img_mountains.jpg\">\n<img class=\"nature\" src=\"img_nature.jpg\">\n\n<script>\nw3.slideshow(\".nature\");\n</script>",
+        "w3.slideshow(\".nature\", 0);",
+        "var myShow = w3.slideshow(\".nature\", 0);",
+        "<button onclick=\"myShow.previous()\">Previous</button>\n<button onclick=\"myShow.next()\">Next</button>",
+        "<h1 class=\"city\">London</h1>\n<h1 class=\"city\">Paris</h1>\n<h1 class=\"city\">Tokyo</h1>\n\n<script>\nw3.slideshow(\".city\");\n</script>"
+      ]
+    },
+    {
+      "title": "W3.JS HTML Includes",
+      "summary": "Include an HTML file:\nThe HTML\nSave the HTML you want to include in an .html file:\ncontent.html\nInclude the HTML\nIncluding HTML is done by using a w3-include-html attribute:\nExample\nAdd the JavaScript\nHTML includes are done by JavaScript.\nMake sure your page has w3.js loaded and call w3.includeHTML():\nExample\nFull Example\nExample\nInclude Many HTML Snippets\nYou can include any number of HTML snippets:\nExample\nTry it Yourself » With CSS »\nAdding a Callback Function\nWhen you include HTML snippets in a web page, you must secure that other functions that depends on the included HTML do not execute before the HTML is properly included.\nThe easiest way to \"hold back\" code is to place it in a callback function.\nA callback function can be added as an argument to w3.includeHTML():\nExample\nYou will find a callback example in the next chapter of this tutorial.",
+      "examples": [
+        "w3.includeHTML()",
+        "<a href=\"https://www.w3schools.com/html/\">HTML</a><br>\n<a href=\"https://www.w3schools.com/css/\">CSS</a><br>\n<a href=\"https://www.w3schools.com/bootstrap/\">Bootstrap</a><br>\n<a href=\"https://www.w3schools.com/js/\">JavaScript</a><br>\n<a href=\"https://www.w3schools.com/sql/\">SQL</a><br>\n<a href=\"https://www.w3schools.com/php/\">PHP</a><br>\n<a href=\"https://www.w3schools.com/w3css/\">W3.CSS</a><br>",
+        "<div w3-include-html=\"content.html\"></div>",
+        "<script>\nw3.includeHTML();\n</script>",
+        "<!DOCTYPE html>\n<html>\n<script src=\"/lib/w3.js\"></script>\n<body>\n\n<div w3-include-html=\"content.html\"></div>\n\n<script>\nw3.includeHTML();\n</script>\n\n</body>\n</html>",
+        "<!DOCTYPE html>\n<html>\n<script src=\"/lib/w3.js\"></script>\n<body>\n\n<div w3-include-HTML=\"h1.html\"></div>\n<div w3-include-HTML=\"content.html\"></div>\n\n<script>\nw3.includeHTML();\n</script>\n\n</body>\n<html>",
+        "<script>\nw3.includeHTML(myCallback);\n\nfunction myCallback() {\n// code that has to wait goes here\n}\n</script>"
+      ]
+    },
+    {
+      "title": "W3.JS Display HTML Data",
+      "summary": "Display data in HTML:\nEasy to Use\nJust add brackets {{ }} to any HTML element to reserve space for your data:\nExample\nFinally call w3.displayObject to display the data in your HTML:\nExample\nTry It Yourself »\nThe first parameter is the id of the HTML element to use (id01).\nThe second parameter is the data object to display (myObject).\nDisplaying a Larger Object\nTo demonstrate the power of W3.JS, we will display a larger JavaScript object (myObject).\nThe object is an array of customers objects with the CustomerName, City, and Country properties:\nmyObject\nFilling a Dropdown\nExample\nTry It Yourself » With CSS »\nFilling a List\nExample\nTry It Yourself » With CSS »\nCombining w3.displayObject with w3.includeHTML\nWhen you include HTML snippets in a web page, you must secure that other functions that depend on the included HTML do not execute before the HTML is properly included.\nThe easiest way to \"hold back\" code is to place it in a callback function.\nA callback function can be added as an argument to w3.includeHTML():\nExample\nTry It Yourself » With CSS »\nFilling Check Boxes\nExample\nTry It Yourself » With CSS »\nFilling Classes\nExample\nTry It Yourself » With CSS »\nFilling a Table\nExample\nTry It Yourself » With CSS »\nFilling a <select> Element\nExample\nTry It Yourself » With CSS »",
+      "examples": [
+        "w3.displayObject(selector)",
+        "<div id=\"id01\">\n{{firstName}} {{lastName}}\n</div>",
+        "<script>\nvar myObject = {\"firstName\" : \"John\", \"lastName\" : \"Doe\"};\nw3.displayObject(\"id01\", myObject);\n</script>",
+        "var myObject = {\"customers\":[\n{\"CustomerName\":\"Alfreds Futterkiste\",\"City\":\"Berlin\",\"Country\":\"Germany\"},\n{\"CustomerName\":\"Around the Horn\",\"City\":\"London\",\"Country\":\"UK\"},\n{\"CustomerName\":\"B's Beverages\",\"City\":\"London\",\"Country\":\"UK\"},\n{\"CustomerName\":\"Blauer See Delikatessen\",\"City\":\"Mannheim\",\"Country\":\"Germany\"},\n{\"CustomerName\":\"Bon app'\",\"City\":\"Marseille\",\"Country\":\"France\"},\n{\"CustomerName\":\"Bottom-Dollar Marketse\",\"City\":\"Tsawassen\",\"Country\":\"Canada\"},\n{\"CustomerName\":\"Chop-suey Chinese\",\"City\":\"Bern\",\"Country\":\"Switzerland\"}\n]};",
+        "<select id=\"id01\">\n<option w3-repeat=\"customers\">{{CustomerName}}</option>\n</select>\n\n<script>\nw3.displayObject(\"id01\", myObject);\n</script>",
+        "<ul id=\"id01\">\n<li w3-repeat=\"customers\">{{CustomerName}}</li>\n</ul>\n\n<script>\nw3.displayObject(\"id01\", myObject);\n</script>",
+        "<div w3-include-html=\"list.html\"></div>\n\n<script>\nw3.includeHTML(myCallback);\n\nfunction myCallback() {\nw3.displayObject(\"id01\", myObject);\n}\n</script>",
+        "<table id=\"id01\">\n<tr w3-repeat=\"customers\">\n<td>{{CustomerName}}</td>\n<td><input type=\"checkbox\" {{checked}}\"></td>\n</tr>\n</table>\n\n<script>\nw3.displayObject(\"id01\", myObject);\n</script>",
+        "<table id=\"id01\">\n<tr w3-repeat=\"customers\" class=\"{{Color}}\">\n<td>{{CustomerName}}</td>\n</tr>\n</table>\n\n<script>\nw3.displayObject(\"id01\", myObject);\n</script>",
+        "<table id=\"id01\">\n<tr>\n<th>Customer</th>\n<th>City</th>\n<th>Country</th>\n</tr>\n<tr w3-repeat=\"customers\">\n<td>{{CustomerName}}</td>\n<td>{{City}}</td>\n<td>{{Country}}</td>\n</tr>\n</table>\n\n<script>\nw3.displayObject(\"id01\", myObject);\n</script>",
+        "<select id=\"id01\">\n<option w3-repeat=\"x in cars\">{{x}}</option>\n</select>\n\n<script>\nw3.displayObject(\"id01\", {\"cars\" : [\"Volvo\", \"Ford\", \"BMW\", \"Mercedes\"]});\n</script>"
+      ]
+    },
+    {
+      "title": "W3.JS Http Requests",
+      "summary": "Read data from servers:\nThe examples on this page are the same as the examples on the previous page, except that the data are requested from a web server: customers.js\nFilling a Dropdown\nExample\nFilling a List\nExample\nFilling a Table\nExample\nFilling Another Table\nExample",
+      "examples": [
+        "w3.getHttpObject(file.js,function)",
+        "<select id=\"id01\">\n<option w3-repeat=\"customers\">{{CustomerName}}</option>\n</select>\n\n<script>\nw3.getHttpObject(\"customers.js\", myFunction);\n\nfunction myFunction(myObject) {\nw3.displayObject(\"id01\", myObject);\n}\n</script>",
+        "<ul id=\"id01\">\n<li w3-repeat=\"customers\">{{CustomerName}}</li>\n</ul>\n\n<script>\nw3.getHttpObject(\"customers.js\", myFunction);\n\nfunction myFunction(myObject) {\nw3.displayObject(\"id01\", myObject);\n}\n</script>",
+        "<table id=\"id01\">\n<tr>\n<th>Customer</th>\n<th>City</th>\n<th>Country</th>\n</tr>\n<tr w3-repeat=\"customers\">\n<td>{{CustomerName}}</td>\n<td>{{City}}</td>\n<td>{{Country}}</td>\n</tr>\n</table>\n\n<script>\nw3.getHttpObject(\"customers.js\", myFunction);\n\nfunction myFunction(myObject) {\nw3.displayObject(\"id01\", myObject);\n}\n</script>",
+        "<table id=\"id01\">\n<tr>\n<th>Title</th>\n<th>Artist</th>\n<th>Price</th>\n</tr>\n<tr w3-repeat=\"cd\">\n<td>{{title}}</td>\n<td>{{artist}}</td>\n<td>{{price}}</td>\n</tr>\n</table>\n\n<script>\nw3.getHttpObject(\"cd_catalog.js\", myFunction);\n\nfunction myFunction(myObject) {\nw3.displayObject(\"id01\", myObject);\n}\n</script>"
+      ]
+    },
+    {
+      "title": "W3.JS Controllers",
+      "summary": "What is a Controller?\nA controller is a function you write to control your data.\nWith a self-written controller, you can modify data anyway you want:\nConvert to upper case\nConvert currencies\nCalculate and Summarize\nRound values\nSubstitute values\nChange colors according to values\nAnything else you are able to program\nController Example 1\nYou want to convert your data to upper case before display.\nConvert to Upper Case\nController Example 2\nSummarize Price",
+      "examples": [
+        "<script>\nw3.getHttpObject(\"customers.js\", myFunction);\n\nfunction myFunction(myObject) {\nvar i;\nvar myArray = myObject.customers;\nfor (i = 0; i < myArray.length; i++) {\nmyArray[i][\"CustomerName\"] =\nmyArray[i][\"CustomerName\"].toUpperCase();\n}\nw3.displayObject(\"id01\", myObject);\n}\n</script>",
+        "<script>\nw3.getHttpObject(\"cd_catalog.js\", myFunction);\n\nfunction myFunction(myObject) {\nvar i, total = 0;\nvar myArray = myObject.cd;\nfor (i = 0; i < myArray.length; i++) {\ntotal += Number(myArray[i].price);\n}\nmyObject.total = total.toFixed(2);\nw3.displayObject(\"id01\", myObject);\n}\n</script>"
+      ]
+    },
+    {
+      "title": "W3.JS Data Servers",
+      "summary": "Dynamic Data\nThe data used in the previous chapter static data fetched from a server.\nThe server code for fetching dynamic data from a database can be written in many different languages.\nHere are some examples:\nServer Running PHP and MySQL\nCross-Site HTTP Requests\nRequests for data from a different server (other than the requesting page), are called cross-site HTTP requests.\nCross-site requests are common on the web. Many pages load css, images, or scripts from different servers.\nHowever, in modern browsers, HTTP requests from scripts are restricted to the same site for security reasons.\nThe following line (in the PHP example above) allows access to the page from a cross-site:\nServer Running Node.js and MySQL\nServer Running ASP.NET, Razor and SQL Lite\nServer Running PHP and MS Access\nServer Running ASP.NET, VB and MS Access",
+      "examples": [
+        "<?php\nheader(\"Access-Control-Allow-Origin: *\");\nheader(\"Content-Type: application/json; charset=UTF-8\");\n\n$conn = new mysqli(\"myServer\", \"user\", \"pass\", \"myDB\");\n\n$result = $conn->query(\"SELECT CompanyName, City, Country FROM Customers\");\n\n$outp = \"\";\nwhile($rs = $result->fetch_array(MYSQLI_ASSOC)) {\nif ($outp != \"\") {$outp .= \",\";}\n$outp .= '{\"Name\":\"'  . $rs[\"CompanyName\"] . '\",';\n$outp .= '\"City\":\"'   . $rs[\"City\"]        . '\",';\n$outp .= '\"Country\":\"'. $rs[\"Country\"]     . '\"}';\n}\n$outp ='{\"customers\":['.$outp.']}';\n\n$conn->close();\n\necho($outp);\n?>",
+        "header(\"Access-Control-Allow-Origin: *\");",
+        "var express = require('express');\nvar app = express();\n\napp.get('/', function (req, res) {\nvar sql = require(\"mssql\");\nvar config = {user:'user', password:'pass', server:'myServer', database:'myDB'};\nsql.connect(config, function (err) {\nif (err) console.log(err);\nvar request = new sql.Request();\nrequest.query('SELECT CompanyName, City, Country FROM Customers', function (err, recordset) {\nif (err) console.log(err)\nres.send(recordset);\n});\n});\n});\n\nvar server = app.listen(5000, function () {\nconsole.log('Server is running..');\n});",
+        "@{\nResponse.AppendHeader(\"Access-Control-Allow-Origin\", \"*\")\nResponse.AppendHeader(\"Content-type\", \"application/json\")\nvar db = Database.Open(\"myDB\");\nvar query = db.Query(\"SELECT CompanyName, City, Country FROM Customers\");\nvar outp =\"\"\nvar c = chr(34)\n}\n\n@foreach(var row in query)\n{\nif outp <> \"\" then outp = outp + \",\"\noutp = outp + \"{\" + c + \"Name\"    + c + \":\" + c + @row.CompanyName + c + \",\"\noutp = outp +       c + \"City\"    + c + \":\" + c + @row.City        + c + \",\"\noutp = outp +       c + \"Country\" + c + \":\" + c + @row.Country     + c + \"}\"\n}\noutp =\"{\" + c + \"customers\" + c + \":[\" + outp + \"]}\"\n@outp",
+        "<?php\nheader(\"Access-Control-Allow-Origin: *\");\nheader(\"Content-Type: application/json; charset=ISO-8859-1\");\n\n$conn = new COM(\"ADODB.Connection\");\n$conn->open(\"PROVIDER=Microsoft.Jet.OLEDB.4.0;Data Source=myDB.mdb\");\n\n$rs = $conn->execute(\"SELECT CompanyName, City, Country FROM Customers\");\n\n$outp = \"\";\nwhile (!$rs->EOF) {\nif ($outp != \"\") {$outp .= \",\";}\n$outp .= '{\"Name\":\"'  . $rs[\"CompanyName\"] . '\",';\n$outp .= '\"City\":\"'   . $rs[\"City\"]        . '\",';\n$outp .= '\"Country\":\"'. $rs[\"Country\"]     . '\"}';\n$rs->MoveNext();\n}\n$outp ='{\"customers\":['.$outp.']}';\n\n$conn->close();\necho ($outp);\n?>",
+        "<%@ Import Namespace=\"System.IO\"%>\n<%@ Import Namespace=\"System.Data\"%>\n<%@ Import Namespace=\"System.Data.OleDb\"%>\n\n<%\nResponse.AppendHeader(\"Access-Control-Allow-Origin\", \"*\")\nResponse.AppendHeader(\"Content-type\", \"application/json\")\n\nDim conn As OleDbConnection\nDim objAdapter As OleDbDataAdapter\nDim objTable As DataTable\nDim objRow As DataRow\nDim objDataSet As New DataSet()\nDim outp\nDim c\n\nconn = New OledbConnection(\"Provider=Microsoft.Jet.OLEDB.4.0;data source=myDB.mdb\")\nobjAdapter = New OledbDataAdapter(\"SELECT CompanyName, City, Country FROM Customers\", conn)\nobjAdapter.Fill(objDataSet, \"myTable\")\nobjTable=objDataSet.Tables(\"myTable\")\n\noutp = \"\"\nc = chr(34)\nfor each x in objTable.Rows\nif outp <> \"\" then outp = outp & \",\"\noutp = outp & \"{\" & c & \"Name\"    & c & \":\" & c & x(\"CompanyName\") & c & \",\"\noutp = outp &       c & \"City\"    & c & \":\" & c & x(\"City\")        & c & \",\"\noutp = outp &       c & \"Country\" & c & \":\" & c & x(\"Country\")     & c & \"}\"\nnext\noutp =\"{\" & c & \"customers\" & c & \":[\" & outp & \"]}\"\n\nconn.close\nresponse.write(outp)\n%>"
+      ]
+    },
+    {
+      "title": "W3.JS W3Data",
+      "summary": "What is W3Data?\nW3Data is a tool for bringing server data to HTML applications.\nThe purpose of W3Data is to provide w3.js with data from a web server.\nApplication Models\nW3Data uses application models (written in JSON) to describe server applications.\nThis simple model describes a full application for retrieving data from a database:\nmodel_customers.js\nThe models are stored on the server and cannot be edited by a web user.\nYou have to be a server administrator or a user given the rights to edit files on the server.\nUsing an application model is easy, just add the model name to w3data.php when you call w3Http():\nExample\nDisplaying From a Text File\nExample\nThis is the model used in the application:\nmodel_cd_from_txt\nThis is the comma separated text file:\ncd_catalog.txt\nDisplaying From a JSON File\nExample\nThis is the model used in the application:\nmodel_cd_from_json.js\nThis is the JSON file:\ncd_catalog.js\nDisplaying From an XML File\nExample\nThis is the model used in the application:\nmodel_cd_from_xml\nThis is the XML file:\ncd_catalog.xml\nDownloads\nDownload the file: https://www.w3schools.com/w3js/w3data.php.txt.\nCopy the file to your web site and rename it to w3data.php.",
+      "examples": [
+        "{\n\"database\" : {\n\"connection\" : \"localmysql\",\n\"sql\" : \"SELECT * FROM Customers\"}\n}",
+        "<script>\nw3.getHttpObject(\"w3data.php?model=model_customers\", myFunction);\n\nfunction myFunction(myObject) {\nw3.displayObject(\"id01\", myObject);\n}\n</script>",
+        "<script>\nw3.getHttpObject(\"w3data.php?model=model_cd_from_txt\", myFunction);\n\nfunction myFunction(myObject) {\nw3.displayObject(\"id01\", myObject);\n}\n</script>",
+        "{\n\"data\" : {\n\"type\" : \"csvfile\",\n\"filename\" : \"cd_catalog.txt\",\n\"items\" : [\n{\"name\" : \"title\", \"index\" : 1},\n{\"name\" : \"artist\", \"index\" : 2},\n{\"name\" : \"price\", \"index\" : 5}\n]\n}\n}",
+        "Empire Burlesque,Bob Dylan,USA,Columbia,10.90,1985\nHide your heart,Bonnie Tyler,UK,CBS Records,9.90,1988\nGreatest Hits,Dolly Parton,USA,RCA,9.90,1982\nStill got the blues,Gary Moore,UK,Virgin records,10.20,1990\nEros,Eros Ramazzotti,EU,BMG,9.90,1997\nOne night only,Bee Gees,UK,Polydor,10.90,1998\nSylvias Mother,Dr.Hook,UK,CBS,8.10,1973\nMaggie May,Rod Stewart,UK,Pickwick,8.50,1990",
+        "<script>\nw3.getHttpObject(\"w3data.php?model=model_cd_from_json\", myFunction);\n\nfunction myFunction(myObject) {\nw3.displayObject(\"id01\", myObject);\n}\n</script>",
+        "{\n\"data\" : {\n\"type\" : \"jsonfile\",\n\"filename\" : \"cd_catalog.js\",\n\"record\" : \"cd\"\n\"items\" : [\n{\"name\" : \"title\", \"nodename\" : \"title\"},\n{\"name\" : \"artist\", \"nodename\" : \"artist\"},\n{\"name\" : \"price\", \"nodename\" : \"price\"}\n]\n}\n}",
+        "{\n\"cd\" : [\n{ \"title\" : \"Empire Burlesque\", \"artist\" : \"Bob Dylan\", \"price\" : \"10.90\" },\n{ \"title\" : \"Hide your heart\", \"artist\" : \"Bonnie Tyler\", \"price\" : \"9.90\" },\n{ \"title\" : \"Greatest Hits\", \"artist\" : \"Dolly Parton\", \"price\" : \"9.90\" },\n{ \"title\" : \"Still got the blues\", \"artist\" : \"Gary Moore\", \"price\" : \"10.20\" },\n{ \"title\" : \"Eros\", \"artist\" : \"Eros Ramazzotti\", \"price\" : \"9.90\" },\n{ \"title\" : \"One night only\", \"artist\" : \"Bee Gees\", \"price\" : \"10.90\" },\n{ \"title\" : \"Sylvias Mother\", \"artist\" : \"Dr.Hook\", \"price\" : \"8.10\" }\n]\n}",
+        "{\n\"data\" : {\n\"type\" : \"xmlfile\",\n\"filename\" : \"cd_catalog.xml\",\n\"record\" : \"CD\",\n\"items\" : [\n{\"name\" : \"artist\", \"nodename\" : \"ARTIST\"},\n{\"name\" : \"title\", \"nodename\" : \"TITLE\"},\n{\"name\" : \"country\", \"nodename\" : \"COUNTRY\"}\n]\n}\n}",
+        "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<CATALOG>\n<CD>\n<TITLE>Empire Burlesque</TITLE>\n<ARTIST>Bob Dylan</ARTIST>\n<COUNTRY>USA</COUNTRY>\n<COMPANY>Columbia</COMPANY>\n<PRICE>10.90</PRICE>\n<PUBLISHED>1985</PUBLISHED>\n</CD>\n<CD>\n<TITLE>Hide your heart</TITLE>\n<ARTIST>Bonnie Tyler</ARTIST>\n<COUNTRY>UK</COUNTRY>\n<COMPANY>CBS Records</COMPANY>\n<PRICE>9.90</PRICE>\n<PUBLISHED>1988</PUBLISHED>\n</CD>\n<CD>\n<TITLE>Greatest Hits</TITLE>\n<ARTIST>Dolly Parton</ARTIST>\n<COUNTRY>USA</COUNTRY>\n<COMPANY>RCA</COMPANY>\n<PRICE>9.90</PRICE>\n<PUBLISHED>1982</PUBLISHED>\n</CD>\n<CD>\n<TITLE>Still got the blues</TITLE>\n<ARTIST>Gary Moore</ARTIST>\n<COUNTRY>UK</COUNTRY>\n<COMPANY>Virgin records</COMPANY>\n<PRICE>10.20</PRICE>\n<PUBLISHED>1990</PUBLISHED>\n</CD>\n<CD>\n<TITLE>Eros</TITLE>\n<ARTIST>Eros Ramazzotti</ARTIST>\n<COUNTRY>EU</COUNTRY>\n<COMPANY>BMG</COMPANY>\n<PRICE>9.90</PRICE>\n<PUBLISHED>1997</PUBLISHED>\n</CD>\n<CD>\n<TITLE>One night only</TITLE>\n<ARTIST>Bee Gees</ARTIST>\n<COUNTRY>UK</COUNTRY>\n<COMPANY>Polydor</COMPANY>\n<PRICE>10.90</PRICE>\n<PUBLISHED>1998</PUBLISHED>\n</CD>\n<CD>\n<TITLE>Sylvias Mother</TITLE>\n<ARTIST>Dr.Hook</ARTIST>\n<COUNTRY>UK</COUNTRY>\n<COMPANY>CBS</COMPANY>\n<PRICE>8.10</PRICE>\n<PUBLISHED>1973</PUBLISHED>\n</CD>\n</CATALOG>"
+      ]
+    },
+    {
+      "title": "W3.JS Examples",
+      "summary": "W3.JS Hide\nExamples explained\nW3.JS Show\nExamples explained\nW3.JS Toggle Show\nExamples explained\nW3.JS Add Style\nExamples explained\nW3.JS Add Class\nExamples explained\nW3.JS Remove Class\nExamples explained\nW3.JS Toggle Class\nExamples explained\nW3.JS Filters\nExamples explained\nW3.JS Sort\nExamples explained\nW3.JS Slideshow\nExamples explained\nW3.JS Include\nExamples explained\nW3.JS Display\nExamples explained\nW3.JS Http\nExamples explained\nW3.JS Controller\nExamples explained",
+      "examples": []
+    },
+    {
+      "title": "W3.JS References",
+      "summary": "Complete W3.JS API Reference\nComplete W3.JS Attribute Reference",
+      "examples": []
+    },
+    {
+      "title": "W3.JS Downloads",
+      "summary": "How To Download and Use W3.JS\nDownload W3.JS\nDownload the latest version from this link: https://www.w3schools.com/lib/w3.js\nW3.JS is Free\nW3.JS is free to use. No license is necessary.\nHow To use W3.JS\nTo use W3.JS, just add a link to \"w3.js\" in your web pages:\nExample\nOr download w3.js and run it from your own web site:\nExample\nIf you put w3.js in a subfolder, add the folder name between slashes:\nExample\nIf you place w3.js at the root of your web, add a slash:\nExample\nChangelog (Latest Versions)",
+      "examples": [
+        "<!DOCTYPE html>\n<html>\n<title>My Web</title>\n\n<script src=\"https://www.w3schools.com/lib/w3.js\"></script>",
+        "<!DOCTYPE html>\n<html>\n<title>My Web</title>\n\n<script src=\"w3.js\"></script>",
+        "<!DOCTYPE html>\n<html>\n<title>My Web</title>\n\n<script src=\"/foldername/w3.js\"></script>",
+        "<!DOCTYPE html>\n<html>\n<title>My Web</title>\n\n<script src=\"/w3.js\"></script>"
+      ]
+    }
+  ],
+  "glossary": [
+    "backend",
+    "exercises",
+    "free",
+    "how to",
+    "javascript",
+    "programs",
+    "references",
+    "report error",
+    "w3 js",
+    "w3schools spaces"
+  ],
+  "objectives": [
+  "Understand the purpose of W3.JS as a lightweight JavaScript library",
+  "Learn how to include W3.JS in web projects",
+  "Use W3.JS to manipulate HTML elements and content",
+  "Apply W3.JS for filtering, sorting, and displaying data",
+  "Simplify DOM operations with W3.JS methods",
+  "Work with W3.JS for HTML includes and template rendering",
+  "Use W3.JS to handle CSS class toggling and styling",
+  "Create dynamic slideshows and responsive navigation with W3.JS",
+  "Learn how W3.JS can be an alternative to larger frameworks for small projects"
+]
+
+}

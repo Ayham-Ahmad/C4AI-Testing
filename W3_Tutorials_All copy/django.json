@@ -1,0 +1,1031 @@
+{
+  "course_name": "Django",
+  "description": "Django is a back-end server side web framework. Django is free, open source and written in Python. Django makes it easier to build web pages using Python. In this tutorial you get a step by step guide on how to install and create a Django project. You will learn how to create a project where you can add, read, update or delete data. You will learn how to make HTML Templates and use Django Template Tags to insert data within a HTML document. You will learn how to work with QuerySets to extract, filter, and sort data from the database. You will also learn how to set up a PostgreSQL database and how to deploy your Django project to the world. In the tutorial we will use examples to better explain the various concepts. Many chapters in this tutorial end with an exercise where you can check your level of knowledge. See all Django Exercises Learn by taking a quiz! The quiz will give you a signal of how much you know about Django.",
+  "course_summary": [
+    {
+      "title": "Django Introduction",
+      "summary": "What is Django?\nDjango is a Python framework that makes it easier to create web sites using Python.\nDjango takes care of the difficult stuff so that you can concentrate on building your web applications.\nDjango emphasizes reusability of components, also referred to as DRY (Don't Repeat Yourself), and comes with ready-to-use features like login system, database connection and CRUD operations (Create Read Update Delete).\nDjango is especially helpful for database driven websites.\nHow does Django Work?\nDjango follows the MVT design pattern (Model View Template).\nModel - The data you want to present, usually data from a database.\nView - A request handler that returns the relevant template and content - based on the request from the user.\nTemplate - A text file (like an HTML file) containing the layout of the web page, with logic on how to display the data.\nModel\nThe model provides data from the database.\nIn Django, the data is delivered as an Object Relational Mapping (ORM), which is a technique designed to make it easier to work with databases.\nThe most common way to extract data from a database is SQL. One problem with SQL is that you have to have a pretty good understanding of the database structure to be able to work with it.\nDjango, with ORM, makes it easier to communicate with the database, without having to write complex SQL statements.\nThe models are usually located in a file called models.py.\nView\nA view is a function or method that takes http requests as arguments, imports the relevant model(s), and finds out what data to send to the template, and returns the final result.\nThe views are usually located in a file called views.py.\nTemplate\nA template is a file where you describe how the result should be represented.\nTemplates are often .html files, with HTML code describing the layout of a web page, but it can also be in other file formats to present other results, but we will concentrate on .html files.\nDjango uses standard HTML to describe the layout, but uses Django tags to add logic:\nThe templates of an application is located in a folder named templates.\nURLs\nDjango also provides a way to navigate around the different pages in a website.\nWhen a user requests a URL, Django decides which view it will send it to.\nThis is done in a file called urls.py.\nSo, What is Going On?\nWhen you have installed Django and created your first Django web application, and the browser requests the URL, this is basically what happens:\nDjango receives the URL, checks the urls.py file, and calls the view that matches the URL.\nThe view, located in views.py, checks for relevant models.\nThe models are imported from the models.py file.\nThe view then sends the data to a specified template in the template folder.\nThe template contains HTML and Django tags, and with the data it returns finished HTML content back to the browser.\nDjango can do a lot more than this, but this is basically what you will learn in this tutorial, and are the basic steps in a simple web application made with Django.\nDjango History\nDjango was invented by Lawrence Journal-World in 2003, to meet the short deadlines in the newspaper and at the same time meeting the demands of experienced web developers.\nInitial release to the public was in July 2005.\nLatest version of Django is 4.0.3 (March 2022).",
+      "examples": [
+        "<h1>My Homepage</h1> <p>My name is {{ firstname }}.</p>",
+        "models.py",
+        "views.py",
+        "templates",
+        "urls.py",
+        "template"
+      ]
+    },
+    {
+      "title": "Django Getting Started",
+      "summary": "To install Django, you must have Python installed, and a package manager like PIP.\nPIP is included in Python from version 3.4.\nDjango Requires Python\nTo check if your system has Python installed, run this command in the command prompt:\nIf Python is installed, you will get a result with the version number, like this\nIf you find that you do not have Python installed on your computer, then you can download it for free from the following website: https://www.python.org/\nPIP\nTo install Django, you must use a package manager like PIP, which is included in Python from version 3.4.\nTo check if your system has PIP installed, run this command in the command prompt:\nIf PIP is installed, you will get a result with the version number.\nFor me, on a windows machine, the result looks like this:\nIf you do not have PIP installed, you can download and install it from this page: https://pypi.org/project/pip/\nVirtual Environment\nIt is suggested to have a dedicated virtual environment for each Django project, and in the next chapter you will learn how to create a virtual environment, and then install Django in it.",
+      "examples": [
+        "python --version",
+        "Python 3.13.2",
+        "pip --version",
+        "pip 24.3.1 from C:\\Program Files\\WindowsApps\\PythonVersion\\Lib\\site-packages\\pip (python 3.13)"
+      ]
+    },
+    {
+      "title": "Django - Create Virtual Environment",
+      "summary": "Virtual Environment\nIt is suggested to have a dedicated virtual environment for each Django project, and one way to manage a virtual environment is venv, which is included in Python.\nThe name of the virtual environment is your choice, in this tutorial we will call it myworld.\nType the following in the command prompt, remember to navigate to where you want to create your project:\nThis will set up a virtual environment, and create a folder named \"myworld\" with subfolders and files, like this:\nThen you have to activate the environment, by typing this command:\nWindows:\nUnix/MacOS:\nOnce the environment is activated, you will see this result in the command prompt:\nWindows:\nUnix/MacOS:\nNote: You must activate the virtual environment every time you open the command prompt to work on your project.\nInstall Django\nIn the next chapter you will finally learn how to install Django!",
+      "examples": [
+        "python -m venv myworld",
+        "myworld\nInclude\nLib\nScripts\n.gitignore\npyvenv.cfg",
+        "myworld\\Scripts\\activate.bat",
+        "source myworld/bin/activate",
+        "(myworld) C:\\Users\\Your Name>",
+        "(myworld) ... $",
+        "myworld"
+      ]
+    },
+    {
+      "title": "Install Django",
+      "summary": "Install Django\nNow, that we have created a virtual environment, we are ready to install Django.\nNote: Remember to install Django while you are in the virtual environment!\nDjango is installed using pip, with this command:\nWhich will give a result that looks like this (at least on my Windows machine):\nThat's it! Now you have installed Django in your new project, running in a virtual environment!\nWindows, Mac, or Unix?\nYou can run this project on either one. There can be some small differences, like some Windows versions prefers py as the first word in the command line, instead of python:\nIn the rest of this tutorial, we will be using Windows commands with the python keyword.\nCheck Django Version\nYou can check if Django is installed by asking for its version number like this:\nIf Django is installed, you will get a result with the version number:\nWhat's Next?\nNow you are ready to create a Django project in a virtual environment on your computer.\nIn the next chapters of this tutorial we will create a Django project and look at the various features of Django and hopefully make you a Django developer.",
+      "examples": [
+        "(myworld) ... $ python -m pip install Django",
+        "Collecting Django\nDownloading Django-5.1.7-py3-none-any.whl.metadata (4.1 kB)\nCollecting asgiref<4,>=3.8.1 (from Django)\nDownloading asgiref-3.8.1-py3-none-any.whl.metadata (9.3 kB)\nCollecting sqlparse>=0.3.1 (from Django)\nDownloading sqlparse-0.5.3-py3-none-any.whl.metadata (3.9 kB)\nCollecting tzdata (from Django)\nDownloading tzdata-2025.1-py2.py3-none-any.whl.metadata (1.4 kB)\nDownloading Django-5.1.7-py3-none-any.whl (8.3 MB)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 36.4 MB/s eta 0:00:00\nDownloading asgiref-3.8.1-py3-none-any.whl (23 kB)\nDownloading sqlparse-0.5.3-py3-none-any.whl (44 kB)\nDownloading tzdata-2025.1-py2.py3-none-any.whl (346 kB)\nInstalling collected packages: tzdata, sqlparse, asgiref, Django\nSuccessfully installed Django-5.1.7 asgiref-3.8.1 sqlparse-0.5.3 tzdata-2025.1\n\n[notice] A new release of pip is available: 24.3.1 -> 25.0.1\n[notice] To update, run: python.exe -m pip install --upgrade pip",
+        "python --version",
+        "(myworld) C:\\Users\\Your Name>django-admin --version",
+        "5.1.7",
+        "py",
+        "python"
+      ]
+    },
+    {
+      "title": "Django Create Project",
+      "summary": "My First Project\nOnce you have come up with a suitable name for your Django project, like mine: my_tennis_club, navigate to where in the file system you want to store the code (in the virtual environment), I will navigate to the myworld folder, and run this command in the command prompt:\nDjango creates a my_tennis_club folder on my computer, with this content:\nThese are all files and folders with a specific meaning, you will learn about some of them later in this tutorial, but for now, it is more important to know that this is the location of your project, and that you can start building applications in it.\nRun the Django Project\nNow that you have a Django project, you can run it, and see what it looks like in a browser.\nNavigate to the /my_tennis_club folder and execute this command in the command prompt:\nWhich will produce this result:\nOpen a new browser window and type 127.0.0.1:8000 in the address bar.\nThe result:\nWhat's Next?\nWe have a Django project!\nThe next step is to make an app in your project.\nYou cannot have a web page created with Django without an app.",
+      "examples": [
+        "django-admin startproject my_tennis_club",
+        "my_tennis_club\nmanage.py\nmy_tennis_club/\n__init__.py\nasgi.py\nsettings.py\nurls.py\nwsgi.py",
+        "python manage.py runserver",
+        "Watching for file changes with StatReloader\nPerforming system checks...\n\nSystem check identified no issues (0 silenced).\n\nYou have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.\nRun 'python manage.py migrate' to apply them.\nMarch 19, 2025 - 14:19:38\nDjango version 5.1.7, using settings 'my_tennis_club.settings'\nStarting development server at http://127.0.0.1:8000/\nQuit the server with CTRL-BREAK.",
+        "my_tennis_club",
+        "myworld",
+        "/my_tennis_club",
+        "127.0.0.1:8000"
+      ]
+    },
+    {
+      "title": "Django Create App",
+      "summary": "What is an App?\nAn app is a web application that has a specific meaning in your project, like a home page, a contact form, or a members database.\nIn this tutorial we will create an app that allows us to list and register members in a database.\nBut first, let's just create a simple Django app that displays \"Hello World!\".\nCreate App\nI will name my app members.\nStart by navigating to the selected location where you want to store the app, in my case the my_tennis_club folder, and run the command below.\nIf the server is still running, and you are not able to write commands, press [CTRL] [BREAK], or [CTRL] [C] to stop the server and you should be back in the virtual environment.\nDjango creates a folder named members in my project, with this content:\nThese are all files and folders with a specific meaning. You will learn about most of them later in this tutorial.\nFirst, take a look at the file called views.py.\nThis is where we gather the information we need to send back a proper response.\nYou will learn more about views in the next chapter.",
+      "examples": [
+        "python manage.py startapp members",
+        "my_tennis_club\nmanage.py\nmy_tennis_club/\nmembers/\nmigrations/\n__init__.py\n__init__.py\nadmin.py\napps.py\nmodels.py\ntests.py\nviews.py",
+        "members",
+        "my_tennis_club",
+        "views.py"
+      ]
+    },
+    {
+      "title": "Django Views",
+      "summary": "Views\nDjango views are Python functions that take http requests and return http response, like HTML documents.\nA web page that uses Django is full of views with different tasks and missions.\nViews are usually put in a file called views.py located on your app's folder.\nThere is a views.py in your members folder that looks like this:\nmy_tennis_club/members/views.py:\nFind it and open it, and replace the content with this:\nmy_tennis_club/members/views.py:\nNote: The name of the view does not have to be the same as the application.\nI call it members because I think it fits well in this context.\nThis is a simple example on how to send a response back to the browser.\nBut how can we execute the view? Well, we must call the view via a URL.\nYou will learn about URLs in the next chapter.",
+      "examples": [
+        "from django.shortcuts import render # Create your views here.",
+        "from django.shortcuts import render from django.http import HttpResponse def members(request): return HttpResponse(\"Hello world!\")",
+        "views.py",
+        "members",
+        "my_tennis_club/members/views.py"
+      ]
+    },
+    {
+      "title": "Django URLs",
+      "summary": "URLs\nCreate a file named urls.py in the same folder as the views.py file, and type this code in it:\nmy_tennis_club/members/urls.py:\nThe urls.py file you just created is specific for the members application. We have to do some routing in the root directory my_tennis_club as well. This may seem complicated, but for now, just follow the instructions below.\nThere is a file called urls.py on the my_tennis_club folder, open that file and add the include module in the import statement, and also add a path() function in the urlpatterns[] list, with arguments that will route users that comes in via 127.0.0.1:8000/.\nThen your file will look like this:\nmy_tennis_club/my_tennis_club/urls.py:\nIf the server is not running, navigate to the /my_tennis_club folder and execute this command in the command prompt:\nIn the browser window, type 127.0.0.1:8000/members/ in the address bar.",
+      "examples": [
+        "from django.urls import path from . import views urlpatterns = [ path('members/', views.members, name='members'), ]",
+        "from django.contrib import admin from django.urls import include, path urlpatterns = [ path('', include('members.urls')), path('admin/', admin.site.urls), ]",
+        "python manage.py runserver",
+        "urls.py",
+        "views.py",
+        "my_tennis_club/members/urls.py",
+        "members",
+        "my_tennis_club",
+        "include",
+        "import",
+        "path()",
+        "urlpatterns[]",
+        "127.0.0.1:8000/",
+        "my_tennis_club/my_tennis_club/urls.py",
+        "/my_tennis_club",
+        "127.0.0.1:8000/members/"
+      ]
+    },
+    {
+      "title": "Django Templates",
+      "summary": "Templates\nIn the Django Intro page, we learned that the result should be in HTML, and it should be created in a template, so let's do that.\nCreate a templates folder inside the members folder, and create a HTML file named myfirst.html.\nThe file structure should be like this:\nOpen the HTML file and insert the following:\nmy_tennis_club/members/templates/myfirst.html:\nModify the View\nOpen the views.py file in the members folder, and replace its content with this:\nmy_tennis_club/members/views.py:\nChange Settings\nTo be able to work with more complicated stuff than \"Hello World!\", We have to tell Django that a new app is created.\nThis is done in the settings.py file in the my_tennis_club folder.\nLook up the INSTALLED_APPS[] list and add the members app like this:\nmy_tennis_club/my_tennis_club/settings.py:\nThen run this command:\nWhich will produce this output:\nStart the server by navigating to the /my_tennis_club folder and execute this command:\nIn the browser window, type 127.0.0.1:8000/members/ in the address bar.\nThe result should look like this:",
+      "examples": [
+        "<!DOCTYPE html> <html> <body> <h1>Hello World!</h1> <p>Welcome to my first Django project!</p> </body> </html>",
+        "from django.http import HttpResponse from django.template import loader def members(request): template = loader.get_template('myfirst.html') return HttpResponse(template.render())",
+        "INSTALLED_APPS = [ 'django.contrib.admin', 'django.contrib.auth', 'django.contrib.contenttypes', 'django.contrib.sessions', 'django.contrib.messages', 'django.contrib.staticfiles', 'members' ]",
+        "my_tennis_club\nmanage.py\nmy_tennis_club/\nmembers/\ntemplates/\nmyfirst.html",
+        "python manage.py migrate",
+        "Operations to perform:\nApply all migrations: admin, auth, contenttypes, sessions\nRunning migrations:\nApplying contenttypes.0001_initial... OK\nApplying auth.0001_initial... OK\nApplying admin.0001_initial... OK\nApplying admin.0002_logentry_remove_auto_add... OK\nApplying admin.0003_logentry_add_action_flag_choices... OK\nApplying contenttypes.0002_remove_content_type_name... OK\nApplying auth.0002_alter_permission_name_max_length... OK\nApplying auth.0003_alter_user_email_max_length... OK\nApplying auth.0004_alter_user_username_opts... OK\nApplying auth.0005_alter_user_last_login_null... OK\nApplying auth.0006_require_contenttypes_0002... OK\nApplying auth.0007_alter_validators_add_error_messages... OK\nApplying auth.0008_alter_user_username_max_length... OK\nApplying auth.0009_alter_user_last_name_max_length... OK\nApplying auth.0010_alter_group_name_max_length... OK\nApplying auth.0011_update_proxy_permissions... OK\nApplying auth.0012_alter_user_first_name_max_length... OK\nApplying sessions.0001_initial... OK\n\n(myworld) C:\\Users\\Your Name\\myworld\\my_tennis_club>",
+        "python manage.py runserver",
+        "templates",
+        "members",
+        "myfirst.html",
+        "my_tennis_club/members/templates/myfirst.html",
+        "views.py",
+        "my_tennis_club/members/views.py",
+        "settings.py",
+        "my_tennis_club",
+        "INSTALLED_APPS[]",
+        "my_tennis_club/my_tennis_club/settings.py",
+        "/my_tennis_club",
+        "127.0.0.1:8000/members/"
+      ]
+    },
+    {
+      "title": "Django Models",
+      "summary": "A Django model is a table in your database.\nDjango Models\nUp until now in this tutorial, output has been static data from Python or HTML templates.\nNow we will see how Django allows us to work with data, without having to change or upload files in the process.\nIn Django, data is created in objects, called Models, and is actually tables in a database.\nCreate Table (Model)\nTo create a model, navigate to the models.py file in the /members/ folder.\nOpen it, and add a Member table by creating a Member class, and describe the table fields in it:\nmy_tennis_club/members/models.py:\nThe first field, firstname, is a Text field, and will contain the first name of the members.\nThe second field, lastname, is also a Text field, with the member's last name.\nBoth firstname and lastname is set up to have a maximum of 255 characters.\nSQLite Database\nWhen we created the Django project, we got an empty SQLite database.\nIt was created in the my_tennis_club root folder, and has the filename db.sqlite3.\nBy default, all Models created in the Django project will be created as tables in this database.\nMigrate\nNow when we have described a Model in the models.py file, we must run a command to actually create the table in the database.\nNavigate to the /my_tennis_club/ folder and run this command:\nWhich will result in this output:\nDjango creates a file describing the changes and stores the file in the /migrations/ folder:\nmy_tennis_club/members/migrations/0001_initial.py:\nNote that Django inserts an id field for your tables, which is an auto increment number (first record gets the value 1, the second record 2 etc.), this is the default behavior of Django, you can override it by describing your own id field.\nThe table is not created yet, you will have to run one more command, then Django will create and execute an SQL statement, based on the content of the new file in the /migrations/ folder.\nRun the migrate command:\nWhich will result in this output:\nNow you have a Member table in you database!\nView SQL\nAs a side-note: you can view the SQL statement that were executed from the migration above. All you have to do is to run this command, with the migration number:\nWhich will result in this output:",
+      "examples": [
+        "from django.db import models class Member(models.Model): firstname = models.CharField(max_length=255) lastname = models.CharField(max_length=255)",
+        "# Generated by Django 5.1.7 on 2025-03-20 11:39 from django.db import migrations, models class Migration(migrations.Migration): initial = True dependencies = [ ] operations = [ migrations.CreateModel( name='Member', fields=[ ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')), ('firstname', models.CharField(max_length=255)), ('lastname', models.CharField(max_length=255)), ], ), ]",
+        "python manage.py makemigrations members",
+        "Migrations for 'members':\nmembers\\migrations\\0001_initial.py\n- Create model Member\n\n(myworld) C:\\Users\\Your Name\\myworld\\my_tennis_club>",
+        "python manage.py migrate",
+        "Operations to perform:\nApply all migrations: admin, auth, contenttypes, members, sessions\nRunning migrations:\nApplying members.0001_initial... OK\n\n(myworld) C:\\Users\\Your Name\\myworld\\my_tennis_club>",
+        "python manage.py sqlmigrate members 0001",
+        "BEGIN;\n--\n-- Create model Member\n--\nCREATE TABLE \"members_member\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"firstname\" varchar(255) NOT NULL, \"lastname\" varchar(255) NOT NULL);\nCOMMIT;",
+        "models.py",
+        "/members/",
+        "Member",
+        "class",
+        "my_tennis_club/members/models.py",
+        "firstname",
+        "lastname",
+        "my_tennis_club",
+        "db.sqlite3",
+        "/my_tennis_club/",
+        "/migrations/",
+        "my_tennis_club/members/migrations/0001_initial.py",
+        "id",
+        "auto increment number"
+      ]
+    },
+    {
+      "title": "Django Insert Data",
+      "summary": "Add Records\nThe Members table created in the previous chapter is empty.\nWe will use the Python interpreter (Python shell) to add some members to it.\nTo open a Python shell, type this command:\nNow we are in the shell, the result should be something like this:\nAt the bottom, after the three >>> write the following:\nHit [enter] and write this to look at the empty Member table:\nThis should give you an empty QuerySet object, like this:\nA QuerySet is a collection of data from a database.\nRead more about QuerySets in the Django QuerySet chapter.\nAdd a record to the table, by executing these two lines:\nExecute this command to see if the Member table got a member:\nHopefully, the result will look like this:\nAdd Multiple Records\nYou can add multiple records by making a list of Member objects, and execute .save() on each entry:\nHit [enter] one more time at the end to exit the for loop.\nNow, if you run this command:\nyou will see that there are 6 members in the Member table:",
+      "examples": [
+        "python manage.py shell",
+        "Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb 4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)] on win32\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n(InteractiveConsole)\n>>>",
+        ">>> from members.models import Member",
+        ">>> Member.objects.all()",
+        "<QuerySet []>",
+        ">>> member = Member(firstname='Emil', lastname='Refsnes')\n>>> member.save()",
+        ">>> Member.objects.all().values()",
+        "<QuerySet [{'id': 1, 'firstname': 'Emil', 'lastname': 'Refsnes'}]>",
+        ">>> member1 = Member(firstname='Tobias', lastname='Refsnes')\n>>> member2 = Member(firstname='Linus', lastname='Refsnes')\n>>> member3 = Member(firstname='Lene', lastname='Refsnes')\n>>> member4 = Member(firstname='Stale', lastname='Refsnes')\n>>> member5 = Member(firstname='Jane', lastname='Doe')\n>>> members_list = [member1, member2, member3, member4, member5]\n>>> for x in members_list:\n...   x.save()\n...\n>>>",
+        "<QuerySet [{'id': 1, 'firstname': 'Emil', 'lastname': 'Refsnes'},\n{'id': 2, 'firstname': 'Tobias', 'lastname': 'Refsnes'},\n{'id': 3, 'firstname': 'Linus', 'lastname': 'Refsnes'},\n{'id': 4, 'firstname': 'Lene', 'lastname': 'Refsnes'},\n{'id': 5, 'firstname': 'Stale', 'lastname': 'Refsnes'},\n{'id': 6, 'firstname': 'Jane', 'lastname': 'Doe'}]>",
+        ">>>",
+        "Member",
+        ".save()"
+      ]
+    },
+    {
+      "title": "Django Update Data",
+      "summary": "Update Records\nTo update records that are already in the database, we first have to get the record we want to update:\nx will now represent the member at index 4, which is \"Stale Refsnes\", but to make sure, let us see if that is correct:\nThis should give you this result:\nNow we can change the values of this record:\nExecute this command to see if the Member table got updated:\nHopefully, the result will look like this:",
+      "examples": [
+        ">>> from members.models import Member\n>>> x = Member.objects.all()[4]",
+        ">>> x.firstname",
+        "'Stale'",
+        ">>> x.firstname = \"Stalikken\"\n>>> x.save()",
+        ">>> Member.objects.all().values()",
+        "<QuerySet [{'id': 1, 'firstname': 'Emil', 'lastname': 'Refsnes'},\n{'id': 2, 'firstname': 'Tobias', 'lastname': 'Refsnes'},\n{'id': 3, 'firstname': 'Linus', 'lastname': 'Refsnes'},\n{'id': 4, 'firstname': 'Lene', 'lastname': 'Refsnes'},\n{'id': 5, 'firstname': 'Stalikken', 'lastname': 'Refsnes'},\n{'id': 6, 'firstname': 'Jane', 'lastname': 'Doe'}]>",
+        "x"
+      ]
+    },
+    {
+      "title": "Django Delete Data",
+      "summary": "Delete Records\nTo delete a record in a table, start by getting the record you want to delete:\nx will now represent the member at index 5, which is \"Jane Doe\", but to make sure, let us see if that is correct:\nThis should give you this result:\nNow we can delete the record:\nThe result will be:\nWhich tells us how many items were deleted, and from which Model.\nIf we look at the Member Model, we can see that 'Jane Doe' is removed from the Model:",
+      "examples": [
+        ">>> from members.models import Member\n>>> x = Member.objects.all()[5]",
+        ">>> x.firstname",
+        "'Jane'",
+        ">>> x.delete()",
+        "(1, {'members.Member': 1})",
+        ">>> Member.objects.all().values()\n<QuerySet [{'id': 1, 'firstname': 'Emil', 'lastname': 'Refsnes'},\n{'id': 2, 'firstname': 'Tobias', 'lastname': 'Refsnes'},\n{'id': 3, 'firstname': 'Linus', 'lastname': 'Refsnes'},\n{'id': 4, 'firstname': 'Lene', 'lastname': 'Refsnes'},\n{'id': 5, 'firstname': 'Stalikken', 'lastname': 'Refsnes'}]>",
+        "x"
+      ]
+    },
+    {
+      "title": "Django Update Model",
+      "summary": "Add Fields in the Model\nTo add a field to a table after it is created, open the models.py file, and make your changes:\nmy_tennis_club/members/models.py:\nAs you can see, we want to add phone and joined_date to our Member Model.\nThis is a change in the Model's structure, and therefor we have to make a migration to tell Django that it has to update the database:\nNote: Make sure you are back in the virtual environment before running the command.\nThe command above will result in a prompt, because we try to add fields that are not allowed to be null, to a table that already contains records.\nAs you can see, Django asks if we want to provide the fields with a specific value, or if we want to stop the migration and fix it in the model:\nI will select option 2, and open the models.py file again and allow NULL values for the two new fields:\nmy_tennis_club/members/models.py:\nAnd make the migration once again:\nWhich will result in this:\nRun the migrate command:\nWhich will result in this output:\nInsert Data\nWe can insert data to the two new fields with the same approach as we did in the Update Data chapter:\nFirst we enter the Python Shell:\nNow we are in the shell, the result should be something like this:\nAt the bottom, after the three >>> write the following (and hit [enter] for each line):\nThis will insert a phone number and a date in the Member Model, at least for the first record, the four remaining records will for now be left empty. We will deal with them later in the tutorial.\nExecute this command to see if the Member table got updated:\nThe result should look like this:",
+      "examples": [
+        "from django.db import models class Member(models.Model): firstname = models.CharField(max_length=255) lastname = models.CharField(max_length=255) phone = models.IntegerField() joined_date = models.DateField()",
+        "from django.db import models class Member(models.Model): firstname = models.CharField(max_length=255) lastname = models.CharField(max_length=255) phone = models.IntegerField(null=True) joined_date = models.DateField(null=True)",
+        "python manage.py makemigrations members",
+        "python manage.py makemigrations members\nYou are trying to add a non-nullable field 'joined_date' to members without a default; we can't do that (the database needs something to populate existing rows).\nPlease select a fix:\n1) Provide a one-off default now (will be set on all existing rows with a null value for this column)\n2) Quit, and let me add a default in models.py\nSelect an option:",
+        "Migrations for 'members':\nmembers\\migrations\\0002_member_joined_date_member_phone.py\n- Add field joined_date to member\n- Add field phone to member",
+        "python manage.py migrate",
+        "Operations to perform:\nApply all migrations: admin, auth, contenttypes, members, sessions\nRunning migrations:\nApplying members.0002_member_joined_date_member_phone... OK\n\n(myworld) C:\\Users\\Your Name\\myworld\\my_tennis_club>",
+        "python manage.py shell",
+        "Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb 4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)] on win32\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n(InteractiveConsole)\n>>>",
+        ">>> from members.models import Member\n>>> x = Member.objects.all()[0]\n>>> x.phone = 5551234\n>>> x.joined_date = '2022-01-05'\n>>> x.save()",
+        ">>> Member.objects.all().values()",
+        "<QuerySet [\n{'id': 1, 'firstname': 'Emil', 'lastname': 'Refsnes', 'phone': 5551234, 'joined_date': datetime.date(2022, 1, 5)},\n{'id': 2, 'firstname': 'Tobias', 'lastname': 'Refsnes', 'phone': None, 'joined_date': None},\n{'id': 3, 'firstname': 'Linus', 'lastname': 'Refsnes', 'phone': None, 'joined_date': None},\n{'id': 4, 'firstname': 'Lene', 'lastname': 'Refsnes', 'phone': None, 'joined_date': None},\n{'id': 5, 'firstname': 'Stalikken', 'lastname': 'Refsnes', 'phone': None, 'joined_date': None}]>",
+        "models.py",
+        "my_tennis_club/members/models.py",
+        "phone",
+        "joined_date",
+        ">>>"
+      ]
+    },
+    {
+      "title": "Django Prepare Template",
+      "summary": "Create Template\nAfter creating Models, with the fields and data we want in them, it is time to display the data in a web page.\nStart by creating an HTML file named all_members.html and place it in the /templates/ folder:\nmy_tennis_club/members/templates/all_members.html:\nDo you see the {% %} brackets inside the HTML document?\nThey are Django Tags, telling Django to perform some programming logic inside these brackets.\nYou will learn more about Django Tags in our Django Tags chapter.\nModify View\nNext we need to make the model data available in the template. This is done in the view.\nIn the view we have to import the Member model, and send it to the template like this:\nmy_tennis_club/members/views.py:\nThe members view does the following:\nCreates a mymembers object with all the values of the Member model.\nLoads the all_members.html template.\nCreates an object containing the mymembers object.\nSends the object to the template.\nOutputs the HTML that is rendered by the template.\nThe Result\nWe have created an example so that you can see the result:\nIf you have followed all the steps on your own computer, you can see the result in your own browser:\nStart the server by navigating to the /my_tennis_club/ folder and execute this command:\nIn the browser window, type 127.0.0.1:8000/members/ in the address bar.",
+      "examples": [
+        "<!DOCTYPE html> <html> <body> <h1>Members</h1> <ul> {% for x in mymembers %} <li>{{ x.firstname }} {{ x.lastname }}</li> {% endfor %} </ul> </body> </html>",
+        "from django.http import HttpResponse from django.template import loader from .models import Member def members(request): mymembers = Member.objects.all().values() template = loader.get_template('all_members.html') context = { 'mymembers': mymembers, } return HttpResponse(template.render(context, request))",
+        "python manage.py runserver",
+        "all_members.html",
+        "/templates/",
+        "my_tennis_club/members/templates/all_members.html",
+        "{% %}",
+        "Member",
+        "my_tennis_club/members/views.py",
+        "members",
+        "mymembers",
+        "/my_tennis_club/",
+        "127.0.0.1:8000/members/"
+      ]
+    },
+    {
+      "title": "Django Add Link to Details",
+      "summary": "Details Template\nThe next step in our web page will be to add a Details page, where we can list more details about a specific member.\nStart by creating a new template called details.html:\nmy_tennis_club/members/templates/details.html:\nAdd Link in all-members Template\nThe list in all_members.html should be clickable, and take you to the details page with the ID of the member you clicked on:\nmy_tennis_club/members/templates/all_members.html:\nCreate new View\nThen create a new view in the views.py file, that will deal with incoming requests to the /details/ url:\nmy_tennis_club/members/views.py:\nThe details view does the following:\nGets the id as an argument.\nUses the id to locate the correct record in the Member table.\nloads the details.html template.\nCreates an object containing the member.\nSends the object to the template.\nOutputs the HTML that is rendered by the template.\nAdd URLs\nNow we need to make sure that the /details/ url points to the correct view, with id as a parameter.\nOpen the urls.py file and add the details view to the urlpatterns list:\nmy_tennis_club/members/urls.py:\nIf you have followed all the steps on your own computer, you can see the result in your own browser: 127.0.0.1:8000/members/.\nIf the server is down, you have to start it again with the runserver command:",
+      "examples": [
+        "<!DOCTYPE html> <html> <body> <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1> <p>Phone: {{ mymember.phone }}</p> <p>Member since: {{ mymember.joined_date }}</p> <p>Back to <a href=\"/members\">Members</a></p> </body> </html>",
+        "<!DOCTYPE html> <html> <body> <h1>Members</h1> <ul> {% for x in mymembers %} <li><a href=\"details/{{ x.id }}\">{{ x.firstname }} {{ x.lastname }}</a></li> {% endfor %} </ul> </body> </html>",
+        "from django.http import HttpResponse from django.template import loader from .models import Member def members(request): mymembers = Member.objects.all().values() template = loader.get_template('all_members.html') context = { 'mymembers': mymembers, } return HttpResponse(template.render(context, request)) def details(request, id): mymember = Member.objects.get(id=id) template = loader.get_template('details.html') context = { 'mymember': mymember, } return HttpResponse(template.render(context, request))",
+        "from django.urls import path from . import views urlpatterns = [ path('members/', views.members, name='members'), path('members/details/<int:id>', views.details, name='details'), ]",
+        "python manage.py runserver",
+        "details.html",
+        "my_tennis_club/members/templates/details.html",
+        "all_members.html",
+        "my_tennis_club/members/templates/all_members.html",
+        "views.py",
+        "/details/",
+        "my_tennis_club/members/views.py",
+        "details",
+        "id",
+        "urls.py",
+        "urlpatterns",
+        "my_tennis_club/members/urls.py",
+        "127.0.0.1:8000/members/",
+        "runserver"
+      ]
+    },
+    {
+      "title": "Django Add Master Template",
+      "summary": "The extends Tag\nIn the previous pages we created two templates, one for listing all members, and one for details about a member.\nThe templates have a set of HTML code that are the same for both templates.\nDjango provides a way of making a \"parent template\" that you can include in all pages to do the stuff that is the same in all pages.\nStart by creating a template called master.html, with all the necessary HTML elements:\nMasterGet your own Django Server\nmy_tennis_club/members/templates/master.html:\nDo you see Django block Tag inside the <title> element, and the <body> element?\nThey are placeholders, telling Django to replace this block with content from other sources.\nModify Templates\nNow the two templates (all_members.html and details.html) can use this master.html template.\nThis is done by including the master template with the {% extends %} tag, and inserting a title block and a content block:\nMembers\nmy_tennis_club/members/templates/all_members.html:\nDetails\nmy_tennis_club/members/templates/details.html:\nIf you have followed all the steps on your own computer, you can see the result in your own browser: 127.0.0.1:8000/members/.\nIf the server is down, you have to start it again with the runserver command:",
+      "examples": [
+        "<!DOCTYPE html> <html> <head> <title>{% block title %}{% endblock %}</title> </head> <body> {% block content %} {% endblock %} </body> </html>",
+        "{% extends \"master.html\" %} {% block title %} My Tennis Club - List of all members {% endblock %} {% block content %} <h1>Members</h1> <ul> {% for x in mymembers %} <li><a href=\"details/{{ x.id }}\">{{ x.firstname }} {{ x.lastname }}</a></li> {% endfor %} </ul> {% endblock %}",
+        "{% extends \"master.html\" %} {% block title %} Details about {{ mymember.firstname }} {{ mymember.lastname }} {% endblock %} {% block content %} <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1> <p>Phone {{ mymember.phone }}</p> <p>Member since: {{ mymember.joined_date }}</p> <p>Back to <a href=\"/members\">Members</a></p> {% endblock %}",
+        "python manage.py runserver",
+        "master.html",
+        "my_tennis_club/members/templates/master.html",
+        "<title>",
+        "<body>",
+        "all_members.html",
+        "details.html",
+        "{% extends %}",
+        "title",
+        "content",
+        "my_tennis_club/members/templates/all_members.html",
+        "my_tennis_club/members/templates/details.html",
+        "127.0.0.1:8000/members/",
+        "runserver"
+      ]
+    },
+    {
+      "title": "Django Add Main Index Page",
+      "summary": "Main Index Page\nOur project needs a main page.\nThe main page will be the landing page when someone visits the root folder of the project.\nNow, you get an error when visiting the root folder of your project:\n127.0.0.1:8000/.\nStart by creating a template called main.html:\nMainGet your own Django Server\nmy_tennis_club/members/templates/main.html:\nCreate new View\nThen create a new view called main, that will deal with incoming requests to root of the project:\nmy_tennis_club/members/views.py:\nThe main view does the following:\nloads the main.html template.\nOutputs the HTML that is rendered by the template.\nAdd URL\nNow we need to make sure that the root url points to the correct view.\nOpen the urls.py file and add the main view to the urlpatterns list:\nmy_tennis_club/members/urls.py:\nAdd Link Back to Main\nThe members page is missing a link back to the main page, so let us add that in the all_members.html template, in the content block:\nExample\nmy_tennis_club/members/templates/all_members.html:\nIf you have followed all the steps on your own computer, you can see the result in your own browser: 127.0.0.1:8000/.\nIf the server is down, you have to start it again with the runserver command:",
+      "examples": [
+        "{% extends \"master.html\" %} {% block title %} My Tennis Club {% endblock %} {% block content %} <h1>My Tennis Club</h1> <h3>Members</h3> <p>Check out all our <a href=\"members/\">members</a></p> {% endblock %}",
+        "from django.http import HttpResponse from django.template import loader from .models import Member def members(request): mymembers = Member.objects.all().values() template = loader.get_template('all_members.html') context = { 'mymembers': mymembers, } return HttpResponse(template.render(context, request)) def details(request, id): mymember = Member.objects.get(id=id) template = loader.get_template('details.html') context = { 'mymember': mymember, } return HttpResponse(template.render(context, request)) def main(request): template = loader.get_template('main.html') return HttpResponse(template.render())",
+        "from django.urls import path from . import views urlpatterns = [ path('', views.main, name='main'), path('members/', views.members, name='members'), path('members/details/<int:id>', views.details, name='details'), ]",
+        "{% extends \"master.html\" %} {% block title %} My Tennis Club - List of all members {% endblock %} {% block content %} <p><a href=\"/\">HOME</a></p> <h1>Members</h1> <ul> {% for x in mymembers %} <li><a href=\"details/{{ x.id }}\">{{ x.firstname }} {{ x.lastname }}</a></li> {% endfor %} </ul> {% endblock %}",
+        "python manage.py runserver",
+        "127.0.0.1:8000/",
+        "main.html",
+        "my_tennis_club/members/templates/main.html",
+        "main",
+        "my_tennis_club/members/views.py",
+        "urls.py",
+        "urlpatterns",
+        "my_tennis_club/members/urls.py",
+        "all_members.html",
+        "content",
+        "my_tennis_club/members/templates/all_members.html",
+        "runserver"
+      ]
+    },
+    {
+      "title": "Django 404 (page not found)",
+      "summary": "Page Not Found\nIf you try to access a page that does not exist (a 404 error), Django directs you to a built-in view that handles 404 errors.\nYou will learn how to customize this 404 view later in this chapter, but first, just try to request a page that does not exist.\nIn the browser window, type 127.0.0.1:8000/masfdfg/ in the address bar.\nYou will get one of two results:\n1:\n2:\nIf you got the first result, you got directed to the built-in Django 404 template.\nIf you got the second result, then DEBUG is set to True in your settings, and you must set it to False to get directed to the 404 template.\nThis is done in the settings.py file, which is located in the project folder, in our case the my_tennis_club folder, where you also have to specify the host name from where your project runs from:\nExampleGet your own Django Server\nSet the debug property to False, and allow the project to run from your local host:\nmy_tennis_club/my_tennis_club/settings.py:\nImportant: When DEBUG = False, Django requires you to specify the hosts you will allow this Django project to run from.\nIn production, this should be replaced with a proper domain name:\nALLOWED_HOSTS = ['yourdomain.com']\nIn the browser window, type 127.0.0.1:8000/masfdfg/ in the address bar, and you will get the built-in 404 template:\nCustomize the 404 Template\nDjango will look for a file named 404.html in the templates folder, and display it when there is a 404 error.\nIf no such file exists, Django shows the \"Not Found\" that you saw in the example above.\nTo customize this message, all you have to do is to create a file in the templates folder and name it 404.html, and fill it with whatever you want:\nmy_tennis_club/members/templates/404.html:\nIn the browser window, type 127.0.0.1:8000/masfdfg/ in the address bar, and you will get the customized 404 template:\nReset Debug = True\nYou should reset the debug property to True to continue with the tutorial.\nExample\nmy_tennis_club/my_tennis_club/settings.py:",
+      "examples": [
+        ". . # SECURITY WARNING: don't run with debug turned on in production! DEBUG = False ALLOWED_HOSTS = ['*'] . .",
+        ". . # SECURITY WARNING: don't run with debug turned on in production! DEBUG = True ALLOWED_HOSTS = [] . .",
+        "<!DOCTYPE html>\n<html>\n<title>Wrong address</title>\n<body>\n\n<h1>Ooops!</h1>\n\n<h2>I cannot find the file you requested!</h2>\n\n</body>\n</html>",
+        "127.0.0.1:8000/masfdfg/",
+        "DEBUG",
+        "True",
+        "False",
+        "settings.py",
+        "my_tennis_club",
+        "my_tennis_club/my_tennis_club/settings.py",
+        "ALLOWED_HOSTS = ['yourdomain.com']",
+        "404.html",
+        "templates",
+        "my_tennis_club/members/templates/404.html"
+      ]
+    },
+    {
+      "title": "Django Add Test View",
+      "summary": "Test View\nWhen testing different aspects of Django, it can be a good idea to have somewhere to test code without destroying the main project.\nThis is optional off course, but if you like to follow all steps in this tutorial, you should add a test view that is exactly like the one we create below.\nThen you can follow the examples and try them out on your own computer.\nAdd View\nStart by adding a view called \"testing\" in the views.py file:\nmy_tennis_club/members/views.py:\nURLs\nWe have to make sure that incoming urls to /testing/ will be redirected to the testing view.\nThis is done in the urls.py file in the members folder:\nmy_tennis_club/members/urls.py:\nTest Template\nWe also need a template where we can play around with HTML and Django code.\nYou might noticed that there was a reference to a template in the testing view?\nCreate a template called \"template.html\" in the templates folder:\nOpen the template.html file and insert the following:\nmy_tennis_club/members/templates/template.html:\nIf the server is not running, navigate to the /my_tennis_club folder and execute this command in the command prompt:\nIn the browser window, type 127.0.0.1:8000/testing/ in the address bar.\nThe result should be like this:",
+      "examples": [
+        "from django.http import HttpResponse from django.template import loader from .models import Member def members(request): mymembers = Member.objects.all().values() template = loader.get_template('all_members.html') context = { 'mymembers': mymembers, } return HttpResponse(template.render(context, request)) def details(request, id): mymember = Member.objects.get(id=id) template = loader.get_template('details.html') context = { 'mymember': mymember, } return HttpResponse(template.render(context, request)) def main(request): template = loader.get_template('main.html') return HttpResponse(template.render()) def testing(request): template = loader.get_template('template.html') context = { 'fruits': ['Apple', 'Banana', 'Cherry'], } return HttpResponse(template.render(context, request))",
+        "from django.urls import path from . import views urlpatterns = [ path('', views.main, name='main'), path('members/', views.members, name='members'), path('members/details/<int:id>', views.details, name='details'), path('testing/', views.testing, name='testing'), ]",
+        "<!DOCTYPE html> <html> <body> {% for x in fruits %} <h1>{{ x }}</h1> {% endfor %} <p>In views.py you can see what the fruits variable looks like.</p> </body> </html>",
+        "my_tennis_club\nmanage.py\nmy_tennis_club/\nmembers/\ntemplates/\n404.html\nall_members.html\ndetails.html\nmain.html\nmaster.html\nmyfirst.html\ntemplate.html",
+        "python manage.py runserver",
+        "views.py",
+        "my_tennis_club/members/views.py",
+        "urls.py",
+        "members",
+        "my_tennis_club/members/urls.py",
+        "my_tennis_club/members/templates/template.html",
+        "/my_tennis_club",
+        "127.0.0.1:8000/testing/"
+      ]
+    },
+    {
+      "title": "Django Admin",
+      "summary": "Django Admin\nDjango Admin is a really great tool in Django, it is actually a CRUD* user interface of all your models!\n*CRUD stands for Create Read Update Delete.\nIt is free and comes ready-to-use with Django:\nGetting Started\nTo enter the admin user interface, start the server by navigating to the /myworld/my-tennis-club/ folder and execute this command:\nIn the browser window, type 127.0.0.1:8000/admin/ in the address bar.\nThe result should look like this:\nThe reason why this URL goes to the Django admin log in page can be found in the urls.py file of your project:\nmy_tennis_club/my_tennis_club/urls.py:\nThe urlpatterns[] list takes requests going to admin/ and sends them to admin.site.urls, which is part of a built-in application that comes with Django, and contains a lot of functionality and user interfaces, one of them being the log-in user interface.",
+      "examples": [
+        "from django.contrib import admin from django.urls import include, path urlpatterns = [ path('', include('members.urls')), path('admin/', admin.site.urls), ]",
+        "python manage.py runserver",
+        "/myworld/my-tennis-club/",
+        "127.0.0.1:8000/admin/",
+        "urls.py",
+        "my_tennis_club/my_tennis_club/urls.py",
+        "urlpatterns[]",
+        "admin/",
+        "admin.site.urls"
+      ]
+    },
+    {
+      "title": "Django Admin - Create User",
+      "summary": "Create User\nTo be able to log into the admin application, we need to create a user.\nThis is done by typing this command in the command view:\nWhich will give this prompt:\nHere you must enter: username, e-mail address, (you can just pick a fake e-mail address), and password:\nMy password did not meet the criteria, but this is a test environment, and I choose to create user anyway, by enter y:\nIf you press [Enter], you should have successfully created a user:\nNow start the server again:\nIn the browser window, type 127.0.0.1:8000/admin/ in the address bar.\nAnd fill in the form with the correct username and password:\nWhich should result in this user interface:\nHere you can create, read, update, and delete groups and users, but where is the Members model?\nMissing Model\nThe Members model is missing, as it should be, you have to tell Django which models that should be visible in the admin interface.\nYou will learn how to include the Members model in the next chapter.",
+      "examples": [
+        "python manage.py createsuperuser",
+        "Username:",
+        "Username: johndoe\nEmail address: johndoe@dummymail.com\nPassword:\nPassword (again):\nThis password is too short. It must contain at least 8 characters.\nThis password is too common.\nThis password is entirely numeric.\nBypass password validation and create user anyway? [y/N]:",
+        "Bypass password validation and create user anyway? [y/N]: y",
+        "Superuser created successfully.",
+        "python manage.py runserver",
+        "127.0.0.1:8000/admin/"
+      ]
+    },
+    {
+      "title": "Django Admin - Include Member",
+      "summary": "Include Member in the Admin Interface\nTo include the Member model in the admin interface, we have to tell Django that this model should be visible in the admin interface.\nThis is done in a file called admin.py, and is located in your app's folder, which in our case is the members folder.\nOpen it, and it should look like this:\nmy_tennis_club/members/admin.py:\nInsert a couple of lines here to make the Member model visible in the admin page:\nmy_tennis_club/members/admin.py:\nNow go back to the browser (127.0.0.1:8000/admin/) and you should get this result:\nClick Members and see the five records we inserted earlier in this tutorial:\nChange Display\nIn the list in the screenshot above, we see \"Member object (1)\", \"Member object (2)\" etc. which might not be the data you wanted to be displayed in the list.\nIt would be better to display \"firstname\" and \"lastname\" instead.\nThis can easily be done by changing some settings in the models.py and/or the admin.py files. You will learn more about this in the next chapter.",
+      "examples": [
+        "from django.contrib import admin # Register your models here.",
+        "from django.contrib import admin from .models import Member # Register your models here. admin.site.register(Member)",
+        "admin.py",
+        "members",
+        "my_tennis_club/members/admin.py",
+        "127.0.0.1:8000/admin/",
+        "Members",
+        "models.py"
+      ]
+    },
+    {
+      "title": "Django Admin - Set Fields to Display",
+      "summary": "Make the List Display More Reader-Friendly\nWhen you display a Model as a list, Django displays each record as the string representation of the record object, which in our case is \"Member object (1)\", \"Member object(2)\" etc.:\nTo change this to a more reader-friendly format, we have two choices:\nChange the string representation function, __str__() of the Member Model\nSet the list_display property of the MemberAdmin class\nChange the String Representation Function\nTo change the string representation, we have to define the __str__() function of the Member Model in models.py, like this:\nmy_tennis_club/members/models.py:\nWhich gives us this result:\nDefining our own __str__() function is not a Django feature, it is how to change the string representation of objects in Python. Read more about Python objects in our Python object tutorial.\nSet list_display\nWe can control the fields to display by specifying them in a list_display property in the admin.py file.\nFirst create a MemberAdmin() class and specify the list_display tuple, like this:\nmy_tennis_club/members/admin.py:\nRemember to add the MemberAdmin as an argumet in the admin.site.register(Member, MemberAdmin).\nNow go back to the browser and you should get this result:",
+      "examples": [
+        "from django.db import models class Member(models.Model): firstname = models.CharField(max_length=255) lastname = models.CharField(max_length=255) phone = models.IntegerField(null=True) joined_date = models.DateField(null=True) def __str__(self): return f\"{self.firstname} {self.lastname}\"",
+        "from django.contrib import admin from .models import Member # Register your models here. class MemberAdmin(admin.ModelAdmin): list_display = (\"firstname\", \"lastname\", \"joined_date\",) admin.site.register(Member, MemberAdmin)",
+        "__str__()",
+        "list_display",
+        "models.py",
+        "my_tennis_club/members/models.py",
+        "admin.py",
+        "MemberAdmin()",
+        "my_tennis_club/members/admin.py",
+        "admin.site.register(Member, MemberAdmin)"
+      ]
+    },
+    {
+      "title": "Django Admin - Update Members",
+      "summary": "Update Members\nNow we are able to create, update, and delete members in our database, and we start by giving them all a date for when they became members.\nClick the first member, Stalikken, to open the record for editing, and give him a joined_date:\nWhile we are in here, let us give him a phone number as well:\nClick \"SAVE\" and go back to the list of all members:\nRepeat these steps and give all members a date and a phone number, and end up with a list like this:",
+      "examples": [
+        "Stalikken",
+        "joined_date"
+      ]
+    },
+    {
+      "title": "Django Admin - Add Members",
+      "summary": "Add Members\nTo add a new member, click on the \"ADD MEMBER\" button in the top right corner:\nYou will get an empty form where you can fill in the members fields:\nFill in the fields and click \"SAVE\":\nNow the Members Model have 6 members:",
+      "examples": []
+    },
+    {
+      "title": "Django Admin - Delete Members",
+      "summary": "Delete Members\nTo delete a new member, you can either select a member and choose the action \"Delete selected members\" like this:\nRun Demo\nOr you can open a member for editing, and click the red DELETE button at the bottom, like this:\nRun Demo",
+      "examples": []
+    },
+    {
+      "title": "Django Template Variables",
+      "summary": "Template Variables\nIn Django templates, you can render variables by putting them inside {{ }} brackets:\nExampleGet your own Django Server\ntemplates/template.html:\nCreate Variable in View\nThe variable firstname in the example above was sent to the template via a view:\nviews.py:\nAs you can see in the view above, we create an object named context and fill it with data, and send it as the first parameter in the template.render() function.\nCreate Variables in Template\nYou can also create variables directly in the template, by using the {% with %} template tag.\nThe variable is available until the {% endwith %} tag appears:\nExample\ntemplates/template.html:\nYou will learn more about template tags in the next chapter.\nData From a Model\nThe example above showed a easy approach on how to create and use variables in a template.\nNormally, most of the external data you want to use in a template, comes from a model.\nWe have created a model in the previous chapters, called Member, which we will use in many examples in the next chapters of this tutorial.\nTo get data from the Member model, we will have to import it in the views.py file, and extract data from it in the view:\nmembers/views.py:\nNow we can use the data in the template:\ntemplates/template.html:\nWe use the Django template tag {% for %} to loop through the members.",
+      "examples": [
+        "<h1>Hello {{ firstname }}, how are you?</h1>",
+        "from django.http import HttpResponse from django.template import loader def testing(request): template = loader.get_template('template.html') context = { 'firstname': 'Linus', } return HttpResponse(template.render(context, request))",
+        "{% with firstname=\"Tobias\" %} <h1>Hello {{ firstname }}, how are you?</h1> {% endwith %}",
+        "from django.http import HttpResponse, HttpResponseRedirect from django.template import loader from .models import Member def testing(request): mymembers = Member.objects.all().values() template = loader.get_template('template.html') context = { 'mymembers': mymembers, } return HttpResponse(template.render(context, request))",
+        "<ul> {% for x in mymembers %} <li>{{ x.firstname }}</li> {% endfor %} </ul>",
+        "{{ }}",
+        "templates/template.html",
+        "firstname",
+        "views.py",
+        "template.render()",
+        "{% with %}",
+        "{% endwith %}",
+        "Member",
+        "members/views.py",
+        "{% for %}"
+      ]
+    },
+    {
+      "title": "Django Template Tags",
+      "summary": "Template Tags\nIn Django templates, you can perform programming logic like executing if statements and for loops.\nThese keywords, if and for, are called \"template tags\" in Django.\nTo execute template tags, we surround them in {% %} brackets.\nExampleGet your own Django Server\ntemplates/template.html:\nDjango Code\nThe template tags are a way of telling Django that here comes something else than plain HTML.\nThe template tags allows us to to do some programming on the server before sending HTML to the client.\ntemplates/template.html:\nIn the next chapters you will learn about the most common template tags.\nTag Reference\nA list of all template tags:",
+      "examples": [
+        "{% if greeting == 1 %} <h1>Hello</h1> {% else %} <h1>Bye</h1> {% endif %}",
+        "<ul> {% for x in mymembers %} <li>{{ x.firstname }}</li> {% endfor %} </ul>",
+        "if",
+        "for",
+        "{% %}",
+        "templates/template.html"
+      ]
+    },
+    {
+      "title": "Django if Tag",
+      "summary": "If Statement\nAn if statement evaluates a variable and executes a block of code if the value is true.\nExampleGet your own Django Server\nElif\nThe elif keyword says \"if the previous conditions were not true, then try this condition\".\nExample\nElse\nThe else keyword catches anything which isn't caught by the preceding conditions.\nExample\nOperators\nThe above examples uses the == operator, which is used to check if a variable is equal to a value, but there are many other operators you can use, or you can even drop the operator if you just want to check if a variable is not empty:\nExample\n==\nIs equal to.\nExample\n!=\nIs not equal to.\nExample\n<\nIs less than.\nExample\n<=\nIs less than, or equal to.\nExample\n>\nIs greater than.\nExample\n>=\nIs greater than, or equal to.\nExample\nand\nTo check if more than one condition is true.\nExample\nor\nTo check if one of the conditions is true.\nExample\nand/or\nCombine and and or.\nExample\nParentheses are not allowed in if statements in Django, so when you combine and and or operators, it is important to know that parentheses are added for and but not for or.\nMeaning that the above example is read by the interpreter like this:\nin\nTo check if a certain item is present in an object.\nExample\nnot in\nTo check if a certain item is not present in an object.\nExample\nis\nCheck if two objects are the same.\nThis operator is different from the == operator, because the == operator checks the values of two objects, but the is operator checks the identity of two objects.\nIn the view we have two objects, x and y, with the same values:\nExample\nviews.py:\nThe two objects have the same value, but is it the same object?\nExample\nLet us try the same example with the == operator instead:\nExample\nHow can two objects be the same? Well, if you have two objects that points to the same object, then the is operator evaluates to true:\nWe will demonstrate this by using the {% with %} tag, which allows us to create variables in the template:\nExample\nis not\nTo check if two objects are not the same.\nExample",
+      "examples": [
+        "{% if greeting == 1 %} <h1>Hello</h1> {% endif %}",
+        "{% if greeting == 1 %} <h1>Hello</h1> {% elif greeting == 2 %} <h1>Welcome</h1> {% endif %}",
+        "{% if greeting == 1 %} <h1>Hello</h1> {% elif greeting == 2 %} <h1>Welcome</h1> {% else %} <h1>Goodbye</h1> {% endif %}",
+        "{% if greeting %} <h1>Hello</h1> {% endif %}",
+        "{% if greeting == 2 %} <h1>Hello</h1> {% endif %}",
+        "{% if greeting != 1 %} <h1>Hello</h1> {% endif %}",
+        "{% if greeting < 3 %} <h1>Hello</h1> {% endif %}",
+        "{% if greeting <= 3 %} <h1>Hello</h1> {% endif %}",
+        "{% if greeting > 1 %} <h1>Hello</h1> {% endif %}",
+        "{% if greeting >= 1 %} <h1>Hello</h1> {% endif %}",
+        "{% if greeting == 1 and day == \"Friday\" %} <h1>Hello Weekend!</h1> {% endif %}",
+        "{% if greeting == 1 or greeting == 5 %} <h1>Hello</h1> {% endif %}",
+        "{% if greeting == 1 and day == \"Friday\" or greeting == 5 %}",
+        "{% if (greeting == 1 and day == \"Friday\") or greeting == 5 %}",
+        "{% if 'Banana' in fruits %} <h1>Hello</h1> {% else %} <h1>Goodbye</h1> {% endif %}",
+        "{% if 'Banana' not in fruits %} <h1>Hello</h1> {% else %} <h1>Goodbye</h1> {% endif %}",
+        "from django.http import HttpResponse from django.template import loader def testing(request): template = loader.get_template('template.html') context = { 'x': ['Apple', 'Banana', 'Cherry'], 'y': ['Apple', 'Banana', 'Cherry'], } return HttpResponse(template.render(context, request))",
+        "{% if x is y %} <h1>YES</h1> {% else %} <h1>NO</h1> {% endif %}",
+        "{% if x == y %} <h1>YES</h1> {% else %} <h1>NO</h1> {% endif %}",
+        "{% with var1=x var2=x %} {% if var1 is var2 %} <h1>YES</h1> {% else %} <h1>NO</h1> {% endif %} {% endwith %}",
+        "{% if x is not y %} <h1>YES</h1> {% else %} <h1>NO</h1> {% endif %}",
+        "if",
+        "elif",
+        "else",
+        "==",
+        "and",
+        "or",
+        "is",
+        "x",
+        "y",
+        "views.py",
+        "{% with %}"
+      ]
+    },
+    {
+      "title": "Django for Tag",
+      "summary": "For Loops\nA for loop is used for iterating over a sequence, like looping over items in an array, a list, or a dictionary.\nExampleGet your own Django Server\nLoop through the items of a list:\nExample\nLoop through a list of dictionaries:\nData From a Model\nData in a model is like a table with rows and columns.\nThe Member model we created earlier has five rows, and each row has three columns:\nWhen we fetch data from the model, it comes as a QuerySet object, with a similar format as the cars example above: a list with dictionaries:\nExample\nLoop through items fetched from a database:\nReversed\nThe reversed keyword is used when you want to do the loop in reversed order.\nExample\nEmpty\nThe empty keyword can be used if you want to do something special if the object is empty.\nExample\nThe empty keyword can also be used if the object does not exist:\nExample\nLoop Variables\nDjango has some variables that are available for you inside a loop:\nforloop.counter\nforloop.counter0\nforloop.first\nforloop.last\nforloop.parentloop\nforloop.revcounter\nforloop.revcounter0\nforloop.counter\nThe current iteration, starting at 1.\nExample\nforloop.counter0\nThe current iteration, starting at 0.\nExample\nforloop.first\nAllows you to test if the loop is on its first iteration.\nExample\nDraw a blue background for the first iteration of the loop:\nforloop.last\nAllows you to test if the loop is on its last iteration.\nExample\nDraw a blue background for the last iteration of the loop:\nforloop.revcounter\nThe current iteration if you start at the end and count backwards, ending up at 1.\nExample\nforloop.revcounter0\nThe current iteration if you start at the end and count backwards, ending up at 0.\nExample",
+      "examples": [
+        "{% for x in fruits %} <h1>{{ x }}</h1> {% endfor %}",
+        "{% for x in cars %} <h1>{{ x.brand }}</h1> <p>{{ x.model }}</p> <p>{{ x.year }}</p> {% endfor %}",
+        "<QuerySet [ { 'id': 1, 'firstname': 'Emil', 'lastname': 'Refsnes', 'phone': 5551234, 'joined_date': datetime.date(2022, 1, 5) }, { 'id': 2, 'firstname': 'Tobias', 'lastname': 'Refsnes' 'phone': 5557777, 'joined_date': datetime.date(2021, 4, 1) }, { 'id': 3, 'firstname': 'Linus', 'lastname': 'Refsnes' 'phone': 5554321, 'joined_date': datetime.date(2021, 12, 24) }, { 'id': 4, 'firstname': 'Lene', 'lastname': 'Refsnes' 'phone': 5551234, 'joined_date': datetime.date(2021, 5, 1) }, { 'id': 5, 'firstname': 'Stalikken', 'lastname': 'Refsnes' 'phone': 5559876, 'joined_date': datetime.date(2022, 9, 29) } ]>",
+        "{% for x in members %} <h1>{{ x.id }}</h1> <p> {{ x.firstname }} {{ x.lastname }} </p> {% endfor %}",
+        "{% for x in members reversed %} <h1>{{ x.id }}</h1> <p> {{ x.firstname }} {{ x.lastname }} </p> {% endfor %}",
+        "<ul> {% for x in emptytestobject %} <li>{{ x.firstname }}</li> {% empty %} <li>No members</li> {% endfor %} </ul>",
+        "<ul> {% for x in myobject %} <li>{{ x.firstname }}</li> {% empty %} <li>No members</li> {% endfor %} </ul>",
+        "<ul> {% for x in fruits %} <li>{{ forloop.counter }}</li> {% endfor %} </ul>",
+        "<ul> {% for x in fruits %} <li>{{ forloop.counter0 }}</li> {% endfor %} </ul>",
+        "<ul> {% for x in fruits %} <li {% if forloop.first %} style='background-color:lightblue;' {% endif %} >{{ x }}</li> {% endfor %} </ul>",
+        "<ul> {% for x in fruits %} <li {% if forloop.last %} style='background-color:lightblue;' {% endif %} >{{ x }}</li> {% endfor %} </ul>",
+        "<ul> {% for x in fruits %} <li>{{ forloop.revcounter }}</li> {% endfor %} </ul>",
+        "<ul> {% for x in fruits %} <li>{{ forloop.revcounter0 }}</li> {% endfor %} </ul>",
+        "for",
+        "Member",
+        "reversed",
+        "empty"
+      ]
+    },
+    {
+      "title": "Django comment Tag",
+      "summary": "Comments\nComments allows you to have sections of code that should be ignored.\nExampleGet your own Django Server\nComment Description\nYou can add a message to your comment, to help you remember why you wrote the comment, or as message to other people reading the code.\nExample\nAdd a description to your comment:\nSmaller Comments\nYou can also use the {# ... #} tags when commenting out code, which can be easier for smaller comments:\nExample\nComment out the word Everyone:\nComment in Views\nViews are written in Python, and Python comments are written with the # character:\nExample\nComment out a section in the view:\nRead more about Python Comments in out Python Comment Tutorial.",
+      "examples": [
+        "<h1>Welcome Everyone</h1> {% comment %} <h1>Welcome ladies and gentlemen</h1> {% endcomment %}",
+        "<h1>Welcome Everyone</h1> {% comment \"this was the original welcome message\" %} <h1>Welcome ladies and gentlemen</h1> {% endcomment %}",
+        "<h1>Welcome{# Everyone#}</h1>",
+        "from django.http import HttpResponse from django.template import loader def testing(request): template = loader.get_template('template.html') #context = { # 'var1': 'John', #} return HttpResponse(template.render())",
+        "{# ... #}",
+        "#"
+      ]
+    },
+    {
+      "title": "Django include Tag",
+      "summary": "Include\nThe include tag allows you to include a template inside the current template.\nThis is useful when you have a block of content that is the same for many pages.\nExampleGet your own Django Server\ntemplates/footer.html:\ntemplates/template.html:\nVariables in Include\nYou can send variables into the template by using the with keyword.\nIn the include file, you refer to the variables by using the {{ variablename }} syntax:\nExample\ntemplates/mymenu.html:\ntemplates/template.html:",
+      "examples": [
+        "<p>You have reached the bottom of this page, thank you for your time.</p>",
+        "<h1>Hello</h1> <p>This page contains a footer in a template.</p> {% include 'footer.html' %}",
+        "<div>HOME | {{ me }} | ABOUT | FORUM | {{ sponsor }}</div>",
+        "<!DOCTYPE html> <html> <body> {% include \"mymenu.html\" with me=\"TOBIAS\" sponsor=\"W3SCHOOLS\" %} <h1>Welcome</h1> <p>This is my webpage</p> </body> </html>",
+        "include",
+        "templates/footer.html",
+        "templates/template.html",
+        "with",
+        "{{",
+        "}}",
+        "templates/mymenu.html"
+      ]
+    },
+    {
+      "title": "Django QuerySet",
+      "summary": "Django QuerySet\nA QuerySet is a collection of data from a database.\nA QuerySet is built up as a list of objects.\nQuerySets makes it easier to get the data you actually need, by allowing you to filter and order the data at an early stage.\nIn this tutorial we will be querying data from the Member table.\nMember:\nQuerying Data\nIn views.py, we have a view for testing called testing where we will test different queries.\nIn the example below we use the .all() method to get all the records and fields of the Member model:\nViewGet your own Django Server\nviews.py:\nThe object is placed in a variable called mydata, and is sent to the template via the context object as mymembers, and looks like this:\nAs you can see, our Member model contains 5 records, and are listed inside the QuerySet as 5 objects.\nIn the template you can use the mymembers object to generate content:\nTemplate\ntemplates/template.html:",
+      "examples": [
+        "from django.http import HttpResponse from django.template import loader from .models import Member def testing(request): mydata = Member.objects.all() template = loader.get_template('template.html') context = { 'mymembers': mydata, } return HttpResponse(template.render(context, request))",
+        "<table border='1'> <tr> <th>ID</th> <th>Firstname</th> <th>Lastname</th> </tr> {% for x in mymembers %} <tr> <td>{{ x.id }}</td> <td>{{ x.firstname }}</td> <td>{{ x.lastname }}</td> </tr> {% endfor %} </table>",
+        "Member",
+        "views.py",
+        "testing",
+        ".all()",
+        "mydata",
+        "context",
+        "mymembers",
+        "templates/template.html"
+      ]
+    },
+    {
+      "title": "Django QuerySet - Get Data",
+      "summary": "Get Data\nThere are different methods to get data from a model into a QuerySet.\nThe values() Method\nThe values() method allows you to return each object as a Python dictionary, with the names and values as key/value pairs:\nExampleGet your own Django Server\nviews.py:\nReturn Specific Columns\nThe values_list() method allows you to return only the columns that you specify.\nExample\nReturn only the firstname columns:\nviews.py:\nReturn Specific Rows\nYou can filter the search to only return specific rows/records, by using the filter() method.\nExample\nReturn only the records where firstname is 'Emil'\nviews.py:\nYou will learn more about the filter() method in the next chapter.",
+      "examples": [
+        "from django.http import HttpResponse from django.template import loader from .models import Member def testing(request): mydata = Member.objects.all().values() template = loader.get_template('template.html') context = { 'mymembers': mydata, } return HttpResponse(template.render(context, request))",
+        "from django.http import HttpResponse from django.template import loader from .models import Member def testing(request): mydata = Member.objects.values_list('firstname') template = loader.get_template('template.html') context = { 'mymembers': mydata, } return HttpResponse(template.render(context, request))",
+        "from django.http import HttpResponse from django.template import loader from .models import Member def testing(request): mydata = Member.objects.filter(firstname='Emil').values() template = loader.get_template('template.html') context = { 'mymembers': mydata, } return HttpResponse(template.render(context, request))",
+        "values()",
+        "views.py",
+        "values_list()",
+        "firstname",
+        "filter()"
+      ]
+    },
+    {
+      "title": "Django QuerySet - Filter",
+      "summary": "QuerySet Filter\nThe filter() method is used to filter your search, and allows you to return only the rows that matches the search term.\nAs we learned in the previous chapter, we can filter on field names like this:\nExampleGet your own Django Server\nReturn only the records where the firstname is 'Emil':\nIn SQL, the above statement would be written like this:\nAND\nThe filter() method takes the arguments as **kwargs (keyword arguments), so you can filter on more than one field by separating them by a comma.\nExample\nReturn records where lastname is \"Refsnes\" and id is 2:\nIn SQL, the above statement would be written like this:\nOR\nTo return records where firstname is Emil or firstname is Tobias (meaning: returning records that matches either query, not necessarily both) is not as easy as the AND example above.\nWe can use multiple filter() methods, separated by a pipe | character. The results will merge into one model.\nExample\nReturn records where firstname is either \"Emil\" or Tobias\":\nAnother common method is to import and use Q expressions:\nExample\nReturn records where firstname is either \"Emil\" or Tobias\":\nIn SQL, the above statement would be written like this:\nField Lookups\nDjango has its own way of specifying SQL statements and WHERE clauses.\nTo make specific where clauses in Django, use \"Field lookups\".\nField lookups are keywords that represents specific SQL keywords.\nExample:\nUse the __startswith keyword:\nIs the same as the SQL statement:\nThe above statement will return records where firstname starts with 'L'.\nField Lookups Syntax\nAll Field lookup keywords must be specified with the fieldname, followed by two(!) underscore characters, and the keyword.\nIn our Member model, the statement would be written like this:\nExample\nReturn the records where firstname starts with the letter 'L':\nField Lookups Reference\nA list of all field look up keywords:",
+      "examples": [
+        "mydata = Member.objects.filter(firstname='Emil').values()",
+        "SELECT * FROM members WHERE firstname = 'Emil';",
+        "mydata = Member.objects.filter(lastname='Refsnes', id=2).values()",
+        "SELECT * FROM members WHERE lastname = 'Refsnes' AND id = 2;",
+        "mydata = Member.objects.filter(firstname='Emil').values() | Member.objects.filter(firstname='Tobias').values()",
+        "from django.http import HttpResponse from django.template import loader from .models import Member from django.db.models import Q def testing(request): mydata = Member.objects.filter(Q(firstname='Emil') | Q(firstname='Tobias')).values() template = loader.get_template('template.html') context = { 'mymembers': mydata, } return HttpResponse(template.render(context, request))",
+        "SELECT * FROM members WHERE firstname = 'Emil' OR firstname = 'Tobias';",
+        ".filter(firstname__startswith='L');",
+        "WHERE firstname LIKE 'L%'",
+        "mydata = Member.objects.filter(firstname__startswith='L').values()",
+        "filter()",
+        "|",
+        "__startswith",
+        "Member",
+        "firstname"
+      ]
+    },
+    {
+      "title": "Django QuerySet - Order By",
+      "summary": "Order By\nTo sort QuerySets, Django uses the order_by() method:\nExampleGet your own Django Server\nOrder the result alphabetically by firstname:\nIn SQL, the above statement would be written like this:\nDescending Order\nBy default, the result is sorted ascending (the lowest value first), to change the direction to descending (the highest value first), use the minus sign (NOT), - in front of the field name:\nExample\nOrder the result firstname descending:\nIn SQL, the above statement would be written like this:\nMultiple Order Bys\nTo order by more than one field, separate the fieldnames with a comma in the order_by() method:\nExample\nOrder the result first by lastname ascending, then descending on id:\nIn SQL, the above statement would be written like this:",
+      "examples": [
+        "mydata = Member.objects.all().order_by('firstname').values()",
+        "SELECT * FROM members ORDER BY firstname;",
+        "mydata = Member.objects.all().order_by('-firstname').values()",
+        "SELECT * FROM members ORDER BY firstname DESC;",
+        "mydata = Member.objects.all().order_by('lastname', '-id').values()",
+        "SELECT * FROM members ORDER BY lastname ASC, id DESC;",
+        "order_by()",
+        "-"
+      ]
+    },
+    {
+      "title": "Django - Add Static File",
+      "summary": "Create Static Folder\nWhen building web applications, you probably want to add some static files like images or css files.\nStart by creating a folder named static in your project, the same place where you created the templates folder:\nThe name of the folder has to be static.\nAdd a CSS file in the static folder, the name is your choice, we will call it myfirst.css in this example:\nOpen the CSS file and insert the following:\nmy_tennis_club/members/static/myfirst.css:\nModify the Template\nNow you have a CSS file, with some CSS styling. The next step will be to include this file in a HTML template:\nOpen the templates/template.html file and add the following:\nAnd:\nExampleGet your own Django Server\nmy_tennis_club/members/templates/template.html:\nRestart the server for the changes to take effect:\nAnd check out the result in your own browser: 127.0.0.1:8000/testing/.\nDidn't Work?\nJust testing? If you just want to play around, and not going to deploy your work, you can set DEBUG = True in the settings.py file, and the example above will work.\nPlan to deploy? If you plan to deploy your work, you should set DEBUG = False in the settings.py file. The example above will fail, because Django has no built-in solution for serving static files, but there are other ways to serve static files, you will learn how in the next chapter.\nExample (in development):\nmy_tennis_club/my_tennis_club/settings.py:\nThis will make the example work, but we want you to choose DEBUG = False, because that is the best way to learn how to work with Django.\nChoose Debug = False\nFor the rest of this tutorial, we will run with DEBUG = False, even in development, because that is the best way to learn how to work with Django.\nExample:\nmy_tennis_club/my_tennis_club/settings.py:\nWhen using DEBUG = False you have to specify which host name(s) are allowed to host your work. You could choose '127.0.0.1' or 'localhost' which both represents the address of your local machine.\nWe choose '*', which means any address are allowed to host this site. This should be change into a real domain name when you deploy your project to a public server.\nDidn't Work?\nThat is right, the example still does not work.\nYou will have install a third-party library in order to handle static files.\nThere are many alternatives, we will show you how to use a Python library called WhiteNoise in the next chapter.",
+      "examples": [
+        "body { background-color: lightblue; font-family: verdana; }",
+        "{% load static %} <!DOCTYPE html> <html> <link rel=\"stylesheet\" href=\"{% static 'myfirst.css' %}\"> <body> {% for x in fruits %} <h1>{{ x }}</h1> {% endfor %} </body> </html>",
+        ". . # SECURITY WARNING: don't run with debug turned on in production! DEBUG = True . .",
+        ". . # SECURITY WARNING: don't run with debug turned on in production! DEBUG = False ALLOWED_HOSTS = ['*'] . .",
+        "my_tennis_club\nmanage.py\nmy_tennis_club/\nmembers/\ntemplates/\nstatic/",
+        "my_tennis_club\nmanage.py\nmy_tennis_club/\nmembers/\ntemplates/\nstatic/\nmyfirst.css",
+        "python manage.py runserver",
+        "{% load static %}",
+        "<link rel=\"stylesheet\" href=\"{% static 'myfirst.css' %}\">",
+        "static",
+        "templates",
+        "myfirst.css",
+        "my_tennis_club/members/static/myfirst.css",
+        "templates/template.html",
+        "my_tennis_club/members/templates/template.html",
+        "127.0.0.1:8000/testing/",
+        "DEBUG = True",
+        "settings.py",
+        "DEBUG = False",
+        "my_tennis_club/my_tennis_club/settings.py",
+        "ALLOWED_HOSTS",
+        "'127.0.0.1'",
+        "'localhost'",
+        "'*'"
+      ]
+    },
+    {
+      "title": "Django - Installing WhiteNoise",
+      "summary": "WhiteNoise\nDjango does not have a built-in solution for serving static files, at least not in production when DEBUG has to be False.\nWe have to use a third-party solution to accomplish this.\nIn this Tutorial we will use WhiteNoise, which is a Python library, built for serving static files.\nInstall WhiteNoise\nTo install WhiteNoise in your virtual environment, type the command below:\nThe result should be something like this:\nModify Settings\nTo make Django aware of you wanting to run WhitNoise, you have to specify it in the MIDDLEWARE list in settings.py file:\nmy_tennis_club/my_tennis_club/settings.py:\nCollect Static Files\nThere are one more action you have to perform before you can serve the static file from the example in the previous chapter. You have to collect all static files and put them into one specified folder. You will learn how in the next chapter.",
+      "examples": [
+        ". . MIDDLEWARE = [ 'django.middleware.security.SecurityMiddleware', 'django.contrib.sessions.middleware.SessionMiddleware', 'django.middleware.common.CommonMiddleware', 'django.middleware.csrf.CsrfViewMiddleware', 'django.contrib.auth.middleware.AuthenticationMiddleware', 'django.contrib.messages.middleware.MessageMiddleware', 'django.middleware.clickjacking.XFrameOptionsMiddleware', 'whitenoise.middleware.WhiteNoiseMiddleware', ]. .",
+        "pip install whitenoise",
+        "Collecting whitenoise\nDownloading whitenoise-6.9.0-py3-none-any.whl.metadata (3.6 kB)\nDownloading whitenoise-6.9.0-py3-none-any.whl (20 kB)\nInstalling collected packages: whitenoise\nSuccessfully installed whitenoise-6.9.0\n\n[notice] A new release of pip is available: 24.3.1 -> 25.0.1\n[notice] To update, run: python.exe -m pip install --upgrade pip",
+        "DEBUG",
+        "False",
+        "MIDDLEWARE",
+        "settings.py",
+        "my_tennis_club/my_tennis_club/settings.py"
+      ]
+    },
+    {
+      "title": "Django - Collect Static Files",
+      "summary": "Handle Static Files\nStatic files in your project, like stylesheets, JavaScripts, and images, are not handled automatically by Django when DEBUG = False.\nWhen DEBUG = True, this worked fine, all we had to do was to put them in the static folder of the application.\nWhen DEBUG = False, static files have to be collected and put in a specified folder before we can use it.\nCollect Static Files\nTo collect all necessary static files for your project, start by specifying a STATIC_ROOT property in the settings.py file.\nThis specifies a folder where you want to collect your static files.\nYou can call the folder whatever you like, we will call it productionfiles:\nmy_tennis_club/my_tennis_club/settings.py:\nYou could manually create this folder and collect and put all static files of your project into this folder, but Django has a command that do this for you:\nWhich will produce this result:\n128 files? Why so many? Well this is because of the admin user interface, that comes built-in with Django. We want to keep this feature in production, and it comes with a whole bunch of files including stylesheets, fonts, images, and JavaScripts.\nIf you check in the filesystem on your computer, you will see that a new folder was created: productionfiles. This folder contains admin, with the static files for the admin UI, and the myfirst.css file you created in the Add Static Files chapter.\nThe Example Should Work\nNow you have collected the static files of your project, and if you have installed WhiteNoise, the example from the Add Static Files chapter will finally work.\nStart the server and see the result:\nAnd check out the result in your own browser: 127.0.0.1:8000/testing/.\nExampleGet your own Django Server\nmy_tennis_club/members/templates/template.html:",
+      "examples": [
+        ". . STATIC_ROOT = BASE_DIR / 'productionfiles' STATIC_URL = 'static/' . .",
+        "{% load static %} <!DOCTYPE html> <html> <link rel=\"stylesheet\" href=\"{% static 'myfirst.css' %}\"> <body> {% for x in fruits %} <h1>{{ x }}</h1> {% endfor %} </body> </html>",
+        "python manage.py collectstatic",
+        "128 static files copied to 'C:\\Users\\your_name\\myworld\\my_tennis_club\\productionfiles'.",
+        "my_tennis_club\nmembers/\nmy_tennis_club/\nproductionfiles/\nadmin/\nmyfirst.css",
+        "python manage.py runserver",
+        "DEBUG = False",
+        "DEBUG = True",
+        "static",
+        "STATIC_ROOT",
+        "settings.py",
+        "productionfiles",
+        "my_tennis_club/my_tennis_club/settings.py",
+        "admin",
+        "myfirst.css",
+        "127.0.0.1:8000/testing/",
+        "my_tennis_club/members/templates/template.html"
+      ]
+    },
+    {
+      "title": "Django - Global Static Files",
+      "summary": "Add a Global CSS File\nWe have learned how to add a static file in the application's static folder, and how to use it in the application.\nBut what if other applications in your project wants to use the file?\nThen we have to create a folder on the root directory and put the file(s) there.\nIt is not enough to create a static folder in the root directory, and Django will fix the rest. We have to tell Django where to look for these static files.\nStart by creating a folder on the project's root level, this folder can be called whatever you like, I will call it mystaticfiles in this tutorial:\nAdd a CSS file in the mystaticfiles folder, the name is your choice, we will call it myglobal.css in this example:\nOpen the CSS file and insert the following:\nmy_tennis_club/mystaticfiles/myglobal.css:\nModify Settings\nYou will have to tell Django to also look for static files in the mystaticfiles folder in the root directory, this is done in the settings.py file:\nAdd a STATICFILES_DIRS list:\nmy_tennis_club/my_tennis_club/settings.py:\nIn the STATICFILES_DIRS list, you can list all the directories where Django should look for static files.\nThe BASE_DIR keyword represents the root directory of the project, and together with the / \"mystaticfiles\", it means the mystaticfiles folder in the root directory.\nSearch Order\nIf you have files with the same name, Django will use the first occurrence of the file.\nThe search starts in the directories listed in STATICFILES_DIRS, using the order you have provided. Then, if the file is not found, the search continues in the static folder of each application.\nModify the Template\nNow you have a global CSS file for the entire project, which can be accessed from all your applications.\nTo use it in a template, use the same syntax as you did for the myfirst.css file:\nBegin the template with the following:\nAnd refer to the file like this:\nExampleGet your own Django Server\nmy_tennis_club/members/templates/template.html:\nDidn't Work?\nThat is correct. You need to collect the static files once again.\nCollect Static Files\nRun the collectstatic command to collect the new static file:\nWhich will produce this result:\nType yes:\nWhich will produce this result:\nThe Example Should Work\nStart the server, and the example will work:\nCheck out the result in your own browser: 127.0.0.1:8000/testing/.\nExample\nmy_tennis_club/members/templates/template.html:",
+      "examples": [
+        "body { color: violet; }",
+        ". . STATIC_ROOT = BASE_DIR / 'productionfiles' STATIC_URL = 'static/' #Add this in your settings.py file: STATICFILES_DIRS = [ BASE_DIR / 'mystaticfiles' ] . .",
+        "{% load static %} <!DOCTYPE html> <html> <link rel=\"stylesheet\" href=\"{% static 'myglobal.css' %}\"> <body> {% for x in fruits %} <h1>{{ x }}</h1> {% endfor %} </body> </html>",
+        "my_tennis_club\ndb.sqlite3\nmanage.py\nmy_tennis_club/\nmembers/\nmystaticfiles/",
+        "my_tennis_club\ndb.sqlite3\nmanage.py\nmy_tennis_club/\nmembers/\nmystaticfiles/\nmyglobal.css",
+        "python manage.py collectstatic",
+        "You have requested to collect static files at the destination\nlocation as specified in your settings:\n\nC:\\Users\\Your Name\\myworld\\my_tennis_club\\productionfiles\n\nThis will overwrite existing files!\nAre you sure you want to do this?\n\nType 'yes' to continue, or 'no' to cancel:",
+        "Type 'yes' to continue, or 'no' to cancel: yes",
+        "1 static file copied to 'C:\\Users\\Your Name\\myworld\\my_tennis_club\\productionfiles', 128 unmodified.",
+        "python manage.py runserver",
+        "{% load static %}",
+        "<link rel=\"stylesheet\" href=\"{% static 'myglobal.css' %}\">",
+        "static",
+        "mystaticfiles",
+        "myglobal.css",
+        "my_tennis_club/mystaticfiles/myglobal.css",
+        "settings.py",
+        "STATICFILES_DIRS",
+        "my_tennis_club/my_tennis_club/settings.py",
+        "BASE_DIR",
+        "/ \"mystaticfiles\"",
+        "myfirst.css",
+        "my_tennis_club/members/templates/template.html",
+        "127.0.0.1:8000/testing/"
+      ]
+    },
+    {
+      "title": "Add CSS File to the Project",
+      "summary": "The Project - My Tennis Club\nIf you have followed the steps in the entire Django tutorial, you will have a my_tennis_club project on your computer, with 5 members:\nRun Example\nWe want to add a stylesheet to this project, and put it in the mystaticfiles folder:\nThe name of the CSS file is your choice, we call it mystyles.css in this project.\nOpen the CSS file and insert the following:\nmy_tennis_club/mystaticfiles/mystyles.css:\nModify the Master Template\nNow you have a css file, the next step will be to include this file in the master template:\nOpen the master template file and add the following:\nmy_tennis_club/members/templates/master.html:\nCheck Settings\nMake sure your settings.py file contains a STATICFILES_DIRS list with a reference to the mystaticfiles folder on the root directory, and that you have specified a STATICFILES_ROOT folder:\nmy_tennis_club/my_tennis_club/settings.py:\nCollect Static Files\nEvery time you make a change in a static file, you must run the collectstatic command to make the changes take effect:\nIf you have executed the command earlier in the project, Django will prompt you with a question:\nType 'yes'. This will update any changes done in the static files, and give you this result:\nNow, if you run the project:\nIt will look like this:\nRun Example\nIf you have followed all the steps on you own computer, you can see the result in your own browser:\nIn the browser window, type 127.0.0.1:8000/members/ in the address bar.\nSpice up the Style!\nIn the example above we showed you how to include a stylesheet to your project.\nWe ended up with a purple web page, but CSS can do more than just change the background color.\nWe want to do more with the styles, and end up with a result like this:\nRun Example\nFirst, replace the content of the mystyles.css file with this:\nmy_tennis_club/mystaticfiles/mystyles.css:\nModify Templates\nYou also have to make some changes to the templates:\nMaster\nWe want all pages to have the same top navigation, therefor we insert the top navigation into master.html:\nmy_tennis_club/members/templates/master.html:\nMembers\nIn all_members.html we want to make som changes in the HTML code.\nThe members are put in a div element, and the links become list items with onclick attributes.\nWe also want to remove the navigation, because that is now a part of the master template.\nmy_tennis_club/members/templates/all_members.html:\nDetails\nIn details.html we will put the member details in a div element, and remove the link back to members, because that is now a part of the navigation in the master template.\nmy_tennis_club/members/templates/details.html:\nMain\nIn the main.html template, we will put some of the HTML code into a div element:\nmy_tennis_club/members/templates/main.html:\nCollect Static Files\nSince we did some changes in the static mystyles.css file, we have to run the collectstatic command to make the changes take effect:\nNow, if you run the project:\nYou can see what the result should look like:\nRun Example\nOr, if you have followed all the steps on you own computer, you can see the result in your own browser:\nIn the browser window, type 127.0.0.1:8000/members/ in the address bar.",
+      "examples": [
+        "body { background-color: violet; }",
+        "{% load static %} <!DOCTYPE html> <html> <head> <title>{% block title %}{% endblock %}</title> <link rel=\"stylesheet\" href=\"{% static 'mystyles.css' %}\"> </head> <body> {% block content %} {% endblock %} </body> </html>",
+        ". . STATIC_ROOT = BASE_DIR / 'productionfiles' STATIC_URL = 'static/' #Add this in your settings.py file: STATICFILES_DIRS = [ BASE_DIR / 'mystaticfiles' ] . .",
+        "@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap'); body { margin:0; font: 600 18px 'Source Sans Pro', sans-serif; letter-spacing: 0.64px; color: #585d74; } .topnav { background-color:#375BDC; color:#ffffff; padding:10px; } .topnav a:link, .topnav a:visited { text-decoration: none; color: #ffffff; } .topnav a:hover, .topnav a:active { text-decoration: underline; } .mycard { background-color: #f1f1f1; background-image: linear-gradient(to bottom, #375BDC, #4D70EF); background-size: 100% 120px; background-repeat: no-repeat; margin: 40px auto; width: 350px; border-radius: 5px; box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23); padding: 20px; } .mycard h1 { text-align: center; color:#ffffff; margin:20px 0 60px 0; } ul { list-style-type: none; padding: 0; margin: 0; } li { background-color: #ffffff; background-image: linear-gradient(to right, #375BDC, #4D70EF); background-size: 50px 60px; background-repeat: no-repeat; cursor: pointer; transition: transform .25s; border-radius: 5px; box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23); padding: 15px; padding-left: 70px; margin-top: 5px; } li:hover { transform: scale(1.1); } a:link, a:visited { color: #375BDC; } .main, .main h1 { text-align:center; color:#375BDC; }",
+        "{% load static %} <!DOCTYPE html> <html> <head> <link rel=\"stylesheet\" href=\"{% static 'mystyles.css' %}\"> <title>{% block title %}{% endblock %}</title> </head> <body> <div class=\"topnav\"> <a href=\"/\">HOME</a> | <a href=\"/members\">MEMBERS</a> </div> {% block content %} {% endblock %} </body> </html>",
+        "{% extends \"master.html\" %} {% block title %} My Tennis Club - List of all members {% endblock %} {% block content %} <div class=\"mycard\"> <h1>Members</h1> <ul> {% for x in mymembers %} <li onclick=\"window.location = 'details/{{ x.id }}'\">{{ x.firstname }} {{ x.lastname }}</li> {% endfor %} </ul> </div> {% endblock %}",
+        "{% extends \"master.html\" %} {% block title %} Details about {{ mymember.firstname }} {{ mymember.lastname }} {% endblock %} {% block content %} <div class=\"mycard\"> <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1> <p>Phone {{ mymember.phone }}</p> <p>Member since: {{ mymember.joined_date }}</p> </div> {% endblock %}",
+        "{% extends \"master.html\" %} {% block title %} My Tennis Club {% endblock %} {% block content %} <div class=\"main\"> <h1>My Tennis Club</h1> <h3>Members</h3> <p>Check out all our <a href=\"members/\">members</a></p> </div> {% endblock %}",
+        "my_tennis_club\nmanage.py\nmy_tennis_club/\nmembers/\nmystaticfiles/\nmystyles.css",
+        "python manage.py collectstatic",
+        "You have requested to collect static files at the destination\nlocation as specified in your settings:\n\nC:\\Users\\Your Name\\myworld\\my_tennis_club\\productionfiles\n\nThis will overwrite existing files!\nAre you sure you want to do this?\n\nType 'yes' to continue, or 'no' to cancel:",
+        "1 static file copied to 'C:\\Users\\Your Name\\minverden\\my_tennis_club\\productionfiles', 129 unmodified.",
+        "python manage.py runserver",
+        "my_tennis_club",
+        "mystaticfiles",
+        "mystyles.css",
+        "my_tennis_club/mystaticfiles/mystyles.css",
+        "my_tennis_club/members/templates/master.html",
+        "settings.py",
+        "STATICFILES_DIRS",
+        "STATICFILES_ROOT",
+        "my_tennis_club/my_tennis_club/settings.py",
+        "collectstatic",
+        "127.0.0.1:8000/members/",
+        "master.html",
+        "all_members.html",
+        "my_tennis_club/members/templates/all_members.html",
+        "details.html",
+        "my_tennis_club/members/templates/details.html",
+        "main.html",
+        "my_tennis_club/members/templates/main.html"
+      ]
+    },
+    {
+      "title": "Introduction to PostgreSQL",
+      "summary": "Database Engines\nDjango comes with a SQLite database which is great for testing and debugging at the beginning of a project.\nHowever, it is not very suitable for production.\nDjango also support these database engines:\nPostgreSQL\nMariaDB\nMySQL\nOracle\nWe will take a closer look at the PostgreSQL database engine.\nPostgreSQL\nPostgreSQL database is an open source relational database, which should cover most demands you have when creating a database for a Django project.\nIt has a good reputation, it is reliable, and it perform well under most circumstances.\nWe will add a PostgreSQL database to our Django project.\nTo be able to use PostgreSQL in Django we have to install a package called psycopg2.\nInstall psycopg2\nType this command in the command line to install the package. Make sure you are still inn the virtual environment:\nThe result should be something like this:\nThe psycopg2 package is a driver that is necessary for PostgreSQL to work in Python.\nWe also need a server where we can host the database.\nIn this tutorial we have chosen the Amazon Web Services (AWS) platform, you will learn more about that in the next chapter.",
+      "examples": [
+        "pip install psycopg2-binary",
+        "Collecting psycopg2-binary\nDownloading psycopg2_binary-2.9.10-cp313-cp313-win_amd64.whl.metadata (4.8 kB)\nDownloading psycopg2_binary-2.9.10-cp313-cp313-win_amd64.whl (2.6 MB)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 50.0 MB/s eta 0:00:00\nInstalling collected packages: psycopg2-binary\nSuccessfully installed psycopg2-binary-2.9.10\n\n[notice] A new release of pip is available: 24.3.1 -> 25.0.1\n[notice] To update, run: python.exe -m pip install --upgrade pip"
+      ]
+    },
+    {
+      "title": "Create AWS Account",
+      "summary": "Why AWS?\nThere are many providers out there that can host Django projects and PostgreSQL databases.\nIn this tutorial we will use the Amazon Web Services (AWS) platform, mainly because they offer a free solution that can host both Django projects and PostgreSQL databases. All you need is an AWS account.\nNote: you can choose whatever server provider you like, they will most likely all give you a satisfying result, but they will have some provider-specific settings that you should be aware of when following this tutorial.\nAWS\nGo to aws.amazon.com, and create an account:\nSign In\nOnce you have created an AWS account, it is time to sign in for the first time:\nAWS Console\nIf this is your first time you sign into your AWS account, you will be directed to the AWS Console Home page:\nAdd the RDS Service\nOnce you have an AWS account, you can start creating a database.\nWe will use a database service at AWS, called RDS.\nIn the search field, search for \"RDS\", and click to start the service:\nOnce the service has started, you should see something like this:\nIn the next chapter we will create the PostgreSQL database.",
+      "examples": []
+    },
+    {
+      "title": "Create PostgreSQL Database",
+      "summary": "Create Database\nInside the RDS service, create a database, either by navigating to the Database section, or just click the \"Create database\" button:\nSettings\nOnce you have started creating a database, you will be given some choices for the type and settings of your database.\nTo add a PostgreSQL database to your Django project, choose the following options:\nStandard creation method:\nPostgreSQL engine method:\nFree Tier Template:\nName of database, username, and password\nYou can choose any name, username, and password:\nKeep the default instance configuration:\nCheck off the storage autoscaling:\nIt can be a good thing to enable storage autoscaling, but for this tutorial it is not necessary.\nGrant public access, and create a new security group:\nGive the security group a name, we will call it \"w3-django\":\nKeep default db authentications:\nKeep default monitoring:\nClick Create database:\nThis will take a few minutes, but when it is finished, you will have a new PostgreSQL database, almost ready to run on your Django project!\nIn the next chapter you will learn how to connect your project to the database.",
+      "examples": []
+    },
+    {
+      "title": "Connect to Database",
+      "summary": "Modify Settings\nTo make Django able to connect to your database, you have to specify it in the DATABASES tuple in the settings.py file.\nBefore, it looked like this:\nSQLiteGet your own Django Server\nmy_tennis_club/my_tennis_club/settings.py:\nNow, you should change it to look like this:\nPostgreSQL\nmy_tennis_club/my_tennis_club/settings.py:\nNote: The values will be different for your project.\nEngine?\nAs you can see in the settings.py file, we insert postgresql instead of sqlite.\nName?\nThe database does not have a name, but you have to assign one in order to access the database.\nIf no name is given, the provider accepts 'postgres' as the name of the database.\nUsername and Password?\nInsert the username and password that you specified when you created the database.\nHost? Port?\nAs you can see in the settings.py file, we insert postgresql instead of sqlite, and insert the username and password that we specified when we created the database.\nThe HOST and PORT can be found under the \"Connectivity & security\" section in the RDS instance. They are described as \"Endpoint\" and \"Port\":\nWhich for my project is this:\n'HOST': 'w3-django-project.cdxmgq9zqqlr.us-east-1.rds.amazonaws.com'\n'PORT': '5432'\nMigrate\nOnce we have done the changes in settings.py, we must run a migration in our virtual environment, before the changes will take place:\nWhich will give you this result:\nNow, if you run the project:\nAnd view it in your browser: 127.0.0.1:8000/.\nYou will get the home page of the project, but if you click on the \"members\" link, you will see that there are no members.\nThat is because the database is empty. In the next chapter we will fill the database with members.",
+      "examples": [
+        ". . DATABASES = { 'default': { 'ENGINE': 'django.db.backends.sqlite3', 'NAME': BASE_DIR / 'db.sqlite3', } } .",
+        ". . DATABASES = { 'default': { 'ENGINE': 'django.db.backends.postgresql', 'NAME': 'postgres', 'USER': 'masteruser', 'PASSWORD': '12345678', 'HOST': 'w3-django-project.cdxmgq9zqqlr.us-east-1.rds.amazonaws.com', 'PORT': '5432' } } .",
+        "python manage.py migrate",
+        "Operations to perform:\nApply all migrations: admin, auth, contenttypes, members, sessions\nRunning migrations:\nApplying contenttypes.0001_initial... OK\nApplying auth.0001_initial... OK\nApplying admin.0001_initial... OK\nApplying admin.0002_logentry_remove_auto_add... OK\nApplying admin.0003_logentry_add_action_flag_choices... OK\nApplying contenttypes.0002_remove_content_type_name... OK\nApplying auth.0002_alter_permission_name_max_length... OK\nApplying auth.0003_alter_user_email_max_length... OK\nApplying auth.0004_alter_user_username_opts... OK\nApplying auth.0005_alter_user_last_login_null... OK\nApplying auth.0006_require_contenttypes_0002... OK\nApplying auth.0007_alter_validators_add_error_messages... OK\nApplying auth.0008_alter_user_username_max_length... OK\nApplying auth.0009_alter_user_last_name_max_length... OK\nApplying auth.0010_alter_group_name_max_length... OK\nApplying auth.0011_update_proxy_permissions... OK\nApplying auth.0012_alter_user_first_name_max_length... OK\nApplying members.0001_initial... OK\nApplying members.0002_members_delete_member... OK\nApplying members.0003_rename_members_member... OK\nApplying sessions.0001_initial... OK",
+        "python manage.py runserver",
+        "DATABASES",
+        "settings.py",
+        "my_tennis_club/my_tennis_club/settings.py",
+        "postgresql",
+        "sqlite",
+        "'postgres'",
+        "HOST",
+        "PORT",
+        "'HOST': 'w3-django-project.cdxmgq9zqqlr.us-east-1.rds.amazonaws.com'",
+        "'PORT': '5432'",
+        "127.0.0.1:8000/"
+      ]
+    },
+    {
+      "title": "PostgreSQL - Add Members",
+      "summary": "Members\nThe \"My Tennis Club\" project has no members: 127.0.0.1:8000/.\nThat is because we have created a brand new database, and it is empty.\nThe old SQLite database contained 5 members, so let us dive into the admin interface and add the same 5 members.\nBut first we have to create a new superuser.\nCreate superuser\nSince we now have a new database, we have to create the superuser once again:\nThis is done by typing this command in the command view:\nWhich will give this prompt:\nHere you must enter: username, e-mail address, (you can just pick a fake e-mail address), and password:\nMy password did not meet the criteria, but this is a test environment, and I choose to create user anyway, by enter y:\nIf you press [Enter], you should have successfully created a user:\nNow start the server again:\nIn the browser window, type 127.0.0.1:8000/admin in the address bar.\nAnd fill in the form with the correct username and password:\nWhich should result in this interface:\nAdd Members\nWhen you are in the admin interface, click the \"Add\" button for \"Members\", and start inserting new members until you have a list like this:\nMy Tennis Club\nIn the browser window, type 127.0.0.1:8000/members in the address bar.\nAnd once again you have a Tennis Club page with 5 members!\nNext: let's deploy this project, so that the whole world can see it!",
+      "examples": [
+        "python manage.py createsuperuser",
+        "Username:",
+        "Username: johndoe\nEmail address: johndoe@dummymail.com\nPassword:\nPassword (again):\nThis password is too short. It must contain at least 8 characters.\nThis password is too common.\nThis password is entirely numeric.\nBypass password validation and create user anyway? [y/N]:",
+        "Bypass password validation and create user anyway? [y/N]: y",
+        "Superuser created successfully.",
+        "python manage.py runserver",
+        "127.0.0.1:8000/",
+        "127.0.0.1:8000/admin",
+        "127.0.0.1:8000/members"
+      ]
+    },
+    {
+      "title": "Deploy Django - Choose Provider",
+      "summary": "Deploy to the World\nTo deploy a project means to make it visible for other people on the internet.\nSo far, in this tutorial, we have made a Django project that runs locally on your computer. This is often called, \"in development\", and when we have deployed it, we call it \"in production\".\nWhere to Deploy?\nThere are many providers out there that offers servers for Django projects. In this tutorial we will use the Amazon Web Services (AWS) platform, mainly because they offer a free solution that only requires you to create an AWS account.\nNote: you can choose whatever server provider you like, they will all give you the same result, but they will have some provider-specific settings that you should be aware of when following this tutorial.\nAWS\nLog into your AWS account. (If you do not have an AWS account, follow the steps in the Create AWS Account chapter.)\nAWS Console\nOnce you have signed in, you should be directed to the AWS Console Home page:\nElastic Beanstalk\nWe will be using a service called \"Elastic Beanstalk\" to deploy the Django project.\nIn the search field at the top, search for \"elastic beanstalk\", and click to start the service:\nRun Demo\nLock in Dependencies\nOnce you have started the \"Elastic Beanstalk\" service, we could start with the deployment, but first we need to lock in some dependencies, which means to make you local Django project ready for deployment.\nYou will learn how to in the next chapters.",
+      "examples": []
+    },
+    {
+      "title": "Deploy Django - Create Requirements",
+      "summary": "Lock in Dependencies\nWhen you create a Django application, there are some Python packages that your project depends on.\nDjango itself is a Python package, and we have to make sure that the server where we deploy our project also has the Django package installed, and all the other packages your project requires.\nLuckily there is a command for this as well, just run this command in the command view:\nThe result of the above command, is a file called requirements.txt being created in the project:\nThe file contains all the packages that this project depends on: with this content:\nmy_tennis_club/requirements.txt:\nNote: You can create this file on your own, and insert the packages manually, just make sure you get all the packages your project depends on, and you must name the file requirements.txt.\nNow the hosting provider knows which packages to install when we deploy our project.\nBut Elastic Beanstalk needs more information, go to the next chapter to create an \"EB\" config file.",
+      "examples": [
+        "asgiref==3.8.1 Django==5.1.7 psycopg2-binary==2.9.10 sqlparse==0.5.3 tzdata==2025.1 whitenoise==6.9.0",
+        "python -m pip freeze > requirements.txt",
+        "my_tennis_club\nmembers/\nmy_tennis_club/\nmystaticfiles/\nproductionfiles/\ndb.sqlite3\nmanage.py\n\nrequirements.txt",
+        "requirements.txt",
+        "my_tennis_club/requirements.txt"
+      ]
+    },
+    {
+      "title": "Deploy Django - django.config",
+      "summary": "Provider-Specific Settings\nWe have chosen AWS as our hosting provider, and Elastic Beanstalk as a service to deploy the Django project, and it has some specific requirements.\n.ebextension Folder\nIt requires that you create a folder on the root level of your project called .ebextensions:\nCreate django.config File\nIn the .ebextensions folder, create a file called django.config:\nOpen the file and insert these settings:\nmy_tennis_club/.ebextensions/django.config:\nNote: These steps are specific for AWS and Elastic beanstalk, but every provider has some provider-specific settings.\nThe next step is to wrap all the dependencies into one .zip file, which you will learn in the next chapter.",
+      "examples": [
+        "option_settings: aws:elasticbeanstalk:container:python: WSGIPath: my_tennis_club.wsgi:application",
+        "my_tennis_club\n.ebextensions/\nmembers/\nmy_tennis_club/\nmystaticfiles/\nproductionfiles/\ndb.sqlite3\nmanage.py\nrequirements.txt",
+        "my_tennis_club\n.ebextensions/\ndjango.config",
+        ".ebextensions",
+        "django.config",
+        "my_tennis_club/.ebextensions/django.config"
+      ]
+    },
+    {
+      "title": "Deploy Django Project - Create zip File",
+      "summary": "Zip Your Project\nTo wrap your project into a .zip file, you cannot zip the entire project folder, but choose the files and folders manually.\nThe files to include in the .zip file are highlighted (blue) in the example below:\nWith your file explorer, navigate to the project folder, select these files and folders, right-click and choose to create a zip file.\nZip File\nNow you have a .zip file of your project which you can upload to Elastic beanstalk:",
+      "examples": [
+        "my_tennis_club\n\n.ebextensions/\nmembers/\nmy_tennis_club/\nmystaticfiles/\n\nproductionfiles/\ndb.sqlite3\nmanage.py\nrequirements.txt",
+        "my_tennis_club\n.ebextensions/\nmembers/\nmy_tennis_club/\nmystaticfiles/\nproductionfiles/\ndb.sqlite3\nmanage.py\n\nmy_tennis_clup.zip\nrequirements.txt"
+      ]
+    },
+    {
+      "title": "Deploy Django - Elastic Beanstalk",
+      "summary": "Elastic Beanstalk\nIn AWS, navigate to the Elastic Beanstalk application, as we did in the Choose Provider chapter, and click the \"Create application\" button:\nCreate EB Application\nOnce you have clicked the \"Create Application\" button, you will be taken to this page, where you can give your Django project a name. I will name it \"my-first-django\":\nChoose Platform\nThen scroll down until you see the \"Platform\" section, and choose \"Python\", with the recommended version:\nUpload .zip File\nNext, scroll down to the next section, the \"Application code\" section, and choose \"Upload your code\".\nClick on the \"Choose file\" button, navigate to the .zip file you created in the previous chapter and upload it:\nThe .zip file is uploaded, and we are ready to deploy!\nDeploy\nClick the \"Create application\" button to start deploying.\nWaiting\nThe deployment will take a few minutes.\nSuccess!\nFinally the project is live, and you can view it by clicking the link below the Myfirstdjango-env header, or type the host address in your browser:",
+      "examples": []
+    },
+    {
+      "title": "Deploy Django - Update Project",
+      "summary": "Deploy Changes\nAny changes you do with the application locally, on your own computer, is not visible on the deployed version.\nSo if you make a change, and you want it to be visible on the deployed version, you have to upload a new .zip file.\nCreate .zip file\nTo wrap your project into a .zip file, follow the steps described in the Create .zip File chapter:\nStart by selecting the relevant files and folders of your project, if you have the same project as we have in our tutorial, you should select the highlighted files in the example below:\nRight-click and choose to create a .zip file.\nNow you have a .zip file, containing the changes, and you can upload it to Elastic beanstalk:\nUpload to Elastic Beanstalk\nLog into your Amazon Web Services account, and find your project under the \"Elastic Beanstalk\" application:\nClick the \"Upload and deploy\" button.\nChoose .zip File\nClick the \"Choose file\" button to upload the .zip file you just created:\nDeploy\nClick the \"Deploy\" button:\nUploaded!\nThat's it, your project is updated with all the new changes.\nNote: Follow these steps every time you want to update your project.",
+      "examples": [
+        "my_tennis_club\n\n.ebextensions/\nmembers/\nmy_tennis_club/\nmystaticfiles/\n\nproductionfiles/\ndb.sqlite3\nmanage.py\nrequirements.txt",
+        "my_tennis_club\n.ebextensions/\nmembers/\nmy_tennis_club/\nmystaticfiles/\nproductionfiles/\ndb.sqlite3\nmanage.py\n\nmy_tennis_clup.zip\nrequirements.txt"
+      ]
+    },
+    {
+      "title": "Django Slug Field",
+      "summary": "What is Slug?\nHave you ever seen url's that look like this:\nThe \"learn-about-slug-field\" part is a slug.\nIt is a description containing only letters, hyphens, numbers or underscores.\nIt is often used in url's to make them easier to read, but also to make them more search engine friendly.\nUrl Without Slug\nIf you have followed our Django Project created in this tutorial, you will have a small Django project looking like this:\nAnd if you click the first member, you will jump to this page:\nCheck out the address bar:\nThe number \"1\" refers to the ID of that particular record in the database.\nMakes sense to the developer, but probably not to anyone else.\nUrl With Slug\nIt would have made more sense if the url looked like this:\nCheck out the address bar:\nThat is a more user friendly url, and Django can help you create such url's in your project.\nModify the models.py File\nStart by adding a new field in the database.\nOpen the models.py file and add a field called slug with the data type SlugField:\nmy_tennis_club/members/models.py:\nThis is a change in the Model's structure, and therefor we have to make a migration to tell Django that it has to update the database:\nAnd the migrate command:\nChange Admin\nNow we have a new field in the database, but we also want this field to be updated automatically when we set the firstname or lastname of a member.\nThis can be done with a built-in Django feature called prepopulated_fields where you specify the field you want to pre-populate, and a tuple with the field(s) you want to populate it with.\nThis is done in the admin.py file:\nmy_tennis_club/members/admin.py:\nEnter the Admin interface and open a record for editing:\nClick \"SAVE\" and the \"slug\" field will be auto populated with the firstname and the lastname, and since the \"slug\" field is of type SlugField, it will \"slugify\" the value, meaning it will put a hyphen between each word.\nNext time you open the member for editing you will see the slug field with value:\nNote: Since the new field is empty by default, you have to do this save operation for each member.\nModify Template\nNow we can replace the ID field with the slug field throughout the project.\nStart with the all_members.html template, where we have a link to the details page:\nmy_tennis_club/members/templates/all_members.html:\nModify URL\nWe also have to make some changes in the urls.pyfile.\nChange from <int:id> to <slug:slug>:\nmy_tennis_club/members/urls.py:\nModify View\nFinally, change the details view to handle incoming request as slug instead of ID:\nmy_tennis_club/members/views.py:\nNow the link to details works with the new slugified url:\nIf you have followed all the steps on your own computer, you can see the result in your own browser: 127.0.0.1:8000/members/.\nIf the server is down, you have to start it again with the runserver command:",
+      "examples": [
+        "from django.db import models class Member(models.Model): firstname = models.CharField(max_length=255) lastname = models.CharField(max_length=255) phone = models.IntegerField(null=True) joined_date = models.DateField(null=True) slug = models.SlugField(default=\"\", null=False) def __str__(self): return f\"{self.firstname} {self.lastname}\"",
+        "from django.contrib import admin from .models import Member # Register your models here. class MemberAdmin(admin.ModelAdmin): list_display = (\"firstname\", \"lastname\", \"joined_date\",) prepopulated_fields = {\"slug\": (\"firstname\", \"lastname\")} admin.site.register(Member, MemberAdmin)",
+        "{% extends \"master.html\" %} {% block title %} My Tennis Club - List of all members {% endblock %} {% block content %} <div class=\"mycard\"> <h1>Members</h1> <ul> {% for x in mymembers %} <li onclick=\"window.location = 'details/{{ x.slug }}'\">{{ x.firstname }} {{ x.lastname }}</li> {% endfor %} </ul> </div> {% endblock %}",
+        "from django.urls import path from . import views urlpatterns = [ path('', views.main, name='main'), path('members/', views.members, name='members'), path('members/details/<slug:slug>', views.details, name='details'), path('testing/', views.testing, name='testing'), ]",
+        "from django.http import HttpResponse from django.template import loader from .models import Member def members(request): mymembers = Member.objects.all().values() template = loader.get_template('all_members.html') context = { 'mymembers': mymembers, } return HttpResponse(template.render(context, request)) def details(request, slug): mymember = Member.objects.get(slug=slug) template = loader.get_template('details.html') context = { 'mymember': mymember, } return HttpResponse(template.render(context, request)) def main(request): template = loader.get_template('main.html') return HttpResponse(template.render()) def testing(request): template = loader.get_template('template.html') context = { 'fruits': ['Apple', 'Banana', 'Cherry'], } return HttpResponse(template.render(context, request))",
+        "w3schools.com/django/learn-about-slug-field",
+        "127.0.0.1:8000/members/details/1",
+        "127.0.0.1:8000/members/details/emil-refsnes",
+        "python manage.py makemigrations",
+        "python manage.py migrate",
+        "python manage.py runserver",
+        "models.py",
+        "slug",
+        "SlugField",
+        "my_tennis_club/members/models.py",
+        "prepopulated_fields",
+        "admin.py",
+        "my_tennis_club/members/admin.py",
+        "all_members.html",
+        "my_tennis_club/members/templates/all_members.html",
+        "urls.py",
+        "<int:id>",
+        "<slug:slug>",
+        "my_tennis_club/members/urls.py",
+        "details",
+        "my_tennis_club/members/views.py",
+        "127.0.0.1:8000/members/",
+        "runserver"
+      ]
+    },
+    {
+      "title": "Django - Add Static File",
+      "summary": "Add Bootstrap 5\nThere are two main methods to use bootstrap in your Django project. Either by downloading the required files and include them in your project, or you can install the bootstrap 5 module in your virtual environment.\nWe will use the second method, installing Bootstrap 5 in the virtual environment.\nInstall Bootstrap 5\nBootstrap 5 should be installed in the virtual environment.\nWe will install it in an existing project, the My Tennis Club project, created earlier in this tutorial.\nOpen the command view, navigate to the virtual environment folder and activate the virtual environment:\nOnce you are inside the virtual environment, install Bootstrap 5 with this command:\nWhich will give you a result like this:\nUpdate Settings\nNext step is to include the bootstrap module in the INSTALLED_APPS list in settings.py:\nmy_tennis_club/my_tennis_club/settings.py:\nBootstrap 5 is now ready to use in your project!\nRemove Old Styling\nThThe My Tennis Club project already has a stylesheet, remove it and the Members page without styling will look like this:\nAdd Bootstrap 5 to Template\nTo use Bootstrap 5 in the project, start by inserting some lines of code in the master.html template:\nmy_tennis_club/members/templates/master.html:\nAs you can see, we inserted these three lines in the <head> section:\nThe first line tells Django that it should load the Bootstrap 5 module in this template.\nThe second line inserts the <link> element with the referral to the bootstrap stylesheet.\nThe third line inserts the <script> element with the referral to the necessary javascript file.\nWe also did some changes to the HTML elements in the template, like inserting bootstrap classes to the navigation bar:\nIf you run the project now, the members page will look like this:\nThat's it! Bootstrap 5 is now a part of your project!\nLearn more about Bootstrap 5 in our Bootstrap 5 Tutorial.",
+      "examples": [
+        "INSTALLED_APPS = [ 'django.contrib.admin', 'django.contrib.auth', 'django.contrib.contenttypes', 'django.contrib.sessions', 'django.contrib.messages', 'django.contrib.staticfiles', 'members', 'bootstrap5', ]",
+        "<!DOCTYPE html> <html> <head> <title>{% block title %}{% endblock %}</title> {% load bootstrap5 %} {% bootstrap_css %} {% bootstrap_javascript %} </head> <body> <div class=\"container\"> <ul class=\"nav bg-info\"> <li class=\"nav-item\"> <a class=\"nav-link link-light\" href=\"/\">HOME</a> </li> <li class=\"nav-item\"> <a class=\"nav-link link-light\" href=\"/members\">MEMBERS</a> </li> </ul> {% block content %} {% endblock %} </div> </body> </html>",
+        "{% load bootstrap5 %} {% bootstrap_css %} {% bootstrap_javascript %}",
+        "<div class=\"container\"> <ul class=\"nav bg-info\"> <li class=\"nav-item\"> <a class=\"nav-link link-light\" href=\"/\">HOME</a> </li> <li class=\"nav-item\"> <a class=\"nav-link link-light\" href=\"/members\">MEMBERS</a> </li> </ul> {% block content %} {% endblock %} </div>",
+        "Scripts\\activate.bat",
+        "pip install django-bootstrap-v5",
+        "Collecting django-bootstrap-v5\nDownloading django_bootstrap_v5-1.0.11-py3-none-any.whl (24 kB)\nRequirement already satisfied: django<5.0,>=2.2 in c:\\users\\your name\\myworld\\lib\\site-packages (from django-bootstrap-v5) (4.1.4)\nCollecting beautifulsoup4<5.0.0,>=4.8.0\nDownloading beautifulsoup4-4.11.1-py3-none-any.whl (128 kB)\n|████████████████████████████████| 128 kB 6.4 MB/s\nRequirement already satisfied: tzdata; sys_platform == \"win32\" in c:\\users\\your name\\myworld\\lib\\site-packages (from django<5.0,>=2.2->django-bootstrap-v5) (2022.7)\nRequirement already satisfied: asgiref<4,>=3.5.2 in c:\\users\\your name\\myworld\\lib\\site-packages (from django<5.0,>=2.2->django-bootstrap-v5) (3.5.2)\nRequirement already satisfied: sqlparse>=0.2.2 in c:\\users\\your name\\myworld\\lib\\site-packages (from django<5.0,>=2.2->django-bootstrap-v5) (0.4.3)\nCollecting soupsieve>1.2\nDownloading soupsieve-2.3.2.post1-py3-none-any.whl (37 kB)\nInstalling collected packages: soupsieve, beautifulsoup4, django-bootstrap-v5\nSuccessfully installed beautifulsoup4-4.11.1 django-bootstrap-v5-1.0.11 soupsieve-2.3.2.post1",
+        "INSTALLED_APPS",
+        "settings.py",
+        "my_tennis_club/my_tennis_club/settings.py",
+        "master.html",
+        "my_tennis_club/members/templates/master.html",
+        "<head>",
+        "<link>",
+        "<script>"
+      ]
+    },
+    {
+      "title": "Django Template Tags Reference",
+      "summary": "Template Tags Reference\nA list of all template tags:",
+      "examples": []
+    },
+    {
+      "title": "Filter Reference",
+      "summary": "Filter Reference\nA list of all filter keywords:",
+      "examples": []
+    },
+    {
+      "title": "QuerySet Field Lookups Reference",
+      "summary": "Field Lookups Reference\nA list of all field look up keywords:",
+      "examples": []
+    },
+    {
+      "title": "Django Online Compiler",
+      "summary": "Django Compiler (Editor)\nIf you want to create your own website or build Python applications using Django, check out W3Schools Spaces.\nW3Schools Spaces is a website-building tool that enables you to create and share your own website, as well as develop and host your Python applications using Django.\nYou have full control over the website's appearance and functionality by editing the code directly in your web browser.\nW3Schools Spaces is user-friendly and requires no setup, making it easy to use.\nGet started with Django by selecting the Python environment in Spaces.\nThe code editor is packed with features to help you achieve more:\nTemplates: Start from scratch or use a template\nCloud-based: no installations required. You only need your browser\nTerminal & Log: debug and troubleshoot your code easily\nFile Navigator: switch between files inside the code editor\nAnd much more!\nLearn Faster\nPractice is key to mastering coding, and the best way to put your Django knowledge into practice is by getting practical with code.\nUse W3Schools Spaces to build, test and deploy code.\nThe code editor lets you write and practice different types of computer languages. It includes Django, but you can use it for other languages too.\nNew languages are added all the time:\nIf you don't know Django, we suggest that you read our Django Tutorial from scratch.\nIf you don't know Python, we suggest that you read our Python Tutorial from scratch.\nEasy Package Management\nGet an overview of your packages and easily add or delete frameworks and libraries. Then, with just one click, you can make changes to your packages without manual installation.\nBuild Powerful Websites\nYou can use the code editor in W3School Spaces to build frontend or full-stack websites from scratch.\nOr you can use the 60+ templates available and save time:\nCreate your Spaces account today and explore them all!\nShare Your Website With The World\nHost and publish your websites in no time with W3School Spaces.\nW3Schools subdomain and SSL certificate are included for free with W3School Spaces. An SSL certificate makes your website safe and secure. It also helps people trust your website and makes it easier to find it online.\nWant a custom domain for your website?\nYou can buy a domain or transfer an existing one and connect it to your space.\nHow Does It Work?\nGet started in a few clicks with W3School Spaces.",
+      "examples": []
+    },
+    {
+      "title": "Django Exercises",
+      "summary": "Exercises\nTest your Django skills with exercises from all categories:\nIntroduction\nGet started\nVirtual Environment\nInstalling Django\nCreating Project\nCreating Django App\nViews\nURLs\nTemplates\nModels\nInsert Data\nDelete Data\nUpdate Model\n404 Template\nAdmin Create User\nAdmin Include Models\nVariables\nThe If Tag\nThe For Tag\nThe Comment Tag\nInclude\nQuerysets\nQueryset Get Data\nFilter Querysets\nSort Querysets\nStatic Files\nCollect Static Files\nGlobal Static Files\nAdd CSS File\nLog in to track your progress\nIf you haven't already, sign up to become a W3Schooler, and get points for every exercise you complete.\nAs a logged on W3Schools user you will have access to many features like having your own web page, track your learning progress, receive personal guided paths, and more.\nThe Exercise\nThe exercises are a mix of \"multiple choice\" and \"fill in the blanks\" questions. There are between 3 and 9 questions in each category. The answer can be found in the corresponding tutorial chapter. If you're stuck, or answer wrong, you can try again or hit the \"Show Answer\" button to see the correct answer.\nIf you don't know Django, we suggest that you read our Django Tutorial from scratch.",
+      "examples": []
+    },
+    {
+      "title": "Django Quiz",
+      "summary": "You can test your Django skills with W3Schools' Quiz.\nThe Test\nThe test contains 25 questions and there is no time limit.\nThe test is not official, it's just a nice way to see how much you know about Django.\nCount Your Score\nYou will get 1 point for each correct answer. At the end of the Quiz, your total score will be displayed. Maximum score is 25 points.\nStart the Quiz\nGood luck!\nStart the Django Quiz ❯\nIf you do not know Django, we suggest that you read our Django Tutorial from scratch.",
+      "examples": []
+    },
+    {
+      "title": "Django Syllabus",
+      "summary": "Introduction\nThe W3Schools Django Tutorial is comprehensive and beginner-friendly.\nIt will give you a fundamental knowledge of Django.\nIt is designed for beginners and requires only basic Python knowledge.\nThe content has been carefully made to be bite-sized, simple, and easy to understand.\nThe content has been proven by millions of users over the years. It is updated and improved frequently.\nThe syllabus outline and its sequence are structured so you can learn Django step by step, from the introduction to creating web applications.\nGet Started With Django »\nLearning Outcomes\nLearn what Django is and create your first project\nSet up virtual environment and install Django\nCreate Django apps and handle web pages with views\nConnect pages using Django URLs\nCreate templates with Django template tags\nWork with databases using Django models\nLearn CRUD operations (Create, Read, Update, Delete)\nUse Django admin interface to manage data\nWork with static files and PostgreSQL database\nDeploy your Django project to the web\nNote: Are you a teacher teaching Django? W3Schools Academy is a toolbox of features that can help you teach. It offers classroom features such as pre-built study plans, classroom administration and much more. Read more about Academy here.\nWhich Subjects Are Django Relevant For?\nWeb Development:\nDjango can be used for building robust web applications.\nBack-end Development:\nDjango provides a complete framework for server-side development.\nDatabase Management:\nDjango's ORM simplifies database operations.\nContent Management:\nDjango is good for building content management systems and content-driven websites.\nAPI Development:\nDjango REST framework enables powerful API creation.\nE-commerce:\nDjango can be used for building secure e-commerce platforms.\nEnterprise Applications:\nDjango is suitable for large-scale enterprise solutions.\nGet Started\nActivities\nIn this tutorial we offer different activities for you to learn Django for free:\nLessons\nExercises\nQuizzes\nSign in to Track Progress\nYou can also create a free account to track your progress.\nAs a signed-in user, you get access to features such as:\nLearning paths\nSandbox and lab environments\nAchievements\nAnd much more!\nSign Up - It's free\nOverview of the Modules\nDjango Home\nDjango Intro\nDjango Get Started\nCreate Virtual Environment\nInstall Django\nDjango Create Project\nDjango Create App\nDjango Views\nDjango URLs\nDjango Templates\nDjango Models\nDjango Insert Data\nDjango Update Data\nDjango Delete Data\nDjango Update Model\nPrep Template and View\nAdd Link to Details\nAdd Master Template\nAdd Main Index Page\nDjango 404 Template\nAdd Test View\nDjango Admin\nCreate User\nInclude Models\nSet List Display\nUpdate Members\nAdd Members\nDelete Members\nDjango Variables\nDjango Tags\nDjango If Else\nDjango For Loop\nDjango Comment\nDjango Include\nQuerySet Introduction\nQuerySet Get\nQuerySet Filter\nQuerySet Order By\nAdd Static Files\nInstall WhiteNoise\nCollect Static Files\nAdd Global Static Files\nAdd Styles to the Project\nPostgreSQL Intro\nCreate AWS Account\nCreate Database in RDS\nConnect to Database\nAdd Members\nElastic Beanstalk (EB)\nCreate requirements.txt\nCreate django.config\nCreate .zip File\nDeploy with EB\nUpdate Project\nAdd Slug Field\nAdd Bootstrap 5\nTemplate Tag Reference\nFilter Reference\nField lookups Reference\nDjango Compiler\nGet Started\nSandbox and Lab Environment\nDjango, like any other framework, is best learned through hands-on practice.\nTry this example using our editor:\nExampleGet your own Django Server\nIf you want to explore more and host your project, we have a feature called Spaces that allows you to build, test and deploy Django applications for free.\nHere you get a secure sandbox environment called Spaces, where you can practice Django code and test projects in real-time.\nSpaces allow you to test, build, and deploy code. This includes a W3Schools subdomain, hosting, and secure SSL certificates.\nSpaces require no installation and run directly in the browser.\nFeatures include:\nCollaboration\nFile navigator\nTerminal & log\nPackage manager\nDatabase\nEnvironment manager\nAnalytics\nCreate a Spaces Account\nDjango Certification\nW3Schools offers an end-of-pathway certification program.\nHere you can take exams to get certified.\nThe Django exam is a test that summarizes the W3Schools Django syllabus.\nAfter passing the exam you get the \"Certified Django Developer\" Certification.\nThe certification examis adaptive and graded; students will get a grade from intermediate, advanced to professional.\nBuy Certificate »\nAre You a Teacher?\nAre you interested in learning how you can use W3Schools Academy to Teach Django?\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\nWatch Demo »",
+      "examples": [
+        "<ul> {% for x in mymembers %} <li>{{ x.firstname }}</li> {% endfor %} </ul>"
+      ]
+    },
+    {
+      "title": "Django Study Plan",
+      "summary": "Introduction\nThe Django study plan helps you teach your students Django step-by-step.\nCreating a study plan for Django is easy.\nYou can use a pre-built study plan or customize it.\nStudents have different skill levels. The study plans can be customized to ensure that everyone is challenged.\nSave time with pre-built teacher materials and study plans. Easily organize your class with a timeline from the introduction of Django to the final exam.\nW3Schools Academy\nThis study plan is a feature of W3Schools Academy.\nW3Schools Academy is a platform that has everything you need to teach coding, all in one place.\nIt offers you as a teacher a toolbox of features that helps you succeed with teaching in your classroom.\nYou need to have an active subscription to access the study plan feature. There are two different subscription tiers:\nEssentials ($1.99 / month per student)\nFull Access ($5.99 / month per student)\nCalculate your price and order here.\nLearn More »\nAcademy also offer other features such as:\nManaging your classroom\nTracking of student progress and reports\nLabs, assignments, and code challenges (prebuilt challenges or create your own ones)\nAuto-grading\nTeaching materials\nCertification exams\nGet a free demo »\nTeacher Materials\nW3Schools has everything you need to teach Django.\nThe Django training materials is available for you to include and use in your study plan:\nW3Schools Django Tutorial\nDjango Exercises\nDjango Quiz\nDjango Challenges (Coding challenges)\nDjango Certification Exam (End of Pathway Exam)\nDjango Syllabus\nWith the Django Syllabus, your students will start with the basics, like getting started with Django, and understanding how it works. Then, move to more advanced topics, like creating models, managing views, and building dynamic web applications. Each chapter includes examples, try-it-yourself sections, exercises, and quizzes to make learning easy, interactive, and fun.\nRead more about Django Syllabus.\nStudy Plan Overview\nThe study plan features are made to help teachers and students. They make learning easy, flexible, and fun. These features work for different types of classes, learning styles and student level.\nLearning Paths\nYou can add ready-made learning paths.\nThe learning paths are by default ordered by our recommended order.\nYou can change the order.\nYou can add custom activities with text, links, or multi-media files.\nDrag and drop or click to make changes to the path.\nYou can add ready-made learning paths.\nThe learning paths are by default ordered by our recommended order.\nYou can change the order.\nYou can add custom activities with text, links, or multi-media files.\nDrag and drop or click to make changes to the path.\nInteractive Content\nTutorials\nTry-its (test code snippets)\nExercises\nQuiz\nChallenges\nLabs\nTutorials\nTry-its (test code snippets)\nExercises\nQuiz\nChallenges\nLabs\nTimeline and Pace\nYou can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\nYou can decide the learning pace for your class.\nDifferent study plans can be assigned to different students in the same class.\nThe flexibility can help to make sure that everyone is challenged.\nYou can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\nYou can decide the learning pace for your class.\nDifferent study plans can be assigned to different students in the same class.\nThe flexibility can help to make sure that everyone is challenged.\nTrack Student Progress\nThere are tools to track student progress.\nThe analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\nThe challenges can be auto-graded or manually graded. The results are available to you as a teacher.\nThere are tools to track student progress.\nThe analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\nThe challenges can be auto-graded or manually graded. The results are available to you as a teacher.\nEnd of Pathway Exam\nThe Django study plan aligns with the Django Certification Exam.\nThe exam can be taken at the end of the study plan, at your selected date.\nThe exam summarizes the Django Tutorial.\nYou get reports of the students' results.\nThe Django study plan aligns with the Django Certification Exam.\nThe exam can be taken at the end of the study plan, at your selected date.\nThe exam summarizes the Django Tutorial.\nYou get reports of the students' results.\nAccessibility\nStudy plans and learning materials are accessible on desktops, tablets, and smartphones.\nThis ensures students can learn anytime, anywhere.\nStudy plans and learning materials are accessible on desktops, tablets, and smartphones.\nThis ensures students can learn anytime, anywhere.\nLearn More »\nSample Study Plan\nYou choose the timeline and pace of your study plans.\nSchools have different preferences.\nSome would like more intensive pace, e.g. 3 weeks, others 12 or more weeks.\nIt is completely up to you.\nFor example, this is how a 3-week Django study plan could look like:\nWeek 1: Introduction, Display Data, Admin\nWeek 2: Syntax, QuerySets, Static Files\nWeek 3: PostgreSQL, Deploy, More Django, Django Certification Exam\nImage of Sample Django study plan:\nReady to get started?\nStart with Django Study Plans today.\nGet Started »\nAre You a Teacher?\nAre you interested in learning how you can use W3Schools Academy to Teach Django programming?\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\nWatch Demo »",
+      "examples": []
+    },
+    {
+      "title": "Django Server Create Django Server Powerful Code Editor Practice Makes Perfect kAI",
+      "summary": "Coding Skills\nAI Tutor\nProjects\nSecurely\nChoose your Plan\nBy subscribing to a plan you support the W3Schools mission to make\nlearning available to everyone - no matter their background.\n$0 /Forever\nThis is for you that are beginning to explore coding and web development\nTrack your progress\nSet your goals\nBuild and host 1 static website\n100 credits/month\nAccess various AI features like W3Schools kAI coding tutor and interview preparation.\nNo support\n$14.99 /Month\nThis is for you that want to learn and reach your goals faster. Build fullstack projects, ad free experience.\nAd-free experience\nUnlimited challenges\nUnlimited practice tests\nBuild and host 15 static websites\nBuild and host 1 full stack server\nChoose from 75+ templates\n10000 credits/month\nAccess various AI features like W3Schools kAI coding tutor and interview preparation.\nCancel anytime\nFor teachers\nSpend less time on admin tasks while engaging your students. Help them learn, practice and collaborate. All in one place.\nAd-free for focused learning\nDashboard to manage your classroom\nStudy plans for structured learning\nTrack progress with insights\nInteractive code challenges and projects\nAccess to all courses and certification exams\nSpaces for building and publishing projects\n25% OFF\nYou can also buy a domain or connect an existing one.\nSave Time with Templates\nJust landed in Spaces\nLearn to code more effectively\nand intelligently with kAI - AI tutor\nHi! I'm kAI, W3Schools AI Tutor...\nFeel free to ask me any coding-related questions, and I'll do my best to assist you.\nI can help you checking your code for errors, improving your code's structure, explaining coding concepts in a clear and understandable way, and more...\nI can even create complete websites for you based on your input, so what are you waiting for?\nSuper Simple to Share\nIncluded for free in all plans\nWant custom domains?\nHow it works\nCoding Made Easy\nCloud-based\nTerminal & Log\nHow To Libraries\nDatabase\nFile Navigator\nPackage Manager\nAnalytics\nEnvironment Manager\nSave Time & Money.\nAll Your Files in One Place.\nFix Your Code Faster.\nGet Full Data Visibility.\nIncreased Control and Security.\nFind What You Need Quicker.\nGet Traffic Insights.\nGet Inspired\nFrequently Asked Questions\nWith Basic Spaces, you can build frontend websites. Whereas with Fullstack Spaces, you can build frontend and backend websites.\nBasic Spaces include HTML, CSS, and Javascript. Full Stack Spaces include everything in Basic Spaces plus PHP, Python, React.js, Vue.js, Node.js, Handlebars, and Django.\nYour subscription will be automatically renewed every month.\nYour access to all the benefits for the paid period of time will continue. However, the subscription will not be renewed automatically.\nTo subscribe W3Schools accounts for multiple users, you can contact sales@w3schools.com",
+      "examples": []
+    },
+    {
+      "title": "W3Schools Django Certificate",
+      "summary": "W3Schools offers an Online Certification Program.\nThe perfect solution for busy professionals who need to balance work, family, and career building.\nMore than 50 000 certificates already issued!\nGet Your Certificate »\nW3Schools offers an Online Certification Program.\nThe perfect solution for busy professionals who need to balance work, family, and career building.\nMore than 50 000 certificates already issued!\nGet Your Certificate »\nWho Should Consider Getting Certified?\nAny student or professional within the digital industry.\nCertifications are valuable assets to gain trust and demonstrate knowledge to your clients, current or future employers on a ever increasing competitive market.\nW3Schools is Trusted by Top Companies\nW3Schools has over two decades of experience with teaching coding online.\nOur certificates are recognized and valued by companies looking to employ skilled developers.\nSave Time and Money\nShow the world your coding skills by getting a certification.\nThe prices is a small fraction compared to the price of traditional education.\nDocument and validate your competence by getting certified!\nExam overview\nFee: 95 USD\nAchievable certification levels:\nIntermediate (40%)\nAdvanced (75%)\nProfessional (90%)\nNumber of questions:\nAdaptive, 60 on average\nRequirement to pass:\nMinimum 40% - Intermediate level\nTime limit: 60 minutes\nNumber of attempts to pass: 3\nExam deadline: None\nCertification Expiration: None\nFormat: Online, multiple choice\nRegister now »\nAdvance Faster in Your Career\nGetting a certificate proves your commitment to upgrading your skills.\nThe certificate can be added as credentials to your CV, Resume, LinkedIn profile, and so on.\nIt gives you the credibility needed for more responsibilities, larger projects, and a higher salary.\nKnowledge is power, especially in the current job market.\nDocumentation of your skills enables you to advance your career or helps you to start a new one.\nHow Does It Work?\nStudy for free at W3Schools.com\nStudy at your own speed\nTest your skills with W3Schools online quizzes\nApply for your certificate by paying an exam fee\nTake your exam online, at any time, and from any location\nGet Your Certificate and Share It With The World\nExample certificate:\nEach certificate gets a unique link that can be shared with others.\nValidate your certification with the link or QR code.\nCheck how it looks like in this Example.\nShare your certificate on Linked in the Certifications section in just one click!\nDocument Your Skills\nGetting a certificate proves your commitment to upgrade your skills, gives you the credibility needed for more responsibilities, larger projects, and a higher salary.\nGet Your Certificate »\nLooking to add multiple users?\nAre you an educator, manager or business owner looking for courses or certifications?\nWe are working with schools, companies and organizations from all over the world.\nGet courses and/or certifications for your team here.",
+      "examples": []
+    }
+  ],
+  "glossary": [
+    "add members",
+    "admin",
+    "backend",
+    "create django.config",
+    "create requirements.txt",
+    "create user",
+    "delete members",
+    "deploy",
+    "deploy django",
+    "display",
+    "display data",
+    "django",
+    "django admin",
+    "django comment",
+    "django compiler",
+    "django exercises",
+    "django home",
+    "django include",
+    "django intro",
+    "django models",
+    "django quiz",
+    "django references",
+    "django server",
+    "django syllabus",
+    "django syntax",
+    "django tags",
+    "django templates",
+    "django urls",
+    "django variables",
+    "django views",
+    "exercises",
+    "filter reference",
+    "free",
+    "include models",
+    "install django",
+    "install whitenoise",
+    "javascript",
+    "more django",
+    "note",
+    "postgresql",
+    "postgresql intro",
+    "programs",
+    "queryset filter",
+    "queryset get",
+    "querysets",
+    "report error",
+    "static files",
+    "syntax",
+    "update members",
+    "update project",
+    "w3.css",
+    "w3schools spaces"
+  ],
+  "objectives": [
+    "View your completed tutorials, exercises, and quizzes",
+    "Keep an eye on your progress and daily streaks",
+    "Set goals and create learning paths",
+    "Create your own personal website"
+  ]
+}

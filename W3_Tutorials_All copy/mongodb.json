@@ -1,0 +1,394 @@
+{
+  "course_name": "MongoDB",
+  "description": "MongoDB is a document database. It stores data in a type of JSON format called BSON. If you are unfamiliar with JSON, check out our JSON tutorial. A record in MongoDB is a document, which is a data structure composed of key value pairs similar to the structure of JSON objects. Records in a MongoDB database are called documents, and the field values may include numbers, strings, booleans, arrays, or even nested documents. Our \"Show MongoDB\" tool makes it easy to demonstrate MongoDB. It shows both the code and the result. Find all documents that have a category of \"news\". What type of database is MongoDB? Start the Exercise Sign Up for Free Note: This is an optional feature. You can study at W3Schools without creating an account.",
+  "course_summary": [
+    {
+      "title": "MongoDB Getting Started",
+      "summary": "MongoDB\nMongoDB is a document database and can be installed locally or hosted in the cloud.\nSQL vs Document Databases\nSQL databases are considered relational databases. They store related data in separate tables. When data is needed, it is queried from multiple tables to join the data back together.\nMongoDB is a document database which is often referred to as a non-relational database. This does not mean that relational data cannot be stored in document databases. It means that relational data is stored differently. A better way to refer to it is as a non-tabular database.\nMongoDB stores data in flexible documents. Instead of having multiple tables you can simply keep all of your related data together. This makes reading your data very fast.\nYou can still have multiple groups of data too. In MongoDB, instead of tables these are called collections.\nLocal vs Cloud Database\nMongoDB can be installed locally, which will allow you to host your own MongoDB server on your hardware. This requires you to manage your server, upgrades, and any other maintenance.\nYou can download and use the MongoDB open source Community Server on your hardware for free.\nHowever, for this course we are going to use MongoDB Atlas, a cloud database platform. This is much easier than hosting your own local database.\nTo be able to experiment with the code examples, you will need access to a MongoDB database.\nSign up for a free MongoDB Atlas account to get started.\nCreating a Cluster\nAfter you have created your account, set up a free \"Shared Cluster\" then choose your preferred cloud provider and region.\nBy default, MongoDB Atlas is completely locked down and has no external access.\nYou will need to set up a user and add your IP address to the list of allowed IP addresses.\nUnder \"Database Access\", create a new user and keep track of the username and password.\nNext, under \"Network Access\", add your current IP address to allow access from your computer.\nInstall MongoDB Shell (mongosh)\nThere are many ways to connect to your MongoDB database.\nWe will start by using the MongoDB Shell, mongosh.\nUse the official instructions to install mongosh on your operating system.\nTo verify that it has been installed properly, open your terminal and type:\nYou should see that the latest version is installed.\nThe version used in this tutorial is v1.3.1.\nConnect to the database\nTo connect to your database, you will need your database specific connection string.\nIn the MongoDB Atlas dashboard, under \"Databases\", click the \"Connect\" button for your Cluster.\nNext, choose \"Connect with the MongoDB Shell\".\nCopy your connection string.\nExample\nYour connection string should look similar to this:\nPaste your connection string into your terminal and press enter.\nYou will be prompted to enter your database user password that you created earlier.\nYou are now connected to the database!\nWhat Next?\nIn the following sections we will use 'mongosh' to create, read, update, and delete (CRUD) items in your database.\nAfter getting the basics down, we will move on to using MongoDB with other backend technologies like Node.js.",
+      "examples": [
+        "mongosh --version",
+        "mongosh \"mongodb+srv://cluster0.ex4ht.mongodb.net/myFirstDatabase\" --apiVersion 1 --username YOUR_USER_NAME",
+        "mongosh"
+      ]
+    },
+    {
+      "title": "MongoDB Query API",
+      "summary": "MongoDB Query API\nThe MongoDB Query API is the way you will interact with your data.\nThe MongoDB Query API can be used in two ways:\nCRUD Operations\nAggregation Pipelines\nMongoDB Query API Uses\nYou can use the MongoDB Query API to perform:\nAdhoc queries with mongosh, Compass, VS Code, or a MongoDB driver for the programming language you use.\nData transformations using aggregation pipelines.\nDocument join support to combine data from different collections.\nGraph and geospatial queries.\nFull-text search.\nIndexing to improve MongoDB query performance.\nTime series analysis.\nLet's get started!",
+      "examples": [
+        "mongosh"
+      ]
+    },
+    {
+      "title": "MongoDB mongosh Create Database",
+      "summary": "Create Database using mongosh\nAfter connecting to your database using mongosh, you can see which database you are using by typing db in your terminal.\nIf you have used the connection string provided from the MongoDB Atlas dashboard, you should be connected to the myFirstDatabase database.\nShow all databases\nTo see all available databases, in your terminal type show dbs.\nNotice that myFirstDatabase is not listed. This is because the database is empty. An empty database is essentially non-existant.\nChange or Create a Database\nYou can change or create a new database by typing use then the name of the database.\nExample\nCreate a new database called \"blog\":\nWe are now in the blog database.\nRemember: In MongoDB, a database is not actually created until it gets content!",
+      "examples": [
+        "use blog",
+        "mongosh",
+        "db",
+        "myFirstDatabase",
+        "show dbs",
+        "use",
+        "blog"
+      ]
+    },
+    {
+      "title": "MongoDB mongosh Create Collection",
+      "summary": "Create Collection using mongosh\nThere are 2 ways to create a collection.\nMethod 1\nYou can create a collection using the createCollection() database method.\nExample\nMethod 2\nYou can also create a collection during the insert process.\nExample\nWe are here assuming object is a valid JavaScript object containing post data:\nThis will create the \"posts\" collection if it does not already exist.\nRemember: In MongoDB, a collection is not actually created until it gets content!",
+      "examples": [
+        "db.createCollection(\"posts\")",
+        "db.posts.insertOne(object)",
+        "mongosh",
+        "createCollection()",
+        "insert",
+        "object"
+      ]
+    },
+    {
+      "title": "MongoDB mongosh Insert",
+      "summary": "Insert Documents\nThere are 2 methods to insert documents into a MongoDB database.\ninsertOne()\nTo insert a single document, use the insertOne() method.\nThis method inserts a single object into the database.\nNote: When typing in the shell, after opening an object with curly braces \"{\" you can press enter to start a new line in the editor without executing the command. The command will execute when you press enter after closing the braces.\nExample\nNote: If you try to insert documents into a collection that does not exist, MongoDB will create the collection automatically.\ninsertMany()\nTo insert multiple documents at once, use the insertMany() method.\nThis method inserts an array of objects into the database.\nExample",
+      "examples": [
+        "db.posts.insertOne({ title: \"Post Title 1\", body: \"Body of post.\", category: \"News\", likes: 1, tags: [\"news\", \"events\"], date: Date() })",
+        "db.posts.insertMany([ { title: \"Post Title 2\", body: \"Body of post.\", category: \"Event\", likes: 2, tags: [\"news\", \"events\"], date: Date() }, { title: \"Post Title 3\", body: \"Body of post.\", category: \"Technology\", likes: 3, tags: [\"news\", \"events\"], date: Date() }, { title: \"Post Title 4\", body: \"Body of post.\", category: \"Event\", likes: 4, tags: [\"news\", \"events\"], date: Date() } ])",
+        "mongosh",
+        "insertOne()",
+        "insertMany()"
+      ]
+    },
+    {
+      "title": "MongoDB mongosh Find",
+      "summary": "Find Data\nThere are 2 methods to find and select data from a MongoDB collection, find() and findOne().\nfind()\nTo select data from a collection in MongoDB, we can use the find() method.\nThis method accepts a query object. If left empty, all documents will be returned.\nExample\nfindOne()\nTo select only one document, we can use the findOne() method.\nThis method accepts a query object. If left empty, it will return the first document it finds.\nNote: This method only returns the first match it finds.\nExample\nQuerying Data\nTo query, or filter, data we can include a query in our find() or findOne() methods.\nExample\nProjection\nBoth find methods accept a second parameter called projection.\nThis parameter is an object that describes which fields to include in the results.\nNote: This parameter is optional. If omitted, all fields will be included in the results.\nExample\nThis example will only display the title and date fields in the results.\nNotice that the _id field is also included. This field is always included unless specifically excluded.\nWe use a 1 to include a field and 0 to exclude a field.\nExample\nThis time, let's exclude the _id field.\nNote: You cannot use both 0 and 1 in the same object. The only exception is the _id field. You should either specify the fields you would like to include or the fields you would like to exclude.\nLet's exclude the date category field. All other fields will be included in the results.\nExample\nWe will get an error if we try to specify both 0 and 1 in the same object.\nExample",
+      "examples": [
+        "db.posts.find()",
+        "db.posts.findOne()",
+        "db.posts.find( {category: \"News\"} )",
+        "db.posts.find({}, {title: 1, date: 1})",
+        "db.posts.find({}, {_id: 0, title: 1, date: 1})",
+        "db.posts.find({}, {category: 0})",
+        "db.posts.find({}, {title: 1, date: 0})",
+        "mongosh",
+        "find()",
+        "findOne()",
+        "projection",
+        "object",
+        "title",
+        "date",
+        "_id",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "title": "MongoDB mongosh Update",
+      "summary": "Update Document\nTo update an existing document we can use the updateOne() or updateMany() methods.\nThe first parameter is a query object to define which document or documents should be updated.\nThe second parameter is an object defining the updated data.\nupdateOne()\nThe updateOne() method will update the first document that is found matching the provided query.\nLet's see what the \"like\" count for the post with the title of \"Post Title 1\":\nExample\nNow let's update the \"likes\" on this post to 2. To do this, we need to use the $set operator.\nExample\nCheck the document again and you'll see that the \"like\" have been updated.\nExample\nInsert if not found\nIf you would like to insert the document if it is not found, you can use the upsert option.\nExample\nUpdate the document, but if not found insert it:\nupdateMany()\nThe updateMany() method will update all documents that match the provided query.\nExample\nUpdate likes on all documents by 1. For this we will use the $inc (increment) operator:\nNow check the likes in all of the documents and you will see that they have all been incremented by 1.",
+      "examples": [
+        "db.posts.find( { title: \"Post Title 1\" } )",
+        "db.posts.updateOne( { title: \"Post Title 1\" }, { $set: { likes: 2 } } )",
+        "db.posts.updateOne( { title: \"Post Title 5\" }, { $set: { title: \"Post Title 5\", body: \"Body of post.\", category: \"Event\", likes: 5, tags: [\"news\", \"events\"], date: Date() } }, { upsert: true } )",
+        "db.posts.updateMany({}, { $inc: { likes: 1 } })",
+        "mongosh",
+        "updateOne()",
+        "updateMany()",
+        "$set",
+        "upsert",
+        "likes",
+        "$inc"
+      ]
+    },
+    {
+      "title": "MongoDB mongosh Delete",
+      "summary": "Delete Documents\nWe can delete documents by using the methods deleteOne() or deleteMany().\nThese methods accept a query object. The matching documents will be deleted.\ndeleteOne()\nThe deleteOne() method will delete the first document that matches the query provided.\nExample\ndeleteMany()\nThe deleteMany() method will delete all documents that match the query provided.\nExample",
+      "examples": [
+        "db.posts.deleteOne({ title: \"Post Title 5\" })",
+        "db.posts.deleteMany({ category: \"Technology\" })",
+        "mongosh",
+        "deleteOne()",
+        "deleteMany()"
+      ]
+    },
+    {
+      "title": "MongoDB Query Operators",
+      "summary": "MongoDB Query Operators\nThere are many query operators that can be used to compare and reference document fields.\nComparison\nThe following operators can be used in queries to compare values:\n$eq: Values are equal\n$ne: Values are not equal\n$gt: Value is greater than another value\n$gte: Value is greater than or equal to another value\n$lt: Value is less than another value\n$lte: Value is less than or equal to another value\n$in: Value is matched within an array\nLogical\nThe following operators can logically compare multiple queries.\n$and: Returns documents where both queries match\n$or: Returns documents where either query matches\n$nor: Returns documents where both queries fail to match\n$not: Returns documents where the query does not match\nEvaluation\nThe following operators assist in evaluating documents.\n$regex: Allows the use of regular expressions when evaluating field values\n$text: Performs a text search\n$where: Uses a JavaScript expression to match documents",
+      "examples": [
+        "$eq",
+        "$ne",
+        "$gt",
+        "$gte",
+        "$lt",
+        "$lte",
+        "$in",
+        "$and",
+        "$or",
+        "$nor",
+        "$not",
+        "$regex",
+        "$text",
+        "$where"
+      ]
+    },
+    {
+      "title": "MongoDB Update Operators",
+      "summary": "MongoDB Update Operators\nThere are many update operators that can be used during document updates.\nFields\nThe following operators can be used to update fields:\n$currentDate: Sets the field value to the current date\n$inc: Increments the field value\n$rename: Renames the field\n$set: Sets the value of a field\n$unset: Removes the field from the document\nArray\nThe following operators assist with updating arrays.\n$addToSet: Adds distinct elements to an array\n$pop: Removes the first or last element of an array\n$pull: Removes all elements from an array that match the query\n$push: Adds an element to an array",
+      "examples": [
+        "$currentDate",
+        "$inc",
+        "$rename",
+        "$set",
+        "$unset",
+        "$addToSet",
+        "$pop",
+        "$pull",
+        "$push"
+      ]
+    },
+    {
+      "title": "MongoDB Aggregation Pipelines",
+      "summary": "Aggregation Pipelines\nAggregation operations allow you to group, sort, perform calculations, analyze data, and much more.\nAggregation pipelines can have one or more \"stages\". The order of these stages are important. Each stage acts upon the results of the previous stage.\nExample\nSample Data\nTo demonstrate the use of stages in a aggregation pipeline, we will load sample data into our database.\nFrom the MongoDB Atlas dashboard, go to Databases. Click the ellipsis and select \"Load Sample Dataset\". This will load several sample datasets into your database.\nIn the next sections we will explore several aggregation pipeline stages in more detail using this sample data.",
+      "examples": [
+        "db.posts.aggregate([ // Stage 1: Only find documents that have more than 1 like { $match: { likes: { $gt: 1 } } }, // Stage 2: Group documents by category and sum each categories likes { $group: { _id: \"$category\", totalLikes: { $sum: \"$likes\" } } } ])"
+      ]
+    },
+    {
+      "title": "MongoDB Aggregation $group",
+      "summary": "Aggregation $group\nThis aggregation stage groups documents by the unique _id expression provided.\nDon't confuse this _id expression with the _id ObjectId provided to each document.\nExample\nIn this example, we are using the \"sample_airbnb\" database loaded from our sample data in the Intro to Aggregations section.\nThis will return the distinct values from the property_type field.",
+      "examples": [
+        "db.listingsAndReviews.aggregate( [ { $group : { _id : \"$property_type\" } } ] )",
+        "$group",
+        "_id",
+        "property_type"
+      ]
+    },
+    {
+      "title": "MongoDB Aggregation $limit",
+      "summary": "Aggregation $limit\nThis aggregation stage limits the number of documents passed to the next stage.\nExample\nIn this example, we are using the \"sample_mflix\" database loaded from our sample data in the Intro to Aggregations section.\nThis will return the 1 movie from the collection.",
+      "examples": [
+        "db.movies.aggregate([ { $limit: 1 } ])",
+        "$limit"
+      ]
+    },
+    {
+      "title": "MongoDB Aggregation $project",
+      "summary": "Aggregation $project\nThis aggregation stage passes only the specified fields along to the next aggregation stage.\nThis is the same projection that is used with the find() method.\nExample\nIn this example, we are using the \"sample_restaurants\" database loaded from our sample data in the Intro to Aggregations section.\nThis will return the documents but only include the specified fields.\nNotice that the _id field is also included. This field is always included unless specifically excluded.\nWe use a 1 to include a field and 0 to exclude a field.\nNote: You cannot use both 0 and 1 in the same object. The only exception is the _id field. You should either specify the fields you would like to include or the fields you would like to exclude.",
+      "examples": [
+        "db.restaurants.aggregate([ { $project: { \"name\": 1, \"cuisine\": 1, \"address\": 1 } }, { $limit: 5 } ])",
+        "$project",
+        "find()",
+        "_id",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "title": "MongoDB Aggregation $sort",
+      "summary": "Aggregation $sort\nThis aggregation stage groups sorts all documents in the specified sort order.\nRemember that the order of your stages matters. Each stage only acts upon the documents that previous stages provide.\nExample\nIn this example, we are using the \"sample_airbnb\" database loaded from our sample data in the Intro to Aggregations section.\nThis will return the documents sorted in descending order by the accommodates field.\nThe sort order can be chosen by using 1 or -1. 1 is ascending and -1 is descending.",
+      "examples": [
+        "db.listingsAndReviews.aggregate([ { $sort: { \"accommodates\": -1 } }, { $project: { \"name\": 1, \"accommodates\": 1 } }, { $limit: 5 } ])",
+        "$sort",
+        "accommodates",
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "title": "MongoDB Aggregation $match",
+      "summary": "Aggregation $match\nThis aggregation stage behaves like a find. It will filter documents that match the query provided.\nUsing $match early in the pipeline can improve performance since it limits the number of documents the next stages must process.\nExample\nIn this example, we are using the \"sample_airbnb\" database loaded from our sample data in the Intro to Aggregations section.\nThis will only return documents that have the property_type of \"House\".",
+      "examples": [
+        "db.listingsAndReviews.aggregate([ { $match : { property_type : \"House\" } }, { $limit: 2 }, { $project: { \"name\": 1, \"bedrooms\": 1, \"price\": 1 }} ])",
+        "$match",
+        "property_type"
+      ]
+    },
+    {
+      "title": "MongoDB Aggregation $addFields",
+      "summary": "Aggregation $addFields\nThis aggregation stage adds new fields to documents.\nExample\nIn this example, we are using the \"sample_restaurants\" database loaded from our sample data in the Intro to Aggregations section.\nThis will return the documents along with a new field, avgGrade, which will contain the average of each restaurants grades.score.",
+      "examples": [
+        "db.restaurants.aggregate([ { $addFields: { avgGrade: { $avg: \"$grades.score\" } } }, { $project: { \"name\": 1, \"avgGrade\": 1 } }, { $limit: 5 } ])",
+        "$addFields",
+        "avgGrade",
+        "grades.score"
+      ]
+    },
+    {
+      "title": "MongoDB Aggregation $count",
+      "summary": "Aggregation $count\nThis aggregation stage counts the total amount of documents passed from the previous stage.\nExample\nIn this example, we are using the \"sample_restaurants\" database loaded from our sample data in the Intro to Aggregations section.\nThis will return the number of documents at the $count stage as a field called \"totalChinese\".",
+      "examples": [
+        "db.restaurants.aggregate([ { $match: { \"cuisine\": \"Chinese\" } }, { $count: \"totalChinese\" } ])",
+        "$count"
+      ]
+    },
+    {
+      "title": "MongoDB Aggregation $lookup",
+      "summary": "Aggregation $lookup\nThis aggregation stage performs a left outer join to a collection in the same database.\nThere are four required fields:\nfrom: The collection to use for lookup in the same database\nlocalField: The field in the primary collection that can be used as a unique identifier in the from collection.\nforeignField: The field in the from collection that can be used as a unique identifier in the primary collection.\nas: The name of the new field that will contain the matching documents from the from collection.\nExample\nIn this example, we are using the \"sample_mflix\" database loaded from our sample data in the Intro to Aggregations section.\nThis will return the movie data along with each comment.",
+      "examples": [
+        "db.comments.aggregate([ { $lookup: { from: \"movies\", localField: \"movie_id\", foreignField: \"_id\", as: \"movie_details\", }, }, { $limit: 1 } ])",
+        "$lookup",
+        "from",
+        "localField",
+        "foreignField",
+        "as"
+      ]
+    },
+    {
+      "title": "MongoDB Aggregation $out",
+      "summary": "Aggregation $out\nThis aggregation stage writes the returned documents from the aggregation pipeline to a collection.\nThe $out stage must be the last stage of the aggregation pipeline.\nExample\nIn this example, we are using the \"sample_airbnb\" database loaded from our sample data in the Intro to Aggregations section.\nThe first stage will group properties by the property_type and include the name, accommodates, and price fields for each. The $out stage will create a new collection called properties_by_type in the current database and write the resulting documents into that collection.",
+      "examples": [
+        "db.listingsAndReviews.aggregate([ { $group: { _id: \"$property_type\", properties: { $push: { name: \"$name\", accommodates: \"$accommodates\", price: \"$price\", }, }, }, }, { $out: \"properties_by_type\" }, ])",
+        "$out",
+        "property_type",
+        "name",
+        "accommodates",
+        "price",
+        "properties_by_type"
+      ]
+    },
+    {
+      "title": "Indexing & Search",
+      "summary": "Indexing & Search\nMongoDB Atlas comes with a full-text search engine that can be used to search for documents in a collection.\nAtlas Search is powered by Apache Lucene.\nCreating an Index\nWe'll use the Atlas dashboard to create an index on the \"sample_mflix\" database from the sample data that we loaded in the Intro to Aggregations section.\nFrom the Atlas dashboard, click on your Cluster name then the Search tab.\nClick on the Create Search Index button.\nUse the Visual Editor and click Next.\nName your index, choose the Database and Collection you want to index and click Next.\nIf you name your index \"default\" you will not have to specify the index name in the $search pipeline stage.\nChoose the sample_mflix database and the movies collection.\nIf you name your index \"default\" you will not have to specify the index name in the $search pipeline stage.\nChoose the sample_mflix database and the movies collection.\nClick Create Search Index and wait for the index to complete.\nRunning a Query\nTo use our search index, we will use the $search operator in our aggregation pipeline.\nExample\nThe first stage of this aggregation pipeline will return all documents in the movies collection that contain the word \"star\" or \"wars\" in the title field.\nThe second stage will project the title and year fields from each document.",
+      "examples": [
+        "db.movies.aggregate([ { $search: { index: \"default\", // optional unless you named your index something other than \"default\" text: { query: \"star wars\", path: \"title\" }, }, }, { $project: { title: 1, year: 1, } } ])",
+        "$search",
+        "sample_mflix",
+        "movies",
+        "title",
+        "year"
+      ]
+    },
+    {
+      "title": "MongoDB Schema Validation",
+      "summary": "Schema Validation\nBy default MongoDB has a flexible schema. This means that there is no strict schema validation set up initially.\nSchema validation rules can be created in order to ensure that all documents in a collection share a similar structure.\nSchema Validation\nMongoDB supports JSON Schema validation. The $jsonSchema operator allows us to define our document structure.\nExample\nThis will create the posts collection in the current database and specify the JSON Schema validation requirements for the collection.",
+      "examples": [
+        "db.createCollection(\"posts\", { validator: { $jsonSchema: { bsonType: \"object\", required: [ \"title\", \"body\" ], properties: { title: { bsonType: \"string\", description: \"Title of post - Required.\" }, body: { bsonType: \"string\", description: \"Body of post - Required.\" }, category: { bsonType: \"string\", description: \"Category of post - Optional.\" }, likes: { bsonType: \"int\", description: \"Post like count. Must be an integer - Optional.\" }, tags: { bsonType: [\"string\"], description: \"Must be an array of strings - Optional.\" }, date: { bsonType: \"date\", description: \"Must be a date - Optional.\" } } } } })",
+        "$jsonSchema",
+        "posts"
+      ]
+    },
+    {
+      "title": "MongoDB Data API",
+      "summary": "MongoDB Data API\nThe MongoDB Data API can be used to query and update data in a MongoDB database without the need for language specific drivers.\nLanguage drivers should be used when possible, but the MongoDB Data API comes in handy when drivers are not available or drivers are overkill for the application.\nRead & Write with the MongoDB Data API\nThe MongoDB Data API is a pre-configured set of HTTPS endpoints that can be used to read and write data to a MongoDB Atlas database.\nWith the MongoDB Data API, you can create, read, update, delete, or aggregate documents in a MongoDB Atlas database.\nCluster Configuration\nIn order to use the Data API, you must first enable the functionality from the Atlas UI.\nFrom the MongoDB Atlas dashboard, navigate to Data API in the left menu.\nSelect the data source(s) you would like to enable the API on and click Enable the Data API.\nAccess Level\nBy default, no access is granted. Select the access level you'd like to grant the Data API. The choices are: No Access, Read Only, Read and Write, or Custom Access.\nData API Key\nIn order to authenticate with the Data API, you must first create a Data API key.\nClick Create API Key, enter a name for the key, then click Generate API Key.\nBe sure to copy the API key and save it somewhere safe. You will not get another chance to see this key again.\nSending a Data API Request\nWe can now use the Data API to send a request to the database.\nIn the next example, we'll use curl to find the first document in the movies collection of our sample_mflix database. We loaded this sample data in the Intro to Aggregations section.\nTo run this example, you'll need your App Id, API Key, and Cluster name.\nYou can find your App Id in the URL Endpoint field of the Data API page in the MongoDB Atlas UI.\nExample\nData API Endpoints\nIn the previous example, we used the findOne endpoint in our URL.\nThere are several endpoints available for use with the Data API.\nAll endpoints start with the Base URL: https://data.mongodb-api.com/app/<Data API App ID>/endpoint/data/v1/action/\nFind a Single Document\nEndpoint\nThe findOne endpoint is used to find a single document in a collection.\nRequest Body\nExample\nFind Multiple Documents\nEndpoint\nThe find endpoint is used to find multiple documents in a collection.\nRequest Body\nExample\nInsert a Single Document\nEndpoint\nThe insertOne endpoint is used to insert a single document into a collection.\nRequest Body\nExample\nInsert Multiple Documents\nEndpoint\nThe insertMany endpoint is used to insert multiple documents into a collection.\nRequest Body\nExample\nUpdate a Single Document\nEndpoint\nRequest Body\nExample\nUpdate Multiple Documents\nEndpoint\nRequest Body\nExample\nDelete a Single Document\nEndpoint\nRequest Body\nExample\nDelete Multiple Documents\nEndpoint\nRequest Body\nExample\nAggregate Documents\nEndpoint\nRequest Body\nExample",
+      "examples": [
+        "curl --location --request POST 'https://data.mongodb-api.com/app/<DATA API APP ID>/endpoint/data/v1/action/findOne' \\ --header 'Content-Type: application/json' \\ --header 'Access-Control-Request-Headers: *' \\ --header 'api-key: <DATA API KEY>' \\ --data-raw '{ \"dataSource\":\"<CLUSTER NAME>\", \"database\":\"sample_mflix\", \"collection\":\"movies\", \"projection\": {\"title\": 1} }'",
+        "{ \"dataSource\": \"<data source name>\", \"database\": \"<database name>\", \"collection\": \"<collection name>\", \"filter\": <query filter>, \"projection\": <projection> }",
+        "{ \"dataSource\": \"<data source name>\", \"database\": \"<database name>\", \"collection\": \"<collection name>\", \"filter\": <query filter>, \"projection\": <projection>, \"sort\": <sort expression>, \"limit\": <number>, \"skip\": <number> }",
+        "{ \"dataSource\": \"<data source name>\", \"database\": \"<database name>\", \"collection\": \"<collection name>\", \"document\": <document> }",
+        "{ \"dataSource\": \"<data source name>\", \"database\": \"<database name>\", \"collection\": \"<collection name>\", \"documents\": [<document>, <document>, ...] }",
+        "{ \"dataSource\": \"<data source name>\", \"database\": \"<database name>\", \"collection\": \"<collection name>\", \"filter\": <query filter>, \"update\": <update expression>, \"upsert\": true|false }",
+        "{ \"dataSource\": \"<data source name>\", \"database\": \"<database name>\", \"collection\": \"<collection name>\", \"filter\": <query filter> }",
+        "{ \"dataSource\": \"<data source name>\", \"database\": \"<database name>\", \"collection\": \"<collection name>\", \"pipeline\": [<pipeline expression>, ...] }",
+        "movies",
+        "sample_mflix",
+        "findOne",
+        "https://data.mongodb-api.com/app/<Data API App ID>/endpoint/data/v1/action/",
+        "POST Base_URL/findOne",
+        "POST Base_URL/find",
+        "find",
+        "POST Base_URL/insertOne",
+        "insertOne",
+        "POST Base_URL/insertMany",
+        "insertMany",
+        "POST Base_URL/updateOne",
+        "POST Base_URL/updateMany",
+        "POST Base_URL/deleteOne",
+        "POST Base_URL/deleteMany",
+        "POST Base_URL/aggregate"
+      ]
+    },
+    {
+      "title": "MongoDB Drivers",
+      "summary": "MongoDB Drivers\nThe MongoDB Shell (mongosh) is great, but generally you will need to use MongoDB in your application. To do this, MongoDB has many language drivers.\nThe language drivers allow you to interact with your MongoDB database using the methods you've learned so far in `mongosh` but directly in your application.\nThese are the current officially supported drivers:\nC\nC++\nC#\nGo\nJava\nNode.js\nPHP\nPython\nRuby\nRust\nScala\nSwift\nThere are other community supported libraries as well.\nLet's see how to use the drivers using Node.js next.",
+      "examples": []
+    },
+    {
+      "title": "MongoDB Node.js Database Interaction",
+      "summary": "Node.js Database Interaction\nFor this tutorial, we will use a MongoDB Atlas database. If you don't already have a MongoDB Atlas account, you can create one for free at MongoDB Atlas.\nWe will also use the \"sample_mflix\" database loaded from our sample data in the Intro to Aggregations section.\nMongoDB Node.js Driver Installation\nTo use MongoDB with Node.js, you will need to install the mongodb package in your Node.js project.\nUse the following command in your terminal to install the mongodb package:\nWe can now use this package to connect to a MongoDB database.\nCreate an index.js file in your project directory.\nindex.js\nConnection String\nIn order to connect to our MongoDB Atlas database, we'll need to get our connection string from the Atlas dashboard.\nGo to Database then click the CONNECT button on your Cluster.\nChoose Connect your application then copy your connection string.\nExample: mongodb+srv://<username>:<password>@<cluster.string>.mongodb.net/myFirstDatabase?retryWrites=true&w=majority\nYou will need to replace the <username>, <password>, and <cluster.string> with your MongoDB Atlas username, password, and cluster string.\nConnecting to MongoDB\nLet's add to our index.js file.\nindex.js\nRun this file in your terminal.\nYou should see the first document logged to the console.\nCRUD & Document Aggregation\nJust as we did using mongosh, we can use the MongoDB Node.js language driver to create, read, update, delete, and aggregate documents in the database.\nExpanding on the previous example, we can replace the collection.findOne() with find(), insertOne(), insertMany(), updateOne(), updateMany(), deleteOne(), deleteMany(), or aggregate().\nGive some of those a try.",
+      "examples": [
+        "const { MongoClient } = require('mongodb');",
+        "const { MongoClient } = require('mongodb'); const uri = \"<Your Connection String>\"; const client = new MongoClient(uri); async function run() { try { await client.connect(); const db = client.db('sample_mflix'); const collection = db.collection('movies'); // Find the first document in the collection const first = await collection.findOne(); console.log(first); } finally { // Close the database connection when finished or an error occurs await client.close(); } } run().catch(console.error);",
+        "npm install mongodb",
+        "node index.js",
+        "mongodb",
+        "index.js",
+        "mongodb+srv://<username>:<password>@<cluster.string>.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+        "<username>",
+        "<password>",
+        "<cluster.string>",
+        "mongosh",
+        "collection.findOne()",
+        "find()",
+        "insertOne()",
+        "insertMany()",
+        "updateOne()",
+        "updateMany()",
+        "deleteOne()",
+        "deleteMany()",
+        "aggregate()"
+      ]
+    },
+    {
+      "title": "MongoDB Charts",
+      "summary": "MongoDB Charts\nMongoDB Charts lets you visualize your data in a simple, intuitive way.\nMongoDB Charts Setup\nFrom the MongoDB Atlas dashboard, go to the Charts tab.\nIf you've never used Charts before, click the Activate Now button. This will take about 1 minute to complete.\nYou'll see a new dashboard. Click the dashboard name to open it.\nCreating a Chart\nCreate a new chart by clicking the Add Chart button.\nVisually creating a chart is intuitive. Select the data sources that you want to use.\nExample:\nIn this example, we are using the \"sample_mflix\" database loaded from our sample data in the Intro to Aggregations section.\nUnder Data Source, select the Movies collection.\nLet's visualize how many movies were released in each year.\nDrag the Year field to the Y Axis field and set the Bin Size to 1.\nDrag the _id field to the X Axis field and make sure COUNT is selected for the Aggregate.\nYou should now see a bar chart with the number of movies released in each year.",
+      "examples": [
+        "COUNT"
+      ]
+    },
+    {
+      "title": "MongoDB Exercises",
+      "summary": "You can test your MongoDB skills with W3Schools' Exercises.\nExercises\nWe have gathered a variety of MongoDB exercises (with answers) for each MongoDB Chapter.\nTry to solve an exercise by editing some code, or show the answer to see what you've done wrong.\nCount Your Score\nYou will get 1 point for each correct answer. Your score and total score will always be displayed.\nStart Mongodb Exercises\nGood luck!\nStart MongoDB Exercises ❯\nIf you don't know MongoDB, we suggest that you read our MongoDB Tutorial from scratch.",
+      "examples": []
+    },
+    {
+      "title": "MongoDB Syllabus",
+      "summary": "Introduction\nThe W3Schools MongoDB Tutorial is comprehensive and beginner-friendly.\nIt will give you a fundamental knowledge of MongoDB database management.\nIt is designed for beginners and requires no prior database experience.\nThe content has been carefully made to be bite-sized, simple, and easy to understand.\nThe content has been proven by millions of users over the years. It is updated and improved frequently.\nThe syllabus outline and its sequence are structured so you can learn MongoDB step by step, from the introduction to advanced database operations.\nGet Started With MongoDB »\nLearning Outcomes\nUnderstand the basic concepts of NoSQL databases.\nCreate and manage MongoDB databases and collections.\nWork with MongoDB documents and BSON format.\nPerform CRUD operations in MongoDB.\nUse MongoDB query operators and aggregation.\nNote: Are you a teacher teaching MongoDB? W3Schools Academy is a toolbox of features that can help you teach. It offers classroom features such as pre-built study plans, classroom administration and much more. Read more about Academy here.\nWhich Subjects Are MongoDB Relevant For?\nNoSQL Databases:\nMongoDB is a leading NoSQL database solution.\nWeb Development:\nMongoDB is popular in modern web applications.\nBig Data:\nMongoDB handles large-scale data efficiently.\nReal-time Analytics:\nMongoDB supports real-time data analysis.\nCloud Applications:\nMongoDB works well with cloud platforms.\nContent Management:\nMongoDB is ideal for content-driven applications.\nIoT Applications:\nMongoDB handles IoT data effectively.\nGet Started\nActivities\nIn this tutorial we offer different activities for you to learn MongoDB for free:\nLessons\nExercises\nSign in to Track Progress\nYou can also create a free account to track your progress.\nAs a signed-in user, you get access to features such as:\nLearning paths\nSandbox and lab environments\nAchievements\nAnd much more!\nSign Up - It's free\nOverview of the Modules\nMongoDB HOME\nMongoDB Get Started\nMongoDB Query API\nMongoDB Create DB\nMongoDB Collection\nMongoDB Insert\nMongoDB Find\nMongoDB Update\nMongoDB Delete\nMongoDB Query Operators\nMongoDB Update Operators\nMongoDB Aggregations\n$group\n$limit\n$project\n$sort\n$match\n$addFields\n$count\n$lookup\n$out\nMongoDB Indexing/Search\nMongoDB Validation\nMongoDB Data API\nMongoDB Drivers\nMongoDB Node.js Driver\nMongoDB Charts\nGet Started\nSandbox and Lab Environment\nMongoDB, like any database system, is best learned through hands-on practice.\nTry this example using our editor:\nExample\nFind all documents that have a category of \"news\".\nIf you want to explore more and host your project, we have a feature called Spaces\nHere you get a secure sandbox environment called Spaces, where you can practice coding and test projects in real-time.\nThis includes a W3Schools subdomain, hosting, and secure SSL certificates.\nMongoDB is not hosted on W3Schools Spaces; you need to set it up elsewhere, like MongoDB Atlas, and connect your application to it.\nSpaces require no installation and run directly in the browser.\nFeatures include:\nCollaboration\nFile navigator\nTerminal & log\nPackage manager\nDatabase\nEnvironment manager\nAnalytics\nCreate a Spaces Account\nMongoDB Certification\nW3Schools offers an end-of-pathway certification program.\nHere you can take exams to get certified.\nThe MongoDB exam is a test that summarizes the W3Schools MongoDB syllabus.\nAfter passing the exam you get the \"Certified MongoDB Developer\" Certification.\nThe certification exam is adaptive and graded; students will get a grade from intermediate, advanced to professional.\nBuy Certificate »\nAre You a Teacher?\nAre you interested in learning how you can use W3Schools Academy to Teach MongoDB?\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\nWatch Demo »",
+      "examples": [
+        "db.posts.find( {category: \"News\"} )"
+      ]
+    },
+    {
+      "title": "MongoDB Study Plan",
+      "summary": "Introduction\nThe MongoDB study plan helps you teach your students MongoDB step-by-step.\nCreating a study plan for MongoDB is easy.\nYou can use a pre-built study plan or customize it.\nStudents have different skill levels. The study plans can be customized to ensure that everyone is challenged.\nSave time with pre-built teacher materials and study plans. Easily organize your class with a timeline from the introduction of MongoDB to the final exam.\nW3Schools Academy\nThis study plan is a feature of W3Schools Academy.\nW3Schools Academy is a platform that has everything you need to teach coding, all in one place.\nIt offers you as a teacher a toolbox of features that helps you succeed with teaching in your classroom.\nYou need to have an active subscription to access the study plan feature. There are two different subscription tiers:\nEssentials ($1.99 / month per student)\nFull Access ($5.99 / month per student)\nCalculate your price and order here.\nLearn More »\nAcademy also offer other features such as:\nManaging your classroom\nTracking of student progress and reports\nLabs, assignments, and code challenges (prebuilt challenges or create your own ones)\nAuto-grading\nTeaching materials\nCertification exams\nGet a free demo »\nTeacher Materials\nW3Schools has everything you need to teach MongoDB.\nThe MongoDB training materials is available for you to include and use in your study plan:\nW3Schools MongoDB Tutorial\nMongoDB Exercises\nMongoDB Challenges (Coding challenges)\nMongoDB Certification Exam (End of Pathway Exam)\nMongoDB Syllabus\nWith the MongoDB Syllabus, your students will start with the basics, like understanding NoSQL databases and creating collections, and move to more advanced topics, like querying documents, using operators, and managing data. Each chapter includes simple examples, try-it-yourself sections, exercises, and quizzes to make learning easy, interactive, and fun.\nRead more about MongoDB Syllabus.\nStudy Plan Overview\nThe study plan features are made to help teachers and students. They make learning easy, flexible, and fun. These features work for different types of classes, learning styles and student level.\nLearning Paths\nYou can add ready-made learning paths.\nThe learning paths are by default ordered by our recommended order.\nYou can change the order.\nYou can add custom activities with text, links, or multi-media files.\nDrag and drop or click to make changes to the path.\nYou can add ready-made learning paths.\nThe learning paths are by default ordered by our recommended order.\nYou can change the order.\nYou can add custom activities with text, links, or multi-media files.\nDrag and drop or click to make changes to the path.\nInteractive Content\nTutorials\nTry-its (test code snippets)\nExercises\nQuiz\nChallenges\nLabs\nTutorials\nTry-its (test code snippets)\nExercises\nQuiz\nChallenges\nLabs\nTimeline and Pace\nYou can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\nYou can decide the learning pace for your class.\nDifferent study plans can be assigned to different students in the same class.\nThe flexibility can help to make sure that everyone is challenged.\nYou can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\nYou can decide the learning pace for your class.\nDifferent study plans can be assigned to different students in the same class.\nThe flexibility can help to make sure that everyone is challenged.\nTrack Student Progress\nThere are tools to track student progress.\nThe analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\nThe challenges can be auto-graded or manually graded. The results are available to you as a teacher.\nThere are tools to track student progress.\nThe analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\nThe challenges can be auto-graded or manually graded. The results are available to you as a teacher.\nEnd of Pathway Exam\nThe MongoDB study plan aligns with the MongoDB Certification Exam.\nThe exam can be taken at the end of the study plan, at your selected date.\nThe exam summarizes the MongoDB Tutorial.\nYou get reports of the students' results.\nThe MongoDB study plan aligns with the MongoDB Certification Exam.\nThe exam can be taken at the end of the study plan, at your selected date.\nThe exam summarizes the MongoDB Tutorial.\nYou get reports of the students' results.\nAccessibility\nStudy plans and learning materials are accessible on desktops, tablets, and smartphones.\nThis ensures students can learn anytime, anywhere.\nStudy plans and learning materials are accessible on desktops, tablets, and smartphones.\nThis ensures students can learn anytime, anywhere.\nLearn More »\nSample Study Plan\nYou choose the timeline and pace of your study plans.\nSchools have different preferences.\nSome would like more intensive pace, e.g. 3 weeks, others 12 or more weeks.\nIt is completely up to you.\nFor example, this is how a 3-week MongoDB study plan could look like:\nWeek 1: Basic Database Management, Crud Operations, Query and Update\nWeek 2: Data Aggregation, Sorting and Counting, Fields and Linking, Data Output, Indexing and Validation\nWeek 3: Data and Drivers, Node.js and Charts, MongoDB Certification Exam\nImage of Sample MongoDB study plan:\nReady to get started?\nStart with MongoDB Study Plans today.\nGet Started »\nAre You a Teacher?\nAre you interested in learning how you can use W3Schools Academy to Teach MongoDB programming?\nWatch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging.\nWatch Demo »",
+      "examples": []
+    },
+    {
+      "title": "W3Schools MongoDB Certificate",
+      "summary": "W3Schools offers an Online Certification Program.\nThe perfect solution for busy professionals who need to balance work, family, and career building.\nMore than 50 000 certificates already issued!\nGet Your Certificate »\nW3Schools offers an Online Certification Program.\nThe perfect solution for busy professionals who need to balance work, family, and career building.\nMore than 50 000 certificates already issued!\nGet Your Certificate »\nWho Should Consider Getting Certified?\nAny student or professional within the digital industry.\nCertifications are valuable assets to gain trust and demonstrate knowledge to your clients, current or future employers on a ever increasing competitive market.\nW3Schools is Trusted by Top Companies\nW3Schools has over two decades of experience with teaching coding online.\nOur certificates are recognized and valued by companies looking to employ skilled developers.\nSave Time and Money\nShow the world your coding skills by getting a certification.\nThe prices is a small fraction compared to the price of traditional education.\nDocument and validate your competence by getting certified!\nExam overview\nFee: 95 USD\nAchievable certification levels:\nIntermediate (40%)\nAdvanced (75%)\nProfessional (90%)\nNumber of questions:\nAdaptive, 60 on average\nRequirement to pass:\nMinimum 40% - Intermediate level\nTime limit: 60 minutes\nNumber of attempts to pass: 3\nExam deadline: None\nCertification Expiration: None\nFormat: Online, multiple choice\nRegister now »\nAdvance Faster in Your Career\nGetting a certificate proves your commitment to upgrading your skills.\nThe certificate can be added as credentials to your CV, Resume, LinkedIn profile, and so on.\nIt gives you the credibility needed for more responsibilities, larger projects, and a higher salary.\nKnowledge is power, especially in the current job market.\nDocumentation of your skills enables you to advance your career or helps you to start a new one.\nHow Does It Work?\nStudy for free at W3Schools.com\nStudy at your own speed\nTest your skills with W3Schools online quizzes\nApply for your certificate by paying an exam fee\nTake your exam online, at any time, and from any location\nGet Your Certificate and Share It With The World\nExample certificate:\nEach certificate gets a unique link that can be shared with others.\nValidate your certification with the link or QR code.\nCheck how it looks like in this Example.\nShare your certificate on Linked in the Certifications section in just one click!\nDocument Your Skills\nGetting a certificate proves your commitment to upgrade your skills, gives you the credibility needed for more responsibilities, larger projects, and a higher salary.\nGet Your Certificate »\nLooking to add multiple users?\nAre you an educator, manager or business owner looking for courses or certifications?\nWe are working with schools, companies and organizations from all over the world.\nGet courses and/or certifications for your team here.",
+      "examples": []
+    }
+  ],
+  "glossary": [
+    "addfields",
+    "backend",
+    "count",
+    "exercise",
+    "exercises",
+    "free",
+    "group",
+    "javascript",
+    "limit",
+    "lookup",
+    "match",
+    "mongodb aggregations",
+    "mongodb charts",
+    "mongodb collection",
+    "mongodb delete",
+    "mongodb drivers",
+    "mongodb exercises",
+    "mongodb find",
+    "mongodb home",
+    "mongodb insert",
+    "mongodb syllabus",
+    "mongodb update",
+    "mongodb validation",
+    "note",
+    "out",
+    "programs",
+    "project",
+    "report error",
+    "sort",
+    "w3.css",
+    "w3schools spaces"
+  ],
+  "objectives": [
+    "View your completed tutorials, exercises, and quizzes",
+    "Keep an eye on your progress and daily streaks",
+    "Set goals and create learning paths",
+    "Create your own personal website"
+  ]
+}
