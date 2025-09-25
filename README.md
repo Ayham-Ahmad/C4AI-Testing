@@ -16,3 +16,6 @@ Streamlit interface for chatting with the tutor
 Goal
 
 The chatbot creates tutorials and exercises directly from W3Schools material, making it easier to learn coding concepts interactively.
+
+Run the code:
+streamlit run app.py
