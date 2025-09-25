@@ -26,7 +26,7 @@ Thumbs.db
 embedded/chroma.sqlite3
 embedded/*
 # or whatever directory contains large vectorstore files
-/data/
+data/*
 *.sqlite3
 
 rag_output.txt
@@ -46,3 +46,5 @@ copy_in_obj.py
 extractCodes.py
 
 topics/*
+
+.gitignore

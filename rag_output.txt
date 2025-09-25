@@ -1,87 +1,404 @@
 ======== RAG FUSION LOG ========
 Question:
-teach me jaava
+teach xml
 
 -------- query GENERATED --------
-Query 1: learn java programming
-Query 2: java basics tutorial
-Query 3: java for beginners
-Query 4: introduction to java
+Query 1: learn xml basics
+Query 2: xml tutorial for beginners
+Query 3: introduction to xml programming
+Query 4: xml syntax and examples
 
 -------- CONTEXT RETRIEVED --------
-JAVA
-Java Getting Started
-C:\Users\Your Name>java Main
+title: Introduction to XML
+summary: XML is a software- and hardware-independent tool for storing and transporting data.
+What is XML?
+XML stands for eXtensible Markup Language
+XML is a markup language much like HTML
+XML was designed to store and transport data
+XML was designed to be self-descriptive
+XML is a W3C Recommendation
+XML Does Not DO Anything
+Maybe it is a little hard to understand, but XML does not DO anything.
+This note is a note to Tove from Jani, stored as XML:
+The XML above is quite self-descriptive:
+It has sender information
+It has receiver information
+It has a heading
+It has a message body
+But still, the XML above does not DO anything. XML is just information wrapped in tags.
+Someone must write a piece of software to send, receive, store, or display it:
+Note
+To: Tove
+From: Jani
+Reminder
+Don't forget me this weekend!
+The Difference Between XML and HTML
+XML and HTML were designed with different goals:
+XML was designed to carry data - with focus on what data is
+HTML was designed to display data - with focus on how data looks
+XML tags are not predefined like HTML tags are
+REMOVE ADS
+XML Does Not Use Predefined Tags
+The XML language has no predefined tags.
+The tags in the example above (like <to> and <from>) are not defined in any XML standard. These tags are "invented" by the author of the XML document.
+HTML works with predefined tags like <p>, <h1>, <table>, etc.
+With XML, the author must define both the tags and the document structure.
+XML is Extensible
 
-JAVA
-Java Class Methods
-C:\Users\Your Name>java Second
+title: XML Syllabus
+summary: Introduction
+The W3Schools XML Tutorial is comprehensive and beginner-friendly.
+It will give you a fundamental knowledge of XML.
+It is designed for beginners and requires no prior experience with markup languages.
+The content has been carefully made to be bite-sized, simple, and easy to understand.
+The content has been proven by millions of users over the years. It is updated and improved frequently.
+The syllabus outline and its sequence are structured so you can learn XML step by step, from the introduction to creating structured data.
+Get Started With XML »
+Learning Outcomes
+Learn what XML is and how it works
+Create basic XML documents with elements and attributes
+Display XML data on web pages
+Use XML with AJAX for dynamic web content
+Work with XML DOM to access and change XML
+Use XPath to find information in XML documents
+Transform XML into other formats using XSLT
+Validate XML using DTD and XML Schema
+Store and share data using XML
+Note: Are you a teacher teaching XML? W3Schools Academy is a toolbox of features that can help you teach. It offers classroom features such as pre-built study plans, classroom administration and much more. Read more about Academy here.
+Which Subjects Are XML Relevant For?
+Data Exchange:
+XML is essential for structured data exchange between systems.
+Web Services:
+XML is fundamental for SOAP web services and APIs.
+Configuration:
+XML is widely used for application configuration files.
+Data Storage:
+XML provides a format for storing structured data.
+Document Management:
+XML supports document structures and metadata.
+System Integration:
+XML enables communication between different systems.
+Enterprise Applications:
+XML is used in many enterprise-level applications.
+Get Started
 
-TUTORIALS
-Java Tutorial
-public class Main { public static void main(String[] args) { System.out.println("Hello World"); } }
+title: XML Tree
+summary: XML documents form a tree structure that starts at "the root" and branches to "the leaves".
+The XML Tree Structure
+An Example XML Document
+The image above represents books in this XML:
+REMOVE ADS
+XML Tree Structure
+XML documents are formed as element trees.
+An XML tree starts at a root element and branches from the root to child elements.
+All elements can have sub elements (child elements):
+The terms parent, child, and sibling are used to describe the relationships between elements.
+Parents have children. Children have parents. Siblings are children on the same level (brothers and sisters).
+All elements can have text content (Harry Potter) and attributes (category="cooking").
+Self-Describing Syntax
+XML uses a much self-describing syntax.
+A prolog defines the XML version and the character encoding:
+The next line is the root element of the document:
+The next line starts a <book> element:
+The <book> elements have 4 child elements: <title>, <author>, <year>, <price>.
+The next line ends the book element:
+You can assume, from this example, that the XML document contains information about books in a bookstore.
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+<book category="cooking">
+<title lang="en">Everyday Italian</title>
+<author>Giada De Laurentiis</author>
+<year>2005</year>
+<price>30.00</price>
+</book>
+<book category="children">
+<title lang="en">Harry Potter</title>
+<author>J K. Rowling</author>
+<year>2005</year>
 
-JAVA
-Java Classes and Objects
-C:\Users\Your Name>java Second
+The XML training materials is available for you to include and use in your study plan:
+W3Schools XML Tutorial
+XML Quiz
+XML Challenges (Coding challenges)
+XML Certification Exam (End of Pathway Exam)
+XML Syllabus
+With the XML Syllabus, your students will start with the basics, like understanding XML syntax, structure, and elements, and move to more advanced topics, like working with XML parsers, using XPath, and defining XML schemas. Each chapter includes examples, try-it-yourself sections, exercises, and quizzes to make learning easy, interactive, and fun.
+Read more about XML Syllabus.
+Study Plan Overview
+The study plan features are made to help teachers and students. They make learning easy, flexible, and fun. These features work for different types of classes, learning styles and student level.
+Learning Paths
+You can add ready-made learning paths.
+The learning paths are by default ordered by our recommended order.
+You can change the order.
+You can add custom activities with text, links, or multi-media files.
+Drag and drop or click to make changes to the path.
+You can add ready-made learning paths.
+The learning paths are by default ordered by our recommended order.
+You can change the order.
+You can add custom activities with text, links, or multi-media files.
+Drag and drop or click to make changes to the path.
+Interactive Content
+Tutorials
+Try-its (test code snippets)
+Exercises
+Quiz
+Challenges
+Labs
+Tutorials
+Try-its (test code snippets)
+Exercises
+Quiz
+Challenges
+Labs
+Timeline and Pace
 
-JAVA
-Java Statements
-System.out.println("Hello World!"); System.out.println("Have a good day!"); System.out.println("Learning Java is fun!");
+A document type definition defines the rules and the legal elements and attributes for an XML document.
+<?xml version="1.0" encoding="UTF-8"?>
+<note>
+<to>Tove</to>
+<from>Jani</from>
+<heading>Reminder</heading>
+<body>Don't forget me this weekend!</body>
+</note>
 
-JAVA
-Java Tutorial
-public class Main { public static void main(String[] args) { System.out.println("Hello World"); } }
+title: XSLT Introduction
+summary: XSL (eXtensible Stylesheet Language) is a styling language for XML.
+XSLT stands for XSL Transformations.
+This tutorial will teach you how to use XSLT to transform XML documents into other formats (like transforming XML into HTML).
+Online XSLT Editor
+With our online editor, you can edit XML and XSLT code, and click on a button to view the result.
+XSLT Example
+Click on the "Try it Yourself" button to see how it works.
+What You Should Already Know
+Before you continue you should have a basic understanding of the following:
+HTML
+XML
+If you want to study these subjects first, find the tutorials on our Home page.
+XSLT References
+XSLT Elements
+Description of all the XSLT elements from the W3C Recommendation, and information about browser support.
+XSLT, XPath, and XQuery Functions
+XSLT 2.0, XPath 2.0, and XQuery 1.0, share the same functions library. There are over 100 built-in functions. There are functions for string values, numeric values, date and time comparison, node and QName manipulation, sequence manipulation, and more.
+<?xml version="1.0"?>
 
-TUTORIALS
-Java Tutorial
-public class Main { public static void main(String[] args) { System.out.println("Hello World"); } }
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-TUTORIALS
-Java Tutorial
-public class Main { public static void main(String[] args) { System.out.println("Hello World"); } }
+Data Storage:
+XML provides a format for storing structured data.
+Document Management:
+XML supports document structures and metadata.
+System Integration:
+XML enables communication between different systems.
+Enterprise Applications:
+XML is used in many enterprise-level applications.
+Get Started
+Activities
+In this tutorial we offer different activities for you to learn XML for free:
+Lessons
+Quizzes
+Sign in to Track Progress
+You can also create a free account to track your progress.
+As a signed-in user, you get access to features such as:
+Learning paths
+Sandbox and lab environments
+Achievements
+And much more!
+Sign Up - It's free
+Overview of the Modules
+XML HOME
+XML Introduction
+XML How to use
+XML Tree
+XML Syntax
+XML Elements
+XML Attributes
+XML Namespaces
+XML Display
+XML HttpRequest
+XML Parser
+XML DOM
+XML XPath
+XML XSLT
+XML XQuery
+XML XLink
+XML Validator
+XML DTD
+XML Schema
+XML Server
+XML Examples
+XML Quiz
+AJAX Introduction
+AJAX XMLHttp
+AJAX Request
+AJAX Response
+AJAX XML File
+AJAX PHP
+AJAX ASP
+AJAX Database
+AJAX Applications
+DOM Introduction
+DOM Nodes
+DOM Accessing
+DOM Node Info
+DOM Node List
+DOM Traversing
+DOM Navigating
+DOM Get Values
+DOM Change Nodes
+DOM Remove Nodes
+DOM Replace Nodes
+DOM Create Nodes
+DOM Add Nodes
+DOM Clone Nodes
+XPath Introduction
+XPath Nodes
+XPath Syntax
 
-JAVA
-Java Getting Started
-C:\Users\Your Name>javac Main.java
+Example
+Example explained:
+Suppose books.xml is loaded into xmlDoc
+Create a new element node <edition>
+Create a new text node with the text "first"
+Append the new text node to the element node
+Append the new element node to the first <book> element
+Add an element node, with a text node, to all <book> elements: Try it yourself
+Create a CDATA Section Node
+The createCDATASection() method creates a new CDATA section node.
+Example
+Example explained:
+Suppose books.xml is loaded into xmlDoc
+Create a new CDATA section node
+Append the new CDATA node to the first <book> element
+Loop through, and add a CDATA section, to all <book> elements: Try it yourself
+Create a Comment Node
+The createComment() method creates a new comment node.
+Example
+Example explained:
+Suppose books.xml is loaded into xmlDoc using
+Create a new comment node
+Append the new comment node to the first <book> element
+Loop through, and add a comment node, to all <book> elements: Try it yourself
+newElement = xmlDoc.createElement("edition");
 
-JAVA
-Java Getting Started
-C:\Users\Your Name>java -version
+title: XML Elements
+summary: An XML document contains XML Elements.
+What is an XML Element?
+An XML element is everything from (including) the element's start tag to (including) the element's end tag.
+An element can contain:
+text
+attributes
+other elements
+or a mix of the above
+In the example above:
+<title>, <author>, <year>, and <price> have text content because they contain text (like 29.99).
+<bookstore> and <book> have element contents, because they contain elements.
+<book> has an attribute (category="children").
+Empty XML Elements
+An element with no content is said to be empty.
+In XML, you can indicate an empty element like this:
+You can also use a so called self-closing tag:
+The two forms produce identical results in XML software (Readers, Parsers, Browsers).
+Empty elements can have attributes.
+REMOVE ADS
+XML Naming Rules
+XML elements must follow these naming rules:
+Element names are case-sensitive
+Element names must start with a letter or underscore
+Element names cannot start with the letters xml (or XML, or Xml, etc)
+Element names can contain letters, digits, hyphens, underscores, and periods
+Element names cannot contain spaces
+Any name can be used, no words are reserved (except xml).
+Best Naming Practices
+Create descriptive names, like this: <person>, <firstname>, <lastname>.
+Create short and simple names, like this: <book_title> not like this: <the_title_of_the_book>.
+Avoid "-". If you name something "first-name", some software may think you want to subtract "name" from "first".
 
-JAVA
-Java Getting Started
-C:\Users\Your Name>java -version
+title: How Can XML be Used?
+summary: XML is used in many aspects of web development.
+XML is often used to separate data from presentation.
+XML Separates Data from Presentation
+XML does not carry any information about how to be displayed.
+The same XML data can be used in many different presentation scenarios.
+Because of this, with XML, there is a full separation between data and presentation.
+XML is Often a Complement to HTML
+In many HTML applications, XML is used to store or transport data, while HTML is used to format and display the same data.
+XML Separates Data from HTML
+When displaying data in HTML, you should not have to edit the HTML file when the data changes.
+With XML, the data can be stored in separate XML files.
+With a few lines of JavaScript code, you can read an XML file and update the data content of any HTML page.
+Books.xml
+You will learn a lot more about using XML and JavaScript in the DOM section of this tutorial.
+REMOVE ADS
+Transaction Data
+Thousands of XML formats exist, in many different industries, to describe day-to-day data transactions:
+Stocks and Shares
+Financial transactions
+Medical data
+Mathematical data
+Scientific measurements
+News information
+Weather services
+Example: XML News
+XMLNews is a specification for exchanging news and other information.
+Using a standard makes it easier for both news producers and news consumers to produce, receive, and archive any kind of news information across different hardware, software, and programming languages.
+An example XMLNews document:
+Example: XML Weather Service
+An XML national weather service from NOAA (National Oceanic and Atmospheric Administration):
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
 
-JAVA
-Java Class Methods
-C:\Users\Your Name>javac Main.java
-C:\Users\Your Name>javac Second.java
+title: PHP XML Parsers
+summary: What is XML?
+The XML language is a way to structure data for sharing across websites.
+Several web technologies like RSS Feeds and Podcasts are written in XML.
+XML is easy to create. It looks a lot like HTML, except that you make up your own tags.
+If you want to learn more about XML, please visit our XML tutorial.
+What is an XML Parser?
+To read and update, create and manipulate an XML document, you will need an XML parser.
+In PHP there are two major types of XML parsers:
+Tree-Based Parsers
+Event-Based Parsers
+Tree-Based Parsers
+Tree-based parsers holds the entire document in Memory and transforms the XML document into a Tree structure. It analyzes the whole document, and provides access to the Tree elements (DOM).
+This type of parser is a better option for smaller XML documents, but not for large XML document as it causes major performance issues.
+Example of tree-based parsers:
+SimpleXML
+DOM
+Event-Based Parsers
+Event-based parsers do not hold the entire document in Memory, instead, they read in one node at a time and allow you to interact with in real time. Once you move onto the next node, the old one is thrown away.
+This type of parser is well suited for large XML documents. It parses faster and consumes less memory.
+Example of event-based parsers:
+XMLReader
+XML Expat Parser
 
-JAVA
-Java Getting Started
-C:\Users\Your Name>javac Main.java
-
-JAVA
-Java Data Structures
-// Import the ArrayList class import java.util.ArrayList; public class Main { public static void main(String[] args) { ArrayList<String> cars = new ArrayList<String>(); cars.add("Volvo"); cars.add("BMW"); cars.add("Ford"); cars.add("Mazda"); System.out.println(cars); } }
-
-JAVA
-Java Output / Print
-System.out.println("Hello World!"); System.out.println("I am learning Java."); System.out.println("It is awesome!");
-
-JAVA
-Java Errors
-int x = "Hello";
-
-JAVA
-Java Statements
-System.out.println("Hello World!"); System.out.println("Have a good day!"); System.out.println("Learning Java is fun!");
-
-JAVA
-Java Classes and Objects
-C:\Users\Your Name>javac Main.java
-C:\Users\Your Name>javac Second.java
+XML Elements Must be Properly Nested
+In HTML, you might see improperly nested elements:
+In XML, all elements must be properly nested within each other:
+In the example above, "Properly nested" simply means that since the <i> element is opened inside the <b> element, it must be closed inside the <b> element.
+XML Attribute Values Must Always be Quoted
+XML elements can have attributes in name/value pairs just like in HTML.
+In XML, the attribute values must always be quoted:
+Entity References
+Some characters have a special meaning in XML.
+If you place a character like "<" inside an XML element, it will generate an error because the parser interprets it as the start of a new element.
+This will generate an XML error:
+To avoid this error, replace the "<" character with an entity reference:
+There are 5 pre-defined entity references in XML:
+Only < and & are strictly illegal in XML, but it is a good habit to replace > with &gt; as well.
+Comments in XML
+The syntax for writing comments in XML is similar to that of HTML:
+Two dashes in the middle of a comment are not allowed:
+White-space is Preserved in XML
+XML does not truncate multiple white-spaces (HTML truncates multiple white-spaces to one single white-space):
+XML Stores New Line as LF
+Windows applications store a new line as: carriage return and line feed (CR+LF).
+Unix and Mac OSX use LF.
+Old Mac systems use CR.
+XML stores a new line as LF.
+Well Formed XML
+XML documents that conform to the syntax rules above are said to be "Well Formed" XML documents.
+<root>
 
 -------- INSTRUCTIONS / PROMPT --------
 You are a professional **Coding Tutorial Chatbot** embedded in a **Streamlit app**.  
