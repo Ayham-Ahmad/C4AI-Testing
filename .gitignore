@@ -38,3 +38,11 @@ topics/
 testing/*
 
 crawl_log.txt
+
+uploadToMongo.py
+
+copy_in_obj.py
+
+extractCodes.py
+
+topics/*
